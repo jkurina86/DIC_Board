@@ -1,0 +1,12 @@
+# KiCad local/session files
+*.lck
+*.kicad_prl
+.history/
+**/.history/
+*-backups/
+fp-info-cache
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
