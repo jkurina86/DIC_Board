@@ -416,7 +416,7 @@
         "uuid": "bb0ef0df-c181-443a-843c-695cd2e0efee"
       }
     ],
-    "used_designators": "U1",
+    "used_designators": "U1,R1,C21,SW1",
     "variants": []
   },
   "sheets": [
@@ -427,6 +427,10 @@
     [
       "ef2b3969-ba29-4866-a95a-5e275b2bf226",
       "STM32 MCU"
+    ],
+    [
+      "b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20",
+      "Power"
     ]
   ],
   "text_variables": {},
