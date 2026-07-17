@@ -6,6 +6,9 @@
 *-backups/
 fp-info-cache
 
+# Generated design-analysis reports
+/DIC_Board/analysis/
+
 # OS/editor noise
 .DS_Store
 Thumbs.db
