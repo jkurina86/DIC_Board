@@ -1,0 +1,10 @@
+(sym_lib_table
+	(version 7)
+	(lib
+		(name "DIC_Board")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/DIC_Board.kicad_sym")
+		(options "")
+		(descr "Project-specific symbols for DIC_Board")
+	)
+)

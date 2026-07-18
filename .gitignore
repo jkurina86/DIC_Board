@@ -8,6 +8,7 @@ fp-info-cache
 
 # Generated design-analysis reports
 /DIC_Board/analysis/
+/analysis/
 
 # OS/editor noise
 .DS_Store
