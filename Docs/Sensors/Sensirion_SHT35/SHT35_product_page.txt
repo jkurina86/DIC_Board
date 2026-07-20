@@ -1,0 +1,579 @@
+SHT35-DIS-B - ±1.5% (0-80%RH) Digital humidity and temperature sensor
+Megatrends
+Megatrends
+Energy transition
+The energy transition is key to a sustainable future – driven by innovative technologies and smart solutions
+Artificial intelligence
+From measurement to smart decisions
+Emission reduction
+Making emissions visible, measurable, and manageable
+Health and well-being
+Smarter sensing for cleaner, safer, and more comfortable living
+Internet of things
+Enabling Smart Infrastructure & IoT through high-precision environmental sensing for healthier, more efficient, and fully connected buildings
+Applications
+Applications
+Medical technology
+Smart inhalers
+Metabolic breath analysis
+Subcutaneous drug delivery
+Mechanical ventilators
+Infusion
+Anesthesia machines
+CPAP devices
+Heart-lung machines
+Nitric oxide therapy
+Urine flow measurement
+Industry, semicon, logistics
+Battery energy storage systems
+Chip mounter
+Clean cooking (LPG)
+Combustion control
+Substrate storage and handling
+GC analyzer
+Gas meters
+Humidity in oil
+Photoresist coating and dosing
+Thin-film deposition and etching
+Gas purging
+Transport of pharmaceutical goods
+Transport of perishable goods
+Life sciences & diagnostics
+Bioreactors
+Condition monitoring & instrument diagnostics
+Custom manifold solutions
+DNA sequencing
+Flow cytometry
+Gas chromatography
+Liquid chromatography
+Mass spectrometry
+Microfluidics
+Thermal analysis
+HVAC/appliances
+Refrigerators
+Demand-controlled ventilators
+Room sensors
+VAV controllers
+Filter monitoring
+Refrigerant leakage detection
+Air conditioners
+Consumer electronics
+Air purifiers
+Thermostats
+Indoor air quality monitors
+Smart speakers
+Vape detectors
+Sleep quality
+Metabolic breath analysis
+Mobility
+Air intake
+Antifogging
+Brake-by-wire systems
+Humanoid robots
+H2 monitoring in fuel cells
+LiDAR systems
+Safety of electric vehicles
+Steer-by-wire systems
+Products
+Products
+Product catalog
+Find your product
+Humidity sensors
+Temperature sensors
+Refrigerant leakage sensors
+CO₂ sensors
+O₂ sensors
+NOx & VOC sensors
+Formaldehyde sensors
+Particulate matter sensors
+Hydrogen sensors
+Liquid flow sensors
+Gas flow sensors
+Differential pressure sensors
+Mass flow controllers
+Gas metering solutions
+Gas analyzers
+Sensor evaluation
+Evaluation kits
+ControlCenter
+SEK-SensorBridge
+Humidity/temperature
+VOCs/NOx
+Formaldehyde
+CO₂
+Particulate matter
+Liquid flow
+Differential pressure
+Gas flow sensors
+Mass flow controllers
+Hydrogen detection
+Assistance/support
+Download Center
+Demonstrators and apps
+FAQ
+Technical support
+Distributors
+GitHub
+Developer website
+Channel partners
+Distributors' inventory
+Distributors
+Representatives
+Partner access
+Commercial contact
+Customized solutions
+Customized sensors
+Technology
+Development
+Career
+Career
+Job portal
+Find your dream position
+About us
+Working at Sensirion
+Our locations
+Our teams
+Our entities
+Your path
+Professionals
+Graduates
+Students
+Apprentices
+News and insights
+News
+Events
+Newsletter
+WhatsApp news
+Contact our P&C Team
+Company
+Company
+About Sensirion
+Company profile
+Locations
+Contact
+Our commitment
+Sustainability compliance
+Energy efficency
+Improving health
+Ensuring safety and comfort
+Technology
+Encouraging innovation
+Quality and reliability
+Newsroom
+All news
+Press releases & news
+Specialist articles
+Events
+Webinars
+Newsletter
+Investor relations
+At a glance
+Share information
+Ad-hoc news
+Financial newsletter
+Events
+Results and reports
+Annual general meeting
+Corporate governance
+Sustainability
+Growth is our aspiration, our global goal.
+Driving strategic growth areas
+en
+Directly to
+Directly to
+Product catalog
+Support
+Technical downloads
+Newsroom
+Work at Sensirion
+Sensirion
+Sensirion
+Developers platform
+Sensirion Automotive Solutions
+Sensirion Connected Solutions
+Qmicro by Sensirion
+Contact us
+Contact us
+General Request
+Commercial Support Request
+Technical Support Request
+Newsletter Registration
+Legal notice
+©
+Sensirion AG
+Back to catalog
+Compare
+SHT35-DIS-B
+All products
+•
+Humidity sensors
+•
+SHT3x
+±1.5% (0-80%RH) Digital humidity and temperature sensor
+The digital SHT3x humidity sensor series takes sensor technology to a new level. As the successor of the SHT2x series it sets the industry standard in humidity sensing. The SHT3x humidity sensor series consists of a low-cost version with the SHT30 humidity sensor, a standard version with the SHT31 humidity sensor, and a high-end version with the SHT35 humidity sensor.
+Automotive grade versions are also available. The SHT3x humidity sensor series combines multiple functions and various interfaces (I²C, analog voltage output) with a applications-friendly, very wide operating voltage range (2.15 to 5.5 V). The SHT3x humidity sensor is available in both large and small volumes.
+Buy now
+See inventory
+Distributor list
+Contact sales
+Specification
+Humidity
+Typ. relative humidity accuracy
+1.5
+%RH
+1.5
+%RH
+Operating relative humidity range
+0 - 100
+%RH
+0 - 100
+%RH
+Response time
+(
+τ63%
+)
+8
+s
+8
+s
+Protective option
+Protective cover
+Protective cover
+Downloads
+Datasheet SHT3x-DIS
+12/2022
+•
+PDF
+•
+791.1 KB
+Datasheet
+12/2022
+PDF
+791.1 KB
+HT alert mode bit conversion
+03/2024
+•
+XLSX
+•
+46.3 KB
+Application note
+03/2024
+XLSX
+46.3 KB
+SHT3x electronic identification code
+01/2023
+•
+PDF
+•
+139.6 KB
+Application note
+01/2023
+PDF
+139.6 KB
+Alert mode SHT3x-DIS
+02/2024
+•
+PDF
+•
+391.9 KB
+Application note
+02/2024
+PDF
+391.9 KB
+Handling instructions SHT
+06/2025
+•
+PDF
+•
+470.2 KB
+Application note
+06/2025
+PDF
+470.2 KB
+Humidity at a glance
+05/2025
+•
+PDF
+•
+204.6 KB
+Application note
+05/2025
+PDF
+204.6 KB
+Introduction to humidity
+08/2009
+•
+PDF
+•
+224.9 KB
+Application note
+08/2009
+PDF
+224.9 KB
+Specification statement and testing humidity sensors
+04/2021
+•
+PDF
+•
+306.8 KB
+Application note
+04/2021
+PDF
+306.8 KB
+Testing at ambient conditions SHT
+10/2022
+•
+PDF
+•
+443.0 KB
+Application note
+10/2022
+PDF
+443.0 KB
+Thermal resistance parameters SHT3x
+04/2021
+•
+PDF
+•
+143.7 KB
+Application note
+04/2021
+PDF
+143.7 KB
+Design-in guide SHT/STS
+04/2024
+•
+PDF
+•
+822.1 KB
+Guide
+04/2024
+PDF
+822.1 KB
+Design-in guide SHT/STS Chinese
+06/2024
+•
+PDF
+•
+1.2 MB
+Guide
+06/2024
+PDF
+1.2 MB
+Transition guide for SHT3x to SHT4x
+05/2024
+•
+PDF
+•
+411.2 KB
+Guide
+05/2024
+PDF
+411.2 KB
+Arduino driver SHT
+Link
+•
+Software
+Link
+Embedded drivers humidity
+Link
+•
+Software
+Link
+Sample code SHT3x
+ZIP
+•
+410.1 KB
+Software
+ZIP
+410.1 KB
+SEK-ControlCenter (all devices)
+Link
+•
+Software
+Link
+STEP file SHT3x
+ZIP
+•
+37.7 KB
+Drawings/CAD
+ZIP
+37.7 KB
+Calibration certification SHT/STS
+08/2021
+•
+PDF
+•
+110.4 KB
+Certificate
+08/2021
+PDF
+110.4 KB
+REACH and RoHS declaration SHT/STS
+04/2026
+•
+PDF
+•
+107.3 KB
+Certificate
+04/2026
+PDF
+107.3 KB
+Humidity product flyer
+10/2024
+•
+PDF
+•
+1.0 MB
+Flyer
+10/2024
+PDF
+1.0 MB
+Humidity product flyer Chinese
+03/2025
+•
+PDF
+•
+933.3 KB
+Flyer
+03/2025
+PDF
+933.3 KB
+Humidity product flyer Japanese
+05/2025
+•
+PDF
+•
+3.7 MB
+Flyer
+05/2025
+PDF
+3.7 MB
+Accessories
+Name
+Description
+Series
+Category
+SF2 filter cap
+Filter cap for SHT2x to SHT4x humidity and temperature sensors
+SFx filter cap
+Humidity sensors
+SF2 filter cap
+Filter cap for SHT2x to SHT4x humidity and temperature sensors
+SFx filter cap
+Humidity sensors
+Home
+Products
+Product catalog
+SHT35-DIS-B
+Calibration certificate
+Factory calibration
+Factory calibration
+Temperature
+Typ. temperature accuracy
+0.1
+°C
+0.1
+°C
+Response time
+(
+τ63%
+)
+> 2
+s
+> 2
+s
+Generic
+Supply voltage
+2.4 - 5.5
+V
+2.4 - 5.5
+V
+Average supply current
+1.7
+uA
+1.7
+uA
+Max. supply current
+1500
+uA
+1500
+uA
+Operating temperature range [°C]
+-40 - 125
+°C
+-40 - 125
+°C
+Interfaces
+I²C
+I²C
+Size (LxWxH)
+2.5 x 2.5 x 0.9
+mm
+2.5 x 2.5 x 0.9
+mm
+Packaging size
+2500, 10000
+pcs (T&R)
+2500, 10000
+pcs (T&R)
+Sensor evaluation
+Buy the following products to evaluate this sensor
+Name
+Description
+Series
+Category
+SEK-SensorBridge
+Connecting bridge with two sensor ports
+SEK-SensorBridge
+SEK-SHT35
+Humidity and temperature evaluation kit SHT35
+SEK-SHTxx
+Humidity sensors
+Previous
+SEK-SensorBridge
+Connecting bridge with two sensor ports
+SEK-SensorBridge
+SEK-SHT35
+Humidity and temperature evaluation kit SHT35
+SEK-SHTxx
+Humidity sensors
+Next
+Download the respective viewer software to start measuring
+Go to download center
+Start testing our sensors fast and easy with the evaluation kits
+How to get started
+Smart sensors for your application
+Sensirion's sensor solutions are used in a wide range of applications and markets. Our reliable environmental and flow sensors improve energy efficiency, increase health and ensure safety and comfort.
+Latest Humidity sensors
+Explore
+Previous
+New
+SHT41-AD1P-R2
+±1.8% / max. ±2.5% RH digital humidity and temperature sensor with protective cover
+Humidity sensors
+New
+SHT40-AD1P-R2
+±1.8% / max. ±3.5% RH digital humidity and temperature sensor with protective cover
+Humidity sensors
+Upcoming
+SHT41A-AWSB
+ASIL-A safety element out of context humidity sensor
+Humidity sensors
+New
+SHT40I-BD1B
+±2% Digital humidity and temperature sensor / 0x45 I2C Output
+Humidity sensors
+New
+SHT40-CD1B
+±1.8% / max. ±3.5% RH Digital humidity & temp. sensor / 0x46 I2C Output
+Humidity sensors
+New
+SHT40-BD1B
+±1.8% / max. ±3.5% RH Digital humidity & temp. sensor / 0x45 I2C Output
+Humidity sensors
+New
+SHT41A-BD1B
+±2% humidity sensor for automotive applications / I2C interface
+Humidity sensors
+Next

@@ -1,0 +1,89 @@
+    RP-TX Series
+                           Features                                                                      Main specifications
+                              ●     The world smallest level flow rate.                                                                              *
+                                   Wide range of flow levels are possible by                              Flow rate              (μL/min)                    0.03 - 40
+                              ●
+                                   using different pumpheads.
+                              ●
+                                   Docking of the pumphead can be done easily                             Tubing                                             Silicone, PharMed BPT
+                                   by using three screws.
+                              ●    Autoclave sterilizable pumphead is available.
+                                                                                                          Motor/Power source                                 Stepper motor DC 3V
+
+                            Examples of application                                                      Weight (for reference)                              Approx. 9g (Varies by motor)
+                                  Analytical instruments, medical devices, cell
+                                  culturing experiments and many other usages                             ＊Flow rate is at revolution speed 1 - 1,000 pps (1/4 micro step).
+                                  where micro-fluidic control is needed.
+
+
+
+                                                                                                                       PC Programable Motor Controller
+Replaceable Pumphead                               Motor Controller
+                                                               RE-F100
+
+
+                                                                                                                    RE-C500
+
+                                                                                                                                                                             RE-C600
+
+
+                                                                                                                                                               ＊ You can control one pump with RE-C600.
+                                                                                                                    RE-C501                                    ＊ Can be stopped at a speciﬁed number of
+                                                                                                                                                                 revolutions up to 30 times, enabling ﬁxed
+                                                                                                      ＊ You can control 6 pumps with RE-C500.                    volume dispensing operation at a speciﬁed
+                                                                                                      ＊ RE-C500 can be connected with one set                    multiple of the dispensing volume per revo-
+                                                                                                        of RE-C501 which can control 6 pumps.                    lution.
+Replaceable pumphead   Replaceable pumphead                    RE-C100                                  Thus, maximum 12 pumps can be controlled               ＊ Each operation sequence of the pump can
+   ARTBS0.5X1.5-K       ARTBS0.5X1.5-K5                                                                 by each one set of RE-C500 and RE-501.                   be programmed and by storing the program
+                                                         Motor controller and display                 ＊ Each operation sequence of the pump can                 data in the RE-C600, the pump can be driven
+                       Autoclave sterilizable            for RP-TX pumps                                be programmed and by storing the program                 without a PC connection.
+                                                                                                       data in the RE-C500, the pump can be driven
+                                                                                                        without a PC connection..                              ＊ Both pumps with and without connector
+                                                                                                      ＊ Mixture of diﬀerent pumps is possible.                   of motor wiring are applicable.
+
+
+
+
+                                  Outline view                                                           Mounting plate view                               Flow direction in CW revolution
+
+                                                                                                                                                                       IN       OUT
+
+
+
+
+Model Lineup                         Model Lineup                        Pumphead
+                                                                                                Autoclave
+                                                                                              sterilazation
+                                                                                                                    Connector
+                                                                                                                   Cord length
+                                                                                                                                               Flow rate
+                                                                                                                                              (μL / min)            Type
+                                                                                                                                                                              Tubing
+                                                                                                                                                                                      ID x OD (mm)
+                                                                                                                  No connector
+                               RP-TXP5S-P04A-DC3VS               AR-TBS0.5X1.5-K                                                               0.03 - 40          Silicone                0.5 x 1.5
+                                                                                                                        30 cm
+                                                                                                   No
+                                                                                                                  No connector
+                               RP-TXP5F-P03A-DC3VS               AR-TBF0.5X1.5-K                                                               0.03 - 30       PharMed BPT                0.5 x 1.5
+                                                                                                                        30 cm
+                                                                                                                  No connector
+                               RP-TXP5S-P04L-DC3VS               AR-TBS0.5X1.5-K5                  Yes                                         0.03 - 40          Silicone                0.5 x 1.5
+                                                                                                                       100 cm
+                                                                                                                With connector
+                               RP-TXP5S-P04Q-DC3VS               AR-TBS0.5X1.5-K                                                               0.03 - 40         Silicone                 0.5 x 1.5
+                                                                                                                        50 cm
+                                                                                                   No
+                                                                                                                With connector
+                               RP-TXP5S-P04R-DC3VS               AR-TBS0.5X1.5-K                                                               0.03 - 40         Silicone                 0.5 x 1.5
+                                                                                                                       200 cm
+                                                                                                                With connector
+                               RP-TXP5S-P04S-DC3VS               AR-TBS0.5X1.5-K5                  Yes                                         0.03 - 40         Silicone                 0.5 x 1.5
+                                                                                                                       200 cm
+                                   * PharMed BPT is product of Saint-Gobain SA and formerly described as PharMed in our brochure.
+
+                             ∗ 1. Select pumps with connector when you wish to control them by motor controller RE-C500/C501.
+                             ∗ 2. Pumps without connector can be controlled by motor controller RE-C100.
+                             ∗ 3. Motor controller RE-C600 can control pumps both with and without connector.
+                                                                                                                                                                                                         May, 2025
+

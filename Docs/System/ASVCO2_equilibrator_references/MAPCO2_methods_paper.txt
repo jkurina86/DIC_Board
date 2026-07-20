@@ -1,0 +1,302 @@
+ESSD - A high-frequency atmospheric and seawater pCO2 data set from 14 open-ocean sites using a moored autonomous system
+Earth System Science Data
+Earth System Science Data
+Earth System Science Data
+Articles & preprints
+Recent papers
+Highlight articles
+Regular articles
+Data description papers
+Review articles
+ESS Visions
+Brief communications
+Special issues
+Published SIs
+Scheduled SIs
+How to apply for an SI
+Collections
+Published collections
+How to add an article to a collection
+Alerts
+Subscribe to alerts
+Submission
+Policies
+Licence & copyright
+General terms
+Publication policy
+AI policy
+Data policy
+Repository criteria
+Publication ethics
+Competing interests policy
+Appeals & complaints
+Proofreading guidelines
+Obligations for authors
+Obligations for editors
+Obligations for referees
+Inclusive author name-change policy
+Peer review
+Interactive review process
+Finding an editor
+Review criteria
+Become a referee
+Manuscript tracking
+Reviewer recognition
+Living data process
+Editorial board
+About
+Aims & scope
+Subject areas
+Manuscript types
+Article processing charges
+Financial support
+News & press
+Heat stored in the Earth system: where does the energy go?
+Country-level and gridded estimates of wastewater production, collection, treatment and reuse
+Two new ESSD articles evaluate in detail the greenhouse gas emissions across the European domain
+ESSD seeks a Chief Science Editor
+EUREC
+4
+A
+ESSD in the media during COP 26
+Global sea-level budget and ocean-mass budget, with a focus on advanced data products and uncertainty characterisation
+Promote your work
+Journal statistics
+Journal metrics
+Abstracted & indexed
+Article level metrics
+FAQs
+Contact
+XML harvesting & OAI-PMH
+Article
+Articles
+Volume 6, issue 2
+ESSD, 6, 353–366, 2014
+Multiple terms: term1 term2
+red apples
+returns results with all terms like:
+Fructose levels in
+red
+and
+green
+apples
+Precise match in quotes: "term1 term2"
+"red apples"
+returns results matching exactly like:
+Anthocyanin biosynthesis in
+red apples
+Exclude a term with -: term1 -term2
+apples -red
+returns results containing
+apples
+but not
+red
+:
+Malic acid in green
+apples
+hit
+s
+for
+Close
+Refine your search
+Hide refinement
+There are no results for your search term.
+Network problems
+We are sorry, but your search could not be completed due to network problems. Please try again later.
+Server timeout
+We are sorry, but your search could not be completed due to server timeouts. Please try again later.
+Empty search term
+You have applied the search with an empty search term. Please revisit and try again.
+Too many requests
+We are sorry, but we have received too many parallel search requests. Please try again later.
+Searching
+Articles
+|
+Volume 6, issue 2
+Article
+Peer review
+Metrics
+Related articles
+Articles
+|
+Volume 6, issue 2
+https://doi.org/10.5194/essd-6-353-2014
+© Author(s) 2014. This work is distributed under
+the Creative Commons Attribution 3.0 License.
+https://doi.org/10.5194/essd-6-353-2014
+© Author(s) 2014. This work is distributed under
+the Creative Commons Attribution 3.0 License.
+Articles
+|
+Volume 6, issue 2
+Article
+Peer review
+Metrics
+Related articles
+06 Nov 2014
+|
+06 Nov 2014
+A high-frequency atmospheric and seawater
+p
+CO
+2
+data set from 14 open-ocean sites using a moored autonomous system
+A. J. Sutton
+,
+C. L. Sabine
+,
+S. Maenner-Jones
+,
+N. Lawrence-Slavas
+,
+C. Meinig
+,
+R. A. Feely
+,
+J. T. Mathis
+,
+S. Musielewicz
+,
+R. Bott
+,
+P. D. McLain
+,
+H. J. Fought
+,
+and
+A. Kozyr
+A. J. Sutton
+https://orcid.org/0000-0002-7414-7035
+×
+Joint Institute for the Study of the Atmosphere and Ocean, University of Washington, Seattle, Washington, USA
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+C. L. Sabine
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+S. Maenner-Jones
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+N. Lawrence-Slavas
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+C. Meinig
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+R. A. Feely
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+J. T. Mathis
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+S. Musielewicz
+×
+Joint Institute for the Study of the Atmosphere and Ocean, University of Washington, Seattle, Washington, USA
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+R. Bott
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+P. D. McLain
+×
+Pacific Marine Environmental Laboratory, National Oceanic and Atmospheric Administration, Seattle, Washington, USA
+H. J. Fought
+×
+Battelle Memorial Institute, Columbus, Ohio, USA
+A. Kozyr
+×
+Carbon Dioxide Information Analysis Center, Oak Ridge National Laboratory, Department of Energy, Oak Ridge, Tennessee, USA
+Abstract.
+In an intensifying effort to track ocean change and distinguish between natural and anthropogenic drivers, sustained ocean time series measurements are becoming increasingly important. Advancements in the ocean carbon observation network over the last decade, such as the development and deployment of Moored Autonomous
+p
+CO
+2
+(MAPCO
+2
+) systems, have dramatically improved our ability to characterize ocean climate, sea–air gas exchange, and biogeochemical processes. The MAPCO
+2
+system provides high-resolution data that can measure interannual, seasonal, and sub-seasonal dynamics and constrain the impact of short-term biogeochemical variability on carbon dioxide (CO
+2
+) flux. Overall uncertainty of the MAPCO
+2
+using in situ calibrations with certified gas standards and post-deployment standard operating procedures is < 2 μatm for seawater partial pressure of CO
+2
+(
+p
+CO
+2
+) and < 1 μatm for air
+p
+CO
+2
+. The MAPCO
+2
+maintains this level of uncertainty for over 400 days of autonomous operation. MAPCO
+2
+measurements are consistent with shipboard seawater
+p
+CO
+2
+measurements and GLOBALVIEW-CO2 boundary layer atmospheric values. Here we provide an open-ocean MAPCO
+2
+data set including over 100 000 individual atmospheric and seawater
+p
+CO
+2
+measurements on 14 surface buoys from 2004 through 2011 and a description of the methods and data quality control involved. The climate-quality data provided by the MAPCO
+2
+have allowed for the establishment of open-ocean observatories to track surface ocean
+p
+CO
+2
+changes around the globe. Data are available at
+doi:10.3334/CDIAC/OTG.TSM_NDP092
+and
+http://cdiac.ornl.gov/oceans/Moorings/ndp092
+.
+Download & links
+Article (PDF, 1721 KB)
+Download & links
+Article
+(1721 KB)
+Metadata XML
+BibTeX
+EndNote
+Share
+How to cite.
+Sutton, A. J., Sabine, C. L., Maenner-Jones, S., Lawrence-Slavas, N., Meinig, C., Feely, R. A., Mathis, J. T., Musielewicz, S., Bott, R., McLain, P. D., Fought, H. J., and Kozyr, A.: A high-frequency atmospheric and seawater
+p
+CO
+2
+data set from 14 open-ocean sites using a moored autonomous system, Earth Syst. Sci. Data, 6, 353–366, https://doi.org/10.5194/essd-6-353-2014, 2014.
+Received: 06 May 2014
+–
+Discussion started: 26 May 2014
+–
+Revised: 01 Oct 2014
+–
+Accepted: 03 Oct 2014
+–
+Published: 06 Nov 2014
+Download
+Article
+(1721 KB)
+Metadata XML
+BibTeX
+EndNote
+Short summary
+In an effort to track ocean change, sustained ocean observations are becoming increasingly important. Advancements in the ocean carbon observation network over the last decade have dramatically improved our ability to understand how rising atmospheric CO2 and climate change affect the chemistry of the oceans and their marine ecosystems. Here we describe one of those advancements, the MAPCO2 system, and the climate-quality data produced from 14 ocean CO2 observatories.
+In an effort to track ocean change, sustained ocean observations are becoming increasingly...
+Read more
+Share
+Altmetrics
+Final-revised paper
+Preprint
+Earth System Science Data
+The data publishing journal
+All site content, except where otherwise noted, is licensed under the
+Creative Commons Attribution 4.0 License
+.
+Contact
+|
+Imprint
+|
+Data protection

@@ -1,0 +1,803 @@
+                                                                                                             Application Report
+                                                                                     SLVA652A – April 2014 – Revised September 2018
+
+
+                                                                                  Basics of Load Switches
+
+Benjamin Mak ............................................................................................. Drivers and Load Switches
+
+                                                                  ABSTRACT
+       Integrated load switches are electronic switches that can be used to turn on and turn off power supply rails
+       in systems, similar to a relay or a discrete FET. Load switches offer many other benefits to the system
+       some including protection features that are often difficult to implement with discrete components. There
+       are many different applications where load switches are implemented including, but not limited to:
+
+       •   Power Distribution
+       •   Power Sequencing and Power State Transition
+       •   Reduced Leakage Current in Standby Mode
+       •   Inrush Current Control
+       •   Controlled Power down
+       This application note will provide the fundamental basics of what load switches are, when they should be
+       used, and how they can be implemented in a system.
+       For additional technical support and product information, please visit Load Switches
+       .
+
+
+                                                                    Contents
+       1       What Are Load Switches? .................................................................................................. 2
+               1.1    General Load Switch Block Diagram ............................................................................. 2
+               1.2    Datasheet Parameters ............................................................................................. 3
+       2       Why Do You Need Load Switches ........................................................................................ 3
+               2.1    Power Distribution .................................................................................................. 3
+               2.2    Power Sequencing and Power State Transition ................................................................ 4
+               2.3    Reduced Leakage Current......................................................................................... 5
+               2.4    Inrush Current Control ............................................................................................. 5
+               2.5    Controlled Power Down ............................................................................................ 6
+               2.6    Protection Features ................................................................................................. 6
+               2.7    Lower BOM Count and PCB Area ................................................................................ 7
+       3       Part Selection and Design Considerations ............................................................................... 7
+               3.1    NMOS vs PMOS .................................................................................................... 7
+               3.2    ON-State Resistance (RON) ........................................................................................ 8
+               3.3    Voltage (VIN) and Current (IMAX) Rating ........................................................................... 8
+               3.4    Shutdown Current (ISD) and Quiescent Current (IQ) ............................................................ 8
+               3.5    Rise Time (tR) ........................................................................................................ 8
+               3.6    Quick Output Discharge (QOD) ................................................................................... 8
+               3.7    Package Size ........................................................................................................ 9
+               3.8    Input and Output Capacitance .................................................................................... 9
+       4       Basic Calculations ........................................................................................................... 9
+               4.1    Voltage Drop ........................................................................................................ 9
+               4.2    Inrush Current ....................................................................................................... 9
+               4.3    Power Dissipation ................................................................................................... 9
+               4.4    Thermal Considerations .......................................................................................... 10
+       5       Design Examples and Application Examples ........................................................................... 10
+
+SLVA652A – April 2014 – Revised September 2018          Load Switches: What Are They, Why Do You Need Them And How Do You                    1
+Submit Documentation Feedback                                                                        Choose The Right One?
+                                            Copyright © 2014–2018, Texas Instruments Incorporated
+What Are Load Switches?                                                                                                            www.ti.com
+
+             5.1    RON and Inrush Current Calculations ............................................................................         10
+             5.2    Standby Power Savings ..........................................................................................         11
+             5.3    Power Sequencing without Processor Intervention ...........................................................              11
+             5.4    2-to-1 Power Mux .................................................................................................       12
+      6      Conclusion ..................................................................................................................   12
+      7      References .................................................................................................................    13
+
+
+1     What Are Load Switches?
+      Integrated load switches are integrated electronic switches used to turn on and turn off power rails. Basic
+      load switches consist of four pins: input voltage, output voltage, enable and ground. When the device is
+      enabled via the ON pin, the pass FET turns on, thereby allowing current to flow from the input pin to the
+      output pin, and power is passed to the downstream circuitry.
+
+                                                     VIN                                       VOUT
+
+
+                              CIN                                                                           RL            CL
+                                          ON
+                                                      ON                                       GND
+                                    OFF
+
+
+
+                                        Figure 1. General Load Switch Circuit Diagram
+
+
+1.1   General Load Switch Block Diagram
+      An understanding of what the architecture of a load switch looks like will be helpful in determining the
+      specifications of a load switch. Shown in Figure 2 is a block diagram of a basic load switch, which is made
+      up of five basic blocks. Additional blocks can be included to add functionality to the load switch.
+
+                    VIN
+                                                                                              6 Reverse
+                                                                 4 Charge                      Current
+                                                                                              Protection*
+                                                                      Pump*
+
+
+                                    3                            2                                     1
+                    ON                                               Driver                        Pass
+                                    Control Logic
+                                                                                                   FET
+
+
+
+                                                                              6
+                                                                                  Current
+                                                                                  Limiting*
+                                    6
+                                      Thermal                                                                     VOUT
+                                     Shutdown*
+
+                                                                              5
+
+
+                                                                                  Quick Output
+                                                                                   Discharge*
+
+                                                                                                                    GND
+
+                           *Not present on all load switches
+
+                                     Figure 2. Block Diagram of General Load Switch
+
+
+2     Load Switches: What Are They, Why Do You Need Them And How Do You                          SLVA652A – April 2014 – Revised September 2018
+      Choose The Right One?                                                                                     Submit Documentation Feedback
+                                               Copyright © 2014–2018, Texas Instruments Incorporated
+www.ti.com                                                                                           What Are Load Switches?
+
+       1. The pass FET is the main component of the load switch, which determines the maximum input voltage
+          and maximum load current the load switch can handle. The on-resistance of the load switch is a
+          characteristic of the pass FET and will be used in calculating the power dissipated by the load switch.
+          The pass FET can be either an N-channel or P-channel FET, which will determine the architecture of
+          the load switch.
+       2. The gate driver charges and discharges the gate of the FET in a controlled manner, thereby controlling
+          the rise time of the device.
+       3. The control logic is driven by an external logic signal. It controls the turn-on and turn-off of the pass
+          FET and other blocks, such as quick output discharge, the charge pump, and blocks with protection
+          features. This external logic signal is commonly connected directly to an external microcontroller.
+       4. The charge pump is not included in all load switches. This is used in load switches with an N-channel
+          FET, since a positive differential voltage between the gate and the source (VOUT) is needed in order
+          to turn on the FET properly.
+       5. Quick output discharge is an on-chip resistor from VOUT to GND that is turned on when the device is
+          disabled via the ON pin. This will discharge the output node, preventing the output from floating. For
+          the devices with quick output discharge, this feature is only present when VIN and VBIAS are within
+          the operating range.
+       6. Additional features are included in different load switches. These include, but are not limited to, thermal
+          shutdown, current limiting, and reverse current protection.
+
+1.2    Datasheet Parameters
+       Below is a list of common datasheet parameters and definitions for load switches.
+
+             •   Input voltage range (VIN) – This is the range of input voltages that the load switch can support.
+             •   Bias voltage range (VBIAS) – This is the range of bias voltages that the load switch can support. This
+                 may be required to power the internal blocks of the load switch, depending on the architecture of
+                 the load switch.
+             •   Maximum continuous current (IMAX) – This is the maximum continuous DC current the load switch
+                 can support. System thermal performance plays a key role in determining the maximum continuous
+                 DC current in a system.
+             •   ON-state resistance (RON) – This is the resistance measured from the VIN pin to the VOUT pin,
+                 which takes into consideration the resistance of the packaging and the internal pass FET.
+             •   Quiescent Current (IQ) – This is the required amount of current to power the internal blocks of the
+                 device, which is measured as the current flowing into the VIN pin without any load on VOUT.
+             •   Shutdown Current (ISD) – This is the amount of current flowing into VIN when the device is disabled.
+             •   ON pin input leakage current (ION) – This is the amount of current that is flowing into the ON pin
+                 when the ON pin has a high voltage applied to it.
+             •   Pull-down resistance (RPD) – This is the value of the pull-down resistor from VOUT to GND when
+                 the device is disabled.
+
+2      Why Do You Need Load Switches
+       This section will provide a general overview of some applications where using a load switch is beneficial.
+
+2.1    Power Distribution
+       Many systems have limited control of sub-systems power distribution. As iillustrated in Figure 3, load
+       switches can be used to turn on and off sub-systems of the same input voltage instead of using multiple
+       DC/DC converters or LDO’s. By using a load switch, power can be distributed across different loads with
+       control for each individual load.
+
+
+
+
+SLVA652A – April 2014 – Revised September 2018        Load Switches: What Are They, Why Do You Need Them And How Do You    3
+Submit Documentation Feedback                                                                      Choose The Right One?
+                                          Copyright © 2014–2018, Texas Instruments Incorporated
+Why Do You Need Load Switches                                                                                            www.ti.com
+
+
+
+                                                                                               Load
+
+
+
+
+                           Power Supply                                                        Load
+                                                           Load Switch
+
+
+
+                                                                                               Load
+                                                          Load Switch
+
+
+
+                                  Figure 3. Power Distribution Block Diagram
+
+
+2.2   Power Sequencing and Power State Transition
+      In some systems, especially those with a processor, there is a strict power-up sequence that must be
+      followed. By using a GPIO or I2C interface, load switches are a simple solution to implement power
+      sequencing to meet the power-up requirements. Load switches can provide independent control of each
+      power path to provide simplified point-of-load control for power sequencing, as shown in Figure 4.
+
+
+                                                                                               Load 1
+
+
+
+
+                           Power Supply                                                        Load 2
+                                                           Load Switch
+
+
+
+                                                                                               Load 3
+                                                          Load Switch
+
+
+
+
+                                   VSupply
+
+
+
+                                    VLoad 1
+
+
+                                    VLoad 2
+
+
+                                    VLoad 3
+
+
+
+                                                                 Time
+                               Figure 4. Power Sequencing with Load Switches
+
+
+
+
+4     Load Switches: What Are They, Why Do You Need Them And How Do You                SLVA652A – April 2014 – Revised September 2018
+      Choose The Right One?                                                                           Submit Documentation Feedback
+                                       Copyright © 2014–2018, Texas Instruments Incorporated
+www.ti.com                                                                                                                 Why Do You Need Load Switches
+
+2.3    Reduced Leakage Current
+       In many designs, there are sub-systems that are only used during certain modes of operation. Load
+       switches can be used to limit the amount of leakage current and power consumption by turning off power
+       to these sub-systems. Figure 5 shows a comparison of the leakage current with and without a load switch.
+       Refer to the Input and Output Capacitance section for more details.
+                                                                                         Current 1
+
+
+                                     Power Supply                                                                   Load
+
+
+
+
+                                                                             Current 2
+
+
+                                     Power Supply                                                                   Load
+                                                                                          Load Switch
+
+
+
+
+                                                                         ISUPPLY
+                                       Input Supply Current
+
+
+
+
+                                                                                         Time
+
+                  Figure 5. Comparison of Leakage Current with and without the Load Switch
+
+       In some applications, the circuitry such as DC/DC converters, LDOs, and modules can be disabled and
+       put into standby mode. However, the leakage current of these modules can be relatively high, even in the
+       shutdown state. By placing a load switch before the load, as shown above, the leakage can be reduced to
+       significantly lower levels. Thus, power consumption can be reduced significantly with a load switch placed
+       in the power path.
+
+2.4    Inrush Current Control
+       When turning on a sub-system without any slew rate control, the input rail may sag because of the inrush
+       current that can happen from quickly charging a load capacitor. This can be problematic as this rail may
+       be supplying power to other sub-systems (Figure 6). Load switches solve this issue by controlling the rise
+       time of the output voltage, thereby eliminating the sag on the input voltage (Figure 7). The inrush current
+       is proportional to the load capacitance as will be explained later in the Section 4.2 section.
+
+                                                               Vsupply                          Supply Dip
+                                                                                                 Inrush Current
+
+                                                               ILoad
+
+                                                               VLoad                            Voltage Droop
+
+                                 Figure 6. Inrush Current Causing Power Supply Dip
+
+
+                                                               Vsupply
+
+                                                                ILoad
+
+                                                               VLoad                            Slew Rate Control
+
+                                     Figure 7. Slew Rate Control with Load Switch
+
+
+SLVA652A – April 2014 – Revised September 2018                                     Load Switches: What Are They, Why Do You Need Them And How Do You    5
+Submit Documentation Feedback                                                                                                   Choose The Right One?
+                                                              Copyright © 2014–2018, Texas Instruments Incorporated
+Why Do You Need Load Switches                                                                                                        www.ti.com
+
+2.5   Controlled Power Down
+      When a DC/DC converter or LDO without quick output discharge turns off, the load voltage is left floating
+      and power down timing is dictated by the load, as shown in Figure 8. This can cause unwanted activity as
+      modules downstream are not powered down to a defined state.
+
+
+
+                                                  DC/DC or LDO                        Load
+
+
+
+
+                                       Voltage
+
+                                                                          Uncontrolled power down
+
+
+
+                                                                                         Supply Voltage
+                                                                  Time
+
+                          Figure 8. Uncontrolled Power Down without Load Switch
+
+
+      Using a load switch with quick output discharge can mitigate these problems. The load will be powered
+      down quickly in a controlled manner and will be reset to a known good state for the next power up, as
+      shown in Figure 9. This will eliminate any floating voltages at the input of the load and ensure that the load
+      remains in a defined power state at all times.Refer to the Quick Output Discharge (QOD) section for more
+      details.
+
+                                                                 Load Switch
+
+
+                                  Power Supply                                                      Load
+
+
+
+
+                                                                           Controlled power down
+                                                                            due to quick output
+                                    Voltage
+
+
+
+
+                                                                                 discharge
+
+
+                                                                                          Supply Voltage
+                                                                                          Load Voltage
+                                                                 Time
+
+                              Figure 9. Controlled Power Down with Load Switch
+
+
+
+2.6   Protection Features
+      Certain applications may require fault protection features to be integrated into the load switch. Some load
+      switches include integrated features such as reverse current protection, ON pin hysteresis, current limiting,
+      undervoltage lock-out and over temperature protection. Instead of implementing these complex circuits
+      through discrete components, using an integrated load switch reduces BOM count, solution size, and
+      development time. The list below briefly explains what some of these features can be:
+      •   Reverse current protection will stop current from flowing from the VOUT pin to the VIN pin. In the
+          absence of this feature, current may flow from the VOUT pin to the VIN pin!~, if the voltage on VOUT
+          is greater than VIN by a diode drop. Thus, reverse current blocking may be beneficial in certain
+          applications, such as in a power mux application where current should not flow from VOUT to VIN.
+          There are many different methods of implementing reverse current protection. In some situations, such
+          as the TPS22916, the device will monitor the voltage levels at the VIN pin and VOUT pin. When this
+          differential voltage exceeds a certain threshold, the switch is disabled and the body diode is
+          disengaged to prevent any reverse current flow to VIN. Some devices, such as the TPS22963C, only
+
+6     Load Switches: What Are They, Why Do You Need Them And How Do You                            SLVA652A – April 2014 – Revised September 2018
+      Choose The Right One?                                                                                       Submit Documentation Feedback
+                                              Copyright © 2014–2018, Texas Instruments Incorporated
+www.ti.com                                                                                         Why Do You Need Load Switches
+
+             have reverse current protection when the device is disabled.
+       •     ON pin hysteresis allows for more robust GPIO enable. With a voltage difference between a logic level
+             high and logic level low on the ON pin, the control circuitry will operate as intended when there is noise
+             on the GPIO line. Figure 10 illustrates how ON pin hysteresis can provide robustness on the GPIO
+             enable line.
+       •     Current limiting is a feature that will limit the amount of current the load switch will output. This will
+             ensure that there is not an excessive amount of current being pulled by an external circuitry. If current
+             is not limited, the external circuitry can potentially bring the main system down. In the current limited
+             mode, load switch works as a constant current until the switch current falls below the current limit.
+       •     Undervoltage lock-out (UVLO) is used to turn off the device if the VIN voltage drops below a threshold
+             value, ensuring that the downstream circuitry is not damaged by being supplied by a voltage lower
+             than intended.
+       •     Over temperature protection disables the switch if the temperature of the device exceeds a threshold
+             temperature. With this feature, the device can operate as a safety switch that turns off when a high
+             temperature is detected.
+
+
+                              VON
+                                                                           Noise on ON pin
+
+                              VOUT without
+                              ON Pin Hysteresis
+                                                                      Erratic Behavior on Output
+
+
+                              VOUT with
+                                                                Output is immune to noise
+                              ON Pin Hysteresis
+
+
+                                                                 Time
+                                                 Figure 10. ON Pin Hysteresis
+
+
+2.7    Lower BOM Count and PCB Area
+       Using an integrated load switch can lower the BOM count of a system. If there are discrete FETs that are
+       used in conjunction with other components, a load switch could be considered to reduce the number of
+       total components in the system. When a load switch is created discretely, there are many resistors,
+       capacitors and transistors that will be required to implement a gate driver, control logic, output discharge
+       and protection features. With an integrated load switch, this is all accomplished with only a single device
+       and the BOM count is significantly reduced.
+
+3      Part Selection and Design Considerations
+       This section will look at the specifications that need to be kept in mind in choosing a load switch.
+
+3.1    NMOS vs PMOS
+       In an NMOS device, the pass FET is turned on by bringing the gate voltage above the source. Usually, the
+       source voltage is at the same potential as the VIN terminal. In order to create this voltage differential
+       between the gate and the source, a charge pump is required. Using a charge pump will increase the
+       quiescent current of the device.
+       In a PMOS device, the pass FET is turned on by bringing the gate voltage below the source voltage. The
+       architecture of a PMOS device does not require a charge pump, resulting in a lower quiescent current
+       when compared to a NMOS device.
+       One major difference between a PMOS based architecture and NMOS based architecture is that PMOS
+       based load switches do not perform well at lower voltages, while NMOS devices are good for lower VIN
+       applications.
+
+
+
+SLVA652A – April 2014 – Revised September 2018        Load Switches: What Are They, Why Do You Need Them And How Do You        7
+Submit Documentation Feedback                                                                      Choose The Right One?
+                                          Copyright © 2014–2018, Texas Instruments Incorporated
+Part Selection and Design Considerations                                                                                 www.ti.com
+
+3.2    ON-State Resistance (RON)
+       ON-state resistance (RON) is a particularly important specification, as this determines the voltage drop
+       across the load switch and power dissipation of the load switch. The larger the RON, the larger the voltage
+       drop across the load switch will be and the higher the power dissipation. Refer to Section 4 for
+       calculations on how to determine the voltage drop and power dissipation.
+
+3.3    Voltage (VIN) and Current (IMAX) Rating
+       One of the key considerations in selecting a load switch is the voltage and current required for the
+       application. The load switch must be able to support the DC voltage and current that is expected during
+       steady state operation, as well as the transient voltages and peak currents. It is important to note that
+       some load switches require a bias voltage to turn on the device and bias the internal circuitry. This bias
+       voltage is independent from the input voltage.
+
+3.4    Shutdown Current (ISD) and Quiescent Current (IQ)
+       Quiescent current is the current that the load switch consumes when the load switch is ON. Quiescent
+       current, in addition to the I2R losses, will determine the amount of power that is consumed by the load
+       switch when it is powered on. If the load currents are large enough, the power consumed due to quiescent
+       current is negligible.
+       Shutdown current determines the amount of power the load switch consumes when it is disabled via the
+       ON pin. By using a load switch to power down subsystems, there can be a significant decrease in the
+       standby power of a power rail. Refer to Section 5.2 for an example of how this may be an important
+       specification.
+
+3.5    Rise Time (tR)
+       Rise time varies from device to device. The rise time may need to be shorter or longer depending on the
+       application. In addition to this, inrush current is inversely proportional to rise time. Knowing what inrush
+       current is acceptable for the system can be beneficial. Refer to Section 4.2 for more details.
+
+
+3.6    Quick Output Discharge (QOD)
+       Some load switches have an internal resistor that will pull the output to ground when the switch is turned
+       off, preventing it from floating. For the quick output discharge feature to function, the voltage on the input
+       voltage pins need within the operating range.
+       There are many benefits to having the quick output discharge, such as:
+
+          •   The output is not left floating and is always in a determined state.
+          •   Downstream modules are always turned off completely.
+       However, there are applications where quick output discharge would not be beneficial.
+
+          •  If the output of the load switch was connected to a battery, quick output discharge would cause the
+             battery to drain when the load switch is disabled via the ON pin.
+          • If two load switches are being used as a 2 input, 1 output multiplexer – where the outputs are tied
+             together – the load switches cannot have quick output discharge. Otherwise, power would be
+             constantly wasted through the quick output discharge, as current will be flowing through the internal
+             resistor to ground whenever the load switch is disabled via the ON pin.
+          Load switches can offer the quick output discharge feature in either of these categories:
+          • Fixed quick output discharge. Devices with a fixed quick output discharge feature an internal, fixed
+             resistor
+          • Adjustable quick output discharge. Devices such as TPS22918 have a dedicated pin that allows
+             adjusting the discharge rate externally.
+          • No quick output discharge at all.
+
+
+
+8      Load Switches: What Are They, Why Do You Need Them And How Do You               SLVA652A – April 2014 – Revised September 2018
+       Choose The Right One?                                                                          Submit Documentation Feedback
+                                       Copyright © 2014–2018, Texas Instruments Incorporated
+www.ti.com                                                                                   Part Selection and Design Considerations
+
+3.7    Package Size
+       Integrated load switch come in all different shapes and sizes. Depending on the application, board space
+       could be limited. In space constrained systems, it may be necessary to choose a smaller package size.
+       For example, it may be undesirable to use 0.4 mm pitch devices. Thus, package size should be taken into
+       consideration when deciding which device to choose.
+
+3.8    Input and Output Capacitance
+       In load switch applications, input capacitors should be placed to limit the amount of voltage drop on the
+       input supply caused by the transient inrush currents into the discharged load capacitors. A 1-µF capacitor
+       between VIN and GND placed near the VIN terminal (CIN) is highly recommended. Higher values of
+       capacitance will reduce the voltage drop during high-current applications. While this is highly
+       recommended, it is not necessary for the load switch to operate.
+       The total output capacitance (CL) between VOUT and GND may cause the voltage on VOUT to exceed
+       the voltage on VIN when the supply is removed, which may result in current flow from VOUT to VIN
+       through the body diode in the pass FET for devices without reverse current protection. It is recommended,
+       but not required, to maintain a 10 to 1 ratio between the input capacitor and the load capacitance to
+       prevent this.
+
+4      Basic Calculations
+       This section has calculations that can be used to determine the specifications required for the load switch.
+
+4.1    Voltage Drop
+       To determine an appropriate device for an application, it is necessary to understand how much voltage
+       drop across the load switch is acceptable. The lower the acceptable drop, the lower the RON of the load
+       switch must be. Use Equation 1 to determine the VIN to VOUT voltage drop:
+                        DVmax
+            RON, max =
+                        ILOAD                                                                                  (1)
+       Where:
+         ∆Vmax = maximum voltage drop from VIN to VOUT
+         ILOAD = load current
+         RON, max = maximum on-resistance of the device for a given VIN
+
+4.2    Inrush Current
+       To determine how much inrush current will be caused by the CL capacitor, use Equation 2:
+                          dV
+            IINRUSH = CL ´ OUT
+                            dt                                                                                                    (2)
+       Where:
+         IINRUSH = amount of inrush current caused by CL
+         CL = total capacitance on VOUT
+         dVOUT = change in voltage of VOUT when the device is enabled
+         dt = the time it takes for VOUT voltage to change by dVOUT
+       The value of the inrush current is determined by the total capacitance on VOUT and the rate of change of
+       the VOUT voltage. Thus, it is important to ensure that the rise time of the load switch is chosen such that
+       the device to exceed the maximum specifications – specifically IPLS – upon startup as indicated in the
+       datasheet. Some devices have a separate CT pin, which allows the rise time to be programmed with an
+       external capacitor from the CT pin to GND.
+
+4.3    Power Dissipation
+       The input voltage and load current is necessary to calculate the power dissipated in the load switch. Use
+       Equation 3 to determine the power dissipation of the load switch:
+
+
+SLVA652A – April 2014 – Revised September 2018        Load Switches: What Are They, Why Do You Need Them And How Do You            9
+Submit Documentation Feedback                                                                      Choose The Right One?
+                                          Copyright © 2014–2018, Texas Instruments Incorporated
+Basic Calculations                                                                                                        www.ti.com
+
+                              2
+             PD = VIN ´ IQ + ILOAD ´ RON                                                                                           (3)
+       Where:
+         VIN = input voltage
+         IQ = quiescent current of the load switch
+         ILOAD = load current of the load switch
+         RON = ON-resistance of the load switch
+       For large load currents, it is possible to ignore the IQ of the device, since the product of VIN and IQ may be
+       negligible when compared to the losses due to RON.
+
+4.4    Thermal Considerations
+       The maximum IC junction temperature should be restricted to the maximum junction temperature as
+       indicated on the absolute maximum table under normal operating conditions. To calculate the maximum
+       allowable power dissipation, PD(max) for a given output current and ambient temperature, use Equation 4:
+                      TJ(max) - TA
+            PD(max) =
+                          qJA                                                                               (4)
+       Where:
+         PD(max) = maximum allowable power dissipation
+         TJ(max) = maximum allowable junction temperature
+         TA = ambient temperature of the device
+         θJA = junction to air thermal impedance. This parameter is highly dependent upon board layout.
+
+5      Design Examples and Application Examples
+       This section will discuss several examples that utilize the equations that were discussed in the previous
+       section and present a few configurations of how a load switch can be used in a system.
+
+5.1    RON and Inrush Current Calculations
+       Listed below are the system specifications for this example:
+
+
+
+
+                            Power Supply                                                       Load
+                                                          Load Switch
+
+
+
+
+                                    Design Parameter                        Example Value
+                                            VIN                                   5.0 V
+                                           ILOAD                                 500 mA
+                                       Max IINRUSH                                 1A
+                                           ΔVMAX                                  0.3 V
+                                            CL                                    20 µF
+                                            PD                                  150 mW
+
+
+       With this system information, the formulas listed above can be used to develop specifications for a load
+       switch.
+                       DVmax 0.3 V
+            RON, max =        =        = 600 mW
+                        ILOAD    0.5 A                                                                          (5)
+       Thus, a device with an RON of 600 mΩ maximum can be chosen.
+
+
+
+10     Load Switches: What Are They, Why Do You Need Them And How Do You                SLVA652A – April 2014 – Revised September 2018
+       Choose The Right One?                                                                           Submit Documentation Feedback
+                                       Copyright © 2014–2018, Texas Instruments Incorporated
+www.ti.com                                                                                Design Examples and Application Examples
+
+       Conversely, the RON constraint may be driven by a power dissipation budget. If, for example, it is
+       determined that the maximum power dissipation of the load switch can be 150 mW, the maximum RON,max
+       can be estimated by:
+               DVmax 2    0.3V 2
+                       =         = 600mW
+                 PD      150mW                                                                                                 (6)
+       Next, the minimum rise time for a given load capacitance of 20 µF can be determined.
+                            dV
+            IINRUSH = CL ´ OUT
+                              dt                                                                                               (7)
+                 dVOUT ´ CL 5V ´ 20µF
+            dt =               =            = 100μs
+                    IINRUSH        1A                                                                                          (8)
+       Since CL and IINRUSH are system level constraints, it is easy to calculate the rise time of the load switch.
+       Based on that, the rise time of the load switch can be calculated. A particular load switch can easily be
+       narrowed down at Load Switches, since the load switches can be sorted by rise time.
+
+5.2    Standby Power Savings
+       For some battery operated systems, there is a power budget that must be met when operating in different
+       modes. This section will illustrate the potential power savings with a load switch in the power path.
+       Some modules, such as LCD displays, power amplifiers, GPS modules, and processors, can have several
+       mA or more of leakage current in their standby mode, but using a load switch can reduce this current to
+       µA’s. For example, there is a 5 V rail with a downstream module that has 1 mA of leakage current, the
+       power dissipated by this rail with the downstream module disabled is:
+             5 V × 1 mA = 5 mW
+       With a load switch in the system, the path that the leakage current is shunted to ground through the load
+       switch and can be reduced to less than 1 µA. Thus, the power dissipated by this rail now becomes:
+             5 V × 1 µA = 5 µW
+       Thus, using a load switch will result in power savings by a factor of 1000. As the number of rails increase,
+       placing additional load switches to reduce the power consumption of standby rails that have excessive
+       leakage current can result in significant power savings.
+
+5.3    Power Sequencing without Processor Intervention
+       In the configuration shown in Figure 11, the load switches are arranged such that there is power-up
+       sequencing without any processor intervention. In the diagram shown below, when the µC GPIO turns on
+       the load switch, it will provide power to load 1. Once the voltage rail of load 1 has exceeded the VIH level
+       of the second load switch, the second load switch will turn on. While the diagram below only shows one
+       additional load switch is being enabled, this can be expanded to allow for one GPIO line to sequence
+       many load switches. For more information, consider looking at Power Sequencing Reference Design using
+       Load Switches.
+
+
+
+
+SLVA652A – April 2014 – Revised September 2018        Load Switches: What Are They, Why Do You Need Them And How Do You         11
+Submit Documentation Feedback                                                                      Choose The Right One?
+                                          Copyright © 2014–2018, Texas Instruments Incorporated
+Design Examples and Application Examples                                                                                   www.ti.com
+
+
+
+                             Power Supply               VIN           VOUT
+                                                           Load Switch                           Load 1
+                                                        ON            GND
+
+
+                               µC GPIO
+
+
+
+
+                             Power Supply                      VIN           VOUT                Load 2
+                                                                  Load Switch
+                                                               ON            GND
+
+
+
+
+                        Figure 11. Power Sequencing without Processor Intervention
+
+
+5.4   2-to-1 Power Mux
+      In the following configuration (Figure 12), two active-low load switches with reverse current protection can
+      be configured to multiplex two supplies to one load. Active-low load switches are devices that turn on
+      when the ON pin is pulled low. As shown in the following figure, this configuration gives priority to Power
+      Supply 1. Whenever Power Supply 1 has a voltage applied, the load switch on the bottom gets disabled
+      due to the resistor divider. The load switch connected to Power Supply 1 is kept on, but reverse current
+      protection will prevent current from flowing from VOUT to VIN. Without external resistors, a microcontroller
+      GPIO can drive the individual ON pins of the load switches. For more information, consider reading Power
+      Multiplexing Using Load Switches and eFuses.
+
+
+
+
+                        Power Supply 1                   VIN           VOUT
+                                                            Load Switch
+                                                         ON            GND
+
+
+
+
+                                                                                                      Load
+
+
+
+                        Power Supply 2                   VIN           VOUT
+                                                            Load Switch
+                                                         ON            GND
+
+
+
+
+                                    Figure 12. 2-to-1 Power Mux Configuration
+
+
+6     Conclusion
+      Integrated load switches are an effective solution for achieving power sequencing, power distribution,
+      controlled rise time, lower standby power, lower BOM count, and smaller PCB area. As shown in this
+      application note, a load switch from the TPS229xx and TPS2281x family can be easily integrated into any
+      system with a few simple calculations to lower power consumption and simplify power supply design.
+
+
+
+
+12    Load Switches: What Are They, Why Do You Need Them And How Do You                  SLVA652A – April 2014 – Revised September 2018
+      Choose The Right One?                                                                             Submit Documentation Feedback
+                                         Copyright © 2014–2018, Texas Instruments Incorporated
+www.ti.com                                                                                                          References
+
+7      References
+       For more details on any of the concepts described in this document, refer to the following documents:
+
+       1. Integrated Load Switches versus Discrete MOSFETs (SLVA716)
+       2. Managing Inrush Current (SLVUA74)
+       3. Load Switch Thermal Considerations (SLVUA74)
+       4. Quiescent Current vs Shutdown Current for Load Switch Power Consumption (SLVA757)
+       5. Reverse Current Protection in Load Switches (SLVA730)
+       6. Fundamentals of On-Resistance in Load Switches (SLVA771)
+       7. Timing of Load Switches (SLVA883)
+       8. Power Multiplexing Using Load Switches and eFuses (SLVA811)
+       For additional information, refer to Load Switches.
+
+
+
+
+SLVA652A – April 2014 – Revised September 2018        Load Switches: What Are They, Why Do You Need Them And How Do You     13
+Submit Documentation Feedback                                                                      Choose The Right One?
+                                          Copyright © 2014–2018, Texas Instruments Incorporated
+                                                 IMPORTANT NOTICE AND DISCLAIMER
+
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATASHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, or other requirements. These resources are subject to change without notice. TI grants you
+permission to use these resources only for development of an application that uses the TI products described in the resource. Other
+reproduction and display of these resources is prohibited. No license is granted to any other TI intellectual property right or to any third
+party intellectual property right. TI disclaims responsibility for, and you will fully indemnify TI and its representatives against, any claims,
+damages, costs, losses, and liabilities arising out of your use of these resources.
+TI’s products are provided subject to TI’s Terms of Sale (www.ti.com/legal/termsofsale.html) or other applicable terms available either on
+ti.com or provided in conjunction with such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable
+warranties or warranty disclaimers for TI products.
+
+
+                             Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+                                            Copyright © 2018, Texas Instruments Incorporated
+

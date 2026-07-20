@@ -1,0 +1,388 @@
+LI-850 | Specifications
+Skip To Main Content
+Account
+Settings
+Logout
+placeholder
+Account
+Settings
+Logout
+Filter:
+All Files
+Submit Search
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse
+Gas Monitoring
+Agricultural
+Best Practices
+Environmental
+Protection
+Soil, Atmosphere,
+& Ocean Studies
+Energy & Indoor
+Air Monitoring
+Water
+Monitoring
+RESOURCES
+Resource Center
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT
+Contact LI-COR
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse Gas & Emissions
+Monitoring
+Agricultural Best Practices
+Environmental Protection
+Soil, Atmosphere, & Ocean Studies
+Indoor Environmental Monitoring
+Water Resource Management
+RESOURCES
+All Resources
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT US
+​
+Contact Support
+Phone
+1-402-467-3576
+Toll Free:
+1-800-447-3576
+Email
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Contact Forms
+LI-COR Sales
+LI-COR Support
+LICORbio Support
+International
+Europe
+Distributors
+Address
+4647 Superior St.
+P.O. Box 4425
+Lincoln, NE USA
+68504-0425
+HOBO Data Loggers
+HOBO Sales
+HOBO Help Center
+HOBO Support
+Support:
+Application Note
+Tech Tip
+LI-830
+and
+LI-850
+Gas Analyzers
+What are you looking for?
+General Help
+Calibration Certificates
+Filter:
+Filter Results
+Submit Search
+Calibration information is available for light sensors, gas analyzers, photosynthesis systems, calibrated chambers, calibrated light sources, and plant canopy analyzers.
+Find
+View Certificate
+Contents:
+Specifications
+CO
+2
+measurements
+Measurement range:
+0 to 20,000 ppm
+Accuracy
+LI-850
+:
+Within 1.5% of reading
+LI-830
+:
+Within 3% of reading
+Calibration drift
+Zero drift
+1
+Zero drift is the change with temperature at 0 concentration.
+:
+<0.15 ppm / °C
+Span drift
+2
+Span drift is the residual error after re-zeroing following a temperature change.
+:
+<0.03% / °C
+Total drift at 370 ppm
+3
+Total drift is the change with temperature without re-zeroing or re-spanning.
+:
+<0.4 ppm / °C
+RMS noise at 370 ppm with 1 sec signal filtering:
+<1 ppm
+Sensitivity to water vapor (
+LI-850
+only):
+<0.1 ppm CO
+2
+/ mmol mol
+-1
+H
+2
+O
+Lower limit of detection:
+1.5 ppm
+H
+2
+O measurements (
+LI-850
+only)
+Measurement range:
+0 to 60 mmol mol
+-1
+Accuracy:
+Better than 1.5% of reading
+Calibration drift
+Drift at 0 mmol mol
+-1
+:
+<0.005 mmol mol
+-1
+/ °C
+Span drift at 10 mmol mol
+-1
+:
+<0.006 mmol mol
+-1
+/ °C
+Total drift at 10 mmol mol
+-1
+:
+<0.016 mmol mol
+-1
+/ °C
+RMS noise at 10 mmol mol
+-1
+with 1 sec signal filtering:
+<0.01 mmol mol
+-1
+Sensitivity to CO
+2
+:
+<0.0001 mmol mol
+-1
+H
+2
+O / ppm CO
+2
+Lower limit of detection:
+0.015 mmol mol
+-1
+General
+Output rate:
+Up to 2 measurements per second
+Response time (T90)
+CO
+2
+:
+<3.5 seconds from 0 to 375 ppm
+H
+2
+O (
+LI-850
+only):
+<3.5 seconds from 0 to 21 mmol mol
+-1
+Measurement principle:
+Non-Dispersive Infrared
+Traceability
+CO
+2
+:
+Traceable gases to WMO standards from 0 to 3,000 ppm; traceable gases to EPA protocol gases from 3,000 to 20,000 ppm
+H
+2
+O (
+LI-850
+only):
+NIST traceable
+LI-610
+Portable Dew Point Generator
+Pressure compensation range:
+50 to 110 kPa
+Maximum gas flow rate:
+1 liter min
+-1
+Output signals:
+Two analog voltage (0 to 2.5 V or 0 to 5 V) and two current (4 to 20 mA)
+Digital outputs:
+TTL (0 to 5 V) or Open Collector
+DAC resolution:
+16 bits across user-specified range
+Power requirements
+Input voltage:
+12-30 VDC
+After warmup (without pump):
+0.33A @ 12 VDC (4.0 W) average
+After warmup (with pump):
+0.42A @ 12 VDC (5.0 W) average
+During warmup:
+1.2 A @ 12 VDC (14 W) maximum
+Operating temperature range:
+-20 to 45 °C
+Relative humidity range:
+0 to 95% RH, Non-condensing
+Dimensions:
+221 mm W × 146 mm D × 75 mm H
+Weight
+No pump, no display:
+1.0 kg
+No pump, with display:
+1.02 kg
+With pump, no display:
+1.3 kg
+With pump, with display:
+1.32 kg
+Internal optical cell volume:
+14.5 mL
+Pump specifications (optional)
+Operating temperature range:
+5 to 45 °C
+Storage temperature range:
+-20 to 60 °C
+Operating humidity range:
+0 to 80% RH
+Nominal flow rate:
+0.75 liters minute
+-1
+Power consumption:
+1 W (nominally)
+Expected life span:
+8,000 hrs in standard conditions with a normal load
+Display specifications (optional)
+Dimensions:
+67 mm corner-to-corner
+Resolution:
+400 × 200 px; monochrome
+Power consumption:
+<200 µW
+Displayed variables:
+CO
+2
+reading, H
+2
+O reading (
+LI-850
+only), optical bench temperature, and pressure.
+Dimensional drawings
+Figure B‑1
+. All models of the
+LI-830
+and
+LI-850
+cases have the same dimensions. All dimensions in mm unless indicated otherwise.
+Figure B‑2
+. Dimensions for the versions with no case. All dimensions in inches unless indicated otherwise.
+Serial cable pin assignments
+The image below shows the pin assignments for the 9-pin RS-232 serial connector.
+Serial communication parameters
+The
+LI-830
+and
+LI-850
+can communicate through a RS-232 serial port on the front of the instrument. You may need to set the communication parameters on your computer or your terminal emulator program. The RS-232 port is configured as Data Terminal Equipment (DTE) with no hardware handshaking. It is bi-directional, meaning information can be transferred both into and out of the instrument. The port is configured as follows:
+Baud Rate: 9600 bps
+Data Bits: 8
+Parity: None
+Stop Bits: 1
+Flow Control: None
+Specifications subject to change without notice.
+Share
+Copy Link
+Email
+Cite
+On this page:
+Specifications
+CO2 measurements
+H2O measurements (LI-850 only)
+General
+Pump specifications (optional)
+Display specifications (optional)
+Dimensional drawings
+Serial cable pin assignments
+Serial communication parameters
+Was this helpful?
+Yes
+No
+We're sorry about that.
+Want to tell us more?
+Contact technical support.
+Great!
+Thanks for taking the time to give us feedback.
+Join Our Newsletter
+SUBSCRIBE
+LI-COR
+4647 Superior Street
+PO Box 4425
+Lincoln, NE 68504
+United States
+Phone:
+1-402-467-3576
+Toll-Free:
+1-800-447-3576
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Fax:
+1-402-467-2819
+www.licor.com
+COMPANY
+About Us
+Careers
+Copyrights & Trademarks
+International Distributors
+Patents
+Press & Media
+CONNECT
+OUR
+BRANDS
+Looking for
+LI-COR
+Biotechnology?
+LI-COR
+Biotechnology
+is now
+©2026 LI-COR, Inc. |
+Privacy Policy
+|
+Terms of Use
+|
+Cookie Notice

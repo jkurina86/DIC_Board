@@ -1,0 +1,123 @@
+DATA SHEET
+LuminOx O2 Sensors
+Luminescence-based Optical Series
+     FEATURES
+•   Luminescence–based optical technology, NOT electrochemical
+•   Contains no hazardous materials; RoHS & REACH compliant
+•   Connects directly to a microcontroller without any additional
+    circuitry
+•   Factory calibrated
+•   High accuracy
+•   Maintenance freea
+
+
+
+        Housing                     Supply                           Operating                               Output                            Response
+                                    Voltage                           Temp                                   Digital                             Time
+
+
+
+
+     BENEFITS                                                                            OUTPUT VALUESb
+•   Low cost                                                                      Oxygen range (LOX-02)                                  0—25% O2
+                                                                                  Oxygen pressure range                                  0—300mbar ppO2
+•   Low power, long life due to non-depleting sensing principle
+                                                                                  Response time                                          T90 < 30s (typical)
+•   Compact footprint
+                                                                                  Accuracy
+                                                                                        ppO2                                             < 2% FS
+                                                                                        Temperature                                      Indication only
+    TECHNICAL SPECIFICATIONS
+                                                                                        Pressure (LOX-02)                                ±5mbar
+Supply voltage (Vs)          5VDC                                                       O2 (LOX-02)                                      Determined by ppO2 &
+                             (4.5VDC min. —5.5VDC max.)                                                                                  pressure accuracy
+Supply current (ls)          <7.5mA (streaming one                                Resolution
+                             sample per second),                                        ppO2                                             0.1mbar
+                             <20mA Peak                                                 Temperature                                      0.1°C
+Output Type                  3.3V TTL level UART (5V tolerant)                          Pressure (LOX-02)                                1mbar
+                                                                                        O2 (LOX-02)                                      0.01%
+Temperature
+      Operating:             +10°C to +45°C
+      Storage:               -30°C to +60°C
+                                                                                  Other sensor options available on request, email:
+Humidity                     0—99% Rh (non-condensing)
+                                                                                  technical@sstsensing.com
+Barometric pressure range
+               LOX-01        100—1400mbar                                                       Need help? Ask the expert
+               LOX-02        500—1200mbar
+                                                                                                 Tel: + 44 (0)1236 459 020
+                                                                                                  and ask for “Technical”
+
+
+                               a)    The sensor housing can be cleaned using a damp cloth. Do NOT immerse the sensor in any cleaning media.
+                               b)    At ambient conditions. All performance measurements are at STP unless otherwise stated. Following extreme temperature fluctuations,
+               NOTES
+                                     re-calibration may be required.
+     OUTLINE DRAWING
+All dimensions shown in mm. Tolerances = ±0.5mm.
+
+
+
+
+    Bottom View                  Side View                             Top View
+
+
+
+
+    ELECTRICAL INTERFACE
+
+
+
+                                        Pin                Designation
+                                         1                    Vs (+5V)
+                                         2                   GND (0V)                                   ORDER INFORMATION
+                                                         3.3V UART*                                 Generate your specific part number using the convention
+                                         3
+                                                        Sensor Transmit                             shown below. Use only the numbers that correspond to the
+                                                          3.3V UART*                          sensor
+                                         4
+                                                         Sensor Receive                       option you require — omit those you do not.
+                               * 5V tolerant.
+Connection: Four gold-plated pins (0.64mm2) on a 2.54mm grid
+for PCB mounting via sockets or hand soldering using no-clean                                                             L     O        X   -   X   X
+flux.
+Note: If hand soldering, recommended iron temperature is 370°C
+for < 3s per pin.
+Note: Do NOT put the sensor through a PCB washing process.
+                                                                                                                                                 Type
+Note: Always apply power to sensor pins 1 and 2 before
+attempting to communicate on pins 3 and 4.                                                                                                         01
+                                                                                                                                        Measures 0—300mbar ppO2
+The sensor should be treated as an electronic component and han-                                                                          and temperature (°C)
+dled using the correct ESD handling precautions.
+                                                                                                                                               02
+                                                                                                                                 Measures 0—300mbar ppO2, 0—
+                                                                                                                                25% O2, temperature (°C) and 500—
+                                                                                                                                  1200mbar barometric pressure
+SENSOR CONSTRUCTION
+
+
+     CAUTION                                                                                       INFORMATION
+ Do not exceed maximum ratings and ensure sensor(s) are operated in                         As customer applications are outside of SST Sensing Ltd.’s control, the
+ accordance with their requirements.                                                        information provided is given without legal responsibility. Customers should
+ Carefully follow all wiring instructions. Incorrect wiring can cause                       test under their own conditions to ensure that the equipment is suitable for
+ permanent damage to the device.                                                            their intended application.
+ Do NOT use chemical cleaning agents.
+                                                                                            For technical assistance or advice, please email:
+ Failure to comply with these instructions may result in product                            technical@sstsensing.com
+ damage.
+
+ These products must not be used in safety applications where
+ product failure could cause injury or risk to life
+
+
+ General Note: SST Sensing Ltd. reserves the right to make changes to product specifications without notice or liability.
+ All information is subject to SST Sensing Ltd.'s own data and considered accurate at time of going to print.
+
+
+
+DS-0030 REV 17          © 2022 SST SENSING LTD.
+
+                     5 HAGMILL CRESCENT, SHAW HEAD INDUSTRI AL ESTATE, COATBRIDG E, UK ML 5 4 NS
+               www.sstsen sing.com   | e: sa le s@ sstsen sing . com   |   t : + 44 ( 0 ) 1236 459020   |   f : + 44 ( 0) 1236 459026
+

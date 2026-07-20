@@ -1,0 +1,82 @@
+                                                                        seabird.com | sales@seabird.com | +1 425-643-9866
+
+
+
+
+SBE 5M
+MINI SUBMERSIBLE PUMP
+
+
+
+
+Overview
+The SBE 5M Mini Submersible Pump is a modular component
+used on several Sea-Bird CTD packages. The highly reliable
+pump flushes water through the conductivity cell at a constant
+rate, independent of the CTD’s motion, improving dynamic
+performance. The SBE 5M is standard on the SBE 19plus V2
+SeaCAT Profiler CTD, and is optional on the SBE 16plus V2 and
+16plus-IM V2 SeaCAT CT(D) Recorders. For applications requiring
+pumping through additional sensors (for example, a dissolved
+oxygen sensor), use the SBE 5T or 5P pump instead.
+The SBE 5M may also be suitable for custom applications.
+
+
+
+Features                                                                       Options
+• Centrifugal pump head.                                                       • Profiling (continuous duty) or moored
+                                                                                 (pulsed duty) applications.
+• Long-life, DC, ball-bearing motor.
+                                                                               • Plastic (600 m) or titanium (10,500 m) housing.
+• Pump impeller and electric drive motor coupled magnetically through
+  housing, providing high reliability by eliminating moving seals.             • XSG or wet-pluggable MCBH connector.
+
+• Motor speed and pumping rate remain constant over entire input
+  voltage range.
+• Motor drive electronics intrinsically protected against accidental
+  reversed polarity.
+• Depths to 600 or 10,500 m.
+• Five-year limited warranty.
+Field Specifications
+The specifications below represent the expected performance of the instrument when
+deployed in the field. Under controlled circumstances in a lab, we would expect the
+                                                                                                                                     SBE 5M
+instrument to outperform these specifications.                                                                                       MINI SUBMERSIBLE PUMP
+We have chosen to display field specifications to give our users a true measure of
+how Sea-Bird Scientific instruments perform in harsh environments and applications.
+It is critical to keep this in mind when comparing specifications with instruments
+from other manufacturers.
+
+
+ Performance
+                              Input voltage range 6 - 18 VDC
+                              Pulse Duration             Flow Volume            Electrical Charge*
+
+ 5M.xx1x                          0.5 sec                     14 mL               0.018 Amp-sec
+ (pulsed duty for                 1.0 sec                     27 mL               0.040 Amp-sec
+ moored instruments)
+                                   1.5 sec                   40 mL                0.062 Amp-sec
+                                  2.0 sec                     53 m                0.085 Amp-sec
+                              *Measured with 10 V input power.
+
+                              Input voltage range 9 - 18 VDC
+ 5M.xx2x                      Flow Rate 25 mL/s
+ (continuous duty for
+ profiling instruments)       Supply current 95 mA
+                              Note: Supply current is independent of operating voltage.
+
+ Mechanical
+ Plastic housing, 600 m       Weight in air 0.3 kg, in water 0.1 kg
+ Titanium housing, 10,500 m   Weight in air 0.4 kg, in water 0.3 kg
+
+
+
+
+                                                                                                                                                        SBE 5M.DS.53.May25
+
+
+
+
+                                      seabird.com | sales@seabird.com | +1 425-643-9866
+                                      Specifications subject to change without notice. ©2025 Sea-Bird Scientitic. All rights reserved.
+

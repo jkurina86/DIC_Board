@@ -1,0 +1,137 @@
+LAC • Actuonix Linear Actuator Control Board
+The Linear Actuator Control Board is a stand-alone closed-loop control board
+specifically designed for Actuonix actuators. The LAC greatly simplifies designs by
+saving the development time, cost, and processor overhead associated with
+direct motor control. As little as 1 digital or analog output is required for
+position control. Supported input signals include USB, Voltage, Current, RC
+Servo, and PWM. Actuonix motor control IC uses a software based algorithm to
+optimize position and speed control. This makes the LAC compatible with a wide
+range of actuators, using only the default settings. Actuonix’s Advanced
+Configuration Program allows full customization of actuator response. A stall
+detection feature provides a gr eat increase in actuator life for applications that
+may briefly exceed the rated force.
+
+The LAC can be operated as both an interface board, or as a stand alone
+controller with the addition of an external potentiometer and power supply.
+
+(Accessory kit and housing sold separately)
+
+
+
+ Specifications
+ Control input modes                               Digital: USB, RC Servo, 1 kHz PWM
+                                                   Analog: 0–3.3 V, 4–20 mA
+ Controller                                        10-bit Dual Sample Rate Quasi PD
+ Compatible actuators                              PQ12 & L12 -P Actuators with position feedback, 6 or 12 volts
+                                                   L12–P
+                                                   L16, 16Actuators
+                                                            & T16 -Pwith position
+                                                                     Actuators    feedback,
+                                                                                with position6feedback,
+                                                                                               or 12 volts6 or 12 volts
+                                                    Larger Actuators with position feedback, 12 volts, 24 volts
+ Dimensions                                        50 mm x 50 mm (excluding battery holder)
+ Power                                             6–24 VDC, 4 Amps peak current at 10% duty cycle
+                                                   Note: Supply voltage must match actuator’s rated voltage
+ Operating environment                             –10 to +70°C at 10–80% relative humidity
+
+Operation
+                                                                When the LAC is powered up, it will repeatedly scan for an input signal that
+                                                                is valid under any of the five supported interface modes (see reverse for
+                                                                External Connections Detail illustration). When a valid signal is first detected,
+
+
+
+                                                                                                                                                    Copyright 2017 Actuonix Motion Devices
+                                                                the actuator will self-configure to the corresponding interface mode, and all
+                                                                other interface modes and input leads are disabled until the actuator is next
+                                                                powered on. The sensitivity or accuracy of the actuator control algorithm can
+                                                                be set by adjusting the “Accuracy” trim potentiometer. Turning clockwise will
+                                                                allow the actuator to move in smaller increments and be more accurate.
+                                                                However, due to the differences in actuator types this may cause jittery or
+                                                                unstable behaviour. If this occurs, consider using the USB configuration
+                                                                program to more finely tune the controller for your application. Each time a
+                                                                control potentiometer is adjusted, power must be cycled to the LAC board
+                                                                prior to the new settings taking effect. Adjusting the “Speed” potentiometer
+                                                                will set the maximum actuator speed. The two “Limits” potentiometers allow
+                                                                user settable digital limit switches. These set the minimum and maximum
+                                                                acceptable positions. Control inputs that exceed these limits will cause the
+                                                                actuator to position to the limit.
+External Connections Detail
+X1 PQ12 actuator connector                             X6 Control interface                                   P1 Speed Control
+5 pin, 1 mm Pitch FPC connector                        Pin Function                                           Sets maximum actuator speed
+X2 L12–P/L16-P/P16-P/T16-P                             1   Ground                                             CW Faster
+                                                       2   6–24 VDC Power                                     CCW Slower
+actuator connector
+Pin Function                                           3   RC / Hobby Servo input signal                      P2 Limit Controls
+1   Potentiometer Reference Negative (yellow)          4   Current input signal (4–20 mA)                     Left Potentiometer controls Retract Limit
+2   Motor Terminal (black)                             5   Voltage input signal (0–3.3 V) or 1 kHz PWM        CW Maximum Stroke
+3   Motor Terminal (red)                                                                                      Right Potentiometer controls Extend Limit
+                                                                                                              CW Maximum Stroke
+4   Potentiometer Feedback (wiper) (purple)
+5   Potentiometer Reference Positive (orange)                                                                 P3 Sensitivity adjustment
+                                                                                                              CW Smaller dead-band
+                                                                                                              CCW Larger dead-band
+X3 Radio control receiver connector
+Pin Function
+1   Ground (black)
+2   Power (red)
+3   Control (white)
+
+X4 Large actuator connector
+Pin Function                                                                                                                         P3
+1   Potentiometer Reference Positive (white)                                         X2
+2   Potentiometer Feedback (wiper) (yellow)
+3   Motor Terminal (red)
+4   Motor Terminal (black)                                                                                                                    X3
+5   Potentiometer Reference Negative (blue)
+    NOTE: If the actuator moves to one end
+    then stops, swap pins 3 and 4 to change
+                                                                                     P1            X1
+    the motor direction.
+
+X5 Universal Serial Bus (Male Mini-B)
+Pin Function
+                                                                                                                                                   X6
+1   N/C                                                                              X4
+2   Data
+3   Data                                                                                                     X5             P2
+4   N/C
+5   Ground
+                                                                                Connector Pins numbered from Top to Bottom or Left to Right
+Control Modes                                                                   4–20 mA Interface Mode: This mode is compatible with PLC devices
+0–3.3 V Interface Mode: This mode allows an actuator to be con-                 typically used in industrial control applications. The desired actuator
+trolled with just a battery, and a potentiometer to signal the de-              position (set-point) is input to the LAC on connector X6 pin 4 as a
+sired position to the actuator – a simple interface for prototypes              current between 4 mA and 20 mA. The set-point current must be held
+or home automation projects. The desired actuator position (set-                on pin 4
+point) is input to the CIB on connector X6 pin 5 as a voltage betw-             to reach and maintain the desired actuator stroke position.
+een ground and 3.3 V. The set-point voltage must be held on pin 5               PWM Mode: This mode allows control of the actuator using a single
+to reach and maintain the desired actuator stroke position. The                 digital output pin from an external micro controller. The desired
+wiper pin of an external potentiometer connects to X6 pin 5. Pins               actuator position is encoded as the duty cycle of a 3.3 Volt, 1 kHz
+ 1 and 5 of X4 can be used as the 3.3V Reference. The other two                 square wave on LAC connector X6 pin 5, where the percent duty cycle
+potentiometer pins connect to these. When a Potentiometer is not                sets the actuator position to the same percent of full stroke extension.
+used, ensure the control signal ground is connected to LAC ground.              100% duty cycle represents full extension, and 0% duty cycle
+                                                                                represents full retraction. This input is 5V tolerant, however the % duty
+RC Servo Interface Mode: This is a standard hobby-type remote-                  cycle range will differ.
+control digital servo interface, compatible with servos and receiv-             USB Mode: This mode allows control of the actuator using a Computer.
+ers from manufacturers like Futaba™ and Hi-Tec™. The desired
+                                                                                In addition advanced settings allow fine control over the controller
+actuator position is input to the LAC on connector X6 pin 3 as a
+                                                                                response. Default settings can be reverted to, using the reset command.
+positive 5 Volt pulse-width signal. A 1 ms pulse commands the
+                                                                                When custom settings are turned on, P1, P2, and P3 are ignored. These
+controller to fully retract the actuator, and a 2 ms pulse signals
+                                                                                settings will be saved even when power is cycled. This allows custom
+full extension. Connector X3 can also be used for the RC control
+                                                                                configuration for all inputs even when USB is not connected. Details of
+signal, and uses the standard 3 pin 0.1" spacing typical on most
+                                                                                the DLL are given in a separate document so that custom programs can
+hobby servo receivers. Do not connect power to both X6 and X3
+                                                                                be created by the customer. An example Labview program is available
+at the same time (If the supply voltages differ, large currents will
+                                                                                for download. The Dynamic Link Library(DLL) allows Programming in
+flow).
+                                                                                many windows languages including Labview.
+
+               LAC • Control Board for Actuonix Linear Actuators                Actuonix Motion Devices      for more info visit www.Actuonix.com
+

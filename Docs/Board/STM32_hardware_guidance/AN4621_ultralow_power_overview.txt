@@ -1,0 +1,1609 @@
+                                                                              AN4621
+                                                                     Application note
+         STM32L4 and STM32L4+ ultra-low-power features overview
+
+
+           Introduction
+           Microcontrollers of the STM32L4 and STM32L4+ Series are based on Arm® Cortex®-M4
+           with FPU core. They use an innovative architecture to reach best-in-class, ultra-low power
+           figures thanks to their high flexibility and advanced set of peripherals, and outperform the
+           competition in the ultra-low-power world by providing the best energy efficiency for
+           applications.
+           Thanks to the integration of the ART Accelerator™, the STM32L4/STM32L4+ Series can
+           operate, respectively, at up to 80/120 MHz, and achieve 100/150 DMIPS performance at
+           80/120 MHz, while maintaining the smallest possible dynamic power consumption.
+           Both feature FlexPowerControl, which increases flexibility in power mode management
+           while at the same time reducing the overall application consumption.
+           STM32L4xx devices embed a high number of smart, high performing peripherals, a large
+           set of advanced and low-power analog features, and several peripherals tuned for
+           low-power modes. Thanks to the batch acquisition sub-mode (BAM), these microcontrollers
+           optimize the consumption when data are transferred through communication peripherals,
+           while the rest of the device is kept in low-power mode.
+           The combination of low-power design and processing performance allows these devices to
+           achieve an industry leading EEMBC® ULPBench™ score, up to 176.7 for standard
+           products, and up to 253 for the SMPS version.
+           Based on the solid foundations of the STM32F and STM32L families, the STM32L4 and
+           STM32L4+ Series embed several innovations which minimize the consumption in the
+           different modes, while maintaining most of the existing peripherals and an excellent
+           pin-to-pin compatibility to allow an easy migration from existing families.
+           Thanks to their built-in internal voltage regulator and voltage scaling, the consumption in
+           active modes is kept at a minimum whatever the external supply voltage. This make these
+           devices particularly suited for portable battery-supplied products, down to 1.71 V.
+           In addition, their multi-voltage domains allow the product to be supplied at low voltage (thus
+           reducing consumption) while the analog-to-digital and digital-to-analog converters can
+           operate with a higher supply and reference voltage, up to 3.6 V.
+           STM32L4xx microcontrollers support a battery backup domain to keep the RTC running,
+           and a set of 32 registers, each 32-bit wide, that can be retained in case of power loss. This
+           optional backup battery can be charged when the main supply is present.
+           STM32L4xx devices support seven main low-power modes, each of them with several
+           submodes options. This allows the designer to achieve the best compromise between
+           low-power consumption figure, shorter startup time, available set of peripherals and
+           maximum number of wake-up sources.
+           STM32L4 devices with P suffix (STM32L4xxxxxxP) support the use of an optional external
+           SMPS, thus enabling the design of very efficient and low power applications.
+
+
+December 2019                               AN4621 Rev 5                                             1/31
+                                                                                                www.st.com   1
+Contents                                                                                                                      AN4621
+
+
+Contents
+
+1          Energy-efficient processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+2          FlexPowerControl description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+           2.1      Numerous low-power modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+                    2.1.1       Low-power run and Low-power sleep modes . . . . . . . . . . . . . . . . . . . . 12
+                    2.1.2       Stop mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                    2.1.3       Standby mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                    2.1.4       Shutdown mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+           2.2      Multi-supply and battery backup domain . . . . . . . . . . . . . . . . . . . . . . . . . 16
+           2.3      Ultra-safe supply monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+           2.4      A set of peripherals tailored for low power . . . . . . . . . . . . . . . . . . . . . . . . 19
+           2.5      A versatile clock management . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+3          Conclusion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+
+4          Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+
+
+
+
+2/31                                                 AN4621 Rev 5
+AN4621                                                                                                                 List of tables
+
+
+List of tables
+
+Table 1.   STM32L476 performance with system clock at 80 MHz. . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Table 2.   Performance comparison (mA/MHz) with system clock at 80 MHz . . . . . . . . . . . . . . . . . . . 8
+Table 3.   STM32L476 performance for different Run modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+Table 4.   Performance comparison (mA/MHz) for different Run modes . . . . . . . . . . . . . . . . . . . . . . . 9
+Table 5.   Number of wait states vs. CPU clock (HCLK) frequency, STM32L4+ Series . . . . . . . . . . . 11
+Table 6.   STM32L4 modes overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Table 7.   Features over all modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+Table 8.   STM32L4xx clock source characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+Table 9.   Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+
+
+
+
+                                                        AN4621 Rev 5                                                                 3/31
+                                                                                                                                              3
+List of figures                                                                                                                 AN4621
+
+
+List of figures
+
+Figure 1.   STM32L476 - Current consumption vs. system frequency (25 °C) . . . . . . . . . . . . . . . . . . . 6
+Figure 2.   Power distribution architecture . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Figure 3.   STM32L476 - Current consumption for different memory configurations . . . . . . . . . . . . . . . 7
+Figure 4.   Flash memory latency vs. VCORE range, STM32L4 Series . . . . . . . . . . . . . . . . . . . . . . . 10
+Figure 5.   Flash memory latency vs. VCORE range, STM32L4+ Series . . . . . . . . . . . . . . . . . . . . . . 11
+Figure 6.   Low-power modes possible transitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+Figure 7.   Power supply overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+
+
+
+4/31                                                     AN4621 Rev 5
+AN4621                                                                               Energy-efficient processing
+
+
+1        Energy-efficient processing
+
+         The STM32L4 and STM32L4+ Series are built around an Arm® Cortex®-M4 with FPU and
+         DSP instruction set(a).
+
+
+
+         The high processing performance in Run mode (expressed in DMIPS/MHz) is achieved
+         thanks to the use of a Cortex®-M4 core associated with the interfaces of its memories. To
+         ensure full performance operation at maximum operating frequency these microcontrollers
+         Series embed the ART Accelerator™, which masks the Flash memory access wait state,
+         and makes it possible to achieve 1.25 DMIPS/MHz, whatever the system clock frequency.
+         The high energy efficiency, expressed as mA/DMIPS, is obtained by adapting dynamically
+         the internal supply voltage to the operating frequency. This method is called “undervolting”.
+         STM32L4xx devices offer dynamically selectable voltages and frequency ranges:
+         1.    Range 1 Boost for system frequency up to 120 MHz (STM32L4+ Series only)
+         2.    Range 1 for system frequency up to 80 MHz
+         3.    Range 2 for system frequency up to 26 MHz with improved efficiency (up to 15% higher
+               than Range 1).
+         A dedicated Low-power run mode (LPRun) allows the core to execute at up to 2 MHz, with
+         improved efficiency, up to 20% higher compared to Range 2.
+         This is achieved by supplying the logic with the internal low-power regulator. In this mode
+         the peripherals with independent clock can still run on the internal high speed oscillator
+         (HSI) at 16 MHz. Those peripherals are I2C, USART, LPUART1, LPTIM and SWPMI1.
+
+
+
+
+         a. Arm is a registered trademark of Arm Limited (or its subsidiaries) in the US and/or elsewhere.
+
+
+
+                                                 AN4621 Rev 5                                                5/31
+                                                                                                                    30
+Energy-efficient processing                                                                                             AN4621
+
+
+           Figure 1 shows the typical current consumption of a STM32L476, as a function of system
+           frequency, using different run modes.
+
+                                      Figure 1. STM32L476 - Current consumption vs. system frequency (25 °C)
+                           100
+
+
+
+
+                               10
+            Vdd Current (mA)
+
+
+
+
+                                1
+
+
+
+                                                                                                            Range1
+                                                                                                            Range2
+                                                                                                            LPRun
+                               0.1
+
+
+
+
+                     0.01
+                                     0.1                        1                                  10
+                                                                           Frequency (MHz)
+
+
+           Figure 2 shows the power distribution from the internal LDO regulator in the different Run
+           and Sleep modes.
+
+                                                     Figure 2. Power distribution architecture
+
+                                                                                                           LPRun
+                                                                                                Run
+                                                         (1)
+                                           Range 1 Boost / Range 1 / Range 2                               LPSleep
+                                                                                               Sleep
+                                                       selection                                           Stop1
+                                                                                               Stop0
+                                                                                                           Stop2
+                                                                                                   selection
+
+
+                               VDD
+                                                  Main voltage regulator
+                                                                                                                     Core logic
+
+                                                                                             LPR
+
+
+
+
+                                                       Low Power
+                                                    voltage regulator
+
+                                                                                                                        MS38252V3
+
+           1. When available.
+
+
+
+6/31                                                           AN4621 Rev 5
+AN4621                                                                                                 Energy-efficient processing
+
+
+         STM32L4 and STM32L4+ microcontrollers enable to execute code either from the internal
+         Flash memory, the SRAM1 and SRAM2, the external Quad-SPI/OctoSPI or FSMC Bank 1.
+         When running from internal SRAM the current consumption is the lowest. When running
+         from the internal Flash memory the ART Accelerator™ tends to reduce the number of
+         access to the memory thus reducing the overall current consumption.
+         Figure 3 shows the consumption of a STM32L476 for three main memory configurations:
+         •                                   execution from the internal Flash memory, ART Accelerator™ disabled;
+         •                                   execution from the internal Flash memory, ART Accelerator™ enabled;
+         •                                   execution from the internal SRAM1, Flash memory disabled.
+
+                                Figure 3. STM32L476 - Current consumption for different memory configurations
+                                           500
+
+
+
+                                           450
+
+
+
+                                           400
+
+                                                                                                                     Run
+                                                             LPRun                           Run Range 2
+                                           350
+                                                                                                                    Range 1
+             Current Effitiency (µA/MHz)
+
+
+
+
+                                           300                                                     FLASH ART Off
+
+                                                                                                   FLASH ART On
+
+                                           250                                                     SRAM1
+
+                                                                                                   SRAM2
+
+                                           200
+
+
+
+                                           150
+
+
+
+                                           100
+
+
+
+                                           50
+
+
+
+                                            0
+                                                 0.1                     1                            10                       100
+                                                                                Frequency (MHz)
+
+
+
+
+                                                                       AN4621 Rev 5                                           7/31
+                                                                                                                                     30
+Energy-efficient processing                                                                                      AN4621
+
+
+               The location of the executable code and data within the memory system impacts not only
+               the current consumption but also the overall computation performances. As an example,
+               Table 1 details the overall performances measured on a STM32L476 at 80 MHz system
+               clock running a more complex algorithm, such as CoreMark® from EEMBC® organization.
+
+                              Table 1. STM32L476 performance with system clock at 80 MHz
+                                                       CoreMark® CoreMark®
+                    Configuration          mA/MHz                                              Comments
+                                                        per MHz   per mA
+
+                FLASH ART Off                0.117        1.55             13.2   -
+                FLASH ART On                 0.136        3.32             24.4   Cache On, Prefetch buffer Off
+                SRAM1                        0.130        2.37             18.2   Code and Data in SRAM1
+                SRAM1 and SRAM2              0.137        3.42             25     Code in SRAM1 and Data in SRAM2
+
+
+               The performance of different products are compared in Table 2.
+
+              Table 2. Performance comparison (mA/MHz) with system clock at 80 MHz(1)
+                                                          Products
+
+ Configuration                                                                    STM32        STM32           Comments
+                     STM32    STM32    STM32    STM32    STM32
+                                                                                  L4P5xx/       L41x/
+                    L47x/48x L43x/44x L45x/46x L49x/4Ax L4Rx/4Sx
+                                                                                  L4Q5xx        L42x
+
+FLASH ART Off         0.117        0.100       0.102       0.117       0.162      0.15625         0.087    -
+                                                                                                           Cache On,
+FLASH ART On          0.136        0.121       0.118       0.133       0.156      0.15625         0.102    Prefetch
+                                                                                                           buffer Off
+                                                                                                           Code and
+SRAM1                 0.130        0.097       0.097       0.121       0.137      0.12375         0.088    Data in
+                                                                                                           SRAM1
+1. All values are for single bank mode.
+
+
+               The ART Accelerator™ makes it possible to reach almost the same performance, both in
+               computation (CoreMark® per MHz) and current consumption (CoreMark® per mA), as if the
+               same program is run from the internal SRAM.
+               Table 3 gives the impact on performance, measured on a STM32L476 device, for different
+               Run modes.
+
+                                 Table 3. STM32L476 performance for different Run modes
+                                                                                      CoreMark®           CoreMark®
+                    Run mode              Configuration          mA/MHz
+                                                                                       per MHz             per mA
+
+                                          FLASH ART Off            0.117                1.55                   13.2
+                Range 1 (80 MHz)
+                                          FLASH ART On             0.136                3.32                   24.4
+                                          FLASH ART Off            0.111                1.85                   16.6
+                Range 2 (26 MHz)
+                                          FLASH ART On             0.118                3.35                   28.4
+
+
+
+
+8/31                                                   AN4621 Rev 5
+AN4621                                                                            Energy-efficient processing
+
+
+               The performance of different products are compared in Table 4.
+
+                 Table 4. Performance comparison (mA/MHz) for different Run modes(1)
+                                                                       Products
+
+ Run mode         Configuration                                                           STM32 STM32
+                                           STM32      STM32    STM32    STM32     STM32
+                                                                                          L4P5xx/ L41x/
+                                          L47x/48x   L43x/44x L45x/46x L49x/4Ax L4Rx/L4Sx
+                                                                                          L4Q5xx  L42x
+
+Range 1         FLASH ART Off                -          -        -         -        0.154    0.14167     -
+boost
+(120 MHz)       FLASH ART On                 -          -        -         -        0.156    0.16250     -
+
+Range 1         FLASH ART Off              0.117      0.100    0.102     0.117      0.162    0.15625   0.087
+(80 MHz)        FLASH ART On               0.136      0.121    0.118     0.133      0.156    0.15625   0.102
+
+Range 2         FLASH ART Off              0.111      0.094    0.096     0.114      0.154    0.14423   0.083
+(26 MHz)        FLASH ART On               0.118      0.103    0.102     0.110      0.138    0.13077   0.088
+1. All values are for single bank mode.
+
+
+               Selection of Range 2, when possible, improves the efficiency (CoreMark® per mA) by
+               almost 15%.
+               Figure 5 show the Flash memory latency (number of wait states to be programmed in the
+               Flash memory access control register), depending on regulator voltage scaling range and
+               system clock frequency for the STM32L4 Series. For the STM32L4+ Series the
+               corresponding data are summarized in Table 5 and Figure 5.
+
+
+
+
+                                                      AN4621 Rev 5                                       9/31
+                                                                                                                30
+Energy-efficient processing                                                                    AN4621
+
+
+                         Figure 4. Flash memory latency vs. VCORE range, STM32L4 Series
+               fSYSCLK    MHz
+
+                         80
+                                                                          80 MHz
+
+
+
+                                                                                    4WS
+                         64
+                                                                          64 MHz
+
+
+
+                                                                                    3WS
+                         48
+                                                                          48 MHz
+
+
+
+                                                                                    2WS
+                         32
+                                                                          32 MHz
+                         26
+                                                           26 MHz
+                                                                    3WS
+                         18                                                         1WS
+                         16                                18 MHz                         Range 1
+                         12
+                                                                    2WS   16 MHz
+                                                           12 MHz                         Range 2
+                          6                                         1WS
+                                                                                          Low-power run
+                          2                                6 MHz
+                                          2 MHz   0WS               0WS             0WS
+
+
+
+                              VCORE   Low-power run      Range 2          Range 1
+
+                               VDD                      1.71 V – 3.6 V
+                                                                                                MS38251V1
+
+
+
+
+10/31                                             AN4621 Rev 5
+AN4621                                                                             Energy-efficient processing
+
+
+                  Figure 5. Flash memory latency vs. VCORE range, STM32L4+ Series
+              fSYSCLK (MHz)
+
+               120
+                                                                             120 MHz
+
+
+
+                                                                                         5 WS
+               100
+                                                                             100 MHz
+
+
+
+
+                                                                                         4 WS
+                80
+                                                                                80 MHz
+
+
+
+
+                                                                                         3 WS
+                60
+                                                                                60 MHz
+
+
+
+                                                                                         2 WS
+                40
+                                                                                40 MHz
+
+                26
+                                                        26 MHz                                  Range 1 boost
+                                                                                         1 WS
+                20
+                16
+                                                                 2 WS           20 MHz          Range 1
+                                                        16 MHz
+                                                                                                Range 2
+                                                                 1 WS
+                  8
+                                                        8 MHz                                   Low-power run
+                  2
+                                  2 MHz   0 WS                   0 WS                    0 WS
+
+
+
+                      VCORE   Low-power run           Range 2               Range 1
+
+                       VDD                           1.71 V – 3.6 V
+                                                                                                          MS49953V1
+
+
+
+          Table 5. Number of wait states vs. CPU clock (HCLK) frequency, STM32L4+ Series
+                                                                        HCLK (MHz)
+              Wait states
+               (latency)
+                                      Range 1 Boost                      Range 1                 Range 2
+
+         0 WS (1 CPU cycles)                     -                         ≤ 20                    ≤8
+         1 WS (2 CPU cycles)                     -                         ≤ 40                    ≤ 16
+         2 WS (3 CPU cycles)                     -                         ≤ 60                    ≤ 26
+         3 WS (4 CPU cycles)                     -                         ≤ 80                      -
+         4 WS (5 CPU cycles)                     -                        ≤ 100                      -
+         5 WS (6 CPU cycles)                ≤ 120                           -                        -
+
+
+
+
+                                             AN4621 Rev 5                                                    11/31
+                                                                                                                      30
+FlexPowerControl description                                                                   AN4621
+
+
+2          FlexPowerControl description
+
+           FlexPowerControl reduces the application power consumption thanks to high flexibility in
+           the power management, smart peripherals and architecture.
+
+
+2.1        Numerous low-power modes
+           The microcontrollers of the STM32L4 and STM32L4+ Series implement many different
+           power modes, seven of them are low-power.
+           On top of these modes, the power consumption can be modulated by selecting different
+           clock sources and Frequencies, as well as clocking off peripherals not in use.
+           In all these modes, except Shutdown, the safe power monitoring Brown out reset (BOR) and
+           the IWDG can stay active to guarantee safe execution.
+           Table 6 summarizes the features available for each mode and provides an indication of the
+           current consumption.
+
+2.1.1      Low-power run and Low-power sleep modes
+           Two low-power active modes are available on the STM32L4 Series in addition to those
+           (Sleep, Stop and Standby) implemented on the STM32Fx Series, they are the Low-power
+           run and Low-power sleep.
+           They offer Run and Sleep mode functionality for applications with extremely low current
+           consumption where some peripherals cannot be switched off, or where the CPU is
+           processing continuously at low speed to minimize current variations.
+           Several features have been put in place to reduce the current consumption:
+           •   the core logic is supplied by the low-power voltage regulator to reduce the quiescent
+               current;
+           •   the Flash memory can be switched off (power-down mode and clock gating) in Low-
+               power sleep mode. It can also be switched off in Low-power run when the processor is
+               executing from SRAM1 or SRAM2;
+           •   the system clock is limited to 2 MHz maximum. The MSI internal RC oscillator can be
+               selected as it supports several frequency ranges, with a small MCU total consumption
+               down to 18 µA in Low-power sleep Flash memory off at 100 kHz.
+
+           Batch acquisition sub-mode (BAM)
+           The STM32L4 microcontrollers support the power efficient batch acquisition sub-mode
+           (BAM), in which data are transferred with communication peripherals, while the rest of the
+           device is in low-power mode.
+           This is achieved by entering Sleep or Low-power sleep mode with this configuration:
+           • only the DMA, the communication peripheral(s) and the SRAM1 or SRAM2 clocks are
+             enabled in Sleep (or Low-power sleep) mode;
+           • the Flash memory is off in Sleep (or Low-power sleep) mode: the Flash memory is in
+             power-down and the Flash memory clock is gated off;
+           • if the system clock can be limited to 2 MHz, the main regulator is switched off (to enter
+             Low-power sleep).
+
+
+12/31                                       AN4621 Rev 5
+AN4621                                                             FlexPowerControl description
+
+
+         In Low-power sleep mode, the I2C and USART/LPUART peripherals can still be clocked
+         with HSI at 16 MHz. This allows supporting BAM with I2C or USART at up to 1 Mbps speed.
+
+2.1.2    Stop mode
+         The STM32L4 Series implements three Stop modes with full SRAM and Peripheral retention
+         capability and capacity to wakeup in 1 µs thanks to the use of the MSI up to 48 MHz.
+         In these Stop modes all the high speed oscillators (HSE, MSI, HSI) are stopped, while the
+         low speed ones (LSE, LSI) can be kept active. The peripherals can be set active, using the
+         HSI clock when needed, to be able to wakeup the device on some specific events (such as
+         UART character reception or I2C address recognition).
+         Stop2 mode implements a dedicated mechanism to keep the retention current as low as
+         possible while allowing a very fast wakeup of 5 µs from SRAM or 8 µs from Flash memory.
+
+2.1.3    Standby mode
+         In Standby mode the BOR is always enabled, ensuring that the device is under reset when
+         the supply voltage is below the selected functional threshold.
+         By default the SRAMs content is lost in Standby mode. However, it is possible to preserve
+         the content of the SRAM2 (with an additional current consumption). On some devices, a
+         retention switch allows different amounts of memory to be retained.
+         Pull-up and pull-down can individually be applied on each I/O during the Standby mode,
+         allowing external devices configuration to be kept.
+         Wakeup from this mode is done thanks to one of the five wakeup pins, the reset pin or the
+         independent watchdog. The RTC clocked by the low-speed oscillators (LSE or LSI) is also
+         functional in this mode, with wakeup capability.
+
+2.1.4    Shutdown mode
+         A new Shutdown mode is implemented in the STM32L4xx devices in order to lengthen even
+         more the battery life of battery-powered applications.
+         This mode allows the lowest consumption, by switching off the internal voltage regulators,
+         and by disabling the voltage power monitoring. Wakeup from this mode is done thanks to
+         one of the five wakeup pins or to the reset pin. The RTC clocked by the low-speed external
+         oscillator (LSE) is also functional in this mode, with wakeup capability.
+
+
+
+
+                                         AN4621 Rev 5                                         13/31
+                                                                                                      30
+14/31
+
+
+
+
+                                                                                                                                                                         FlexPowerControl description
+                                                                 Table 6. STM32L4 modes overview
+                Mode     Regulator(1)   CPU   Flash SRAM      Clocks      DMA and Peripherals(2)             Wakeup source          Consumption(3)    Wakeup time(4)
+
+                           Range 1                                                    All                                            107 µA/MHz
+                Run                     Yes   ON(5)   ON       Any                                                  N/A                                    N/A
+                           Range 2                                          All except USB, RNG                                       92 µA/MHz
+                                                               Any                                                                                    To Range 1: 4 µs
+               LPRun        LPR         Yes   ON(5)   ON      except        All except USB, RNG                     N/A              102 µA/MHz
+                                                                                                                                                     To Range 2: 64 µs
+                                                               PLL
+                           Range 1                                                    All                                             28 µA/MHz          6 cycles
+                Sleep                   No    ON(5)   ON(6)    Any                                         Any interrupt or event
+                           Range 2                                          All except USB, RNG                                       26 µA/MHz          6 cycles
+                                                               Any
+               LPSleep      LPR         No    ON(5)   ON(6)   except        All except USB, RNG            Any interrupt or event     36 µA/MHz          6 cycles
+                                                               PLL
+
+                                                                               BOR, PVD, PVM,               Reset pin, all I/Os
+AN4621 Rev 5
+
+
+
+
+                                                                               RTC, LCD, IWDG               BOR, PVD, PVM
+                                                                        COMPx (x=1, 2), DACx (x=1,          RTC, LCD, IWDG
+                                                                                       2)                   COMPx (x=1, 2)
+                                                               LSE             OPAMPx (x=1, 2)             USARTx (x=1...5)(7)                        0.7 µs in SRAM
+                Stop0        MR         No     Off    ON                                                                               100 µA
+                                                               LSI            USARTx (x=1...5)(7)              LPUART1(7)                             4.5 µs in Flash
+                                                                                  LPUART1(7)                 I2Cx (x=1...4)(8)
+                                                                                I2Cx (x=1...4)(8)            LPTIMx (x=1, 2)
+                                                                                LPTIMx (x=1, 2)                  USB(9)
+                                                                       All other peripherals are frozen.        SWPMI(10)
+
+                                                                               BOR, PVD, PVM,               Reset pin, all I/Os
+                                                                               RTC, LCD, IWDG               BOR, PVD, PVM
+                                                                        COMPx (x=1, 2), DACx (x=1,          RTC, LCD, IWDG
+                                                                                       2)                   COMPx (x=1, 2)
+                                                               LSE             OPAMPx (x=1, 2)             USARTx (x=1...5)(7)      4.3 µA w/o RTC     4 µs in SRAM
+                Stop1       LPR         No     Off    ON
+                                                               LSI            USARTx (x=1...5)(7)              LPUART1(7)            4.6 µA w RTC      6 µs in Flash
+                                                                                  LPUART1(7)                 I2Cx (x=1...4)(8)
+                                                                                I2Cx (x=1...4)(8)            LPTIMx (x=1, 2)
+
+
+
+
+                                                                                                                                                                         AN4621
+                                                                                LPTIMx (x=1, 2)                  USB(9)
+                                                                       All other peripherals are frozen.        SWPMI(10)
+                                                                         Table 6. STM32L4 modes overview (continued)
+
+
+
+
+                                                                                                                                                                                         AN4621
+                                        (1)
+                  Mode      Regulator          CPU       Flash SRAM         Clocks          DMA and Peripherals(2)             Wakeup source           Consumption(3)   Wakeup time(4)
+
+                                                                                                                              Reset pin, all I/Os
+                                                                                               BOR, PVD, PVM
+                                                                                                                              BOR, PVD, PVM
+                                                                                              RTC, LCD, IWDG
+                                                                                                                              RTC, LCD, IWDG
+                                                                              LSE          COMPx (x=1, 2), I2C3(8)                                     1.0 µA w/o RTC   5 µs in SRAM
+                  Stop2          LPR            No        Off       ON                                                        COMPx (x=1, 2)
+                                                                              LSI           LPUART1(7), LPTIM1,                                         1.3 µA w/RTC    7 µs in Flash
+                                                                                                                                  I2C3(8)
+                                                                                                  LPTIM2(11)
+                                                                                                                                LPUART1(7)
+                                                                                       All other peripherals are frozen.
+                                                                                                                             LPTIM1, LPTIM2(11)
+
+                                                                 SRAM2                          BOR, RTC, IWDG                                        0.20 µA w/o RTC
+                                 LPR
+                                                                  ON                        All other peripherals are             Reset pin           0.45 µA w/ RTC
+                                              Powered                         LSE
+                Standby                                   Off                                      powered off.              5 I/Os (WKUPx)(12)                             14 µs
+                                                Off              Powere       LSI                                                                     0.03 µA w/o RTC
+                                 OFF                                                        I/O configuration can be         BOR, RTC, IWDG
+                                                                  dOff                   floating, pull-up or pull-down                               0.28 µA w/ RTC
+
+                                                                                                      RTC
+AN4621 Rev 5
+
+
+
+
+                                                                                           All other peripherals are              Reset pin
+                                              Powered            Powere                                                                                 8 nA w/o RTC
+               Shutdown          OFF                      Off                 LSE                 powered off.               5 I/Os (WKUPx)(12)                             256 µs
+                                                Off               dOff                                                                                  260 nA w/ RTC
+                                                                                           I/O configuration can be                  RTC
+                                                                                       floating, pull-up or pull-down(13)
+               1. LPR means Main regulator is OFF and Low-power regulator is ON.
+               2. All peripherals can be active or clock gated to save power consumption.
+               3. Typical current consumption for STM32L433 device at VDD = 1.8 V, 25°C. Consumptions values provided running from SRAM, Flash memory Off, 80 MHz in Range 1,
+                  26 MHz in Range 2, 2 MHz in LPRun/LPSleep.
+               4. Typical wakeup values for STM32L476.
+
+
+
+
+                                                                                                                                                                                         FlexPowerControl description
+               5. The Flash memory can be put in power-down and its clock can be gated off when executing from SRAM.
+               6. The SRAM1 and SRAM2 clocks can be gated on or off independently.
+               7. U(S)ART and LPUART reception is functional in Stop mode, and generates a wakeup interrupt on Start, address match or received frame event.
+               8. I2C address detection is functional in Stop mode, and generates a wakeup interrupt in case of address match.
+               9. USB wakeup by resume from suspend and attach detection protocol event.
+               10. SWPMI wakeup by resume from suspend.
+               11. On L4P5/If supported by device.
+               12. The I/Os with wakeup from Standby/Shutdown capability are: PA0, PC13, PE6, PA2, PC5.
+               13. I/Os can be configured with internal pull-up, pull-down or floating in Shutdown mode but the configuration is lost when exiting the Shutdown mode.
+15/31
+FlexPowerControl description                                                                   AN4621
+
+
+           Figure 6 shows the possible mode transitions in the application:
+
+                               Figure 6. Low-power modes possible transitions
+
+
+                                               Low power sleep mode
+
+
+
+
+                      Sleep mode                Low power run mode             Shutdown mode
+
+
+
+
+                      Stop 1 mode                   Run mode                    Standby mode
+
+
+
+
+                      Stop 0 mode                  Stop 2 mode
+
+                                                                                               MS33361V2
+
+
+
+
+2.2        Multi-supply and battery backup domain
+           The STM32L4xx devices require a 1.71 to 3.6 V VDD operating voltage supply.
+           Several independent supplies (VDDA, VDDIO2, VDDUSB), can be provided for specific
+           peripherals, thus removing the constraint to supply all product at high voltage when analog
+           or USB functions are used. Supplying the MCU with low VDD voltage allows to reduce the
+           consumption in the low power modes. When the peripherals supplied by the independent
+           power supplies are not used in the application, those supplies should be connected to VDD.
+           •   VDD = 1.71 to 3.6 V
+               VDD is the external power supply for the I/Os, the internal regulator and the system
+               analog such as reset, power management and internal clocks. It is provided externally
+               through VDD pins.
+           •   VDD12 = 1.05 to 1.32 V
+               External power supply, connected to VCORE, bypassing the internal regulator when
+               connected to an external SMPS. It is provided externally through VDD12 pins, and is
+               only available on packages with the external SMPS supply option.
+           •   VDDA minimum voltage:
+               –    1.62 V if ADC or COMPs are used;
+               –    1.8 V if DAC or OPAMPS are used;
+               –    2.4 V if the built-in Reference source need to be used for VREF.
+               VDDA is the external analog power supply for A/D converters, D/A converters, voltage
+               reference buffer, operational amplifiers and comparators.
+
+
+
+16/31                                      AN4621 Rev 5
+AN4621                                                                FlexPowerControl description
+
+
+         •    VDDUSB = 3.0 to 3.6 V (USB used)
+              VDDUSB is the external independent power supply for USB transceivers.
+         •    VDDIO2 = 1.08 to 3.6 V
+              VDDIO2 is the external power supply for 14 I/Os (Port G[15:2]).
+         •    VDDDSI (if available on the device) is used to supply the DSI regulator and MIPI D-PHY.
+              It must be connected to VDD:
+         •    VCAPDSI (if available on the device) is the output of DSI regulator. It must be connected
+              to VDD12DSI:
+         In addition, the STM32L4xx devices support two voltage reference supplies:
+         •    VLCD = 2.5 to 3.6 V (if available on the device)
+              The voltage reference for the LCD (VLCD) is used to control the contrast of the glass
+              LCD. It can be provided either from external supply voltage or by embedded voltage
+              step-up converter, independently of VDD voltage. VLCD is multiplexed with PC3 which
+              can be used as GPIO when the LCD is not used.
+         •    VREF+
+              VREF+ is the input reference voltage for ADCs and DACs. It is also the output of the
+              internal voltage reference buffer when enabled. VREF+ pin, and thus internal voltage
+              reference, is not available on all packages. When the VREF+ is double-bonded with
+              VDDA in a package, the internal voltage reference buffer is not available and must be
+              kept disable (refer to datasheet for packages pinout description).
+         To retain the content of the Backup registers and supply the RTC function when VDD is
+         turned off, the VBAT pin can be connected to an optional backup voltage supplied by a
+         battery or by another source:
+         •    VBAT = 1.55 to 3.6 V
+              VBAT is the power supply for RTC, external clock 32 kHz LSE oscillator and backup
+              registers (through power switch) when VDD is not present. When VDD is present these
+              peripherals (RTC, LSE..) are automatically supplied by VDD, and it’s possible to charge
+              the external battery on VBAT through an internal resistance.
+         An embedded linear voltage regulator is used to supply the internal digital power VCORE, the
+         power supply for digital peripherals and memories. Thanks to the internal voltage regulator
+         and voltage scaling, the STM32L4xx devices consumption in active modes is kept at a
+         minimum, whatever the supply voltage.
+         The STM32L4 devices with a P suffix allow the designer to use an external SMPS to force
+         an external VDD12 supply on the digital logic (refer to AN4978, available on www.st.com, for
+         detailed schematic and operation). When VDD12 is forced by an external source and is
+         higher than the output of the internal LDO, the current is taken from this external supply, and
+         the overall power efficiency is significantly improved when using an external step down
+         DC/DC converter.
+Note:    Not all supply pins are present on all packages.
+
+
+
+
+                                           AN4621 Rev 5                                            17/31
+                                                                                                           30
+FlexPowerControl description                                                                                     AN4621
+
+
+                                       Figure 7. Power supply overview
+                                                          VDDA domain
+                                                A/D and D/A converters
+                               VDDA             Comparators
+                               VSSA             Op amplifiers
+                                                Voltage reference buffers
+
+                               VLCD             LCD(1)
+                              VDDDSI
+                                                DSI voltage regulator(1)                               (1)
+                                                                                                         : when available
+                             VCAPDSI
+                                                           (1)
+                            VDD12DSI            DSI PHY
+                             VDDUSB
+                                                USB transceivers
+                                VSS
+                                                         VDDIO2 domain
+                              VDDIO2                                I/O ring
+                                                   VDDIO2
+                                VSS                              PG[15:2]
+
+                                                VDD domain
+                                            VDDIO1
+                                                         I/O ring
+
+                                            Reset block
+                                            Temp sensor
+                                            PLL, HIS, MSI
+                                                                                     VCORE domain
+                                VSS         Standby circuitry
+                                            (wakeup logic, IWDG)                 Core
+                                VDD
+                                                                           VCORE Memories
+                                            Voltage regulator                    Digital peripherals
+                              VDD12
+
+                                                 Low voltage detector
+
+
+                                                 Backup domain
+                               VBAT                       kHz oscillator
+                                           LSE crystal 32 KHz oscillator
+                                           BKP registers
+                                           RCC BDCR register
+                                           RTC
+                                                                                                                  MS49952V1
+
+
+
+
+2.3        Ultra-safe supply monitoring
+           The STM32L4xx microcontrollers include a sophisticated supply supervisor module with
+           several programmable options. This module is active during both power-on/down and run-
+           time phases.
+           The power-up is a critical phase where the various parts of the internal circuitry must be
+           sequentially started and critical parameters (such as factory trimming values or options)
+           retrieved from the non-volatile memory to perform MCU initialization, even before the user
+           reset phase. It is also during this period that VDD can be altered with glitches coming from
+           the battery insertion or because of a weak power source.
+           The ultra-safe BOR circuitry guarantees that the reset is released only if the VDD is above
+           the selected threshold, whatever the slope of the VDD ramp-up phase, so that the circuit is
+           within its guaranteed operating conditions when the program execution starts. A reset is
+           generated when VDD falls down below the selected threshold. Five thresholds can be
+           selected depending on the value stored in Flash memory option byte. The BOR minimum
+           threshold is 1.71 V, guaranteeing that the MCU exits reset above 1.71 V enabling to supply
+           the MCU with voltage reference of 1.8 V ± 5%.
+
+
+18/31                                       AN4621 Rev 5
+AN4621                                                                FlexPowerControl description
+
+
+         The BOR is enabled in all modes except Shutdown mode. In Shutdown mode the power
+         monitoring is disabled, as a consequence the switch to VBAT domain when VDD is not
+         present (and vice-versa) is not supported in Shutdown mode.
+         In addition, a 7-level programmable voltage detector (PVD) is available to generate an early
+         interrupt in case of a voltage drop.
+         Finally, the independent power supplies (VDDA, VDDUSB and VDDIO2) can be monitored by
+         comparison with a fixed voltage threshold, and generate an interrupt in case power is below
+         the threshold.
+         The PVD and PVM can wakeup from Stop modes.
+
+
+2.4      A set of peripherals tailored for low power
+         Some peripherals require special attention, either because of their intrinsic high
+         consumption, or because they are always powered up.
+         •   The STM32L4xx MCUs embed multiple 12-bit / 5 Msps ADCs. Each of these very fast
+             and accurate converters can jeopardize the battery lifetime if left powered-up
+             continuously, with a 1 mA typical consumption at 5 Msps. As the ADC consumption is
+             roughly proportional to the acquisition frequency (around 200 µA / Msps), from
+             consumption standpoint the application can choose between two solutions, i.e. either
+             performing the acquisition at low speed to limit maximum current, or doing it at
+             maximum speed to switch in ultra-low power mode quickly.
+             When the acquisition is performed slowly, the ADC consumption itself can go down to
+             few tens of µA drastically limiting the maximum current. This can be mandatory when
+             the power source provides a limited current. The drawback, if the CPU has no other
+             task to perform during that time, can be the increased time spent in run or sleep mode
+             (or Low Power run or Low power sleep modes) versus the time spent in ultra-low power
+             mode (Stop or Standby).
+         Several peripherals have been developed to operate even in Stop mode, when the system
+         clock is stopped, with the main oscillator and memory powered down.
+         •   A pair of ultra-low power comparators is available to monitor analog voltages with a
+             current down to 350 nA. These comparators can wake up the MCU as soon as the
+             external voltage reaches the selected threshold and they can be combined together to
+             provide a window comparator. One of these comparators has a rail-to-rail input
+             capability and its output can be redirected to a timer for a general purpose use.
+         •   The devices embed multiple DACs, with sample and hold capability supported in Stop1
+             mode. In sample and hold mode, the DAC core converts data on a triggered
+             conversion, then holds the converted voltage on a capacitor. When not converting, the
+             DAC cores and buffer are completely turned off between samples and the DAC output
+             is tri-stated, therefore reducing the overall power consumption.
+         •   An RTC peripheral provides a clock/calendar with two alarms, includes a periodic
+             wake-up unit and several application specific functions (such as timestamp, tamper
+             detection). It can remain enabled in the lowest power mode (shutdown), when most of
+             the chip is powered down, and wake up the full MCU circuitry in case of an alarm or
+             tamper detection, for instance. It also contains up to 128 bytes of backup registers to
+             store contextual information when exiting from standby mode, or to store sensitive
+             information as they are protected by tampers detection, and readout memory
+
+
+
+
+                                          AN4621 Rev 5                                          19/31
+                                                                                                        30
+FlexPowerControl description                                                                    AN4621
+
+
+                protection. This peripheral has been designed using asynchronous design techniques
+                to minimize its consumption.
+                The RTC can be clocked by two low-power low-speed clocks:
+               – LSE: the external 32.768 kHz quartz oscillator supports four power consumption
+                 modes, combined with drive capability;
+               – LSI: when deep accuracy is not required, the RTC can be clocked by an internal
+                 32 kHz oscillator, with extremely low consumption.
+           •    The glass LCD is one of the most common displays in low power applications, because
+                of its inherently low current consumption, low price and customizing easiness. The
+                STM32L4 Series includes a versatile LCD controller, which can drive displays with up
+                to 8 common lines and 32 segments, with the capability of selecting individually the I/O
+                ports assigned to the LCD for an optimal use of the chip alternate functions. It also
+                controls an optional internal step-up converter to maintain the LCD contrast on a wide
+                range of VDD values with consumptions as low as 5 µA (LCD consumption not
+                included).
+           •    The Low power timer (LPTIM) is a 16-bit timer that benefits from the ultimate
+                developments in power consumption reduction. Thanks to its diversity of clock sources,
+                the LPTIM is able to keep running whatever the selected power mode. Given its
+                capability to run even with no internal clock source, the LPTIM can be used as “Pulse
+                Counter” which can be useful in some applications. Also, the LPTIM capability to wake
+                up the system from low power modes, makes it suitable to make “Time-out functions”
+                with extremely low power consumption. The LPTIM introduces a flexible clock scheme
+                that provides the needed functionality and performance, while minimizing the power
+                consumption.
+           •    The low power universal asynchronous receiver transmitter (LPUART) is an UART
+                which allows bidirectional UART communications with a limited power consumption.
+                Only 32.768 kHz LSE clock is required to allow UART communications up to
+                9600 bauds. Higher baud rates can be reached when the LPUART is clocked by clock
+                sources different from the LSE clock. Even when the MCU is in Stop modes, the
+                LPUART can wait for an incoming UART frame while having an extremely low energy
+                consumption.
+                Several sources of wakeup from Stop mode can be selected:
+                –    wakeup on address match
+                –    wakeup on Start bit detection
+                –    wakeup on received byte.
+           •    The I2C is able to wakeup the MCU from Stop modes (APB clock is off), when it is
+                addressed. All addressing modes are supported. The HSI oscillator must be selected
+                as the clock source for I2CCLK in order to allow wakeup from Stop. During Stop mode,
+                the HSI is switched off. When a START is detected, the I2C interface switches the HSI
+                on, and stretches SCL low until HSI is woken up. HSI is then used for the address
+                reception. In case of an address match, the I2C stretches SCL low during MCU
+                wakeup time. The stretch is released when ADDR flag is cleared by software, and the
+                transfer goes on normally. If the address does not match, the HSI is switched off again
+                and the MCU is not woken up.
+           •    The USART is able to wakeup the MCU from Stop0/1 mode when USART clock is HSI
+                or LSE. Several sources of wakeup from Stop0/1 mode can be selected:
+                –    wakeup on address match
+                –    wakeup on Start bit detection
+                –    wakeup on received byte.
+
+
+20/31                                       AN4621 Rev 5
+AN4621                                                                                                                                                  FlexPowerControl description
+
+
+                •       The USB can wakeup from Stop0/1 mode with these events:
+                        –   Resume from Suspend
+                        –   Attach detection protocol event
+                •       The SWPMI can wakeup from Stop0/1 mode with this event:
+                        –   Resume from Suspend
+                Table 7 summarizes the peripheral features over all available modes. Wakeup capability is
+                detailed in gray cells.
+
+                                                               Table 7. Features over all modes(1)
+                    -
+
+
+
+
+                                                                                                                        Stop0/1                    Stop2                     Standby Shutdown
+                             Run Range 1 boost
+
+
+
+
+                                                                                                      Low-power sleep
+                                                                                      Low-power run
+
+
+
+
+                                                                                                                              Wakeup capability
+
+
+
+
+                                                                                                                                                         Wakeup capability
+
+
+
+
+                                                                                                                                                                                    Wakeup capability
+
+
+
+
+                                                                                                                                                                                                            Wakeup capability
+                                                 Run Range 1
+
+                                                                Run Range 2
+
+                                                                              Sleep
+
+
+
+
+                                                                                                                                                                                                                                  VBAT
+      Peripheral
+                                                                                                                        -                         -                           -                         -
+
+
+
+
+CPU                                                 Y                           -        Y                  -           -            -            -             -             -            -            -         -                -
+Flash access
+                                                 O(2)                         O(2) O(2) O(2)                            -            -            -             -             -            -            -         -                -
+(up to 2 MB)
+SRAM1
+                                                    Y                         Y(3)       Y            Y(3)              Y            -            Y             -             -            -            -         -                -
+(up to 256 KB)
+SRAM2
+                                                    Y                         Y(3)       Y            Y(3)              Y            -            Y             -            O(4)          -            -         -                -
+(up to 64 KB)
+SRAM3(5)
+                                                 Y(3)                         Y(3)       Y            Y(3)              Y            -            Y
+(up to 384 KB)
+FMC or FSMC                                        O                           O        O                O              -            -            -             -             -            -            -         -                -
+Quad-SPI or OctoSPI                                O                           O        O                O              -            -            -             -             -            -            -         -                -
+Backup Registers                                    Y                          Y         Y               Y              Y            -            Y             -             Y            -            Y         -               Y
+Brown-out reset
+                                                    Y                          Y         Y               Y              Y         Y               Y          Y                Y         Y               -         -                -
+(BOR)
+Programmable
+Voltage Detector                                   O                           O        O                O              O        O                O         O                 -            -            -         -                -
+(PVD)
+Peripheral Voltage
+Monitor                                            O                           O        O                O              O        O                O         O                 -            -            -         -                -
+(PVMx; x=1, 2, 3, 4)
+DMA                                                O                           O        O                O              -            -            -             -             -            -            -         -                -
+DMA2D(5)                                           O                           O        O                O              -            -            -             -             -            -            -         -                -
+High Speed Internal                                                                                                     (6)                       (6)
+                                                   O                           O        O                O                           -                          -             -            -            -         -                -
+(HSI16)
+High Speed External
+                                            48(7)              26(7) O(8)               O                O              -            -            -             -             -            -            -         -                -
+(HSE)
+Oscillator HSI48(5)                                O                           O           -                -           -            -            -             -             -            -            -         -                -
+
+
+                                                                                      AN4621 Rev 5                                                                                                                              21/31
+                                                                                                                                                                                                                                         30
+FlexPowerControl description                                                                                                                                                                        AN4621
+
+
+                                            Table 7. Features over all modes(1) (continued)
+                                                                                                                      Stop0/1                   Stop2                   Standby Shutdown
+
+
+
+
+                       Run Range 1 boost
+
+
+
+
+                                                                                                   Low-power sleep
+                                                                                   Low-power run
+
+
+
+
+                                                                                                                            Wakeup capability
+
+
+
+
+                                                                                                                                                    Wakeup capability
+
+
+
+
+                                                                                                                                                                            Wakeup capability
+
+
+
+
+                                                                                                                                                                                                    Wakeup capability
+                                               Run Range 1
+
+                                                             Run Range 2
+
+                                                                           Sleep
+
+
+
+
+                                                                                                                                                                                                                        VBAT
+        Peripheral
+                                                                                                                      -                         -                       -                       -
+
+
+
+
+Low Speed Internal
+                                                 O                          O        O                O               O            -            O          -            O          -            -         -              -
+(LSI)
+Low Speed External
+                                                 O                          O        O                O               O            -            O          -            O          -            O         -             O
+(LSE)
+Multi-Speed Internal
+                                      48(9)                  24(9)          O        O                O               -            -            -          -            -          -            -         -              -
+(MSI)
+PLLx VCO maximum
+                                           344               128 O(8)                   -                -            -            -            -          -            -          -            -         -              -
+frequency
+Clock Security
+                                                 O                          O        O                O               -            -            -          -            -          -            -         -              -
+System (CSS)
+Clock Security
+                                                 O                          O        O                O               O        O                O      O                O      O                -         -              -
+System on LSE
+RTC / Auto wakeup                                O                          O        O                O               O        O                O      O                O      O                O      O                O
+Camera interface(5)                              O                          O        O                O               -            -            -          -            -          -            -         -              -
+Number of RTC
+                                                  3                         3          3               3              3        O                3      O                3      O                3      O                3
+Tamper pins
+LCD                                              O                          O        O                O               O        O                O      O                -          -            -         -              -
+           (5)
+LCD-TFT                                    O                     -          O           -                -            -            -            -          -            -          -            -         -              -
+           (5)
+GFXMMU                                           O                          O        O                O               -            -            -          -            -          -            -         -              -
+DSIHOST(5)                                       O                           -          -                -            -            -            -          -            -          -            -         -              -
+Camera interface                                 O                          O        O                O               -            -            -          -            -          -            -         -              -
+USB OTG FS                                 O                     -          O           -                -            -        O                -          -            -          -            -         -              -
+USB FS                                     O                     -          O           -                -            -        O                -          -            -          -            -         -              -
+USARTx
+                                                 O                          O        O                O              O(10) O(10)                -          -            -          -            -         -              -
+(x=1, 2, 3, 4, 5)
+Low-power UART
+                                                 O                          O        O                O              O(10) O(10) O(10) O(10)                            -          -            -         -              -
+(LPUART)
+I2Cx (x=1, 2, 4)                                 O                          O        O                O              O(11) O(11)                -          -            -          -            -         -              -
+I2C3                                             O                          O        O                O              O(11) O(11) O(11) O(11)                            -          -            -         -              -
+SPIx (x=1, 2, 3)                                 O                          O        O                O               -            -            -          -            -          -            -         -              -
+CAN (x=1, 2)                                     O                          O        O                O               -            -            -          -            -          -            -         -              -
+                                                                                         (5)       O(5)
+SDMMC (x=1, 2)                                   O                          O      O                                  -            -            -          -            -          -            -         -              -
+SWPMI(5)                                         O                          O        O                O               -        O                -          -            -          -            -         -              -
+
+
+22/31                                                                              AN4621 Rev 5
+AN4621                                                                                                                                                    FlexPowerControl description
+
+
+                                                Table 7. Features over all modes(1) (continued)
+                                                                                                                          Stop0/1                    Stop2                     Standby Shutdown
+
+
+
+
+                            Run Range 1 boost
+
+
+
+
+                                                                                                        Low-power sleep
+                                                                                        Low-power run
+
+
+
+
+                                                                                                                               Wakeup capability
+
+
+
+
+                                                                                                                                                           Wakeup capability
+
+
+
+
+                                                                                                                                                                                      Wakeup capability
+
+
+
+
+                                                                                                                                                                                                                 Wakeup capability
+                                                    Run Range 1
+
+                                                                  Run Range 2
+
+                                                                                Sleep
+
+
+
+
+                                                                                                                                                                                                                                       VBAT
+       Peripheral
+                                                                                                                          -                         -                           -                          -
+
+
+
+
+PSSI                                                  O                          O        O                O              -           -             -             -             -            -             -           -                -
+PKA                                                   O                          O        O                O              -           -             -             -             -            -             -           -                -
+SAIx (x=1, 2)                                         O                          O        O                O              -           -             -             -             -            -             -           -                -
+DFSDM                                                 O                          O        O                O              -           -             -             -             -            -             -           -                -
+ADCx (x=1, 2, 3)                                      O                          O        O                O              -           -             -             -             -            -             -           -                -
+DACx (x=1, 2)                                         O                          O        O                O              O           -             -             -             -            -             -           -                -
+VREFDBUF                                              O                          O        O                O              -           -             -             -             -            -             -           -                -
+OPAMPx (x=1, 2)                                       O                          O        O                O              O           -             -             -             -            -             -           -                -
+COMPx (x=1, 2)                                        O                          O        O                O              O       O                 O         O                 -            -             -           -                -
+Temperature sensor                                    O                          O        O                O              -           -             -             -             -            -             -           -                -
+Timers (TIMx)                                         O                          O        O                O              -           -             -             -             -            -             -           -                -
+Low-power Timer 1
+                                                      O                          O        O                O              O       O                 O         O                 -            -             -           -                -
+(LPTIM1)
+Low-power Timer 2
+                                                      O                          O        O                O              O       O                O(5)           -             -            -             -           -                -
+(LPTIM2)
+Independent
+                                                      O                          O        O                O              O       O                 O         O                O         O                 -           -                -
+watchdog (IWDG)
+Window watchdog
+                                                      O                          O        O                O              -           -             -             -             -            -             -           -                -
+(WWDG)
+SysTick timer                                         O                          O        O                O              -           -             -             -             -            -             -           -                -
+Touch sensing
+                                                      O                          O        O                O              -           -             -             -             -            -             -           -                -
+controller (TSC)
+Random number
+                                                O                     -          O           -                -           -           -             -             -             -            -             -           -                -
+generator (RNG)
+AES hardware
+                                                      O                          O        O                O              -           -             -             -             -            -             -           -                -
+accelerator
+HASH hardware
+                                                      O                          O        O                O              -           -             -             -             -            -             -           -                -
+acceleration
+CRC calculation unit                                  O                          O        O                O              -           -             -             -             -            -             -           -                -
+
+                                                                                                                                                                               (12)    5                  (13)    5
+GPIOs                                                 O                          O        O                O              O       O                 O         O                                                                         -
+                                                                                                                                                                                      pins                       pins
+1. Legend: Y = Yes (Enabled). O = Optional (Disabled by default, can be enabled by software). - = Not available.
+2. The Flash memory can be configured in power-down mode. By default, it is not in power-down mode.
+
+
+
+                                                                                        AN4621 Rev 5                                                                                                                                 23/31
+                                                                                                                                                                                                                                              30
+FlexPowerControl description                                                                                             AN4621
+
+
+3. The SRAM clock can be gated on or off.
+4. SRAM2 content is preserved when the bit RRS is set in PWR_CR3 register.
+5. If supported by device.
+6. Some peripherals with wakeup from Stop capability can request HSI to be enabled. In this case, HSI is woken up by the
+   peripheral, and only feeds the peripheral which requested it. HSI is automatically put off when the peripheral does not need
+   it anymore.
+7. HSE maximum frequency.
+8. The HSE and PLL have the same maximum frequency as the associated Run mode.
+9. MSI maximum frequency..
+10. UART and LPUART reception is functional in Stop mode, and generates a wakeup interrupt on Start, address match or
+    received frame event.
+11. I2C address detection is functional in Stop mode, and generates a wakeup interrupt in case of address match.
+12. I/Os can be configured with internal pull-up, pull-down or floating in Standby mode.
+13. I/Os can be configured with internal pull-up, pull-down or floating in Shutdown mode but the configuration is lost when
+    exiting the Shutdown mode.
+
+
+
+
+24/31                                                    AN4621 Rev 5
+AN4621                                                                   FlexPowerControl description
+
+
+2.5      A versatile clock management
+         A reset and clock controller (RCC) peripheral manages the five possible clock sources of
+         the STM32L4 microcontrollers.
+         Two external oscillators can be used for applications requiring high precision:
+         •     The HSE clock (4 to 48 MHz high speed external clock), typically used to feed the PLL
+               and to generate a CPU clock frequency of up to 80/120 MHz, respectively, on the
+               STM32L4/STM32L4+ Series and independent required frequencies for the USB
+               controller and the audio clocks.
+         •     The LSE (typically 32.768 kHz low speed external clock) normally used to provide a
+               low power clock source to the real time clock but which can also be used as LCD clock.
+         Three internal oscillators can be selected for various tasks:
+         •     The LSI clock (32 kHz low speed internal clock) is a ultra-low power source that can
+               feed the real time clock (with a limited accuracy), the LCD controller and the
+               independent watchdog
+         •     The HSI clock (16 MHz high speed internal clock) is a high speed voltage-
+               compensated oscillator.
+         •     The MSI clock (100 kHz to 48 MHz multi speed internal clock) is an oscillator with
+               adjustable frequency and low current consumption. It is designed to operate with a
+               current proportional to the frequency, so as to minimize the internal oscillator
+               consumption overhead for the low CPU frequencies. This oscillator can provide high-
+               accuracy when configured in PLL-mode, where it is auto-calibrated using the LSE.
+         •     The RC48, when available, with clock recovery system (HSI48): the internal 48 MHz
+               clock source (HSI48) can be used to drive the USB, the SDMMC or the RNG
+               peripherals. This clock can be output on the MCO.
+         Table 8 summarizes the characteristics and uses of the various oscillators.
+
+                            Table 8. STM32L4xx clock source characteristics(1)
+                                                                                          Trimming
+         Clock                                  Consumption
+                         Use        Frequency                       Accuracy
+         source                                   (typical)
+                                                                                      Factory    User
+
+                     Master clock                              Crystal dependent,
+             HSE                     4-48 MHz          -
+                    (+ RTC & LCD)                              down to tens of ppm
+                    RTC and LCD
+                   USART, LPUART,                                                       Not applicable
+                                  32.768 kHz                    Crystal dependent,
+             LSE        LPTIM                       250 nA
+                                   (typical)                    down to a few ppm
+                     independent
+                         clock
+                                                                  ± 0.8 % typical
+                     Master clock                               over -10 to +85 °C
+                      Peripheral
+             HSI                      16 MHz        150 µA                             Yes        Yes
+                     independent
+                         clock                                  +0.1/-0.2 % typical
+                                                                over 1.62 to 3.6 V
+
+
+
+
+                                          AN4621 Rev 5                                               25/31
+                                                                                                             30
+FlexPowerControl description                                                                                          AN4621
+
+
+                          Table 8. STM32L4xx clock source characteristics(1) (continued)
+                                                                                                                 Trimming
+           Clock                                            Consumption
+                              Use            Frequency                              Accuracy
+           source                                             (typical)
+                                                                                                        Factory        User
+
+                                              100 kHz            0.6 µA
+                                              200 kHz            0.8 µA          Default mode:
+                                              400 kHz            1.2 µA         +1.5/-1 % typical
+                                              800 kHz            1.9 µA        over -10 to +85 °C
+                                               1 MHz            4.7 µA
+                                               2 MHz             6.5 µA        +1.5/-5.5 % typical
+               MSI       Master clock                                                                      Yes         Yes
+                                               4 MHz             11 µA          for 16 to 48 MHz
+                                               8 MHz            18.5 µA        over 1.62 to 3.6 V
+                                              16 MHz             62 µA
+                                              24 MHz             85 µA             PLL-mode:
+                                             32 MHz(2)          110 µA         better than 0.25 %
+                                             48 MHz(2)          155 µA
+                                                                                 ±1.5 % typical
+                                                                               over -40 to +125 °C
+                          RTC, LCD
+                LSI                            32 kHz           110 nA                                     Yes          No
+                          and IWDG
+                                                                               +0.5/-1.5 % typical
+                                                                               over 1.62 to 3.6 V
+                                                                                   ±3 % max
+                                                                                over 15 to 85 °C
+                                                                                Vdd = 3.0 to 3.6 V
+               HSI48      USB, RNG             48 MHz           340 nA                                     Yes       USB PLL
+                                                                                  ±4.5 % max
+                                                                               over -40 to +125 °C
+                                                                               Vdd = 1.65 to 3.6 V
+           1. Preliminary characteristics, for information only. See product datasheet for detailed electrical
+              characteristics.
+           2. Only possible in Range 1, due to Flash memory latency constraints.
+
+
+           In addition, the STM32L4xx microcontrollers embed three PLLs, each of them provides up
+           to three independent outputs and can be fed by the HSI, the HSE or the MSI. The nine
+           outputs can be configured independently for:
+           •      the system clock
+           •      the ADC interface clock
+           •      the USB clock
+           •      the Serial Audio Interface SAI1 clock
+           •      the Serial Audio Interface SAI2 clock
+           This removes the peripheral constraints on the system clock. Many other peripherals, when
+           available, can be clocked independently from the system clock: USARTx (x= 1, 2, 3, 4, 5),
+           LPUART, SWPMI and I2Cx (x=1, 2, 4) receive an independent clock. This makes it possible,
+           as an example, to reduce the system and APB bus frequencies and keep the
+           communication peripheral baud rate constant, independent from the system clock
+           frequency.
+           All peripherals clock can be individually enabled or disabled in Run and Low-power run
+           modes.
+
+
+
+26/31                                                AN4621 Rev 5
+AN4621                                                                 FlexPowerControl description
+
+
+         The peripheral clocks can also be individually enabled or disabled in Sleep and Low-power
+         sleep modes.
+         The price of a crystal oscillator may not be neglected in cost sensitive applications. For this
+         reason, the STM32L4xx microcontrollers offer several options to measure the internal
+         oscillators.
+         Although HSI and MSI are factory trimmed, they can be further trimmed by 0.5% steps
+         during run time to compensate for frequency deviations due to temperature and voltage
+         changes.
+         When LSE is present in the application, the MSI can be automatically calibrated using the
+         LSE (PLL-mode configuration), making it possible to reach long-term LSE accuracy. This
+         mode can provide the USB clock, with the accuracy required to operate in device mode,
+         saving the cost of a high-speed crystal oscillator.
+         Moreover the system clock when the MCU exits from Stop modes can be configured to be
+         either HSI or MSI at any frequency range. This enables to exit from Stop mode directly at
+         48 MHz, without waiting for a PLL starting time.
+
+
+
+
+                                           AN4621 Rev 5                                            27/31
+                                                                                                           30
+Conclusion                                                                                           AN4621
+
+
+3            Conclusion
+
+             The main features of the STM32L4xx devices are presented in this application note. They
+             show the benefits offered by this microcontroller family to reduce the current consumption in
+             embedded systems.
+             The STM32L4 and STM32L4+ Series extend the ST ultra-low power family already built with
+             the STM32L0 and STM32L1 Series, offering high processing performance without
+             compromising the power consumption. It complements the STM32 portfolio, keeping
+             compatibility with other STM32 devices.
+             The rich set of peripherals of the STM32L4 and STM32L4+ Series cover a wide range of
+             applications, while the available low power modes give full flexibility to adjust on-the-fly the
+             consumption to any task.
+             This results in an extended operating lifetime for today's and tomorrow's always greener
+             applications.
+
+
+
+
+28/31                                          AN4621 Rev 5
+AN4621                                                                                 Revision history
+
+
+4        Revision history
+
+                                   Table 9. Document revision history
+             Date       Revision                                  Changes
+
+          21-Jul-2015      1        Initial release.
+                                    Updated Introduction, Section 1: Energy-efficient processing,
+                                    Section 2.1.2: Stop mode, Section 2.1.3: Standby mode,
+                                    Section 2.1.4: Shutdown mode, Section 2.2: Multi-supply and battery
+                                    backup domain, Section 2.3: Ultra-safe supply monitoring,
+                                    Section 2.4: A set of peripherals tailored for low power and
+                                    Section 2.5: A versatile clock management.
+                                    Updated title of Figure 1: STM32L476 - Current consumption vs.
+                                    system frequency (25 °C).
+          09-Feb-2017      2
+                                    Updated Figure 2: Power distribution architecture, Figure 6: Low-
+                                    power modes possible transitions and Figure 7: Power supply
+                                    overview.
+                                    Updated Table 6: STM32L4 modes overview and its footnotes, and
+                                    Table 7: Features over all modes.
+                                    Added Table 2: Performance comparison (mA/MHz) with system
+                                    clock at 80 MHz and Table 4: Performance comparison (mA/MHz) for
+                                    different Run modes.
+                                    Updated Introduction, Section 2.2: Multi-supply and battery backup
+                                    domain, Section 2.4: A set of peripherals tailored for low power and
+                                    Section 2.5: A versatile clock management.
+                                    Updated Table 2: Performance comparison (mA/MHz) with system
+          27-Apr-2017      3
+                                    clock at 80 MHz, Table 4: Performance comparison (mA/MHz) for
+                                    different Run modes, Table 6: STM32L4 modes overview, Table 7:
+                                    Features over all modes and Table 8: STM32L4xx clock source
+                                    characteristics.
+
+
+
+
+                                         AN4621 Rev 5                                                29/31
+                                                                                                             30
+Revision history                                                                                   AN4621
+
+
+                                      Table 9. Document revision history
+                   Date    Revision                                 Changes
+
+                                       Added STM32L4+ Series, hence updated document title,
+                                       Introduction, Section 1: Energy-efficient processing, Section 2.2:
+                                       Multi-supply and battery backup domain, Section 2.5: A versatile
+                                       clock management and Section 3: Conclusion.
+                                       Updated Figure 2: Power distribution architecture and Figure 7:
+                                       Power supply overview.
+             27-Mar-2018      4        Updated Table 2: Performance comparison (mA/MHz) with system
+                                       clock at 80 MHz, Table 4: Performance comparison (mA/MHz) for
+                                       different Run modes, and Table 7: Features over all modes and its
+                                       footnotes.
+                                       Added Table 5: Number of wait states vs. CPU clock (HCLK)
+                                       frequency, STM32L4+ Series, Figure 5: Flash memory latency vs.
+                                       VCORE range, STM32L4+ Series and footnote 1 to
+                                       Figure 2.Table 2.1.3: Standby mode
+                                       Added STM32L4P5xx, STM32L4Q5xx and STM32L412 products,
+                                       hence updated:
+                                       – Table 2: Performance comparison (mA/MHz) with system clock at
+                                         80 MHz
+             16-Dec-2019      5        – Table 4: Performance comparison (mA/MHz) for different Run
+                                         modes
+                                       – Table 6: STM32L4 modes overview
+                                       – Table 7: Features over all modes
+                                       – Section 2.1.3: Standby mode.
+
+
+
+
+30/31                                      AN4621 Rev 5
+AN4621
+
+
+
+
+                                           IMPORTANT NOTICE – PLEASE READ CAREFULLY
+
+
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and
+improvements to ST products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on
+ST products before placing orders. ST products are sold pursuant to ST’s terms and conditions of sale in place at the time of order
+acknowledgement.
+
+
+Purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or
+the design of Purchasers’ products.
+
+
+No license, express or implied, to any intellectual property right is granted by ST herein.
+
+
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+
+
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, please refer to www.st.com/trademarks. All other
+product or service names are the property of their respective owners.
+
+
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+
+
+                                               © 2019 STMicroelectronics – All rights reserved
+
+
+
+
+                                                               AN4621 Rev 5                                                           31/31
+                                                                                                                                                31
+

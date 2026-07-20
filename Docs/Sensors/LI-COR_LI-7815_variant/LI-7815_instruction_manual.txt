@@ -1,0 +1,3257 @@
+LI-7815 CO2/H2O
+Trace Gas Analyzer
+Instruction Manual
+                                                      LI-7815 CO2/H2O
+                                                        Trace Gas Analyzer
+                                                                Instruction Manual
+
+
+
+
+LI-COR Environmental
+4647 Superior Street
+Lincoln, Nebraska 68504
+Phone: +1-402-467-3576
+Toll free: 800-447-3576 (U.S. & Canada)
+envsales@licor.com
+envsupport@licor.com
+licor.com/
+LI-COR GmbH, Germany
+Siemensstraße 25A
+61352 Bad Homburg
+Germany
+Phone: +49 (0) 6172 17 17 771
+envsales-gmbh@licor.com
+envsupport-eu@licor.com
+LI-COR Ltd., United Kingdom
+St. John’s Innovation Centre
+Cowley Road
+Cambridge
+CB4 0WS
+United Kingdom
+Phone: +44 (0) 1223 422102
+envsales-UK@licor.com
+envsupport-eu@licor.com
+Beijing LI-COR Bioscience Ltd.
+Room 502-503, 5th Floor, Jimen No.1 Office Building
+Xitucheng Road, Haidian District
+Beijing, China
+Phone: +86-400-1131-511
+china-sales@licor.com
+china-support@licor.com
+LI-COR Distributor Network
+licor.com/distributors
+Notice
+The information in this document is subject to change without notice.
+LI-COR MAKES NO WARRANTY OF ANY KIND WITH REGARD TO THIS MATERIAL, INCLUDING BUT NOT
+LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE. LI-COR shall not be held liable for errors contained herein or for incidental or consequential damages in con-
+nection with the furnishing, performance, or use of this material.
+This document contains proprietary information, which is protected by copyright. All rights are reserved. No part of this
+document may be photocopied, reproduced, or translated to another language without prior written consent of LI-COR,
+Inc.
+Microsoft, Windows, and Excel are registered trademarks of the Microsoft Corporation. Wi-Fi is a trademark of the Wi-Fi
+Alliance. Swagelok® is a registered trademark of the Swagelok Company. All other trademarks and registered trademarks
+are property of their respective owners.
+U.S. Patents: licor.com/patents
+
+Printing History
+Copyright © 2019, LI-COR, Inc. All rights reserved.
+Publication Number: 984-17415
+Created on: Tuesday, April 7, 2026.
+
+Notes on Safety
+This LI-COR product has been designed to be safe when operated in the manner described in this manual. The safety of
+this product cannot be assured if the product is used in any other way than is specified in this manual. The product is
+intended to be used by qualified personnel. Read this entire manual before using the product.
+
+ Equipment markings:
+
+                   The product is marked with this symbol when it is necessary for you to refer to the manual or
+                   accompanying documents in order to protect against injury or damage to the product.
+                   The product is marked with this symbol when a hazardous voltage may be present.
+
+                   The product is marked with this symbol if a Chassis Ground connection is required.
+
+                   The product is marked with this symbol to indicate that a direct current (DC) power supply is
+                   required.
+   WARNING          Warnings must be followed carefully to avoid bodily injury.
+   CAUTION         Cautions must be observed to avoid damage to your equipment.
+ Manual markings:
+
+   Warning         Warnings must be followed carefully to avoid bodily injury.
+   Caution         Cautions must be observed to avoid damage to your equipment.
+   Note            Notes contain important information and useful tips on the operation of your equipment.
+
+
+
+
+                                                             ii
+CE Marking:
+This product is a CE marked product. For conformity information, (typically EMC, Safety, RoHS, and/or Wireless) contact
+LI-COR Support at envsupport@licor.com for a Declaration of Conformity. Outside the U.S., contact your local sales office
+or distributor.
+For ReaCH (Regulation (EC) n.1907/2006) related questions, information is available on the European Chemicals Agency
+maintained website for the Waste Framework Directive SCIP database.
+You can search by product name (for this product “LI-7800”), or request an “SCIP number” from the email above.
+Hereby, LI-COR declares that the radio equipment type LI-7815 is in compliance with Directive 2014/53/EU.
+LI-COR scientific products are for professional use (non-consumer products). These products do not fall within the vol-
+untary scopes of regulations: UNI EN ISO 14024, TCO Certified, EPEAT 2018, Blue Angel, TÜV Green Product Mark,
+Energy Star, EU GPP, or other similar regulations. The typical scope for these regulations is lighting, furniture, copiers,
+mobile phones, televisions, computer/servers, home appliances, to name a few. As such, our products do not use any
+labeling that indicates adherence thereof.
+
+Maximum power and frequency specifications (Europe ETSI).
+                                       Maximum
+                                       transmit
+         Peak                          power at
+RF       Antenna                       antenna
+band     Gain         Technology       connector      Frequencies
+                                                   [BW 20 MHz] x 13 overlapping channels, # (center freq. MHz): *
+                                                   [2400 - 2483.5 MHz]: 1 (2412), 2 (2417), 3 (2422), 4 (2427), 5
+                                                   (2432), 6 (2437), 7 (2442),8 (2447), 9 (2452), 10 (2457), 11 (2462),
+2.4                                    55.8 mW
+         2.5 dBi                                   12 (2467), 13 (2472)
+GHz                                    (+17.5 dBm)
+                                                   [BW 40 MHz] x 9 overlapping channels, # (center freq. MHz): *
+                                                   [2400 - 2483.5 MHz]: 3 (2422), 4 (2427), 5 (2432), 6 (2437), 7
+                                                   (2442),8 (2447), 9 (2452), 10 (2457), 11 (2462)
+                                                   [BW 20 MHz] x 21 non-overlapping channels, # (center freq.
+                                                   MHz): * [5150 - 5250 MHz]: 36 (5180), 40 (5200), 44 (5220), 48
+                                       22.3 mW
+                                                   (5240) * [5250 - 5350 MHz]: 52 (5260), 56 (5280), 60 (5300), 64
+                                       (+13.5 dBm)
+                                                   (5320) * [5470 - 5725 MHz]: 100 (5500), 104 (5520), 108 (5540),
+                                                   112 (5560), 116 (5580), 132 (5660), 136 (5680), 140 (5700)
+                      WLAN             7.9 mW (+9 * [5725 - 5850 MHz]: 149 (5745), 153 (5765), 157 (5785), 161
+                                       dBm)        (5805), 165 (5825)
+                                                   [BW 40 MHz] x 9 non-overlapping channels, # (center freq. MHz):
+                                       22.3 mW     * [5150 - 5250 MHz]: 38 (5190), 46 (5230) * [5250 - 5350 MHz]: 54
+5 GHz 4.6 dBi
+                                       (+13.5 dBm) (5270), 62 (5310) * [5470 - 5725 MHz]: 102 (5510), 110 (5550), 134
+                                                   (5670)
+                                       7.9 mW (+9
+                                                   * [5725 - 5850 MHz]: 151 (5755), 159 (5795)
+                                       dBm)
+                                                   [BW 80 MHz] x 4 non-overlapping channels, # (center freq. MHz):
+                                       22.3 mW
+                                                   * [5150 - 5250 MHz]: 42 (5210) * [5250 - 5350 MHz]: 58 (5290) *
+                                       (+13.5 dBm)
+                                                   [5470 - 5725 MHz]: 106 (5530)
+                                       7.9 mW (+9
+                                                   * [5725 - 5850 MHz]: 155 (5775)
+                                       dBm)
+
+
+
+
+                                                              iii
+California Proposition 65 Warning
+
+        Warning: This product can expose you to chemicals including Nickel, which is known to the State of Cali-
+        fornia to cause cancer. For more information go to www.P65Warnings.ca.gov.
+
+Federal Communications Commission Radio Interference Statement
+WARNING: This equipment generates, uses, and can radiate radio frequency energy and if not installed in accordance
+with the instruction manual, may cause interference to radio communications. It has been tested and found to comply
+with the limits for a Class A computing device pursuant to Subpart J of Part 15 of FCC rules, which are designed to
+provide a reasonable protection against such interference when operated in a commercial environment. Operation of this
+equipment in a residential area is likely to cause interference in which case the user, at his own expense, will be required to
+take whatever measures may be required to correct the interference.
+
+Waste Electronic and Electrical Equipment (WEEE) Notice
+This symbol indicates that the product is to be collected separately from unsorted municipal waste. The fol-
+lowing applies to users in European countries: This product is designated for separate collection at an appro-
+priate collection point. Do not dispose of as household waste. For more information, contact your local
+distributor or the local authorities in charge of waste management.
+
+Wi-Fi Warning
+When powered on for the first time, this device will broadcast a wireless local area network (WLAN) signal. The use of
+WLAN is restricted in some regions and countries, and the illegal use of WLAN may be punishable under these reg-
+ulations. Check your local regulations to determine if WLAN is permitted.
+If WLAN is not permitted in your area, it is your responsibility to disable the WLAN signal. LI-COR, Inc. cannot be held
+liable for any problems arising from the use of WLAN in any countries or regions where it is not permitted. Legal pen-
+alties may result from failing to disable or re-enabling the wireless network where it is not permitted, modifying or alter-
+ing the product, or removing the certification labels from the product.
+Instructions for disabling the WLAN signal are provided in this manual.
+
+
+
+
+                                                              iv
+                                      Contents
+
+Section 1. Introduction to the LI-7815
+What's what                                       1-1
+    Gas analyzer                                  1-1
+    Rechargeable batteries                        1-3
+    Universal power adapter                       1-3
+    Ethernet cable                                1-4
+    Accessory kit                                 1-5
+Optional accessories                              1-5
+    Reduced flow rate kit                         1-5
+    Auxiliary power cable                         1-5
+    Backpack kit                                  1-5
+
+
+Section 2. Getting started
+Powering on the instrument                        2-1
+Power options                                     2-2
+    Universal power adapter                       2-2
+    Rechargeable batteries                        2-2
+    External power source                         2-4
+Connecting with the instrument                    2-4
+    Connecting over wireless                      2-5
+    Connecting over a wired network               2-6
+Enabling and Disabling Wi-Fi                      2-7
+Instrument display                                2-8
+Status codes                                      2-9
+Powering off the instrument                      2-10
+Storing the instrument                           2-10
+Storing lithium-ion batteries                    2-11
+Shipping the instrument                          2-11
+Shipping lithium-ion batteries                   2-12
+
+
+Section 3. Applications of the LI-7815
+Flow schematic                                    3-1
+Connecting the air inlet and outlet               3-2
+Plumbing a subsample                              3-3
+Configuration options                             3-4
+
+
+
+
+                                         v
+    Standard                                                           3-4
+    High altitude                                                      3-4
+Installing the reduced flow rate kit                                   3-4
+Retrieving data from the instrument                                    3-7
+    Downloading a data file                                            3-7
+    Components of the data file                                        3-8
+
+
+Section 4. Software overview
+Home page                                                              4-1
+    Indicators and buttons                                             4-2
+    Remarks                                                            4-2
+    Graphs                                                             4-3
+Settings                                                               4-4
+    Software                                                           4-4
+    Time                                                               4-6
+    Network                                                            4-7
+    Wi-Fi                                                              4-8
+    LI-8100(A)                                                         4-9
+Calibration                                                           4-10
+Diagnostics                                                           4-11
+    Power                                                             4-11
+    Performance status indicators                                     4-11
+    Diagnostic log                                                    4-12
+    Performance monitor                                               4-12
+    Operating information                                             4-13
+Layouts                                                               4-14
+Thresholds                                                            4-15
+Export                                                                4-15
+
+
+Section 5. Troubleshooting
+The pump has stopped running                                           5-1
+Connection problems                                                    5-1
+    Request to connect to instrument network rejected by Android OS    5-1
+    Request to connect to instrument network rejected by iOS           5-2
+    Other wireless connection problems                                 5-3
+    Unable to connect with the instrument over a wired connection      5-3
+Measurement problems                                                   5-5
+    Readings drift or step change unexpectedly                         5-5
+    Pressure readings are questionable or unstable                     5-5
+    Gas density measurements appear to have oscillations               5-5
+Interface issues                                                       5-6
+    The interface is in a language that I don't understand             5-6
+    Graphed data overlaps in time or has gaps                          5-6
+
+
+
+
+                                                             vi
+Status and warning messages                           5-7
+    Code 128 triggered                                 5-7
+
+
+Section 6. Maintenance
+Instrument calibration                                6-1
+    Setting the CO₂ and H₂O zeroes                     6-2
+    Setting the span                                   6-3
+    Recovering from a bad calibration                  6-3
+Replacing the air inlet filter                        6-4
+Replacing the purge dry-down chemical                 6-5
+Software updates                                      6-7
+
+
+Section 7. Communication with the MQTT protocol
+Terminology                                           7-1
+Basic commands in a terminal program                  7-2
+    Streaming data into the interface                  7-3
+    Setting the zero calibration                       7-4
+    Setting the span calibration                       7-5
+    Rebooting the instrument                           7-6
+    Powering off the instrument                        7-6
+Basic commands with a Python script                   7-7
+    Configuring paho-mqtt in Windows                   7-7
+    Configuring paho-mqtt in Mac or Linux              7-7
+    Streaming data into the Terminal Program           7-8
+    Downloading data in a date and time range          7-9
+    Additional commands                               7-10
+
+
+Appendix A. Measurement overview
+
+Appendix B. Additional safety information
+
+Appendix C. Specifications
+
+Standard Terms and Conditions
+
+Index
+
+
+
+                                                vii
+viii
+Section 1.
+Introduction to the LI-7815
+                  The LI-7815 CO2/H2O Trace Gas Analyzer is a high-precision, high-stability, laser-
+                  based gas analyzer that uses Optical Feedback — Cavity-Enhanced Absorption Spec-
+                  troscopy (OF-CEAS) to measure gases in air. OF-CEAS is a well-established spec-
+                  troscopic technique that is described in published literature. The analyzer reports
+                  and stores in its internal memory CO2 dry mole fractions in air corrected for both
+                  the spectroscopic interferences and dilution due to H2O. See Measurement overview
+                  on page A-1 for a brief summary of OF-CEAS.
+
+
+What's what
+                  If you have just taken delivery of the instrument, check the packing list to be sure
+                  you received everything that you ordered. The LI-7815 includes some or all of the fol-
+                  lowing components.
+
+                  Gas analyzer
+                  The gas analyzer is in a gray enclosure. It is designed for indoor and outdoor use but
+                  it is not waterproof.
+
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                         1-1
+Section 1. Introduction to the LI-7815
+
+
+
+
+                    The analyzer should not be allowed to sit in standing water, exposed to driving rain,
+                    or deployed outdoors without weather protection. Use caution to avoid drawing
+                    water into the analyzer air inlet! Although equipped with software protection that
+                    disables the pump if a clog is detected (such as the filter becoming wet and stopping
+                    air flow), if water is drawn into the inlet the instrument will have to be repaired at
+                    the factory.
+
+                    Power button
+                    The power button is used to power the instrument on and off and enter and exit
+                    sleep mode. It has an indicator light that will be illuminated when the instrument is
+                    powered on and dark when it is powered off. Functions of the button are described
+                    in Powering on the instrument on page 2-1 and Powering off the instrument on
+                    page 2-10.
+
+                    Power cable connector
+                    The power cable connector on the instrument is compatible with the universal
+                    power adapter (part number 9968-232) and the optional DC power cable (part num-
+                    ber 9968-242). See Power options on page 2-2.
+
+                            Warning: Use the safety-approved power cord supplied with the instrument. The instru-
+                            ment power supply is equipped with a 3-wire grounding plug. This plug will only fit into a
+                            grounded outlet. Do not defeat the purpose of the grounding-type plug. Do not place the
+                            instrument where the power cord will be walked on or exposed to water or chemical spills.
+                            Avertissement: Utilisez le cordon d'alimentation approuvé pour la sécurité fourni avec
+                            l’instrument. L'alimentation de l'instrument est équipée d’une fiche de terre à 3 fils. Cette
+                            fiche ne rentrera que dans une prise de terre. N’allez pas à l’envers de la fonction de la
+                            fiche de mise à la terre. Ne placez pas l’instrument où le cordon d'alimentation sera piét-
+                            iné ou exposé à l'eau ou aux déversements de produits chimiques.
+
+                    Network cable connector
+                    The network cable connector is compatible with standard RJ-45 Ethernet cables.
+
+                    Air inlet
+                    The instrument draws air in through the inlet using the internal pump. The inlet
+                    connector is a compression fitting, which is compatible with ¼" outside diameter
+                    tubes. Additional nuts and ferrule sets are include in the accessories kit.
+
+
+1-2                                                                                        LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                 Section 1. Introduction to the LI-7815
+
+
+
+
+                          Warning: Do not exceed the maximum absolute pressure rating of 110 kPa.
+                          Advertissement: Ne dépassez pas la pression nominale absolue maximale de 110 kPa.
+
+                   Air outlet
+                   The instrument exhausts sample air through the outlet. Do not substantially restrict
+                   or apply a vacuum to the outlet.
+
+                   Rechargeable batteries
+Part number        Two batteries are provided with the instrument. We recommend leaving at least one
+442-11807          battery in the instrument when you are using it. The batteries are 14.4 V lithium ion
+                   battery packs with 6.8 amp-hour capacity. Two batteries can provide up to 8 hours of
+                   operation under most conditions. Batteries are shipped in a partially discharged
+                   state. They should be fully charged prior to the first use. Batteries that are installed
+                   in the instrument will be charged when the instrument is powered though the uni-
+                   versal power adapter. Storing the batteries in a discharged state can result in damage
+                   to the batteries.
+
+                          Warning: Lithium ion batteries may cause environmental damage or damage to human
+                          health if they are disposed of improperly. Do not dispose of the batteries in unsorted muni-
+                          cipal waste or an incinerator. Many localities have battery recycling facilities that will
+                          accept lithium ion batteries. Check your local regulations to determine how to safely dis-
+                          pose of the batteries.
+                          Advertissment: Les batteries lithium ion peuvent causer des dommages à
+                          l'environnement ou endommager la santé humaine si l’on se débarrasse d’elles de man-
+                          ière inappropriée. Ne vous débarrassez pas des batteries dans des déchets municipaux
+                          non triés ou dans un incinérateur. Plusieurs localités ont des installations de recyclage de
+                          batteries qui accepteront les batteries lithium ion. Vérifiez vos réglementations locales
+                          pour déterminer comment se débarrasser des batteries en toute sécurité.
+
+
+                   Universal power adapter
+Part Number        The universal power adapter is an AC-to-DC adapter that powers the instrument and
+9968-232           charges the batteries when it is plugged into an AC power outlet. The power adapter
+                   provides 24 VDC (9.17 amps maximum; 220 watts maximum). It is compatible with
+                   100 to 240 VAC, 50 to 60 Hz. The instrument will include one of the cords listed in
+
+
+
+Rechargeable batteries                                                                                              1-3
+Section 1. Introduction to the LI-7815
+
+
+
+
+                    Table 1-1 below. The power adapter and cord are for indoor use; they are not rated
+                    for outdoor deployment.
+
+                    Table 1-1. Power cables for the power adapter.
+                     Description                                                                     Part Number
+                     For USA, Canada, Mexico, and Japan; NEMA 5-15; Type B                           390-00787
+                     For Europe, South America, and Asia; CEE 7/7; Type C                            390-01486
+                     For United Kingdom; Type G                                                      390-03089
+                     For Israel; SI32; Type H                                                        390-03059
+                     For Australia; Type I                                                           390-03095
+
+                            Warning: Use the safety-approved power cord supplied with the instrument. The instru-
+                            ment power supply is equipped with a 3-wire grounding plug. This plug will only fit into a
+                            grounded outlet. Do not defeat the purpose of the grounding-type plug. Do not place the
+                            instrument where the power cord will be walked on or exposed to water or chemical spills.
+                            Avertissement: Utilisez le cordon d'alimentation approuvé pour la sécurité fourni avec
+                            l’instrument. L'alimentation de l'instrument est équipée d’une fiche de terre à 3 fils. Cette
+                            fiche ne rentrera que dans une prise de terre. N’allez pas à l’envers de la fonction de la
+                            fiche de mise à la terre. Ne placez pas l’instrument où le cordon d'alimentation sera piét-
+                            iné ou exposé à l'eau ou aux déversements de produits chimiques.
+
+
+                    Ethernet cable
+Part number         Network cable with RJ-45 connectors (Cat5e); to connect the instrument to a com-
+616-06116           puter or network. Length of 2.1 meters (7 feet).
+
+                      Note: Do not use cables other than the one provided. Other cables may result in
+                      improper electrical performance.
+
+
+
+
+1-4                                                                                        LI-7815 CO₂/H₂O Gas Analyzer
+                                                                      Section 1. Introduction to the LI-7815
+
+
+
+
+                Accessory kit
+Part number     The accessory kit includes some accessories and replacement components that may
+9978-195        be useful to you. Additional replacement parts are available from LI-COR or your
+                local distributor.
+
+                Description                                            Quantity         Part Number
+                Replacement dry-down chemical pack (17 grams each)     3                622-17627
+                Stainless Steel Screws ; M3×0.5; 8 mm                  6                150-14419
+                O-ring; 27×1.5 mm                                      2                192-16956
+                O-ring; 22×2.5 mm                                      4                192-17345
+                Stainless Steel ¼" Ferrule and Nut Set                 5                300-15025
+                Stainless Steel Tube Inserts                           2                300-18126
+                Filter support disks                                   2                9878-280
+                Filter pack; 0.2-micron (10 filters)                   1                9978-234
+
+
+Optional accessories
+                In addition to the items already mentioned, the analyzer may include the following
+                accessories.
+
+                Reduced flow rate kit
+Part Number     The reduced flow rate adapter is an accessory for the analyzer that, when installed,
+7800-113        enables the analyzer to operate at a nominal flow rate of 70 sccm, rather than the
+                standard nominal flow rate of 250 sccm. An older version of the kit (part number
+                7800-112) offers the similar performance with some more constraints.
+
+                Auxiliary power cable
+Part Number     This optional component allows you to power the instrument from an external DC
+9968-242        power supply, such as a deep cycle battery. It has a connector for the instrument
+                power connection and bare leads for a power source. Power requirements are given
+                in External power source on page 2-4.
+
+                Backpack kit
+Part Number     The backpack kit is an optional accessory that can be used to carry the instrument. It
+6578-380        features a padded back and padded shoulder straps with a padded waist strap and
+                chest strap to help support the instrument as you carry it.
+
+
+
+Accessory kit                                                                                           1-5
+Section 1. Introduction to the LI-7815
+
+
+
+
+                    The analyzer is secured in the backpack with several straps. The bottom of the instru-
+                    ment will be against your back. The tubes can face up or down. Use caution with
+                    the backpack kit:
+                     l   Close the clasps and tighten the straps so that the instrument is secure.
+                     l   Do not block the vents or set the instrument in standing water.
+                     l   If you are unable to lift the backpack kit comfortably or tighten the straps, con-
+                         sider enlisting the help of a "strapping" assistant.
+                     l   Clip the chest and waist straps. Tighten all of the straps snugly.
+
+
+
+
+1-6                                                                               LI-7815 CO₂/H₂O Gas Analyzer
+Section 2.
+Getting started
+                  This section provides basic operating instructions for the instrument.
+
+
+Powering on the instrument
+                     Caution: Remove the protective caps (part number 620-17951) from the air inlet
+                     and outlet before powering on the instrument. The instrument will fail to ini-
+                     tialize if the caps are in place. Use the caps when storing or shipping the instru-
+                     ment.
+
+
+
+
+                  To power on the instrument, either install a battery and push the power button or
+                  connect the instrument to an external power supply. The instrument will power on
+                  any time power is supplied through the AC power adapter or the auxiliary power
+                  cable. See Power options on the next page for more details.
+                  If main power is lost, the instrument will run until the batteries are depleted and
+                  then it will power off. When the main power is restored, the instrument will power
+                  up and the batteries will resume charging. When powered by batteries only, you
+                  must press the power button to turn on the instrument.
+                  Upon powering on, the instrument will issue a series of status codes as it completes
+                  the start up cycle. The pump will start running when the optical bench approaches
+                  55 °C. If starting from room temperature, it will take about 20 minutes before you
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                          2-1
+Section 2. Getting started
+
+
+
+
+                    can connect and another 10 or 15 minutes before it provides accurate measurements.
+                    If the instrument is very cold, it will take longer to warm up.
+                    Instruments shipped prior to January 2021 do not support the automatic power on
+                    feature and must be powered on by pressing the power button. Contact LI-COR if
+                    you would like to upgrade one of these instruments. The instrument cannot be
+                    powered on from afar. You can restart the instrument through the software inter-
+                    face, but if you power it off through the software interface or the power button, you
+                    must press the button or reconnect the main power supply to turn it back on. See
+                    Powering off the instrument on page 2-10 for additional details.
+
+
+Power options
+                    The instrument can be powered using the universal AC power adapter, rechargeable
+                    batteries, or an external power source using the optional auxiliary power cable. We
+                    recommend leaving one battery in the instrument when in use to ensure proper shut
+                    down if main power is lost unexpectedly.
+
+                    Universal power adapter
+                    The universal power adapter is compatible with 100
+                    to 240 VAC power sources, both 50 and 60 Hz. It
+                    outputs 24 VDC to power the analyzer and charge
+                    the batteries that are installed. The instrument will
+                    power on when the universal power adapter is con-
+                    nected to a power source.
+
+                    Rechargeable batteries
+                    Two batteries can be installed behind the battery cover. Two fully charged batteries
+                    will provide about 8 hours of operating. The charge status is given in the web inter-
+                    face, the instrument display, and on the batteries.
+                    When not using the AC power adapter, a single battery is required to power the
+                    instrument. The instrument supports hot-swapping, meaning that you can remove a
+                    partially depleted battery and replace it with a charged one and measurements will
+                    not be disrupted — as long as the instrument is powered by a charged battery or the
+                    AC power adapter.
+
+
+
+
+2-2                                                                             LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                            Section 2. Getting started
+
+
+
+
+                   The batteries are not user serviceable. If a battery exceeds a
+                   temperature or load threshold, a non-resettable fuse will open,
+                   rendering the battery non-functional. If the batteries become
+                   excessively discharged in storage, the charger will supply a 3-
+                   minute wake-up charge in an attempt to activate the elec-
+                   tronics.
+
+                   Charging batteries in the instrument
+                   Batteries in the instrument are charged any time the instru-
+                   ment is powered by an external power adapter. When charging batteries, the instru-
+                   ment will consume more power and generate heat that requires the fan to run at full
+                   speed. Early models do not support charging by pins 3 and 4; current models do.
+                   Pin assignments are given in Table 2-1 on the next page.
+
+                   Charging batteries with an external charger
+                   The optional charger (part number 590-11830; Inspired Energy CH7000A) can
+                   charge one battery at a time. To use the charger, plug it into a wall socket and place
+                   a battery in the dock. The charger is compatible with 100 to 240 VAC power at 50 to
+                   60 Hz. A blinking LED indicates charging; a solid green LED indicates a full charge.
+
+                    Note: An optional automobile adapter kit is available to charge the battery from
+                    an automobile. Leave the automobile running when charging the battery to pre-
+                    vent excessive discharge of the automobile battery.
+
+
+                         Warning: Charge batteries only with a SMBUS compliant level 2 or 3 charger. Do not heat
+                         above 80 °C. Do not open battery, dispose of in fire, or short circuit—may ignite, explode,
+                         leak, or get hot, causing personal injury. Replace battery with same part number only. Use
+                         of another battery may present a risk of fire or explosion. Keep away from children.
+                         Avertissement: Ne rechargez les batteries qu’avec un chargeur conforme au SMBUS
+                         niveau 2 ou 3. Ne chauffez pas au-dessus de 80 °C. Ne pas ouvrir la batterie, ni ne la jeter
+                         au feu ou court-circuiter—elle peut mettre à feu, exploser, couler, ou s’échauffer, causant
+                         des blessures personnelles. Remplacez les batteries seulement avec le même numéro de
+                         pièce. L’utilisation d’une autre batterie peut presenter un risque, ou un incendie ou une
+                         explosion. A garder hors de portee des enfants.
+
+
+
+
+Rechargeable batteries                                                                                            2-3
+Section 2. Getting started
+
+
+
+
+                    External power source
+                    You can power the instrument with any 10.5 to 33
+                    VDC power source, such as a deep-cycle marine bat-
+                    tery with >20 amp-hour capacity. The external power
+                    source should be connected with the auxiliary power
+                    cable (optional; part number 9968-242). Attach both
+                    red leads to positive (+) and both black leads to neg-
+                    ative (-).
+
+                    Table 2-1. Pin assignments for the connector and power cable.
+                     Pin     Assignment      Color     Description
+                     1       Power (+)       n/a           24 VDC; 6 Amps from the LI-COR power adapter. Not
+                     5       Power (+)       n/a       powered through the auxiliary power cable (9968-242).
+                     3       Power (+)       Red           10.5 to 33 VDC; Up to 9 Amps. Draws up to 2.3 watts
+                                                       when powered off. Not powered through the universal power
+                     4       Power (+)       Red
+                                                       adapter (9968-232).
+                     2       Power (-)       Black     Ground
+                     6       Power (-)       Black
+
+
+
+
+                    Figure 2-1. Pins for the power cable (left) and instrument power connector (right).
+
+
+Connecting with the instrument
+                    Connect with the instrument using a web browser on a computer, tablet, or smart
+                    phone that is on the same network as the instrument.
+
+
+
+
+2-4                                                                                  LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                                   Section 2. Getting started
+
+
+
+
+                   Connecting over wireless
+                   Follow these steps to connect to the instrument's wireless network1.
+
+               1 Connect your PC or mobile device to the instrument wireless network
+                   When Wi-Fi is enabled, the LI-7815 will make a local wireless network, indicated by
+                   the presence of a wireless network symbol ( ) on the display. Find the network in
+                   the list of networks presented on your device. The network name is the hostname (and
+                   serial number) of the instrument. The password is licorenv.
+
+
+
+
+               2 Enter the hostname or IP address in a web browser address bar
+                   One or more of the following will work:
+                   l   Hostname: Enter http://tg15-nnnnn.local where tg15-nnnnn is the host-
+                       name (and the serial number) of the instrument.
+                   l   Dynamic IP address on the display panel if the network cable is connected.
+                   l   Fixed IP address of http://192.168.10.1 if the internal Wi-Fi is enabled.
+               3 Press Enter to connect.
+
+
+
+
+                   If you are unable to connect, see troubleshooting Connection problems on page 5-1.
+
+
+                  1This product is capable of creating a Wireless Local Area Network (WLAN). The use of WLAN is restric-
+                   ted in some regions and countries. The illegal use of WLAN may be punishable under these regulations.
+                   Check your local regulations to determine if WLAN is permitted. LI-COR, Inc. cannot be held liable for
+                   any problems arising from the use of WLAN in any countries or regions. Legal penalties may result from
+                   any of the following: enabling Wi-Fi where it is not permitted, modifying or altering the product, or
+                   removing the certification labels from the product. To disable the Wi-Fi, see Enabling and Disabling Wi-Fi
+                   on page 2-7.
+
+
+Connecting over wireless                                                                                                  2-5
+Section 2. Getting started
+
+
+
+
+                    Connecting over a wired network
+                    Follow these steps to connect to an instrument that has a wired connection, either
+                    directly to your computer or to a local area network.
+
+                1 Connect a network cable between the instrument and your local network
+                    Install a network cable between the instrument and a vacant network port on your
+                    local network or directly to your computer's network port (the instrument and your
+                    computer must be on the same network). The instrument will indicate that it is on a
+                    network by displaying the network icon ( ) and the network-assigned IP address. If
+                    your local network also has Wi-Fi, you can connect to the instrument over the wire-
+                    less network.
+
+
+
+
+                2 Enter the hostname or IP address in a web browser address bar
+                    Both the hostname (which is the instrument serial number) and IP address are given
+                    on the display. Type one or the other into the address bar:
+                     l   Hostname: Enter http://tg15-nnnnn.local where tg15-nnnnn is the host-
+                         name (and the serial number) of your instrument.
+                     l   Dynamic IP address: Enter the IP address on the display panel.
+                3 Press Enter to connect.
+
+
+
+
+                    If you are unable to connect, see Connection problems on page 5-1 for troubleshoot-
+                    ing.
+
+
+
+2-6                                                                                LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                   Section 2. Getting started
+
+
+
+
+Enabling and Disabling Wi-Fi
+                   To alter the Wi-Fi setting, connect to the instrument using a wired network con-
+                   nection (see Connecting over a wired network on the previous page).
+
+               1 Click Options > Settings.
+               2 Click the Wi-Fi tab.
+               3 Set Wi-Fi to Off or On.
+               4 Click Update to apply the setting.
+                   If you click away from the page without first clicking Update, the setting will not be
+                   applied. The Wi-Fi status is displayed in the status bar and the instrument display
+                   panel.
+
+
+
+
+Enabling and Disabling Wi-Fi                                                                             2-7
+Section 2. Getting started
+
+
+
+
+Instrument display
+                    The instrument display panel provides useful information at a glance.
+
+
+
+
+                     l   Serial Number and IP Address: The instrument serial number (hostname) and
+                         network-assigned IP address (IPv4) rotate for 5 seconds each. The serial number
+                         is also printed on the case label. If the network cable is not plugged in, the dis-
+                         play will give the IP address for the Wi-Fi network (if enabled).
+                     l   Network Status: When visible ( ), the instrument is connected to a network.
+                         The network cable is installed between the instrument network port and a port
+                         on a local area network.
+                     l   Wi-Fi Status: When Wi-Fi is enabled (indicated by the        symbol), the instru-
+                         ment broadcasts a Wi-Fi network with the same name as the instrument serial
+                         number (and hostname).
+                     l   Battery Status: Indicates the charge status ( ). A solid black battery indicates a
+                         full charge; an outline indicates a discharged battery. The battery icon is not dis-
+                         played when no batteries are installed.
+                     l   Power Status: Indicates the power source (AC if power cable connected).
+                     l   Performance Status: Indicates performance status of the instrument.
+                     l   Gases: The gases measured and their concentrations.
+
+
+
+
+2-8                                                                                LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                 Section 2. Getting started
+
+
+
+
+Status codes
+               Status codes are given on the instrument display panel, software interface, and recor-
+               ded in the data set, where they are associated with measurements.
+
+               Table 2-2. Status codes provide information on the status of the instrument.
+                 Display Software     Status   Definition
+                Indicator Indicator   Code
+
+                  a           Green   0        Normal operation (measuring).
+
+                              Yellow 1         Start frequency adjustment; Measurements may be
+                                               noisy.
+                              Yellow 2         Laser temperature adjustment; Measurements may be
+                                               noisy.
+                              Yellow 4         Incomplete scan resulted in missing cavity modes;
+                                               Measurements may be noisy.
+                              Yellow 8         Start-up mode finished; Measurements may be noisy.
+
+                              Yellow 16        Start-up mode initializing; Measurements may be
+                                               noisy.
+                              Red     32       Spectral fit residual RMS too high; Measurements are
+                                               invalid.
+                              Red     64       Unregulated pressures or temperatures;
+                                               Measurements are invalid.
+                              Red     128      Inlet clogged. Triggered when the inlet is obstructed for
+                                               3 or more seconds. When triggered, the instrument
+                                               turns off the pump and enters sleep mode. Clear the
+                                               obstructions and restart the instrument.
+                              Red     256      Instrument not ready; Measurements are invalid.
+
+                              Red              SVC Required. This message may be issued during
+                                               warmup. If not resolved after 60 to 90 minutes of
+                                               operation, contact LI-COR or your sales representative.
+                              Red              SD card error. This message may be issued briefly
+                                               during warmup or during a firmware update. If it
+                                               persists, contact LI-COR or a sales representative.
+
+
+
+
+Status codes                                                                                           2-9
+Section 2. Getting started
+
+
+
+
+                    Status codes are additive: if multiple codes are active, the displayed value is the sum
+                    of the codes. For example, a display code of 23 indicates that the instrument is ini-
+                    tializing the start-up mode (16), it has an incomplete scan (4), laser temperature
+                    adjustment is underway (2), and a start frequency adjustment is underway (1). Non-
+                    zero status codes are displayed during warmup and any time the instrument is not in
+                    a normal state. Typically, status codes will be resolved by the instrument. Occa-
+                    sionally, you may need to restart the instrument to resolve the code. If a code is not
+                    dismissed for several hours or after restarting, contact technical support.
+
+
+Powering off the instrument
+                    The instrument can be powered off with the power button or through the software
+                    interface. To Power Off the instrument with the button, press it three times within 5
+                    seconds. To enter Sleep Mode, press the power button twice within 3 seconds. In
+                    sleep mode, the instrument will power off the pump but maintain power to the heat-
+                    ers. Sleep mode is to silence the pumps, if, for example, you want to hear the birds
+                    singing while you walk between measurements. To Exit Sleep Mode, press the
+                    power button after waiting at least 5 seconds after the previous press.
+
+                       Caution: While in sleep mode, the instrument will stop drawing in air, which
+                       may affect the pressure and flow in your air supply system. Do not enter sleep
+                       mode when the air inlet or outlet is subject to positive or negative pressure. Pres-
+                       sures exceeding 110 kPa absolute pressure may damage the instrument.
+
+                    If a battery becomes depleted during normal operation, the instrument will com-
+                    plete the dry-down cycle before shutting itself down. If the instrument is inad-
+                    vertently powered off and prevented from completing the dry-down cycle (by
+                    removing the batteries and power cable, for example), power it back on and off
+                    again so it can complete the dry-down cycle.
+
+                       Caution: Failure to complete the dry-down while powering off the instrument
+                       may result in condensation in the optics, which will damage the instrument.
+
+
+Storing the instrument
+                    The instrument can be placed in short-term storage (for several weeks) without any
+                    special preparations. For longer-term storage (longer than a month), we recommend
+                    that you remove the batteries from the case and clean and dry the instrument
+
+
+
+2-10                                                                              LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                      Section 2. Getting started
+
+
+
+
+                    exterior with a soft damp (not dripping) cloth and mild detergent if needed. The
+                    instrument storage temperature is -45 to 50 °C, <85% relative humidity.
+
+
+Storing lithium-ion batteries
+                    Batteries are manufactured by Inspired Energy®. Comprehensive storage and ship-
+                    ping information is available at www.inspired-energy.com/shipping.
+                    Store the batteries with a 30 to 50% charge. Replenish the charge every 6 months of
+                    storage to avoid excessive discharge.
+                    The battery storage conditions should be -20 to 60 °C, <80% relative humidity.
+                    However, it is best to store them below 21 °C in a cool, dry, well-ventilated facility
+                    free from corrosive gas or vapor. Storage at elevated temperatures (>45 °C) will
+                    degrade battery performance and reduce battery life. Storage at low temperatures
+                    may affect initial battery performance. Extended storage may require a calibration
+                    cycle or a few regular operating cycles to restore full accuracy to the fuel gauge.
+                    If a battery exceeds a temperature or load threshold, a non-resettable fuse will open,
+                    rendering the battery non-functional.
+                    If a battery become excessively discharged in storage, you can attempt to restore it by
+                    charging. The charger will supply a 3-minute wake-up charge in an attempt to activ-
+                    ate the electronics. If this does not work, the battery should be replaced.
+
+
+Shipping the instrument
+                    The instrument is delivered with custom-designed foam pad (part number 6578-296)
+                    that protects the air inlet and outlet while it is packaged. Keep the foam pad so you
+                    can use it to ship the instrument, should the need arise. Cover the air inlet and out-
+                    let with the blue caps (part number 620-17951) provided with the instrument or
+                    scotch tape to keep dust from the filter. Position the foam pad over the inlet and out-
+                    let, wrap the instrument with plastic wrap, place it in a large plastic bag, and then
+                    tape it tightly so that the foam will stay in place. Place the wrapped instrument in a
+                    box with foam packing peanuts.
+
+
+
+
+Storing lithium-ion batteries                                                                              2-11
+Section 2. Getting started
+
+
+
+
+                    Figure 2-2. The blue caps (620-17951) and foam pad (6578-296) protect the inlet, outlet,
+                    and network cable connector during shipping. Install the caps and pad when you ship the
+                    instrument.
+
+
+Shipping lithium-ion batteries
+                    Many new LI-COR instruments include removable lithium-ion batteries. We recom-
+                    mend that you do not ship these batteries when shipping your instrument to the fact-
+                    ory.
+                    Effective April 1, 2016, new shipping requirements were issued regarding the ship-
+                    ment of lithium-ion batteries. There are three separate shipping scenarios described
+                    below: 1) Batteries are packaged with the original equipment, 2) Additional batteries
+                    (quantity of two or fewer) are packaged without the original equipment, and 3)
+                    Additional batteries(quantity of three to ten) are packaged without the original
+                    equipment.
+
+                    Shipping batteries with equipment
+                    When packed with equipment, lithium-ion batteries (quantity 1-3) are classified as
+                    UN3481, packing instruction 966, section II, and require that the package be labeled
+                    with the lithium-ion battery handling label (see Figure 2-3 on page 2-14). A full-size
+                    copy of this label that can be printed and affixed to the package is available from
+                    licor.app.boxenterprise.net/v/Li-Ion-Shipping-Label.
+
+                    Shipping batteries without equipment (2 or less)
+                    When packed without equipment, lithium-ion batteries (quantity 1-2) are classified
+                    as UN3480, packing instruction 965, section II, and require:
+                     l   Not declared as Dangerous Goods.
+                     l   One or two batteries.
+
+
+
+2-12                                                                               LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                     Section 2. Getting started
+
+
+
+                     l   Shipper’s Declaration: Quantity and type of packing - Packing: 1 Fiberboard
+                         Box, Quantity: 0.46 kg weight per battery.
+                     l   Label package with lithium-ion battery handling label; a copy is available from
+                         licor.app.boxenterprise.net/v/Li-Ion-Shipping-Label.
+                     l   Label package as Cargo Aircraft only.
+                     l   Airway bill states “Lithium-ion batteries in compliance with Section II of PI
+                         965”.
+                     l   Only one package per consignment.
+
+                    Shipping batteries without equipment (3 to 10)
+                    When packed without equipment, lithium-ion batteries (quantity 3-10) are classified
+                    as UN3480, packing instruction 965, section IB, and require:
+                     l   Is declared as Dangerous Goods (Proper shipping name: UN3480 Lithium Ion
+                         Batteries, Class 9)
+                     l   Three to ten batteries
+                     l   Shipper’s Declaration: Quantity and type of packing - Packing: 1 Fiberboard
+                         Box, Quantity: 0.46 kg weight per battery
+                     l   Label package with lithium-ion battery handling label; a copy is available from
+                         licor.app.boxenterprise.net/v/Li-Ion-Shipping-Label.
+                     l   Label package as Cargo Aircraft only
+                     l   Label package with Class 9 hazard label
+                     l   Airway bill states “Lithium-ion batteries in compliance with Section IB of PI
+                         965”
+
+                    Notes
+                     l   These packages must be handled with care. A flammability hazard exists if the
+                         package(s) is damaged.
+                     l   If package is damaged in transport, it must not be loaded until the condition of
+                         the contents can be verified. The batteries contained in the package must be
+                         inspected for damage and may only be repacked if they are intact and protected
+                         against short circuits.
+
+
+
+
+Shipping lithium-ion batteries                                                                            2-13
+Section 2. Getting started
+
+
+
+
+                    Figure 2-3. Battery handling label.
+
+
+
+
+2-14                                                      LI-7815 CO₂/H₂O Gas Analyzer
+Section 3.
+Applications of the LI-7815
+                  In this chapter we provide information about using the instrument in field or labor-
+                  atory applications. We cover connecting plumbing to the air inlet, retrieving data,
+                  and other applications.
+
+
+Flow schematic
+                  During normal operation, air is drawn into the analyzer through the air inlet (Figure
+                  3-1 below). Air flows through the optical bench and phase adjuster and is exhausted
+                  through the air outlet. In the optical bench, the pressure is drawn down to about 40
+                  kPa. When the instrument is powering down, air is circulated in a closed loop
+                  through the desiccant to ensure that air remaining in the system is free of moisture,
+                  preventing condensation when the instrument is powered off.
+
+
+
+
+                  Figure 3-1. Simplified flow schematic of the gas analyzer. During a measurement, (left) air
+                  flows through the optical bench. During shutdown (right), the instrument purges the optical
+                  path of water vapor.
+
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                              3-1
+Section 3. Applications of the LI-7815
+
+
+
+
+Connecting the air inlet and outlet
+                    Air is drawn into the sample cell through the air inlet. Connect tubing to the inlet
+                    with the nut, bushing, and ferrule from the accessories kit. Optional stainless steel
+                    inserts (300-18126) are included for use with soft tubing. Tubing can be connected
+                    to the inlet and the outlet in the same way.
+
+                       Caution: Be careful when working near standing water. If water is drawn into
+                       the air inlet, the instrument will have to be repaired at the factory.
+
+
+
+
+                    Figure 3-2. When connecting a tube to the air inlet, insert the tube through the nut, bush-
+                    ing, and ferrule. If the tubing is soft, place a stainless steel insert (300-18126) in the tubing
+                    to make it more rigid.
+
+                    To connect a ¼" outside-diameter metal or plastic tube to the compression fitting,
+                    insert the nut, bushing, and ferrule over the tube. Then tighten the nut over the fer-
+                    rule until it is finger tight. Tighten it an additional 1-¼ revolutions if you are con-
+                    necting the tube for the first time. For highly pliable plastic tubing, place a stainless
+                    steel tube insert (300-18126) inside the tubing to make it rigid enough.
+                    When reconnecting a plastic or metal tube that has been connected previously,
+                    simply tighten it ¼ turn beyond finger tight.
+
+                       Caution: Abrupt pressure transients up to 35 kPa above or below ambient pres-
+                       sure may cause momentary status warnings, inlet plugged warnings, and meas-
+                       urement inaccuracies. Longer lasting pressure excursions or larger pressure
+                       transients may cause the instrument to reinitialize measurement control loops.
+
+
+
+
+3-2                                                                                     LI-7815 CO₂/H₂O Gas Analyzer
+                                                                          Section 3. Applications of the LI-7815
+
+
+
+
+Plumbing a subsample
+                   Note: We are currently refining numerous sampling protocols for the LI-7815.
+                   Contact LI-COR technical support (envsupport@licor.com) if you have questions
+                   about your application.
+
+                 A typical sampling application will use the LI-7815 to subsample a gas from a main
+                 sample line. Air passes a single time through the gas analyzer before it is discharged.
+                 Air supplied to the sample inlet should be between ambient and 35 kPa (5 PSI)
+                 above ambient. If the pressure is higher than that, install a 30 cm vent in the sample
+                 line to ensure that air from the external pump does not pressurize the analyzer. The
+                 vent must be sufficiently long to prevent diffusion of ambient air into the sample air
+                 supply.
+
+
+
+
+                 Figure 3-3. A basic open system, where air is supplied to the gas analyzer by an external
+                 pump. If the pressure exceeds 35 kPa above ambient, install a 30 cm vent in the air supply
+                 line. Attach the inlet to the 'leg' of the T-fitting to avoid isotopic fractioning.
+
+
+
+
+Plumbing a subsample                                                                                        3-3
+Section 3. Applications of the LI-7815
+
+
+
+
+Configuration options
+                    The instrument supports two operating configurations that can be set in the inter-
+                    face: Standard and High Altitude.
+
+                    Standard
+                    The standard configuration is the default - it will be loaded automatically unless the
+                    configuration has been changed under Options > Settings > Software > Con-
+                    figuration.
+
+                    High altitude
+                    The high altitude configuration does not require any hardware modifications. The
+                    reduced flow rate hardware modifications cannot be used while the instrument is in
+                    the high altitude configuration; if the kit has been installed, remove it before using
+                    the high altitude configuration. To use the high altitude configuration, select it
+                    under Options > Settings > Software > Configuration and restart the instrument. Be
+                    aware of slight differences in the performance specifications of the instrument while
+                    in the high altitude configuration.
+                     See Specifications on page C-1 for details.
+
+
+Installing the reduced flow rate kit
+                    Two reduced flow rate kits have been produced for LI-COR Trace Gas Analyzers.
+                    Both kits enable the analyzer to operate at a nominal flow rate near 70 sccm, rather
+                    than the standard nominal flow rate near 250 sccm.
+                    Part number 7800-112 is older, consisting of a blue Balston filter, vent, barbed uni-
+                    ons, and two orifices. Part number 7800-113 is current. It consists of two quick-con-
+                    nect unions and a single orifice. The older kit is not compatible with closed-loop
+                    applications because the inlet and outlet flow rate are different. The current kit is
+                    compatible with closed-loop applications.
+                    These instructions describe how to install 7800-113.
+                    The reduced flow rate kit is supported by instrument firmware version 2.0.25 and
+                    newer. Firmware version 2.4.47 eliminating the need to select an option in the inter-
+                    face by automatically detecting the kit (go to www.licor.com/support/Trace-Gas-
+
+
+
+3-4                                                                              LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                    Section 3. Applications of the LI-7815
+
+
+
+
+                     Analyzers/home.html, select an instrument, and then click Software Downloads).
+                     One firmware updater can be used to update all Trace Gas Analyzer models. To
+                     install the kit:
+
+                 1 Power off the instrument.
+                 2 Identify the tube that connects the pump to the optical bench.
+
+
+
+
+                     Observe the orientation of the T-fitting. In early models, this tube comes off of the
+                     stem of the T. In later models, it comes off of the cross of the T. In either case, the
+                     tube connects the T-fitting to the pump.
+                 3 Cut the tube where indicated.
+
+
+
+
+                 4 Observe the flow direction indicator on the assembly and install it between the two cut ends with
+                   the arrow pointing from the optical bench to the pump.
+                   For each quick connect, insert the tube and push firmly until it stops.
+
+
+
+
+Installing the reduced flow rate kit                                                                                  3-5
+Section 3. Applications of the LI-7815
+
+
+
+
+                5 Power on the instrument.
+                    The instrument will start up and operate with a flow rate of approximately 70 sccm.
+                    To restore the normal flow rate, remove the reduced flow rate kit, connect the cut
+                    tubes with quick-connect fitting from the kit, and restart the instrument.
+
+
+
+
+3-6                                                                            LI-7815 CO₂/H₂O Gas Analyzer
+                                                                            Section 3. Applications of the LI-7815
+
+
+
+
+Retrieving data from the instrument
+                   The instrument records all of its data after it has warmed up. There is no way to
+                   turn data logging on or off because data are always logged. Typically, the instrument
+                   can store a total of 5,356,800 records, which is about 62 days of continuous data. Old
+                   records are overwritten when the memory is full. Therefore, we recommend that
+                   you routinely download important data from the instrument.
+                   The instrument supports two protocols for transferring data:
+                    l   Direct download using TCP/IP (internet protocols; see Downloading a data file
+                        below) and
+                    l   MQTT (Message Queuing Telemetry Transport; see Communication with the
+                        MQTT protocol on page 7-1).
+
+                   Downloading a data file
+                   To retrieve data from the instrument, click Options > Export. Specify a date range
+                   and time period. Dates are displayed as YYYY-MM-DD. Time options are given in a
+                   24-hour clock (00:00 through 24:00). Click Export. The web browser will prompt
+                   you to save or open the file, and then provide a text file with the requested data. The
+                   file has a .data extension. Measurements are recorded as tab-delimited text that can
+                   be opened in a text editor or spreadsheet application.
+
+
+
+
+                   Figure 3-4. To download data, click Export from the settings menu, select a date and time
+                   range, and click Export.
+
+
+
+
+Retrieving data from the instrument                                                                           3-7
+Section 3. Applications of the LI-7815
+
+
+
+
+                    Components of the data file
+                    The text file will include a file header, data header, and data.
+
+                    File header
+                    The file header provides information about the instrument that measured the data.
+
+                     Header Label        Description
+                     Model               The model of the instrument
+                     SN                  The serial number of the instrument
+                     Software Version    The software version on the instrument
+                     Timestamp           The date and time of the beginning of the requested data (according to the
+                                         instrument clock; yyyy-mm-dd hh:mm:ss).
+                     Timezone            The timezone setting on the instrument when the data is requested.
+
+
+                    Data header
+                    The data header identifies the columns of values that are in the file. You'll see two
+                    rows: one called DATAH, which gives the variable names for the corresponding
+                    columns, and one called DATAU, which gives the units for the corresponding
+                    columns.
+
+                     DATAH               DATAU         Description
+                     SECONDS             secs          Seconds past the universal epoch (Unix time).
+                     NANOSECONDS         nsecs         Nanoseconds of the seconds
+                     NDX                 index         A count of scans. At four scans per second, the value increases
+                                                       by four counts per second.
+                     DIAG                diag          Diagnostic code (see Status codes on page 2-9)
+                     REMARK              -             The remark entered in the Remark field
+                     DATE                date          Date of the record in yyyy-mm-dd
+                     TIME                time          Time of the record in HH:MM:SS (according to the instrument
+                                                       clock)
+                     H2O                 ppm           Water vapor concentration
+                     CO2                 ppm           Carbon dioxide mole fraction in dry air
+                     CAVITY_P            kPa           Optical cavity pressure (typically near 39)
+                     CAVITY_T            °C            Optical cavity temperature (typically near 55)
+                     LASER_PHASE_P       kPa           Laser phase pressure
+                     LASER_T             °C            Laser temperature
+                     RESIDUAL            n/a           Difference between raw and best fit spectra
+                     RING_DOWN_TIME      µsecs         Indicator of cavity resonance
+                     THERMAL_            °C            Optical enclosure temperature
+                     ENCLOSURE_T
+
+
+
+
+3-8                                                                                      LI-7815 CO₂/H₂O Gas Analyzer
+                                                                            Section 3. Applications of the LI-7815
+
+
+
+
+                    DATAH             DATAU       Description
+                    PHASE_ERROR       counts      Dimensionless indicator of mode lock state
+                    LASER_T_SHIFT     °C          Shift in laser center wavelength from factory calibration
+                    INPUT_VOLTAGE     V           Power supply voltage
+                    CHK               CHK         Checksum; to ensure that the receiving software received the
+                                                  data without error, and to reject corrupted data lines
+
+
+                   Time, data , and diagnostics
+                   The time, data, and diagnostics are given under the header.
+
+
+
+
+                   The relationship between Unix Epoch time and the time stamp
+                   The instrument measures time based upon the number of seconds past the Unix
+                   epoch (GMT: Thursday, January 1, 1970 12:00:00 AM). This value is represented in
+                   the Seconds column of the data set. You can easily convert the Unix epoch to date
+                   and time using online resources (e.g., https://www.epochconverter.com). If you have
+                   selected a time zone, the Date and Time columns will represent the Unix epoch time
+                   adjusted by an offset for the time zone.
+
+
+
+
+Components of the data file                                                                                      3-9
+Section 3. Applications of the LI-7815
+
+
+
+
+3-10                                     LI-7815 CO₂/H₂O Gas Analyzer
+Section 4.
+Software overview
+                  The web interface provides access to the most important settings in the gas analyzer.
+                  Here, you can view graphs of data, download recorded data, configure the display,
+                  and alter instrument settings.
+
+
+Home page
+                  When you first connect to the instrument, it will display a home page with meas-
+                  urements, graphs, and options.
+
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                         4-1
+Section 4. Software overview
+
+
+
+
+                   Indicators and buttons
+                   You'll see the instrument serial number and status in the upper left. Normal oper-
+                   ation is indicated by a green dot. A warmup or other status is indicated by an
+                   exclamation point in a yellow or red dot beside the instrument name.
+
+                               Status indicator displays the performance status of the instrument. Green
+                               indicates normal operation. Red with an exclamation point indicates that the
+                               instrument is warming up or in an error state (see Performance status
+                               indicators on page 4-11).
+                               Battery charge status. The value (%) is the total charge available. Two fully
+                               charged batteries = 100. (50 can mean one fully charged battery or two half
+                               charged batteries). Check the charge gauge on each battery or the
+                               instrument display to determine which is depleted.
+
+                               Wi-Fi and network status information (see Wi-Fi on page 4-8).
+
+
+                               Click to return to the home page (only visible when not on the home page).
+
+
+                               Click to view the Options menu.
+
+
+                   Remarks
+                   Remarks are user-entered information (15 characters maximum) that is recorded in
+                   the dataset along with other data in the database, including gas densities and dia-
+                   gnostics. For example, you might enter some information about the current meas-
+                   urement or data that you want to associate with the measurement in the records.
+
+
+
+
+                   To enter a remark, simply type it into the field and click Start Remark. The remark
+                   will be recorded with each data record until you click End Remark.
+
+
+
+
+4-2                                                                                LI-7815 CO₂/H₂O Gas Analyzer
+                                                                           Section 4. Software overview
+
+
+
+
+         Graphs
+         In the graphs, you can click and drag to zoom in and reset the zoom by double-click-
+         ing the graph. For any gas, you can click the rectangular panel to view more details,
+         including the current measurement, mean, standard deviation, and slope for the dis-
+         played time range. You can adjust the plotted time range with a slider or by typing
+         in the number of seconds in Graph Range (Seconds). Click Reset to restore the
+         default range of 300 seconds.
+
+
+
+
+                    Click to display the entire history of measurements of this variable.
+
+                    Click to hide or show anomaly stripes (to indicate when a measured value
+                    exceeds a threshold (see Thresholds on page 4-15).
+                    Click to lock the graph to the current view. Click again to restore live
+                    graphing.
+
+
+
+
+Graphs                                                                                             4-3
+Section 4. Software overview
+
+
+
+
+Settings
+                   Click Options > Settings to view a menu with basic instrument settings, including
+                   software updates and language, instrument configuration, time, networking, Wi-Fi,
+                   and connection to peripheral instruments.
+
+
+
+
+                   Software
+                   Under Settings > Software, you can view the software version and check for
+                   updates. Click Check to check for software updates. The instrument must be online
+                   to check.
+                   See Software updates on page 6-7 for update instructions.
+
+
+
+
+4-4                                                                            LI-7815 CO₂/H₂O Gas Analyzer
+                                                                        Section 4. Software overview
+
+
+
+
+           The Language setting is configured under software settings. The interface can be dis-
+           played in English, Spanish, and simplified Chinese languages. The language setting
+           is retained in the web browser, not the instrument. If you connect with a different
+           browser or different computer, or if you clear your browser cache, the default lan-
+           guage setting will be applied (English).
+           The Configuration option provides two instrument configurations, described below.
+           Note that the instrument must be restarted after changing the configuration. A third
+           option - reduced flow rate - was removed from the interface with version 2.4 and
+           newer. With this firmware, the option is automatically applied when instrument
+           starts up and the reduced flow rate kit is installed. If there is no reduced flow rate
+           kit, the instrument starts up in the standard mode.
+            l   Standard: Nominal flow rate of 250 sccm; Operating pressure range of 70 to 100
+                kPa.
+            l   High Altitude: Nominal flow rate of 150 sccm; Operating pressure range of 50 to
+                110 kPa. See High altitude on page 3-4.
+
+
+
+
+Software                                                                                        4-5
+Section 4. Software overview
+
+
+
+
+                   Time
+                   Under Settings > Time, you'll find two subtabs related to the time settings: Instru-
+                   ment Time and Time Zone.
+
+
+
+
+                   Instrument time
+                   These settings specify how the device should set its time. See The relationship between
+                   Unix Epoch time and the time stamp on page 3-9 for more details.
+                    l   Auto Sync: We recommend using this setting at all times to prevent clock drift.
+                        When selected, the instrument will set its clock according to the local network
+                        time. When not selected, you must enter the desired time manually. The Auto
+                        Sync options are:
+                         l NTP: Network Time Protocol. A time protocol designed for low-cost time syn-
+
+                           chronization between computers and devices. You can use the default settings
+                           of auto or select an NTP server, either from your network or the internet. A
+                           list of NIST time servers is available from https://tf.nist.gov/tf-cgi/servers.cgi.
+                         l PTP: Precision Time Protocol. A network time protocol designed for high
+
+                           accuracy (microsecond to nanosecond) time synchronization between clocks.
+
+
+
+
+4-6                                                                                LI-7815 CO₂/H₂O Gas Analyzer
+                                                                        Section 4. Software overview
+
+
+
+           l   Date: If Auto Sync is cleared, you can enter a date manually.
+           l   Time: If Auto Sync is cleared, you can enter the time manually.
+
+          When the instrument time setting is set to Auto Sync and the instrument is con-
+          nected to the internet, it will maintain very accurate time, in sync with NTP or PTP
+          clocks. If Auto Sync is disabled, or the instrument is not online, expect the clock to
+          drift up to several seconds per month, or more.
+
+          Time zone
+          Here you can select a time zone that applies an offset to the Unix epoch time. If you
+          change any of the time settings, click Update to apply the changes.
+
+           Note: We recommend standard time (do not adjust for daylight saving time).
+           Arbitrary changes to the clock can cause data to have the appearance of gaps and
+           overlaps.
+
+
+          Network
+          Under Settings > Network, you configure the network settings. If you change the
+          settings, click Update to apply them.
+
+
+
+
+Network                                                                                         4-7
+Section 4. Software overview
+
+
+
+                    l   DHCP: Dynamic Host Configuration Protocol; This setting is suitable for most
+                        networks. When selected, the network assigns an IP address to the instrument.
+                        l IP Address: The assigned IP address is displayed here (and on the instrument
+
+                           display).
+                    l   Static: Used to set a static IP address. This setting is used when configuring the
+                        instrument to communicate over a cellular gateway, such as the Sierra Wireless
+                        RV-50X AirLink. When selected, you manage the networking manually by set-
+                        ting the IP address, subnet mask, and possibly the gateway.
+                         l IP Address: Enter the desired IP address. For a local network, you will use
+
+                           something like 172.24.1.nn, where the values represented by nn are octets
+                           that uniquely identify this instrument on the network.
+                         l Subnet Mask: Typically 255.255.255.0.
+
+                         l Default Gateway: Set the first two octets to match those of the IP address.
+
+
+
+
+                   Wi-Fi
+                   Under Settings > Wi-Fi you can configure the wireless network settings, including
+                   whether the wireless network is on or off, and which channel it uses. You can always
+                   use the default setting, but if there are many devices using that channel, you may
+                   have better results with a channel that has fewer devices. If you have difficulty con-
+                   necting, try changing the channel that the instrument uses.
+
+
+
+
+4-8                                                                               LI-7815 CO₂/H₂O Gas Analyzer
+                                                                          Section 4. Software overview
+
+
+
+
+             When Wi-Fi is on, the instrument will create a local network that is not connected
+             to the global internet. You should see the network on the list of available networks.
+             The network name is the same as the instrument serial number. If you change the
+             settings, click Update to apply them. You can also choose a channel for com-
+             munication over the wireless network. When there are many Wi-Fi networks avail-
+             able in one location, you can assign a specific channel for a more reliable
+             connection.
+
+             LI-8100(A)
+             Under Settings > LI-8100 you configure communication with the LI-8100A instru-
+             ment.
+
+
+
+
+             IP Address: To connect with an LI-8100A, enter the LI-8100A IP Address here. Addi-
+             tional details are provided in an application note:
+             licor.com/support/LI-8100A/topics/LI-78xx-integration.html
+
+
+
+
+LI-8100(A)                                                                                        4-9
+Section 4. Software overview
+
+
+
+
+Calibration
+                   User calibration settings are configured under Options > Calibration.
+
+
+
+
+                   Zero gives the date of the most recent zero calibration. See Instrument calibration on
+                   page 6-1 for details on the Zero button.
+                   CO2 Span presents information about the previous span setting, including the date
+                   that the span was set (Last), the span value (Weight; the multiplier that is set when
+                   you span the CO2 measurement), and the CO2 Concentration (ppb) entered in the
+                   previous span. Do not change the settings unless you are certain that your actions
+                   will improve the performance of the instrument. See Instrument calibration on
+                   page 6-1.
+                   Restore Span/Zero allows you select a previous zero and span setting.
+
+                   Factory Reset reloads the factory original zero and span calibration parameters.
+
+
+
+
+4-10                                                                            LI-7815 CO₂/H₂O Gas Analyzer
+                                                                           Section 4. Software overview
+
+
+
+
+Diagnostics
+              The Diagnostics section provides instrument performance information, including
+              the status, warnings, and diagnostic information.
+
+
+
+
+              Power
+
+
+
+              In the upper left, the Power option allows you to power off or restart the instru-
+              ment. The instrument cannot be powered on remotely.
+
+              Performance status indicators
+              In the upper right, nine bubbles provide more detailed status information. Normal
+              operation is indicated by green bubbles. An exclamation point inside one or more
+              bubbles indicates that the instrument is not in a normal operating state. Typically
+              these are displayed when the instrument is warming up, and the status message will
+              disappear when the warmup is completed. Click a bubble to view the status mes-
+              sage. See Status codes on page 2-9 for more information. If your instrument is dis-
+              playing warnings that do not resolve themselves over the course of a few hours or by
+              restarting, contact technical support.
+
+
+Diagnostics                                                                                        4-11
+Section 4. Software overview
+
+
+
+
+                   Diagnostic log
+                   Download Diagnostic Log is to download a dataset that includes detailed per-
+                   formance information. This option should be used in consultation with LI-COR
+                   technical support in order to resolve performance issues. Diagnostic log files can be
+                   very large, (hundreds of MB, depending on the time and date range), so we recom-
+                   mend that you constrain the dates to a narrow time window when downloading a
+                   diagnostic log.
+
+                   Performance monitor
+                   The central portion of the window provides more details about the instrument per-
+                   formance.
+
+
+
+
+                    l   Phase Error is an indicator of the symmetry of cavity modes. During normal
+                        operation the needle will be within the green part of the dial.
+                    l   Cavity Pressure is measured in the optical cavity. The instrument operates
+                        around 40 kPa typically. If the values are colored red, that indicates that the
+                        instrument is unable to regulate the cavity pressure. Normally this value is
+                        within 1 kPa of the setpoint.
+                    l   Phase Pressure refers to the pressure for the phase adjuster volume. If red, the
+                        instrument is unable to regulate the pressure to get optimal phase adjustment.
+                        Normally this value is within 1 kPa of phase pressure setpoint.
+                    l   Fit Residual is the difference between the raw spectra and the best fit spectra
+                        which generates the measured concentrations. If the residual is red, it indicates
+                        that the instrument is unable to process the data properly and that the con-
+                        centrations are not being reported accurately. Data will be flagged in this case.
+
+
+
+
+4-12                                                                             LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                 Section 4. Software overview
+
+
+
+
+                   Operating information
+                   The bottom portion of the window provides more details about the instrument oper-
+                   ating history and status.
+
+
+
+
+                    l   Pump Operating Hours is the number of hours that the pump has operated.
+                    l   Thermal Enclosure Temp is the temperature of components inside the foam insu-
+                        lating enclosure. If red, the instrument is either too hot and unable to regulate
+                        the enclosure temperature, or too cold and in a warmup state. Normally this is
+                        between 51.5 °C and 57.5 °C.
+                    l   Cavity Temperature is the optical bench temperature. If red, the instrument is
+                        either too hot and unable to regulate the cavity temperature, or too cold and in a
+                        warmup state. Normally this is between 52 °C and 58 °C.
+                    l   Laser Temperature is the temperature of the diode laser. If red, the instrument is
+                        unable to regulate the laser temperature.
+                    l   Laser Temp. Shift is the shift in the laser center wavelength from the factory cal-
+                        ibration.
+                    l   Ring Down Time is a parameter indicating cavity resonance.
+                    l   Device Uptime shows the number of hours that the instrument has been
+                        powered on.
+                    l   On/Off cycles is the number of times the instrument has been powered on.
+
+
+
+
+Operating information                                                                                   4-13
+Section 4. Software overview
+
+
+
+
+Layouts
+                   You can customize the graphical layout. If, for example, you are only interested in
+                   viewing CO2 measurements, you can select a layout that displays one gas and then
+                   select the gas of interest.
+
+
+
+
+4-14                                                                           LI-7815 CO₂/H₂O Gas Analyzer
+                                                                         Section 4. Software overview
+
+
+
+
+Thresholds
+             The software provides simple, configurable indicators that show if a measured gas
+             concentration falls outside a threshold. Color-coded indicators are displayed when
+             measurements are outside the specified range. If you have set a Low Threshold or
+             High Threshold for a gas, the home page will show if the measurement falls outside
+
+             that range. Click Hide/Show Anomaly Stripes (       ) to show excursions outside the
+             specified range. You can change indicator colors as well. Thresholds are for display
+             only; they are not recorded in the data file.
+
+
+Export
+             Data are downloaded from the instrument using the Download option
+             under Options > Export. See Retrieving data from the instrument on
+             page 3-7.
+
+
+
+
+Thresholds                                                                                      4-15
+Section 4. Software overview
+
+
+
+
+4-16                           LI-7815 CO₂/H₂O Gas Analyzer
+Section 5.
+Troubleshooting
+                  Here we describe common issues and solutions. If things aren't working as you
+                  expect, start here.
+
+
+The pump has stopped running
+                  The instrument will protect the optics from liquid water by disabling the pump if it
+                  detects a flow obstruction for >3 seconds. This can occur if the intake filter is in con-
+                  tact with liquid water or if it is clogged with dust. When the pump is disabled, the
+                  instrument will present an error code 128 (clogged inlet).
+                  To resolve error code 128, power off the instrument, remove the old inlet filters, and
+                  replace them with new filters, as described in Replacing the air inlet filter on page 6-4.
+                  Then power on the instrument and allow it to warm up.
+
+
+Connection problems
+                  Here we describe how to resolve issues related to connecting with the instrument.
+
+                  Request to connect to instrument network rejected by Android OS
+                  When connecting with the instrument Wi-Fi network, some operating systems my
+                  detect that the instrument network is not part of the global internet and reject the
+                  connection. This is indicated by a warning similar to "The network has no internet
+                  access. Stay connected?" Select Yes.
+                    l   The exact procedure may vary depending upon the device manufacturer.
+                    l   The web browser may continue to try to resolve the hostname to an IP address
+                        unsuccessfully. In this case, simply enter the instrument fixed IP address into the
+                        address bar. For trace gas analyzers, it is 192.168.10.1.
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                             5-1
+Section 5. Troubleshooting
+
+
+
+
+                   Request to connect to instrument network rejected by iOS
+                   Some iOS configurations may reject the connection and report "Unable to join the
+                   network. If your network security is managed by WiFi address, you may need to
+                   turn off Private Wi-Fi Address or modify network settings."
+
+
+
+
+                   To resolve it, tap the information icon next to the device network and disable the
+                   Private Network setting.
+
+
+
+
+5-2                                                                            LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                   Section 5. Troubleshooting
+
+
+
+
+                   Other wireless connection problems
+                   Try again a few times. The issue could be related to transient heavy network traffic.
+                   Some network channels may be transmitting a lot of data (like videos, for example),
+                   causing communication to time out.
+                   Wireless networking turned off? If you are attempting to connect over wireless, be
+                   sure it is enabled in the software. The display will show a wireless network symbol (
+                      ) when enabled. If wireless networking needs to be enabled, connect with a wired
+                   network connection and enable it.
+                   Computer or mobile device connected to the instrument network? If using wireless,
+                   be sure you have connected your PC to the instrument's Wi-Fi network before con-
+                   necting in the web browser.
+                   Too many devices in a confined space? We have experienced wireless connection
+                   issues when several wireless devices are close together. Move your instrument to a
+                   different room or another place where there are fewer wireless devices.
+                   Wireless antenna unplugged? The wireless antenna is adhered to the internal plastic
+                   electronics shroud. It has a very small connector that plugs into the circuit board.
+                   Power off the instrument, remove the cover screws, and lift the cover slightly to see
+                   if the antenna is attached to the connector on the circuit board. The connector is
+                   near the lower left corner of the processor. If it is unplugged from the circuit board,
+                   reattach it and try to connect again.
+                   See Figure B-3 on page B-5.
+
+                   Unable to connect with the instrument over a wired connection
+                   Network cable disconnected? Check both ends to be sure it is connected to the
+                   instrument and to your computer or network.
+                   Instrument on a different network than PC? If you are using an Ethernet cable, be
+                   sure the instrument network cable and your PC network cable are connected to the
+                   same local network.
+                   Network not detected by the instrument? Check the IP address given on the instru-
+                   ment display. If the display says IP:down, the instrument is not detecting a suitable
+                   network (the network cable may be unplugged, network switch or routers may be
+                   powered off, the IP address setting in the instrument may be incompatible with the
+                   network or computer).
+
+
+Other wireless connection problems                                                                       5-3
+Section 5. Troubleshooting
+
+
+
+
+                   IP address setting incompatible with the network settings? If the instrument IP
+                   address or your computer's IP address is set to static, you may need to alter either
+                   your computer or instrument network configuration. To restore connectivity, make
+                   the computer IP address compatible with the instrument IP address. This procedure
+                   may work on Windows 10:
+
+                1 Press the Windows key (  ) or the Windows key + R (            + R), type cmd, and press Enter to
+                  open the command prompt.
+                2 Type ipconfig and press Enter.
+                   Your computer will reply with its network configuration information. You're inter-
+                   ested in the IPv4 Address.
+                3 Compare your computer's IP address with the instrument's IP address given on the display.
+                    If the IP addresses are not compatible (see Table 5-1 below), you will not be able to
+                   connect until you have changed one or both IP addresses.
+
+                   Table 5-1. Incompatible IP addresses that will lead to connection issues.
+                    Device         IP Address      Issue                                       Potential Solution
+                    LI-78xx        172.24.1.1      Same IP address (the last set of octets     Change PC IP address to
+                    PC             172.24.1.1      must be different)                          172.24.1.2
+                    Device         IP Address      Issue                                       Potential Solution
+                    LI-78xx        172.24.1.1      Different network (the first two or three   Change PC IP address to
+                    PC             192.168.1.1     octets must be the same)                    172.24.1.2
+
+                   To change your computer's IP address (Windows 10):
+
+                1 Open the Network Connections window.
+                    l
+                        Press the Windows key (        ), type Network Connections, and press Enter.
+                    l
+                        Press the Windows key + R (          + R) and type ncpa.cpl and press Enter.
+                2 In the Network Connections window, double click the icon that represents your network con-
+                  nection, and then click Properties.
+                3 Double click Internet Protocol Version 4 (TCP/IP) to open the IPv4 Window.
+                4 In the window that opens, select Use the following IP address and enter an IP address that is
+                  compatible with the instrument IP address. The first three octets will be the same as the instru-
+                  ment IP address, but the final set of octets must be different.
+
+
+
+
+5-4                                                                                       LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                     Section 5. Troubleshooting
+
+
+
+
+                 Device                 Compatible IP Addresses
+                 LI-78xx                172.24.1.1
+                 PC                     172.24.1.2 through 172.24.1.255
+                 Device                 Compatible IP Addresses
+                 LI-78xx                192.168.1.1
+                 PC                     192.168.1.2 through 192.168.1.255
+
+             5 Connect with the instrument by entering the host name in a web browser address bar.
+             6 Now you can change the instrument IP address settings to whatever you prefer. Connection issues
+               will be resolved if you set both the instrument and your computer to automatic.
+
+                  Note: You must reconnect after changing the instrument IP address.
+
+
+Measurement problems
+                Here we describe issues related to the display of data or measurements.
+
+                Readings drift or step change unexpectedly
+                Constricted inlet or outlet? If one of these becomes constricted, you will observe
+                errant measurements, with corresponding status codes that indicate problematic pres-
+                sure measurements (see Status codes on page 2-9). Clear the constriction and the
+                instrument should return to normal operation in a few minutes. Restart the instru-
+                ment if it does not resume normal operation within a few minutes.
+
+                Pressure readings are questionable or unstable
+                Clogged air inlet filter? Check and replace the filter if needed, as described in Repla-
+                cing the air inlet filter on page 6-4. Otherwise, unstable pressure readings may indicate
+                that the pump is failing. Contact technical support if the issue is not resolved by
+                replacing the filter.
+
+                Gas density measurements appear to have oscillations
+                In older firmware, regular, periodic oscillations in the data may appear in cir-
+                cumstances where there are vibrations that are effectively coupled to the instrument
+                sampling frequency. Typically, these oscillations are small and the measurements are
+                still within the noise specification.
+
+
+
+
+Measurement problems                                                                                       5-5
+Section 5. Troubleshooting
+
+
+
+
+                   Solution: Update the instrument firmware to v2.1.37 or newer. The latest firmware
+                   adjusts the pump speed automatically to prevent this issue.
+
+
+Interface issues
+                   Some issues related to the display settings are described here.
+
+                   The interface is in a language that I don't understand
+                   The interface can be displayed in English, Spanish, and Simplified Chinese. If you
+                   need to change the language setting, click Options > Settings. The language setting
+                   is stored in the web browser. Any time you connect with a browser for the first time
+                   or clear your browser cache, the language setting will be in the default state (Eng-
+                   lish).
+
+
+
+
+                   Graphed data overlaps in time or has gaps
+                   If you have been altering the time and time zone settings, the browser may receive
+                   overlapping time information. Refresh your web browser to reload the display. The
+                   issue should be resolved. Data are always logged with the Unix time.
+
+
+
+
+5-6                                                                             LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                   Section 5. Troubleshooting
+
+
+
+
+Status and warning messages
+                  During warmup and any time the instrument detects a problem, it will issue one or
+                  more status messages, including a message that says SVC Required. This is normal
+                  during warmup. Typically, warmup messages will be resolved within an hour of
+                  operation. The status messages will be triggered again if there is an issue with the sys-
+                  tem.
+                  See Status codes on page 2-9 for details on the codes.
+
+                  Code 128 triggered
+                  Code 128 is triggered if the inlet is obstructed. This can happen if the instrument
+                  has drawn water, dust, or debris into the inlet filter, causing a clog. In either case,
+                  power off the instrument, clear the obstruction, replace the filters (see Replacing the
+                  air inlet filter on page 6-4), and power the instrument back on.
+                  You must restart the instrument to resolve code 128.
+
+
+
+
+Status and warning messages                                                                              5-7
+Section 5. Troubleshooting
+
+
+
+
+5-8                          LI-7815 CO₂/H₂O Gas Analyzer
+Section 6.
+Maintenance
+                  The LI-7815 will require little maintenance. There are no user-serviceable parts in
+                  the instrument except for the air inlet filter, air dry-down chemical, and pump. Do
+                  not attempt to disassemble the instrument or conduct any maintenance procedures
+                  other than those described here.
+
+
+Instrument calibration
+                  To adjust the instrument calibration, you can set the zero and span. The span is like
+                  a slope (the m in y = mx + b). The zero is a spectral baseline. Adjusting the zero
+                  changes every measurement (the relationship is non-linear). Adjusting the span
+                  changes the slope. Calibration gases should be at a pressure between ambient and 35
+                  kPa (5 PSI) above ambient pressure. We recommend installing a >30 cm vent before
+                  the air inlet to vent the excess pressure and prevent diffusion of ambient air into the
+                  gas stream.
+
+
+
+
+                  Figure 6-1. Plumbing configuration for calibration gases. Use a low pressure regulator to
+                  reduce pressure and a 30 cm vent to are recommended avoid pressurizing the inlet.
+
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                                  6-1
+Section 6. Maintenance
+
+
+
+
+                  Setting the CO₂ and H₂O zeroes
+                  Select a quality zero gas that is free of volatile organic compounds (VOCs). The gas
+                  should be 0 ppm CO2 in air (a mix of N2 and O2 in their natural abundance). The
+                  calibration will only be as good as the gas.
+
+                     Caution: Do not use nitrogen-balanced gas. Use air-balanced gas for both the
+                     zero and span. Do not power on the instrument with a 0 ppm CO2 gas flowing
+                     through the analyzer or the analyzer will not initialize properly.
+
+               1 Power on the instrument and let it warm up.
+               2 Plumb a gas to the air inlet as shown in Figure 6-1 on the previous page.
+                  Set the pressure between ambient and 35 kPa (5 PSI) above ambient.
+               3 Observe the measurements on the home screen until they have stabilized.
+                   The slopes for all gases should be near zero. Since it involves zeroing H2O, wait
+                  plenty of time for the H2O concentrations to approach zero (typically, this takes 30
+                  to 45 minutes).
+               4 Zero the analyzer.
+                  Under Options > Calibration, click Zero. The software will indicate that a zero cal-
+                  ibration has started and it will not report concentrations until the zero is set. This
+                  usually takes about 5 minutes.
+
+
+
+
+6-2                                                                                    LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                           Section 6. Maintenance
+
+
+
+
+                   Setting the span
+                   Select a quality span gas with a CO2 concentration near or slightly above the con-
+                   centrations you expect to measure.
+
+                    Caution: Do not use nitrogen-balanced gas. Use air-balanced gas for both the zero
+                    and span.
+
+               1 Power on the instrument and let it warm up.
+               2 Plumb a gas to the air inlet as shown in Figure 6-1 on page 6-1.
+                   Set the pressure between ambient and 35 kPa (5 PSI) above ambient.
+               3 Observe the measurements on the home screen until they have stabilized.
+                   The slope will be near zero.
+               4 Span the analyzer.
+                   Under Options > Calibration > CO2 Span, enter the concentration of the gas and
+                   click Span CO2.
+
+
+
+
+                   Recovering from a bad calibration
+                   In the event that an attempt to zero or span fails to work as intended, you can
+                   restore a previous zero or span under Restore Span/Zero. Select the file and click
+                   Restore.
+
+                   Factory Reset reloads the factory original zero and span calibration parameters.
+
+
+Setting the span                                                                                              6-3
+Section 6. Maintenance
+
+
+
+
+Replacing the air inlet filter
+                  The air intake has filters that may become contaminated periodically. We recom-
+                  mend replacing filters every year, or more often if you are sampling dirty or dusty
+                  air. The filters also should help prevent water from being drawn into the gas ana-
+                  lyzer.
+
+
+
+
+               1 Power off the instrument.
+               2 Remove each of the six screws that secure the air intake and outlet.
+                  They are installed with thread locking compound, which will make them difficult to
+                  remove.
+               3 Remove the O-rings, the filter support disks, and the filter.
+                  Use a toothpick to work them out.
+               4 Inspect the O-rings and replace them if they are damaged or compressed.
+               5 Install the replacement filters and reassemble the system.
+                  Install two filters (part number 9978-234) between the support disks. The two metal
+                  discs support the filter(s) — one on each side. Align the centers of the filters and the
+                  metal disks. Assembly is the reverse of disassembly. You do not need to use thread
+                  locking compound on the threads. Tighten them snugly.
+
+
+
+
+6-4                                                                                     LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                           Section 6. Maintenance
+
+
+
+
+Replacing the purge dry-down chemical
+                  Replacement desiccant (622-17627) is included with the instrument spares. The desic-
+                  cant, consisting of silica gel beads, is contained in a non-porous tube (see Figure 6-2
+                  below). The instrument will pump air through the desiccant tube during power-off
+                  to purge the optics of water vapor. You may need to replace or restore the desiccant
+                  periodically. The silica gel beads are orange when new and green when saturated
+                  (see Figure 6-3 on page 6-7).
+
+                          Warning: May cause irritation. MAY CAUSE SKIN IRRITATION. MAY CAUSE
+                          RESPIRATORY TRACT IRRITATION. MAY CAUSE PAIN, NAUSEA, VOMITING AND
+                          DIARRHEA. May result in coughing and/or sore throat. PROLONGED OR REPEATED
+                          EXPOSURE TO DUST MAY CAUSE PULMONARY PROBLEMS. INGESTION MAY CAUSE
+                          GASTRIC DISTURBANCES.
+                          Advertissment: Peut causer une irritation. PEUT CAUSER UNE IRRITATION DE LA PEAU.
+                          PEUT CAUSER UNE IRRITATION DE LA VOIE RESPIRATOIRE. PEUT CAUSER DOULEURS,
+                          NAUSÉE, VOMISSEMENTS ET DIARRHÉE. Peut entraîner une toux et / ou un mal de
+                          gorge. L’EXPOSITION PROLONGÉE OU RÉPÉTÉE A LA POUSSIÈRE PEUT CAUSSER DES
+                          PROBLÈMES PULMONAIRES. L’INGESTION PEUT CAUSER DES PERTURBATIONS
+                          GASTRIQUES.
+
+
+                  Desiccant replacement instructions
+               1 Power off the instrument.
+               2 Open the lid and locate the purge chemical column.
+               3 Disconnect the quick-connect fittings from the column inlet and outlet.
+
+
+
+
+                  Figure 6-2. Location of the silica gel dry-down column.
+
+
+
+Replacing the purge dry-down chemical                                                                         6-5
+Section 6. Maintenance
+
+
+
+
+               4 Remove the column.
+                  It is secured with two screws. Remove them. When the column mounting brackets
+                  are removed, the column can come apart easily, and the silica gel beads can fall out.
+                  Be careful when handling the column so that it does not come apart.
+               5 HOLDING THE COLUMN AWAY FROM THE CASE, separate one end by grasping one cap and
+                 pulling it off of the column.
+                 Pour out the silica gel beads. The desiccant can be regenerated (see Regenerating the
+                 desiccant on the facing page) or disposed of in municipal waste.
+
+
+
+
+               6 Locate a new packet of silica gel beads in the accessories kit.
+               7 Fill the column with fresh silica gel beads.
+                  There may be a little more than is needed. Dispose of the extra silica gel beads or
+                  keep them sealed in a glass jar.
+               8 Reassemble the filter and caps; connect the tubes, and tighten the screw clamps securely.
+
+                     Caution: Tighten the clamp screws securely. The clamps hold the caps onto the
+                     tube; the caps hold the silica gel beads in the tube. If the clamps are not tight, the
+                     caps will be forced off when the tube is pressurized during shutdown. The tube
+                     will open and the silica gel beads will spill in the case. It is a situation easily
+                     avoided by tightening the clamp screws securely.
+
+
+
+
+6-6                                                                                  LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                            Section 6. Maintenance
+
+
+
+
+                   Regenerating the desiccant
+                   Indicating silica gel can be regenerated in a drying oven. This preparation of silica
+                   gel is green when it is saturated and orange when it is new or restored.
+
+
+
+
+                   Figure 6-3. Active and saturated desiccant.
+
+              1 Preheat the oven to 120 °C (248 °F).
+              2 Spread a single layer of the granules in a shallow pan.
+              3 Place in the oven for 60 to 120 minutes.
+                   Less heat for a longer time will not work, nor will more heat for less time.
+              4 After the orange color is restored, place the hot, regenerated material into a glass container and
+                close the lid while it is still hot.
+                Do not place hot beads into a plastic container. Store the regenerated desiccant in a
+                sealed glass jar. Avoid storing the beads in a plastic container.
+
+                    Note: If the Sorbead turns black, you’ve overheated it and it needs to be replaced.
+                    Sorbead beads may break over time but the performance is not affected.
+
+
+Software updates
+                   Software updates will be released periodically to provide new features and bug fixes.
+                   You can check for updates through the interface (click Settings > Software >
+                   Check) or on the LI-COR technical support website. Download the updater applic-
+                   ation and install it on your computer (Windows only). Launch the application. It
+                   will display a list of all compatible instruments on your network. The instrument
+                   that you want to update must be connected to your network or computer. Select
+                   one to update and click Update Software. The update will take several minutes. The
+                   instrument will restart when the update is complete.
+
+
+
+
+Software updates                                                                                                6-7
+Section 6. Maintenance
+
+
+
+
+6-8                      LI-7815 CO₂/H₂O Gas Analyzer
+Section 7.
+Communication with the MQTT protocol
+                  The LI-7815 Trace Gas Analyzers can communicate with devices using the Message
+                  Queuing Telemetry Transport (MQTT) protocol. MQTT is a machine-to-machine
+                  communication protocol that supports many programming languages, described at
+                  github.com/mqtt/mqtt.github.io/wiki/libraries. The instrument uses the Eclipse Mos-
+                  quito, an open source MQTT broker.
+                  Here we provide basic examples that describe how to read data from the instrument
+                  in a terminal program, send and receive calibration information in a terminal pro-
+                  gram, and how to save data to a computer using a simple script written in the
+                  Python language. These tutorials are for novice users.
+
+
+Terminology
+                  Here we provide a simple summary of terminology used in MQTT. These terms are
+                  described in greater detail by other online resources.
+                    l   Server: The gas analyzer is a server that sends information.
+                    l   Client: The computer or device that is receiving information. The server can
+                        communicate with any client device that is configured to run an acceptable pro-
+                        gramming language.
+                    l   Broker: Software that mediates communication between the server (gas ana-
+                        lyzer) and client (your computer or data logger).
+                    l   Topic: A collection of information that the servers sends.
+                    l   Subscribe: A client's request for a topic; the client subscribes to a topic. When
+                        subscribed, the publisher sends that topic to the client.
+                    l   Publish: The act of sending a topic to a client.
+
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                           7-1
+Section 7. Communication with the MQTT protocol
+
+
+
+
+                  Table 7-1. Topics and hierarchy in the LI-7815.
+                   Topic        Description                      Hierarchy
+                   1            Data                              licor/niobrara/output/concentration
+                   2            Header for the data file          licor/niobrara/output/concentration/units
+                   3            Diagnostic information for data   licor/niobrara/output/diagnostics
+                   4            Header for diagnostic information licor/niobrara/output/diagnostics/units
+                                Set and read the calibration      licor/niobrara/cfg/Start_Peak_Base_Line_Cal
+                                baseline (0)
+                                Set CO2 span calibration          licor/niobrara/system/CO2_Span
+                                Read the CO2 span calibration     licor/niobrara/cfg/CO2_Span
+
+
+Basic commands in a terminal program
+                  The instrument can be controlled from a terminal program (macOS) or command
+                  prompt program (Windows). With gas analyzers, that means you can set the zero
+                  and span calibrations, read the calibrations, and read data with diagnostics. In the
+                  following section, we describe how to perform these basic functions.
+                  This tutorial uses Eclipse Mosquitto, an open source message broker from the
+                  Eclipse Foundation which can be downloaded from mosquitto.org/download/.
+                  Install it on your computer. We will use two components of mosquitto for this
+                  tutorial: mosquitto_pub, which "publishes" information to the instrument (as in,
+                  sets the span calibration); and mosquitto_sub, which "subscribes" to information
+                  from the instrument, such as current calibration parameters, and measurements.
+
+
+
+
+7-2                                                                                   LI-7815 CO₂/H₂O Gas Analyzer
+                                                                  Section 7. Communication with the MQTT protocol
+
+
+
+
+                    Streaming data into the interface
+                    This tutorial subscribes to the data topic. Subscribing is described in depth at
+                    mosquitto.org/man/mosquitto_sub-1.html.
+
+                1 Launch the terminal or command prompt and open the directory that has the Mosquitto apps.
+                    The default directory is Program Files\mosquitto.
+
+
+
+
+                2 Enter the following command to subscribe to the topic.
+                        mosquitto_sub -h 172.24.82.41 -t
+                        "licor/niobrara/output/concentration"
+
+                    l   mosquitto_sub launches the application to subscribe.
+                    l   -h specifies a host (the gas analyzer) followed by the instrument IP address
+                    l   172.24.82.41 is the instrument IP address. You can also enter the host name.
+                        Both are given on the instrument display.
+                    l   -t specifies that you want to subscribe to a topic.
+                    l   "licor/niobrara/output/concentration" is the topic and hierarchy.
+
+
+
+
+                3 Type Ctrl + C to stop the script.
+
+
+
+
+Streaming data into the interface                                                                             7-3
+Section 7. Communication with the MQTT protocol
+
+
+
+
+                  Setting the zero calibration
+                  This tutorial publishes to the cfg topic. Publishing is described in detail at
+                  mosquitto.org/man/mosquitto_pub-1.html. Select a quality gas and plumb it zero
+                  gas to the analyzer air inlet, letting the excess pressure vent to the room.
+
+               1 To start a zero calibration, enter:
+                       mosquitto_pub -h 172.24.82.41 -t "licor/niobrara/cfg/Start_
+                       Peak_Base_Line_Cal" -m
+
+                   l   mosquitto_pub launches the application to publish (send to the instrument).
+                   l   -h specifies a host (the gas analyzer) followed by the instrument IP address
+                   l   172.24.82.41 is the IP address. You can also enter the host name. Both are
+                       given on the instrument display.
+                   l   -t specifies that you want to subscribe to a topic.
+                   l   "licor/niobrara/cfg/Start_Peak_Base_Line_Cal" is the topic and hier-
+                       archy.
+                   l   -m specifies that you are sending a message from the command line.
+                   l   "1" is the message.
+                  This command initiates the baseline calibration. The process takes several minutes
+                  (up to 5 minutes). Wait until the process is finished before moving on to other com-
+                  mands.
+               2 To check if the zero is complete, enter the command:
+                       mosquitto_sub -h 172.24.82.41 -t "licor/niobrara/cfg/Start_
+                       Peak_Base_Line_Cal
+
+
+                   The instrument will reply with "0".
+               3 Type Ctrl + C to stop the script.
+
+
+
+
+7-4                                                                           LI-7815 CO₂/H₂O Gas Analyzer
+                                                                  Section 7. Communication with the MQTT protocol
+
+
+
+
+                    Setting the span calibration
+                    Follow suitable spanning procedures, as described in Instrument calibration on
+                    page 6-1. Plumb a span gas to the analyzer air inlet. Use a span gas balanced in air
+                    (do not use a nitrogen-balanced gas).
+
+                1 To start a span calibration, enter:
+                    mosquitto_pub -h 172.24.82.42 -t "licor/niobrara/system/CO2_Span"
+                    -m "<CO2 tank in ppm>"
+
+                     l   mosquitto_pub launches the application to publish (send to the instrument).
+                     l   -h specifies a host (the Trace Gas Analyzer) followed by the instrument IP
+                         address
+                     l   172.24.82.4x is the IP address. You can also enter the host name. Both are
+                         given on the instrument display.
+                     l   -t specifies that you want to subscribe to a topic.
+                     l   "licor/niobrara/system/CO2_Span" is the topic and hierarchy for the
+                         LI-7815.
+                     l   -m specifies that you are sending a message from the command line.
+                     l   "<CO2 tank in ppm>" is the CO2 concentration in PPM.
+                    This initiates the span calibration in the LI-7815. The span is implemented imme-
+                    diately.
+                2 To check if the span is complete, enter the command:
+                    mosquitto_sub -h 172.24.82.42 -t "licor/niobrara/cfg/CO2_Span"
+
+                    The instrument will reply with the span value (near 1) like "1.00242"
+                3 Type Ctrl + C to stop the script.
+
+
+
+
+Setting the span calibration                                                                                  7-5
+Section 7. Communication with the MQTT protocol
+
+
+
+
+                  Rebooting the instrument
+                  To restart the instrument, send the following command:
+                      mosquitto_pub -h 172.24.82.41 -t
+                      "licor/niobrara/system/reboot" -m "reboot"
+
+                  This initiates the restart cycle, beginning with a purge of the optics.
+
+                  Powering off the instrument
+                  To power off the instrument, send the following command:
+                      mosquitto_pub -h 172.24.82.41 -t
+                      "licor/niobrara/system/shutdown" -m "shutdown"
+
+                  This initiates the shutdown, beginning with a purge of the optics. There is no com-
+                  mand to power on the instrument remotely.
+
+
+
+
+7-6                                                                             LI-7815 CO₂/H₂O Gas Analyzer
+                                                                Section 7. Communication with the MQTT protocol
+
+
+
+
+Basic commands with a Python script
+                  Python scripts can be used in Windows, macOS, and Linux operating systems, and
+                  with other computing devices. Here we describe some basic processes on Windows
+                  and macOS computers.
+
+                  Configuring paho-mqtt in Windows
+                  Python is not included with Windows by default, but you can download a suitable
+                  version from the Microsoft Store.
+
+               1 Download Python and install it on your computer.
+                  Press the Windows key ( ) to open the search bar. Type Store and press Enter to
+                  open the store. In the store, search for Python. Install Python 3.7.
+               2 Launch the command prompt program.
+                  Press (    ) to open the search bar. Type Command Prompt and press Enter.
+               3 Install Eclipse Paho on your computer.
+                  Type pip install paho-mqtt and press Enter. The terminal program will issue a
+                  few replies as it completes the installation. Now your computer should have all of
+                  the files needed to communicate with the instrument.
+
+                  Configuring paho-mqtt in Mac or Linux
+                  Although Mac computers include Python by default, you need to install some addi-
+                  tional libraries. This is done in the command line interface.
+
+               1 Launch the terminal program.
+                  Type CMD + Space to open the search bar. Type Terminal, and press Return.
+               2 Install the PIP package manager for python
+                  Type easy_install pip and press Return. If you get an error, type sudo easy_
+                  install pip.
+               3 Install Eclipse Paho on your computer.
+                  Type pip install paho-mqtt and press Return. If you get an error, type sudo
+                  pip install paho-mqtt. The terminal program will issue a few replies as it com-
+                  pletes the installation. Now your computer should have all of the files needed to
+                  communicate with the instrument.
+
+
+
+Basic commands with a Python script                                                                         7-7
+Section 7. Communication with the MQTT protocol
+
+
+
+
+                  Streaming data into the Terminal Program
+                  These are basic steps you'll follow to see data streamed into a terminal program on
+                  macOS or the command prompt on Windows. Before attempting to connect with
+                  the instrument, power it on and let it warm up. Connect the network cable between
+                  the instrument and your computer or your local network.
+
+               1 Create the python script to read data.
+                  Copy the following into a text file and save it to your computer's desktop (or
+                  another directory) with a .py extension, like read-data.py.
+                      import paho.mqtt.client as paho
+
+                      def on_subscribe(client, userdata, mid, granted_qos):
+                          print("Subscribed: "+str(mid)+" "+str(granted_qos))
+
+                      def on_message(client, userdata, msg):
+                          msg = str(msg.payload)
+                          print(msg)
+
+
+                      client = paho.Client()
+                      client.on_subscribe = on_subscribe
+                      client.on_message = on_message
+
+                      client.connect("172.24.82.41", 1883)
+                      client.subscribe("licor/niobrara/output/concentration", qos=1)
+                      client.loop_forever()
+
+
+               2 Change the IP Address next to client.connect to match that of your instrument. The default
+                 port is 1883, so leave that as it is. Save the updated file.
+               3 Run the Python script.
+                  In the terminal program, change to the directory that has the .py file saved earlier.
+                  Type cd desktop on Mac or type cd C:\Users\User.Name\Desktop if you saved
+                  them to your desktop (User.Name is a placeholder, used as an example). Then type
+                  python read-data.py to launch the script created in step 1. Data will stream into
+                  the terminal program.
+               4 Type Ctrl + C to stop the script.
+
+
+
+
+7-8                                                                              LI-7815 CO₂/H₂O Gas Analyzer
+                                                              Section 7. Communication with the MQTT protocol
+
+
+
+
+                   Downloading data in a date and time range
+                   The following script will download data from instrument. The script includes a date
+                   and time range, file duration (minutes), as well as the directory that the files are
+                   saved to, all of which can be modified to suit your needs. This program uses the
+                   Python requests libraries, so we'll begin by installing those.
+
+               1 Install the requests libraries.
+                   Launch a terminal on Mac or command prompt on Windows. Type pip install
+                   requests or sudo pip install requests in the command line tool. The ter-
+                   minal will issue a few replies indicating success.
+               2 Create the python script to save the data.
+                   Copy the following into a text file and save it to your computer's desktop (or
+                   another directory) with a .py extension, like import-datetime.py.
+                      import datetime
+                      import requests
+                      import socket
+                      slno = 'tgXX-01009.local'
+                      ip = socket.gethostbyname(slno)
+                      dl1 = "http://" + ip+ ":8080/ExportAdvancedData?tmin="
+                      dl2 = "&tmax="
+                      tmz = "-06:00"
+
+
+                      dt =    datetime.datetime(2019,5, 10,0,0,0)
+                      end = datetime.datetime(2019,5, 11,0,0,0)
+                      step = datetime.timedelta(minutes=30)
+
+                      fls = []
+                      ts5= []
+
+                      while dt <= end:
+                         ts1 = dt.strftime('%Y-%m-%d %H:%M:%S')
+                         ts3 = dt.strftime('%Y-%m-%d %H-%M-%S')
+                         ts2 = ts1[0:10] + "T"+ts1[11:]
+                         ts4 = ts1[0:10] + "T"+ts3[11:] +".txt";
+                         ts5.append(ts4)
+                         fls.append(ts2)
+                         dt += step
+                      print (fls)
+                      for i in range(0,len(fls)-1,1):
+
+
+
+
+Downloading data in a date and time range                                                                 7-9
+Section 7. Communication with the MQTT protocol
+
+
+
+                                     url = dl1+fls[i]+tmz+dl2+fls[i+1]+tmz
+                                     print(url +"\n")
+                                     flnm = ts5[i]
+                                     print("Downloading to File Name " + flnm +
+                      " from " + url )
+                                     r = requests.get(url)
+                                     with open("C:/Users/User.Name/Documents/" +
+                      flnm, 'wb') as f:
+                                              f.write(r.content)
+
+
+               3 Modify the script for your instrument, computer, and date range:
+                  A Identify the instrument: In snlo='tgXX-01009.local', replace tgXX-01009 with
+                    the serial number from your instrument. The letters XX represent numbers.
+                  B Set the beginning time: In dt = datetime.datetime(2019,5, 10,0,0,0), spe-
+                    cify the start date and time for the data to download. 2019,5, 10 is the year, month, and
+                    day (YYYY,M, DD). 0,0,0 is the hour, minutes and seconds (H,M,S).
+                  C Set the ending time: In end = datetime.datetime(2019,5, 11,0,0,0), specify
+                    the end date and time for the data to download.
+                  D Specify the file size (minutes): In step = datetime.timedelta(minutes=30),
+                    change the value 30 to the number of minutes you want.
+                  E Set the directory to save the data: In with open("C:/User-
+                    s/User.Name/Documents/" + flnm, 'wb'), specify the directory.
+               4 Start the script from the terminal program or command prompt.
+                  In the terminal program, change to the directory that has the .py file saved earlier.
+                  Type cd desktop on Mac or type cd C:\Users\User.Name\Desktop if you saved
+                  them to your desktop (User.Name is a placeholder, used as an example). Then type
+                  python import-datetime.py to launch the script. This script will create 48 text
+                  files, each with 30 minutes of data recorded on May 5, 2019. The files will be created
+                  and saved to the directory you specify.
+
+                  Additional commands
+                  Python scripts can be also used to set zero/span, reboot, or shutdown the instrument
+                  by using the publish option available in the Paho MQTT python client similar to
+                  mosquito_pub. To shutdown the instrument, send the command
+                      client.publish(“licor/niobrara/system/shutdown”,”shutdown”)
+
+
+
+
+7-10                                                                                LI-7815 CO₂/H₂O Gas Analyzer
+Appendix A.
+Measurement overview
+                  To measure gases, the analyzer injects laser light into a V-shaped optical cavity
+                  defined by mirrors 1, 2, and 3 (Figure A-1 below). The mirrors are highly reflective
+                  — photons may circulate many times before escaping to strike the sample pho-
+                  todiode. This long effective path-length enhances sensitivity by creating many oppor-
+                  tunities for the sample gas flowing through the cavity to absorb light.
+
+
+
+
+                  Figure A-1. Simplified schematic of the LI-7815 flow path through the optical bench. The
+                  phase adjuster is a volume in the path between the laser and optical bench that is tied to a
+                  pressure control mechanism. Changing the pressure of that volume alters the refractive index
+                  which subsequently modifies the phase of the laser.
+
+                  The instrument ramps the laser drive current so the laser scans a range of
+                  wavelengths that span absorption features of the gases. A fraction of the photons are
+                  allowed to leak from the cavity back into the laser, creating optical feedback that nar-
+                  rows the laser output. This, in turn, couples a large fraction of the laser power to the
+                  cavity and locks the laser frequency precisely to the center of a cavity resonance
+                  mode.
+                  During a scan, the instrument creates a dense grid of fixed cavity resonance modes
+                  that are equally spaced within a few kHz. The laser jumps discretely from one cavity
+                  resonance mode to the next.
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                              A-1
+Appendix A. Measurement overview
+
+
+
+
+                 During a measurement, the laser frequency scans across the full spectral range of
+                 interest in about 0.25 seconds (see Figure A-2 below). It uses the reliably fixed grid
+                 spacing in combination with spectroscopic data to determine the exact frequency of
+                 each mode. The instrument uses two ring down events—one at the beginning and
+                 one at the end of a scan—to normalize the measured signal.
+                 Absorption is computed at each resonance mode by comparing the normalized
+                 sample photodiode signal with the reference photodiode signal. The concentration
+                 of each gas is then determined by using a fitting algorithm that compares the meas-
+                 ured absorption spectrum with internally stored high resolution spectrum.
+
+
+
+
+                 Figure A-2. Example of a scan showing the absorption features for a number of gases. The
+                 upper line (dark blue) is the reference signal, and the lower line (green) is the sample signal
+                 at each of cavity resonance modes.
+
+
+
+
+A-2                                                                                 LI-7815 CO₂/H₂O Gas Analyzer
+Appendix B.
+Additional safety information
+                  This section provides information about the safe use of the instrument, wireless
+                  channels, and disposal of batteries.
+
+
+Laser safety labels
+                  The instrument has two laser safety labels: one inside the case and one on the back
+                  of the case.
+
+                          Warning: The use of controls, adjustments, or the performance of procedures other than
+                          those specified herein may result in hazardous radiation exposure.
+                          Advertissment: L'utilisation des contrôles, d'ajustements, ou l'exécution des procédures
+                          autres que celles spécifiées ici peuvent entraîner une exposition dangereuse aux radi-
+                          ations.
+
+                  The LI-7815 is certified as a Class 1 laser product. No hazardous radiation is emitted
+                  from the instrument. Any laser radiation emitted is below the Class 1 laser limits
+                  during all phases of user operation. The laser emits (internally only) at approx-
+                  imately 1610 nm and has a Class 3B peak power rating of up to 75 milliwatts but is
+                  permanently set to <15 mW. This instrument complies with the CDRH regulations
+                  for laser products (CDRH radiation performance standard 21, Code of Federal Regu-
+                  lations Chapter 1, Subchapter J). Compliance for products marketed in the United
+                  States is mandatory.
+
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                                    B-1
+Appendix B. Additional safety information
+
+
+
+
+                   Figure B-1. The Class 1 laser safety label is affixed to the back of the case.
+
+
+
+
+                   Figure B-2. The laser radiation safety label is inside the instrument case.
+
+
+
+
+B-2                                                                                    LI-7815 CO₂/H₂O Gas Analyzer
+                                                                   Appendix B. Additional safety information
+
+
+
+
+Wireless communication notice
+                   The instrument is equipped with wireless communication (Wi-Fi™) capabilities. Wi-
+                   Fi communication conforms to the requirements in this section. See Connecting over
+                   wireless on page 2-5 for more details.
+
+                    Channel             Lower Frequency   Center Frequency        Upper Frequency
+                    Number              (mHz)             (mHz)                   (mHz)
+                    1                   2401              2412                    2423
+                    2                   2406              2417                    2428
+                    3                   2411              2422                    2433
+                    4                   2416              2427                    2438
+                    5                   2421              2432                    2443
+                    6                   2426              2437                    2448
+                    7                   2431              2442                    2453
+                    8                   2436              2447                    2458
+                    9                   2441              2452                    2463
+                    10                  2446              2457                    2468
+                    11                  2451              2462                    2473
+
+
+
+
+Appendix B. Additional safety information                                                               B-3
+Appendix B. Additional safety information
+
+
+
+
+Battery warnings and disposal
+                   The instrument includes rechargeable lithium ion batteries and CR lithium bat-
+                   teries, which must be disposed of safely. The primary batteries are accessible through
+                   the battery cover on the case. The coin-cell batteries are in the case under an elec-
+                   tronics shroud.
+
+                           Warning: Lithium ion batteries may cause environmental damage or damage to human
+                           health if they are disposed of improperly. Do not dispose of the batteries in unsorted muni-
+                           cipal waste or an incinerator. Many localities have battery recycling facilities that will
+                           accept lithium ion batteries. Check your local regulations to determine how to safely dis-
+                           pose of the batteries.
+                           Advertissment: Les batteries lithium ion peuvent causer des dommages à
+                           l'environnement ou endommager la santé humaine si l’on se débarrasse d’elles de man-
+                           ière inappropriée. Ne vous débarrassez pas des batteries dans des déchets municipaux
+                           non triés ou dans un incinérateur. Plusieurs localités ont des installations de recyclage de
+                           batteries qui accepteront les batteries lithium ion. Vérifiez vos réglementations locales
+                           pour déterminer comment se débarrasser des batteries en toute sécurité.
+
+
+                   Primary batteries
+                   To remove the primary batteries, turn the clasp counter-clockwise ¼ turn to open
+                   the battery door. Grasp the tab on the battery and pull to remove the battery. There
+                   is space for two batteries. Be sure to remove both of them.
+
+
+
+
+B-4                                                                                       LI-7815 CO₂/H₂O Gas Analyzer
+                                                                        Appendix B. Additional safety information
+
+
+
+
+                   Coin-cell battery
+                   The product includes a CR Lithium coin-cell battery, which contains perchlorate
+                   material. Special handling may apply. In the U.S. State of California, see
+                   www.dtsc.ca.gov/hazardouswaste/perchlorate.
+                   To remove the coin-cell batteries, power off the instrument, remove the batteries,
+                   and open the lid to the case. Remove the four screws that secure the electronics
+                   shroud. Being careful to avoid straining the Wi-Fi antenna (it is glued to the
+                   shroud), move the shroud to the side. The battery is near the middle of the instru-
+                   ment. The battery is held in with friction. Press it out. Insert a replacement battery
+                   with the positive (+) pole facing up.
+
+
+
+
+                   Figure B-3. Carefully lift the shroud as shown to avoid straining the Wi-Fi antenna, which
+                   is attached to the shroud.
+
+
+
+
+Appendix B. Additional safety information                                                                    B-5
+Appendix B. Additional safety information
+
+
+
+
+B-6                                         LI-7815 CO₂/H₂O Gas Analyzer
+Appendix C.
+Specifications
+                  General
+                  Measurement Technique: OF-CEAS (Optical Feedback – Cavity Enhanced Absorp-
+                     tion Spectroscopy)
+                  Measurement Rate: 1 sample per second (1 Hz)
+                  Optical Cavity Volume: 6.41 cm3
+                  Total Sample Volume: 28 cm3
+                  Flow Rate:
+                     250 sccm nominally in standard configuration
+                     150 sccm nominally in high altitude configuration
+                     70 sccm nominally with reduced flow rate kit installed
+                  Total Weight: 10.5 kg (including batteries)
+                  Case Dimensions: 51 × 33 × 18 cm (L × W × H)
+                  Operating Temperature Range: -25 °C to 45 °C (without solar load)
+                  Operating Humidity Range: 0 to 85% RH (non-condensing, without solar load)
+                  Sample Line Humidity Range: 0 to 99.9% (non-condensing)
+                  Operating Pressure Range:
+                     70 to 110 kPa in standard and reduced flow rate configuration
+                     50 to 110 kPa in high altitude configuration
+                  Connectivity: Ethernet and Wi-Fi (not available in some countries)
+                  Wi-Fi Compatibility: 2.4 GHz, 802.11 a/b/g/n/ac
+                  Power Consumption:
+                     Steady State Operation: 22 Watts at 25 °C without batteries charging
+                     Warmup: Up to 65 W without batteries charging; up to 100 W with batteries
+                     charging
+                     Off: Up to 2.3 W when powered from pins 3 and 4 without batteries charging;
+                     up to 0.2 W when powered from pins 1 and 5 without batteries charging
+                  Power Supply Requirements:
+                     Pins 1 and 5 (24 VDC Input): Minimum 6 A at 24 V
+
+
+LI-7815 CO₂/H₂O Gas Analyzer                                                                  C-1
+Appendix C. Specifications
+
+
+
+
+                       Pins 3 and 4 (10.5 to 33 VDC Input): Minimum 14 A at 10.5 VDC; 6 A at 24
+                       VDC
+                   Power Supply: Universal Power Adapter (Input: 100 to 240 VAC, 50-60 Hz; Output:
+                       24 VDC)
+                   Battery Life: 8 hours typical with 2 batteries
+                   Data Storage: Up to 5,356,800 records; about 62 days of continuous data collection
+                   Pollution Degree: 2
+                   Over-voltage Category: II
+                   Class 1 Laser Product
+
+                   CO2 Measurements
+                   Response Time (T10 - T90) from 0 to 400 ppm:
+                       ≤2 seconds in standard configuration
+                       ≤3 seconds in high altitude configuration
+                   Range: 0 to 10,000 ppm
+                   Precision (1σ):
+                       0.10 ppm at 400 ppm with 1 second averaging
+                       0.04 ppm at 400 ppm with 5 second averaging
+                   Maximum Drift: < 0.2 ppm per 24-hour period
+
+                   H2O Measurements
+                   Range: 100 to 60,000 ppm
+                   Precision (1σ):
+                       45 ppm at 10,000 ppm with 1 second averaging
+                       20 ppm at 10,000 ppm with 5 second averaging
+                   Specifications subject to change without notice.
+
+
+
+
+C-2                                                                         LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                     Appendix C. Specifications
+
+
+
+
+                   Figure C-1. LI-7815 dimensions. Clearance is required for the power cable and tubing, as
+                   well as 2 to 3 cm around the case vents.
+
+
+
+
+Appendix C. Specifications                                                                                 C-3
+Appendix C. Specifications
+
+
+
+
+C-4                          LI-7815 CO₂/H₂O Gas Analyzer
+Standard Terms and Conditions
+1. General. LI-COR Inc. (“LI-COR”) is delivering these goods and products (“Products”) and/or performing services (“Services”) subject to these
+Terms and Conditions of Sale (“Conditions”). Buyer will be deemed to have assented to these Conditions upon Buyer’s placement of order. Not-
+withstanding the above, failure of LI-COR to object to provisions contained in any purchase order or other form or document from Buyer shall
+not be construed as a waiver of these Conditions nor an acceptance of any such provision.
+2. Buyer’s Use Only/No Resale. The purchase of Products only conveys to Buyer the non-transferable right for only Buyer to use the quantity of
+Products and components of Products purchased in compliance with the applicable intended use statement, limited use statement or limited
+label license, if any, in LI-COR catalogues or on the label or other documentation accompanying the Products (all such statements or licenses
+being incorporated herein by reference as if set forth herein in their entirety). Buyer has no right to resell the Products, or any portion of them to
+a third party outside Buyer’s corporate organization, and any such purchase by a reseller for the purpose of resale is strictly prohibited unless
+LI-COR first accepts and approves a purchase order and acknowledges in writing that the Products may be resold by Buyer and the terms of such
+resale.
+3. Prices/Taxes. All prices are quoted for delivery to Buyer when goods are loaded on the carrier at LI-COR premises in Lincoln, Nebraska, USA
+exclusive of shipping, insurance and installation charges, all of which are Buyer’s sole responsibility. All prices are exclusive of all sales, use,
+excise, value added, withholding and other taxes, all customs, duties, documentation charges, and freights forwarder charges and charge of any
+nature now or hereafter claimed or imposed by any governmental authority upon the sale of the Products or performance of the Services. Any
+such charges will be added to the product invoice or subsequently invoiced to the Buyer. In the event LI-COR is required to pay any such tax,
+duty or charge, Buyer will promptly reimburse LI-COR.
+4. Payment Terms. All payments shall be made in immediately available U.S. Dollars net thirty (30) days from the date of invoice for qualified
+accounts, without set-off, deduction or withholding of any kind, unless otherwise stated by LI-COR in writing and may be paid by check (drawn
+on a U.S. bank), wire transfer or major credit card. All open account invoicing must be pre-approved. Any amounts not paid when due will
+accrue interest at the rate of 1 1/2% per month, or the maximum amount allowed by law, if lower. In the event that any payment is more than
+thirty (30) days late, LI-COR shall have the right to suspend doing business with Buyer until all past due balances are made current. Buyer shall
+pay for all costs (including reasonable fees) incurred by LI-COR in connection with the collection of late payments. Each accepted purchase
+order is a separate, independent transaction, and Buyer has no right of set-off against other purchase orders or other transactions with LI-COR.
+Buyer hereby grants LI-COR a security interest in the Products or any deliverable in the amount of the unpaid balance of the purchase price until
+paid in full. LI-COR may file a financing statement for such security interest and Buyer shall sign any such statements or other documentation
+necessary to perfect LI-COR security interest.
+5. Return Policy. Buyer may return non-consumable Products to LI- COR within forty-five (45) days of invoice date only with prior authorization
+by LI-COR. The Product(s) being returned new and unused condition and must be resalable as new. Any returned Product(s) are subject to pay-
+ment of a fifteen percent (15%) re- stocking fee on all items returned. Buyer shall be responsible to make payment to LI-COR for any and all
+expenses related to de-installation of the Product(s), including but not limited to shipping, duties, and taxes. All payments subject to this pro-
+vision shall be made to LI-COR within thirty (30) days of return, or de- installation, of the Product(s).
+6. Delays In Performance. LI-COR shall not be liable for any delay in performance hereunder due to unforeseen circumstances or due to cir-
+cumstances beyond its control including, but not limited to, acts of nature, acts of government, labor disputes, delays in transportation, delays in
+customs clearance and delays in delivery or inability to deliver by LI-COR suppliers.
+
+
+
+
+LI-7815 CO₂/H₂O Gas Analyzer
+Standard Terms and Conditions
+
+
+
+7. Shipment and Packing. All Product prices exclude costs of shipping and handling and insurance, in accordance with delivery terms designated
+by LI-COR. Unless otherwise agreed in writing, such costs will be paid by the Buyer and will appear as a separate item on LI-COR invoice.
+LI-COR shall ship in accordance with LI-COR standard practices. Buyer may specify different shipping instructions, subject to agreement by
+LI-COR. Unless otherwise agreed to in writing by LI-COR, all products shall be packaged, if appropriate, for shipment and storage in accordance
+with standard commercial practices. All packing shall conform to carrier requirements.
+8. Partial Shipments. LI-COR reserves right to make delivery in partial shipments (“Installments”). Any Products delivered in Installments may
+be invoiced individually and is payable subject to Section 4 of these Conditions. Additional shipping and handling charges for Installments may
+apply. Delay in delivery of any Installment shall not relieve Buyer of Buyer’s obligation to accept remaining deliveries.
+9. Title/Risk of Loss. All domestic shipments are made FOB per Uniform Commercial Code. All international shipments are made per
+INCOTERMS 2020 designated by LI-COR. Title to the Products and the risk of loss of or damage to the Products ordered by the Buyer will pass
+to Buyer at time of LI-COR delivery of Products to the carrier. The carrier shall be deemed Buyer’s agent, and any claims for damages in ship-
+ment must be filed with the carrier. LI-COR is authorized to designate a carrier pursuant to LI-COR standard shipping practices unless otherwise
+specified in writing by Buyer.
+10. Intellectual Property Rights. Title to and ownership of the documentation, and any improved, updated, modified or additional parts thereof,
+and all copyright, patent, trade secret, trademark and other intellectual property rights embodied in the Products, shall at all times remain the
+property of LI-COR or LI-COR licensors.
+11. Acceptance. All sales are final and all Products shall automatically be deemed accepted upon delivery to Buyer when goods are loaded on the
+carrier at LI-COR premises in Lincoln, Nebraska, USA. Failure to provide written notice to LI-COR of any shortages, defects, or damages relating
+to the Products within fifteen (15) days after receipt shall conclusively deem that the Products conform to the terms set forth in these Condi-
+tions. Buyer may not return any Products to LI-COR except as provided for by LI-COR warranty or as provided herein.
+12. Product Warranties. Unless otherwise specified by LI-COR:
+   a) LI-COR warrants that, for a period of twenty-four (24) months from the date of shipment of the Products from LI-COR (the “Warranty
+   Period”), unless otherwise specified for individual Products (such as products with a specified shelf life) or extended by a Support Contract or
+   Extended Warranty Contract (the “Extended Warranty”), the Products sold hereunder will be free from material defects in materials and
+   workmanship and will conform to LI-COR published specifications in effect as of the date of manufacture. LI-COR SPECIFICALLY
+   DISCLAIMS ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF USE OR LOST
+   PROFITS) WHICH MAY RESULT FROM THE USE OF PRODUCTS PURCHASED HEREUNDER, AS FURTHER SET FORTH IN
+   SECTION 13 OF THESE CONDITIONS OF SALE. This limited warranty extends only to Buyer as original purchaser unless otherwise agreed
+   upon in writing by LI-COR.
+   b) The foregoing warranty/extended warranty coverage shall not apply if the defective Product (i) has been subjected to abuse, misuse, neg-
+   lect, negligence, accident, improper testing, improper installation, improper storage, improper handling or use contrary to any instructions
+   issued by LI-COR, (ii) has been repaired or altered by persons other than LI-COR, (iii) has been moved/relocated once originally installed
+   unless LI-COR approved deinstall/reinstall procedures are followed; (iv) has not been installed, operated, repaired and maintained in accord-
+   ance with the documentation or operated outside of the environmental specifications for the Product; (v) has failed due an Act of God,
+   including but not limited to fire, flood, tornado, earthquake, hurricane or lightning or (vi) has been used with any devices, accessories or
+   products not manufactured by or approved by LI-COR. In addition, the foregoing warranty shall not apply to Products (i) marked or iden-
+   tified as “sample,” (ii) loaned or provided to Buyer at no cost, or (iii) which are sold “as is.”
+   c) If during the Warranty/Extended Warranty Period: (i) LI-COR is notified promptly in writing upon discovery of any defect in the Product,
+   including a detailed description of such alleged defect, (ii) such Product is returned, transportation charges prepaid, to LI-COR designated
+   manufacturing facility subject to the prior approval of LI-COR with a valid Return Material Authorization (“RMA”) number, and (iii)
+   LI-COR inspections and tests determine that the Product is indeed defective and the Product has not been subjected to any of the conditions
+   set forth above, then, as Buyer’s sole remedy and LI-COR sole obligation under the foregoing warranty, LI-COR will, at LI-COR option,
+   repair or replace without charge the defective Product. In no event will the Buyer itself nor will the Buyer allow any party other than LI-COR
+   or a third party authorized in writing by LI-COR to perform any service on the Products.
+   d) Any Product that has either been repaired or replaced under this warranty shall have warranty coverage (parts only) for the longer of one
+   (1) year or the remaining original warranty period. Replacement parts and/or replacement Products used in the repair or replacement of
+   Products may be new or equivalent to new at LI-COR sole discretion.
+
+
+
+
+                                                                                                              LI-7815 CO₂/H₂O Gas Analyzer
+                                                                                                                 Standard Terms and Conditions
+
+
+
+   e) EXCEPT FOR THE WARRANTIES SET FORTH IN THIS SECTION, LI-COR MAKES NO OTHER WARRANTIES, EXPRESS, IMPLIED
+   OR STATUTORY, WITH RESPECT TO ANY SERVICES, PRODUCTS OR OTHER PRODUCTS PROVIDED IN CONNECTION WITH
+   THESE CONDITIONS, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE, NONINFRINGEMENT, OR ARISING FROM COURSE OF PERFORMANCE, DEALING, USAGE OR TRADE.
+   f) Notwithstanding anything herein to the contrary, LI-COR makes no warranty with respect to any third party products provided under
+   these Conditions. Buyer’s sole remedy with respect to such third party products shall be pursuant to the original manufacturer’s or licensor’s
+   warranty, if any, to Buyer, to the extent permitted by the original manufacturer or licensor.
+13. Limitation of Liability. IN NO EVENT SHALL LI-COR, ITS LICENSORS OR ITS SUPPLIERS BE LIABLE TO BUYER OR ANY THIRD
+PARTY FOR COSTS OFPROCUREMENT OF SUBSTITUTE PRODUCTS OR SERVICES, LOST PROFITS, DATA OR BUSINESS, OR FOR
+ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES OF ANY KIND ARISING OUT OF OR IN
+CONNECTION WITH THE USE OF THE PRODUCTS OR THESE CONDITIONS, HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, PRODUCTS LIABILITY OR
+OTHERWISE). LI-COR TOTAL AND CUMULATIVE LIABILITY ARISING OUT OF OR IN CONNECTION WITH ANY PRODUCTS
+PURCHASED BY BUYER OR SERVICES PERFORMED BY LI-COR ON BEHALF OF BUYER HEREUNDER SHALL IN NO EVENT EXCEED
+THE PURCHASE PRICE PAID BY BUYER FOR SUCH PRODUCTS OR SERVICES. THE LIMITATIONS SET FORTH IN THIS SECTION
+SHALL APPLY EVEN IF LI-COR OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND
+NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.
+14. Severability. If any portion of these Conditions is held invalid, the parties agree that such invalidity shall not affect the validity of the remain-
+ing portions of these Conditions.
+15. Export Control. Buyer acknowledges and agrees that the Products purchased under these Conditions or Services performed by LI-COR may
+be subject to restrictions and controls imposed by the United States Government and the regulations thereunder. BUYER WARRANTS THAT IT
+WILL NOT EXPORT OR RE-EXPORT ANY PRODUCTS PURCHASED OR DELIVERABLES FROM SERVICES PERFORMED BY LI-COR
+WITHOUT PRIOR WRITTEN NOTIFICATION AND APPROVAL OF LI- COR.
+16. Assignment. Buyer shall not assign or transfer these Conditions or any rights or obligations under these Conditions, whether voluntary or by
+operation of law, without the prior written consent of LI-COR. LI-COR may freely assign these conditions. LI-COR or any successor may assign
+all or part of the right to payments under these Conditions. Any assignment or transfer of these Conditions made in contravention of the terms
+hereof shall be null and void. Subject to the foregoing, these Conditions shall be binding on and inure to the benefit of the parties’ respective suc-
+cessors and permitted assigns.
+17. Entire Agreement. These Conditions of Sale and Performance of Services take precedence over Buyer's additional or different terms and con-
+ditions, to which notice of objection is hereby given. Acceptance by Buyer is limited to LI-COR Conditions of Sale. Neither LI-COR com-
+mencement of performance nor delivery shall be deemed or construed as acceptance of Buyer's additional or different terms and conditions.
+These Conditions supersede all prior communications, transactions, and understandings, whether oral or written, and constitute the sole and
+entire agreement between the parties pertaining to the referenced quotation or purchase order, provided that: (1) these Conditions shall not,
+without LI- COR prior written consent, supersede any conflicting terms of: (a) prior written agreements duly executed by LI- COR, or (b) gov-
+ernmental purchase orders, terms of purchase, requests for quotation or acquisition regulations relative to governmental purchasers; and (2) to
+the extent not in conflict with any such prior or governmental terms, these Conditions shall supplement them. No modification, addition or dele-
+tion, or waiver of any of the terms and conditions of these Conditions shall be binding on either party unless made in a non-preprinted agree-
+ment clearly understood by both parties to be a modification or waiver, and signed by a duly authorized representative of each party.
+18. Force Majeure. Shipping/delivery dates are approximate and may be delayed absent prompt receipt from Buyer of all necessary information.
+LI- COR shall not be responsible for any failure to perform or delay attributable in whole or in part to any cause beyond its reasonable control,
+including but not limited to Acts of God, government actions, war, civil disturbance, insurrection, sabotage, labor shortages or disputes, failure
+or delay in delivery by LI-COR suppliers or subcontractors, transportation difficulties, customs clearance, shortage of energy, raw materials or
+equipment, or Buyer’s fault or negligence. In the event of any such delay the date of delivery shall, at the request of LI-COR, be deferred for a
+period equal to the time lost by reason of the delay.
+19. Governing Law and Venue. These Conditions and performance by the parties hereunder shall be construed in accordance with the laws of the
+State of Nebraska, U.S.A., without regard to provisions on the conflicts of law.
+
+
+
+
+Standard Terms and Conditions
+Standard Terms and Conditions
+
+
+
+
+                                LI-7815 CO₂/H₂O Gas Analyzer
+Index
+                                     configurations
+        A                              high altitude, 3-4, 4-5
+        air filter, 6-4
+                                       reduced flow rate, 3-4
+        air inlet, 1-2
+                                       standard, 3-4, 4-5
+        alarms, 4-15
+                                     connecting, 2-4
+        auto sync
+                                       local area network, 2-6
+          clock, 4-6
+                                       wireless, 2-5
+                                     connecting a sample, 3-3
+        B                            connecting an air supply, 3-2
+        backpack kit, 1-5            connection issues, 5-3, 5-3
+        batteries, 2-2
+          about, 1-3                 D
+          charging, 2-3
+                                     data
+          disposal, B-4
+                                       exporting, 3-7
+          shipping, 2-12
+                                       retrieving, 3-7
+          storage, 2-11
+                                       storage capacity, 3-7
+          warnings, B-4
+                                     data files
+        battery status, 2-8
+                                       about, 3-7
+                                     DHCP, 4-8
+        C                            dimensions, C-3
+        calibration, 4-10, 6-1       display panel, 2-8
+          span, 6-3                  downloading data, 3-7
+          zero, 6-2                  dry-down chemical, 6-5
+        cavity temperature, 4-13
+        channels                     E
+          Wi-Fi, B-3
+                                     English language, 4-5, 5-6
+        checksum, 3-9
+                                     error codes, 2-9
+        Chinese language, 4-5, 5-6
+                                     export
+        CHK, 3-9
+                                       data, 3-7
+
+
+
+
+Index
+Index
+
+
+
+
+                                                precision time protocol, 4-6
+        F                                       PTP, 4-6
+        files
+                                                purge, 6-5
+           data, 3-7
+        filter
+           air inlet, 6-4
+                                                R
+                                                records
+                                                  storage capacity, 3-7
+        H                                       reduced flow rate
+        high altitude configuration, 3-4, 4-5
+                                                  configuration, 3-4
+                                                  kit, 1-5
+        I                                       residual, 4-12
+        IP address, 5-4                         ring down time, 4-13
+
+        L                                       S
+        LAN, 2-6                                safety labels
+        language selection, 4-5, 5-6               laser, B-1
+        laser pressure, 4-12                    SD card error message, 2-9
+        laser safety labels, B-1                serial number, 2-8
+        laser temperature, 4-13                 set IP address automatically, 4-8
+        laser temperature shift, 4-13           settings, 4-11
+                                                shipping
+        M                                          batteries, 2-12
+        memory                                     labels, 2-12
+         storage capacity, 3-7                  shipping the instrument, 2-11
+                                                size, C-3
+        N                                       software
+        network, 4-7                               updating, 4-4
+        network status, 2-8                     software interface, 4-1
+        network time protocal, 4-6              software version, 4-4
+        NTP, 4-6                                span calibration, 4-10, 6-3
+                                                Spanish language, 4-5, 5-6
+        O                                       spectroscopy, 1-1, A-1
+        OF-CEAS, 1-1, A-1                       standard configuration, 3-4, 4-5
+                                                static IP address, 4-8
+                                                status
+        P                                          performance, 4-11
+        performance status, 4-11
+                                                status codes, 2-9
+        power cable
+                                                storing, 2-10
+          DC cable, 1-2, 1-5, 2-4
+                                                SVC required, 2-9
+          universal AC-to-DC, 1-2, 1-3, 2-2
+        power supply, 2-2
+        powering on, 2-1
+                                                T
+        powering on and off, 1-2, 2-10          thermal enclosure temperature, 4-13
+                                                thresholds, 4-15
+
+
+                                                               LI-7815 CO₂/H₂O Gas Analyzer
+                                      Index
+
+
+
+
+        time
+          unix epoch, 3-9
+        timezone, 3-8, 3-9
+        troubleshooting, 5-1
+
+        W
+        warnings, B-1
+        water warning, 1-2
+        Wi-Fi, 2-7, 4-8, B-3
+        Wi-Fi status, 2-8
+        wireless communication, B-3
+        wireless networking, 4-8
+
+        Z
+        zero calibration, 4-10, 6-2
+
+
+
+
+Index
+Index
+
+
+
+
+        LI-7815 CO₂/H₂O Gas Analyzer
+LI-COR Environmental
+4647 Superior Street
+Lincoln, Nebraska 68504
+Phone: +1-402-467-3576
+Toll free: 800-447-3576 (U.S. & Canada)
+envsales@licor.com
+envsupport@licor.com
+licor.com/
+LI-COR GmbH, Germany
+Siemensstraße 25A
+61352 Bad Homburg
+Germany
+Phone: +49 (0) 6172 17 17 771
+envsales-gmbh@licor.com
+envsupport-eu@licor.com
+LI-COR Ltd., United Kingdom
+St. John’s Innovation Centre
+Cowley Road
+Cambridge
+CB4 0WS
+United Kingdom
+Phone: +44 (0) 1223 422102
+envsales-UK@licor.com
+envsupport-eu@licor.com
+Beijing LI-COR Bioscience Ltd.
+Room 502-503, 5th Floor, Jimen No.1 Office Building
+Xitucheng Road, Haidian District
+Beijing, China
+Phone: +86-400-1131-511
+china-sales@licor.com
+china-support@licor.com
+LI-COR Distributor Network
+licor.com/distributors
+984-17415 • 04/2026
+

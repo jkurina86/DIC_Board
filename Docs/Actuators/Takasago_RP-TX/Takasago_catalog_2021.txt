@@ -1,0 +1,1429 @@
+        PRODUCT
+        INFORMATION
+
+
+
+
+                 Customization
+                    Miniaturization
+                            Integration
+
+
+
+
+Takasago Fluidic Systems
+    Health
+    For the well-being of mankind
+    We want our products to be used in devices that are used
+    to improve people's health and happiness. e.g. in blood
+    analyzers, dialysis machines and other medical / diagnostic
+    applications.
+
+
+    Environment
+    Preserve clean air and water for future generations
+    Our products are installed into many kinds of environment-
+    related applications like water quality analyzers, automo-
+    tive emissions etc. to help protect the environment.
+
+
+    Technology
+    Small, Fast, Highly Accurate
+    We, as a high-tech fluidic control system manufacturer, always
+    aim to achieve the most advanced technological standards.
+
+
+
+
+    The core strengths of Takasago Fluidic Systems (TFS) are customization, miniaturization, and
+    integration. With these, TFS is recognized in the industry as a distinctive player that fulfills the niche
+    demands of its clients. For instance, we offer the world's smallest class of products to handle fluid
+    volumes in the microliter order without waste. As a result, we not only supply parts to major global
+    analytical equipment manufacturers but also get involved in technically demanding projects lead by
+    well-known universities and agencies such as Harvard, Stanford, MIT, and Cambridge as well as
+    NASA and JAXA.
+
+
+         Customization                            Miniaturization                             Integration
+
+
+
+
+    •Custom fluidic configurations           •Miniaturizing instrument                   •Integrating various fluidic components
+    •Fluidic optimizations                   •Minimizing sample volume                   •Offering functional systems
+    •Component development                   •Faster operation / higher accuracy         •Minimizing the total footprint
+    •Special fluidic/electrical interface
+
+
+
+
+2
+                                                                                                 Takasago Fluidic Systems
+
+
+
+
+   Having developed in excess of 10,000 different valves over 60 years, Takasago
+Fluidic Systems has established itself as a leading manufacturer of valves and other
+fluidic devices. With this experience and knowledge about fluid-handling and precision
+control, we can provide our customers with high quality custom-made products. The
+products listed in this brochure represent only a small part of our product range.
+Various applications of our products include：
+                Diagnostic instruments such as clinical chemistry/immunoassay analyzers
+                Environmental measuring instruments for water, air, flue gas or automotive exhaust gas
+                Analytical instruments including liquid/gas chromatographs
+                Medical instruments including dialysis machines
+                Biotechnology equipment for DNA analysis, cell culture, cell handling, etc.
+                Semiconductor and LCD manufacturing equipment
+                Ink-jet printers
+                Fluid control devices for beverages, etc.
+                Other devices.
+
+
+                  Innovatively Small and Highly Functional：Miniature Isolation Valves                  p. 4／p. 5
+                  ・NV/NLV Series                                  ・EXAKN Series
+                  ・KV Series                                      ・WTE Series
+                  ・EXAK Series                                    ・EXV Series
+                  ・Miniature Isolation Valves                     ・Pumping Volume
+                  Diaphragm Valves with High Reliability and Outstanding Inertness              p. 6／p. 7
+                  ・STV/CTV Series                                 ・High-temperature High-puressure Valve
+                  ・MTV Series                                     ・PKV Series
+                  ・Soft-seal                                      ・Zero-internal-volume Design
+                  General Overview of Solenoid Valves and Power Saving Items                                   p. 8
+                  ・General Overview of Solenoid Valves            ・Latching Solenoid Valves
+                  Isolation Valves with Universal Pressure Rating                                              p. 9
+                  ・Bellows Isolation Valve WBV Series             ・Rocker Isolation Valve RVB Series
+                  ・O-ring Isolation Valve WEG Series
+                  Slider valves, Proportional valves and Pressure Relief Valves                     p. 10／p. 11
+                  ・Solenoid-driven Slider Valves               ・Relief Valves CIV/CMV Series
+                  ・2-Position 6-Port Valve                     ・Cartridge Type Solenoid Valve
+                  ・Proportional Diaphragm Valve NPV/WPN Series
+                  Various Unique Products                                                     p. 12／p. 13
+                  ・Air Operated Valves                            ・Shape Memory Alloy Valve SMV Series
+                  ・Non Diaphram Valves UDV series                 ・Molded Manifold Valve XTA Series
+                  ・Holding Voltage and “Hit & Hold” Circuit       ・Push-in Fitting Diaphragm Valve
+                                                                  ・Micro Needle Valve MNV Series
+                  Manifold Products and Pinch Valves                                                p. 14／p. 15
+                  ・Standard Manifolds                             ・Pinch Valves
+                  ・Custom Manifolds                               ・Molded Quaternary Valve
+                  ・Multi-layer Bonded Manifold                    ・Chemically Inert Pinch Valve
+                  ・Bonded PTFE Manifold
+                  Micro Pumps for Infusion Drug Delivery Systems                              p. 16／p. 17
+                  ・Ultra-small Peristaltic Pump BCP/RCP Series    ・Chip Pump ACP/QCP Series
+                  ・Piezoelectric Micro Pumps                      ・SMP Series
+                                                                  ・Electro-osmotic Micro Pump EBP Series
+                  Pumps Covers wide range of Flow Rate                                       p. 18／p. 19
+                  ・Tubing Pump RP-TX Series                       ・Pen Type Syringe Pump SBP Series
+                  ・Tubing Pump RP-QⅡ/QⅢ Series                    ・Palmtop Size Syringe Pump SCP Series
+                  ・Tubing Pump RP-HX Series                       ・Metering Pumps
+                  ・Tubing Pump RP-GⅢ Series                       ・Diaphragm Pump DBP Series
+                  Disposable Chips and Pump Unit                                                     p. 20／p. 21
+                  ・Microfluidic Chips                             ・EOP-Driven Micro Pumping Unit
+                  ・Reagent-prefillable Disposable Fluidic Systems ・Manually Adjustable Low Pulsation Micro Pump Unit
+                  （❶Roller Pump Type, ❷Syringe Pump Type）         ・Smart Dispencing Module
+                                                                  ・Sample Injector Module
+                  Bio / Life Science and Aerospace                                           p. 22／p. 23
+                  ・Portable Medium Replacement System ・Live Cell Imaging Fluidic System
+                  ・Micro 3D Perfusion Culture System  ・Differentiation Induction System
+                  ・All-in-one Disposable PDMS Chip    ・Valves for Satellite Propulsion System HVA/HVC/HVD Series
+                  ・6-channel Pump                                                                                           3
+                               Innovatively Small and Highly Fun
+
+         NV/NLV Series                                                 KV Series                                      EXAK Series
+
+
+
+
+                         NV Series            NLV Series           Dimensions          W 6 × L 50 × H 12.5 mm     Dimensions          φ12 × H 48.1 mm
+
+                        φ5.7 × H 27 mm
+    Dimensions （excluding mounting parts and barbs）*1              Orifice Diameter           0.8 mm              Orifice Diameter        0.8 mm
+
+    Orifice Diameter                 0.4 mm                        Port Connection             O-ring             Port Connection        Barb, M5
+
+    Port Connection              Barb, Gasket                      Pressure                 0 - 100 kPa           Pressure             －40 - 100 kPa
+
+    Pressure                       0 - 100 kPa                     Voltage                12 VDC, 24 VDC          Voltage             12 VDC, 24 VDC
+
+    Voltage                     5 VDC, 12 VDC                      Power Consumption           1.8 W              Power Consumption       0.94 W
+
+                                          1.2 W（12 VDC）
+    Power Consumption      1.2 W
+                                          1.4 W（5 VDC）
+    ＊1 Dimensions of NV-2-N1F and NLV-2-N1F
+
+
+
+
+                                                 Miniature Isolation Valves
+                                                              Our solenoid valve consists of two sections； one is the valve part
+                                                            made of highly inert plastics like PTFE or PEEK, which opens and
+                                                            closes a flow path. The other is the actuator made of a coil and
+                                              Pole-piece
+                                                            metallic parts, driving the valve part. In order to preserve the purity of
+                                                            the fluid, a diaphragm is installed between the two sections in our
+                                              Spring        isolation valves. The diaphragm prevents the fluids from flowing into
+                                                            the actuator and protects the metallic parts from being corroded. Also,
+                                              Coil          metal dust generated in the actuator does not contaminate the fluid.
+                                                            This structure is ideal for analytical and diagnostic applications which
+                                              Plunger
+                                                            are sensitve to particles. It is also suitable for handling acids and
+                                                            chemicals which erode metals.
+                                              Diaphragm
+                                              （PTFE etc.）     By reducing the size of these isolation valves, we have been able to
+                                                            reduce the dead volume, improve the control of the pumping volume,
+                                              Valve Body
+                                              （PTFE etc.）   and reduce the installation area, thereby improving accuracy and
+                                                            avoiding wasting chemicals and solvents.
+
+
+
+
+4
+                                                                                                                                                             Takasago Fluidic Systems
+
+
+
+
+ctional：Miniature Isolation Valves
+
+       EXAKN Series                                                             WTE Series                                              EXV Series
+
+
+
+
+   Dimensions             W 18 × L 18.6 × H 44 / φ14 × H 42.3 mm        Dimensions              W 19 × L 11 × H 31.3 mm           Dimensions              W 14 × L 25.0 × H 31.7 mm
+
+   Orifice Diameter                    0.8 mm                           Orifice Diameter                1 mm                      Orifice Diameter                   1 mm
+   Port Connection              Gasket, M5, Barb
+                                                                        Port Connection                 Gasket                    Port Connection                   Gasket
+   Pressure                       －40 - 300 kPa
+                                                                        Pressure                    －65 - 100 kPa                 Pressure                       －50 - 200 kPa
+   Voltage                       12 VDC, 24 VDC
+                                                                        Voltage                     12 VDC, 24 VDC                Voltage                        12 VDC, 24 VDC
+   Power Consumption                     1.2 W
+                                                                        Power Consumption               1.5 W                     Power Consumption                  2.8 W
+   This micro solenoid diaphragm isolation valve, the
+   EXAKN series is a zero-pumping volume-type of
+   diaphragm isolation valve. FFKM is used for the
+   seal part and with this the valve has an increased
+   sealing ability. The outer dimensions of this valve are
+   very compact at only φ14.0 x H 42.3 mm (Barb).
+
+
+
+
+                                                                        Pumping Volume
+                                   The diaphragm produces a pumping effect on the fluid as the valve opens and closes. As some
+                                   valve models pump several microliters of fluid at one time, the pumping volume forms a negative
+                                   factor in metering an accurate fluid volume, and also in preventing fluid from dripping from a
+                                   dispensing nozzle.
+                                   Some of the valve models we provide have remarkably small pumping volumes due to their
+                                   unique internal structures or miniaturized dimensions. The EXAK series has a distinctive design
+                                   called a “zero-pumping-volume structure” that allows the pumping volume to run 100 times
+                                   smaller than our standard valves. Rocker valves（page 8）and non-diaphragm inert valves（made
+                                   of inert materials like stainless steel）have very small pumping volumes due to no volumetric
+                                   change in the valve chamber during an operation. We also provide slider valves（page 12）with
+                                   pumping volumes that have been ultimately reduced to an immeasurable level.
+                                                                                                                                                         unit：
+                                     TYPE                     PORT       ON-1         OFF-1              ON-2         OFF-2        ON-3         OFF-3
+                                                              COM.       0.002        - 0.015            0.002        - 0.015      0.002        - 0.015
+                           Zero-pumping-volume type
+                                                               N.C.      0.024        - 0.01             0.024        - 0.01       0.024        - 0.01
+                                  (EXAK-3)
+                                                               N.O.      0.005        - 0.005            0.005        - 0.005      0.005        - 0.005
+                                                              COM.       0             0                 0                0        0             0
+                             Rocker solenoid type
+                                                               N.C.      0.103        - 0.18             0.137        - 0.263      0.145        - 0.213
+                           (Low pumping volume model)
+                                                               N.O.     - 0.059        0.103            - 0.027           0.025   - 0.033        0.027
+                                                                   IN   - 0.009        0.018            - 0.018           0.009   - 0.017        0.018
+                            Non-diaphragm valve
+                                                               OUT      - 0.723        0.81             - 0.71            0.826   - 0.708        0.849
+                                                              COM.       2.346         2.609             2.425            2.604    2.427         2.551
+                              Conventional type
+                                                               N.C.      2.63          2.317             2.481            2.293    2.521         2.34
+                                  (MTV-3R)
+                                                               N.O.      7.238         7.373             7.443            7.395    7.506         7.388
+
+
+
+
+                                                                                                                                                                                        5
+                                       Diaphragm Valves with High Re
+
+         STV/CTV Series                                                                                 MTV Series
+
+
+
+
+                                   STV Series                    CTV Series                        Dimensions                              φ26 × H 53.2 mm
+
+                                                            φ21 × H 59.8 mm
+      Dimensions               φ20 × H 42.5 mm          （excluding projection parts）               Orifice Diameter                           1.6 - 2 mm
+
+      Orifice Diameter             1.2 mm                        1.6 mm                            Port Connection                        M6, 1/4-28UNF, Barb
+
+      Port Connection            M6, 1/4-28UNF, Barb, Push-in Fitting                              Pressure                                 －90 - 300 kPa
+
+      Pressure                               －50 - 200 kPa                                         Voltage                                  12 VDC, 24 VDC
+
+      Voltage                               12 VDC, 24 VDC                                         Power Consumption                         1.9 W, 2.6 W
+
+                                                                                                   ＊ Manifold-mountable models are also available.
+      Power Consumption             2.5 W                         3.5 W
+      ＊ Manifold-mountable models are also available.
+
+
+
+
+                                                                        Soft-seal
+                 Soft-Seal       Diaphragm
+
+
+
+
+       Valve Body
+                                                                                       All-Teﬂon Diaphragm             ×20    Soft-seal                         ×20
+
+
+
+    Problems can arise with PTFE diaphragm valves when scratches on the seal part of the valve, due to dust or crystals
+    in the fluid, cause the valve to leak. TFS offers an optional "Soft-seal" to protect the sealing surface from being
+    scratched by covering it with perfluoroelastomer (FFKM), which is a special elastomer that has outstanding resistance
+    to most chemicals and solvents. The chemical inertness of the FFKM is almost equal to PTFE. It has a high reputation
+    for use with chemicals in analytical or semi-conductor industries. FKM is also available for the Soft-seal material.
+    The photo shows the advantage of having glass beads of diameter 40µm, scattered on the valve seat in the active
+    state. The scars due to the beads is on the fluoro polymer diaphragm and hence, its effect on the soft seal has been
+    substantially reduced.
+6
+                                                                                                                                              Takasago Fluidic Systems
+
+
+
+
+liability and Outstanding Inertness
+
+              High-temperature High-puressure Valve                                              PKV Series
+
+
+
+
+                                              MTV-2A                   WTB-2A                                               PKV-2                       PKV-3
+
+         Dimensions                    φ25.3 × 47.7 mm         25.3 × 28.2 × 54.2 mm          Dimensions          W 43 × L 36 × H 71 mm       W 43 × L 36 × H 82 mm
+
+         Orifice Diameter                                 1.6 mm                              Orifice Diameter                         4 - 6 mm
+
+         Port Connection                           M6, 1/4-28UNF                              Port Connection     Rc1/8, Rc1/4, 1/8-27NPT, 1/4-18NPT, Barb（PKV-2 only）
+
+         Pressure                                      0 - 1,500 kPa
+                                                                                              Pressure               －50 - 200 kPa                －50 - 100 kPa
+         Voltage                                   12 VDC, 24 VDC
+                                                                                              Voltage                             12 VDC, 24 VDC
+                                      17.6 W （INRUSH）            16.8 W（INRUSH）
+         Power Consumption
+                                      2.9 W（HOLDING） *           4.2 W（HOLDING）*              Power Consumption        6 W, 10 W                       10 W
+         Fluid Temperature Range                         5 - 175 ℃
+         ＊ With hit and hold circuit
+
+
+
+
+                                               Zero-internal-volume Design
+
+             Diaphragm                                                                                            Seat
+                                               Doughnut-
+                                               shaped space
+
+
+
+
+                                   Figure 1                                        Figure 2                                Figure 3
+
+
+
+     ■   Applicable models A diaphragm solenoid valve normally has a doughnut-shaped space right under the diaphragm, through which fluids
+                       flow to the outlet port（Figure 1）
+                                                       . This space, often called a "valve chamber", works as excess internal volume to waste
+     ・STV Series       solvents and samples. Fluids tend to stay in this dead space and therefore decrease the purity of each fluid. In addition,
+     （2-way type only） air bubbles may be trapped in this valve chamber and can have a negative effect on analytic accuracy. To conclude a
+
+     ・MTV Series       valve chamber causes various undesirable results for applications. To overcome these problems, TFS has designed
+                       the Zero-Internal-Volume Valve, in which a special structure is employed to eliminate the valve chamber（Figure 2）.
+     ・MLV Series       On opening, the diaphragm is lifted and the space is formed for the fluid to stream（Figure 3）
+                                                                                                                   .
+                      （Note）This Zero-Internal-Volume structure is patented.
+
+
+                                                                                                                                                                         7
+    General Overview of Solenoid Valves and Power Saving Items
+        NV / NLV series         EXV series       MTV series           PKV series           NRV series
+            (0.4 mm)              (1.0 mm)         (1 - 2 mm)          (3 - 6 mm)            (4 - 6 mm)
+
+
+
+
+    Smaller Orifice                                                                              Larger Orifice
+    Diameter                                                                                     Diameter
+
+
+
+
+                KV series       STV series        XTA series          MLV series      YTV series               HTV series
+                 (0.8 mm)        (1 - 1.2 mm)      (1.6 - 2 mm)        (2.5 mm)            (3.0 mm)                (10 mm)
+
+
+
+
+         Latching Solenoid Valves
+                                                                                                Orifice Diameter or
+                                                                                                  Tube Diameter              Valve Type
+
+                                                                              NLV Series               0.4 mm           Diaphragm valve
+
+                                                                              WLB Series                2 mm            Diaphragm valve
+
+                                                                              PL Series         1 × 3 mm, 3 × 5 mm           Pinch valve
+
+                                                                              EL Series               10 × 13 mm             Pinch valve
+
+
+
+                                                                          Coil Temperature
+
+
+                                                                                                                   N.C. type
+
+
+
+
+      For a conventional (e.g. N.C. - Normally Closed)
+      solenoid valve, continuous energization is
+      required to maintain open status. The latching
+      solenoid does not require a power supply for the
+      purpose of maintaining open status through the utilization of
+                                                                                                           Latching type
+      a permanent magnet. Suitable for applications where the
+                                                                                                                                Time
+      power consumption and the effect of temperature on a fluid
+      is a concern.
+
+
+
+8
+                                                                                                                                  Takasago Fluidic Systems
+
+
+
+
+Isolation Valves with Universal Pressure Rating
+    Bellows Isolation Valve WBV Series                                                    O-ring Isolation Valve WEG Series
+
+
+
+
+Internal structure optimised for a compact size with a
+larger flow (orifice dia. 4 mm) than conventional valves.
+                                  W 35 × L 33 × H 84.8 mm
+Dimensions                                                                                                          W 21 × L 16 × H 54.4 mm
+                                  （excluding hose barbs）                           Dimensions
+                                                                                                              （excluding mounting parts and barbs）
+Orifice Diameter                                4 mm
+                                                                                   Orifice Diameter                             2 mm
+                            Barbs on both sides, Barb on one side
+Port Connection                                                                    Port Connection                          Hose Barb
+                                （O-ring on the other side）
+                                                                                   Pressure                         －90 - 200 kPa（Universal）
+Pressure                         －90 - 300 kPa（Universal）
+                                                                                   Voltage                               12 VDC, 24 VDC
+Fluid Temp. Range                          5 - 95 °C
+                                                                                   Power Consumption                            2.6 W
+Voltage                                 12 VDC, 24 VDC
+                                                                                   Wetted Materials                PPS, FKM（Optionally EPDM）
+Power Consumption                               6W
+Wetted Materials                          PPS, FKM                                     Patented
+
+
+
+
+    Rocker Isolation Valve RVB Series
+                                                                    ・Ultra-low displacement volume due to no volumetric change in
+                                                                     the valve chambers during operation.
+                                                                    ・COM., N.C. and N.O. ports carry a uniform operating pressure,
+                                                                     applicable in all directions. High pressure models （500 kPa）
+                                                                     are optionally available.
+                                                                    ・Valve width of 16 mm (gasket type) enables efficient mounting
+                                                                     of rocker valves on a manifold.
+                                                                    ・The TFS original mounting gasket footprint features minimized
+                                                                     internal volume, and in addition, a universal gasket footprint
+                                                                     option is also available.
+                                                                    ・As 2-way valve options, type 21 features minimal carryover,
+   Cross-sectional Image of Rocker Structure                         using the NC and NO ports, while type 2 is designed for universal
+                                                                     connection, using the COM and NO ports.
+              Diaphragm
+                                                Rocker
+
+
+                                                                    Dimensions             W 16 × L 27× H 45.8 mm（excluding mounting parts.）
+                          N.C.   COM    N.O.
+               Gasket                                               Orifice Diameter                           1.6 mm
+                            ENERGIZED
+
+                                                                    Port Connection                     M6, 1/4-28UNF, Gasket
+
+                                                                    Pressure                           －90 - 250 kPa（Universal）
+
+
+                          N.C.   COM     N.O.
+                                                                    Voltage                                12 VDC, 24 VDC
+                          DE-ENERGIZED
+                                                                    Power Consumption                           3.4 W
+
+                                                                     Patented
+
+
+
+
+                                                                                                                                                             9
+                                                                   Slider valves, Proportional valv
+                     Solenoid-driven Slider Valves
+                ●2-way (N.C.)
+                                                                                                                               This is a kind of shear valve in which a shutter called a
+                                                                                                                               “slider” moves vertically and shuts off the flow path. The
+                                                                                                                               pumping volume* and the dead volume are reduced to
+                                                                                                                               almost zero, preventing reduction of accuracy in analysis or
+                                                                                                                               fluid dispensa tion. It fea tur es an ex cellent fluid
+                                                                                                                               exchangeability compared to a diaphragm solenoid valve
+                                                                                                                               due to its almost linear flow path and very small internal
+                                                                                                                               volume.
+                                   OFF                                                  ON                                     ＊ Please refer to page 5 for more details on the pumping volume.
+
+                ●3-way                                                                                                                                             MTV                               NRV
+                                                                                                                               Dimensions             W 39 × L 26 × H 62 mm              W 41 × L 38 × H 86 mm
+                                                                                                                               Orifice Diameter                  0.4 mm                             1.0 mm
+                                                                                                                               Port Connection               No. 10-32UNF                      M6, 1/4-28UNF
+                                                                                                                               Pressure                       0 - 500 kPa                        0 - 300 kPa
+                                                                                                                               Voltage                                      12 VDC, 24 VDC
+                                                                                                                               Power Consumption* 18 W（intermittent : 45 s*） 16 W（intermittent : 2 min*）
+                                                                                                                               Wetted Materials            PTFE, PEEK, AL2O3                  PTFE, PEEK, SiC
+                                                                                                                                                     ＊ Continuous operation possible with a “hit and hold” circuit（page 12）
+                                   OFF                                                  ON                                      Patented
+
+
+                ■Pumping Volume Comparison（Diaphragm Valve vs. Slider Valve）
+                 （Flow rate at the N.C. port when turning a 3-way valve on/off）
+                                                                                                                                                                                                   MTV
+                    Flow Rate µL/min                                                                  Flow Rate µL/min
+                    20                                                                                 20
+
+                    10                                                                                 10
+
+                     0                                                                                  0
+                         6     7      8     9      10      11      12      13      14                       6        7     8     9     10     11      12      13       14
+                   -10                                                                                -10
+
+                   -20                                                                                -20
+                                                                                                                                                                                                   NRV
+
+                   -30                                                                                -30
+                              Swiyching Signal（0.5Hz）               COM-NC                                          Swiyching Signal（0.5Hz）            COM-NC
+                   -40                                                                                -40
+
+                   -50                                                                                -50
+                                                                    COM-NO                                                                             COM-NO
+
+                                                                                Time SEC                                                                           Time SEC
+
+                                            （KV-3K Series）
+                             <Diaphragm Valve            >                                                                      （MTV-3SL Series）
+                                                                                                                    <Slider Valve              >
+                These data are provided by Fujii T. Lab, Institute of Industrial Science, the University of Tokyo.
+
+
+
+
+                     2-Position 6-Port Valve
+                                                                OFF                                                                          ON
+                                                                        Sample                                                                     Sample
+                                                                        Solvent   Pump A E           Valve           F   Waste                     Solvent    Pump A E            Valve        F     Waste
+
+
+
+                                                                                            A                        B                                                  A                       B
+                                                                                                                                  Detecter                                                                     Detecter
+                                                                                                 C              D                                                             C           D
+                                                                        Baseline Pump B                                   Analytical               Baseline Pump B                                   Analytical
+                                                                        Solvent                                            column                  Solvent                                            column
+
+                                                                            Sample Solvent                                   Liquid                                                                     Liquid
+                                                                            Baseline Solvent                             Chromatograph                                                              Chromatograph
+                                                                                                Sample Loop                                                                  Sample Loop
+
+     The valve in the photograph is a 2-position 6-port valve that employs the technology of a solenoid-driven slider valve. As the solenoid driven actuator requires no
+     driver or external stepper motor, it is more economical and easier to operate than a conventional motor-driven rotary valve. It is suitable for sample
+     metering/injection in a liquid chromatograph. A 2-position 4-port type injection valve is also available. Please consult with us for details.
+
+
+10
+                                                                                             Takasago Fluidic Systems
+
+
+
+
+ves and Pressure Relief Valves
+        Proportional Diaphragm Valve NPV / WPN Series
+
+
+
+
+                                             NPV Series                                              WPN Series
+
+
+      Solenoid driven proportional diaphragm valve        Solenoid driven proportional diaphragm valve
+      ・Highly chemically resistant with PTFE as only      ・Larger orifice size option designed for applications
+        wetted parts.                                      such as ventilators.
+      ・Flow rate is controllable by adjusting the input   ・Flow rate is controllable by adjusting the input
+        voltage.                                           voltage.
+      ・Designed with larger orifice of 4.0 mm, to cover   ・Capable of handling gases and liquids.
+        wide range of flow rates.
+      ・Capable of handling gases and liquids.
+
+
+
+
+        Relief Valves CIV/CMV Series                         Cartridge Type Solenoid Valve
+
+
+
+
+                                                                                         After the detachment
+                                       CIV Series
+
+              CMV Series                                  Detachable diaphragm Isolated solenoid valve
+                                                          ・Valve body is easily detached and attached by
+      Custom Pressure Relief Valves                         magnets.
+      ・Designed to help protect systems that may see      ・Ideal for applications requiring high cleanliness,
+       rise in pressure.                                    such as regenerative medicine.
+      ・CMV series has a simple flow path with metal       ・Detachable valve body can be
+       being the wetted part for gas.                       autoclaved.
+      ・CIV series is designed for high corrosion resis-   ・Free tubing direction, with the
+       tance, with PTFE, PPS, and                           valve body being rotatable.
+       FFKM used as wetted parts.                         Patend Pending
+
+      ・Custom designed by pressure
+       requirements, wetted materials,
+       connections, orifice size, etc.
+
+
+
+
+                                                                                                                        11
+                                                                                                                                        Various Uni
+            Air Operated Valves                                                                           Non Diaphram Valves UDV series
+
+
+
+
+                                                                                                    This the main model available among our non-diaphragm
+                                                                                                    valves. This is a solenoid driven valve. The high pressure
+                                                                                                    type is also avairable (600kPa).
+                                                    PDT                       PMDP
+                                                                                                                                 UDV-2                      UDV-3
+       Dimensions                          φ44.5 × H 52 - 67 mm      φ25 × H 42 - 49 mm
+                                                                                                    Dimensions          W 26 × L 22 × H 52.2 mm   W 26 × L 22 × H 58.7 mm
+       Orifice Diameter                         3 - 5 mm                    2 mm
+                                                                                                    Orifice Diameter            2 mm              N.O.：1.2 mm, N.C.：1.5 mm
+       Port Connection                        Rc1/8, Rc1/4           M6, 1/4-28UNF, Barb                                                          COM, N.C.：M6, 1/4-28UNF
+                                                                                                    Port Connection         M6, 1/4-28UNF
+                                                                                                                                                         N.O.：M5
+       Operating Pressure                      0 - 300 kPa               －90 - 500 kPa
+                                                                                                    IN Port Pressure          0~300 kPa              COM：0 - 300 kPa
+       Port Connection for air pressure           Rc1/8              M5, M6, 1/4-28UNF
+                                                                                                    Voltage                               12 VDC, 24 VDC
+       Air Pressure for actuation            300 - 600 kPa               300 - 600 kPa
+                                                                                                    Power Consumption           2.4 W                      3.7 W
+
+
+
+
+                              Holding Voltage and “Hit & Hold” Circuit
+     Once switched to ON-position by energizing at the rated voltage, a solenoid valve can hold the ON-position status even after the applied
+     voltage is dropped to a lower voltage. For example, in case that a 2-way normally closed valve with a rated voltage of 24 VDC is switched
+     to ON-position, it can hold the ON-position even after the applied voltage is dropped to around 10 VDC（Holding Voltage）         . Using this
+     characteristic, various benefits are achieved, such as low power consumption, reduction of coil heat-generation (see graph below),
+     improvement of response time, increase of operating pressure, minimization of size, etc. This requires you to control the applied voltage.
+     As an alternative to controlling the voltage at the equipment side we can offer you a “Hit & Hold” circuit, which can be simply attached to
+     a valve. This circuit automatically drops the applied voltage to a lower value after a very short period of time (Inrush Time).
+
+     Coil Temperature
+                                          Rated voltage                     ■Standard specifications of our “Hit & Hold” circuit
+                                                                            Input           5 VDC - 27 VDC
+
+                                                                            Inrush Time     100 ms, 300 ms
+
+                                                                            Output          40 % of Input (after Inrush Time)
+                               Holding voltage
+                               （When the applied voltage is 40%
+                                of the rated voltage, the power             ■Dimensions
+                                consumption is reduced to 16%.）
+                                                                                                    TFS           12
+
+
+
+                                                                  Time                               18                 3
+
+
+
+
+12
+                                                                                                                                                         Takasago Fluidic Systems
+
+
+
+
+que Products
+           Shape Memory Alloy Valve SMV Series                                                          Molded Manifold Valve XTA Series
+
+
+
+
+     Shape Memory Alloy Valve                                                                       Each basic block holds a pair of 2-way valves. Up to 6 blocks
+                                                                                                    can be flexibly joined together to give a maximum of 12 sta-
+     ・Compact, lightweight, low power consumption,                                                  tions. This manifold provides both a cost reduction and a flex-
+       and quiet actuations.                                                                        ible configuration that cannot be achieved by conventional
+     ・Low cost, which is beneficial for applications                                                molded manifolds.
+                                                                                                    A 2-row construction enables a shorter length of manifold and
+       requiring disposable valves.
+                                                                                                    a common channel, which contributes to a small internal
+                                                                                         Patented   volume and easy arrangement on an instrument.
+                                                                                                    The extremely inert material ETFE（fluorocarbon polymer）is
+     Dimensions                                       W 19 × L 18.4 × t 4*1 mm
+                                                                                                    used for the block.
+     Orifice Diameter                                          0.4, 0.8 mm
+                                                                                                    Orifice Diameter                              1.6 mm
+     Response Time                                  Approx. 600 ms（at 30 ˚C）*2
+                                                                                                    Port Connection                  M6, 1/4-28UNF, Push-In Fitting*
+     Power Consumption                    0.3 W or less（Constant current operation）                 Pressure                                   －90 - 200 kPa
+     Operating Temp. Range                                       5 - 40 ˚C                          Voltage                                 12 VDC, 24 VDC
+     ＊1 Excluding pin terminals and barbs                                                           Power Consumption                             2.8 W
+     ＊2 Response times vary depending on the ambient temperature.
+        Can be improved by controlling the applied current e.x. PWM, a spike & hold circuit, etc.
+                                                                                                    Wetted Materials         ETFE, PTFE, FFKM（Optionally FKM, EPDM）
+        Please contact us for details.
+
+
+
+
+           Push-in Fitting Diaphragm Valve                                                              Micro Needle Valve MNV Series
+
+
+
+
+                                                                                                                    ＜ Example Flow Data* ＞
+                                                                                                        Flow
+                                                                                                      （µl/min）
+                                                                                                          5
+
+                                                                                                          4
+
+     ・Just insert plastic tubing into ports and you are                                                   3
+
+       connected. No special preparation of the tubing is                                                                              （Water at 10kPa）
+                                                                                                          2
+       required, such as enlarging the connection end.                                                    1
+     ・For disconnection, simply pull out the tubing while
+                                                                                                          0
+       pushing in the port ends.                                                                               24       26      28        30        32        34      36
+     ・Applicable to O.D. 2 mm PTFE/PFA tubing.                                                                                                                     Graduation
+
+     ・High chemical resistance due to PPS, FPM and                                                  ＊ Flow-graduation relationship varies according to valve.
+
+       PTFE wetted materials.                                                                       ・Allows the adjustment of flows below 1 µl/min.
+     ・Integral molding eliminates the concern of leakage                                            ・Reduces flow pulsation.
+       between the fittings and the body.                                                           ・Only Perfluoroelastomer and PEEK as the wetted materials.
+                                                                                                    （The pipe insert type includes stainless steel.）
+                                                                                                                                                                                    13
+                                                                                             Manifold Products
+         Standard Manifolds                                                                   Custom Manifolds
+
+
+
+
+                                                                                           For applications requiring compact valve alignment
+                             EXV Series            STV Series           XTA Series
+                                                                                           and/or short flow-paths, manifold would be the best
+     Orifice Diameter          1 mm                1.2 mm                2 mm
+                                                                                           option. Takasago is capable of helping design and
+     Port Connection                           M6, 1/4-28UNF                               machine custom manifolds that meet your flow dia-
+                                                                                           gram requirements. Manifolds can be made in
+     Pressure             －20 - 200 kPa        －50 - 200 kPa        －50 - 200 kPa
+                                                                                           different shapes, sizes, and materials, and we are
+     Voltage                                  12 VDC, 24 VDC                               also capable of integrating the manifold with compo-
+     Power Consumption 2.8 W ×（No. of valve） 2.5 W ×（No. of valve） 2.8 W ×（No. of valve）   nents such as pumps.
+     Max. number                                       6
+     of valves
+
+
+
+
+         Multi-layer Bonded Manifold                                                          Bonded PTFE Manifold
+
+
+
+
+                                                                                                                                   Iluminated
+
+     These multi-layer manifolds are made by bonding layers that have channels engraved on the surface. The result is a highly
+     integrated manifold with freely curving channels that could not be fabricated through a conventional drilling process. The bonding
+     process does not use any adhesive in order to utilize the pure characteristics of each material. Materials available are PMMA,
+     PC, ULTEM®, etc. Only TFS works with PTFE, the material with a very high chemical compatibility, in this way.
+
+14
+                                                                                                                                                               Takasago Fluidic Systems
+
+
+
+
+and Pinch Valves
+          Pinch Valves
+
+
+
+
+     We have valves of various sizes both, solenoid actuated and air driven.
+                              PE Series          PSK Series              PMK Series                PK Series                 NP Series             PPK Series           EPK Series
+
+     Method                 Solenoid            Solenoid                Solenoid                  Solenoid                 Solenoid                  Air*              Solenoid
+
+                                                                                               W 40 × L 36               W 40 × L 36             W 50 × L 60
+     Dimensions           φ14 × H 55.1 mm   φ20 × H 51 mm          φ26 × H 61.5 mm                                                                               φ64 × H 112 - 132 mm
+                                                                                             × H 65 - 88.3 mm          × H 65 - 88.3 mm          × H 92 mm
+
+     Tube Material           Silicone       Silicone, PharMed®    Silicone, PharMed®              Silicone                  Silicone               Silicone             Silicone
+
+                                                1 ×3 mm               0.8 × 2.4 mm                3 × 5 mm                 3 × 5 mm               7 × 12 mm           10 × 13 mm
+     Tube Diameter        0.8 × 2.4 mm
+                                              1.6 × 3.2 mm              1 × 3 mm                  6 × 8 mm                 6 × 8 mm                                   15 × 19 mm
+
+     Discharge Pressure    0 - 100 kPa         0 - 150 kPa             0 - 150 kPa               0 - 50 kPa                0 - 50 kPa             0 - 50 kPa           0 - 50 kPa
+
+     Voltage              12 VDC, 24 VDC    12 VDC, 24 VDC        12 VDC, 24 VDC, 100 VAC   12 VDC, 24 VDC, 100 VAC   12 VDC, 24 VDC, 100 VAC         ―          12 VDC, 24 VDC, 100 VAC
+
+     Power Consumption        2.8 W                3W                     4.4 W                     10 W                      10 W                    ―          60 W（intemittent：5 min.）
+                                                                                                                                                ＊ Operating Pressure Range：300 - 600kPa
+
+    TFS pinch valves are designed to meet tubing material, tubing size, and pressure requirements. Custom design is available
+    even if the requirements don’t fall within the specification list above.
+
+
+
+          Molded Quaternary Valve                                                                             Chemically Inert Pinch Valve
+
+
+
+
+                                                     Cross-sectional cut sample
+                                                       (Junction of channels)
+
+
+
+     A quaternary valve, in which the four channels from the                                            Having threaded ports for plastic tubing, this product
+     valves all join at one point and connect to the common                                             looks like an ordinary solenoid valve, but in fact it is a
+     port, requires a high processing accuracy at the junction                                          type of pinch valve that uses FKM tubing internally. The
+     of the channels. Thus the manifold bases of almost all                                             valve excels in fluid exchangeability due to its simple
+     conventional models, including those of other                                                      flow structure with almost no dead volume. Furthermore,
+     manufacturers, are manufactured by machining, which                                                the FKM tubing gives the valve high chemical inertness.
+     results in an increased cost. With advanced molding
+     techniques, TFS has achieved the molding of this junction
+     in PEEK, enabling us to provide our quaternary valves at
+     prices conventional models cannot match.
+                                                                                                                                                                                            15
+                                                                            Micro Pumps for Infusion
+          Ultra-small Peristaltic Pump BCP/RCP Series［Under Development］
+                                                                                                                   ・Miniature sized!
+                                                                                                                    Suitable for wearable infusion systems.
+                                                                                                                   ・Control few micro litres of drugs including insulin.
+                                                                                                                   ・Can be battery driven（DC motor type）.
+                                                                                                                   ・Clean and economical wetted area due to its dis-
+                                                                                                                    posability.
+                                                                                                                   ・Possible to customise for your
+                                                                                                                    required flow rate!
+                                                                                                                   ・Easy to remove and replace
+                                                                                                                    disposable part.
+
+
+                                                                                                                                               BCP-10E,         TC-10P           RCP-10E,         TC-10P
+
+                                                                                                                    Motor                           DC Motor                       Stepper Motor
+
+                                                                                                                    Flow Rate                     50 μL / min                      35 μL / min *
+
+                                                                                                                    Voltage                           2 VDC                              ―
+
+                                                                                                                    Wetted Materials                                 Silicone
+
+                                                                                                                    Tubing size                               I.D. 0.5 × O.D. 1.0 mm
+
+                                                                         The conversion board as shown in           Dimensions                 14 × 38 × 13 mm                   16 × 19 × 16 mm
+                                                                         the photograph is sold separately.
+                                                                                                                    Weight                                          Approx. 6 g
+
+                                                                                                                    Remarks                           Built-In Rotation Position Sensor
+
+                                                                                                                      Patend Pending                      ＊ When the pulse frequency is 2000 pps.
+
+
+
+
+          Piezoelectric Micro Pumps
+                                                                                         The SDMP series and the APP series are piezoelectric diaphragm micro
+                                                                                         pumps. The main features are as follows;
+                                                                                         ・Small-sized, lightweight and thin
+                                                                                         ・No metal parts in contact with fluid. The APP-20KG has particularly high
+                                                                                           chemical compatibility and can be used for wide range of fluids.
+                                                                                         ・Quiet and low power consumption
+                                                                                         ・Flow controllable by adjusting drive voltage and drive frequency
+                                                                                         ・Self-priming
+                                                                                          The cartridge-type SDMP320C has a removable pump
+                                                                                          chamber which can be easily replaced for each fluid.
+                                                                                          The SDMP302D/306D is the same as the SDMP302/306
+                                                                                          but with a built-in driving circuit. When 2.5-6 VDC is applied,
+                                                                                          the pump starts operating at a fixed voltage and frequency.
+
+                                        SDMP302               SDMP306              SDMP320             SDMP302D              SDMP306D            SDMP320C             APP-20KG            APP-30WKG
+
+     Type                                          Standard                        Large Flow                     Built-In Driver                 Cartridge                      Highly Inert
+
+     Typical Flow Rate                  3 mL / min            7 mL / min          20 mL / min          3 mL / min               7 mL / min       20 mL / min         15 mL / min          20 mL / min
+
+     Typical Pump Pressure                40 kPa                45 kPa               35 kPa               40 kPa                 40 kPa             20 kPa              25 kPa                  60 kPa
+
+     Voltage                                                60 - 250 Vp-p                                     ―                     ―                                60 - 250 Vp-p
+
+     Drive Frequency                                          10 - 60 Hz                                      ―                     ―                                 10 - 60 Hz
+
+     Typical Suction Load Pressure                                                                                  －1.0 kPa
+
+     Operating Temperature                                                                                           5 - 50 ℃
+     Wetted Materials                                                         COC (Cyclic Olefin Copolymer), EPDM                                                          PTFE, PEEK, FFKM
+
+                                              25 × 25 × 4.8 mm                 33 × 33 × 5.5 mm               25 × 25 × 8.2 mm                33 × 33 × 6.8 mm               33 × 33 × 9 mm
+     Dimensions Weight
+                                                 Approx. 4g                       Approx. 9g                     Approx. 7g                     Approx. 13g                   Approx. 17g
+
+     Input / Output Pipes            φ0.6 - φ1.2 - L 2.5   φ1.3 - φ2.1- L 3.5 φ1.8 - φ2.8 - L 5.0 φ0.6 - φ1.2 - L 2.5      φ1.3 - φ2.1- L 3.5 φ1.8 - φ2.8 - L 5.0           φ1.8 - φ2.8 - L 5.0
+
+     ＊ It is driven by a sine wave but it can also be driven by our standard wave form which will result in increase in flow rate and pump pressure.
+
+
+16
+                                                                                                                               Takasago Fluidic Systems
+
+
+
+
+Drug Delivery Systems
+        Chip Pump ACP/QCP Series
+                                                  This unit incorporates a planar peristaltic pump into a PDMS chip,
+                                                  where rollers rotate and compress a Ω-shaped channel to directly
+                                                  pump the liquid inside. The PDMS chip is replaceable and sterilisable.
+                                                  Flexible flow channel design is possible to include a mixing zone,
+                                                  reagent reservoir, waste tank, etc. in a chip.
+
+                                                                                   ACP-29                                       QCP-29
+
+                                                  Motor                           DC Motor                                Stepper Motor *1
+
+                                                  Flow Rate *2           55μL / min, 200μL / min                           1 - 165μL / min
+
+                                                  Operating Pressure                                      50 kPa
+
+                                                  Rated Voltage                                            3 VDC
+
+                                                  Chip Material                                            PDMS
+
+                                                   Patented             ＊1 We have a controller “RE-C100” to operate these chip pumps easily.
+                                                                        ＊2 The flow rate of the QCP series is defined when used with the controller RE-C100.
+
+
+
+
+        SMP Series［Under Development］                                      Electro-osmotic Micro Pump EBP Series
+
+
+
+
+    Adopting shape memory alloy as the driving source,
+                                                                       The Electro-osmotic Pump (EO pump) is an extremely
+    this valve works as a drip pump with the following
+    features：                                                          small pump that uses electroendosmosis (See the
+                                                                       flow generation principle below). Its features include a
+    ・Ultrasmall and light weight with a thickness of 4mm
+                                                                       high output pressure up to 1 MPa, operation, no pul-
+    ・Silent operation with no driving noise
+                                                                       sation, extremely low power consumption and an ad-
+    ・Low power consumption and can be powered by
+      DC power source.                                                 justable flow proportional to the applied voltage. No
+                                                                       operating noise is generated during its use as it has
+    The price can also be brought down further by mass
+                                                                       no mechanically moving parts. The flow rate is about
+    production enabling disposability without cost con-
+    straints.                                                          60 μL / min at 150VDC and about 10 μL / min at
+                                                                       24VDC (back pressure 0 kPa, when deionized water
+     Patented
+                                                                       is used). It can be integrated to a mi-
+                                                                       crofluidic chip for delivering liquids
+                                                                       into the chip. Indirect drive types,
+                                                                       which utilise a diaphragm to deliver
+                                                                       various liquids, are also available.
+
+                                                                                                                                                               17
+                                                                                 Pumps Covers wide
+           Tubing Pump RP-TX Series                                                  Tubing Pump RP-QⅡ/QⅢ Series
+
+
+
+
+     ・The world’s lowest level of flow for a peristaltic pump on the                                                    RP-QII & QIIX             RP-QIII & QIIIX
+      market: 0.1 ～ 40 µL/min
+     ・A replaceable pump head, which includes tubing.                           Discharge Rate                              0.45 - 3.00 mL / min ± 20%
+     ・Compact size: Dimensions of 33 × 12 × 21.5 mm
+                                                                                Tube Material                                     Silicone, SWFT
+     ・An easy-to-use controller is available upon request.（Sold
+      separately）                                                               Discharge Pressure                                    ≧ 50 kPa
+
+                                             0.1 - 40 µL / min ±15 %            Motor                                            DC Geared Motor
+     Discharge Rate                （Water at 25 ºC, Pulse speed：3 - 1000 pps）
+                                                                                Voltage                                                 3 VDC
+     Tube Material                          Silicone or Olefine （I.D. 0.5 mm）
+                                                                                Power Consumption                                    ＜ 0.36 W
+     Discharge Pressure                                ≧ 30 kPa
+
+     Motor                                           Stepper Motor              Dimensions                     15 × 17 × 32.2 mm（excluding mounting parts）
+                                                                                                                          None                    Equipped
+     Voltage                                             3 VDC                  Mounting Flange               （optionally use mounting clip）
+     Dimensions                                    33 × 12 × 21.5 mm            Pump Head Replacement                                 Possible
+     ＊ This is a product of Aquatech Co., Ltd.                                  ＊ This is a product of Aquatech Co., Ltd.
+
+
+
+
+           Tubing Pump RP-HX Series                                                  Tubing Pump RP-GⅢ Series
+
+
+
+
+     ・Stepper motor control allows extremely small discharge rates.
+     ・By using different pump heads, the pump can handle a wide                 ・Compact box shape and able to combine multiple
+      range of discharge rates between 2 to 1,000 μL / min.                      RP-GⅢ series.
+     ・Easy pump head replacement using magnets.                                 ・Flow rate range is on the lower end.
+     ・An easy-to-use controller is available upon request （Sold                 ・TM-15 tubing is chemically resistant to many
+      Separately）.                                                               chemicals, including acetone and MEK, and suitable
+     ・Autoclavable pump heads are also available（Sold Separately）.               for ink and other chemicals.
+     Discharge Rate                                 2 - 1100 μL ± 20 %          Discharge Rate                                2.5 - 12 mL / min ± 20%
+     Tube Material                                   Silicone or Olefine        Tube Material                         Silicone, PharMed®, Fluran®, or TM-15®
+     Motor                                             Stepper Motor            Motor                                            DC Geared Motor
+     Voltage                                               3 VDC                Voltage                                              3 or 6 VDC
+     Dimensions                                       32 × 20 × 46 mm           Dimensions                         22.5 × 65 × 44 mm（excluding mounting parts）
+     ＊ This is a product of Aquatech Co., Ltd.                                  ＊ This is a product of Aquatech Co., Ltd.
+
+
+
+
+18
+                                                                                                                                                                       Takasago Fluidic Systems
+
+
+
+
+range of Flow Rate
+          Pen Type Syringe Pump SBP Series                                                                     Palmtop Size Syringe Pump SCP Series
+
+
+
+
+                                                                                                         This pump with built-in motor is smaller and lighter than con-
+                                                                                                         ventional syringe pump systems and offers reasonable pric-
+                                                                                                         ing. It features zero dead volume when compared to similar
+                                                                                                         size plunger pumps.
+    This is a remarkably small syringe pump with an outer diame-
+                                                                                                         Disposable syringe type can be developed.
+    ter of 12 mm and a built-in stepper motor. The theoretical
+    resolution is as small as 0.105 nl at 1/100 micro-step. Differ-                                                                SCP-100G-1/4UF         SCP-500G-1/4UF SCP-1000G-1/4UF
+    ent needle lengths and thicknesses are available along with                                                                   （SCP-100G-M6F）         （SCP-500G-M6F） （SCP-1000G-M6F）
+    various port connections（ex. screws）  .                                                              Dimensions               35 × 42 × L 109.6 mm            35 × 42 × L 160.5 mm
+                                                          SBP-100G-N                                     Syringe Capacity               100 μL                500 μL                    1000 μL
+
+    Dimensions                        Dia 12 × L 165 mm（excluding needle, sensor case）                   Theoretical Resolution      83 nL / pulse                     385 nL / pulse
+    Syringe Capacity                                         100 μL                                      Motor                                             Stepper Motor
+    Theoretica Resolution             At 1/100 Micro-Step: 0.105 nL / At Full Step: 10.5 nL              Syringe Termination                               1/4-28UNF, M6
+    Motor                                                Stepper Motor                                   Wetted Materials                                   Glass, PTFE
+    Syringe Termination*                  Needle 22G（I.D. 0.40 × O.D. 0.72 × L 51 mm）
+
+    Wetted Materials                               Glass, PTFE, Stainless steel
+
+    ＊Various syringe terminations: needle, Luer Lock, M6 or 1/4-28UNF threads, disposable tip adapter,
+      attachment for our ultra-small 3-way valve, etc.
+
+
+
+
+          Metering Pumps                                                                                      Diaphragm Pump DBP Series
+
+
+
+
+                                                                                                         Inert diaphragm pump with flow rate of 500 mL/min. 20% higher
+                                                                                                         flow than other competitive pumps of similar size, even at
+    This is a solenoid driven diaphragm metering pump. The                                               higher pressure ranges.
+    pumped volume can be set by manually adjusting the distance                                          Using a diaphragm with excellent discharge performance of
+    of the plunger's movement in the solenoid.                                                           gas-liquid mixed fluid. DBP pumps can be used not only for
+    ・Highly Accurate Dispensing                                                                          liquids but also gasses. No metal materials are used as wetted
+    ・Simply Driven by DC Solenoid                                                                        parts (see table below). Suitable for a wide variety of fluids.
+    ・Adjustable Dispensing Volume                                                                        Option to change to a longer-life motor.
+    ・Excels in Chemical Resistance
+                                                MCP-50                         PKP-500P                  Dimensions                                       31 × 55.2 × L 82 mm
+     Pumped Volume                                                                                       Motor                                                  DC Motor
+                                            5 - 50 μL                       50 - 500 μL
+     Adjustable Range
+                                                                                                         Discharge Rate                                       500 mL / min
+     Dimensions                      30 × 26 × 63.5 mm                   36 × 43 × 78 mm
+                                                                                                         Rated Voltage                                      12 VDC, 24 VDC
+     Port Connection                                     M6, 1/4-28UNF
+                                                                                                         Port Connection                                       Hose Barbs
+     Rated Voltage                                       12 VDC, 24 VDC
+                                                                                                         Power Consumption                                         4W
+     Power Consumption                         4.4 W                              10 W
+                                                                                                         Wetted Materials                                       PP, EPDM
+     Wetted Materials             PP（Optionally POM, PTFE）, FKM PP（Optionally POM）, FKM, Silicone
+                                                                                                                                                                                                  19
+                                                                                           Disposable Chips
+         Microfluidic Chips
+                                                                                                                  Prototypes can be made from a
+                                                                                                                  single sheet using materials like
+                                                                                                                  PMMA (acrylic), PC (polycarbon-
+                                                                                                                  ate), PDMS (silicone) etc. We can
+                                                                                                                  also provide fluid systems in combi-
+                                                                                                                  nation with small valves, micro-
+                                                                                                                  pumps and micro flow meters.
+
+
+
+
+                               PMMA                                                         PDMS
+
+
+
+
+                                                       Plastic Chip                                                   PDMS Chip
+                                                      PMMA（acrylic）
+     Materials                                      PC（polycarbonate）                                                   （silicone）
+                                                                                                                     PDMS
+                                             ※For other materials please consult
+
+     Max. Dimensions                               W 90 mm × L 130 mm                                            Please consult with us
+
+     Thickness                                            - 50 mm                                            1.2 mm （Open
+                                                                                                                    -     to Discussion）
+
+                                                                                                1：Formation of simple mold→Molding→Bonding
+     Method of Manufacture                       Resin Cutting→Bonding
+                                                                                                2：Mold formation using photo resist→Molding→Bonding
+
+                                     PMMA：0.1 mm, φ0.2 mm         PC：0.5 mm, φ0.5 mm                  5 μm
+                                                                                                         （when manufactured using method 2）
+     Minimum Channel Width
+                                      ※We undertake finer flow path requirements as well            ＊Please feel free to contact us for more information.
+
+
+
+
+         Reagent-prefillable Disposable Fluidic Systems（❶Roller Pump Type, ❷Syringe Pump Type）
+
+
+
+
+     These systems integrate every necessary function of POCT into a single module. Once a reagent-prefilled module is
+     loaded on the system, the pump discharges the prefilled reagent from the reservoir and draws a sample into the
+     module from the sample-in port to mix them together. The module has another closed reservoir for waste, simplify-
+     ing the disposal of chemicals. Time-consuming tasks are eliminated. Two types of pumps are available as shown in
+     the above pictures: ❶Roller Pump and ❷Syringe Pump. Customisation is possible to match your requirements.
+     ＊ The Syringe Pump Cartridge is jointly developed with Sumigomu Takasago Integrate, Ltd.
+20
+                                                                                                                                       Takasago Fluidic Systems
+
+
+
+
+and Pump Unit
+        EOP-Driven Micro Pumping Unit                                                 Manually Adjustable Low Pulsation Micro Pump Unit
+
+                                                                                                                                      IN
+                                                                                                                                    （1/4-28UNF threaded）
+
+
+
+
+                                                                                   Switch
+
+
+
+
+                                                                                                                                      OUT
+                                                                                                                                    （1/4-28UNF
+    The Electro-Osmotic Pump (EO pump), which employs electro-                                                                       threaded）
+    endosmosis, generates no pulsation. It is ideal for pulsation-sen-
+    sitive microfluidic systems. De-ionised water, methanol, or                  ・Suitable for lab-on-a-chip devices, cell culture media
+    ethanol etc. can be directly pumped. To overcome this limitation,             circulation, etc.
+    this pumping unit utilises an internal diaphragm that isolates the           ・Flow from a piezoelectric micro pump is adjusted by a micro
+    de-ionised etc. from the liquid to be delivered. This indirect
+    pumping mechanism enables you to pump various liquids.                        needle valve.
+                                                                                 ・Can adjust flow from sub-microliter level to 1 ml/min.
+    Working Liquid                       De-ionised Water
+    Wetted Materials                        PP, Silicone                         ・Flow pulsation at low flow rates is drastically reduced by the
+    Flow Rate                               10 μL/min                             micro needle valve.
+    Max. Pump Pressure                        300 kPa                            ・Stand-alone functionality powered by LR03 or R03 batteries.
+    Pump Capacity                              5 mL
+                                                                                 ・Compact size: Dimensions of 66 × 25 × 105 mm
+    Weight                                     （excluding liquid）
+                                   Approx. 105 g
+    ＊ When the operating voltage is 24VDC
+
+
+
+        Smart Dispencing Module                                                       Sample Injector Module［Under Development］
+                                                            Miniature
+                                                            peristaltic pump
+
+                         Control
+                         board
+
+
+
+
+                         Flow
+                         sensor
+
+
+
+
+                                                                    controller
+                                                                                 ・A “flow channel extraction” type dispensing system quantifies the amount
+    High-precision dispensing can be carried out easily even with                 dispensed by the flow channel volume determined by the volume within the
+                                                                                  sample loop. This dispensing system uses liquid-level sensors inside the
+    a peristaltic pump, which has a pulsating flow. Simply enter                  sample loop, to freely adjust the volume.
+    the target dispensing volume into the controller, and the                    ・In the flow diagram above, the liquid pump（P1）delivers the liquid until it
+    high-precision flow sensor monitors the total flow to give                    reaches sensor 4（S4）, filling the flow channel with liquid. The air is then sent
+                                                                                  from the pump（P2）, and the liquid is dispensed by pneumatic pressure.
+    feedback-control to the pump. No need to control an                           Dispensing volume can be made in steps by switching the detecting sensors
+    expensive and complicated syringe pump anymore.                              （S1 - S5）. Buffer can be used instead of air. The quantity and distance of
+                                                                                  sensors are customizable.
+                                                                                  *Note: There may be fluids that may not be detected by liquid-level sensors.
+    The control unit can be used in any combination                               Please feel free to contact us with inquiries.
+    with the various types of pumps that we offer. As                            ・High precision and repeatability with the fluid path volume determine the
+                                                                                  liquid volume, which is always constant.
+    an example, the ultra-small model shown in the
+                                                                                 ・Different pump options can be selected to meet customer needs. For example,
+    picture above can achieve high precision of ± 1%                              using a high-pressure pump to inject samples or tubing pumps to reduce cost. The
+    with a dispensing volume of 300 μl or more.                                   picture above shows an arm-mounted type, which is compact and lightweight.
+
+                                                                                  Patend Pending
+                                                                                                                                                                     21
+                                                                                                          Bio / Life Science
+         Portable Medium Replacement System                                                                  Micro 3D Perfusion Culture System［Under Development］
+
+
+
+
+                                                                                                      This culture system is designed for three-dimensional tissue culture
+                                                                                                      of organoids and others, and the culture medium can penetrate
+     ・Possible to automate medium replacement at a specified interval                                 through the tissues or cell layers like blood flow inside the
+      （12, 24, 48 or 72h）  .                                                                          specialized culture vessel (micro transwell). The liquid feed
+     ・Works continuously in a CO2 incubator, and lasts for up to 7 days                               pressure can be adjusted, and the culture vessel holder can be
+      with batteries.                                                                                 placed on the microscope stage, which would allow for observation
+     ・A standard 6-well plate is available for use in this system.                                    from the side of the micro transwell. The entire system is compact
+                                                                                                      and allows easy use of perfusion culture.
+     ・Possible to observe the cells in plate during culture with an
+      inverted microscope.                                                                             Patend Pending
+     ・All parts in contact with the medium are replaceable.
+     ・Suitable for any application requiring frequent medium replacement                    Flow Schematic          Air induced                      Culture vessel
+      such as iPS cell experiments.                                                                                 pressure control                (Micro transwell）
+
+     Volume of Medium Exchange                       2.7 mL / well                          Note︓ P   Pump                 P
+                                                                                                      Medium Flow
+                                                  AC adaptor
+     Power Supply
+                                     （can be customized to two AA batteries）
+                                                                                                                                                                     Cell / Tissue
+     Wetted Materials                      PP, Silicone, Stainless Steel 304                                                                                         + Scaffolding
+                                                                                                                                                                       material
+     Dimensions                              W 194 × D 228 × H 140 mm                                                                                    Viewing
+                                                                                                                               Bottle containing         direction                   Waste
+                                                                                                                               fresh medium                                          liquid bottle
+      Patend Pending
+
+
+
+
+         All-in-one Disposable PDMS Chip［Under Development］                                                  6-channel Pump
+
+                                                                                                                                                      Stepper Motor Type
+
+                                                                                                             DC Motor Type
+
+
+
+
+                                                                                                      This product can deliver six separate fluids simultaneously, despite
+                                                                                                      its compact size.
+                                                                                                      ・The tubing is easy to replace.
+     This all-in-one system on a disposable PDMS chip is a microfluidic                               ・A Stepper motor model is also available, which can handle flow
+     module designed for cell culture. It has peristaltic pumps, miniature                               rates as small as 0.23 μL /min.
+     valves, and a built-in cell culture space which can be observed under                            ・The flow rate accuracy between channels is 10% when the same
+     a microscope. The replaceable chip is sterilizable before use. A                                    tubing is used.
+     remote controller using an Android application is available for this                             Motor                              DC Motor                      Stepper Motor
+     module upon request.
+                                                                                                      Flow Rate                        830μL / min                   0.23 - 350 μL / min
+     This is just an example of our integrated fluid control systems. Other
+     microfluidic systems can be designed and manufactured in accordance                              Tubing Material                               Silicone（1 × 2 mm）
+     with your requirements.                                                                          Discharge Pressure                                   30 kPa
+                                                                                                      Voltage                              3 VDC                           10 VDC
+     This system is jointly developed with Aquatech Co., Ltd. and Fukoku Bussan Co., Ltd.
+                                                                                                      Dimensions                                   W 31 × L 84 × H 32 mm
+22
+                                                                                                                                         Takasago Fluidic Systems
+
+
+
+
+and Aerospace
+                   Live Cell Imaging Fluidic System
+                   Stage Top® Type                                                             Differentiation Induction System
+                                              ・Compact： The Pumping unit, in-
+                                               cluding 4 pumps and 4 reservoirs,
+                                               meets standard ANSI/SBS footprint
+                                               and fits in a stage top incubator.
+                                              ・Programmable: You can easily pro-
+                                               gram your protocols; from rapid me-
+                                               dia exchange to gentle perfusion.
+                                              ・Disposable：All parts in contact
+                                               with the medium, including pump
+                                               heads, nozzles and tubing, are re-
+                                               placeable.
+                                              ・The system can be customized to             The replacement of multiple medium during differentiation of cells
+                                               meet your needs.                            along with the introduction of various reagents can now be done
+  Windows PC
+                                                                                           easily through PC. Initiation of the apparatus by pressing on the
+                                                                                           start button will result in the medium and reagents being injected
+                                   Reagent
+                                   Addition
+                                                                                           and discharged automatically. This system can be safely used even
+                                   Pump                                                    if the medium replacement and reagent introduction time happens
+                                                                                           to be during the night or on a holiday i.e., when the personnel may
+  USB
+                                   Medium
+                                                                                           be absent. The automation paves the way for greater reproducibility
+                                   Feed                                                    of the process. This system consists of pumps (up to 8) and a con-
+     Controller                    Pump                                                    troller, allows automated injection of 7 types of media and reagents.
+                                                                      Medium
+                                                        Dish          Waste                The pump unit can be stored in the incubator along with the culture
+                                                                       Pump
+                                                                                           dish. Automation of the transfection process can be achieved by
+                                   Reagent                                                 customization.
+                                   Addition
+                                   Pump
+
+                                     ＊ PC and 35mm dish are not included in this system.
+
+
+
+
+                   Valves for Satellite Propulsion System HVA / HVC / HVD Series
+
+
+
+
+                                                   HVA Series                               HVD Series
+
+
+               Ultra compact light weight valves which are suitable for 1 to 3 N class thrusters.
+               The external dimensions (excluding mounting part and nipple) are φ6.2×L30.5mm
+               for HVA Manifold Type, φ6.2×L31mm for HVA Nipple Type and φ9.5×26mm for
+               HVD Nipple Type. Weight only 8g for HVA and 12g for HVD. It withstands a pres-                                    HVC Series
+               sure of 2MPa for HVA and 10MPa for HVD. HVA also meets the vibration test
+               specifications of ISO19683 standards.The shape of the interface can be custom-                    TFS provides another model with a
+               ized according to the requirements of the customer. We also provide a latch type                  pressure resisting of 2.8MPa for 20N
+               working valves for both HVA/HVD.                                                                  class thrusters, weighing 200 grams,
+                                                                                                                 without any sliding parts.
+                  HVA
+                                                                                                                   HVC
+
+
+
+
+                                                                                                                                                                    23
+ISO9001 certified at the Japanese head office and the main factory,
+and applicable to:
+Design, development and manufacture of solenoid valves, pinch valves,
+metering pumps and associated accessories.
+
+JIS Q 9100:2009 / AS 9100 C / EN 9100:2009 certified at the Japanese headquarters,
+and applicable to:
+Machining of parts for aviation and space industries.
+
+
+
+
+Supporting Sustainable Development Goals.
+
+
+
+
+TAKASAGO ELECTRIC, INC.
+URL www.takasago-fluidics.com/
+ONLINE SHOP    takasago-elec.ocnk.net
+   Chip Mart   www.microfluidic-chipmart.jp
+
+
+  HEAD OFFICE
+〒458-8522名古屋市緑区鳴海町杜若66
+66 KAKITSUBATA NARUMI-CHO, MIDORI-KU,
+TEL: 052-891-2301
+NAGOYA,   458-8522FAX: 052-891-7386
+                    JAPAN
+TEL: +81-52-891-2301 FAX: +81-52-891-7386
+
+     info@takasago-elec.co.jp
+
+  U.S. BRANCH              (d/b/a:TAKASAGO FLUIDIC SYSTEMS)
+
+
+
+
+1900 WestFluidic
+Takasago   Park Drive,
+                 Systems
+                       Suite
+                           1900
+                             280,West
+                                  Westborough,
+                                      Park Drive,MA 01581 U.S.A.
+Suite 280,
+TEL: +1 508Westborough,
+            983 1434 FAX:MA 01581
+                              +1 508U.S.A.
+                                      983 1401
+
+
+
+
+【 Corporate Video 】                   【 Product Videos 】
+  Problem solving skills
+   the world relies on.
+
+
+
+
+Printed in Japan 2021.07
+

@@ -1,0 +1,601 @@
+SBE 5 Submersible Pump
+Skip to content
+Quote
+Products
+Product List
+Moored
+Profiling
+AUV-ROV
+Vessels
+Rosettes, Carousels, & Water Samplers
+Integrated Systems
+Auxiliary Sensors
+View all Products
+Moored
+Products
+Moored Page
+Backscattering
+SeaOWL UV-A™
+CTD
+HydroCAT-EP V2 Multiparameter CTD Sensor
+SBE 16plus V2 SeaCAT CTD
+SBE 37 MicroCAT
+SBE 52-MP Moored Profiler CTD
+Fluorescence
+ECO V2 Optical Sensor
+SeaOWL UV-A™
+Nitrate
+SUNA V2
+Oxygen
+SBE 63 Optical Dissolved Oxygen Sensor
+pH
+SeaFET™ V2 Ocean pH Sensor
+SeapHOx™ V2 Ocean pH Sensor
+Deep SeapHOx™ V2 pH Sensor
+Radiometer
+HyperOCR Radiometer
+Spectrophotometer
+ac-s
+Temperature
+SBE 56 Temperature Logger
+SBE 39plus Temperature Recorder
+Transmissometer
+C-Star Transmissometer
+Turbidity
+ECO V2 Optical Sensor
+Profiling
+Products
+Profiling Page
+Backscattering
+SeaOWL UV-A™
+ECO V2 Optical Sensor
+Bioluminescence
+Bioluminescence Assessment Tool (UBAT)
+CTD
+SBE 911plus CTD
+SBE 19plus V2 SeaCAT CTD
+SBE 25plus Sealogger CTD
+SBE 49 FastCAT CTD Sensor
+SBE 41/41CP Argo CTD
+SBE 61 Argo CTD
+Fluorescence
+ECO V2 Optical Sensor
+Nitrate
+SUNA V2
+Deep SUNA Nitrate Sensor
+Oxygen
+SBE 43 Dissolved Oxygen Sensor
+SBE 63 Optical Dissolved Oxygen Sensor
+pH
+SBE 18 pH Sensor
+SBE 27 pH/O.R.P. (Redox) Sensor
+Photosynthetically Active Radiation
+PAR Sensor
+Pressure
+SBE 50 Digital Oceanographic Pressure Sensor
+Radiometer
+HyperOCR
+OCR 504 Multispectral Radiometer
+ECO-PAR™
+Spectrophotometer
+ac-s
+Transmissometer
+C-Star Transmissometer
+C-Rover 2000
+Turbidity
+ECO V2 Optical Sensor
+AUV-ROV
+Products
+AUV-ROV Page
+Backscattering
+ECO V2 Optical Sensor
+CTD
+SBE 49 FastCAT CTD Sensor
+Glider Payload CTD (GPCTD)
+Fluorescence
+ECO V2 Optical Sensor
+Nitrate
+Deep SUNA Nitrate Sensor
+Oxygen
+SBE 43 Dissolved Oxygen Sensor
+SBE 63 Optical Dissolved Oxygen Sensor
+Photosynthetically Active Radiation
+PAR Sensor
+Pressure
+SBE 50 Digital Oceanographic Pressure Sensor
+Radiometer
+HyperOCR
+OCR 504 Multispectral Radiometer
+Turbidity
+ECO V2 Optical Sensor
+Vessels
+Products
+Vessels Page
+CTD
+SBE 21 SeaCAT Thermosalinograph
+SBE 25plus Sealogger CTD
+SBE 45 MicroTSG Thermosalinograph
+SBE 911plus CTD
+Depth
+SBE 911plus CTD
+Optics
+ECO V2 Optical Sensor
+HyperOCR
+PAR Sensor
+Rosettes
+Carousel Auto Fire Module (AFM)
+SBE 33 Carousel Deck Unit
+Temperature
+SBE 38 Digital Oceanographic Thermometer
+Transmissometer
+C-Star Transmissometer
+Rosettes, Carousels, & Water Samplers
+Products
+Rosettes, Carousels, & Water Samplers Page
+Conductivity
+SBE 4 Conductivity Sensor
+CTD
+SBE 25plus Sealogger CTD
+Nitrate
+SUNA V2
+Optics
+ECO V2 Optical Sensor
+SeaOWL UV-A™
+pH
+SBE 27 pH/O.R.P. (Redox) Sensor
+SeaFET™ V2 Ocean pH Sensor
+Rosettes
+SBE 32 Carousel Water Sampler
+SBE 55 ECO Water Sampler
+Carousel Auto Fire Module (AFM)
+Ocean Sample Bottle
+Temperature
+SBE 3 Oceanographic Temperature Sensor
+Transmissometer
+C-Star Transmissometer
+Integrated Systems
+Products
+Integrated Systems Page
+CTD
+Glider Payload CTD (GPCTD)
+HydroCAT-SMP
+HydroCAT-EP V2 Multiparameter CTD Sensor
+Slocum Glider Payload CTD
+SBE 16plus V2 SeaCAT CTD
+SBE 19plus V2 SeaCAT CTD
+pH
+Deep SeapHOx™ V2 pH Sensor
+SeapHOx™ V2 Ocean pH Sensor
+Auxiliary Sensors
+Products
+Auxiliary Sensors Page
+Bioluminescence
+Bioluminescence Assessment Tool (UBAT)
+CTD
+SBE 25plus Sealogger CTD
+SBE 37 MicroCAT
+Nitrate
+SUNA V2
+Optics
+ECO V2 Optical Sensor
+SeaOWL UV-A™
+HyperOCR
+Other
+Inductive Cable Coupler (ICC)
+PDIM (Power Data Interface Module)
+Oxygen
+SBE 43 Dissolved Oxygen Sensor
+SBE 63 Optical Dissolved Oxygen Sensor
+pH
+SBE 18 pH Sensor
+SeaFET™ V2 Ocean pH Sensor
+Photosynthetically Active Radiation
+PAR Sensor
+Pump
+SBE 5 Submersible Pump
+Radiometer
+OCR 504 Multispectral Radiometer
+Temperature
+SBE 38 Digital Oceanographic Thermometer
+Applications
+Aquaculture & Fisheries
+Biogeochemical Monitoring
+Carbon Research
+Coral Reef Monitoring
+Dredge Monitoring
+Freshwater Monitoring
+Harmful Algal Blooms (HABs)
+Nutrient Monitoring
+Ocean Acidification
+Ocean Color
+Oil & Gas
+Open Ocean Research
+Renewable Energy
+Water Quality Monitoring
+Weather Monitoring
+View All Applications
+Parameters
+Absorption & Attenuation
+Backscattering
+Bioluminescence
+Conductivity
+Depth
+Fluorescence
+Nitrate
+Oxygen
+pH
+Radiance & Irradiance
+Temperature
+Turbidity
+View all Parameters
+Service & Support
+Cable Search
+FAQs
+Service
+Software
+Support & Resources
+Third Party Equipment
+Training
+News & Events
+Events
+News
+About Us
+About Us
+Careers
+Contact Us
+Sales
+Search
+Quote
+Contact us
+Search
+Products
+Back
+Moored
+Back
+Moored
+Products
+Moored Page
+Backscattering
+SeaOWL UV-A™
+CTD
+HydroCAT-EP V2 Multiparameter CTD Sensor
+SBE 16plus V2 SeaCAT CTD
+SBE 37 MicroCAT
+SBE 52-MP Moored Profiler CTD
+Fluorescence
+ECO V2 Optical Sensor
+SeaOWL UV-A™
+Nitrate
+SUNA V2
+Oxygen
+SBE 63 Optical Dissolved Oxygen Sensor
+pH
+SeaFET™ V2 Ocean pH Sensor
+SeapHOx™ V2 Ocean pH Sensor
+Deep SeapHOx™ V2 pH Sensor
+Radiometer
+HyperOCR Radiometer
+Spectrophotometer
+ac-s
+Temperature
+SBE 56 Temperature Logger
+SBE 39plus Temperature Recorder
+Transmissometer
+C-Star Transmissometer
+Turbidity
+ECO V2 Optical Sensor
+Profiling
+Back
+Profiling
+Products
+Profiling Page
+Backscattering
+SeaOWL UV-A™
+ECO V2 Optical Sensor
+Bioluminescence
+Bioluminescence Assessment Tool (UBAT)
+CTD
+SBE 911plus CTD
+SBE 19plus V2 SeaCAT CTD
+SBE 25plus Sealogger CTD
+SBE 49 FastCAT CTD Sensor
+SBE 41/41CP Argo CTD
+SBE 61 Argo CTD
+Fluorescence
+ECO V2 Optical Sensor
+Nitrate
+SUNA V2
+Deep SUNA Nitrate Sensor
+Oxygen
+SBE 43 Dissolved Oxygen Sensor
+SBE 63 Optical Dissolved Oxygen Sensor
+pH
+SBE 18 pH Sensor
+SBE 27 pH/O.R.P. (Redox) Sensor
+Photosynthetically Active Radiation
+PAR Sensor
+Pressure
+SBE 50 Digital Oceanographic Pressure Sensor
+Radiometer
+HyperOCR
+OCR 504 Multispectral Radiometer
+ECO-PAR™
+Spectrophotometer
+ac-s
+Transmissometer
+C-Star Transmissometer
+C-Rover 2000
+Turbidity
+ECO V2 Optical Sensor
+AUV-ROV
+Back
+AUV-ROV
+Products
+AUV-ROV Page
+Backscattering
+ECO V2 Optical Sensor
+CTD
+SBE 49 FastCAT CTD Sensor
+Glider Payload CTD (GPCTD)
+Fluorescence
+ECO V2 Optical Sensor
+Nitrate
+Deep SUNA Nitrate Sensor
+Oxygen
+SBE 43 Dissolved Oxygen Sensor
+SBE 63 Optical Dissolved Oxygen Sensor
+Photosynthetically Active Radiation
+PAR Sensor
+Pressure
+SBE 50 Digital Oceanographic Pressure Sensor
+Radiometer
+HyperOCR
+OCR 504 Multispectral Radiometer
+Turbidity
+ECO V2 Optical Sensor
+Vessels
+Back
+Vessels
+Products
+Vessels Page
+CTD
+SBE 21 SeaCAT Thermosalinograph
+SBE 25plus Sealogger CTD
+SBE 45 MicroTSG Thermosalinograph
+SBE 911plus CTD
+Depth
+SBE 911plus CTD
+Optics
+ECO V2 Optical Sensor
+HyperOCR
+PAR Sensor
+Rosettes
+Carousel Auto Fire Module (AFM)
+SBE 33 Carousel Deck Unit
+Temperature
+SBE 38 Digital Oceanographic Thermometer
+Transmissometer
+C-Star Transmissometer
+Rosettes, Carousels, & Water Samplers
+Back
+Rosettes, Carousels, & Water Samplers
+Products
+Rosettes, Carousels, & Water Samplers Page
+Conductivity
+SBE 4 Conductivity Sensor
+CTD
+SBE 25plus Sealogger CTD
+Nitrate
+SUNA V2
+Optics
+ECO V2 Optical Sensor
+SeaOWL UV-A™
+pH
+SBE 27 pH/O.R.P. (Redox) Sensor
+SeaFET™ V2 Ocean pH Sensor
+Rosettes
+SBE 32 Carousel Water Sampler
+SBE 55 ECO Water Sampler
+Carousel Auto Fire Module (AFM)
+Ocean Sample Bottle
+Temperature
+SBE 3 Oceanographic Temperature Sensor
+Transmissometer
+C-Star Transmissometer
+Integrated Systems
+Back
+Integrated Systems
+Products
+Integrated Systems Page
+CTD
+Glider Payload CTD (GPCTD)
+HydroCAT-SMP
+HydroCAT-EP V2 Multiparameter CTD Sensor
+Slocum Glider Payload CTD
+SBE 16plus V2 SeaCAT CTD
+SBE 19plus V2 SeaCAT CTD
+pH
+Deep SeapHOx™ V2 pH Sensor
+SeapHOx™ V2 Ocean pH Sensor
+Auxiliary Sensors
+Back
+Auxiliary Sensors
+Products
+Auxiliary Sensors Page
+Bioluminescence
+Bioluminescence Assessment Tool (UBAT)
+CTD
+SBE 25plus Sealogger CTD
+SBE 37 MicroCAT
+Nitrate
+SUNA V2
+Optics
+ECO V2 Optical Sensor
+SeaOWL UV-A™
+HyperOCR
+Other
+Inductive Cable Coupler (ICC)
+PDIM (Power Data Interface Module)
+Oxygen
+SBE 43 Dissolved Oxygen Sensor
+SBE 63 Optical Dissolved Oxygen Sensor
+pH
+SBE 18 pH Sensor
+SeaFET™ V2 Ocean pH Sensor
+Photosynthetically Active Radiation
+PAR Sensor
+Pump
+SBE 5 Submersible Pump
+Radiometer
+OCR 504 Multispectral Radiometer
+Temperature
+SBE 38 Digital Oceanographic Thermometer
+Applications
+Back
+View All Applications
+Aquaculture & Fisheries
+Biogeochemical Monitoring
+Carbon Research
+Coral Reef Monitoring
+Dredge Monitoring
+Freshwater Monitoring
+Harmful Algal Blooms (HABs)
+Nutrient Monitoring
+Ocean Acidification
+Ocean Color
+Oil & Gas
+Open Ocean Research
+Renewable Energy
+Water Quality Monitoring
+Weather Monitoring
+Parameters
+Back
+View all Parameters
+Absorption & Attenuation
+Backscattering
+Bioluminescence
+Conductivity
+Depth
+Fluorescence
+Nitrate
+Oxygen
+pH
+Radiance & Irradiance
+Temperature
+Turbidity
+Service & Support
+Back
+Cable Search
+FAQs
+Service
+Software
+Support & Resources
+Third Party Equipment
+Training
+News & Events
+Back
+Events
+News
+About Us
+Back
+About Us
+Careers
+Contact Us
+Sales
+Contact us
+All Products
+SBE 5 Submersible Pump
+SBE 5 Submersible Pump
+The SBE 5T / 5P pump is a modular component on several Sea-Bird CTD packages. The 5T / 5P is standard equipment on the SBE 9plus CTD and 25 / 25plus Sealogger CTD, and optional equipment on the SBE 16plus V2, 16plus-IM V2, and 19plus V2 SeaCAT CT(D) Recorders. The highly reliable pump flushes water through the conductivity cell at a constant rate, independent of the CTD’s motion, improving dynamic performance. Operational characteristics of the 5T and 5P are identical, but the housings and depth ratings differ (5T titanium housing to 10,500 m; 5P plastic housing to 600 m). The pump may also be suitable for custom applications, where pressure heads are less than 300 cm of water and flow rates are less than 100 mL/sec.
+Add to Quote
+Added to quote
+We’ve saved this item to your quote list.
+Download Datasheet
+Key Features
+Specifications
+Resources
+Content
+Key Features
+Centrifugal pump head
+Long-life, brushless, DC, ball-bearing motor
+Pump impeller and electric drive motor
+coupled magnetically through housing,
+providing high reliability by eliminating
+moving seals
+Pumping rates and motor current for various
+applications
+Five-year limited warranty
+Specifications
+Specification
+Value
+Depth Rating (Meters)
+600m,
+10500m
+Power Source
+External
+Housing Material Options
+Plastic,
+Titanium
+Connector
+MCBH
+Resources
+SBE 5 Submersible Pump
+Datasheet
+SBE 5 Submersible Pump
+Methods & Procedures
+SBE 5 Submersible Pump
+Configurations
+Content
+See how our experts at Sea-Bird Scientific execute field procedures and deploy our products.
+Application Note
+03.01.24
+AN40-SBE 5T and 5P Pump Speed Adjustment
+Configuration and use
+Learn More
+Application Note
+03.01.24
+AN75-Maintenance of SBE 5T, 5P, and 5M Pumps
+Configuration and use
+Learn More
+Case Study
+04.01.18
+SeaExplorer Glider Sets Endurance Record with a Sea-Bird Scientific Glider Payload CTD
+Sea-Bird Scientific’s Glider Payload CTD (GPCTD) was deployed on a SeaExplorer glider for a record-setting 60-day, 1,183 km mission in the Mediterranean Sea, demonstrating exceptional endurance and data quality.
+Learn More
+Accessories
+Curious what accessories and spares you can purchase for the SBE 5 Submersible Pump? Get in touch with our experts for more information.
+Contact us
+Get in touch
+Contact our team
+Ready to take the next step? Connect with Sea-Bird Scientific’s team for personalized guidance, support, or to request a quote for our solutions.
+Contact us
+Get updates and announcements from Sea-Bird Scientific by signing up for our newsletter
+Stay connected
+Sea-Bird Scientific
+About Us
+Careers
+Contact Us
+Sales
+Products & Services
+View All Applications
+View All Parameters
+View All Products
+Support
+FAQs
+Service
+Software
+Support & Resources
+Training
+News & Events
+Events
+News
+Follow Us
+Cookie Policy
+Cookie Settings
+Do Not Sell My Data
+Manage My Communications
+Privacy Policy
+Terms & Conditions
+Warranty
++1 (425) 643 9866
+© Copyright 2026 Sea-Bird Scientific

@@ -1,0 +1,227 @@
+LuminOx Optical Oxygen Sensors
+Open main menu
+Sensors
+Optical Oxygen Sensors
+LuminOx
+LuminOx Sealed
+LuminOx Flow-Through
+LuminOx Evaluation Interface Board
+Zirconia Oxygen Sensors
+Flange Mount Pinned Zirconium Dioxide
+Flange Mount Zirconia
+Miniature Zirconia
+OXY-Flex – Oxygen Analyser
+Probe Zirconium Dioxide
+PCB Mounted Zirconium Dioxide
+Screwfit Zirconia
+Probe Screened Zirconia
+Zirconia Oxygen Sensor System
+Liquid Level Switches
+Data Center Cooling Series
+LLIS – Hazardous Area Approved
+Optomax Industrial Glass
+Optomax Industrial Range
+LLHP
+LLHT Glass Tip
+Optomax Digital Range
+Optomax Basic Range
+LLC Series – Honeywell Alternative
+Carbon Dioxide Sensors
+Low Power Co2 Sensors
+CozIR-A Ambient Air
+CozIR LP2 Ambient Air
+CozIR LP Ambient Air
+CozIR Blink Miniature
+High Speed Co2 Sensors
+SprintIR-R
+SprintIR-6S Fast Response
+Robust Co2 Sensors
+ExplorIR-M NDIR CO2 Sensor
+Solutions
+Customisation
+OXY-Flex – Oxygen Analyser
+Zirconia Oxygen Sensor System
+Zirconia Oxygen Probe Module Kit
+Applications
+Customisation
+Data Centres
+Hazardous Area
+Industrial
+Level Control
+Telecom
+Transportation
+Resources
+Downloads
+White Papers
+Video Gallery
+Blog
+News
+Knowledge Hub
+About Us
+About Us
+Quality Management
+Corporate Social Responsibility Policy
+SST Terms & Conditions
+Contact Us
+Get in Touch
+Global Contacts
+English
+English
+한국어
+中文 (中国)
+Search
+Close menu
+Sensors
+Optical Oxygen Sensors
+LuminOx
+LuminOx Sealed
+LuminOx Flow-Through
+LuminOx Evaluation Interface Board
+Zirconia Oxygen Sensors
+Flange Mount Pinned Zirconium Dioxide
+Flange Mount Zirconia
+Miniature Zirconia
+OXY-Flex – Oxygen Analyser
+Probe Zirconium Dioxide
+PCB Mounted Zirconium Dioxide
+Screwfit Zirconia
+Probe Screened Zirconia
+Zirconia Oxygen Sensor System
+Liquid Level Switches
+Data Center Cooling Series
+LLIS – Hazardous Area Approved
+Optomax Industrial Glass
+Optomax Industrial Range
+LLHP
+LLHT Glass Tip
+Optomax Digital Range
+Optomax Basic Range
+LLC Series – Honeywell Alternative
+Carbon Dioxide Sensors
+Low Power Co2 Sensors
+CozIR-A Ambient Air
+CozIR LP2 Ambient Air
+CozIR LP Ambient Air
+CozIR Blink Miniature
+High Speed Co2 Sensors
+SprintIR-R
+SprintIR-6S Fast Response
+Robust Co2 Sensors
+ExplorIR-M NDIR CO2 Sensor
+Solutions
+Customisation
+OXY-Flex – Oxygen Analyser
+Zirconia Oxygen Sensor System
+Zirconia Oxygen Probe Module Kit
+Applications
+Customisation
+Data Centres
+Hazardous Area
+Industrial
+Level Control
+Telecom
+Transportation
+Resources
+Downloads
+White Papers
+Video Gallery
+Blog
+News
+Knowledge Hub
+About Us
+About Us
+Quality Management
+Corporate Social Responsibility Policy
+SST Terms & Conditions
+Contact Us
+Get in Touch
+Global Contacts
+English
+English
+한국어
+中文 (中国)
+Email us
+Call us
+Search
+Home
+/
+Optical Oxygen Sensors
+/
+LuminOx Flow-Through
+Ask the experts
+LuminOx Flow-Through
+Contact our experienced engineers to discuss your application needs.
+Request a quote
+Details
+Efficient gas sample management with flow-through housing
+Minimal interference from other gases
+Compliant with RoHS & REACH regulations
+Operates seamlessly in vacuum and high-oxygen environments
+Compatible with microcontrollers like Arduino and Raspberry Pi
+Delivers accurate readings for partial pressure O₂, percent O₂, temperature, and barometric pressure
+Rapid response time, with T90 typically under 10 seconds
+Advanced non-depleting luminescence technology, developed in-house
+Quick sample availability with short lead times
+User-friendly software, available for testing
+Expert design engineers
+Sensor board sold separately
+Description
+The LuminOx Flow-Through Optical Oxygen Sensor ensures a clean gas sample stream, allowing complete separation from the process environment. Developed and manufactured by SST, the LuminOx Flow-Through Optical Oxygen Sensor is part of the LuminOx family—a range of factory-calibrated sensors that measure ambient oxygen levels using fluorescence quenching technology (also known as luminescence quenching).
+The LOX-02-F model enhances the standard LuminOx oxygen sensor range with faster response times. Its sealed flow-through housing enables optimal sample gas management and offers flexible sensor placement. Leveraging patented non-depleting technology, SST has developed a suite of sensors with extended lifespans, outperforming traditional galvanic sensors in similar applications. Each LuminOx oxygen sensor features built-in temperature and barometric pressure compensation, eliminating the need for external adjustments. It connects directly to the customer’s USART, requiring no additional signal conditioning circuitry.
+LuminOx is a solid-state sensor containing no lead or liquid electrolytes, ensuring 100% RoHS compliance. With virtually no cross-sensitivity, it excels in environments where other sensor technologies struggle with mixed gas compositions. By measuring the partial pressure of oxygen (ppO₂), combined with internal barometric pressure data, the sensor calculates oxygen concentration (O₂%). The USART output delivers O₂%, ppO₂, barometric pressure, internal temperature, and sensor status for streamlined integration.
+Datasheet
+Additional Information
+Supply voltage (Vs)
+4.5...5.5VDC
+Oxygen range
+0...25% O2
+Barometric pressure range
+500...1200mbar
+Output Type
+3.3V TTL level USART
+Operating Temperature
++0°C...+45°
+Downloads
+Datasheets
+Optical Oxygen Sensors LuminOx Flow Through - Datasheet
+Evaluation Kit
+Optical Oxygen Sensors LuminOx Evaluation Board - Datasheet
+User Guide
+LuminOx Optical Oxygen Sensor User Interface - User Guide
+LuminOx Evaluation Board - User Guide
+Application Notes
+LuminOx Optical Oxygen Sensor Cross Sensitivity Application Note
+3D Models
+LuminOx - LOX-02-F - Step File
+Accreditation & Compliance
+ISO-9001;2015 Certification
+RoHS Declaration
+REACH Declaration
+POP Compliance Declaration
+Related Content
+Products
+Applications
+Blogs
+LuminOx
+LuminOx Sealed
+LuminOx Evaluation Interface Board
+Get in Touch for a Quote Today
+Our experienced engineers are ready to discuss your application requirements and provide expert guidance.
+Contact us
+Product Categories
+Optical Oxygen Sensors
+Zirconia Oxygen Sensors
+Liquid Level Switches
+Carbon Dioxide Sensors
+Address
+5 Hagmill Crescent,
+Shawhead Industrial Estate,
+Coatbridge,
+ML5 4NS, UK
+Company
+sensors@dwyeromega.com
++44 (0)1236 459020
+© 2026 SST Sensing. VAT Registration Number: 774831989
+Privacy
+Cookies
+Manage Cookies

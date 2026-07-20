@@ -1,0 +1,582 @@
+Specs : Clamp-On Air Flow Sensor - FD-EC series | KEYENCE America
+T0599923
+Menu
+TEL
+Sign In / Register
+Careers
+United States
+English
+1-888-539-3623
+Products
+Back
+Products
+Sensors
+Back
+Sensors
+Photoelectric Sensors
+Fiber Optic Sensors
+Laser Sensors
+Inductive Proximity Sensors
+Positioning Sensors
+Vision Sensors
+Network Communication Units
+Specific Solution Sensors
+Measurement Sensors
+Back
+Measurement Sensors
+Laser Profiler / 3D Laser Snapshot Sensor
+Laser Displacement Sensors
+Optical Micrometer / Laser Micrometer
+Spectral Interference Displacement Sensor
+Inductive Displacement Sensors
+LVDT / Contact Displacement Sensors (Probes)
+Machine Vision
+Back
+Machine Vision
+Vision Systems
+Vision Sensors
+Process Controls / Process Sensors
+Back
+Process Controls / Process Sensors
+Flow Sensors / Flow Meters
+Pressure Sensors
+Temperature Sensors
+Level Sensors
+Pneumatic Components
+Back
+Pneumatic Components
+Cylinder Sensors
+Directional Control Valves / Cushion Valves
+Gas Flow Sensors
+Gas Pressure Sensors
+Safety
+Back
+Safety
+Safety Light Curtains
+Safety Laser Scanners
+Safety Interlock Switches
+Safety Controller
+Microscopes / Laser Microscopes
+Back
+Microscopes / Laser Microscopes
+Digital Microscopes
+3D Optical Profiling Microscope
+Fluorescence Microscopes
+Colony Counter
+Elemental Analyzer
+Optical Metrology Systems
+Back
+Optical Metrology Systems
+Optical Comparator (Profile Projector)
+3D Measurement Systems
+Back
+3D Measurement Systems
+CMM (Coordinate Measuring Machine)
+3D Scanner
+3D Optical Profilometers
+Controls
+Back
+Controls
+PLC (Programmable Logic Controller)
+Micro PLC / Small PLC
+HMI
+Servo Motors / Servo Systems
+Other Controls
+Marking / Coding
+Back
+Marking / Coding
+Industrial Laser Marking Systems / Laser Markers
+UV Laser Coder
+Continuous Inkjet Printers / Case Coder
+Barcode Readers
+Back
+Barcode Readers
+Barcode Scanners
+Handheld Scanners
+Mobile Computers / Handheld Computers
+Back
+Mobile Computers / Handheld Computers
+Mobile Computers / Handheld Computers
+Data Acquisition
+Back
+Data Acquisition
+Data Acquisition (DAQ)
+Static Control
+Back
+Static Control
+Static Eliminators / Ionizers
+Electrostatic Sensors
+Additive Manufacturing
+Back
+Additive Manufacturing
+3D Printers
+RPA / Desktop Automation Software
+Back
+RPA / Desktop Automation Software
+RPA (Robotic Process Automation)
+Industry / Application
+Automotive
+Metals
+Semiconductors / LCDs
+Electronic Devices
+Plastics
+Films / Sheets
+Food / Pharmaceutical
+Medical Technology
+Logistics
+Certified Models
+CE Marking
+UL Certified
+CSA Certified
+FDA Accession
+Solutions
+Back
+Solutions
+Industry / Application
+Back
+Industry / Application
+Automotive
+Metals
+Semiconductors / LCDs
+Electronic Devices
+Plastics
+Films / Sheets
+Food / Pharmaceutical
+Medical Technology
+Logistics
+Resource Center
+Case Studies
+Blogs
+Ask an Expert
+Price
+Experience Demo / Test
+Free Trial Unit
+Downloads
+Back
+Downloads
+Catalogs
+Technical Guides
+Data Sheet
+CAD / CAE
+Manuals
+Software
+Support
+Back
+Support
+Product User Support
+Free Trial Unit
+Experience Demo / Test
+Repair Service Request
+Certified Models
+General Catalog Request
+About Us
+Back
+About Us
+Corporate Overview
+Our Technology
+Our Service
+Global Network
+Careers
+Contact Us
+Local Offices
+Sustainability
+Trade Show
+Sustainability
+Contact Us
+Careers
+Search
+Recent Searches
+Series (
+results)
+View More
+Models (
+results)
+Keywords
+Ask AI
+Products
+Sensors
+Measurement Sensors
+Machine Vision
+Process Controls / Process Sensors
+Pneumatic Components
+Safety
+Microscopes / Laser Microscopes
+Optical Metrology Systems
+3D Measurement Systems
+Controls
+Marking / Coding
+Barcode Readers
+Mobile Computers / Handheld Computers
+Data Acquisition
+Static Control
+Additive Manufacturing
+RPA / Desktop Automation Software
+Clamp-On Air Flow Sensor
+FD-EC series
+Ask AI
+Catalogs
+View Catalog
+Price
+Overview
+Specs
+Models
+Downloads
+User Support
+Price
+Home
+Products
+Process Controls / Process Sensors
+Flow Sensors / Flow Meters
+Clamp-On Air Flow Sensor
+Specs
+Specs
+Clamp-On Air Flow Sensor
+FD-EC series
+Amplifier unit
+Sensor head
+Amplifier unit
+Model
+FD-ECA1
+FD-ECA1C
+FD-ECA0
+Image
+Type
+Cable type
+M12 connector type
+*5
+Zero line type
+*6
+Number of control outputs
+2
+─
+*7
+Number of analog outputs
+1
+─
+Number of external inputs
+─
+*7
+Power supply cable
+2 m
+6.6'
+, strand wire, 6 cores
+Pigtail, 100 mm
+3.94"
+, M12 connector, 8 pins of which 6 are used pins used
+No cable
+Response time (90% response)
+50 ms/100 ms/250 ms/1 s/5 s (selectable, initial value: 250 ms)
+*1
+I/O
+Control outputs 1 and 2
+Instantaneous flow/Accumulated flow/Alarm output/Pulse output
+NPN/PNP setting switchable, 100 mA or less total for two outputs, residual voltage: 2.5 V or less
+─
+Analog output
+Instantaneous flow
+4-20 mA/0-20 mA (switchable), load resistance: 260 Ω or less
+External input
+Zero flow/Origin adjust./Reset total
+Short-circuit current: 1.5 mA or less
+Network compatibility
+IO-Link
+*2
+NU Series compatibility
+Number of connectible units
+─
+Eight units per one NU1 main unit;
+four units per one FS-MC8N/P main unit
+*6
+Protection circuit
+Protection against reverse power connection, output overcurrent, output surge, reverse output connection, and incorrect head cable wiring
+Protection against incorrect head cable wiring
+Power supply
+Power voltage
+24 VDC +20%/-10% (including ripple), Class2/LPS
+24 VDC ± 10% (including ripple), Class2/LPS
+Power consumption
+1680 mW
+*3
+excluding load current
+1290 mW excluding load current
+Environmental resistance
+Ambient temperature
+−10°C to +55°C
+14 to 131°F
+(no freezing)
+*4
+Relative humidity
+35%RH to 85%RH (no condensation)
+Vibration resistance
+10 to 500 Hz, power spectral concentration: 0.816 G
+2
+/Hz, XYZ axes
+Shock resistance
+100 m/s
+2
+, 16 ms pulse, XYZ axes, 1000 times for each axis
+Material
+Main unit: polycarbonate, FG terminal: copper/iron
+Weight
+Approx. 90 g
+3.17 oz
+Approx. 42 g
+1.48 oz
+Approx. 26 g
+0.92 oz
+*1
+5 ms is added to the analog output response time and the response is set to 63%.
+*2
+IO-Link: Compatible with specification v1.1/COM3 (230.4 kbps).
+*3
+182 mA or less with the load included.
+*4
+The ambient temperature to use varies depending on the number of adjacent cable type/M12 connector type units or depending on the number of expansion zero line type units added to the system. For 1 or 2 units, the temperature is 55°C
+131°F
+. For 3 to 5 units, the temperature is 50°C
+122°F
+. For 6 to 8 units, the temperature is 45°C
+113°F
+. The prescribed values for the ambient temperature assume that the amplifier unit has been mounted on a DIN rail installed on a metal surface. Exercise special care when installing the product in an airtight space.
+*5
+Ensure the cable length is 30 m
+98.4'
+or less (20 m
+65.6'
+or less when using IO-Link) for the M12 connector type.
+*6
+To use the zero line type, connect it to the FS-MC8N/P, NU Series.
+*7
+This counts as 2 outputs/1 input when connecting multiple units to the FS-MC8N/P, NU Series.
+Scroll
+Back to top
+Sensor head
+Model
+FD-ECH6
+FD-ECH7
+FD-ECH8
+FD-ECH9
+FD-ECH10
+FD-ECH12
+FD-ECH13
+Image
+Pipe size
+Outer diameter of pipe
+ø6
+0.24"
+1/4" (approx. 6.35 mm
+0.25"
+)
+ø8
+0.31"
+3/8" (approx. 9.53 mm
+0.38"
+)
+ø10
+0.39"
+ø12
+0.47"
+1/2" (approx. 12.7 mm
+0.50"
+)
+Installable range
+6.0
+0.24"
+± 0.15 mm
+0.01"
+6.35
+0.25"
+± 0.15 mm
+0.01"
+8.0
+0.31"
+± 0.15 mm
+0.01"
+9.53
+0.38"
+± 0.15 mm
+0.01"
+10.0
+0.39"
+± 0.15 mm
+0.01"
+12.0
+0.47"
+± 0.15 mm
+0.01"
+12.7
+0.50"
+± 0.15 mm
+0.01"
+Pipe materials
+Polyurethane, nylon, PFA,
+*1
+other
+*2
+Supported gases
+Air, nitrogen, argon, and other gases
+*3
+Supported gas temperature
+−10°C to +60°C
+14 to 140°F
+Operating pressure range
+0 to 0.75 MPa (upper limit depends on pipe specifications)
+Flow rate detection principle
+Ultrasonic transmission time difference method
+Rated flow rate
+(volume flow rate)
+40 L/min 1.41 CFM * Initial display
+70 L/min 2.47 CFM * Initial display
+100 L/min 3.53 CFM * Initial display
+120 L/min 4.24 CFM * Initial display
+180 L/min 6.35 CFM * Initial display
+200 L/min 7.06 CFM * Initial display
+(20°C
+68°F
+, atmospheric pressure conversion)
+Gas at 20°C
+68°F
+, 0.2 MPa
+120 L/min
+4.24 CFM
+210 L/min
+7.41 CFM
+300 L/min
+10.59 CFM
+360 L/min
+12.7 CFM
+540 L/min
+19.1 CFM
+600 L/min
+21.2 CFM
+Gas at 20°C
+68°F
+, 0.4 MPa
+200 L/min
+7.06 CFM
+350 L/min
+12.36 CFM
+500 L/min
+17.7 CFM
+600 L/min
+21.2 CFM
+900 L/min
+31.8 CFM
+1000 L/min
+35.3 CFM
+Gas at 20°C
+68°F
+, 0.6 MPa
+280 L/min
+9.88 CFM
+490 L/min
+17.3 CFM
+700 L/min
+24.7 CFM
+840 L/min
+29.7 CFM
+1260 L/min
+44.5 CFM
+1400 L/min
+49.4 CFM
+Repeatability
+Response time 250 ms: ±2.5% of F.S.
+*4
+*5
+Display resolution
+Instantaneous flow
+0.01/0.1/1 L/min
+0.1/1 L/min
+Accumulated flow
+0.01/0.1/1/10/100 L
+0.1/1/10/100/1000 L
+Display method
+Output indicator
+Environmental resistance
+Enclosure rating
+IP65 (IEC60529)
+Ambient temperature
+−10°C to +60°C
+14 to 140°F
+(no freezing)
+Relative humidity
+35%RH to 85%RH (no condensation)
+Vibration resistance
+10 to 500 Hz, power spectral concentration: 0.816 G
+2
+/Hz, XYZ axes
+Shock resistance
+100 m/s
+2
+, 16 ms pulse, XYZ axes, 1000 times for each axis
+Material
+Sensor unit
+PBT/PAR/iron
+Sensor surface
+Special rubber
+Weight
+Approx. 102 g
+3.60 oz
+Approx. 105 g
+3.70 oz
+Approx. 114 g
+4.02 oz
+Approx. 115 g
+4.06 oz
+Approx. 116 g
+4.09 oz
+*1
+Use PFA tubes in an environment with a temperature of 40°C
+104°F
+or less.
+*2
+Resin tubes that transmit ultrasonic waves.
+*3
+Gases that transmit ultrasonic waves. Measurement may be unstable due to the pressure inside of the pipe and the type of gas.
+*4
+Accuracy improves with longer response times. As a rule, this is by a proportion of √(250 ms/response time)x.
+*5
+This value is guaranteed by KEYENCE inspection facilities. Errors will be introduced by factors such as the condition and type of pipes as well as the temperature and type of gas.
+Scroll
+Back to top
+View Catalog
+Downloads:
+Technical Guides
+Data Sheet (PDF)
+CAD / CAE
+Manuals
+Software
+For Your Support:
+Ask an Expert
+Experience Demo / Test
+Free Trial Unit
+Product Lineup:
+Flow Sensors / Flow Meters
+Home
+Products
+Process Controls / Process Sensors
+Flow Sensors / Flow Meters
+Clamp-On Air Flow Sensor
+Specs
+CREATE YOUR KEYENCE ACCOUNT
+Sign Up Now
+Newsletter Subscribe
+Subscribe
+Quick Delivery and Comprehensive Support
+KEYENCE supports customers from the selection process to line operations with on-site operating instructions and after-sales support.
+For Your Support
+Downloads
+Contact Us
+Ask an Expert
+1-888-539-3623
+KEYENCE CORPORATION OF AMERICA
+500 Park Boulevard, Suite 200, Itasca, IL 60143, U.S.A.
+Certified Models
+Privacy
+Terms and Conditions
+Terms of Use
+Supplying to KEYENCE
+Sitemap
+Battery Recycling
+Copyright (C) 2026 KEYENCE CORPORATION. All Rights Reserved.
+Back to top

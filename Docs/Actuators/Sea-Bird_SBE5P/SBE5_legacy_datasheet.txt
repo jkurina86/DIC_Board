@@ -1,0 +1,258 @@
+                                                                                   Application Note 2D
+
+ www.seabird.com | +1 425-643-9866
+
+
+     June 2025: Please refer to the sensor-specific user manual for
+                    conductivity cell care protocols
+
+                          Care and Cleaning of Conductivity Cells
+                  Does not apply to MicroCATs (SBE 37s) with DO sensors
+
+Since any conductivity sensor’s output reading is proportional to its cell dimensions, it is important to keep the
+cell clean of internal coatings. Cell electrodes contaminated with oil, biological growths, or other foreign material
+will eventually cause low conductivity readings. To control growth of bio-organisms in the conductivity cell,
+follow these rinsing and cleaning recommendations.
+• Bleach is extremely effective in controlling growth of bio-organisms in the conductivity cell. Sea-Bird
+     recommends cleaning the conductivity sensor in a dilute bleach solution.
+• Use a mild, non-ionic surfactant to remove surface and airborne oil ingested into the CTD plumbing as the
+     CTD is removed from the water and brought on deck. Sea-Bird recommends rinsing and cleaning the
+     conductivity sensor with a detergent solution.
+• White vinegar, which is 5 – 8% acetic acid, may be used to remove minor mineral deposits on the inside of
+     the cell.
+
+No adverse effects have been observed as a result of dry storage if the cell is rinsed or soaked with fresh, clean
+water before storage to remove any salt crystals. Conductivity cell storage recommendations:
+• Short-term storage (< 1 day, typically between casts): If there is no danger of freezing, store the cell with a
+     dilute bleach solution in Tygon tubing looped around the cell. If there is danger of freezing, store the cell dry,
+     with Tygon tubing looped around the cell.
+• Long-term storage (> 1 day): Since conditions of transport and long-term storage are not always under the
+     user’s control, store the conductivity cell dry, with Tygon tubing looped around the cell ends. Dry storage
+     eliminates the possibility of damage due to unforeseen freezing, as well as the possibility of bio-organism
+     growth in water in the cell. Filling the cell with a detergent solution for 1 hour before deployment will rewet
+     the cell adequately.
+The Tygon tubing looped around the ends of the conductivity cell, whether dry or filled with a bleach or detergent
+solution, has the added benefit of keeping air-borne contaminants (abundant on most ships) from entering the cell.
+
+Identifying Damaged or Severely Fouled Cells
+
+Every conductivity calibration                                                           Frequency associated with zero conductivity
+certificate has a frequency output                                                       (dry conductivity cell). Variation of ± few
+                                                 Example Calibration Sheet               10ths of a Hz indicates a dirty cell.
+for zero conductivity, obtained from
+a cell thoroughly rinsed in distilled
+or de-ionized water, with all the
+water shaken out (dry cell). A zero
+conductivity frequency that has
+changed by more than a few 10ths
+of a Hertz may indicate a cell that is
+damaged or considerably out of
+calibration. Noisy readings (± a few
+10ths of a Hertz) indicate a dirty
+cell; follow the procedure for
+Cleaning Severely Fouled Sensors
+to clean a dirty cell.
+
+AN2D Revised 6/2025
+Rinsing, Cleaning, and Storage Procedures
+
+                                                      Cautions
+ The conductivity cell is primarily glass, and can break if
+ mishandled. Use the correct size Tygon tubing; using                                     SBE 4 Conductivity Sensor
+ tubing with a smaller ID will make it difficult to remove
+ the tubing, and the cell may break if excessive force is
+ used. The correct size tubing for cleaning/storing all                         Soaker tube
+ cells produced since 1980 is 7/16" ID, 9/16" OD.
+ Instruments shipped prior to 1980 require 3/8" ID tubing.
+
+ Do not put a brush or object (e.g., cotton swab) inside the conductivity cell to clean it or dry it.
+ Touching and bending the electrodes can change the calibration; large bends and movement of the
+                                 electrodes can damage the cell.
+
+ If a dissolved oxygen (DO) sensor is plumbed to the CTD, disconnect the tubing between the
+     conductivity cell and DO sensor to prevent extended detergent contact with the DO sensor
+     membrane (SBE 43) or optical window (SBE 63). Extended contact with detergent can cause
+                        temporary sensitivity (slope) changes to the sensors.
+
+
+After each cast
+1.   Rinse: Remove the plumbing (Tygon tubing) from the exhaust end of the conductivity cell. Flush the cell with a
+     0.1% detergent solution. Rinse thoroughly with fresh, clean water and drain.
+     • If not rinsed between uses, salt crystals may form on the conductivity cell platinized electrode surfaces. When
+          the instrument is used next, sensor accuracy may be temporarily affected until these crystals dissolve.
+2.   Store: The intent of these storage recommendations is to keep contamination from aerosols and spray/wash on the
+     ship deck from harming the sensor’s calibration.
+     • No danger of freezing: Fill the cell with a 500 – 1000 ppm bleach solution, using a loop of Tygon tubing
+          attached to each end of the conductivity sensor to close the cell ends.
+     • Danger of freezing: Remove larger droplets of water by blowing through the cell. Do not use compressed air,
+          which typically contains oil vapor. Attach a loop of Tygon tubing to each end of the conductivity cell to close
+          the cell ends.
+
+Routine Cleaning (no visible deposits or marine growths on sensor)
+Use the syringe kit and tubing supplied with the CTD, part number 50087, or 50087.1 for
+routine cleaning. If there is a limited supply of fresh, clean water available, flush the cell five
+times, or until it is thoroughly rinsed.
+1. Bleach—Agitate a 500 – 1000 ppm solution warmed to 40 C (wrist warm) through the
+     cell in a washing action for 2 minutes. Drain and flush with warm (not hot) fresh, clean
+     water for 5 minutes or until rinsed thoroughly.
+2. Detergent—Agitate a 1-to-2% detergent solution warmed to 40 C (wrist warm) through
+     the cell many times in a washing action. Fill the cell with the solution and let it soak for 1
+     hour. Drain and flush with warm (not hot) fresh, clean water for 5 minutes or until rinsed
+     thoroughly.
+
+Cleaning Severely Fouled Sensors (visible deposits or marine growths on sensor,
+and/or shift in zero conductivity frequency)
+1.   Repeat the Routine Cleaning procedure up to five times. Thoroughly rinse in distilled or de-
+     ionized water, then shake out all the water. With the conductivity cell dry, take and record a
+     raw conductivity reading (in Hz). Compare to the zero conductivity frequency on the
+     calibration sheet. The output should be within a few tenths of a Hz of the zero conductivity
+     frequency. If not, proceed to Step 2.
+
+2.   Clean with a white vinegar solution or diluted HCl solution. If the zero conductivity is still outside the
+     expected range, the conductivity cell may require factory cleaning.
+
+AN2D Revised 6/2025
+Long-Term Storage
+1.   Remove the plumbing (Tygon tubing) from the exhaust end of the conductivity cell. Flush the cell with a
+     0.1% detergent solution. Rinse thoroughly with fresh, clean water and drain. Remove larger droplets of
+     water by blowing through the cell. Do not use compressed air, which typically contains oil vapor.
+
+2.   Attach a loop of Tygon tubing to each end of the conductivity cell to close the cell ends and prevent
+     contaminants from entering the cell. Storing the cell dry prevents the growth of any bio-organisms in water
+     in the cell, thus preserving the calibration.
+
+3.   When ready to deploy again: Fill the cell with a detergent solution for 1 hour before deployment. Drain the
+     detergent solution; there is no need to rinse the cell.
+
+Cleaning Materials
+Tygon® Tubing
+Sea-Bird recommends use of Tygon tubing, because it remains flexible over a wide temperature range and with
+age. It is supplied by Sea-Bird, but is available locally from a chemical supply or lab products company.
+Keep the Tygon in a clean place (so that it does not pick up contaminants) while the instrument is in use.
+
+Water
+De-ionized (DI) water, commercially distilled water, or fresh, clean, tap water is recommended for rinsing,
+cleaning, and storing sensors.
+• On ships, fresh water is typically made in large quantities by a distillation process, and stored in large tanks.
+    This water may be contaminated with small amounts of oil, and should not be used for rinsing, cleaning, or
+    storing sensors.
+• Where fresh water is extremely limited (for example, a remote location in the Arctic), you can substitute
+    clean seawater for rinsing and cleaning sensors. The seawater must be extremely clean, and free of oils that
+    can coat the conductivity cell. To eliminate bio-organisms in the water, boil the water or filter it with a 0.5
+    micron filter.
+• If not immediately redeploying the instrument, follow up with a brief fresh water rinse to eliminate the
+    possibility of salt crystal formation, which could cause small shifts in calibration.
+Detergent
+A detergent with Octyl Phenol Ethoxylate, a mild, non-ionic surfactant, is included with every CTD shipment and
+can be ordered from Sea-Bird, but may be available locally from a chemical supply or lab products company.
+Other liquid detergents can probably be used, but scientific grades (with no colors, perfumes, glycerins, lotions,
+etc.) are required because of their known composition. It is better to use a non-ionic detergent, since conductivity
+readings taken immediately after use are less likely to be affected by any residual detergent left in the cell.
+
+Bleach
+Bleach is a common household product used to whiten and disinfect laundry. Commercially available bleach is
+typically 4–7% (40,000–70,000 ppm) sodium hypochlorite (Na-O-Cl) solution that includes stabilizers. Some
+common commercial product names are Clorox (U.S.) and eau de Javel (French).
+
+Dilute to 500 – 1000 ppm. For example, if starting with 5% (50,000 ppm) sodium hypochlorite, diluting 50 to 1
+(50 parts water to 1 part bleach) yields a 1000 ppm (50,000 pm/50 = 1000 ppm) solution.
+
+White Vinegar
+White vinegar is a common household product used to dissolve mineral deposits, and may be used to remove
+minor mineral contamination of the conductivity cell. Commercially available white vinegar is typically 5 –
+8% acetic acid (CH3COOH) in aqueous solution; verify that there are no oils or other ingredients.
+
+1.   Place a 0.6 m (2 ft) length of Tygon tubing over the end of the conductivity cell.
+
+2.   Clamp the instrument so that the cell is vertical, with the Tygon tubing at the bottom end.
+
+3.   Loop the Tygon tubing into a U shape, and tape the open end of the tubing in place at the same height as
+     the top of the glass cell.
+
+
+AN2D Revised 6/2025
+4.   Pour a weak white vinegar solution (1 part white vinegar, 2 parts water) into the open end of the tubing until the
+     cell is nearly filled. Let it soak for 2-3 minutes only.
+
+5.   Drain the solution from the cell and flush for 5 minutes with warm, clean, de-ionized water.
+
+6.   Rinse the exterior of the instrument to remove any spilled solution from the surface.
+
+7.   Fill the cell with a detergent solution and let it stand for 5 minutes.
+
+8.   Drain and flush with warm, clean, de-ionized water for 1 minute.
+
+9.   Carefully remove the 0.6 m (2 ft) length of Tygon tubing.
+
+10. With the conductivity cell dry, take and record a raw conductivity reading (in Hz). Compare to the zero
+    conductivity frequency on the calibration sheet. The output should be within a few tenths of a Hz of the zero
+    conductivity frequency. If not, repeat Steps 1 and 2 with a moderate white vinegar solution (1 part white
+    vinegar, 1 part water) and repeat the test. If still outside the expected range, repeat with a full strength white
+    vinegar solution and repeat the test. If still outside the expected range, return to Sea-Bird or see Hydrochloric
+    Acid (HCl) below.
+
+11. Prepare for deployment, or follow recommendations above for storage.
+
+
+
+
+AN2D Revised 6/2025
+Hydrochloric Acid (HCl)
+                                                      WARNINGS!
+    Observe all precautions for working with strong acid. • Avoid breathing acid fumes. • Work in a well-
+                                               ventilated area.
+
+
+                                                          Cautions
+    1.   Sensors with integral, internal pumps: do not use HCl for cleaning because the pump may be damaged. Return
+         the instrument to Sea-Bird.
+         This includes:
+           • SBE 37-IMP      • SBE 37-IMP-ODO           • SBE 37-SIP       • SBE 37-SMP        • SBE 49
+           • SBE 52-MP       • Any other instrument with an internal pump
+
+    2.   Remove the SBE 4 conductivity cell and the TC Duct from the SBE 9plus, SBE 25, or SBE 25plus before
+         performing acid cleaning.
+
+    3.   Remove the AF24173 Anti-Foulant devices from all instruments before performing acid cleaning. Refer to the
+         instrument’s user manual for details and handling precautions.
+
+Sea-Bird does not recommend this procedure, though in rare instances it may be needed to remove mineral
+contamination in the conductivity cell. Bleach has proven to be effective in eliminating growth of bio-organisms, and
+is much easier to use and dispose of than acid. Sea-Bird recommends that you return the equipment to the factory for
+this cleaning if it is necessary. The information below is provided in the even that it is not possible to return the
+equipment to Sea-Bird.
+
+The acid cleaning procedure for the conductivity cell uses approximately 50–100 cc of acid. Sea-Bird recommends
+using a 20% concentration of HCl. However, acid in the range of 10% to full strength (38%) is acceptable.
+
+         If starting with a strong concentration of HCl that you want to dilute:
+         For each 100 cc of concentrated acid, to get a 20% solution, mix with this amount of water -
+              Water = [(conc% /20%) – 1] * [100 + 10 (conc% / 20% )] cc
+         Always add acid to water; never add water to acid.
+
+              Example -- concentrated solution 31.5% that you want to dilute to 20%:
+              [(31.5% / 20%) – 1 ] * [100 + 10 (31.5% / 20% )] = 66.6 cc of water.
+              So, adding 100 cc of 31.5% HCl to 66.6 cc of water provides 166.6 cc of the desired concentration.
+              For 100 cc of solution:
+              100 cc * (100 / 166.6) = 60 cc of 31.5% HCl                               66.6 cc * (100 / 166.6) = 40 cc of water
+
+              To dispose of the acid, dilute the acid heavily or neutralize with bicarbonate of soda (baking soda).
+
+         1.  Place a 0.6 m (2 ft) length of Tygon tubing over the end of the conductivity cell.
+         2.  Clamp the instrument so that the cell is vertical, with the Tygon tubing at the bottom end.
+         3.  Loop the Tygon tubing into a U shape, and tape the open end of the tubing in place at the same height
+             as the top of the glass cell.
+         4. Pour 10–38% HCl solution into the open end of the tubing until the cell is nearly filled. Soak for
+             1 minute only.
+         5. Drain the acid from the cell and flush for 5 minutes with warm (not hot), clean, de-ionized water.
+         6. Rinse the exterior of the instrument to remove any spilled acid from the surface.
+         7. Fill the cell with a detergent solution and let it stand for 5 minutes.
+         8. Drain and flush with warm, clean, de-ionized water for 1 minute.
+         9. Carefully remove the 0.6 m (2 ft) length of Tygon tubing.
+         10. Prepare for deployment, or follow recommendations above for storage.
+
+
+
+
+AN2D Revised 6/2025
+

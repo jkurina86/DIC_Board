@@ -1,0 +1,329 @@
+RP-TX series | Aquatech : Development, Production & Sales of Peristaltic pump & Micro pump
+Site map
+Current position:
+Home
+> Products >
+Pump list
+>
+RP-TX
+made by Aquatech
+Ring Pump RP-TX series : Pump head replacement & built-in motor type,
+Stepper motor drive
+Achieves the world's smallest level of discharge rate.
+(0.03-40µL/min)
+The pumphead part including the tube can be replaced.
+The pumphead can be easily replaced with a screw.
+A stepper motor is used to drive the pump.
+A dedicated motor controller is sold separately.
+(
+RE-C100
+,
+RE-C500/C501
+,
+RE-C600
+)
+An
+optional driver board
+for stepper motor control is available.
+Autoclave sterilizable pumphead is available.
+10 times autoclave sterilization with 121 degrees Celsius, 25 minutes is possible.
+Color of the pumphead cover changes to black.
+The external dimensions is same.
+Download
+Catalog
+(PDF)
+Outline drawing
+(PDF)
+3D CAD data
+(STEP)
+2D CAD data
+(DXF)
+Model No.
+Model No.
+of pumphead
+Autoclave
+sterilizable
+pumphead
+Wire length
+L (mm) /
+∗1
+Connector
+Discharge rate
+(µL/min)
+Tube
+Material
+IDｘOD
+(mm)
+Used with Motor controller RE-C100 and RE-C600 (without connector)
+Pumphead is not autoclave sterilizable.
+RP-TXP5S-P04A-DC3VS
+AR-
+TBS0.5X1.5-K
+No
+30 cm /
+Without
+Molex
+connector
+0.03 ～ 40
+Silicone
+0.5 x
+1.5
+RP-TXP5F-P03A-DC3VS
+AR-
+TBF0.5X1.5-K
+0.03 ～ 30
+Phar-
+Med
+BPT
+0.5 x
+1.5
+Used with Motor controller RE-C100 and RE-C600 (without connector)
+Pumphead is autoclave sterilizable.
+RP-TXP5S-P04L-DC3VS
+AR-
+TBS0.5X1.5-K5
+Yes
+1 m /
+Without
+Molex
+connector
+0.03 ～ 40
+Silicone
+0.5 x
+1.5
+Used with Motor controller RE-C500/C501 and RE-C600 (with connector)
+Pumphead is not autoclave sterilizable.
+RP-TXP5S-P04Q-DC3VS
+AR-
+TBS0.5X1.5-K
+No
+50 cm /
+With
+Molex
+connector
+0.03 ～ 40
+Silicone
+0.5 x
+1.5
+RP-TXP5S-P04R-DC3VS
+AR-
+TBS0.5X1.5-K
+No
+2 m /
+With
+Molex
+connector
+0.03 ～ 40
+Silicone
+0.5 x
+1.5
+Used with Motor controller RE-C500/C501 and RE-C600 (with connector)
+Pumphead is autoclave sterilizable.
+RP-TXP5S-P04S-DC3VS
+AR-
+TBS0.5X1.5-K5
+Yes
+2 m /
+With
+Molex
+connector
+0.03 ～ 40
+Silicone
+0.5 x
+1.5
+Motor driver board BD202411-T can be used.
+(Coming with JST connector for connecting to the driver board.)
+Pump head does not support autoclave sterilization.
+RP-TXP5S-P04A-DC24VS
+AR-
+TBS0.5X1.5-K
+No
+50 cm /
+With JST
+connector
+0.03 ～ 40
+Silicone
+0.5 x 1.5
+RP-TXP5F-P03A-DC24VS
+AR-
+TBF0.5X1.5-K
+0.03 ～ 30
+Phar-
+Med
+BPT
+0.5 x 1.5
+Motor driver board BD202411-T can be used.
+(Coming with JST connector for connecting to the driver board.)
+Pump head supports autoclave sterilization.
+RP-TXP5S-P04B-DC24VS
+AR-
+TBS0.5X1.5-K5
+Yes
+2 m /
+With JST
+connector
+0.03 ～ 40
+Silicone
+0.5 x 1.5
+∗1. Connection to certain motor controllers requires a Molex connector (referred to as "Molex
+connector"). Connection to the motor driver board requires a JST connector (referred to as
+"JST connector").
+∗1. The pump with a connector is required for use with the motor controller RE-C500/C501.
+∗1. The pump without connectors can be used with RE-C100.
+∗1. RE-C600 can be used with or without connector.
+Model No.
+With RE-C100 (µL/min)
+With RE-C500, 501
+(µL/min)
+1/4 micro-step
+1/8 micro-step
+RP-TXP5S-P04A-DC3VS
+0.48 ～ 40
+0.24 ～ 20
+0.03 ～ 40
+RP-TXP5F-P03A-DC3VS
+0.36 ～ 30
+0.18 ～ 15
+0.03 ～ 30
+RP-TXP5S-P04L-DC3VS
+0.48 ～ 40
+0.24 ～ 20
+0.03 ～ 40
+Stepper Motor Controller and Driver Board
+This series is driven by a stepper motor.
+To operate the stepper motor, a dedicated motor controller or driver board is required.
+We offer the following motor controllers and driver board as a separately sold option. Please contact us if needed.
+★ To use the driver board, you will need a pump equipped with wiring that includes
+a JST connector compatible with the driver board (e.g., RP-TX***-***-
+DC24VS
+).
+Motor controller RE-C600
+Stepper motor controller for RP-HX, RP-TX, RP-QⅡB/C and RP-QⅢB/C series
+Only one pump can be connected to the RE-C600.
+Various pump operation sequences can be programmed using a PC connected to the RE-C600.
+The pump can be stopped at a specified number of revolutions up to 30 revolutions,
+and a fixed discharge volume can be performed at a specified multiple
+of the discharge volume per revolution.
+(Discharge volume data for one rotation is attached to the pump)
+The program data of the operation sequence can be saved in RE-C600 and the pump can be operated without connecting to the PC.
+Both with and without connector of motor wiring can be used.
+Detail of RE-C600
+Motor controller RE-C500/C501
+Stepper motor controller for RP-HX, RP-TX, RP-QⅡB/C and RP-QⅢB/C series
+A PC connected to the RE-C500 can control various pump operations.
+Control 6 pumps with RE-C500
+Up to 12 pumps can be controlled individually by adding one RE-C501.
+Various pump operation sequences can be programmed.
+The program data of the operation sequence can be saved in RE-C500 and the pump can be operated without connecting to the PC.
+When connecting multiple pumps, different types of pumps can be mixed.
+Detail of RE-C500/C501
+Motor controller RE-C100 and Frequency counter RE-F100
+RE-C100 is a stepper motor controller dedicated to the RP-HX / TX series.
+Motor start / stop, forward / reverse rotation, and rotation speed adjustment are possible
+Two pumps of the same type can be controlled by one RE-C100 (same operation).
+The RE-F100 is a frequency counter that connects to the RE-C100 and displays the pulse frequency for setting the rotation speed.
+Detail of RE-C100/F100
+Stepper Motor Driver Board BD202411-T
+A driver board used to connect the motor and power supply, and to control the motor via external control signals.
+Please prepare your own control device to send the control signals.
+A DC 24V, 1A power supply is required. Please use a DC power source, such as a DC power supply unit or AC adapter.
+Click here to view the driver board manual.
+Discharge : 9 - 2,500 mL/min
+RP-3S
+(Stepper Motor)
+Discharge : 1,000 - 1,600 mL/min
+RP-2S
+(DC Motor)
+Discharge : 2 - 1,300 mL/min
+RP-2S
+(Stepper Motor)
+Discharge : 500 - 800 mL/min
+RP-S
+(DC Motor)
+Discharge : 0.7 - 600 mL/min
+RP-S
+(Stepper Motor)
+Discharge : 350 - 700 mL/min
+RP-WⅡ
+(DC Motor)
+Discharge : 0.8 - 700 mL/min
+RP-WⅡ
+(Stepper Motor)
+Discharge : 50 - 250 mL/min
+RP-KⅡ
+(DC Motor)
+Discharge : 0.2 - 200 mL/min
+RP-HⅡ
+(Stepper Motor)
+Discharge : 20 - 80 mL/min
+RP-2GⅡ
+(DC Motor)
+Discharge : 5 - 65 mL/min
+RP-M
+(DC Motor)
+Discharge : 0.2 - 60 mL/min
+RP-M
+(Stepper Motor)
+Discharge : 10 - 45 mL/min
+RP-GⅡ
+(DC Motor)
+Discharge : 0.06 - 45 mL/min
+RP-HⅢ
+(Stepper Motor)
+Discharge : 5 - 35 mL/min
+RP-M
+(AC Motor)
+Discharge : 3 - 12 mL/min
+RP-GⅢ
+(DC Motor)
+Discharge : 2 - 10 mL/min
+RP-H
+(DC Motor,
+Brushless Motor)
+Discharge : 0.02 - 10 mL/min
+RP-H
+(Stepper Motor)
+Discharge : 0.45 - 3 mL/min
+RP-QⅡ/QⅢ
+(DC Motor)
+Discharge : 1.6 - 2.8 mL/min
+RP-CⅢ
+(DC Motor)
+Discharge : 0.2 - 1.1 mL/min
+RP-Q/QX
+(DC Motor)
+Discharge : 0.06 - 2,600 mL/min
+RP-QⅡ/QⅢ
+(Stepper Motor)
+Discharge : 2 - 1,000 μL/min
+RP-HX
+(Stepper Motor)
+Discharge : 0.03 - 40 μL/min
+RP-TX
+(Stepper Motor)
+[Constant discharge
+pump system]
+Maximum Discharge : 150 mL
+RE-C300-KⅡC
+[Constant discharge
+pump system]
+Maximum Discharge : 70 mL
+RE-C300-HⅡC
+[Constant discharge
+pump system]
+Maximum Discharge : 25 mL
+RE-C300-MC
+[Constant discharge
+pump system]
+Maximum Discharge : 7 mL
+RE-C300-HC
+[Motor Controller]
+RE-C700
+[Motor Controller]
+RE-C600
+[Motor Controller]
+RE-C602
+[Motor Controller]
+RE-C500/C501
+[Motor Controller]
+RE-C100/F100

@@ -1,0 +1,1095 @@
+www.ti.com                                                                                                                                                           Table of Contents
+
+Application Note
+Using Motor Drivers to Drive Solenoids
+
+
+David Vaseliou and Luis Cordova
+                                                    ABSTRACT
+Solenoids are electromagnetic actuators that convert electrical current to linear or rotational motion with a coil of
+wire. A key difference from other motors is that the solenoid has a sliding iron plunger within the coil. Solenoid
+assemblies, which may be referred to as solenoids, solenoid valves, solenoid switches, or "metal can" relays,
+have become more frequently used in automotive and industrial applications for actuation of loads, valves, and
+as electro-mechanical switches. Driving a solenoid is similar to driving a motor. However, its unique physical
+characteristics and varying configurations bring new challenges for the electronics driving them. This application
+report describes key parameters of solenoids, what power stage architectures can be used to drive them, and
+how Texas Instruments motor driver solutions can simplify solenoid driving systems.
+
+
+
+                                                                           Table of Contents
+1 Introduction.............................................................................................................................................................................3
+   1.1 Types of Solenoids.............................................................................................................................................................3
+2 Solenoid Driving Typologies..................................................................................................................................................4
+   2.1 Low-Side and High-Side Configuration.............................................................................................................................. 5
+   2.2 Half-Bridge and H-Bridge Driver Configurations................................................................................................................ 6
+3 Basics of Driving Solenoid Loads.........................................................................................................................................8
+   3.1 Current Control...................................................................................................................................................................8
+   3.2 Fast Discharging Circuits................................................................................................................................................... 9
+4 DRV Motor Driver Features for Solenoid Driving...............................................................................................................12
+   4.1 Current Sensing and Regulation Solutions...................................................................................................................... 12
+   4.2 Independent Low-/High-Side Driving............................................................................................................................... 13
+   4.3 Half-Bridge Driving........................................................................................................................................................... 15
+   4.4 Integrated and Gate Driver H-Bridges..............................................................................................................................17
+5 Summary............................................................................................................................................................................... 18
+6 Revision History................................................................................................................................................................... 18
+
+                                                                              List of Figures
+Figure 1-1. Cross-Sectional View of a Push/Pull Solenoid.......................................................................................................... 3
+Figure 2-1. Configurations for Basic Low-Side, High-Side, and Half-Bridge Drivers................................................................... 4
+Figure 2-2. Low-Side and High-Side Configurations................................................................................................................... 5
+Figure 2-3. A Power MOSFET Transistor and a Freewheeling Diode Used to Drive a Solenoid................................................ 5
+Figure 2-4. H-Bridge Drive and Recirculation Current Paths.......................................................................................................6
+Figure 2-5. Half-Bridge Drive and Recirculation Current Paths................................................................................................... 6
+Figure 2-6. H-Bridge Configuration Utilized to Drive a Solenoid Valve........................................................................................ 7
+Figure 2-7. H-Bridge Fast Decay................................................................................................................................................. 7
+Figure 3-1. Expected Current Waveform for Peak and Hold....................................................................................................... 8
+Figure 3-2. Solenoid Voltage and Current Outputs Using PWM..................................................................................................9
+Figure 3-3. Freewheeling, Driving, and Clamping..................................................................................................................... 10
+Figure 3-4. Expected Voltage and Current During Clamping vs Freewheeling......................................................................... 10
+Figure 3-5. Waveforms Demonstrating Quick Turn-Off..............................................................................................................11
+Figure 3-6. Zener Diode Fast Discharging Circuit..................................................................................................................... 12
+Figure 4-1. Amplifier Simplified Block Diagram......................................................................................................................... 12
+Figure 4-2. Integrated Current Sensing..................................................................................................................................... 13
+Figure 4-3. DRV8714-Q1 Split HS/LS Control........................................................................................................................... 13
+Figure 4-4. Independent PWM High-Side and Low-Side Drivers.............................................................................................. 14
+Figure 4-5. Half-Bridge Control..................................................................................................................................................15
+Figure 4-6. DRV824x Independent Half-Bridge Low-Side Loads.............................................................................................. 16
+Figure 4-7. Application Schematic for DRV887x to Drive Two Solenoids..................................................................................16
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                                                         Using Motor Drivers to Drive Solenoids               1
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+Trademarks                                                                                                                                                           www.ti.com
+
+Figure 4-8. Half-Bridge Control..................................................................................................................................................17
+Figure 4-9. H-Bridge Control Example.......................................................................................................................................17
+
+                                                                           List of Tables
+Table 4-1. Truth Table for Independent MOSFET Mode............................................................................................................ 14
+Table 4-2. Independent Half-Bridge Mode Truth Table.............................................................................................................. 15
+Table 4-3. Independent Half-Bridge Control Mode.................................................................................................................... 16
+Table 4-4. Independent Half Bridge Mode Truth Table.............................................................................................................. 17
+Table 5-1. Devices and Features............................................................................................................................................... 18
+
+Trademarks
+All trademarks are the property of their respective owners.
+
+
+
+
+2       Using Motor Drivers to Drive Solenoids                                                              SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                                 Submit Document Feedback
+                                                             Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                                                      Introduction
+
+
+1 Introduction
+A solenoid is a coil that produces a linear or rotational movement in a mechanical system by applying a current
+through the coil. There are several types of solenoids, but generally their main use is to displace objects or
+maintain a specific state or position, much like a traditional relay. These electromechanical solenoids consist
+of a copper inductive coil wound around a steel or iron armature, sometimes called a “plunger”. The magnetic
+field of the energized coil pulls on the armature, and the armature transfers a mechanical force to an external
+mechanism.
+Within each application, solenoids and relays are driven in different configurations. Some example solenoid
+applications include home appliances, printers, HVAC, irrigation systems, engine and transmission control.
+This application report categorizes and describes a few types of solenoids, discusses driver configurations, and
+highlights semiconductor solutions from TI that can simplify solenoid driver solutions.
+1.1 Types of Solenoids
+There are three main categories of solenoids; push/pull, latching/bistable, and proportional.
+The first type, push/pull or monostable, is used to displace an object by energizing and de-energizing the coil,
+or where "in and out" movement is needed. Push/pull solenoid is made up of an iron frame, iron plunger, copper
+coil, and return spring. Figure 1-1 shows a cross-sectional view of a pull-type solenoid. This type of solenoid can
+be found in applications such as electronic door locks, valves, and robotics.
+                    Iron frame
+                                                                                               Iron armature/
+                                                                                                   plunger
+                         Coil
+
+
+
+
+                         Coil                                                                    Spring
+
+
+
+
+                                                           x(t)
+
+
+                                        Electromagnetic                 Spring
+                                                 Force                  Force
+
+                                 Figure 1-1. Cross-Sectional View of a Push/Pull Solenoid
+
+The second type is the latching/bistable solenoid. The latching/bistable is similar in use to the push/pull, but
+the latching solenoid can maintain its position after power is off. When off, the position of latching solenoid is
+maintained by a permanent magnet, as opposed to a spring for push/pull solenoid. Energizing the coil with a
+pulse of current will change the position of the solenoid.
+
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                   Using Motor Drivers to Drive Solenoids    3
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+Solenoid Driving Typologies                                                                                                             www.ti.com
+
+Proportional solenoids are solenoids that generate a force proportional to the current flowing through it, as
+opposed to solenoids changing between two positions or states. By adding a spring, the solenoid can generate
+a displacement which is proportional to current. In applications such as hydraulics, these solenoids can also
+be constructed with an air gap, so that fluid pressure does not affect force characteristics of the solenoid. This
+allows for very fine force and positioning control.
+2 Solenoid Driving Typologies
+Most systems today use motor drivers to actuate and de-actuate solenoid. The key to driving a solenoid is which
+FETs to switch on and off, and when to switch them.
+There are three basic driver configurations, low-side, high-side, and half-bridge/full-bridge, each with their trade-
+offs. Choosing which configuration depends on the system requirements, such as switching speed and fault
+protection. The high-side driver can protect against short to ground fault, whereas a low-side driver protects
+against short to battery fault.
+                                                               VSUPPLY                                  VSUPPLY
+                                                    Optional
+                                                     Clamp
+
+
+                                                                  Solenoid/
+                                                                   Relay
+                                                                                             ISENSE
+
+
+
+
+                                                                                             Optional
+                                                                                              Clamp
+
+
+                                                                                                           Solenoid/
+                                                                                                            Relay
+                                                    ISENSE
+                                                                              GND                                      GND
+
+
+
+                                                               Low-side
+                                                                                                        High-side
+                                                   VSUPPLY                                                             VSUPPLY
+
+                                                                                                 VSUPPLY
+                                                                                                                         Solenoid/
+                                                                                                                          Relay
+                                                                              Solenoid/
+                                                                               Relay
+
+
+
+
+                                               ISENSE
+
+                                                 GND                                      ISENSE
+                                                                  GND
+                                                                                            GND
+
+                Figure 2-1. Configurations for Basic Low-Side, High-Side, and Half-Bridge Drivers
+
+
+
+
+4     Using Motor Drivers to Drive Solenoids                                                           SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                            Submit Document Feedback
+                                                        Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                                                                  Solenoid Driving Typologies
+
+2.1 Low-Side and High-Side Configuration
+The typical low-side or high-side driver configuration uses a single MOSFET with enough current handling
+capability to drive the solenoid. High- and low-side drivers are good choices for push/pull solenoids with a return
+spring. Figure 2-2 shows the LS/HS configuration, with optional external clamp.
+                                                          VSUPPLY                                        VSUPPLY
+
+
+
+
+                                               Optional
+                                                Clamp
+
+
+                                                             Solenoid/
+                                                              Relay
+                                                                                              ISENSE
+
+
+
+
+                                                                                              Optional
+                                                                                               Clamp
+
+
+                                                                                                            Solenoid/
+                                                                                                             Relay
+                                               ISENSE
+                                                                         GND                                            GND
+
+
+
+                                                          Low-side
+                                                                                                         High-side
+
+                                    Figure 2-2. Low-Side and High-Side Configurations
+
+When the MOSFET is enabled, it conducts all the current needed to energize the solenoid. When the MOSFET
+is disabled, the current in the solenoid must freewheel through a diode, or be allowed to continue flowing or
+decay to zero, otherwise the MOSFET can see large voltage spikes. The freewheeling diode across the solenoid
+provides this low impedance path for solenoid current to flow. Figure 2-3 shows a low-side driver.
+                                                                               VSUPPLY
+                                                                                  Solenoid/
+
+
+
+
+                                                            Free-                                         Drive
+                                                                                   Relay
+
+
+
+
+                                                          wheeling                                       current
+                                                           current
+
+
+
+
+                                                                         ISENSE
+                                                                                              GND
+
+
+         Figure 2-3. A Power MOSFET Transistor and a Freewheeling Diode Used to Drive a Solenoid
+
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                                                 Using Motor Drivers to Drive Solenoids   5
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+Solenoid Driving Typologies                                                                                                           www.ti.com
+
+2.2 Half-Bridge and H-Bridge Driver Configurations
+The half-bridge driver uses two MOSFETs to control the current through a solenoid; one MOSFET to forward
+drive the solenoid and the other to recirculate current.
+The H-bridge driver uses four MOSFETs, or two half-bridges joined by a load, to control current through a
+solenoid. With four MOSFETs, bidirectional current control is possible. This makes H-bridge drivers a good
+choice for single-coil and latching or dual-coil relays.
+The H-bridge and half-bridge configurations can be seen in Figure 2-4 and Figure 2-5.
+                          VM                                                                    VM
+
+
+
+
+                                                        1 Forward drive                                                  1 Reverse drive
+
+                                                        2 Slow decay (brake)                                             2 Slow decay (brake)
+                           1                                                                    1
+                                                        3 High-Z (coast)                                                 3 High-Z (coast)
+      SH1                                       SH2                            SH1                                SH2
+                           2                                                                    2
+                           3                                                                    3
+
+
+
+
+                                 Figure 2-4. H-Bridge Drive and Recirculation Current Paths
+                                           VM                                                               VM
+
+
+
+
+                                                                   1 Drive
+
+                                                                   2 Slow decay (brake)
+                                           1                                                                2
+                                                                                                    1
+                     SH                                                                    SH
+                                           2
+
+
+
+
+                               Figure 2-5. Half-Bridge Drive and Recirculation Current Paths
+
+While the half-bridge can only enable slow decay, the half-bridge integrates the freewheeling diode, which is
+typically an external component. This further reduces the solution size. There is also the benefit of flexibility
+between driving high- or low-side loads with the half-bridge.
+
+
+
+
+6     Using Motor Drivers to Drive Solenoids                                                         SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                          Submit Document Feedback
+                                                      Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                                               Solenoid Driving Typologies
+
+The H-bridge driver can enable both slow and fast decay (coast) by recirculating current with either high- or
+low-side MOSFETs. Figure 2-6 shows how an H-Bridge can be utilized to drive a conventional solenoid valve
+with high-side recirculation.
+                VM                                   VM                                          VM                                VM
+
+
+                                                     2                                                                              2
+
+
+
+
+                1                                                                                3
+  SH1                        SH2      SH1                          SH2         SH1                        SH2      SH1                             SH2
+
+
+
+
+                                                             1 Forward drive
+
+                                                             2 High-side recirculation (brake)
+
+                                                             3 Reverse drive
+
+
+                         Figure 2-6. H-Bridge Configuration Utilized to Drive a Solenoid Valve
+
+An H-Bridge can also be used as an effective fast discharge circuit. Fast decay can be accomplished by turning
+off the MOSFETs and allowing current to flow through the body diodes. This results in an opposing voltage to the
+solenoid current equal to VM plus the forward voltage of the two body diodes. Figure 2-7 shows current flow for
+fast decay with H-Bridge.
+                                                VM                                                   VM
+
+
+                                                                                                      2
+
+
+
+
+                                                 1
+                                SH1                                SH2         SH1                              SH2
+
+
+
+
+                                                          1 Forward drive
+
+                                                          2 Fast Decay
+
+                                                 Figure 2-7. H-Bridge Fast Decay
+
+If fast decay and improved system thermal performance are desirable, an H-Bridge configuration could be a
+good fit.
+
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                             Using Motor Drivers to Drive Solenoids         7
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+Basics of Driving Solenoid Loads                                                                                               www.ti.com
+
+
+3 Basics of Driving Solenoid Loads
+Because solenoids are inductive loads, they store energy in the magnetic field when current flows through the
+coil. Whether disabling the solenoid or using PWM to maintain a specific current level, any circuitry used to
+drive a solenoid must never abruptly stop the flow of current. Doing so will cause a large voltage spike due to
+the energy leaving the solenoid. This is apparent from the expression that defines the voltage characteristic of
+inductors: V = L*di/dt.
+As mentioned in the previous sections, freewheeling diodes allow for the current to recirculate when the driving
+FET disables. This keeps the voltage across the solenoid equal to the forward voltage drop of the diode. When
+disabling a solenoid, the current will recirculate until the energy stored in the inductor dissipates as heat in the
+series resistances of the diode and solenoid. Because the current decreases slowly, freewheeling diodes should
+be used in systems when PWM or current regulation schemes are used to implement peak and hold control for
+power savings.
+Some circuits require solenoids to disable quickly to minimize latency in the system for valves or actuators.
+Clamping circuits may be integrated into the driver or added externally to help dissipate the energy. For instance,
+adding a Zener diode in series with the freewheeling diode will help to dissipate energy quickly from the
+solenoid. In this case, the voltage drop across the solenoid when the driving FET is disabled will be equal to the
+Zener clamping voltage plus the diode drop. Because this voltage is much higher than the freewheeling diode
+alone, it will dissipate the stored inductive energy much fast.
+3.1 Current Control
+Driving solenoids with current control requires two things: current sense and current regulation. The advantages
+of current control are improved efficiency and reliability across temperature. As the solenoid or relay coil heats
+up from I2R losses or is warmed by its environment, the coil resistance increases. With the current-sense
+feedback, the current can be monitored and adjusted to produce a constant force even with the changes in
+resistance.
+The second advantage is that it can provide some measure of protection from higher than rated supply voltage.
+Solenoids have voltage ratings because they can be destroyed by too much current going through the coil, which
+happens when driving at higher voltages. This problem can be managed with current-sense feedback, and by
+controlling the current going through the solenoid regardless of the supply voltage. This allows a single solenoid
+driver design to be reused on multiple products.
+There are two methods for providing load current feedback from motor driver IC to a microcontroller. One
+method is from a current shunt amplifier using an external sense resistor that is connected either in line with the
+load, or on the high- or low-side. The other is from a current mirror, which provides a proportional current to load
+current to pin output, removing the need for an external sense resistor. This proportional current output method
+is available for motor driver ICs with integrated MOSFETs. One limitation here is that generally, both high- and
+low-side sense output may not always be available for a given integrated motor driver IC.
+To regulate current and energize and de-energize most solenoids, peak-and-hold drive is desired. Figure 3-1
+below shows an example of this expected peak-and-hold current.
+
+                                                   I
+                                                                     Ipeak
+
+
+
+
+                                                                             Ihold
+
+                                                                                     t
+
+                                  Figure 3-1. Expected Current Waveform for Peak and Hold
+
+
+
+
+8     Using Motor Drivers to Drive Solenoids                                                  SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                   Submit Document Feedback
+                                               Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                              Basics of Driving Solenoid Loads
+
+The charging current is drawn or driven into the solenoid, called the peak current. The current in the solenoid
+will ramp to its peak, at which point the magnetic field will depress the plunger into the spring. To maintain
+the solenoid in this position, current must still be drawn or driven into the solenoid. This is referred to as hold
+current. However, this current is far lower than the peak current. To further minimize power dissipation through
+the solenoid during hold phase, the hold current can be regulated.
+Just as pulse width modulation (PWM) is used to drive other types of motors, it also can be used to drive
+solenoids. PWM can be used to regulate the current of a solenoid to different levels at different times by varying
+the duty cycle. This allows the user drive a longer or maximum duty cycle to pull in the solenoid, and then
+a shorter duty cycle to hold it in place, optimizing the power consumption. Figure 3-2 shows the current and
+voltage driving outputs for the PWM implementation.
+
+
+
+
+                             Figure 3-2. Solenoid Voltage and Current Outputs Using PWM
+
+This reduces power consumption of the solenoid solution, due to the lower current in the coil. If the drive current
+is not reduced, power dissipation will heat up the solenoid further. With the increase in temperature the solenoid
+initial resistance will also increase, all of which can lead to unintentional de-actuation or failing to actuate the
+solenoid. Note in the above screenshot that the drop-out or de-actuation time is roughly 10 ms.
+3.2 Fast Discharging Circuits
+Some applications require fast turn on/off rates of a solenoid. Recirculating load current in opposing MOSFET
+may not be enough to decay the current fast enough, which can cause a delay in the plunger releasing.
+To implement a fast discharge circuit, the driver circuit must generate a large voltage opposite to the solenoid
+that can quickly decay the recirculation current to zero. The higher opposing voltage, the faster the current
+decay. These fast discharging circuits can be made using an H-bridge, Zener or Transient-voltage-suppression
+(TVS) diode, a Voltage Dependent Resistor (varistor).
+
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                  Using Motor Drivers to Drive Solenoids   9
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+Basics of Driving Solenoid Loads                                                                                                            www.ti.com
+
+3.2.1 Freewheeling and Clamping
+Freewheeling and clamping are both strategies to dissipate energy stored in the solenoid inductance when
+the FET turns off. A key difference is current decay speed. Clamping very quickly decays solenoid current by
+creating a large voltage spike opposite in polarity to solenoid current, voltage larger than with opposing MOSFET
+recirculation, as in fast decay. Freewheeling is slowly decaying solenoid current by recirculating current through
+a parallel diode, slowly decaying current.Figure 3-3 shows both freewheeling and clamping implementations.
+                                                   VSUPPLY                                                   VSUPPLY
+
+
+                                                                                            _
+                                                                                       VCLAMP
+
+
+
+
+                                                        Solenoid/
+
+
+
+
+                                                                                                                Solenoid/
+                                    Free-                                   Drive                                                  Drive
+
+
+
+
+                                                         Relay
+
+
+
+
+                                                                                                                 Relay
+                                                                                            +
+                                  wheeling                                 current                                                current
+                                   current
+
+
+                                                                                         Free-
+                                                                                       wheeling
+                                                                                        current
+
+
+                                               ISENSE                                               ISENSE
+                                                                    GND                                                     GND
+
+
+                                         Figure 3-3. Freewheeling, Driving, and Clamping
+
+Clamping involves using as a zener diode or transient voltage suppression diode to rapidly decay current
+through an inductive load such as solenoid. This can be required for control systems where de-actuation delays
+are intolerable. The clamping circuit creates a very large voltage opposing the solenoid drive current, and
+quickly decays current. Figure 3-4 shows expected waveforms when disabling a solenoid using active clamping
+compared with freewheeling.
+
+                                                   Solenoid
+                                                 Enable Signal               Enabled              Disabled
+
+                                                                                          VCLAMP  40V
+
+                                                                           RDSON x              VSupply + VFD
+                                                   Vout (VDS)              ISolenoid
+                                                                            <1V
+                                                                                                                  0V
+
+                                                                                        ~5ms
+                                                    ISolenoid             ISolenoid
+                                                                           VSupply /
+                                                                          RSOLENOID                                0A
+
+
+                                                                                 Legend
+                                                                          Clamping             Freewheeling
+
+
+                    Figure 3-4. Expected Voltage and Current During Clamping vs Freewheeling
+
+
+
+
+10    Using Motor Drivers to Drive Solenoids                                                        SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                         Submit Document Feedback
+                                                     Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                              Basics of Driving Solenoid Loads
+
+When the solenoid is enabled, Vout is low, below 1 V, while solenoid is in the hold phase. When the solenoid is
+disabled, Vout quickly jumps up to around 40 V (or 3-4 times supply voltage), and the solenoid current quickly
+drops to 0 A. Also shown above is roughly what the freewheeling voltage and current waveforms would look
+like. What is not shown is the back EMF generated by the armature when changing state. Figure 3-5 shows
+an oscilloscope screenshot demonstrating actual voltage and current waveforms during a quick turn-off for a
+solenoid.
+
+
+
+
+                                   Figure 3-5. Waveforms Demonstrating Quick Turn-Off
+
+At the start of the scope shot, the solenoid is in the hold phase. Note the VOUT waveform shows PWM current
+regulation with VSUPPLY of around 13 V and the steady solenoid current leading up to the disabling of the
+solenoid. When the solenoid is disabled, VOUT is clamped at roughly 45 V, and the solenoid current decays to
+zero within one millisecond. After the current has decayed to zero, the armature generates a back EMF during
+de-actuation. Total time from solenoid disable to de-actuation is about 3.5 milliseconds. Recall in the previous
+section, the de-actuation time with freewheeling was roughly 10 milliseconds.
+3.2.2 Passive Voltage Clamping
+Common passive components used for voltage clamping of inductive loads are zener diodes or TVS diodes. The
+voltage across an inductive load can be described by Equation 1. During recirculation, the voltage across the
+inductor is mainly due to any changes in current, minus the voltage drop due to load current through internal
+resistance of solenoid.
+
+          V = L ∆∆ ti − i × R                                                                                                     (1)
+
+To simplify further, internal resistance of the solenoid is ignored, the decay time can be estimated by Equation 2.
+
+          ∆ t = L × ∆Vi                                                                                                           (2)
+
+Assuming inductance and current are constant during recirculation, this shows that the decay time is inversely
+related to voltage across inductive load; the larger the voltage, the smaller the decay time. For the case of
+freewheeling or slow decay, this voltage would just be the forward voltage of diode. Again, for fast decay with
+full-bridge, this voltage would be VSUPPLY plus forward voltage of two diodes. For quick turn-off or clamping with
+a zener diode, this voltage would be forward voltage of diode plus VZENER, where VZENER can be much larger
+than VSUPPLY.
+
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                  Using Motor Drivers to Drive Solenoids   11
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+DRV Motor Driver Features for Solenoid Driving                                                                                   www.ti.com
+
+Figure 3-6 shows the recirculation path when using a Zener diode for fast discharging. Note that the voltage on
+one node of the solenoid is VM, and the other node is VDIODE + VZENER + VM, making the total voltage across
+the solenoid equal to VDIODE + VZENER.
+                                                                                  VM
+
+
+
+
+                                                         Driving Path
+                                                         Recirculation Path
+
+
+
+
+                                         Figure 3-6. Zener Diode Fast Discharging Circuit
+
+4 DRV Motor Driver Features for Solenoid Driving
+While Texas Instruments has a large portfolio of motor drivers, this section highlights several devices and their
+features related to the topics mentioned in this application report.
+4.1 Current Sensing and Regulation Solutions
+Most motor drivers from Texas Instruments support current sense. First, motor gate drivers, such as the
+DRV8714-Q1 multi-channel gate driver or DRV8343-Q1 three-phase gate driver, have integrated current shunt
+amplifiers which provide inline current sensing to continuously measure motor current, even during recirculation.
+Figure 4-1 shows a simplified version of the current shunt amplifier circuit as an example.
+
+
+                                       AREF
+
+                                                          -
+                                                 RREF1
+                                                          +
+                                                 RREF2
+                                       AGND                               RGAIN
+                                                                                         SPx
+                                                                            RIN
+                                         SOx                          +
+                                                 Blank                                         IL   RSHUNT
+                                                 S&H
+                                                                      -                  SNx
+                                                                            RIN
+
+
+                                                              RGAIN
+
+
+
+
+                                          Figure 4-1. Amplifier Simplified Block Diagram
+
+The integrated MOSFET motor drivers like the DRV8243-Q1 and DRV8873-Q1 have a current mirror
+architecture which sources a current on IPROPI pin that is proportional to load current. The current can be
+converted to voltage with an external resistor. This voltage can be used by a microcontroller.
+
+
+
+
+12    Using Motor Drivers to Drive Solenoids                                                    SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                     Submit Document Feedback
+                                                 Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                            DRV Motor Driver Features for Solenoid Driving
+
+Figure 4-2 shows a generic diagram of IPROPI implementation. It is important to note that both the DRV8243-
+Q1 and DRV8873-Q1 have high-side sensing, and that DRV8243-Q1 does not have pin for external voltage
+reference.
+
+
+                                                                           Control                                     OUT
+                                                                           Inputs                                        ILOAD
+
+
+
+                                                 VREF
+                                                                       +                LS
+                                                                       ±
+
+                                                           IPROPI                                                      GND
+                                                            Clamp
+                                                                                              Integrated
+                                                                                             Current Sense
+                              MCU               IPROPI                         IPROPI
+                              ADC
+                                           +
+                                       VPROPI    RIPROPI                                        AIPROPI
+                                           ±
+
+
+                                                                       Copyright © 2017, Texas Instruments Incorporated
+
+                                            Figure 4-2. Integrated Current Sensing
+
+Another feature in some motor drivers that can be used to control the amount of current through the solenoids
+is integrated current regulation. The integrated full-bridge drivers DRV824x-Q1, and DRV887x-Q1 have this
+feature. When the current hits the configured current limit, the bridge enters a brake mode until the toff time
+expires, or the next control input edge.
+Integrated current regulation on the DRV887x-Q1 and DRV824x-Q1 can be set using the VREF/ITRIP and
+IPROPI pins. For the DRV8873-Q1, the integrated current regulation can either be set to use a fixed off-time, or
+cycle-by-cycle PWM current chopping scheme. DRV8243-Q1 only supports fixed off-time.
+For details on how to configure current limits, see the device-specific data sheets.
+4.2 Independent Low-/High-Side Driving
+For high-side and/or low-side driving, some devices have an independent FET mode that can drive separate
+high-side and low-side loads. Both the DRV8714-Q1 and DRV8343-Q1 gate drivers support several drive
+configurations.
+The DRV8714-Q1 has a split high-side and low-side control feature which enables connecting a floating load in
+between HS and LS FETs. The diagram below shows DRV8714-Q1 driving a solenoid load in this configuration.
+
+
+
+
+                                                                                                          GH1
+
+                                                              IN2/PH                                      SH1
+                              MCU GPIO
+                                                              IN1/EN            Split HS/LS               SH2
+                              MCU PWM                                             Control
+                                                                                                          GL2
+
+                                                                              GL1 and GH2
+                                                                                Disabled
+
+
+
+                                         Figure 4-3. DRV8714-Q1 Split HS/LS Control
+
+In this mode, the HS FET can be controlled as a switch, and the LS FET can be controlled by PWM.
+
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                                   Using Motor Drivers to Drive Solenoids   13
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+DRV Motor Driver Features for Solenoid Driving                                                                                   www.ti.com
+
+The highly configurable DRV8343-Q1 can support several configurations of phases, for example, where one
+phase of three could be a half-bridge and others are independent FETs, one is PH/EN and others are PWM, and
+so forth.
+For the Independent MOSFET drive mode, the INHx and INLx pins control the outputs, GHx and GLx,
+respectively. This control mode. In this mode, turning on both the high-side and low-side MOSFETs at the
+same time in a given half-bridge gate driver is possible. In this mode, the integrated dead time is bypassed.
+                                     Table 4-1. Truth Table for Independent MOSFET Mode
+               INLx                                INHx                              GLx                                GHx
+                 0                                   0                                 L                                  L
+                 0                                   1                                 L                                  H
+                 1                                   0                                 H                                  L
+                 1                                   1                                 H                                  H
+
+
+Figure 4-4 shows how the DRV8343-Q1 device can be used to connect a high-side load and a low-side load at
+the same time with one half-bridge and drive the loads independently. In this mode, the VDS monitors are active
+for both the MOSFETs to protect from an overcurrent condition. This can be done for each of the 3 phases for
+a total of 6 different solenoids. Note that if a half-bridge is used to only implement a high-side or low-side driver,
+the unused does not need to be connected. VDS monitors can still monitor for overcurrent condition.
+
+                                                                     +
+                                                               VDS
+                                                                     ±
+                                                                                                VM
+                                                                          VDRAIN
+
+                                                    VCP
+                                                                          GHx                            Load
+                                  INHx              HS
+
+                                                                          SHx
+                                                   VGLS                   DLx
+                                  INLx
+                                                                          GLx
+                                                    LS
+
+                                                                                       Load
+
+                                                 Gate Driver              SLx/SPx
+
+
+                                                                     +
+                                                               VDS
+                                                                     ±
+
+
+
+                               Figure 4-4. Independent PWM High-Side and Low-Side Drivers
+
+
+
+
+14    Using Motor Drivers to Drive Solenoids                                                    SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                     Submit Document Feedback
+                                                 Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                        DRV Motor Driver Features for Solenoid Driving
+
+4.3 Half-Bridge Driving
+Half-bridge driving can be very useful as it provides flexibility in load configuration, and H-bridge solutions can
+be configured as multiple half-bridges to drive multiple solenoids. As mentioned before, the DRV8714-Q1 and
+DRV8718-Q1 gate drivers support this configuration, along with PWM mapping feature, as shown in Figure 4-5
+
+                                                        DRV8718-Q1 Half-Bridge Control
+
+                                                                          HB1_CTRL = PWM
+
+
+
+
+                                                         PWM1_MAP
+                                                                     x8   HB1_PWM = IN1
+                                        IN1/EN1
+                                                                                                  M1
+                                                                          HB2_CTRL = L
+                                                                          HB2_PWM = n/a
+
+                                                                          HB3_CTRL = L
+
+
+
+
+                                                          PWM2_MAP
+                                                                     x8   HB3_PWM = n/a
+                                        IN2/EN2
+                                                                                                  M2
+                                                                          HB4_CTRL = HI-Z
+                                                                          HB4_PWM = n/a
+                                                                                                       M3
+                                                          PWM3_MAP        HB5_CTRL = PWM
+                                                                     x8   HB5_PWM = IN2
+                                        IN3/EN3
+                                                                                                             M4
+                                                                          HB6_CTRL = HI-Z
+                                                                          HB6_PWM = n/a
+
+                                                                          HB7_CTRL = PWM            HS
+                                                          PWM4_MAP
+
+
+
+
+                                                                     x8   HB7_PWM = IN3            Load
+                                        IN4/EN4
+                                                                          HB8_CTRL = PWM            LS
+                                                                          HB8_PWM = IN4            Load
+
+
+
+
+                                                  Figure 4-5. Half-Bridge Control
+
+The DRV8343-Q1 can control up to three different solenoids in a high-side PWM and low-side cutoff
+configuration. In this mode the DRV8343-Q1 will automatically insert dead time when switching and handle
+the protections for over current protection (OCP), short to battery, and short to GND faults. In Independent
+Half-Bridge PWM mode, the INHx pin controls each half-bridge independently and supports two output states:
+low or high. The corresponding INHx and INLx signals control the output state as listed in . The INLx pin is used
+to change the half-bridge to high impedance. If the high-impedance (Hi-Z) state is not required, tie all INLx pins
+logic high.
+                                   Table 4-2. Independent Half-Bridge Mode Truth Table
+               INLx                               INHx                                      GLx                                 GHx
+                 0                                  x                                        L                                    L
+                 1                                  0                                       H                                     L
+                 1                                  1                                        L                                    H
+
+
+Combinations of Half-Bridge and Independent MOSFET drive modes are available where two of the phases
+will be in Independent Half-Bridge mode and the last phase in Independent MOSFET mode. This allows a total
+of four solenoids to be driven at the same time individually, two in push-pull configuration, one in high-side
+configuration, and one in low-side configuration. In these modes, the two phases in independent Half-Bridge
+mode control the independent fault handling and dead time enforcement is done by the device. The dead time
+insertion by the device is bypassed for the phase in Independent MOSFET mode.
+For lower current applications, the DRV824x-Q1 and DRV887x-Q1 are device families of integrated H-Bridge
+drivers which scale by RDSON. These drivers can also be configured to drive two solenoids in Independent Half
+Bridge mode. The MOSFETs are built into the devices to simplify the design and decrease board space.
+The DRV824x-Q1 family can support independent half-bridge mode to drive several load configurations. A
+low-side configuration example is shown in Figure 4-6.
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                             Using Motor Drivers to Drive Solenoids   15
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+DRV Motor Driver Features for Solenoid Driving                                                                                                       www.ti.com
+
+                                                                VM
+
+                                nFAULT
+                                                                           to Controller ADC
+                                                                          IPROPI
+     Controller I/Os SPI (Opt)                                              Summing current                          Applicable for
+     (can be shared)                                 DRV824X
+                               DRVOFF
+
+
+
+
+                                                                                                                BD
+                                                                                                                BDC
+
+
+
+
+                                                                                                                 C
+                                                                                                                                          solenoid
+                                                    Independent
+                                nSLEEP                                     OUT1
+                                                       mode                               LOAD
+                                  EN/IN1
+     to Controller I/O            PH/IN2                                   OUT2
+                                                                                          LOAD
+
+                                                    GND
+
+                                Figure 4-6. DRV824x Independent Half-Bridge Low-Side Loads
+
+Figure 4-7 shows the application schematic configured to drive two solenoids in Independent Half-Bridge mode.
+                  VCC
+
+
+             Controller                                               1                                         16
+                        PWM                                               EN/IN1     DRV887x            PMODE    X
+                                                                      2                                         15
+                        PWM                                               PH/IN2                         GND
+                                                   VCC                3                                         14      0.022 …F
+                         I/O                                              nSLEEP                          CPL
+                                           10 k
+                                                                      4                                         13
+                         I/O                                              nFAULT                          CPH
+                                                                                         Thermal
+                                                             VCC      5                                         12      0.1 …F
+                                                                                           Pad
+                        ADC                                               VREF                            VCP                                        VM
+                                                                      6                                         11
+                                                                          IPROPI                          VM
+                                         RIPROPI                      7                                         10               0.1 …F      CBulk
+                                                                          IMODE                          OUT2
+                                                                      8                                         9
+                                                                          OUT1                           PGND
+
+
+
+
+                                                                                    VM             VM
+                                                                     Solenoid                           Solenoid
+
+                         Figure 4-7. Application Schematic for DRV887x to Drive Two Solenoids
+
+Table 4-3 shows the truth table for Independent Half-Bridge mode.
+                                         Table 4-3. Independent Half-Bridge Control Mode
+               nSleep                                      INx                                OUTx                   Description
+                  0                                         X                                  Hi-Z                  Sleep, (H-Bridge, Hi-Z)
+                  1                                         0                                      L                 OUTx Low-side On
+                  1                                         1                                      H                 OUTx High-side On
+
+
+
+
+16     Using Motor Drivers to Drive Solenoids                                                           SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                             Submit Document Feedback
+                                                         Copyright © 2022 Texas Instruments Incorporated
+www.ti.com                                                                                     DRV Motor Driver Features for Solenoid Driving
+
+The DRV8706-Q1 is a small single H-Bridge gate driver that uses four external N-channel MOSFETs that can
+control up to two solenoids or relays independently. Figure 4-8 shows control of Independent Half Bridge mode.
+Table 4-4 shows the control table for DRV8706-Q1 in Independent Half Bridge mode. In this mode, the device
+does not perform PWM current regulation or current chopping.
+                                   Table 4-4. Independent Half Bridge Mode Truth Table
+             nHIZx                      IN1x                        GHx                          GLx                               SHx
+              0                          x                           L                               L                               Z
+              1                          0                           L                            H                                  L
+              1                          1                           H                               L                               H
+
+
+                                                                            INx        Half-Bridge
+                                       MCU PWM                                        PWM Control
+                                                                         nHIZx
+                                       MCU GPIO
+
+
+
+                                                  Figure 4-8. Half-Bridge Control
+
+4.4 Integrated and Gate Driver H-Bridges
+TI motor drivers can also support H-bridge driving with integrated gate drivers or gate driving solutions. Some
+drivers, such as DRV8714-Q1 and DRV8718-Q1 gate drivers, have H-Bridge control mode, which can enable
+driving two to four H-bridges. If PWM control is not required, the two H-bridge gate drivers can even be
+controlled directly through SPI control registers. In this mode, the active freewheeling recirculation path (low-side
+or high-side) is configurable in SPI register.
+
+
+                                                                 DRV8714-Q1 H-Bridge Control
+
+                                                 IN1/EN1
+                                                                                  H-Bridge 1
+                                                                                                               M1
+                                                 IN2/PH1                           Control
+
+
+                                                                FW1 = 0b
+                                                                HIZ1 = 0b
+
+
+                                                 IN3/EN2
+                                                                                  H-Bridge 2
+                                                                                                         Hi-Z M2
+                                                 IN4/PH2                           Control
+
+
+                                                                FW2 = 0b
+                                                                HIZ2 = 1b
+
+
+
+
+                                               Figure 4-9. H-Bridge Control Example
+
+For space-constrained solenoid applications, the DRV8243-Q1 integrated H-bridge driver can be configured as
+a single H-bridge driver or as two independent half-bridge drivers. This device can also control bridges through
+SPI specific register bits. Additionally, the user can configure between an AND/OR logical combination of each
+external input with their equivalent register bit. For example, pin input can be ANDed with SPI_IN register bit, for
+certain configuration bit.
+The DRV8243-Q1 device is part of device family, pin to pin compatibility, scalable RDSON to support different
+loads, and also includes the DRV814x-Q1 integrated half-bridge drivers with half RDSON of DRV824x-Q1
+devices.
+The DRV887x-Q1 integrated H-bridge driver family, which includes the DRV8873-Q1, includes H-bridges that
+can support up to 10-A.
+
+
+
+
+SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022                                                            Using Motor Drivers to Drive Solenoids   17
+Submit Document Feedback
+                                             Copyright © 2022 Texas Instruments Incorporated
+Summary                                                                                                                             www.ti.com
+
+
+5 Summary
+Table 5-1 summarizes the devices and features that are discussed.
+                                                   Table 5-1. Devices and Features
+ Device                           Description                     Current Sense                      Mode Support
+ DRV8243-Q1                       Integrated full-bridge          High-side; IPROPI                  Independent and full-bridge
+ DRV8873-Q1                       Integrated full-bridge          High-side; IPROPI                  Independent and full-bridge
+ DRV8714-Q1                       Multi-channel gate driver       2xCSA                              Independent half-bridge, independent
+                                                                                                     MOSFET, and full-bridge
+ DRV8706-Q1                       H-bridge gate driver            CSA                                Independent half-bridge and full-bridge
+ DRV8343-Q1                       three-phase gate driver         3xCSA                              Independent half-bridge and
+                                                                                                     independent MOSFET
+
+
+While there are many types of solenoids with many configurations, DRV motor driver ICs from Texas Instruments
+simplify solutions to drive solenoids not only by reducing size, but by integrating more control and diagnostic
+features. With all the integrated features and pin-to-pin packaging, one or a small subset of DRV motor drivers
+can be used to drive one or multiple solenoids from a single device, and leverage a single design for different
+solenoid loads.
+
+6 Revision History
+NOTE: Page numbers for previous revisions may differ from page numbers in the current version.
+
+Changes from Revision * (February 2019) to Revision A (April 2022)                                         Page
+• Updated the numbering format for tables, figures and cross-references throughout the document...................3
+
+
+
+
+18   Using Motor Drivers to Drive Solenoids                                                       SLVAE59A – FEBRUARY 2019 – REVISED APRIL 2022
+                                                                                                                       Submit Document Feedback
+                                                   Copyright © 2022 Texas Instruments Incorporated
+                                       IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you
+will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these
+resources.
+TI’s products are provided subject to TI’s Terms of Sale or other applicable terms available either on ti.com or provided in conjunction with
+such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable warranties or warranty disclaimers for
+TI products.
+TI objects to and rejects any additional or different terms you may have proposed. IMPORTANT NOTICE
+
+                             Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+                                            Copyright © 2022, Texas Instruments Incorporated
+

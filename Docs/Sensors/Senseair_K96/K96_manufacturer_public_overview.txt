@@ -1,0 +1,305 @@
+K96, Senseair’s prototype multi-gas NDIR sensor core platform
+NDIR Technology
+Career
+About
+Meny
+Solutions
+Our air and gas sensors can be used in a wide range of solutions where only your imagination sets the limit. However, we have three main areas.
+Solutions
+Our air and gas sensors can be used in a wide range of solutions where only your imagination sets the limit. However, we have three main areas.
+Alcohol
+Carbon Dioxide
+Refrigerants
+Products
+News & Insights
+Contact
+Connect with us through our global network of sales offices and distributors, ensuring assistance wherever you are.
+Contact
+Connect with us through our global network of sales offices and distributors, ensuring assistance wherever you are.
+Sales
+Distributors
+Service & Support
+Other departments
+Contact us
+News & Insights
+/
+Insights
+/
+Senseair’s prototype multi-gas NDIR sensor core platform
+SEARCH
+News & Insights
+Senseair’s prototype multi-gas NDIR sensor core platform
+Exploring Multi Gas Sensing
+Some technologies are visible early on. Others stay in development for a long time before we say much about them publicly.
+K96 is one of those projects.
+We have not talked much about it before, but it deserves wider recognition because it says something important about how we work at Senseair and where our technology is heading.
+K96 is a prototype sensor core developed by Senseair. It is a compact NDIR platform built to explore new ways of measuring gases in a small, efficient format. It is not a standard commercial product. It is a development platform that has been extensively tested in various EU research projects, showing how our infrared sensing technology can be adapted for new applications, field deployments, and broader gas sensing needs.
+What K96 is
+K96 is a small sensor core that combines optics and electronics in one unit. It was developed as a flexible platform that can be configured for different gases and different use cases.
+The concept behind K96 is to create a compact sensor platform that can support more advanced gas measurement without becoming too large, too power hungry, or too complex to deploy in the field.
+In published research, K96 is described as a sensor prototype based on a multi-path NDIR design. The idea is simple but powerful: several sensing capabilities brought together in one compact unit. Internally, it has often been described as ‘three sensors in one’, offering high-resolution gas measurement from a single sensor core. The platform has been presented for gases such as carbon dioxide, methane, nitrous oxide, and water vapor.
+Why it matters
+There is growing demand for gas sensing systems that can be used outside the lab in larger numbers and in more places. That includes environmental monitoring, greenhouse gas measurements, and applications where size, power consumption, and cost all matter.
+This is where K96 becomes interesting.
+The prototype was designed to be highly compact while still offering strong sensing capability. By combining three simultaneous measurement channels in one compact unit, K96 can support highly accurate gas measurements at sub-ppm resolution, while also helping compensate for cross-sensitivities between gases. That matters when sensors need to be integrated into instruments, distributed networks, or field-based monitoring solutions.
+What K96 says about Senseair
+K96 is not only about one prototype. It reflects a broader way of thinking at Senseair.
+We build on long experience in NDIR gas sensing, but we also continue to test new formats, new architectures, and new application areas in close collaboration with research partners, academic groups, and private companies. K96 is an example of that work. Proven in the field through a range of development projects, it has helped us understand what new applications require and how our technology can be optimized for them.
+It also shows something else. Innovation does not always begin with a finished product. Sometimes it starts with a platform that helps us test ideas, prove performance, and learn what the next generation of sensing can look like.
+Figure: CAD view of the K96 sensor core, including the optical cell and integrated electronics.
+A prototype with purpose
+It is important to be clear about what K96 is today.
+K96 is a prototype. It is not part of our regular product offering in the same way as our established sensor platforms. We are mentioning it because it represents real technical progress and because it helps explain the direction of our development work.
+For us, it is a meaningful project. It brings together compact design, multi gas capability, and low power operation in a way that supports future sensing solutions.
+Looking ahead
+K96 gives a good picture of the kind of development work that continues behind the scenes at Senseair.
+It shows how we are working to make gas sensing smaller, more flexible, and more useful in real deployment conditions. It also shows that our work does not stop with what is already on the market.
+So yes, it is about time we talked about K96.
+Not because it is a finished story, but because it is part of what comes next.
+Insights
+CH₄
+,
+CO₂
+,
+H₂O
+,
+K96
+,
+Methane
+,
+N₂O
+,
+Prototype
+16 Mar 2026
+Related News & Insights
+Senseair S12 crowned the winner
+Senseair S12 came out on top in AirGradients well-argued comparison of three different CO₂ sensing approaches for portable air quality monitoring: True NDIR, photoacoustic sensing and thermal conductivity. What makes the piece especially valuable is that it does not stay...
+Read more
+Enhancing Safety with Advanced CO₂ Alarm Sensors for Kerosene Heaters
+Kerosene heaters are a popular and trusted source of warmth during cold seasons, offering efficiency and comfort in diverse climates. However, they come with an essential safety consideration: the potential build-up of carbon dioxide (CO₂) in enclosed spaces. For manufacturers,...
+Read more
+Cabin Air Quality
+A cabin full of people can quickly increase the level of CO2. This can lead to drowsiness that we do not notice until we experience physical symptoms. The same problem can arise in vehicles like trains, buses, and aeroplanes. There...
+Read more
+CO₂ Sensors in Smart Phones
+What if you could have access to real-time air quality monitoring on your smart phone, mapping out where all the pollution hot spots are located? In cities, Air Quality (AQ), can change dramatically from one hour to the next and...
+Read more
+A Deeper Insight on our Platforms and Main Applications
+You can find intelligent sensor applications in a wide range of environments (in our homes, workplaces, public places, etc.), implemented to make our everyday lives easier and safer. Join our experts as they explain our product concept and present real...
+Read more
+Let’s make CO₂ visible
+Try this at home! Recipe: Tea-light in a glass jar Llighter Bottle with wide opening 1 cup of water 1 teaspoon of citric acid…or some vinegar 1 teaspoon of citric acid…or a small amount of vinegar 1 teaspoon of sodium...
+Read more
+See air too – How CO₂ sensors add value to IoT
+The IoT revolution has increased the demand to monitor and control our environment. Sensors are everywhere (in our homes, workplace, public places etc.) and have become essential to improving operational efficiency and reduce costs. Furthermore, enhancing workplace safety and improving...
+Read more
+Child left behind – Don’t close the lid
+CO2 as an indicator that a child or a pet is left behind in a vehicle. How can someone leave their child or pet behind in a car and forget you might ask? Unfortunately it happens, however, thirty seconds is...
+Read more
+How the Automotive Industry benefits from CO₂ sensors
+Can one technical solution help prevent drowsy drivers and detect a child or pet left behind? Yes; and in this webinar we will tell you how. Sensors are crucial from various aspects in vehicle safety systems. And, by using an...
+Read more
+Every 10th breath already used by someone else
+Indoor air quality can be measured by the amount of CO2 and today outdoor fresh air is around 400 ppm in rural areas. Accepted indoor air quality is considered to be in-between 800 ppm and 1000 ppm. This has actually...
+Read more
+How we used cabin air quality to extend range in a Tesla
+A test was conducted by The Swedish magazine, Elbilen (The Electric car). The idea of the test is that cold air in the cabin of an electric vehicle, which needs to be heated to 20 degrees C for the driver’s...
+Read more
+Recirculation No thanks!
+Most people have no idea what CO2 is and how it affects us in long and short term. You could say that what you breath out, CO2 is a rest product leaving the body, just like what you do in...
+Read more
+Related Products
+S12 CO₂
+CO₂ Sensing in an Ultra-Compact 'Micro' format.
+Read more
+Sunlight CO₂ 2% PH
+Designed for higher-range CO₂ monitoring applications
+Read more
+S88 GH
+High-Humidity High-CO₂ Sensor for Demanding Indoor Agriculture
+Read more
+S8-4BP
+A CO₂ safety switch intended for kerosene applications
+Read more
+S88
+A refresh of our S8 for modern standards, including ANSI/ASHRAE Standard 62.1-2022 addendum ab
+Read more
+eSENSE Duct
+CO₂ transmitter for installation in the ventilation duct.
+Read more
+aSENSE VAV Duct Display
+CO₂ and temp for installation in the ventilation duct.
+Read more
+Sunrise
+Extreme power efficiency and uncompromising accuracy
+Read more
+Sunlight CO₂
+Extreme power efficiency.
+Read more
+LP8
+A wide supply voltage range enables a variety of battery options.
+Read more
+S8 5% & 2%
+Miniature sensor for control- and alarm applications.
+Read more
+S8
+Miniature, low power and versatile sensor for CO₂ sensing.
+Read more
+Newsletter
+Solutions
+Alcohol
+Carbon Dioxide
+Refrigerants
+Products
+News & Insights
+Contact
+Sales
+Distributors
+Service & Support
+Other departments
+Contact us
+Senseair - An Asahi Kasei Group Company © 2026.
+Privacy policy
+.
+Terms & Conditions
+.
+Accessibility
+×
+Solutions
+Alcohol
+Carbon Dioxide
+Refrigerants
+Products
+News & Insights
+Contact
+Sales
+Distributors
+Service & Support
+Other departments
+Contact us
+NDIR Technology
+Career
+About
+×
+All Sales Regions
+All Service & Support Regions
+All Management
+EMEA
+Mikael Åkerholm
+Head of Business Development
+@
+Pär Nordin
+Executive Sales Director
+@
+Daniel Wehbe
+Sales Manager Alcohol Products Sweden
+@
+Sascha Krause
+Field Application Engineer
+@
+Filip Bota
+Field Application Engineer
+@
+Andreas Olsson
+Global Sales, Air & Gas Products
+@
+Arvid Egeland
+Key Account Manager
+@
+Ting Wang
+Key Account Manager
+@
+Örjan Ohlander
+Key Account Manager
+@
+America
+Paul Werner
+VP of Business Development, North & South America, Australia, New Zealand
+@
+Tim Baxter
+Business Development Manager, North-East US & Eastern Canada
+@
+Mark Sheets
+Business Development Manager, South-East US & South America
+@
+Ron Copenhaver
+Business Development Manager, South-West US & Mexico
+@
+Sean Dangelo
+Business Development Manager, Northern California & Colorado/Utah
+@
+Shawn Phillips
+Business Development Manager, Pacific North-West & Western Canada
+@
+Asia
+Juan Guo
+General Manager, Senseair China
+@
+Weiwei Zhang
+Sales Manager Senseair China
+@
+Seunghun Kang
+General Manager of Sales, South Korea
+@
+Hidenori Oda
+Sales Manager, Japan
+@
+Takuya Hasegawa
+Senior Field Application Engineer, Asia
+@
+EMEA
+Örjan Ohlander
+Key Account Manager
+@
+Eva Persson
+Customer Experience
+@
+America
+Chris Baltar
+Director of Business Development
+@
+Asia
+Örjan Ohlander
+Key Account Manager
+@
+Eva Persson
+Customer Experience
+@
+Corporate
+Toshiaki Matsumoto
+CEO
+@
+Customer Service
+Örjan Ohlander
+Key Account Manager
+@
+Eva Persson
+Customer Experience
+@
+Administration
+Linda Hammarström
+CFO
+@
+Susanne Jonsson
+Senior Accountant
+@
+DPO
+Data protection officer
+@
+Simon Stadin
+Marketing Assistant/Press Contact
+@
+Operations & quality
+Karl Williams
+Quality Assurance Manager
+@
+Roger Färlin
+Plant Manager Delsbo
+@
+Purchasing and Logistics
+Johan Gröndal
+Category manager
+@
+Mattias Tjernell
+Sourcing program manager
+@

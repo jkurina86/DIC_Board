@@ -1,0 +1,400 @@
+                                                                                   Application Note 75
+
+ www.seabird.com | +1 425-643-9866
+
+
+
+               Maintaining SBE 5T, 5P, and 5M Submersible Pumps
+This application covers all SBE 5 pumps:
+• SBE 5T titanium housing (depth to 10,500 meters).
+• SBE 5P plastic housing (depth to 600 meters).
+• SBE 5M miniature, available in titanium housing (depth to 10,500 meters) or plastic housing (depth to 600
+    meters).
+                                                        Caution
+   Do not run the pump dry. The pump is water lubricated; running it without water will damage it. If testing your
+system in dry conditions, remove the Tygon tubing from the hose barb at the top of the pump head, and fill the inside
+     of the pump head with water. This will provide enough lubrication to prevent pump damage during testing.
+
+A properly maintained pump will provide constant flow for your CTD and any pumped auxiliary sensors, resulting in
+high quality data. The main symptom of a non-functioning or poorly functioning pump is bad conductivity data,
+because the pump is not pulling water through the conductivity cell.
+
+
+
+                                                      Note: White pump head was replaced with black pump head for SBE 5M,
+     Hose              Pump
+                                                      5P, and 5T in November 2015; dimensions and functionality are identical.
+     barb              head                                        SBE
+                                                                    5P
+
+                          Hose
+                          barb
+
+
+
+     SBE               End cap
+      5T               retaining
+                       ring
+      SBE 5T (old design,
+                       (5T old
+      discontinued 2011)
+                       design
+                       only)
+
+
+ Bulkhead
+                                                                                                            SBE 5M with
+ connector
+                                                                                                 plastic (left) and titanium (right)
+                                                                                                               housing
+                                               SBE 5T           SBE 5P
+                                           (current design)
+
+
+
+Routine Rinsing after Recovery (applies to all pumps)
+At the end of a day of taking casts:
+
+1.    Remove the Tygon tubing from the pump head’s hose barbs.
+
+2.    Leaving the pump head on the housing, thoroughly rinse the inside of the pump head, pouring clean, fresh water
+      through a hose barb. If the pump head is not rinsed between uses, salt crystals may form on the impeller. Over
+      time, this may freeze the impeller in place, preventing the pump from working.
+
+3.    Replace the Tygon tubing on the hose barbs.
+
+
+AN75 Revised 3/2024
+4.    Unscrew the lock collar from the bulkhead connector and slide it up the cable.                         Locking sleeve
+      Thoroughly rinse the cable connection (still mated) with clean, fresh water. This
+      will prevent premature cable failure.
+
+5.    Slide the lock collar back into place, and screw it hand-tight back onto the
+      bulkhead connector.
+
+Maintain SBE 5T, 5P, and 5M Pumps
+                                                       Caution
+     Use only Super O-Lube, which is silicon-based. Do not use Parker O-Lube, which is petroleum based.
+
+                                                        Caution
+Be careful not to pinch the O-rings, which will allow water to enter the housing and damage the electronics.
+
+Note: Colors may vary from what is shown in the photos. White impeller was replaced with black impeller in 2011;
+white pump head was replaced with black pump head in 2015. White and black versions of these parts are
+interchangeable.
+
+Periodic Cleaning                                                                           End cap
+                                                                                            O-rings
+If you are going to store the pump for more than 1 week, or have removed the
+pump from a mooring, perform a more thorough cleaning:
+
+                                    Caution
+   Remove the end cap and impeller from the housing before cleaning the
+ impeller. The end cap O-rings seal the electronics chamber. The end cap may
+ “walk” out of the housing after the pump head is removed, allowing water to
+     enter the electronics chamber if you clean the impeller without first
+                    removing the end cap from the housing.                                End cap                   Pump
+                                                                                        and impeller                head
+
+1.    Unscrew the pump head from the housing.
+
+2.    Pull out the end cap from the housing.
+
+3.    Using clean, fresh water, thoroughly rinse the pump head and impeller.
+
+4.    Inspect the impeller for salt deposits. Clean any deposits with clean, fresh water and a toothbrush. Verify that the
+      impeller can turn freely.
+
+5.    Inspect the shaft, and the O-ring and thrust washer holding the impeller on the shaft. There is another thrust washer
+      underneath the impeller magnet, inside the housing. If this thrust washer is in good condition, you should observe a
+      small gap between the bottom of the impeller and the end cap. If there is no gap, the thrust washer is worn and
+      needs to be replaced (see Annual Maintenance for replacement procedure).
+
+6.    Apply a light coat of O-ring lubricant (Parker Super O Lube) to the O-ring and mating surfaces. Reinstall the end
+      cap in the housing, carefully aligning the end cap with the housing and pushing hard on the end cap to seat the first
+      O-ring in the housing (only one O-ring should now be visible).
+
+
+
+
+AN75 Revised 3/2024
+7.   Reinstall the pump head on the end cap.
+                                                               Note small gap
+                                                               between impeller
+                                                               and end cap.
+                       Impeller –
+                                                               Absence of gap
+                       note salt
+                                                               indicates worn
+                       deposit
+                                                               thrust washer
+                                                               under impeller
+                                                               magnet.
+
+
+                                                                       Shaft
+
+
+                                               Shaft,                 Impeller
+                                               O-ring,
+                                               and                               End cap
+                       End cap                 thrust
+                                               washer
+
+                                     SBE 5M, 5P, or 5T with Pump Head Removed
+
+Annual Maintenance
+Note: The pump impeller replacement kit, PN 50391, includes the impeller,
+O-rings, and thrust washers.
+                                                                                     PN 31011
+                                                                                     O-ring           PN 30571
+                                   Caution                                                            O-ring
+  Remove the end cap and impeller from the housing before cleaning the
+impeller. The end cap O-rings seal the electronics chamber. The end cap may
+“walk” out of the housing after the pump head is removed, allowing water to
+    enter the electronics chamber if you clean the impeller without first
+                   removing the end cap from the housing.
+
+1.   Unscrew the pump head from the housing.                                                 End cap              Pump
+                                                                                           and impeller           head
+2.   Pull out the end cap from the housing.
+
+3.   Replace the O-ring and two thrust washers on
+     the shaft:
+     A. Remove the O-ring from the shaft. A pair of                  End cap
+                                                                                         PN 30009 (shown)
+          tweezers works well for this.
+                                                                                            or PN 234553
+     B. Pull the impeller and attached magnet off the                         PN           impeller/magnet
+          shaft. The thrust washer above the impeller will                   30010                             PN
+          come off at the same time. Inspect the impeller                    thrust                          30010
+                                                                            washer                                         PN
+          for salt build-up, and clean if necessary. Inspect                                                  thrust
+                                                                                                                          30095
+          the magnet for wear. Particularly in sandy coastal                                                 washer
+                                                                                                                          O-ring
+          environments, the magnet may be worn down
+          from abrasion. If necessary, replace the impeller /         Shaft
+          magnet assembly (PN 30009 or 234553).
+          Note: PN 30009 (with white impeller, as shown               SBE 5M, 5P, or 5T with Pump Head and Impeller Removed
+          in photo) was replaced by PN 234553 (with
+          black impeller) in 2012. These parts are interchangeable.
+     C. Remove the second thrust washer from the bottom of the shaft. A pair of tweezers works well for this.
+     D. Inspect the shaft for wear.
+     E. Rinse the shaft and depression in the housing with clean, fresh water. Allow to dry.
+     F. Using new thrust washers (2 of PN 30010) and O-ring (PN 30095), replace the thrust washer and impeller /
+          magnet on the shaft. Replace the other thrust washer and O-ring on the shaft, above the impeller, pushing hard
+          with your fingertip to seat the thrust washer and O-ring in place.
+
+4.   Inspect the end cap O-rings and the mating surface on the pump head for dirt, nicks, and cuts. Clean or replace as
+     necessary. Apply a light coat of O-ring lubricant (Parker Super O Lube) to the O-rings and mating surfaces.
+
+
+AN75 Revised 3/2024
+5.   Reinstall the end cap in the housing, carefully aligning the end cap with the housing and pushing hard on the end
+     cap to seat the first O-ring in the housing (only one O-ring should now be visible).
+
+6.   Reinstall the pump head on the end cap.
+
+7.   Inspect the bulkhead connector for corrosion, which is a sign of seawater leakage between the bulkhead connector
+     and cable. If there is corrosion, thoroughly clean the connector with water, followed by alcohol. Inspect the
+     bulkhead connector for chips, cracks, or other flaws that may compromise the seal. Inspect the mating cable’s
+     connector for cuts, nicks, breaks, or other problems that may compromise the seal. Give the connector surfaces a
+     light coating of silicon grease, and remate the connector properly; see Application Note 57: Connector Care and
+     Cable Installation.
+     • If the bulkhead connector is severely corroded or damaged, it must be replaced. Sea-Bird Scientific
+          recommends that this work be performed at the factory, because the pump’s physical configuration makes
+          customer-replacement of the connector difficult.
+
+
+Non-Functioning or Poorly Functioning Pump
+Perform the inspection procedures listed above in Annual Maintenance. If you do not discover the problem there,
+proceed as follows.
+
+1.   Unscrew the pump head from the housing.
+
+2.   Pull out the end cap from the housing.
+
+3.   Pull out the electronics from the housing. Note that the electronics are wired to the bulkhead connector inside the
+     housing.
+
+4.   Verify that the magnet can spin freely and is not broken or damaged.
+
+5.   Look for other signs of damage on the electronics.
+
+6.   Reinstall the end cap in the housing:
+     A. Apply a light coat of O-ring lubricant (Parker Super O Lube) to the O-ring and mating surfaces.
+         SBE 5M – Gently place a new desiccant capsule (PN 31044 – 0.4 gram) on the electronics, and replace the
+         black tape to secure it in place.
+         SBE 5P or 5T - Gently place a new desiccant bag (PN 30558 – 1 gram) on the electronics.
+         (see Application Note 71 for desiccant use and regeneration).
+     B. Reinstall the electronics in the housing.
+     C. Reinstall the end cap in the housing, carefully aligning the end cap with the housing and pushing hard on the
+         end cap to seat the first O-ring in the housing (only one O-ring should now be visible).
+
+7.   Reinstall the pump head on the end cap.
+
+
+
+
+                        SBE 5M with Electronics Removed (titanium version shown; plastic version similar)
+
+
+
+
+AN75 Revised 3/2024
+                                                    SBE 5P with Electronics Removed (5T similar)
+
+
+
+Previous Design: SBE 5T Titanium Pump with Retaining Ring
+                                                       Caution
+     Use only Super O-Lube, which is silicon-based. Do not use Parker O-Lube, which is petroleum based.
+
+                                                        Caution
+Be careful not to pinch the O-rings, which will allow water to enter the housing and damage the electronics.
+
+In 2011, Sea-Bird changed the SBE 5T mechanical design; the current design is easily differentiated from the old
+design because the current design does not have a retaining ring (see photos below). The old SBE 5T is opened from
+the end with the retaining ring and bulkhead connector; the current SBE 5T is opened from the end with the pump
+head. Instructions for disassembly/reassembly of the current SBE 5T pump are identical to those for the SBE 5P
+pump.
+
+Note: Impeller color may vary from what is shown in the photos.
+
+Periodic Cleaning for SBE 5T
+If you are going to store the pump for more than 1 week, or have removed the pump from a mooring, perform a more
+thorough cleaning:
+
+1.    Unscrew the pump head from the housing.
+
+2.    Using clean, fresh water, thoroughly rinse the pump head and impeller.
+
+3.    Inspect the impeller for salt deposits. Clean any deposits with clean, fresh water and a toothbrush. Verify that the
+      impeller can turn freely.
+
+4.    Inspect the shaft, and the O-ring and thrust washer holding the impeller on the shaft. There is another thrust washer
+      underneath the impeller magnet, inside the housing. If this thrust washer is in good condition, you should observe a
+      small gap between the bottom of the impeller and the end cap. If there is no gap, the thrust washer is worn and
+      needs to be replaced (see Annual Maintenance for SBE 5T for replacement procedure).
+
+
+
+
+AN75 Revised 3/2024
+                                                              Note small gap                           End cap
+                                                              between impeller                         O-ring
+                                                              and end cap.
+                       Impeller –
+                                                              Absence of gap
+                       note salt
+                                                              indicates worn
+                       deposit
+                                                              thrust washer
+                                                              under impeller
+                                                              magnet.
+
+
+                                                                      Shaft
+
+
+           End cap                                                    Impeller
+
+                                            Shaft, O-ring,
+                                            and thrust                           End cap
+                                            washer
+
+                                        SBE 5T with Pump Head Removed
+
+
+
+Annual Maintenance for SBE 5T
+
+1.   Unscrew the pump head from                   PN 30571
+     the housing.                                    O-ring        End cap
+                                                                                           PN 30009 (shown)
+2.   Replace the O-ring and two thrust                                                  or PN 234553
+                                                                            PN
+     washers on the shaft:                                                             impeller/magnet
+                                                                          30010                             PN
+     A. Remove the O-ring from the shaft.                                  thrust                          30010
+                                                                          washer                                        PN
+         A pair of tweezers works well for                                                                 thrust
+                                                                                                                       30095
+         this.                                                                                            washer
+                                                                                                                       O-ring
+     B. Pull the impeller and attached
+         magnet off the shaft. The thrust
+                                                                    Shaft
+         washer above the impeller will
+         come off at the same time. Inspect
+                                                                    SBE 5T with Pump Head and Impeller Removed
+         the impeller for salt build-up, and
+         clean if necessary. Inspect the
+         magnet for wear. Particularly in sandy coastal environments, the magnet may be worn down from abrasion. If
+         necessary, replace the impeller / magnet assembly (PN 30009 or 234553).
+         Note: PN 30009 (with white impeller, as shown in photo) was replaced by PN 234553 (with black impeller) in
+         2012. These parts are interchangeable.
+     C. Remove the second thrust washer from the bottom of the shaft. A pair of tweezers works well for this.
+     D. Inspect the shaft for wear.
+     E. Rinse the shaft and depression in the housing with clean, fresh water. Allow to dry.
+     F. Using new thrust washers (2 of PN 30010) and O-ring (PN 30095), replace the thrust washer and impeller /
+         magnet on the shaft. Replace the other thrust washer and O-ring on the shaft, above the impeller, pushing hard
+         with your fingertip to seat the thrust washer and O-ring in place.
+
+3.   Inspect the end cap O-ring and the mating surface on the pump head for dirt, nicks, and cuts. Clean or replace as
+     necessary. Apply a light coat of Parker Super O Lube to the O-ring and mating surfaces.
+
+4.   Reinstall the pump head on the pump housing.
+
+5.   Inspect the bulkhead connector for corrosion, which is a sign of seawater leakage between the bulkhead connector
+     and cable. If there is corrosion, thoroughly clean the connector with water, followed by alcohol. Inspect the
+     bulkhead connector for chips, cracks, or other flaws that may compromise the seal. Inspect the mating cable’s
+     connector for cuts, nicks, breaks, or other problems that may compromise the seal. Give the connector surfaces a
+     light coating of silicon grease, and remate the connector properly; see Application Note 57: Connector Care and
+     Cable Installation.
+     • If the bulkhead connector is severely corroded or damaged, it must be replaced. Sea-Bird recommends that
+          this work be performed at the factory, because the pump’s physical configuration makes customer-
+          replacement of the connector difficult.
+
+AN75 Revised 3/2024
+Non-Functioning or Poorly Functioning SBE 5T
+Perform the inspection procedures listed above in Annual Maintenance for SBE 5T . If you do not discover the problem
+there, proceed as follows.
+                                                                                              Connector
+1.   Unscrew the connector end cap retaining ring. Install a 2-pin                            end cap         Retaining ring
+     dummy plug with locking sleeve over the bulkhead
+     connector to provide a good grip and protect the connector
+     pins. Rotate the end cap back and forth while carefully
+     pulling the end cap away from the housing. Pull out the end
+     cap and attached electronics from the housing.
+
+2.   Verify that the magnet can spin freely and is not broken or
+     damaged.
+
+3.   Look for other signs of damage on the electronics.
+
+4.   Inspect the connector end cap O-ring and the mating surface in the housing for dirt, nicks, and cuts. Clean as
+     necessary. If the O-ring or mating surface is damaged, return the pump to Sea-Bird for repairs.
+     • Sea-Bird recommends that connector end cap O-ring replacement be performed at the factory, because the
+         pump’s physical configuration makes customer-replacement of this O-ring difficult to perform without special
+         tools.
+
+5.   Apply a light coat of Parker Super O Lube lubricant to the O-ring and mating surfaces. Gently place a new
+     desiccant bag (PN 30558 – 1 gram) on the electronics (see Application Note 71 for desiccant use and
+     regeneration). Reinstall the electronics in the housing, until the O-ring has fully seated. Reinstall the retaining ring
+     on the connector end cap.
+
+
+
+
+                    Housing
+                                                                                     PN 30082             Retaining ring
+                                           Magnet                                    Connector end
+                                                                      Desiccant      cap O-ring
+
+
+
+
+AN75 Revised 3/2024
+

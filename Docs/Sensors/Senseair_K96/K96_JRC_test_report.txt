@@ -1,0 +1,91 @@
+JRC Publications
+View author publications
+header.html
+An official website of the European Union
+How do you know?
+All official European Union website addresses are in the
+europa.eu
+domain.
+See all EU institutions and bodies
+Login
+European Commission staff only
+JRC Publications
+Menu
+Menu
+Close
+Home
+Search
+Joint Research Centre
+Help
+European Commission
+>
+Joint Research Centre
+>
+JRC Publications
+>
+Home
+handle.jsp
+CO2 measurements in ambient air: testing of SenseAir K96 low-cost sensor
+An AirSensEUR sensor system equipped with a prototype CO2 low-cost sensor (LCS), model K96 Senseair, has been tested at the Joint Research Centre (JRC) observatory station between December 2021 and September 2022 in order to evaluate whether its expanded measurement uncertainty could meet a Data Quality Objective (DQO) of 10 ppm. Firstly, the K96 LCS has been integrated into the JRC AirSensEUR sensor system, for which a measuring chamber with temperature control capacity set at 25 °C was designed. Additionally, a reference Picarro G2401 has been placed on the roof of the JRC observatory station at less than 50 cm away from the AirSensEUR sensor system. The Picarro measurements were used as reference CO2 data for comparing with K96 sensor data and for sensor calibration once the Picarro was adjusted for calibration drift. We calibrated the wet K96 LCS data against wet CO2 Picarro reference data. Linear models were found unreliable as residuals of the model were strongly associated with water vapour and temperature in the measuring chamber, and with air pressure to a lower extent. A multiple linear model was finally used for calibration using water vapour and air pressure in the measuring chamber as covariates. Applying this calibration, the expanded uncertainty of hourly LCS measurements remained below the DQO
+between February and early June 2022 when the reference CO2 was between 380 and 550 ppm as well as the temperature in the measuring was maintained around 25 °C.
+YATKIN Sinan;
+GERBOLES Michel;
+MANCA Giovanni;
+SIGNORINI Marco;
+2023-02-24
+Publications Office of the European Union
+JRC132309
+978-92-76-62089-1 (online),
+1831-9424 (online),
+EUR 31403 EN,
+OP KJ-NA-31-403-EN-N (online),
+https://publications.jrc.ec.europa.eu/repository/handle/JRC132309,
+10.2760/31673 (online),
+Name
+Country
+City
+Type
+This document is only visible at the Commission level.
+You are not authorized to publish or distribute it outside the European Commission.
+This is a public document. You can share this publication.
+Datasets
+ID
+Title
+Public URL
+Dataset collections
+ID
+Acronym
+Title
+Public URL
+Scripts / source codes
+Description
+Public URL
+Additional supporting files
+File name
+Description
+File type
+Show metadata record
+Copy citation url to clipboard
+Download BibTeX
+Share this page
+X
+Facebook
+Linkedin
+E-mail
+footer.html
+JRC Publications
+This site is managed by:
+Joint Research Centre
+Accessibility
+Contact us
+Contact JRC Publications
+About us
+About page
+Contact the European Commission
+Follow the European Commission on social media
+Resources for partners
+Language policy
+Cookies
+Privacy statement (JRC Publications)
+Legal notice
+Sitemap

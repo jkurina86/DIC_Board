@@ -1,0 +1,192 @@
+                                                                                        Application Note 40
+
+ www.seabird.com | +1 425-643-9866
+
+
+
+                          SBE 5T and 5P Pump Speed Adjustment
+Equipment:          DC power supply                                   Drawings:            31441B and 31441C (schematic)
+                    Frequency counter
+
+The pump housing must be disassembled to adjust the pump speed. SBE 5P and 5T electronics are the same, but
+separate instructions for removing and reinstalling the electronics are provided for each pump, because of differences in
+mechanical details.
+
+ Note: In 2011, Sea-Bird changed the SBE 5T mechanical design.
+ The current design is easily differentiated from the old design
+ because the current design does not have a retaining ring (see
+ photo below). The old SBE 5T is opened from the end with the
+ retaining ring and bulkhead connector; the current SBE 5T is
+ opened from the end with the pump head. Instructions for
+ disassembly/reassembly of the current SBE 5T pump are identical
+ to those for the SBE 5P pump.
+                                                                                                                   Retaining
+                                                                                                                   ring (only
+                                                                                                                   present
+                                                                                                                   on old
+                                                                                                                   SBE 5T)
+
+
+
+
+5P Plastic Pump and 5T Titanium Pump
+Note that colors may vary from what is shown in photos. The white impeller was replaced with black impeller in 2012; the white
+pump head was replaced with black pump head in 2015. White and black versions of these parts are interchangeable.
+
+     1.   Unscrew the pump head from the housing.
+     2.   Pull the end cap out of the housing.
+     3.   Carefully pull the electronics from the housing. They are wired to the bulkhead connector inside the housing.
+
+
+
+
+                                                                                                       SBE 5T
+                                                                                                   (current design,      SBE 5P
+                                                                                                    2011 and later)
+
+
+
+
+AN40 Revised 3/2024
+     4. Connect the positive lead of your frequency counter
+         to the yellow test point. Connect the frequency
+         counter ground (negative) to the power supply
+         ground (negative).
+
+
+
+
+5.     Look at the part number on the PCB to determine
+       whether you have a newer (part number 10102A) or
+       older (part number 10102) pump PCB.                                                                  PCB part
+                                                                                                            number
+                                                                                                            (10102 or
+                                                                                                            10102A)
+
+
+
+
+       6.   Supply power.
+            • Low voltage pump, LV in serial number: supply 6 volts DC power to the bulkhead connector or directly
+               to the PCB (P8 is positive, P19 or P18 is common. Set JP1 to pins 1-2.
+            • Normal voltage pump: supply 12 volts to the bulkhead connector or directly to the PCB (P8 is positive,
+               P19 or P18 is common. Set JP1 to pins 2-3.
+
+
+
+
+       7.   A 2K ohm potentiometer at R11 is located on the back of the PCB. Position the jumpers and then adjust the
+            potentiometer as described below to obtain the frequency corresponding to the desired speed (Frequency *
+            30 = rpm):
+            • Reposition JP2 and JP3, and adjust the speed as desired, up to the nominal maximum of 3000 rpm
+                (note: 4500 rpm uses same jumper setting as 3000 rpm).
+
+
+
+
+AN40 Revised 3/2024
+    8.   Disconnect the frequency counter and the power supply.
+
+                                                      Caution
+         Use silicon-based Parker Super O Lube and not a petroleum-based lubricant on the O-rings.
+
+                                                      Caution
+Be careful not to pinch the O-ring; this may allow water to enter the housing and cause damage
+                                         to the electronics.
+
+    9.   Reinstall the electronics in the housing:
+         A. Inspect the connector end cap O-ring and the mating surface in the housing for dirt, nicks, and cuts.
+             Clean and/or replace O-rings as necessary.
+         B. Apply a light coat of Parker Super O Lube O-ring lubricant to the O-ring and mating surfaces. Gently
+             place a new desiccant bag (PN 30558 – 1 gram) on the electronics (see Application Note 71 for
+             desiccant use and regeneration). Reinstall the electronics in the housing. Reinstall the end cap in the
+             housing, carefully aligning the end cap with the housing and pushing hard on the end cap to seat the first
+             O-ring in the housing (only 1 O-ring should now be visible). Reinstall the pump head on the end cap.
+
+
+Schematic #31441C for Reference
+
+
+
+
+AN40 Revised 3/2024
+5T Titanium Pump with retaining ring
+This design was discontinued in 2011.
+Note that colors may vary from what is shown in photos. The white impeller was replaced with black impeller in 2012; the white
+pump head was replaced with black pump head in 2015. White and black versions of these parts are interchangeable.
+
+     1.    Remove the electronics from the housing:
+           A. Unscrew the white plastic end cap retainer ring.
+           B. Install a 2-pin dummy plug with locking sleeve over the bulkhead connector to provide a good grip and
+              protect the connector pins. Rotate the end cap back and forth while carefully pulling the end cap away
+              from the housing. Pull the end cap and attached electronics out of the housing.
+
+
+
+
+     2.    Look at the part number on the PCB to determine
+           whether you have a newer (part number 10102A) or
+           older (part number 10102) pump PCB.                                                                           PCB part
+                                                                                                                         number
+                                                                                                                         (10102 or
+                                                                                                                         10102A)
+
+
+
+
+     3.    Supply power:
+           • Low voltage pump, LV in serial number: supply 6 volts DC power to the bulkhead connector or
+              directly to the PCB (P8 is positive, P19 or P18 is common). Jumper P5 to P7.
+           • Normal voltage pump: supply 12 volts to the bulkhead connector or directly to the PCB (P8 is positive,
+              P19 or P18 is common.) Jumper P5 to P6.
+
+
+
+
+      4.    A 2K ohm potentiometer at R11 is located on
+            the back of the PCB. Position the jumpers and
+            then adjust the potentiometer as described
+            below to obtain the frequency corresponding to
+            the desired speed (Frequency * 30 = rpm):
+
+
+
+
+AN40 Revised 3/2024
+    •    Pittman 18.2Ω motor (PN 3711B113-R1) – Set jumper position P15 to P17 (1300 rpm) and P12 to P13
+         (1300 rpm), and adjust the speed as desired, up to the nominal maximum of 2000 rpm.
+    •    Pittman 7.4Ω motor (PN 3711B112-R1) – Set jumper position P15 to P16 (3000 rpm) and P14 to P13
+         (3000 rpm), and adjust the speed as desired, up to the nominal maximum of 4500 rpm.
+         To adjust speed below approximately 2200 rpm, set jumper position P15 to P17 (1300 rpm) and P12 to P13
+         (1300 rpm), and adjust speed using the potentiometer.
+    •    Pittman 3.55Ω motor (PN 3711B112-R2) – Set jumper position P15 to P16 (3000 rpm) and P14 to P13
+         (3000 rpm), and adjust the speed as desired, up to the nominal maximum of 4500 rpm.
+         To adjust speed below approximately 2200 rpm, set jumper position P15 to P17 (1300 rpm) and P12 to P13
+         (1300 rpm), and adjust speed using the potentiometer.
+
+    5.   Disconnect the frequency counter and the power supply.
+
+                                                      Caution
+             Use silicon-based Parker Super O Lube and not a petroleum-based lubricant on the O-rings.
+
+                                                      Caution
+Be careful not to pinch the O-ring; this may allow water to enter the housing and cause damage to the electronics.
+
+    6.   Reinstall the electronics in the housing:
+         A. Inspect the connector end cap O-ring and the mating surface in the housing for dirt, nicks, and cuts.
+             Clean as necessary. If the O-ring or mating surface is damaged, return the pump to Sea-Bird for repairs.
+             Note: Sea-Bird recommends that this O-ring replacement be performed at the factory, because the
+             pump’s physical configuration makes customer-replacement of this O-ring difficult to perform without
+             special tools.
+         B. Apply a light coat of Parker Super O Lube lubricant to the O-ring and mating surfaces. Gently place a
+             new desiccant bag (PN 30558 – 1 gram) on the electronics (see Application Note 71 for desiccant use
+             and regeneration). Reinstall the electronics in the housing, until the O-ring has fully seated. Reinstall
+             the retaining ring on the connector end cap.
+
+Schematic #31441b for Reference
+
+
+
+
+AN40 Revised 3/2024
+

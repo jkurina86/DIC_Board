@@ -1,0 +1,385 @@
+Sensor head 1/4" - FD-ECH7 | KEYENCE America
+T0599945
+Menu
+TEL
+Sign In / Register
+Careers
+United States
+English
+1-888-539-3623
+Products
+Back
+Products
+Sensors
+Back
+Sensors
+Photoelectric Sensors
+Fiber Optic Sensors
+Laser Sensors
+Inductive Proximity Sensors
+Positioning Sensors
+Vision Sensors
+Network Communication Units
+Specific Solution Sensors
+Measurement Sensors
+Back
+Measurement Sensors
+Laser Profiler / 3D Laser Snapshot Sensor
+Laser Displacement Sensors
+Optical Micrometer / Laser Micrometer
+Spectral Interference Displacement Sensor
+Inductive Displacement Sensors
+LVDT / Contact Displacement Sensors (Probes)
+Machine Vision
+Back
+Machine Vision
+Vision Systems
+Vision Sensors
+Process Controls / Process Sensors
+Back
+Process Controls / Process Sensors
+Flow Sensors / Flow Meters
+Pressure Sensors
+Temperature Sensors
+Level Sensors
+Pneumatic Components
+Back
+Pneumatic Components
+Cylinder Sensors
+Directional Control Valves / Cushion Valves
+Gas Flow Sensors
+Gas Pressure Sensors
+Safety
+Back
+Safety
+Safety Light Curtains
+Safety Laser Scanners
+Safety Interlock Switches
+Safety Controller
+Microscopes / Laser Microscopes
+Back
+Microscopes / Laser Microscopes
+Digital Microscopes
+3D Optical Profiling Microscope
+Fluorescence Microscopes
+Colony Counter
+Elemental Analyzer
+Optical Metrology Systems
+Back
+Optical Metrology Systems
+Optical Comparator (Profile Projector)
+3D Measurement Systems
+Back
+3D Measurement Systems
+CMM (Coordinate Measuring Machine)
+3D Scanner
+3D Optical Profilometers
+Controls
+Back
+Controls
+PLC (Programmable Logic Controller)
+Micro PLC / Small PLC
+HMI
+Servo Motors / Servo Systems
+Other Controls
+Marking / Coding
+Back
+Marking / Coding
+Industrial Laser Marking Systems / Laser Markers
+UV Laser Coder
+Continuous Inkjet Printers / Case Coder
+Barcode Readers
+Back
+Barcode Readers
+Barcode Scanners
+Handheld Scanners
+Mobile Computers / Handheld Computers
+Back
+Mobile Computers / Handheld Computers
+Mobile Computers / Handheld Computers
+Data Acquisition
+Back
+Data Acquisition
+Data Acquisition (DAQ)
+Static Control
+Back
+Static Control
+Static Eliminators / Ionizers
+Electrostatic Sensors
+Additive Manufacturing
+Back
+Additive Manufacturing
+3D Printers
+RPA / Desktop Automation Software
+Back
+RPA / Desktop Automation Software
+RPA (Robotic Process Automation)
+Industry / Application
+Automotive
+Metals
+Semiconductors / LCDs
+Electronic Devices
+Plastics
+Films / Sheets
+Food / Pharmaceutical
+Medical Technology
+Logistics
+Certified Models
+CE Marking
+UL Certified
+CSA Certified
+FDA Accession
+Solutions
+Back
+Solutions
+Industry / Application
+Back
+Industry / Application
+Automotive
+Metals
+Semiconductors / LCDs
+Electronic Devices
+Plastics
+Films / Sheets
+Food / Pharmaceutical
+Medical Technology
+Logistics
+Resource Center
+Case Studies
+Blogs
+Ask an Expert
+Price
+Experience Demo / Test
+Free Trial Unit
+Downloads
+Back
+Downloads
+Catalogs
+Technical Guides
+Data Sheet
+CAD / CAE
+Manuals
+Software
+Support
+Back
+Support
+Product User Support
+Free Trial Unit
+Experience Demo / Test
+Repair Service Request
+Certified Models
+General Catalog Request
+About Us
+Back
+About Us
+Corporate Overview
+Our Technology
+Our Service
+Global Network
+Careers
+Contact Us
+Local Offices
+Sustainability
+Trade Show
+Sustainability
+Contact Us
+Careers
+Search
+Recent Searches
+Series (
+results)
+View More
+Models (
+results)
+Keywords
+Ask AI
+Products
+Sensors
+Measurement Sensors
+Machine Vision
+Process Controls / Process Sensors
+Pneumatic Components
+Safety
+Microscopes / Laser Microscopes
+Optical Metrology Systems
+3D Measurement Systems
+Controls
+Marking / Coding
+Barcode Readers
+Mobile Computers / Handheld Computers
+Data Acquisition
+Static Control
+Additive Manufacturing
+RPA / Desktop Automation Software
+Clamp-On Air Flow Sensor
+FD-EC series
+Ask AI
+Catalogs
+View Catalog
+Price
+Overview
+Specs
+Models
+Downloads
+User Support
+Price
+Home
+Products
+Process Controls / Process Sensors
+Flow Sensors / Flow Meters
+Clamp-On Air Flow Sensor
+Models
+Sensor head 1/4"
+Sensor head 1/4"
+FD-ECH7
+*Please note that accessories depicted in the image are for illustrative purposes only and may not be included with the product.
+View Catalog
+Data Sheet (PDF)
+Data Sheet (PDF)
+Manuals
+CAD / CAE
+Dimensions
+Software
+UL standard / CSA standard conformity
+Specifications
+Model
+FD-ECH7
+Pipe size
+Outer diameter of pipe
+1/4" (approx. 6.35 mm
+0.25"
+)
+Installable range
+6.35
+0.25"
+± 0.15 mm
+0.01"
+Pipe materials
+Polyurethane, nylon, PFA,
+*1
+other
+*2
+Supported gases
+Air, nitrogen, argon, and other gases
+*3
+Supported gas temperature
+−10°C to +60°C
+14 to 140°F
+Operating pressure range
+0 to 0.75 MPa (upper limit depends on pipe specifications)
+Flow rate detection principle
+Ultrasonic transmission time difference method
+Rated flow rate
+(volume flow rate)
+40 L/min 1.41 CFM * Initial display
+(20°C
+68°F
+, atmospheric pressure conversion)
+Gas at 20°C
+68°F
+, 0.2 MPa
+120 L/min
+4.24 CFM
+Gas at 20°C
+68°F
+, 0.4 MPa
+200 L/min
+7.06 CFM
+Gas at 20°C
+68°F
+, 0.6 MPa
+280 L/min
+9.88 CFM
+Repeatability
+Response time 250 ms: ±2.5% of F.S.
+*4
+*5
+Display resolution
+Instantaneous flow
+0.01/0.1/1 L/min
+Accumulated flow
+0.01/0.1/1/10/100 L
+Display method
+Output indicator
+Environmental resistance
+Enclosure rating
+IP65 (IEC60529)
+Ambient temperature
+−10°C to +60°C
+14 to 140°F
+(no freezing)
+Relative humidity
+35%RH to 85%RH (no condensation)
+Vibration resistance
+10 to 500 Hz, power spectral concentration: 0.816 G
+2
+/Hz, XYZ axes
+Shock resistance
+100 m/s
+2
+, 16 ms pulse, XYZ axes, 1000 times for each axis
+Material
+Sensor unit
+PBT/PAR/iron
+Sensor surface
+Special rubber
+Weight
+Approx. 102 g
+3.60 oz
+*1
+Use PFA tubes in an environment with a temperature of 40°C
+104°F
+or less.
+*2
+Resin tubes that transmit ultrasonic waves.
+*3
+Gases that transmit ultrasonic waves. Measurement may be unstable due to the pressure inside of the pipe and the type of gas.
+*4
+Accuracy improves with longer response times. As a rule, this is by a proportion of √(250 ms/response time)x.
+*5
+This value is guaranteed by KEYENCE inspection facilities. Errors will be introduced by factors such as the condition and type of pipes as well as the temperature and type of gas.
+Scroll
+Data Sheet (PDF)
+Other Models
+View Catalog
+Downloads:
+Technical Guides
+Data Sheet (PDF)
+CAD / CAE
+Manuals
+Software
+For Your Support:
+Ask an Expert
+Experience Demo / Test
+Free Trial Unit
+Product Lineup:
+Flow Sensors / Flow Meters
+Home
+Products
+Process Controls / Process Sensors
+Flow Sensors / Flow Meters
+Clamp-On Air Flow Sensor
+Models
+Sensor head 1/4"
+CREATE YOUR KEYENCE ACCOUNT
+Sign Up Now
+Newsletter Subscribe
+Subscribe
+Quick Delivery and Comprehensive Support
+KEYENCE supports customers from the selection process to line operations with on-site operating instructions and after-sales support.
+For Your Support
+Downloads
+Contact Us
+Ask an Expert
+1-888-539-3623
+KEYENCE CORPORATION OF AMERICA
+500 Park Boulevard, Suite 200, Itasca, IL 60143, U.S.A.
+Certified Models
+Privacy
+Terms and Conditions
+Terms of Use
+Supplying to KEYENCE
+Sitemap
+Battery Recycling
+Copyright (C) 2026 KEYENCE CORPORATION. All Rights Reserved.
+Back to top

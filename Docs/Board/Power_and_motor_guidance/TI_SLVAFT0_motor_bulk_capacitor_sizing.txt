@@ -1,0 +1,473 @@
+www.ti.com                                                                                                                                                           Table of Contents
+
+Application Note
+Bulk Capacitor Sizing for DC Motor Drive Applications
+
+
+
+Clark Kinnaird
+                                                                                   ABSTRACT
+Appropriate local bulk capacitance is an important factor in motor drive system design. Having more bulk
+capacitance is generally beneficial, while the disadvantages are increased cost and physical size. This
+application note discusses general guidelines for selecting the amount of capacitance needed in a motor drive
+system.
+
+
+
+
+                                                                           Table of Contents
+1 Introduction.............................................................................................................................................................................2
+2 Background and Theory.........................................................................................................................................................3
+   2.1 Factors Affecting Bulk Capacitor Sizing............................................................................................................................. 3
+   2.2 Pulse Width Modulation..................................................................................................................................................... 4
+   2.3 Estimating Motor Current Variation.................................................................................................................................... 5
+   2.4 General Guideline Calculations Assuming Ideal Capacitors..............................................................................................5
+3 Real-World Results................................................................................................................................................................. 7
+   3.1 Example Measurements.................................................................................................................................................... 7
+   3.2 Revised Practical General Guidelines..............................................................................................................................10
+   3.3 Other Considerations........................................................................................................................................................11
+4 Summary............................................................................................................................................................................... 12
+5 References............................................................................................................................................................................ 12
+Trademarks
+All trademarks are the property of their respective owners.
+
+
+
+
+SLVAFT0 – JULY 2024                                                                                                 Bulk Capacitor Sizing for DC Motor Drive Applications                  1
+Submit Document Feedback
+                                                                Copyright © 2024 Texas Instruments Incorporated
+Introduction                                                                                                         www.ti.com
+
+
+1 Introduction
+Direct current (DC) motors are found in a wide variety of applications in automotive, industrial, and consumer
+products. When switched on or off, including during pulse-width modulation (PWM) operation, the motor current
+can change significantly. These current changes can create issues such as supply voltage variations and
+electromagnetic interference for nearby electronics.
+It is common to include large bulk capacitors as part of the motor driver design. These bulk capacitors act
+as a local reservoir of electrical charge to smooth out the motor current variation. Figure 1-1 shows a typical
+evaluation board with the two large electrolytic capacitors on the right side of the board acting as bulk capacitors
+for the DC motor driver.
+Designers look for guidance on the appropriate values of bulk capacitance. In the following discussion, we
+can look for methods to select a proper value of capacitance based on knowledge of the motor and driver
+parameters. The nomenclature is based on brushed DC motors, but the same principals apply to other types,
+including brushless DC (BLDC) and stepper motors.
+
+
+
+
+                         Figure 1-1. Typical Motor Driver Board Showing Large Bulk Capacitors
+
+
+
+
+2      Bulk Capacitor Sizing for DC Motor Drive Applications                                                SLVAFT0 – JULY 2024
+                                                                                                        Submit Document Feedback
+                                                      Copyright © 2024 Texas Instruments Incorporated
+www.ti.com                                                                                                           Background and Theory
+
+
+2 Background and Theory
+Experienced engineers often use general guidelines about bulk capacitance to select the capacitor values. One
+such guideline says to use at least 1 to 4μF of capacitance for each Watt of motor power. For example, a motor
+which draws 10 Amps from a 12V supply has a power of 120 Watts, leading to bulk capacitance of 120 to 480μF,
+using this general guideline. We dig a little deeper and see what further discussion supports those estimates.
+To improve a motor drive design with regards to bulk capacitance, we first refresh our understanding of the
+fundamentals behind the relevant current and voltage relationships. Before moving on to specific practical cases,
+we look at the mathematics that describe a simplified designed for situation.
+2.1 Factors Affecting Bulk Capacitor Sizing
+The amount of bulk capacitance needed depends on a variety of factors including:
+•   The highest current required by the motor system
+•   The power supply's type, capacitance, and ability to source current
+•   The amount of inductance between the power supply and motor system
+•   Method of operation, whether continuous or using pulse width modulation
+•   The acceptable supply voltage ripple
+•   Type of motor (brushed DC, brushless DC, stepper) and motor characteristics
+•   The motor startup and braking methods
+In a ideal DC motor system, there is no impedance between the motor drive circuit and the power source, which
+can be modeled as an ideal constant voltage source. In this ideal for case, there is not any variation in the motor
+supply voltage. However, in a real practical system, the inductance between the power supply and motor drive
+system limits the rate at which current from the power supply can change. There can also be filtering inductance
+on the driver board or in the power distribution network. This inductance between the power supply, often a
+12V battery in automotive systems, and the motor drive voltage VM, is modeled as a lumped inductance on the
+positive and ground connections labeled Parasitic Wire Inductance shown in Figure 2-1.
+If the local bulk capacitance is too small, the system responds to excessive current demands or dumps from
+the motor with a change in motor supply voltage. When adequate bulk capacitance is used, large variations in
+current can be quickly accommodated, and the motor supply voltage remains stable.
+
+                                           Parasitic Wire
+                                            Inductance
+                    Power Supply                                                     Motor Drive System
+
+
+                                                                                                      VM
+
+
+
+                           +                                              +
+                                                                                                              Motor Driver
+                           ±
+
+
+                                                                                                     GND
+
+
+
+                                                                       Local                 IC Bypass
+                                                                   Bulk Capacitor            Capacitor
+
+
+
+                               Figure 2-1. Motor Drive Model From DRV8718-Q1 Data Sheet
+
+
+
+
+SLVAFT0 – JULY 2024                                                                 Bulk Capacitor Sizing for DC Motor Drive Applications   3
+Submit Document Feedback
+                                           Copyright © 2024 Texas Instruments Incorporated
+Background and Theory                                                                                                                    www.ti.com
+
+
+The motor driver data sheet can provide a recommended minimum value, but system level testing is required to
+determine the appropriately sized bulk capacitor. Table 2-1 shows an example of the recommendations in a TI
+motor driver data sheet. Here both CPVDD1 and CPVDD2 are connected in parallel from the motor supply voltage
+(VM or PVDD) to Ground (GND).
+                                          Table 2-1. Recommended External Components
+                         COMPONENT                  PIN 1         PIN 2                        RECOMMENDED
+                             CPVDD1                 PVDD          GND          0.1µF, low ESR ceramic capacitor, PVDD-rated.
+                                                                               Local bulk capacitance greater than or equal to
+                             CPVDD2                 PVDD          GND
+                                                                                             10µF, PVDD-rated.
+                            CDVDD (1)               DVDD          GND              1.0μF, 6.3V, low ESR ceramic capacitor
+                            CAREF   (1)            AREF(3)        GND              0.1μF, 6.3-, low ESR ceramic capacitor
+                              CVCP                   VCP          PVDD               1μF 16V, low ESR ceramic capacitor
+                              CFLY1                 CP1H          CP1L         0.1µF, PVDD-rated, low ESR ceramic capacitor
+                              CFLY2                 CP2H          CP2L         0.1µF, PVDD + 16V, low ESR ceramic capacitor
+                              RnFLT                 VCC(2)        nFLT                     Pullup resistor, IOD ≤ 5mA
+
+                  (1)    A local bypass capacitor is recommended to reduce noise on the external low voltage power
+                         supply. If another bypass capacitor is within close proximity of the device for the external low
+                         voltage power supply and noise on the power supply is minimal, removing this component is
+                         optional.
+                  (2)    VCC is not a pin on the device, but the external low voltage power supply.
+                  (3)    On the DRV8714-Q1 RHA package, the AREF pin is not present and the AREF power supply is
+                         derived from the DVDD pin.
+
+2.2 Pulse Width Modulation
+If pulse-width modulation (PWM) is used to control the effective motor voltage, the bulk capacitance on the motor
+supply becomes even more important. Otherwise the current variation during PWM operation can cause voltage
+ripple which can propagate throughout the system, causing electromagnetic interference with other components.
+Figure 2-2 shows typical waveforms in a motor drive system with PWM at 20kHz. The red trace marked MOTOR
+CURRENT shows the effect of rising current as the motor is activated, with ripple current corresponding to the
+PWM frequency.
+
+
+
+
+               Figure 2-2. Typical Waveforms in a PWM Motor Drive, From DRV8718-Q1 Data Sheet
+
+In this example, the scale is 1A per major division of the current trace, so the variation in motor current is on
+the order of 200mA due to the PWM switching. This is approximately 10% of the peak motor current of about 2
+amps.
+
+
+
+
+4     Bulk Capacitor Sizing for DC Motor Drive Applications                                                                     SLVAFT0 – JULY 2024
+                                                                                                                            Submit Document Feedback
+                                                     Copyright © 2024 Texas Instruments Incorporated
+www.ti.com                                                                                                         Background and Theory
+
+2.3 Estimating Motor Current Variation
+During PWM operation, the motor current varies around an average value, with the current increasing during
+the on portion of the PWM period, and decreasing during the off portion. Modeling the motor winding as an
+inductance Lm in series with a resistance Rm, the increasing current is:
+
+                                          −t
+          iinc t = imin + if − imin × 1 − e     τ                                                                                   (1)
+
+Where if is the final steady-state current at 100% duty cycle, typically PVDD/Rm and imin is the current at the
+beginning of the PWM on portion, and tau is the motor electrical time constant, Lm/Rm.
+Similarly for the decreasing current:
+
+                                              −t τ            −t τ
+          idec t = imax + 0 − imax × 1 − e           = imax × e                                                                     (2)
+
+Where imax is the current at the beginning of the PWM off portion.
+The motor current variation in Equation 3 is the motor current variation over each PWM cycle. This is illustrated
+in Figure 2-3.
+
+          ΔImotor = imax − imin                                                                                                     (3)
+
+
+
+
+                   Figure 2-3. Motor Current Variation During PWM Operation, Ideal Capacitors
+
+2.4 General Guideline Calculations Assuming Ideal Capacitors
+As discussed previously, a large value of bulk capacitance is desired to provide a constant motor supply voltage
+during current transitions, such as motor start-up, changes in load torque, or PWM operation. But we can like
+having a working estimate of the needed capacitance so that we do not over-design the bulk capacitance,
+leading to high system cost and excessive board size. We can use a general guideline method to find an
+appropriate capacitor size based on the expected load current variation and allowable motor supply voltage
+variation.
+An initial estimate of the appropriate bulk capacitance based on ideal capacitors is:
+
+          CBULK > ΔIMOTOR × TPWM ΔVSUPPLY                                                                                           (4)
+
+Where CBULK is the bulk capacitance, ΔIMOTOR is the expected variation in motor current, TPWM is the pulse-
+width modulation period, and ΔVSUPPLY is the allowable variation in the motor supply voltage.
+This inequality is based on assumptions:
+•   Ideal capacitors with zero equivalent series resistance (ESR)
+•   A motor time constant Lm/Rm significantly longer than the PWM period
+
+
+SLVAFT0 – JULY 2024                                                               Bulk Capacitor Sizing for DC Motor Drive Applications   5
+Submit Document Feedback
+                                         Copyright © 2024 Texas Instruments Incorporated
+Background and Theory                                                                                               www.ti.com
+
+•   Negligible change in supply current through the parasitic wire inductance
+•   The supply voltage variation induced by the varying motor current during PWM can be expected to be a
+    maximum when the PWM duty cycle is 50%.
+In an example, assume we have motor current variation during PWM of about ΔIMOTOR = 200mA; this is
+approximately what is shown in Figure 2-2; a simplified sketch is shown in Figure 2-4. For a typical PWM
+frequency of 20kHz, TPWM is 50 microseconds.
+
+
+
+
+                          Figure 2-4. Simplified Example Motor Current Waveform During PWM
+
+If we want to keep the motor supply voltage variation not more than ΔVSUPPLY = 100mV, we can estimate the
+required minimum bulk capacitance as:
+
+          CBULK ≥ 200mA × 50μs 0 . 1V = 10μA · s/0 . 1V = 100μF                                                       (5)
+
+This is an estimate, not a detailed analysis. We are neglecting several factors such as the effective series
+resistance (ESR) of the bulk capacitance, the non-infinite impedance of the inductance to the battery, the
+non-linear current variation shape, and so on. However, it gives a reasonable bulk capacitance value as a
+starting point for more rigorous system analysis.
+In Figure 2-5 the results for the ideal simulations are compared to what is predicted by the ideal capacitor
+equations. The simulated voltage ripple is somewhat smaller than the ideal estimate predicts, but overall the
+predictions and simulations are approximately in alignment, especially for higher values of bulk capacitance.
+
+
+
+
+        Figure 2-5. Comparison of Ideal Capacitor (ESR=0) General Guideline and Simulated Results
+
+However, as we see in the following discussion, real-life measurements indicate the ideal results are off by as
+much as a factor of 3, which means the non-ideal capacitance ESR cannot be neglected.
+
+
+
+
+6     Bulk Capacitor Sizing for DC Motor Drive Applications                                                SLVAFT0 – JULY 2024
+                                                                                                       Submit Document Feedback
+                                                     Copyright © 2024 Texas Instruments Incorporated
+www.ti.com                                                                                                             Real-World Results
+
+
+3 Real-World Results
+Laboratory measurements show that the calculations and general guideline discussed previously do not
+accurately match real-world results, due to the non-ideal characteristics of typical bulk capacitors.
+3.1 Example Measurements
+Using a DRV8718-Q1 EVM, we can measure examples of the effect of bulk capacitance. We used a 50% duty
+cycle PWM signal with a 12V supply, and a load of 3 Ohms in series with a 470uH inductor to simulate a typical
+DC motor circuit. The L/R time constant is 157 microseconds, about three times the PWM period.
+Figure 3-1 shows the case where the bulk capacitance is 270uF. Using the estimate for ideal capacitors, we can
+expect about 80mV of variation in PVDD due to the capacitor charging and discharging during PWM. Neglecting
+the quick shift during each transition, the voltage ramp does have an amplitude of about 80mV, as indicated by
+the dashed cursors.
+However, the total variation in PVDD in Figure 3-1 is about160 mV, significantly more than predicted by the ideal
+capacitor estimate. There is a sharp shift in the voltage at the beginning of each transition, which is due to the
+non-ideal properties of the bulk capacitors. The equivalent series resistance (ESR) of electrolytic capacitors can
+account for this quick voltage shift.
+
+
+
+
+             Figure 3-1. PVDD Variation With 270uF Bulk Capacitance, Measured Results During PWM
+
+The variation on PVDD consists of mainly two components, the voltage due to the charging and discharging of
+the bulk capacitance, and the voltage across the non-ideal equivalent series resistance (ESR) of the capacitors.
+The equivalent series resistance (ESR) of real capacitors is one measure of how non-ideal their characteristics
+are. Low ESR capacitors are typically more expensive, but can provide benefits in terms of reduced voltage
+ripple. This is a common topic in power supply design, for example, see the Output Ripple Voltage for Buck
+Switching Regulator, application note.
+With simulation, we can see what the ripple looks like with an ideal capacitor having zero ESR, and also model
+the real-world capacitor by adding a resistance in series to represent the ESR.
+First let us look at how the current flows in the capacitor, and thus how the voltage varies across the ESR we
+model as part of the capacitor. During the 'on' part of the PWM cycle, the capacitor acts as a source of motor
+current, so the voltage drop across the ESR subtracts from the internal ideal voltage stored in the capacitor.
+Thus the voltage across the capacitor, including the ESR, is lower than the internally stored voltage. During the
+off' part of the PWM cycle, the capacitor acts as a current sink, charging up the internal voltage. During this
+
+
+
+
+SLVAFT0 – JULY 2024                                                             Bulk Capacitor Sizing for DC Motor Drive Applications   7
+Submit Document Feedback
+                                       Copyright © 2024 Texas Instruments Incorporated
+Real-World Results                                                                                                  www.ti.com
+
+
+charging, the voltage across the capacitor, including the ESR is higher than the internally stored voltage. The
+motor and capacitor currents are shown in Figure 3-2.
+
+
+
+
+                     Figure 3-2. Motor Current (Red) and Capacitor Current (Green) During PWM
+
+In Figure 3-3 a TINA simulation shows the voltage variation due to PWM of the MOSFET T1, with a bulk
+capacitance of 270uF and zero ESR, modeling an ideal capacitor. The voltage variation on PVDD is about
+100mV. Figure 3-3 simulation largely agrees with the ideal capacitance equations.
+
+
+
+
+                                              Figure 3-3. TINA Simulation with Zero ESR
+
+When 50mΩ of ESR is modeled in Figure 3-4, the voltage variation increases to about 200mV, and the shape of
+the voltage ripple looks more like the real-world measured case.
+
+
+
+
+8     Bulk Capacitor Sizing for DC Motor Drive Applications                                                SLVAFT0 – JULY 2024
+                                                                                                       Submit Document Feedback
+                                                     Copyright © 2024 Texas Instruments Incorporated
+www.ti.com                                                                                                             Real-World Results
+
+
+
+
+                                Figure 3-4. TINA Simulation With 50mΩ ESR
+
+Note how adding ESR makes the waveform look more like the actual results.
+Another real-world case is shown in Figure 3-5 where the bulk capacitance has been increased to 600uF by
+adding a 330uF capacitor in parallel with the 270uF of the previous case. The ideal capacitor estimate given
+previously can predict a voltage variation of about 36mV. The measured value is about 57mV; so while the
+voltage variation has been reduced by adding more bulk capacitance, it has not been reduced as much as
+predicted by the ideal estimate.
+
+
+
+
+                           Figure 3-5. PVDD Variation With 600uF Bulk Capacitance
+
+Figure 3-6 shows one more example, with the bulk capacitance reduced to 120uF. Now the voltage ripple
+increases to almost 500mV, and the shape is dominated by the charging and discharging of the capacitance,
+and the effect of the ESR is less evident.
+
+
+
+
+SLVAFT0 – JULY 2024                                                             Bulk Capacitor Sizing for DC Motor Drive Applications   9
+Submit Document Feedback
+                                       Copyright © 2024 Texas Instruments Incorporated
+Real-World Results                                                                                                  www.ti.com
+
+
+
+
+                                   Figure 3-6. PVDD Variation With 120uF Bulk Capacitance
+
+3.2 Revised Practical General Guidelines
+Based on these real-world observations, we modify the ideal general guideline given previously to account for
+the non-ideal characteristics of the capacitor:
+
+          CBULK > k ×           ∆ IMOTOR × TPWM / ∆ VSUPPLY                                                           (6)
+
+Where:
+CBULK is the bulk capacitance
+k is a scale factor to account for the ESR for typical capacitors in this type of application; based on the lab
+measurements above with DRV8718 EVM, k of about 3 is practical for these cases.
+ΔIMOTOR is the expected variation in motor current, imax – imin
+TPWM is the PWM period which is the reciprocal of the PWM frequency
+ΔVSUPPLY is the allowable variation in the motor supply voltage
+Figure 3-7 plots several data points and applies this general guideline, showing relatively good agreement.
+
+
+
+
+10    Bulk Capacitor Sizing for DC Motor Drive Applications                                                SLVAFT0 – JULY 2024
+                                                                                                       Submit Document Feedback
+                                                     Copyright © 2024 Texas Instruments Incorporated
+www.ti.com                                                                                                             Real-World Results
+
+
+
+
+     Figure 3-7. Measured Results and 3x General Guideline, Accounting for Real-World Non-Zero ESR
+                                    Values of Electrolytic Capacitors
+
+3.3 Other Considerations
+The discussion has been simplified to allow rapid estimates of bulk capacitance. Several other factors affect the
+system performance and can be taken into account when selecting bulk capacitors for a motor drive design.
+These include:
+Frequency response – Capacitor frequency response varies between types of capacitors and between
+capacitors with different values. Often, the recommendation is to provide more than one value of capacitor
+on the motor power supply. The larger value capacitors typically provide the best low-frequency response, while
+smaller value capacitors provide better high-frequency response.
+Capacitor type – There is a wide variation of capacitor types; in general for the large values we discuss here,
+electrolytic capacitors are normally preferred. But even within electrolytic capacitors there are some chemistry
+enhancements which improve the durability and other characteristics of the component, including variation in
+ESR. For smaller values, ceramic capacitors can be preferred. Capacitor vendors have information on selection
+criteria for the vendors products.
+PWM duty cycle – If the motor operates continuously without pulse-width modulation, many of the concerns
+with supply variation are less relevant. Conversely, if the duty cycle is about 50%, this is assumed to be the
+worst case conditions. Other cases, either very low duty cycle (for example, 10% on time) or very high duty cycle
+(for example, 90% on time) do not require the same level of bulk capacitance we have discussed.
+
+
+
+
+SLVAFT0 – JULY 2024                                                             Bulk Capacitor Sizing for DC Motor Drive Applications   11
+Submit Document Feedback
+                                       Copyright © 2024 Texas Instruments Incorporated
+Summary                                                                                                             www.ti.com
+
+
+4 Summary
+In a real DC motor drive system, bulk capacitors are a common necessity. Although final system performance
+requires detailed analysis and practical testing, we can use rules-of-thumb and simple simulations to estimate
+the bulk capacitor sizing as a starting point.
+5 References
+•    Texas Instruments, Input and Output Capacitor Selection, application note.
+•    Texas Instruments, Output Ripple Voltage for Buck Switching Regulator, application note.
+•    Texas Instruments, Voltage Margin and Bulk Capacitance, training video.
+•    Electronics Stack Exchange, Real World Brushed DC Motor Bulk Capacitance Calculations.
+
+
+
+
+12    Bulk Capacitor Sizing for DC Motor Drive Applications                                                SLVAFT0 – JULY 2024
+                                                                                                       Submit Document Feedback
+                                                     Copyright © 2024 Texas Instruments Incorporated
+                                       IMPORTANT NOTICE AND DISCLAIMER
+TI PROVIDES TECHNICAL AND RELIABILITY DATA (INCLUDING DATA SHEETS), DESIGN RESOURCES (INCLUDING REFERENCE
+DESIGNS), APPLICATION OR OTHER DESIGN ADVICE, WEB TOOLS, SAFETY INFORMATION, AND OTHER RESOURCES “AS IS”
+AND WITH ALL FAULTS, AND DISCLAIMS ALL WARRANTIES, EXPRESS AND IMPLIED, INCLUDING WITHOUT LIMITATION ANY
+IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE OR NON-INFRINGEMENT OF THIRD
+PARTY INTELLECTUAL PROPERTY RIGHTS.
+These resources are intended for skilled developers designing with TI products. You are solely responsible for (1) selecting the appropriate
+TI products for your application, (2) designing, validating and testing your application, and (3) ensuring your application meets applicable
+standards, and any other safety, security, regulatory or other requirements.
+These resources are subject to change without notice. TI grants you permission to use these resources only for development of an
+application that uses the TI products described in the resource. Other reproduction and display of these resources is prohibited. No license
+is granted to any other TI intellectual property right or to any third party intellectual property right. TI disclaims responsibility for, and you
+will fully indemnify TI and its representatives against, any claims, damages, costs, losses, and liabilities arising out of your use of these
+resources.
+TI’s products are provided subject to TI’s Terms of Sale or other applicable terms available either on ti.com or provided in conjunction with
+such TI products. TI’s provision of these resources does not expand or otherwise alter TI’s applicable warranties or warranty disclaimers for
+TI products.
+TI objects to and rejects any additional or different terms you may have proposed. IMPORTANT NOTICE
+
+                             Mailing Address: Texas Instruments, Post Office Box 655303, Dallas, Texas 75265
+                                            Copyright © 2024, Texas Instruments Incorporated
+

@@ -1,0 +1,320 @@
+Type 6724 - 2/2 or 3/2-way Whisper Valve with media separation
+Share via email
+Some fields are missing
+send eMail
+Do you have questions?
+Live Chat
+___________________
+Consulting
++49 7940 10 0
+E-Mail
+Whitepaper ValveInsight
+Find out more about valve diagnostics
+Download
+Industries & Solutions
+Industries
+Industries
+Solutions
+Applications
+Individual solutions
+Customer references
+Back
+Overview Industries & Solutions
+Overview Industries & Solutions
+Products
+Products
+Solenoid Valves
+Process and Control Valves
+Electromotive Valves
+Pneumatics and Process Interfaces
+Sensors, Transmitters and Controllers
+Microfluidics Products and Pumps
+Mass Flow Controllers
+Proportional Valves
+Industrial Communication
+Additional Products
+Digital Services
+Industrial Communication
+Configurator
+resistApp
+Back
+Overview Products
+Overview Products
+Overview Products
+Service & Support
+Services
+Service, Maintenance and Commissioning
+My Bürkert Customer Portal
+Spare part sets
+Knowledge Center
+Downloads
+Approval and Certification
+Media Center
+Glossary
+FAQ
+Back
+Overview Service & Support
+Overview Service & Support
+Overview Service & Support
+Company & Career
+What’s New
+News
+Press
+Trade Fairs & Events
+Company
+About Bürkert
+Purchasing at Bürkert
+Compliance
+Sustainability
+Diversity
+Career
+Bürkert – an attractive employer
+Job openings
+Back
+Overview Company & Career
+Overview Company & Career
+Overview Company & Career
+Home
+Products
+Solenoid Valves
+General Purpose 3/2 Solenoids
+Type 6724
+Type 6724
+- 2/2 or 3/2-way Whisper Valve with media separation
+The depiction of the products may differ from the actual specific design.
+Please consider the
+technical attributes and Data Sheets.
+<p>The depiction of the products may differ from the actual specific design.</p><p>Please consider the <strong>technical attributes and Data Sheets.</strong></p>
+Array
+Images
+Show articles
+Type Description
+Many fluidic processes moving closer to where they are actually required. In medical technology, this means, for example, that treatments such as dialysis can be carried out in a comfortable, home-like environment for the patient. In analytical instruments, washing units are mounted directly on the pipetting arm, and in inkjet printers, valves are located directly on the print head. These applications place high requirements on the components used: solenoid valves must operate almost silently and be compact and lightweight so that they can be integrated into mobile devices. At the same time, a long service life and excellent switching performance are crucial. The Whisper Valve Type 6724 meets all these criteria. Thanks to its modular design and range of material options, it can be used universally in a wide variety of applications. Thanks to the ValveInsight functionality, the valve offers intelligent monitoring and diagnostic capabilities. Thanks to ValveInsight algorithms, which analyse valve data in real time, valves are evolving into smart components that detect anomalies at an early stage and significantly improve process reliability.
+Ultra-compact 8.9 mm design combined with outstanding chemical resistance
+Optional diagnostic function via ValveInsight
+Nominal diameter of 0.8 mm (vacuum up to 5 bar) and 1.2 mm (vacuum up to 3 bar)
+Very fast, almost silent switching with < 20 dB (A) and very low power consumption
+High back-pressure tightness, excellent flushability and 100% duty cycle
+For selecting the correct product please refer to the technical data, images and notes for proper use according to the data sheet.
+Can be combined with
+Type 2503
+Cable plug for whisper valve Types 6712 and 6724
+Type 8763
+Pressure controller for precise time-pressure...
+Type 8084
+Differential pressure flow sensor for liquids
+Type TVU003
+Fittings for UNF connections with PTFE hose...
+Show full table
+Collapse table
+Applications & Tools
+Downloads
+All
+All languages
+Data Sheets
+Description
+Filesize
+Language / Country
+Data sheet Type 6724 | 2/2- or 3/2-way Whisper Valve with media separation
+1.3 MB
+EN / EU
+数据表 6724 型 | 二位二通或二位三通静音阀 (介质隔离式)
+1.8 MB
+ZH / CN
+Datenblatt Typ 6724 | 2/2- oder 3/2-Wege Whisper Valve mit Medientrennung
+1.3 MB
+DE / DE
+User Manuals
+Description
+Filesize
+Language / Country
+Operating Instructions Type 6724 | 2/2 and 3/2 way rocker sosolenoid valve separating diap
+1.2 MB
+EN / EU
+取扱説明書 Type 6724 | 分離ダイヤフラム付き 2/2 および 3/2ウェイロッカーソレノイドバルブ
+1.3 MB
+JA / JP
+Bedienungsanleitung Typ 6724 | 2/2- und 3/2-Wege-Wippenmagnetventil mit Trennmembran
+1.2 MB
+DE / DE
+Manuel d‘utilisation Type 6724 | Electrovanne à bascule 2/2 et 3/2 voies membrane de sépa
+1.2 MB
+FR / FR
+Declaration of Conformity
+Description
+Filesize
+Language / Country
+EU-DoC|EU Declaration
+25.4 kB
+EN,FR,DE
+MDec|Food 6724 mit FDA
+458.4 kB
+ML
+MDec|Food Declaration 6724
+139.8 kB
+EN,DE
+Flyers and Catalogues
+Description
+Filesize
+Language / Country
+For safe and reliable analysis in In-Vitro Diagnostics
+818.2 kB
+EN / EU
+Solenoid valve
+Article No. 355744
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 2/2 - P - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 40,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 355745
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 2/2 - P - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 40,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 355749
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 2/2 - P - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 0,00 °C - 40,00 °C | PPS (Polyphenylene sulphide) | FKM (Fluor rubber)
+Compare
+Solenoid valve
+Article No. 355750
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 2/2 - P - inlet port 1 (P/NC) | direct-acting | 12,00 V - 12,00 V | 15,00 °C - 40,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 355754
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 3/2 - S - for universal use | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 40,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 355755
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 3/2 - S - for universal use | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 40,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 355756
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 3/2 - S - for universal use | direct-acting | 24,00 V - 24,00 V | 0,00 °C - 40,00 °C | PPS (Polyphenylene sulphide) | FKM (Fluor rubber)
+Compare
+Solenoid valve
+Article No. 20005293
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 3/2 - S - for universal use | direct-acting | 12,00 V - 12,00 V | 15,00 °C - 40,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 20027694
+Type 6724
+1,20 mm | -1,00 bar - 3,00 bar | 3/2 - T - for universal use - port connections 1 (P/NC), 2 (A/in/out) and 3 (R /NO) depending on application | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 50,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 20027698
+Type 6724
+1,20 mm | -1,00 bar - 3,00 bar | 2/2 - A - normally closed - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 50,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 20030343
+Type 6724
+0,80 mm | -1,00 bar - 5,00 bar | 3/2 - T - for universal use - port connections 1 (P/NC), 2 (A/in/out) and 3 (R /NO) depending on application | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 50,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 20034162
+Type 6724
+0,80 mm | -1,00 bar - 5,00 bar | 2/2 - A - normally closed - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 50,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 20035617
+Type 6724
+0,80 mm | -1,00 bar - 5,00 bar | 3/2 - T - for universal use - port connections 1 (P/NC), 2 (A/in/out) and 3 (R /NO) depending on application | direct-acting | 24,00 V - 24,00 V | 0,00 °C - 50,00 °C | PPS (Polyphenylene sulphide) | EPDM (Ethylene-propylene-diene rubber)
+Compare
+Solenoid valve
+Article No. 20035624
+Type 6724
+1,20 mm | -1,00 bar - 3,00 bar | 3/2 - T - for universal use - port connections 1 (P/NC), 2 (A/in/out) and 3 (R /NO) depending on application | direct-acting | 24,00 V - 24,00 V | 0,00 °C - 50,00 °C | PPS (Polyphenylene sulphide) | EPDM (Ethylene-propylene-diene rubber)
+Compare
+Solenoid valve
+Article No. 20037617
+Type 6724
+0,80 mm | -1,00 bar - 5,00 bar | 2/2 - A - normally closed - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 0,00 °C - 50,00 °C | PPS (Polyphenylene sulphide) | EPDM (Ethylene-propylene-diene rubber)
+Compare
+Solenoid valve
+Article No. 20037618
+Type 6724
+1,20 mm | -1,00 bar - 3,00 bar | 2/2 - A - normally closed - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 0,00 °C - 50,00 °C | PPS (Polyphenylene sulphide) | EPDM (Ethylene-propylene-diene rubber)
+Compare
+Solenoid valve
+Article No. 20048280
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 2/2 - A - normally closed - inlet port 1 (P/NC) | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 50,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 20054962
+Type 6724
+1,20 mm | -1,00 bar - 2,00 bar | 3/2 - T - for universal use - port connections 1 (P/NC), 2 (A/in/out) and 3 (R /NO) depending on application | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 50,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Solenoid valve
+Article No. 20071045
+Type 6724
+1,20 mm | -1,00 bar - 3,00 bar | 3/2 - T - for universal use - port connections 1 (P/NC), 2 (A/in/out) and 3 (R /NO) depending on application | direct-acting | 24,00 V - 24,00 V | 15,00 °C - 50,00 °C | PEEK (Polyetheretherketone) | FFKM (Perfluoroelastomer rubber)
+Compare
+Pioneers of Flow.
+Headquarters
+Christian Bürkert GmbH & Co. KG
+Christian-Bürkert-Straße 13 - 17
+74653 Ingelfingen
+Phone:
++49 7940 10 0
+Fax:
++49 7940 10 91204
+Email:
+info@burkert.com
+Website:
+www.buerkert.de
+Get directions
+Get directions
+Products
+Configure valve islands and pneumatic valves
+Valves for fluids and gases
+Process and control valves
+Flow and fill sensors
+Solenoid Control Valves
+About Bürkert
+News
+Press
+Jobs & Career
+Compliance
+Information Security
+Support
+Contact
+Bürkert locations worldwide
+Customer portal
+FAQ
+My Bürkert
+Check order status
+Request returns and services
+My account
+Products
+Configure valve islands and pneumatic valves
+Valves for fluids and gases
+Process and control valves
+Flow and fill sensors
+Solenoid Control Valves
+About Bürkert
+News
+Press
+Jobs & Career
+Compliance
+Information Security
+Support
+Contact
+Bürkert locations worldwide
+Customer portal
+FAQ
+My Bürkert
+Check order status
+Request returns and services
+My account
+Find other locations and sales partners
+Find other locations and sales partners
+Site Info
+Terms and Conditions
+Data Privacy
+Privacy Settings

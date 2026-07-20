@@ -1,0 +1,101 @@
+                                                                             seabird.com | sales@seabird.com | +1 425-643-9866
+
+
+
+
+SBE 5T(titanium) & SBE 5P(plastic)
+SUBMERSIBLE PUMP
+
+
+Overview
+The SBE 5T / 5P pump is a modular component on several
+Sea-Bird CTD packages. The 5T / 5P is standard equipment on
+the SBE 9plus CTD and 25 / 25plus Sealogger CTD, and optional
+equipment on the SBE 16plus V2, 16plus-IM V2, and 19plus V2
+SeaCAT CT(D) Recorders. The highly reliable pump flushes water
+through the conductivity cell at a constant rate, independent of
+the CTD’s motion, improving dynamic performance. Operational
+characteristics of the 5T and 5P are identical, but the housings
+and depth ratings differ (5T titanium housing to 10,500 m;
+5P plastic housing to 600 m).
+The pump may also be suitable for custom applications, where
+pressure heads are less than 300 cm of water and flow rates are
+less than 100 mL/sec.                                                               Features
+                                                                                    • Centrifugal pump head
+Options                                                                             • Long-life, brushless, DC, ball-bearing motor
+• Voltage/power and RPM selections – Pump is configured by                          • Pump impeller and electric drive motor
+  selecting voltage range, and one of several motor speed options                     coupled magnetically through housing,
+  (1300, 2000, 3000, and 4500 rpm speeds have been established to                     providing high reliability by eliminating
+  meet various flow requirements; other speeds can be set by adjusting                moving seals
+  a potentiometer). Typical settings include:
+  – #3 winding, 10-18 VDC, 2000 rpm – typical for SBE 16plus V2,                    • Pumping rates and motor current for various
+		 16plus-IM V2, or 19plus V2 with pumped auxiliary sensor(s),                        applications
+		 and for SBE 25plus                                                               • Five-year limited warranty
+  – #3 winding, 10-18 VDC, 3000 rpm – typical for SBE 9plus
+  – #3 winding, 6-16 VDC, 2000 rpm – typical for SBE 25
+• Plastic (600 m) or titanium (10,500 m) housing
+• XSG or wet-pluggable MCBH connector
+
+Operation
+Motor speed and pumping rate remain nearly constant over the entire
+input voltage range (< 1% change in speed for 1-volt supply voltage
+change). Unrestricted flow rate with no head is 100 mL/sec* at 2000
+rpm. Flow changes are nearly linear with speed changes. With unlimited
+supply current, turn-on surge is 1.8 A* maximum, dropping to steady
+state in 0.25 sec*. If power supply current is limited to 200 mA*, the
+motor comes up to speed in 0.30 sec*. A series diode is installed in the
+input power line to prevent damage if wires are accidentally reversed.
+                                                              *Approximate
+Field Specifications
+The specifications below represent the expected performance of the instrument
+when deployed in the field. Under controlled circumstances in a lab, we would expect the
+                                                                                                                  SBE 5T & SBE 5P
+                                                                                                   SUBMERSIBLE PUMP
+instrument to outperform these specifications.
+We have chosen to display field specifications to give our users a true measure of how Sea-Bird
+Scientific instruments perform in harsh environments and applications. It is critical to keep this
+in mind when comparing specifications with instruments from other manufacturers.
+
+ Mechanical
+ SBE 5P                                      Plastic housing; 600 m; Weight in air 0.5 kg, in water 0.1 kg
+ SBE 5T                                      Titanium housing; 10,500 m; Weight in air 0.7 kg, in water 0.3 kg
+ Performance
+ #3 winding; 1300 - 3000 RPM           ± 0.0003 S/m (0.003 mS/cm)
+ #3 winding; 4500 RPM                  Input voltage range 12 - 18 VDC
+ #3 or #5 winding; 1300, 2000 RPM only Input voltage range 6 - 16 VDC
+
+ Voltage vs. Current Draw                                       Pump Speed
+#5 Winding, Low Voltage                                        Pump Speed Setting vs. Flow Rate
+                                                               (typical for SBE 9plus, 25, and 25plus)
+
+
+
+
+#3 Winding, Standard Voltage, 1300 & 2000 RPM
+(2000 RPM version typical for SBE 16plus V2, 1
+6plus-IM V2, or 19plus V2 with pumped auxiliary sensors)
+
+
+
+
+#3 Winding, Standard Voltage, 3000 RPM
+(typical for SBE 9plus)                                        Pump Speed Setting vs. Pressure
+
+
+
+
+#3 Winding, Standard Voltage, 4500 RPM
+Flow Through Cell Only:
+   Voltage (V)    Current Draw (mA)
+        12               240
+                                                                                                                                            SBE 5T & 5P.DS.53.May25
+
+
+
+
+        15               585
+
+
+                                         seabird.com | sales@seabird.com | +1 425-643-9866
+                                         Specifications subject to change without notice. ©2025 Sea-Bird Scientitic. All rights reserved.
+

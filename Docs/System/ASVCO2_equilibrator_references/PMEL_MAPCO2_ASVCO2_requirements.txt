@@ -1,0 +1,29 @@
+                     Requirements Overview
+Measurement
+    Air-sea equilibration method
+    In situ calibration of nondispersive
+    infrared (NDIR) CO2 gas analyzer
+    prior to each measurement
+    Accompanying quality
+    measurements of relative humidity,
+    SST, SSS
+    Additional details here
+
+Calibration
+    Laboratory testing of accuracy over a range of WMO-
+    certified CO2 reference gases
+    Laboratory stability check in a tank against a
+    calibrated CO2 system that meets Surface Ocean CO2
+    Atlas (SOCAT) quality flag A
+    Calibrated in situ with a 2-point calibration: zero and
+    high WMO-certified CO2 reference gas
+    Proven total estimated uncertainty of pCO2 of
+    ≤ 2 µatm
+
+
+Data management and quality control
+   Post-deployment calibration of raw NDIR detector counts
+   based on calibration coefficients
+   Data are quality-controlled, assigned WOCE flags, and
+   submitted to SOCAT
+

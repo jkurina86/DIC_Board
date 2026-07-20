@@ -1,0 +1,881 @@
+                                                                                       AN4978
+                                                                              Application note
+   Design recommendations for STM32L4xxxx with external SMPS,
+             for ultra low power applications with high performance
+
+               Introduction
+               STM32L4xxxx microcontrollers use an innovative architecture with high flexibility and an
+               advanced set of peripherals to attain best-in-class, ultra low power figures. Both the
+               STM32L4 and STM32L4+ Series outperform the competition in the ultra-low-power world,
+               providing by far the best energy efficiency.
+               Microcontrollers of the STM32L4 Series operate at up to 80 MHz, achieving 100 DMIPS
+               performance at 80 MHz, while those of the STM32L4+ Series operate at up to 120 MHz,
+               achieving 150 DMIPS performance at 120 MHz. All of them exploit an integrated
+               Chrom_ART Accelerator™, while maintaining the smallest possible dynamic power
+               consumption. These products feature flexible power-mode management to reduce the
+               overall application power consumption.
+               To further maximize the battery lifetime, the external SMPS (switched-mode power supply)
+               version of STM32L4xxxx ultra low power MCUs extends the power efficiency in Run modes,
+               by generating a VCORE logic supply from an external DC/DC converter, rather than from an
+               integrated LDO. These devices, marked with a P suffix, use a different pinout, in which two
+               GPIO pins are replaced by two VDD12 supply pins that can be connected to the external
+               SMPS (the number of available GPIOs is therefore reduced by 2). The power consumption
+               gain in Run modes can be almost 60%.
+               This document applies to the products listed in Table 1 (see details in the ordering
+               information scheme of the corresponding datasheet [3]).
+               For applications having external SMPS as optional power saving feature, the VDD12 supply
+               pins can be left unconnected on boards with no external SMPS mounted. In this case, the
+               application can run from the embedded LDO, and the recommendations about power saving
+               described in this document are not applicable.
+
+                                                   Table 1. Applicable products(1)
+                        Type                                            Part numbers
+
+                                         STM32L412RB, STM32L422RB
+                                         STM32L433RC
+                                         STM32L452RE
+                   STM32L4xxxx
+                                         STM32L476JG, STM32L476ZG
+                                         STM32L496AG, STM32L496VG, STM32L496ZG
+                                         STM32L4R5ZI, STM32L4R9ZI
+               1. Only applicable to devices marked with a ‘P’ suffix
+
+
+
+
+January 2023                                           AN4978 Rev 6                                        1/22
+                                                                                                      www.st.com   1
+Contents                                                                                                                  AN4978
+
+
+Contents
+
+1          Expected power gain . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+2          Hardware description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+           2.1      Hardware overview . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+           2.2      VDD12 power supply rules . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+                    2.2.1       STM32L4 Series . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+                    2.2.2       STM32L4+ Series . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+           2.3      How to select the right external components . . . . . . . . . . . . . . . . . . . . . . . 9
+           2.4      Selection of the SMPS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+           2.5      Selection of the switch and control schematic . . . . . . . . . . . . . . . . . . . . . 10
+
+3          SMPS management provided in the HAL and BSP . . . . . . . . . . . . . . . 12
+           3.1      Switching the SMPS ON/OFF . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                    3.1.1       SMPS switching (OFF to ON) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+                    3.1.2       SMPS switching (ON to OFF) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+           3.2      Power state transitions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+4          Computing current consumption . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+5          Optimizing IoT and very low power applications . . . . . . . . . . . . . . . . . 19
+
+6          Reference documents . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+
+7          Revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+
+
+
+2/2                                                 AN4978 Rev 6
+AN4978                                                                                                                       List of tables
+
+
+List of tables
+
+Table 1.   Applicable products . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+Table 2.   Typical gain for Nucleo-144 SMPS board, VDD12 = 1.1 V and VDD = 3.3 V
+           in Run mode . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+Table 3.   Typical gain for Nucleo-144 SMPS board, VDD12 = 1.05 V and VDD = 3.3 V . . . . . . . . . . . . 5
+Table 4.   SMPS pin definitions. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+Table 5.   Reference documents. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+Table 6.   Document revision history . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+
+
+
+
+                                                           AN4978 Rev 6                                                                      3/3
+                                                                                                                                                     3
+List of figures                                                                                                               AN4978
+
+
+List of figures
+
+Figure 1.    Internal main regulator overview. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+Figure 2.    Typical SMPS implementation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+Figure 3.    Asynchronous reset typical waveform . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+Figure 4.    SMPS OFF to ON switching control pin sequence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+Figure 5.    SMPS ON to OFF switching control pin sequence . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+Figure 6.    Possible transitions according to SMPS voltage, STM32L4 Series . . . . . . . . . . . . . . . . . . 15
+Figure 7.    Possible transitions according to SMPS voltage, STM32L4+ Series . . . . . . . . . . . . . . . . . 16
+Figure 8.    Power consumption without SMPS. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+Figure 9.    Power consumption for SMPS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+Figure 10.   CoreMark™ power consumption at 80 MHz system frequency . . . . . . . . . . . . . . . . . . . . . 19
+
+
+
+
+4/4                                                      AN4978 Rev 6
+AN4978                                                                                        Expected power gain
+
+
+1        Expected power gain
+
+         Microcontrollers of the STM32L4 and STM32L4+ Series are based on the Arm®(a)
+         Cortex®-M4 with FPU core.
+         By using an external switched-mode power supply (SMPS) instead of an integrated low
+         dropout regulator (LDO), power consumption is optimized by a factor equal to the ratio
+         between the internal VCORE supply voltage and the VDD voltage. The improvement due to
+         the SMPS depends only upon the SMPS efficiency and the VDD voltage.
+         Table 2 represents the typical gain obtained with an STM32L496 device on a Nucleo-144
+         SMPS board [2], where VDD12 = 1.1 V and VDD = 3.3 V in Run mode.
+
+             Table 2. Typical gain for Nucleo-144 SMPS board, VDD12 = 1.1 V and VDD = 3.3 V
+                                               in Run mode
+                                                                                                IDD
+               Main regulator           Frequency
+                                                              Code          SMPS OFF             SMPS ON
+               voltage range              (MHz)
+                                                                                                                   Gain
+                                                                           mA     µA/MHz       mA      µA/MHz
+
+                                                       While               2.23       93       1.01          42    51%
+         Range 2                             24        CoreMark™           2.69      112       1.19          50    52%
+                                                       Reduced code        2.54      106       1.09          45    51%
+                                                       While               8.88      111       3.33          42    63%
+         Range 1 if SMPS is OFF
+         or                                  80        CoreMark™           10.6      132       3.88          48    63%
+         Range 2 if SMPS is ON
+                                                       Reduce Code         9.66      121       3.55          44    63%
+
+
+            Table 3. Typical gain for Nucleo-144 SMPS board, VDD12 = 1.05 V and VDD = 3.3 V
+                                                                                               IDd
+              Main regulator           Frequency
+                                                           Code            SMPS OFF             SMPS ON
+              voltage range              (MHz)
+                                                                                                                  Gain(1)
+                                                                          mA      µA/MHz      mA      µA/MHz
+
+                                                      While               2.23       93       0.96       40        57%
+         Range 2                            24        CoreMark™           2.69      112       1.08       45        60%
+                                                      Reduce Code         2.54      102       1.02       42        60%
+         1. For STM32L422 devices reduction is about 5% higher in Range 2 because of lower required VDD12
+            (1.00 instead of 1.05 V).
+
+
+         As can be seen from the tables above, using the SMPS considerably reduces the energy
+         consumption of the microcontroller, up to 63% on this Nucleo board.
+
+
+
+
+         a. Arm is a registered trademark of Arm Limited (or its subsidiaries) in the US and/or elsewhere.
+
+
+
+                                                  AN4978 Rev 6                                                       5/21
+                                                                                                                            21
+Hardware description                                                                          AN4978
+
+
+2          Hardware description
+
+2.1        Hardware overview
+           The STM32L4xxxx ultra low power microcontrollers embed two linear regulators to supply
+           its digital part.
+           Refer to AN4621 [5] for further details of the various power states of the STM32L4 Series.
+           When the STM32L4xxxx is in Run, Sleep or Stop 0 mode, it uses its internal main regulator.
+           The STM32L4 SMPS package allows an external voltage source to be connected to the
+           VDD12 pins. In this case, if the external power supply connected to the VDD12 pin exceeds
+           the internally generated voltage (VDD12I) by 50 mV or more, the main regulator (MR) is
+           automatically disabled and the digital current is provided by the external source.
+
+                                  Figure 1. Internal main regulator overview
+
+
+                                            VDD
+
+
+
+
+                                          VDD12
+
+
+
+                             VSMPS
+
+
+                                            GND           Ref
+
+
+
+
+                                                                     VDD12I
+
+
+
+                                                                                              MSv45011V1
+
+
+
+
+6/21                                       AN4978 Rev 6
+AN4978                                                                          Hardware description
+
+
+2.2      VDD12 power supply rules
+
+2.2.1    STM32L4 Series
+         As the VDD12 voltage directly supplies the internal logic, it must comply with the following
+         rules:
+         1.   VDD12 must never exceed an absolute maximum voltage of 1.32 V under any condition
+              (including ripple and spikes of the SMPS), otherwise there is a risk of reliability and
+              hardware degradation.
+         2.   If the application accommodates SYSCLK frequencies below 26 MHz only, the VDD12
+              voltage must be higher than 1.05 V. In this case the main regulator Range 2 flash
+              latency and peripheral limitation (USB, RNG) parameters must be applied.
+         3.   If the application requires the full SYSCLK frequency range (up to 80 MHz), the VDD12
+              voltage must be higher than 1.08 V. In this case, the main regulator Range 1 flash
+              latency parameters must be applied.
+         4.   When powering up the MCU, the SMPS must be disconnected. The user must ensure
+              that the switch is turned off until the SMPS output voltage has stabilized.
+         5.   When any reset arrives, the following rules apply:
+              a)   If VDD12 is lower than 1.25 V, the external SMPS must be disconnected from the
+                   VDD12 pin during the reset signal transition time, within a maximum delay time of
+                   1 µs.
+              b)   If VDD12 is higher than 1.25 V, it is not necessary to disconnect the SMPS.
+         6.   SMPS transitions of VDD12 from connected to disconnected are only allowed when the
+              SYSCLK frequency is < 26 MHz, to avoid a large voltage drop when the main LDO
+              restarts.
+         7.   The SMPS can only be connected during Run, Sleep, or Stop 0 modes, and then only if
+              VDD12 is at least 50 mV higher than the main regulator output voltage. In other modes,
+              the SMPS must be disconnected.
+         8.   VDD12 must be present after VDD and internal LDO are ready.
+
+         Improvements supporting external SMPS integrated in
+         STM32L41xxx/STM32L42xxx devices
+         For STM32L41xxx and STM32L42xxx devices, the new control bit EXT_SMPS_ON has
+         been introduced for better efficiency in Range 2 with SMPS. When this bit is set, output of
+         internal LDO is decreased from 1.00 to 0.95 V, making it possible to support external VDD12
+         down to 1.00 V. Therefore, rule 2 requires a VDD12 voltage higher than 1.00 V when this bit
+         is set.
+         To prevent voltage drops on VDD12I, this bit must be set after SMPS switch is closed, and
+         must be cleared before SMPS switch is opened.
+         On those devices, a status bit EXT_SMPS_RDY informing about the state of regulator
+         transition from Range 1 to Range 2 is available. This bit shall be polled by SW.
+         The handling of those bits is implemented in the HAL and BSP packages.
+
+
+
+
+                                          AN4978 Rev 6                                             7/21
+                                                                                                          21
+Hardware description                                                                             AN4978
+
+
+2.2.2      STM32L4+ Series
+           As the VDD12 voltage directly supplies the internal logic, it must comply with the following
+           rules:
+           1.   VDD12 must never exceed an absolute maximum voltage of 1.32 V under any condition
+                (including ripple and spikes of the SMPS), otherwise there is a risk of reliability and
+                hardware degradation.
+           2.   If the application accommodates SYSCLK frequencies below 26 MHz only, the VDD12
+                voltage must be higher than 1.05 V (possibly 1.08 V), to support flash memory
+                write/erase operation. In this case the main regulator Range 2 flash memory latency
+                and peripheral limitation (USB, RNG) parameters must be applied.
+           3.   If the application requires the SYSCLK frequency range up to 80 MHz, the VDD12
+                voltage must be higher than 1.08 V. In this case, the main regulator Range 1 flash
+                memory latency parameters must be applied.
+           4.   If the application requires the SYSCLK frequency range up to 120 MHz, the VDD12
+                voltage must be higher than 1.14 V. In this case, the main regulator Range 1 flash
+                memory latency parameters must be applied.
+           5.   When powering up the MCU, the SMPS must be disconnected. The user must ensure
+                that the switch is turned off until the SMPS output voltage has stabilized.
+           6.   When any reset arrives, the following rules apply:
+                a)   If VDD12 is lower than 1.25 V, the external SMPS must be disconnected from the
+                     VDD12 pin during the reset signal transition time, within a maximum delay time of
+                     1 μs.
+                b)   If VDD12 is higher than 1.25 V, it is not necessary to disconnect the SMPS.
+           7.   SMPS transitions of VDD12 from connected to disconnected are allowed only when the
+                SYSCLK frequency is lower than 26 MHz, to avoid a large voltage drop when the main
+                LDO restarts.
+           8.   The SMPS can be connected only during Run, Sleep, or Stop 0 modes, and then only if
+                VDD12 is at least 50 mV higher than the main regulator output voltage. In other modes,
+                the SMPS must be disconnected.
+           9.   VDD12 must be present after VDD and internal LDO are ready.
+
+
+
+
+8/21                                        AN4978 Rev 6
+AN4978                                                                        Hardware description
+
+
+2.3      How to select the right external components
+         In a regular implementation the user must consider two elements, the SMPS and the switch
+         (note that some SMPS devices integrate a switch). To select these two critical elements, the
+         user must define the maximum current (Imax) and the frequency required by the application.
+         The STM32CubeMX PCC tools allow computation of the current for a given CPU frequency
+         and peripheral configuration.
+
+                           Figure 2. Typical SMPS implementation
+
+
+                                                                 VDD
+                                             L
+
+
+                                                         SW     VDD12
+
+
+                        SMPS
+
+                                              C
+
+                                                                 GND          Ref
+
+
+
+
+                                                                                               VDD12I
+
+                                                              SMPS_SW
+                                                                                 GPIO
+
+                                                         R
+                                                                           VDD
+
+                                                                              Pull Up
+
+
+                                                              SMPS_PG
+                                                                                        GPIO
+
+
+
+
+                                                              SMPS_EN
+                                                                                 GPIO
+
+
+
+
+                                                              SMPS_Vx
+                                                                                 GPIO
+
+
+
+
+                                                                                                        MSv45012V1
+
+
+
+
+                                          AN4978 Rev 6                                                        9/21
+                                                                                                                     21
+Hardware description                                                                            AN4978
+
+
+2.4        Selection of the SMPS
+           The SMPS maximum voltage must never exceed 1.32 V for both the STM32L4 and the
+           STM32L4+ Series, whatever the SMPS ripple and transient (see rule 1 in Section 2.2.1, and
+           rule 1 in Section 2.2.2, respectively).
+           The SMPS minimal voltage must be selected (rules 2 and 3 in Section 2.2.1, rules 2 and 3 in
+           Section 2.2.2) taking into account:
+           •   Ron: the switch “on” resistance for a given output voltage and temperature
+           •   Imax: the maximum peak current of the application
+           •   Verror: the SMPS accuracy (generally few percent) plus the voltage variation with the
+               load (load transient), as well as the ripple due to the chosen external C and L of the
+               SMPS (see the SMPS provider’s application note).
+
+
+                          VSMPS > 1.05 V + Ron x IMAX + Verror (for SYSCLK ≤ 26 MHz)
+
+
+                          VSMPS > 1.08 V + Ron x IMAX + Verror (for SYSCLK ≤ 80 MHz)
+
+
+                         VSMPS > 1.14 V + Ron x IMAX + Verror (for SYSCLK ≤ 120 MHz)
+
+
+Note:      In the first formula 1.05 must be substituted with 1.00 for STM32L41xxx and STM32L42xxx
+           devices.
+           In some cases it may be advantageous to switch the SMPS ON and OFF during long
+           periods in low-power modes when it is not needed. However, some SMPS devices require
+           quite a long set-up time (a few ms) and have significant power consumption (a few µJ)
+           during restart due to, for example, recharging of the external output capacitance.
+
+
+2.5        Selection of the switch and control schematic
+           The main parameter to consider when choosing the switch is its Ron at the corresponding
+           VSMPS output voltage, as expressed in the previous set of equations.
+           It is the responsibility of the board designer to verify that the voltage on the VDD12 pins
+           never exceeds 1.32 V, and never goes below 1.05 V (or 1.08 V), even during transients
+           when the switch opens or closes. This implies that the PCB tracks between the switch and
+           the VDD12 pin are short enough to prevent significant ripples when changing impedance
+           (switching on/off or off/on). It is prudent to add a 1 nF decoupling capacitor on each VDD12
+           pin to attenuate ripple and transients due to switch gate capacitance (as is done on the
+           Nucleo-144 SMPS board [2] and Nucleo-64 SMPS boards [6]).
+Note:      It is not possible to increase such extra capacitances to more than a few nF, as this could
+           make the STM32L4/L4+ internal regulators unstable.
+           Another parameter is the 1 µs (maximum) switch-opening time to isolate VDD12 from the
+           SMPS when an asynchronous reset arrives (rule 5 in Section 2.2.1, rule 6 in Section 2.2.2).
+
+
+
+
+10/21                                       AN4978 Rev 6
+AN4978                                                                        Hardware description
+
+
+         This is the purpose of the resistor R in Figure 2:
+         •    It guarantees that at power-on reset, the control voltage of the switch configures the
+              switch to be open. Note that it is also important to check that the switch is open when
+              VDD rises. Refer also to the switch datasheet.
+         •    It guarantees, when ON, that the switch control signal is driven low, opening the switch
+              when an asynchronous reset occurs. This is due to the fact that the GPIO is in a high-Z
+              state on reset.
+         The value of R is chosen to satisfy the following parameters:
+         •    The 1 µs time constant to turn the switch OFF while an asynchronous reset arrives.
+              The lower value of R, the faster the switch turns OFF. The value of R therefore
+              depends on the switch control signal input capacitance, see Figure 3.
+         •    The tolerated additional consumption happens only in Run mode. Here, a high R value
+              reduces the extra current while in Run/Sleep/Stop 0 modes.
+Note:    Depending on the application and the allowable current in Run and/or low-power modes,
+         other hardware schematics can be used.
+         Figure 3 shows a capture of an asynchronous reset with R = 33 kΩ.
+
+                              Figure 3. Asynchronous reset typical waveform
+
+
+
+
+         •    The cyan trace shows an asynchronous reset on the nRST pin.
+         •    The green trace shows the switch inverted control signal (nSMPS_SW)
+         •    The yellow trace is the (inverted) IDD12 provided by the SMPS through the switch on
+              the VDD12 pins.
+         This shows that using a resistor R = 33 kΩ gives the required 1 µs disconnection (rule 5 in
+         Section 2.2.1).
+
+
+
+
+                                           AN4978 Rev 6                                          11/21
+                                                                                                         21
+SMPS management provided in the HAL and BSP                                                     AN4978
+
+
+3         SMPS management provided in the HAL and BSP
+
+          The SMPS is an external component managed by the microcontroller GPIOs, so the
+          software functions to control it are located in the BSP (board support package). It is the
+          responsibility of the user application to ensure that the rules described in Section 2.2 are
+          implemented and that the power transitions are allowed, as there is no safeguard
+          mechanism in the HAL or the BSP.
+          The SPMS pins are defined in Table 4.
+
+                                         Table 4. SMPS pin definitions
+                Pins     Mandatory       Type                           Function
+
+              SMPS_SW        Yes         Out     Control switch to enable SMPS supply on VDD12 pins
+              SMPS_EN        No          Out     Control SMPS on/off
+              SMPS_PG        No           In     Check SMPS power good
+              SMPS_V1        No          Out     Select SMPS voltage
+
+
+          The main SMPS functions provided by the HAL or BSP are the following:
+          •     BSP_SMPS_Init(uint32_t Voltage);
+                Initialize the external SMPS pins: SMPS_EN, SMPS_SW, SMPS_PG, SMPS_V1.
+          •     BSP_SMPS_DeInit(void);
+                De-initialize the external SMPS component.
+          •     BSP_SMPS_Enable(uint32_t Delay, uint32_t Power_Good_Check);
+                Enable the external SMPS component by setting the SMPS_EN pin to ‘1’.
+          •     BSP_SMPS_Disable(void);
+                Disable the external SMPS component by clearing the SMPS_EN pin to 0 only if
+                SMPS_SW is already set to 0. Otherwise, the function returns an error code).
+          •     BSP_SMPS_Supply_Enable(uint32_t Delay, uint32_t
+                Power_Good_Check);
+                Close the switch to enable the power supply on the VDD12 pins by setting the
+                SMPS_SW pin to ‘1’.
+          •     BSP_SMPS_Supply_Disable(void);
+                Disable the SMPS power supply on the VDD12 pins by clearing the SMPS_SW pin
+                to ‘0’.
+
+
+
+
+12/21                                       AN4978 Rev 6
+AN4978                                         SMPS management provided in the HAL and BSP
+
+
+3.1      Switching the SMPS ON/OFF
+         This section provides sample code to switch the SMPS ON/OFF when the voltage is
+         between 1.05 V and 1.2 V, as tested and used on the Nucleo-144 SMPS board [2].
+
+3.1.1    SMPS switching (OFF to ON)
+         /* Reduce main freq below 26MHz */
+         HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE2);
+         BSP_SMPS_Init(0);
+         /* Start SMPS and wait for 5 ms */
+         BSP_SMPS_Enable(5 /* in ms */, 0 /* no PG check*/);
+         /* Close switch if SMPS power good is ok */
+         if(BSP_SMPS_Supply_Enable(0, 1 /* Check PG*/) == SMPS_OK){
+         /* SMPS is used */
+         /* Increase Flash latency and then frequency to high performance range 1 if
+         rule #3 is satisfied (>1.08V) */
+         }
+         On the STM32L4+ Series, BSP automatically sets the register FLASH_CFGR bit LVEN to 1
+         reducing flash memory access time, as on Nucleo-144 VDD12 is higher than 1.08 V.
+         Figure 3 shows the result of the above sequence on the SMPS control pins.
+
+                      Figure 4. SMPS OFF to ON switching control pin sequence
+
+
+                                Start SMPS                                           SMPS_EN
+
+
+
+                                                       SMPS ready                    SMPS_PG
+                                                                                      (optional)
+
+
+
+                                 Switch open                        Switch closed    SMPS_SW
+
+
+                     Range 1                                          SMPS supply
+             1.2 V
+             1.0 V                  Range 2
+                                                                                     VDD12
+               0V
+                                                                                      MSv45014V1
+
+
+
+
+                                        AN4978 Rev 6                                       13/21
+                                                                                                   21
+SMPS management provided in the HAL and BSP                                                   AN4978
+
+
+3.1.2     SMPS switching (ON to OFF)
+          /* Reduce Frequency and then Flash latency to performance range 2 (rule #6) */
+          /* Switch off */
+          BSP_SMPS_Supply_Disable();
+          /* Stop SMPS only if required */
+          BSP_SMPS_Disable();
+          /* Enter standby, STOP2 mode etc.. */
+          Figure 5 shows all the possible transitions depending on the voltage of the SMPS.
+
+                        Figure 5. SMPS ON to OFF switching control pin sequence
+
+
+
+                                                                                         SMPS_EN
+
+
+
+
+                       Switch closed                 Switch open                         SMPS_SW
+
+
+                        SMPS supply
+           1.2 V
+           1.0 V                                   Range 2
+                                                                                         VDD12
+            0V
+                                                                   Standby / Shutdown
+
+                                                                                              MSv45015V1
+
+
+
+
+14/21                                     AN4978 Rev 6
+AN4978                                              SMPS management provided in the HAL and BSP
+
+
+3.2      Power state transitions
+         As described in Section 2, only Run, Sleep or Stop 0 modes are supported in SMPS supply
+         mode, so special care should be taken at application level when moving from one power
+         mode to another.
+         The STM32CubeMX PCC tool can be used to check for possible power mode transitions.
+         Figure 6 and Figure 7 summarizes the following:
+         •    steps to perform when moving between SMPS_SW OFF and SMPS_SW ON
+         •    permitted power-mode transitions [5]
+
+         Figure 6. Possible transitions according to SMPS voltage, STM32L4 Series
+
+
+
+
+         1. For STM32L41xxx and STM32L42xxx devices, 1.00 V shall be used as SMPS min, as enabling bit
+            EXT_SMPS_ON moves the MR Range 2 down to 0.95 V.
+
+
+
+
+                                              AN4978 Rev 6                                               15/21
+                                                                                                                 21
+SMPS management provided in the HAL and BSP                                          AN4978
+
+
+         Figure 7. Possible transitions according to SMPS voltage, STM32L4+ Series
+
+
+
+
+16/21                                  AN4978 Rev 6
+AN4978                                                                   Computing current consumption
+
+
+4        Computing current consumption
+
+         Figure 8 shows a simple approximation for computing the current consumption when an
+         SMPS is not used.
+
+                               Figure 8. Power consumption without SMPS
+
+
+                         VDD                VDD                     I2       VDD
+                         IDD                                                logic
+
+
+
+                                                   Main regulator
+
+                                                           V1
+
+                                                           I1
+
+
+                                                       Digital
+                                                        logic
+
+
+                                                                                              MSv45017V2
+
+
+
+         Here, the total current consumed by the chip (IDD) is split into I1, consumed by the digital
+         logic (CPU, flash memory, RAM, digital peripherals) and I2, mostly consumed by the analog
+         peripherals.
+         Depending on the main regulator voltage range, the digital logic VCORE is supplied either
+         with a V1 of 1.2 V (Range 1), 1.28 V (Range 1 boost mode) or V1 of 1.0 V (Range 2).
+
+
+
+
+                                          AN4978 Rev 6                                            17/21
+                                                                                                           21
+Computing current consumption                                                                  AN4978
+
+
+          When using an external SMPS, the schematic shown in Figure 9 applies.
+
+                                   Figure 9. Power consumption for SMPS
+
+
+                         VDD                           VDD                       I2     VDD
+                         IDD                                                          domain
+
+
+
+                                                              Main regulator
+
+
+                                                    VDD12
+                                          SMPS                          VSMPS
+                                                                        ISMPS1
+
+
+                                                                  VCORE
+                                                                 domain
+
+
+
+                                                                                               MSv45018V1
+
+
+          The digital logic is supplied by the SMPS, so its consumption becomes:
+                                             ISMPS1 = I1 * VSMPS / V1
+          due to the change (either increase or decrease) of its supply source.
+          If we consider the efficiency of the SMPS (ƞ), the overall consumption becomes:
+                                      IDD = I2 + ISMPS1 * VSMPS / (ƞ * VDD)
+          Merging the two equations gives:
+                                     IDD = I2 + I1 * VSMPS² / (ƞ * VDD * V1)
+          In run modes, we can consider that the I2 part is negligible, hence:
+                                        IDD = I * VSMPS² / (ƞ * VDD * V1)
+          where I is the current consumption without SMPS.
+          This equation demonstrates the advantage of using an SMPS, especially at high VDD, and
+          also the advantage of decreasing as much as possible the VSMPS voltage.
+Note:     The extra current consumed by the SMPS itself, often called ‘quiescent’, or ‘current at no
+          load’, must be added, especially for very low values of ISMPS1.
+
+
+
+
+18/21                                      AN4978 Rev 6
+AN4978                                          Optimizing IoT and very low power applications
+
+
+5        Optimizing IoT and very low power applications
+
+         The SMPS associated with STM32L4xxxx products is well suited to IoT (Internet of Things)
+         battery-supplied applications where voltages are high enough to take advantage of a
+         DC/DC converter. Such applications usually have a PROCESS phase where a large
+         number of computations are performed, followed by an INACTIVE phase (see AN4746 [5]
+         for further details).
+         Depending on the choice of SMPS, it may be advantageous to stop the SMPS between the
+         PROCESS and INACTIVE phases. However, some SMPS devices have a very high restart
+         energy that might negate any advantage of shutting them down during the INACTIVE
+         phase.
+Note:    For Standby mode, the HAL/BSP can keep the SMPS enabled when going into the
+         INACTIVE state. If BSP_SMPS_Disable() is NOT called when going into standby, the
+         SMPS is kept enabled until the next wakeup to save its restart energy.
+         The SMPS output capacitance represents a high energy tank (a few µJ) that is
+         advantageous to keep charged during the inactive phase, so SMPS devices that discharge
+         their output when disabled must be avoided.
+         Using the SMPS_PG power-good signal slightly increases the energy consumption and it
+         might be preferable not to use it. However, our HAL/BSP implementation configures the
+         pull-up dynamically on a Nucleo-144 SMPS board [2], which minimizes the consumption
+         only when checking the power-good signal.
+         Figure 10 shows CoreMark™ consumption as a function of the VDD supply.
+
+                Figure 10. CoreMark™ power consumption at 80 MHz system frequency
+
+
+
+
+         To further reduce the consumption during INACTIVE phases, a VDD IO SMPS can be used
+         to supply VDD down to 1.8 V. Consequently, standard IoT application as well as benchmark
+         scores, for example ULPBench™, are improved. See AN4746 [4] for ULPBench
+         configuration, and the EEMBC web site for further details.
+
+
+                                        AN4978 Rev 6                                        19/21
+                                                                                                    21
+Reference documents                                                                                AN4978
+
+
+6         Reference documents
+
+                                     Table 5. Reference documents
+Reference Revision     Type          ID                                 Title
+
+                                            STM32L47xxx, STM32L48xxx, STM32L49xxx and STM32L4Axxx
+                                   RM0351
+                     Reference              advanced Arm®-based 32-bit MCUs
+    [1]
+                      manual                STM32L41xxx/42xxx/43xxx/44xxx/45xxx/46xxx advanced
+                                   RM0394
+                                            Arm®-based 32-bit MCUs
+                       User
+    [2]                            UM2179 STM32 Nucleo-144 boards
+                      manual
+                                   DS12469 STM32L412xx devices
+                                   DS12470 STM32L422xx devices
+                                   DS11449 STM32L433xx devices
+            Latest
+    [3]    version   Datasheet     DS11912 STM32L452xx devices
+                                   DS10198 STM32L476xx devices
+                                   DS11585 STM32L496xx devices
+                                   DS12023 STM32L4R5xx, STM32L4R7xx and STM32L4R9xx devices
+                                            Optimizing power and performance with STM32L4 Series
+    [4]              Application   AN4746
+                                            microcontrollers
+                       note
+    [5]                            AN4621   STM32L4 and STM32L4+ ultra-low-power features overview
+                       User
+    [6]                            UM2206 STM32 Nucleo-64-P boards
+                      manual
+
+
+
+
+20/21                                        AN4978 Rev 6
+AN4978                                                                                     Revision history
+
+
+7        Revision history
+
+                                     Table 6. Document revision history
+            Date       Revision                                   Changes
+
+         17-Mar-2017      1       Initial version.
+         10-Apr-2017      2       Added rule 7 in Section 2.2: VDD12 power supply rules.
+                                  Updated:
+                                  – Document title on cover page
+         07-Sep-2017      3       – Table 1: Applicable products
+                                  – Section 2.2: VDD12 power supply rules (point 7)
+                                  – Section 2.5: Selection of the switch and control schematic
+                                  Introduced STM32L4+ Series.
+                                  Updated Introduction, Section 2.4: Selection of the SMPS, Section 2.5:
+                                  Selection of the switch and control schematic, Section 3.1.1: SMPS
+                                  switching (OFF to ON), Section 3.2: Power state transitions and
+                                  Section 4: Computing current consumption.
+                                  Split Section 2.2: VDD12 power supply rules in Section 2.2.1: STM32L4
+         13-Feb-2018      4       Series and Section 2.2.2: STM32L4+ Series.
+                                  Updated Table 1: Applicable products and Table 5: Reference documents.
+                                  Updated Figure 6: Possible transitions according to SMPS voltage,
+                                  STM32L4 Series and Figure 8: Power consumption without SMPS.
+                                  Added Figure 7: Possible transitions according to SMPS voltage,
+                                  STM32L4+ Series.
+                                  Introduced STM32L412RB and STM32L422RB devices, hence updated
+                                  Table 1: Applicable products and Table 5: Reference documents.
+                                  Added Improvements supporting external SMPS integrated in
+                                  STM32L41xxx/STM32L42xxx devices and footnotes to Table 3: Typical
+         25-Jul-2018      5       gain for Nucleo-144 SMPS board, VDD12 = 1.05 V and VDD = 3.3 V, and to
+                                  Figure 6: Possible transitions according to SMPS voltage, STM32L4
+                                  Series.
+                                  Updated Section 2.4: Selection of the SMPS.
+                                  Minor text edits across the whole document.
+                                  Updated Introduction.
+         31-Jan-2023      6       Updated Figure 3: Asynchronous reset typical waveform.
+                                  Minor text edits across the whole document.
+
+
+
+
+                                            AN4978 Rev 6                                              21/21
+                                                                                                              21
+                                                                                                                                  AN4978
+
+
+
+
+                                                IMPORTANT NOTICE – READ CAREFULLY
+
+
+STMicroelectronics NV and its subsidiaries (“ST”) reserve the right to make changes, corrections, enhancements, modifications, and
+improvements to ST products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on
+ST products before placing orders. ST products are sold pursuant to ST’s terms and conditions of sale in place at the time of order
+acknowledgment.
+
+
+Purchasers are solely responsible for the choice, selection, and use of ST products and ST assumes no liability for application assistance or
+the design of purchasers’ products.
+
+
+No license, express or implied, to any intellectual property right is granted by ST herein.
+
+
+Resale of ST products with provisions different from the information set forth herein shall void any warranty granted by ST for such product.
+
+
+ST and the ST logo are trademarks of ST. For additional information about ST trademarks, refer to www.st.com/trademarks. All other product
+or service names are the property of their respective owners.
+
+
+Information in this document supersedes and replaces information previously supplied in any prior versions of this document.
+
+
+                                               © 2023 STMicroelectronics – All rights reserved
+
+
+
+
+22/22                                                          AN4978 Rev 6
+

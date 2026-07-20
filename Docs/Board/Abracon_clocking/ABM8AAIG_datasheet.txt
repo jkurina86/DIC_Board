@@ -1,0 +1,235 @@
+    Automotive & Industrial Grade Ceramic SMD Crystal
+
+                 ABM8AAIG Series                      Request Samples                Check Inventory          3.2 x 2.5 x 0.9 mm
+                                                                                                              RoHS/RoHS II Compliant
+                                                                                                              Pb in ceramic, exemption (7c-I)
+                                                                                                              MSL Level = N/A
+
+Features                                                                   Applications
+•    AEC-Q200 Qualified                                                    •     Infotainment Systems
+•    Automotive Grade 1: -40°C to +125°C                                   •     Keyless Entry & Startup
+•    Automotive Grade 0: -40°C to +150°C                                   •     GPS & Navigation
+•    TS16949 Production Line Certified                                     •     Comfort control
+•    PPAP Available Upon Request                                           •     ADAS (Advanced Driver Assistance Systems)
+•    Hermetically Glass-sealed Ceramic Package                             •     Vehicle to Vehicle Communication
+•    RoHS/RoHS II Exemption                                                •     LiDAR (Light Detection and Ranging)
+                                                                           •     In-vehicle Networking
+                                                                           •     Powertrain & Drive Control
+                                                                           •     Power Control & Conversion
+                                                                           •     Industrial Control & Automation
+Key Electrical Specifications
+
+
+        Parameters                Minimum           Typical           Maximum                  Units            Notes
+Frequency Range                    8.000                               54.000                  MHz
+Operation Mode                                   Fundamental
+                                                                                                       Option “blank”; See
+                                      -40                                  +125
+Operating Temperature [Note 1]                                                                  ºC     options
+                                      -40                                  +150                        Option “V”; See options
+                                      -40                                  +125                        Options “blank, J, D”
+Storage Temperature                                                                             ºC
+                                      -40                                  +150                        Option “V”
+Frequency Tolerance                                                                                    Option “blank”; See
+                                      -50                                   +50                ppm
+@+25°C                                                                                                 options
+ Frequency Stability over the
+                                                                                                       Option “blank”; See
+Operating Temperature (ref.          -100                                  +100                ppm
+                                                                                                       options
+to +25°C)
+                                                                            500                        8.000 – 9.799MHz
+Equivalent series resistance
+                                                                            120                 Ω      9.800 – 12.000MHz
+(R1)
+                                                                            50                         12.001 – 54.000MHz
+Shunt capacitance (C0)                                                      2.0                 pF
+                                                                                                       Option “blank”; See
+Load capacitance (CL)                                    8                                      pF
+                                                                                                       options
+Drive Level                                             10                  200                µW
+Aging                                  -3                                   +3                 ppm     @25°C±3°C First year
+Insulation Resistance                 500                                                      MΩ      @ 100Vdc ± 15V
+       Note 1: Operating temperature range option -40°C ~ +150°C only available in select frequencies and
+               electrical performance options. Please contact Abracon for availability.
+
+                                            5101 Hidden Creek Ln Spicewood TX 78669                                           ABRACON IS
+                                            Phone: 512-371-6159 | Fax: 512-351-8858              REVISED: 02-14-23            ISO9001-2015
+                                            For terms and conditions of sales, please visit:
+                                                                                                                               CERTIFIED
+                                            www.abracon.com
+     Automotive & Industrial Grade Ceramic SMD Crystal
+
+                       ABM8AAIG Series                            Request Samples                Check Inventory            3.2 x 2.5 x 0.9 mm
+                                                                                                                            RoHS/RoHS II Compliant
+                                                                                                                            Pb in ceramic, exemption (7c-I)
+                                                                                                                            MSL Level = N/A
+
+
+
+
+   Options and Part Identification (left blank if standard)
+
+
+          ABM8AAIG -                                     MHz -                 -                 -                 -
+
+         Frequency in MHz
+Please specify the frequency in MHz.                                                                                                     Packaging
+e.g. 16.384MHz                                                                                                                          Blank: Bulk
+                                                                                                                                       T3: 3k pcs / reel
+
+
+
+                                                                                                                        Freq. Stability
+     Load Capacitance (pF)                                                                                             Blank: ± 100 ppm
+            Blank: 8pF                                                                                                   R: ± 150 ppm
+If not standard, please specify CL                                                                                       Z: ± 50 ppm
+in pF or S for series                                                                                                    Y: ± 30 ppm
+                                                                                                               Contact Abracon
+                                                                                                               for Availability
+
+
+
+                                      Operating Temp.                          Freq. Tolerance
+Custom ESR if other
+                                 Blank: -40°C ~ +125°C (**)                    Blank: ± 50 ppm
+    than standard
+                                      D: -40°C ~ +85°C                           1: ± 30 ppm
+   Blank = Standard
+Custom = Rxx or Rxxx              J: -40°C ~ +105°C (***)                        2: ± 15 ppm
+ Specify an xx or xxx              V: -40°C ~ +150°C (*)
+       value in Ω              (*) Only offered @ Freq. Stability
+  (e.g.: R40 or R100)          Option R
+                               (**) Only offered @ Freq. Stability
+                               Option Blank and R.
+                               (***) Only offered @ Freq.
+                               Stability Option Z, Blank, and R.
+                               (*) Contact Abracon
+                               for Availability
+
+
+
+
+                                                        5101 Hidden Creek Ln Spicewood TX 78669                                             ABRACON IS
+                                                        Phone: 512-371-6159 | Fax: 512-351-8858            REVISED: 02-14-23                ISO9001-2015
+                                                        For terms and conditions of sales, please visit:
+                                                                                                                                             CERTIFIED
+                                                        www.abracon.com
+Automotive & Industrial Grade Ceramic SMD Crystal
+
+             ABM8AAIG Series                  Request Samples                Check Inventory        3.2 x 2.5 x 0.9 mm
+                                                                                                    RoHS/RoHS II Compliant
+                                                                                                    Pb in ceramic, exemption (7c-I)
+                                                                                                    MSL Level = N/A
+
+
+
+
+Mechanical Dimensions
+
+
+
+
+    Dimensions: mm
+    Sealing Method = Glass Sealed
+
+                                    5101 Hidden Creek Ln Spicewood TX 78669                                         ABRACON IS
+                                    Phone: 512-371-6159 | Fax: 512-351-8858            REVISED: 02-14-23            ISO9001-2015
+                                    For terms and conditions of sales, please visit:
+                                                                                                                     CERTIFIED
+                                    www.abracon.com
+Automotive & Industrial Grade Ceramic SMD Crystal
+
+             ABM8AAIG Series                                          Request Samples                     Check Inventory                           3.2 x 2.5 x 0.9 mm
+                                                                                                                                                    RoHS/RoHS II Compliant
+                                                                                                                                                    Pb in ceramic, exemption (7c-I)
+                                                                                                                                                    MSL Level = N/A
+Reflow Profile [JEDEC J-STD-020]
+
+
+
+
+                                                                                                                      Table 1
+                                                                                                                      SnPb Eutectic Process
+                                                                                                                      Classification Temperatures (Tc)
+                                                                                                                        Package       Volume mm3            Volume mm3
+                                                                                                                       Thickness          <350                  >350
+                                                                                                                        <2.5 mm            235 °C              220 °C
+                                                                                                                        >2.5 mm            220 °C              220 °C
+                                                                                                               Table 2
+                                                                                                               Pb-Free Process
+                                                                                                               Classification Temperatures (Tc)
+                                                                                                                     Package       Volume mm3          Volume mm3        Volume mm3
+                                                                                                                    Thickness          <350             350-2000            >2000
+                                                                                                                    <1.6 mm           260 °C              260 °C           260 °C
+                                                                                                               1.6 mm - 2.5 mm        260 °C              250 °C           245 °C
+                                                                                                                   >2.5 mm            250 °C              245 °C           245 °C
+
+
+
+
+                                                                                                                        Sn-Pb Eutectic                Pb-Free
+                Profile Feature
+                                                                                                                          Assembly                   Assembly
+                Preheat / soak
+                  Temperature minimum (Tsmin)                                                                                 100°C                    150°C
+                  Temperature maximum (Tsmax)                                                                                 150°C                    200°C
+                  Time (Tsmin to Tsmax) (ts)                                                                               60 - 120 sec.            60 - 120 sec.
+                Average ramp-up rate (Tsmax to TP)                                                                         3°C/sec. max             3°C/sec. max
+                Liquidous temperature (TL)                                                                                    183°C                    217°C
+                Time at liquidous (tL)                                                                                     60 - 150 sec.            60 - 150 sec.
+                Peak package body temperature (TP)*                                                                         see Table 1              see Table 2
+                Time (tp)** within 5°C of the specified classification temperature (TC)                                       20 sec.                  30 sec.
+                Ramp-down rate (Tp to Tsmax)                                                                               6°C/sec. max             6°C/sec. max
+                Time 25°C to peak temperature                                                                               6 min. max               8 min. max
+                Reflow cycles                                                                                                 2 max                    2 max
+                *Tolerance for peak profile temperature (TP) is defined as a supplier minimum and a user maximum.
+                **Tolerance for time at peak profile temperature (tp) is defined as supplier minimum and a user maximum.
+
+
+
+
+                                                          5101 Hidden Creek Ln Spicewood TX 78669                                                                   ABRACON IS
+                                                          Phone: 512-371-6159 | Fax: 512-351-8858                          REVISED: 02-14-23                        ISO9001-2015
+                                                          For terms and conditions of sales, please visit:
+                                                                                                                                                                        CERTIFIED
+                                                          www.abracon.com
+               Automotive & Industrial Grade Ceramic SMD Crystal
+
+                                      ABM8AAIG Series                                      Request Samples                  Check Inventory                    3.2 x 2.5 x 0.9 mm
+                                                                                                                                                               RoHS/RoHS II Compliant
+                                                                                                                                                                Pb in ceramic, exemption (7c-I)
+                                                                                                                                                               MSL Level = N/A
+               Packaging
+
+
+
+
+                                                                                           Tape Specifications (mm)
+                                                     Ao             Bo              Do               D1 (Min)               E1                 F                  Ko
+                                                      *             *            1.55±0.05              1.0              1.75±0.1           3.5±0.01               *
+                                                    P1             P2                Po               T (Max)            T1 (Max)           T2 (Max)             W
+                                                 4.0±0.1        2.0±0.05           4.0±0.1               0.6                0.1                2.5             8 ± 0.3
+                                              * Note: Compliant to EIA-481 standards
+
+
+
+
+                                                                                           Reel Specifications (mm)
+                                                                  A         B (Min)            C        D (Min)       N                         W1
+                                                                 178          1.5          13.2±0.01      20.2    60.2±0.01                    8±0.01
+
+                       Dimensions: mm
+
+ATTENTION: Abracon LLC’s products are COTS – Commercial-Off-The-Shelf products; suitable for Commercial, Industrial and, where designated, Automotive Applications. Abracon’s products
+are not specifically designed for Military, Aviation, Aerospace, Life-dependent Medical applications or any application requiring high reliability where component failure could result in loss of life
+and/or property. For applications requiring high reliability and/or presenting an extreme operating environment, written consent and authorization from Abracon LLC is required. Please contact
+Abracon LLC for more information.
+
+
+                                                                                5101 Hidden Creek Ln Spicewood TX 78669                                                         ABRACON IS
+                                                                                Phone: 512-371-6159 | Fax: 512-351-8858                  REVISED: 02-14-23                      ISO9001-2015
+                                                                                For terms and conditions of sales, please visit:
+                                                                                                                                                                                 CERTIFIED
+                                                                                www.abracon.com
+

@@ -1,0 +1,1067 @@
+LI-850 | Element descriptions
+Skip To Main Content
+Account
+Settings
+Logout
+placeholder
+Account
+Settings
+Logout
+Filter:
+All Files
+Submit Search
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse
+Gas Monitoring
+Agricultural
+Best Practices
+Environmental
+Protection
+Soil, Atmosphere,
+& Ocean Studies
+Energy & Indoor
+Air Monitoring
+Water
+Monitoring
+RESOURCES
+Resource Center
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT
+Contact LI-COR
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse Gas & Emissions
+Monitoring
+Agricultural Best Practices
+Environmental Protection
+Soil, Atmosphere, & Ocean Studies
+Indoor Environmental Monitoring
+Water Resource Management
+RESOURCES
+All Resources
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT US
+​
+Contact Support
+Phone
+1-402-467-3576
+Toll Free:
+1-800-447-3576
+Email
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Contact Forms
+LI-COR Sales
+LI-COR Support
+LICORbio Support
+International
+Europe
+Distributors
+Address
+4647 Superior St.
+P.O. Box 4425
+Lincoln, NE USA
+68504-0425
+HOBO Data Loggers
+HOBO Sales
+HOBO Help Center
+HOBO Support
+Support:
+Application Note
+Tech Tip
+LI-830
+and
+LI-850
+Gas Analyzers
+What are you looking for?
+General Help
+Calibration Certificates
+Filter:
+Filter Results
+Submit Search
+Calibration information is available for light sensors, gas analyzers, photosynthesis systems, calibrated chambers, calibrated light sources, and plant canopy analyzers.
+Find
+View Certificate
+Contents:
+Element descriptions
+In this section we break down each subset of the XML tags. We begin with the root-level tags and then describe the subordinate tags in greater detail.
+Table 2‑1
+. The root tag for all XML communication is
+<LI850>
+or
+<LI830>
+.
+Root
+Parent
+Value
+Definition
+<LI850>
+or
+<LI830>
+<DATA>
+Float
+See
+Data tags
+.
+<AUXDATA>
+Float
+See
+Auxiliary data tags
+.
+<CFG>
+Various
+See
+Configuration tags
+.
+<PUMP>
+Various
+Pump status. See
+Pump tags
+.
+<SOURCE>
+Integer
+Hours the source has operated. See
+Source tag
+.
+<CAL>
+Various
+See
+Calibration tags
+.
+<POLY>
+Various
+See
+Polynomial tags
+.
+<RS232>
+True | False
+See
+RS-232 serial tags
+.
+<VER>
+String
+Software version. See
+Software version
+.
+<SERIALNUM>
+String
+Serial number. See
+Serial number
+.
+<ACK>
+True | False
+Acknowledgment of a command.
+<ERROR>
+String
+Error. Includes a message.
+<TECH>
+Various
+Diagnostics. See
+Tech tags
+.
+Sending this command will return the full configuration file and measured values that are configured to be sent over the serial connection.
+<LI850>?</LI850>
+The instrument will reply by sending the data and the confirmation message:
+<LI850><ACK>TRUE</ACK></LI850>
+Data tags
+The
+<DATA>
+tag contains all data values sent from the instrument. All of the elements within
+<DATA>
+are readable only. The
+<H2O>
+-related tags apply to the
+LI-850
+only.
+Table 2‑2
+. Elements available in the
+<DATA>
+tag.
+Root
+Parent
+Children
+Values
+R/W
+Comments
+<LI850> or <LI830>
+<DATA>
+<CO2>
+Float
+R
+CO
+2
+in ppm
+<CO2ABS>
+Float
+R
+CO
+2
+absorption
+<H2O>
+Float
+R
+H
+2
+O in mmol/mol
+<H2ODEWPOINT>
+Float
+R
+H
+2
+O in °C
+<H2OABS>
+Float
+R
+H
+2
+O absorption
+<CELLTEMP>
+Float
+R
+Cell temperature
+<CELLPRES>
+Float
+R
+Cell pressure
+<IVOLT>
+Float
+R
+Input voltage
+<FLOWRATE>
+Integer
+R
+Measured flow rate
+<RAW>
+See
+Raw data tags
+To query the data, send:
+Copy
+<li850>
+<data>
+?
+</data>
+</li850>
+If a data value is not returned, it is probably "turned off" in the serial data stream. See
+RS-232 serial tags
+for more information.
+Raw data tags
+The raw detector counts can be retrieved by querying the parent
+<data>
+tag. The
+<h2o>
+-related tags apply to the
+LI-850
+only. To see the raw detector counts, send:
+Copy
+<li850>
+<data>
+<raw>
+?
+</raw>
+</data>
+</li850>
+Table 2‑3
+. Elements within the
+<RAW>
+tag. These are raw detector readings.
+Root
+Parent
+Parent
+Children
+Values
+R/W
+<li850>
+or
+<li830>
+<data>
+<raw>
+<co2>
+Integer
+R
+<co2ref>
+Integer
+R
+<h2o>
+Integer
+R
+<h2oref>
+Integer
+R
+To disable the raw data from the serial data stream, you have to modify the instructions under the
+<rs232>
+tag. So, send:
+Copy
+<li850>
+<rs232>
+<raw>
+false
+</raw>
+</rs232>
+</li850>
+Auxiliary data tags
+The
+<AUXDATA>
+tag contains all auxiliary data values that can be retrieved from the instrument. All of the elements within the
+<AUXDATA>
+tag are readable only.
+Table 2‑4
+. These tags are under
+<AUXDATA>
+.
+Root
+Parent
+Children
+Values
+R/W
+<li850>
+or
+<li830>
+<auxdata>
+<pca>
+Float
+R
+<pha>
+Float
+R
+<psi>
+Float
+R
+<bb_eff>
+Float
+R
+To query the auxdata, send:
+Copy
+<li850>
+<auxdata>
+?
+</auxdata>
+</li850>
+RS-232 serial tags
+The
+<RS232>
+tag is where you set which values are output in
+<DATA>
+.
+TRUE
+means that the value will be sent;
+FALSE
+means it will not be sent. The
+<H2O>
+-related tags apply to the
+LI-850
+only.
+Table 2‑5
+. Setting the
+<RS232>
+values will determine which values are output in
+<DATA>
+.
+Root
+Parent
+Children
+Values
+R/W
+Comments
+<LI850>
+or
+<LI830>
+<RS232>
+<CO2>
+True | False
+R/W
+CO
+2
+in ppm
+<CO2ABS>
+True | False
+R/W
+CO
+2
+absorption
+<H2O>
+True | False
+R/W
+H
+2
+O in mmol/mol
+<H2ODEWPOINT>
+True | False
+R/W
+H
+2
+O dew point
+<H2OABS>
+True | False
+R/W
+H
+2
+O absorption
+<CELLTEMP>
+True | False
+R/W
+Cell temperature
+<CELLPRES>
+True | False
+R/W
+Cell pressure
+<IVOLT>
+True | False
+R/W
+Input voltage
+<ECHO>
+True | False
+R/W
+Echo commands sent
+<STRIP>
+True | False
+R/W
+Strip XML
+<FLOWRATE>
+True | False
+R/W
+Flow rate
+Sending this command will configure the output rate and the variables output over the serial connection.
+Copy
+<LI850>
+<CFG>
+<OUTRATE>
+1
+</OUTRATE>
+</CFG>
+<RS232>
+<CO2>
+TRUE
+</CO2>
+<CO2ABS>
+TRUE
+</CO2ABS>
+<h2o>
+false
+</h2o>
+<h2odewpoint>
+false
+</h2odewpoint>
+<h2oabs>
+false
+</h2oabs>
+<CELLTEMP>
+TRUE
+</CELLTEMP>
+<CELLPRES>
+TRUE
+</CELLPRES>
+<IVOLT>
+TRUE
+</IVOLT>
+<ECHO>
+FALSE
+</ECHO>
+<STRIP>
+FALSE
+</STRIP>
+<flowrate>
+false
+</flowrate>
+</RS232>
+</LI850>
+Configuration tags
+Configuration tags are used to apply settings to the instrument.
+Table 2‑6
+. Elements within the
+<CFG>
+tag.
+Root
+Parent
+Children
+Values
+R/W
+Comments
+<li850>
+or
+<li830>
+<cfg>
+<outrate>
+0.5 to 20
+R/W
+Output data every N seconds (0.5 second increments).
+<heater>
+True | False
+R/W
+Turn heater on/off.
+<pcomp>
+True | False
+R/W
+Pressure compensation on/off.
+<filter>
+0 to 20
+R/W
+Set a 0 to 20 second filter for data logging.
+<bench>
+14
+R
+Bench length (not used).
+<alarms>
+Alarm settings. See
+Alarm tags
+.
+<dacs>
+DAC output settings. See
+DAC tags
+.
+Sending this command will set the output rate to 1 per second, turn the optical bench heater on, apply the pressure compensation, and turn off data filtering:
+Copy
+<LI850>
+<CFG>
+<OUTRATE1</OUTRATE>
+<HEATER>
+TRUE
+</HEATER>
+<PCOMP>
+TRUE
+</PCOMP>
+<FILTER>
+0
+</FILTER>
+</CFG>
+</LI850>
+Alarm tags
+Alarm tags configure the alarm states.
+Root
+Parent
+Parent
+Children
+Values
+R/W
+Comments
+<li850>
+or
+<li830>
+<cfg>
+<alarms>
+<enabled>
+True | False
+R/W
+Enable alarms
+<source>
+co2 | h2o
+R/W
+Channel (CO
+2
+, H
+2
+O)
+<high>
+Float
+R/W
+High alarm on at this value
+<hdead>
+Float
+R/W
+High alarm off at this value
+<low>
+Float
+R/W
+Low alarm on at this value
+<ldead>
+Float
+R/W
+Low alarm off at this value
+To configure the alarms, send:
+Copy
+<LI850>
+<CFG>
+<ALARMS>
+<ENABLED>
+{bool}
+</ENABLED>
+<SOURCE>
+H2O | CO2
+<SOURCE>
+<HIGH>
+{float}
+</HIGH>
+<HDEAD>
+{float}
+</HDEAD>
+<LOW>
+{float}
+</LOW>
+<LDEAD>
+{float}
+</LDEAD>
+</ALARMS>
+</CFG>
+</LI850>
+DAC tags
+DAC tags configure the analog outputs.
+Root
+Parent
+Parent
+Children
+Values
+R/W
+Comments
+<li850>
+or
+<li830>
+<cfg>
+<dacs>
+<range>
+2.5 | 5.0
+R/W
+Output voltage. 0 to 2.5V or 0 to 5.0V
+<d1>
+Various
+R/W
+CO2 | H2O | H2ODEWPOINT | CELLPRES | CELLTEMP | NONE from DAC1
+<d1_0>
+Float
+R/W
+Value where DAC1 outputs 0V
+<d1_F>
+Float
+R/W
+Value where DAC1 outputs full scale
+<d2>
+Various
+R/W
+CO2 | H2O | H2ODEWPOINT | CELLPRES | CELLTEMP | NONE from DAC2
+<d2_0>
+Float
+R/W
+Value where DAC2 outputs 0V
+<d2_F>
+Float
+R/W
+Value where DAC2 outputs full scale
+To configure the DACs, send:
+Copy
+<LI850>
+<CFG>
+<DACS>
+<RANGE>
+{2.5|5.0}
+</RANGE>
+<D1>
+{NONE|CO2|H2O|H2ODP|CELLTEMP|CELLPRES}
+</D1>
+<D1_0>
+{float}
+</D1_0>
+<D1_F>
+{float}
+</D1_F>
+<D2>
+{NONE|CO2|H2O|H2ODP|CELLTEMP|CELLPRES}
+</D2>
+<D2_0>
+{float}
+</D2_0>
+<D2_0>
+{float}
+</D2_F>
+</DACS>
+</CFG>
+</LI850>
+Pump tags
+Pump tags are used to control the
+LI-COR
+pump.
+Table 2‑7
+. Tags used to control the pump (if applicable).
+Root
+Parent
+Children
+Values
+R/W
+Comments
+<li850>
+or
+<li830>
+<pump>
+<enabled>
+True | False
+R/W
+Turns pump on/off
+<time>
+Integer
+R/W
+Number of hours pump has run
+<status>
+Integer
+R/W
+Pump and flow meter present? (0 = pump, 1 = flow meter, 2 = pump and flow meter, 3 = neither)
+To enable the pump, send:
+Copy
+<li850>
+<PUMP>
+<ENABLED>
+true
+</ENABLED>
+</PUMP>
+</li850>
+To reset the pump hours (after replacing it, for example), send:
+Copy
+<li850>
+<PUMP>
+<HOURS>
+0
+</HOURS>
+</PUMP>
+</li850>
+Source tag
+The source tag indicates the number of hours that the optical source has operated. This information is useful for diagnostic purposes.
+Root
+Parent
+Children
+Values
+R/W
+Comments
+<li850>
+or
+<li830>
+<source>
+<time>
+Integer
+R/W
+Number of hours of source operation
+To read the source time, send:
+Copy
+<li850>
+<source>
+?
+</source>
+</li850>
+Calibration tags
+Calibration tags are used to start a calibration or read calibration information. When calibrating,
+<date>
+must be paired with a
+<co2zero>
+or a
+<co2span>
+, or a
+<h2ozero>
+or
+<h2ospan>
+. The
+<h2o>
+-related tags apply to the
+LI-850
+only.
+Table 2‑8
+. Tags used to calibrate the instrument.
+Root
+Parent
+Children
+Values
+R/W
+Comments
+<li850>
+or
+<li830>
+<cal>
+<date>
+20 character date
+W
+The current date
+<H2OZERO>
+True | False
+W
+Start H
+2
+O zero
+<H2OSPAN>
+Float (h2o)
+W
+Start the H
+2
+O span 1
+<H2OSPAN2>
+Float (h2o)
+W
+Start the H
+2
+O span 2
+<H2OLASTZERO>
+20 character date
+R
+Date of last H
+2
+O zero
+<H2OLASTSPAN>
+20 character date
+R
+Date of last H
+2
+O span
+<H2OKZERO>
+Float
+R/W
+Calibration constant
+<H2OKSPAN>
+Float
+R/W
+Calibration constant
+<H2OKSPAN2>
+Float
+R/W
+Calibration constant
+<CO2ZERO>
+True | False
+W
+Start a CO
+2
+zero
+<CO2SPAN>
+Float (co2 ppm)
+W
+Start the CO
+2
+span 1
+<CO2SPAN2>
+Float (co2 ppm)
+W
+Start the CO
+2
+span 2
+<CO2LASTZERO>
+20 character date
+R
+Date of last CO
+2
+zero
+<CO2LASTSPAN>
+20 character date
+R
+Date of last CO
+2
+span
+<CO2KZERO>
+Float
+R/W
+Calibration constant
+<CO2KSPAN>
+Float
+R/W
+Calibration constant
+<CO2KSPAN>
+Float
+R/W
+Calibration constant
+Calibration instructions are given in
+Zero and span settings
+. To read the current calibration, send:
+Copy
+<li850>
+<cal>
+?
+</cal>
+</li850>
+Polynomial tags
+Polynomial tags contain calibration information from the instrument. The values included are determined at the factory. Do not change the polynomial values because that will adversely affect the analyzer performance. The
+<h2o>
+-related tags apply to the
+LI-850
+only.
+Table 2‑9
+. Calibration polynomial related tags.
+Root Tag
+Parent
+Children
+Value(s)
+R/W
+Comments
+<li850>
+or
+<li830>
+<poly>
+<date>
+Serial number and ISO date
+R/W
+Serial number and factory calibration date: HGA XXXX yyyy-mm-dd
+<bb>
+Float
+R/W
+Band broadening value
+<xs>
+Float
+R/W
+Cross sensitivity value
+<co2>
+<a1><a2>
+<a3><a4>
+R/W
+Floating point coefficients for the CO
+2
+calibration inverse rectangular hyperbola
+<h2o>
+<a1><a2>
+<a3>
+R/W
+Floating point coefficients for the H
+2
+O calibration polynomial
+<press>
+<a0><a1>
+R/W
+Floating point coefficient for CO
+2
+pressure correction
+To read the polynomial information, send:
+Copy
+<li850>
+<poly>
+?
+</poly>
+</li850>
+Tech tags
+Tech tags indicate information about the instrument, including pump and optical source information. They are not included in the status information returned by the instrument. You can poll the tech information specifically.
+Table 2‑10
+. Tags used to read information about the pump and source.
+Root
+Parent
+Parent
+Children
+Values
+R/W
+Comments
+<li850>
+or
+<li830>
+<tech>
+<pump>
+<MODEL>
+String
+R/W
+Pump model
+<Ki>
+Integer
+R/W
+Integer value for PID control
+<Kp>
+Integer
+R/W
+Proportional value for PID control
+<Kd>
+Integer
+R/W
+Derivative value for PID control
+<OFFSET>
+Integer
+R/W
+Pump control offset
+<GAIN>
+Integer
+R/W
+Pump control gain
+<FLOW>
+0 to 1.0
+R/W
+Flow setting in LPM
+<SOURCE>
+<VOLTAGE>
+0 to 5.0
+R/W
+Source voltage setting
+To read the tech information, send:
+Copy
+<li850>
+<tech>
+?
+</tech>
+</li850>
+Share
+Copy Link
+Email
+Cite
+On this page:
+Element descriptions
+Data tags
+Auxiliary data tags
+Configuration tags
+Pump tags
+Source tag
+Calibration tags
+Polynomial tags
+Tech tags
+Was this helpful?
+Yes
+No
+We're sorry about that.
+Want to tell us more?
+Contact technical support.
+Great!
+Thanks for taking the time to give us feedback.
+Join Our Newsletter
+SUBSCRIBE
+LI-COR
+4647 Superior Street
+PO Box 4425
+Lincoln, NE 68504
+United States
+Phone:
+1-402-467-3576
+Toll-Free:
+1-800-447-3576
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Fax:
+1-402-467-2819
+www.licor.com
+COMPANY
+About Us
+Careers
+Copyrights & Trademarks
+International Distributors
+Patents
+Press & Media
+CONNECT
+OUR
+BRANDS
+Looking for
+LI-COR
+Biotechnology?
+LI-COR
+Biotechnology
+is now
+©2026 LI-COR, Inc. |
+Privacy Policy
+|
+Terms of Use
+|
+Cookie Notice

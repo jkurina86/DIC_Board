@@ -1,0 +1,312 @@
+                                           RPM4™
+          Reference Pressure
+                                                                                                     Technical Data
+                     Monitor
+
+
+
+
+  Premium performance, unmatched features, compact and rugged
+
+RPM4 is much more than a               monitor to optimize it for the range to                       Features
+traditional pressure indicator         be covered. Just enter the maximum
+                                                                                                     • Stability based Ready/Not
+                                       pressure and the measurement mode.
+State of the art performance from very                                                                 Ready indication
+                                       AutoRange then:
+low pressure to 280 MPa (40 000 psi)… • Selects and activates the most appro-                        • Built-in fluid head
+advanced on-board features…compact                                                                     corrections
+                                          priate Q-RPT to cover the specified
+and rugged…full local and remote                                                                     • User defined pressure units
+                                          range and measurement mode.
+communications…RPM4 is the perfect                                                                   • Intelligent AutoZero™
+                                       • Sets the pressure unit of measure.
+solution in a wide variety of high end                                                                 function
+                                       • Activates absolute, gauge or com-
+pressure calibration, testing and mea-                                                               • Remote [ENTER] switch
+                                          pound gauge measurement.
+surement applications.                                                                               • Large character, easy to read
+                                       • Adjusts display resolution to the
+                                                                                                       display
+                                          appropriate level for the range.
+Infinite Ranging™ and                  • Adjusts overpressure alarms to the
+                                                                                                     • 12 V dc power and battery
+AutoRange™                                actual range of operation.
+                                                                                                       pack option
+                                                                                                     • RS-232 and IEEE-488
+Infinite Ranging gives RPM4 unprec-    • Reduces measurement uncertainty
+                                                                                                       communications
+edented versatility in adapting to the    proportionally to the selected range
+                                                                                                     • FLASH memory and free em-
+specific range of operation. With the     (premium class Q-RPTs only).
+                                                                                                       bedded software upgrades
+easy to use AutoRange function, a few  Note: The use of RPM4’s Infinite Ranging and AutoRange
+                                                                                                       on dhinstruments.com
+simple key strokes or a single remote  feature is recommended to optimize operation for a
+                                                                                                     • PC based recalibration
+                                       specific range but is not required to obtain “% of reading”
+command string at the start of a test  measurement specifications.                                     utility software included
+adapt every feature of the pressure                                                                  • Free LabVIEW® drivers
+SDS™ Q-RPT Self Defense System™                                  Advanced on-board functions
+All Q-RPT modules up to 7 MPa (1 000 psi)                        RPM4 provides a variety of advanced on-
+include the Fluke Calibration unique Self                        board pressure data functions including:
+Defense System (SDS). SDS valves automati-                       • Special data such as pressure average over
+cally isolate and vent the module’s Q-RPT                          time, rate of change, hi/lo, freeze, devia-
+when it is not in use or an overpressure is                        tion from set point
+about to occur. With SDS, any Q-RPT module                       • Differential mode directly measures the
+can be left connected to pressure up to 10                         difference between two Q-RPTs including
+MPa (1 500 psi) without needing to isolate or                      taring at the line pressure
+disconnect it.                                                   • Parallel measurement uses two Q-RPTs
+                                                                   redundantly as one
+                                                                 • Leak check measures average pressure
+                                                                   rate of change over a user set time period
+                                                                 • AutoTest automates calibration routines
+                                                                   with tolerance testing and data logging
+
+
+
+       1                         2                           3       4        5             6
+
+
+
+
+                                                                                                   1. Pressure “Ready” (green) “Not Ready”
+                                                                                                      (red) based on real time measurement
+                                                                                                      of pressure stability
+                                                                                                   2. Measured pressure
+                                                                                                   3. Pressure unit of measure
+                                                                                                   4. Measurement mode
+                                                                                                   5. Active Q-RPT module (Hi or Lo)
+                                                                                                   6. Remote activity indicator
+                                                                                                   7. Special functions display
+
+
+
+
+                                         7
+
+
+
+
+                                     7                   8               9                        1. HEAD: Make automatic fluid head
+                                                                                                     corrections for differences in height
+                                                                                                     between RPM4 and DUT.
+                                                                                                  2. SDS: User control of Q-RPT Self Defense
+                                                                                                     System.
+                                                                                                  3. AutoZ: Automated zeroing of reference
+                                                                                                     pressure transducers in absolute and
+                                                                                                     gauge measurement modes.
+                                                                                                  4. AutoRange: Automatically optimize all
+                                                                                                     measurement characteristics for the
+                                                                                                     exact range of operation.
+                                                                                                  5. LEAK CK: Run and view automated leak
+                                                                                                     check functions.
+                                                                                                  6. DISPLAY: Select special display
+                                                                                                     functions including rate, average,
+                                                                                                     freeze, high/low, deviation.
+                                                                                                  7. RANGE: Select between Q-RPTs and
+                                                                                                     saved AutoRange ranges.
+                                                                                                  8. Unit: Select pressure unit of measure.
+                                                                                                  9. Mode: Select pressure measurement
+                                                                                                     mode (absolute, gauge, compound
+                                                                                                     gauge, Hi-Lo differential).
+                                     1        4          2       5       3     6
+
+
+
+
+2 Fluke Calibration   RPM4™ Reference Pressure Monitor
+ Quartz reference pressure
+ transducer (Q-RPT) modules
+ RPM4’s outstanding pressure measure-
+ ment specifications are made possible
+ by DHI's exclusive quartz reference
+ pressure transducer (Q-RPT) modules.
+      Q-RPTs measure pressure by measur-
+ ing the change in the natural oscillating
+ frequency of a quartz crystal with
+ pressure induced stress. To be quali-
+ fied for use in a Q-RPT module, each
+ transducer is individually evaluated and
+ characterized using primary pressure                     Q-RPT Module
+ standards. Only transducers exhibiting
+ required levels of linearity, repeatability
+ and stability are selected. A proprietary
+ compensation model, derived from more                    Q-RPTs and ranges
+ than 15 years experience with thou-                          Q-RPT                 SI version                     US version              Measure-     Operating       SDS™ Self
+ sands of quartz pressure transducers,                        designation
+                                                                             Maximum     Maximum           Maximum        Maximum
+                                                                                                                                             ment        media          Defense
+                                                                                                                                            mode(s)                      System
+ is applied to optimize the metrological                                    range (kPa) range (kPa)       range (psi)    range (psi)
+                                                                                                                                           supported
+                                                                             absolute     gauge            absolute        gauge
+ characteristics needed in a transfer
+                                                              A280M-L        280 000        280 000         40 000         40 000
+ standard. Standard and premium class                                                                                                                    Oil stan-
+                                                              A200M-L        200 000        200 000         30 000         30 000
+ Q-RPT modules are available to best                                                                                                                     dard, gas
+                                                              A140M-L        140 000        140 000         20 000         20 000
+ fit your performance and budgetary                                                                                                                      available
+                                                              A100M-L        100 000        100 000         15 000         15 000
+ requirements.                                                                                                                                                             Not
+                                                              A70M            70 000        70 000          10 000         10 000
+      A unique dynamic compensation for                                                                                                                                 available
+                                                              A40M            40 000        40 000           6 000          6 000
+ atmospheric pressure system uses an                                                                                                                         Gas
+                                                              A20M            20 000        20 000           3 000          3 000
+ independent on-board barometer to                                                                                                                       standard,
+                                                              A14M            14 000        14 000           2 000          2 000
+ provide seamless switching between                                                                                                                     oil available
+                                                              A10M            10 000        10 000           1 500          1 500           Absolute
+ absolute, gauge and compound gauge                                                                                                        gauge and
+                                                              A7M             7 000          7 000           1 000          1 000
+ modes at any time. The barometer is                                                                                                       compound
+                                                              A3.5M           3 000          3 500            500            500             gauge
+ used only to measure the small varia-
+                                                              A2M             2 000          2 000            300            300
+ tions in atmospheric pressure that occur
+                                                              A1.4M           1 400          1 400            200            200
+ during gauge mode operation so its
+                                                              A700K            700            700             100            100
+ absolute error and drift over time do not                    A350K            350            250             50                35
+ contribute to measurement uncertainty.                       A200K            200            100             30                15
+ Q-RPT modules offer the advantages of:                       A160K            160               60           23                8                        Gas only
+                                                                                                                                                                        Included
+ • % of reading measurement uncer-                            A100K            110               10           16             1.5
+     tainty with AutoRange span                               BA100K1          110               —            16                —
+     turndown available                                       G200K             —             200              —                30
+ • Negligible warm up time                                    G100K             —             100              —                15
+ • No gas species dependence                                  BG15K2            —                15            —             2.2
+                                                                                                                                           Gauge only
+ • Quartz element isolated from test                          G15K              —                15            —             2.2
+     medium                                               1
+                                                            BA100K is a barometer with a low point of 70 kPa (10 psia).
+ • Low sensitivity to orientation                         2
+                                                            BG15K is bidirectional gauge from -15 kPa to +15 kPa (-2.2 psi to +2.2 psi).
+
+
+
+                               PPC4
+
+
+
+                                                                                 Compatible with PPC4 automated pressure
+                                                                                 controller
+      RPM4
+                                                                                 RPM4 can be used as an external reference pressure
+                                                                                 measurement device for a PPC4, fully automated, pressure
+                                                                                 controller/calibrator. One or two RPM4s can be “daisy
+                                                                                 chained” to PPC4 by 9 pin RS-232 cable(s). The RPM4's
+Q-RPT                                                                            Q-RPTs become part of the PPC4 system and are managed
+                                                                                 by PPC4 transparently to the user. There is only one test
+                                                                                 connection for the PPC4 system‘s full range of operation.
+                                                                                    See the PPC4 product brochure for additional
+    To UUT                                                                       information.
+
+
+
+ 3 Fluke Calibration   RPM4™ Reference Pressure Monitor
+                                                                  General specifications
+                                                                                                                                   1
+                                                                                                                                       Predicted one year stability limit (k=2) assuming
+ Power requirements                       RPM4: 85 V ac to 264 V ac, 50/60 Hz, 25 V a max and 12 V dc @ 9 Ahr                          regular use of AutoZero function. Absolute mode
+                                          Battery/charger: 100 V ac to 240 V ac, 50/60 Hz                                              predicted one year stability without use of AutoZ
+ Normal operating temperature range       15 °C to 35 °C (59 °F to 95 °F)                                                              is ± (0.005 % Q-RPT span + 0.005 % of reading).
+
+ Vibration                                Meets MIL-T-28800D
+                                                                                                                                   2
+                                                                                                                                       Combined linearity, hysteresis and repeatability.
+                                                                                                                                       Add ± 1 Pa (0.00015 psi) in gauge mode with
+ Weight (typical)                         5 kg (11 lb)                                                                                 an Axxx Q-RPT for the resolution and short term
+                                                                                                                                       stability of the on-board barometer.
+ Dimensions (H x W x D)                   RPM4: 10 cm x 22.7 cm x 24 cm (3.9 in x 8.9 in x 9.5 in)
+                                          Battery/charger: 8 cm x 22.5 cm x 20 cm (3.1 in x 8.9 in x 7.9 in)
+                                                                                                                                   3
+                                                                                                                                       Maximum deviation of the Q-RPT indication
+                                                                                                                                       from the true value of applied pressure including
+ Communications ports                     RS-232 (COM1, COM2), IEEE-488.2                                                              precision, predicted one year stability, temperature
+                                                                                                                                       effect and calibration uncertainty, combined and
+ Operating modes                          Absolute, gauge, compound gauge, differential
+                                                                                                                                       expanded (k=2) following the ISO “Guide to the
+ Pressure ranges                          Vacuum to 280 MPa (40 000 psi)                                                               Expression of Uncertainty in Measurement.”
+ Operating media                          Q-RPTs lower than A7M: Gas only                                                          4
+                                                                                                                                       % of reading value times measured pressure
+                                          All others: Either gas or oil                                                                from 100 % to 30 % of Q-RPT span. Under 30
+                                                                                                                                       % of Q-RPT span, % of reading value times 30
+ Calibration                              ISO 17025 accredited calibration report included                                             % of Q-RPT span. For example, if the Q-RPT is a
+                                                                                                                                       Standard A160K, the Measurement Uncertainty in
+ Pressure connections                     Up to A70M: 1/8 in. NPT F                                                                    pressure is 0.010 % times the measured pressure
+                                          Above A70M: DH500 (equivalent to AE250C)                                                     to 48 kPa (160 kPa span x 30 %) and 0.0048 kPa
+ CE Mark                                  Available, must be specified                                                                 (160 kPa span x 30 % x 0.01 %) under 48 kPa.
+                                                                                                                                   5
+                                                                                                                                     % of reading value times measured pressure from
+                                                                                                                                     100 to 30 % of AutoRanged span. Under 30 % of
+ Measured pressure (Q-RPT)                                                                                                           AutoRanged span, % of reading value times 30 %
+                                                                                                                                     of AutoRanged span. If AutoRanged span is less
+ Warm up time       30 minute temperature stabilization recommended from cold power up                                               then 30 % of maximum Q-RPT span, % of reading
+ Resolution         To 1 ppm, user adjustable                                                                                        values times measured pressure, or % of reading
+                                                                                                                                     times 9 % of Q-RPT span, whichever is greater.
+ Predicted one      ± 0.005 % of reading all ranges and classes                                                                      For example, if the Q-RPT is a Premium A160K and
+ year stability1                                                                                                                     AutoRanged span is 160 kPa, the Measurement
+                                                                                                                                     Uncertainty in pressure is measured pressure x
+                         Standard Class              Premium Class               Q-RPTs A14M to            Q-RPTs A200M to           0.008 % to 48 kPa (160 kPa AutoRanged span x
+                                                                                     A140M                      A280M                30 %) and 0.0038 kPa (160 kPa span x 30 % x
+                             Q-RPTs up to A10M (1 500 psi)6                   (2 000 to 20 000 psi)      (30 000 to 40 000 psi)      0.008 %) under 48 kPa. If the AutoRanged span is
+                                                                                                                                     100 kPa (greater than 30 % of 160 kPa maximum
+ Precision2         ± 0.008 % of reading or      ± 0.005 % of reading,        ± 0.012 % of reading or    ± 0.015 % of reading or     Q-RPT span), the Measurement Uncertainty in
+                           0.0024 %                     0.0015%                      0.0036 %                   0.0045 %             pressure is measured pressure x 0.008 % to
+                        of Q-RPT span,           of AutoRanged span or            of Q-RPT span,             of Q-RPT span,          30 kPa (100 kPa AutoRanged span x 30 %) and
+                     whichever is greater4      0.0005 % of Q-RPT span,        whichever is greater4      whichever is greater4      0.0025 kPa (100 kPa span x 30 % x 0.008 %)
+                                                  whichever is greater5                                                              under 30 kPa. If the AutoRanged span is
+                                                                                                                                     30 kPa (less than 30 % of the 160 kPa maximum
+ Measurement        ± 0.010 % of reading or       ± 0.008 % of reading,       ± 0.013 % of reading or    ± 0.018 % of reading or     Q-RPT span), the Measurement Uncertainty in
+ Uncertainty3              0.0030 %              0.0024 % of AutoRanged              0.0039%                    0.0054 %             pressure is measured pressure x 0.008 % to
+                        of Q-RPT span,          span or 0.0007 % of Q-RPT         of Q-RPT span,             of Q-RPT span,          14.4 kPa (160 kPa maximum Q-RPT span x 9 %)
+                     whichever is greater4      span, whichever is greater5    whichever is greater4      whichever is greater4      and 0.0012 kPa (160 kPa maximum Q-RPT span x 9
+                                                                                                                                     % x 0.008 %) under 14.4 kPa. For GXXX ranges, the
+                                                                                                                                     total uncertainty is expanded to 0.015% reading
+                                                                                                                                     or 0.0045% of Q-RPT span, whichever is greater
+                                                                                                                                     when used outside of the altitude range of -90 to
+
+Ordering information                                                                                                               6
+                                                                                                                                     900 meters (-300 to 3000 feet).
+                                                                                                                                     Premium class not available on G100K and G200K
+                                                                                                                                     ranges.
+
+Model
+                                                                                       Configuring an RPM4 model number
+RPM4 04 -1 US units version, -2 SI units version
+RPM4 05 CE mark                                                                        RPM4 mhhhac/mlllac
+RPM4 06 Special calibration                                                            Where:
+RPM4 07 Special test fluid, Hi Q-RPT (specify fluid)                                    mhhhac          Indicates the Hi Q-RPT designation.
+RPM4 08 Special test fluid, Lo Q-RPT (specify fluid)                                                    c indicates Q-RPT class (s for Standard, p for Premium).
+RPM4 09 -1 Special configuration, air data                                                   mlllac     Indicates the Lo Q-RPT designation and class.
+(A160K/A160K, A350K/A160K only)                                                                         Leave blank if there is no Lo Q-RPT.
+Accessories                                           See Q-RPTs and ranges table for available Q-RPTs.
+Battery Pack/Charger 12 V dc battery with charger
+Rack Mount Kit Rack mount kit for standard 19 in. rack                                 Fluke Calibration.	
+Footswitch Remote [ENTER] footswitch                                                   Precision, performance, confidence.™
+MPC1-1000 Manual gas pressure controller, for vacuum to 7 000 kPa (1 000 psi)
+MPC1-3000 Manual gas pressure controller, for vacuum to 20 MPa (3 000 psi)             Fluke Calibration
+MPC1-D-1000 Manual pressure controller, for differential pressure at line pressure     PO Box 9090, Everett, WA 98206 U.S.A.
+up to 7 000 kPa (1 000 psi)                                                            Fluke Europe B.V.
+                                                                                       PO Box 1186, 5602 BD
+MPC1-D-3000 Manual pressure controller, for differential pressure at line pressure     Eindhoven, The Netherlands
+up to 20 MPa (3 000 psi)                                                               For more information call:
+GPC1-16000 Assisted gas pressure controller, 110 MPa (16 000 psi)                      In the U.S.A. (877) 355-3225 or
+MPG1-100M Manual hydraulic pressure generator/controller, 100 MPa (15 000 psi)         Fax (425) 446-5116
+                                                                                       In Europe/M-East/Africa +31 (0) 40 2675 200 or
+MPG1-200M Manual hydraulic pressure generator/controller,                              Fax +31 (0) 40 2675 222
+200 MPa (30 000 psi)                                                                   In Canada (800)-36-FLUKE or
+OPG1-30000 Assisted hydraulic pressure generator/controller,                           Fax (905) 890-6866
+                                                                                       From other countries +1 (425) 446-5500 or
+200 MPa (30 000 psi)                                                                   Fax +1 (425) 446-5116
+PK-7000-PPC/MPC Interconnections kit for RPM4 and MPC1 with quick-connector            Web access: http://www.flukecal.com
+test connection                                                                        ©2010-2012, 2019-2021 Fluke Calibration.
+                                                                                                                                       Specifications subject to change without notice.
+                                                                                                                                       Printed in U.S.A. 1/2021 210026-en
+
+                                                                                                                                       Modification of this document is not permitted
+  4 Fluke Calibration        RPM4™ Reference Pressure Monitor                                                                          without written permission from Fluke Calibration.
+

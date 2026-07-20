@@ -1,0 +1,263 @@
+LI-7815 | Specifications
+Skip To Main Content
+Account
+Settings
+Logout
+placeholder
+Account
+Settings
+Logout
+Filter:
+All Files
+Submit Search
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse
+Gas Monitoring
+Agricultural
+Best Practices
+Environmental
+Protection
+Soil, Atmosphere,
+& Ocean Studies
+Energy & Indoor
+Air Monitoring
+Water
+Monitoring
+RESOURCES
+Resource Center
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT
+Contact LI-COR
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse Gas & Emissions
+Monitoring
+Agricultural Best Practices
+Environmental Protection
+Soil, Atmosphere, & Ocean Studies
+Indoor Environmental Monitoring
+Water Resource Management
+RESOURCES
+All Resources
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT US
+​
+Contact Support
+Phone
+1-402-467-3576
+Toll Free:
+1-800-447-3576
+Email
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Contact Forms
+LI-COR Sales
+LI-COR Support
+LICORbio Support
+International
+Europe
+Distributors
+Address
+4647 Superior St.
+P.O. Box 4425
+Lincoln, NE USA
+68504-0425
+HOBO Data Loggers
+HOBO Sales
+HOBO Help Center
+HOBO Support
+Support:
+Application Note
+Tech Tip
+LI-7815
+CO
+2
+/H
+2
+O Trace Gas Analyzer
+What are you looking for?
+General Help
+Calibration Certificates
+Filter:
+Filter Results
+Submit Search
+Calibration information is available for light sensors, gas analyzers, photosynthesis systems, calibrated chambers, calibrated light sources, and plant canopy analyzers.
+Find
+View Certificate
+Contents:
+Specifications
+General
+Measurement Technique:
+OF-CEAS (Optical Feedback – Cavity Enhanced Absorption Spectroscopy)
+Measurement Rate:
+1 sample per second (1 Hz)
+Optical Cavity Volume:
+6.41 cm
+3
+Total Sample Volume:
+28 cm
+3
+Flow Rate:
+250 sccm nominally in standard configuration
+150 sccm nominally in high altitude configuration
+70 sccm nominally with reduced flow rate kit installed
+Total Weight:
+10.5 kg (including batteries)
+Case Dimensions:
+51 × 33 × 18 cm (L × W × H)
+Operating Temperature Range:
+-25 °C to 45 °C (without solar load)
+Operating Humidity Range:
+0 to 85% RH (non-condensing, without solar load)
+Sample Line Humidity Range:
+0 to 99.9% (non-condensing)
+Operating Pressure Range:
+70 to 110 kPa in standard and reduced flow rate configuration
+50 to 110 kPa in high altitude configuration
+Connectivity:
+Ethernet and Wi-Fi (not available in some countries)
+Wi-Fi Compatibility:
+2.4 GHz, 802.11 a/b/g/n/ac
+Power Consumption:
+Steady State Operation:
+22 Watts at 25 °C without batteries charging
+Warmup:
+Up to 65 W without batteries charging; up to 100 W with batteries charging
+Off:
+Up to 2.3 W when powered from pins 3 and 4 without batteries charging; up to 0.2 W when powered from pins 1 and 5 without batteries charging
+Power Supply Requirements:
+Pins 1 and 5 (24 VDC Input):
+Minimum 6 A at 24 V
+Pins 3 and 4 (10.5 to 33 VDC Input):
+Minimum 14 A at 10.5 VDC; 6 A at 24 VDC
+Power Supply:
+Universal Power Adapter (Input: 100 to 240 VAC, 50-60 Hz; Output: 24 VDC)
+Battery Life:
+8 hours typical with 2 batteries
+Data Storage:
+Up to 5,356,800 records; about 62 days of continuous data collection
+Pollution Degree:
+2
+Over-voltage Category:
+II
+Class 1 Laser Product
+CO
+2
+Measurements
+Response Time (T
+10
+- T
+90
+) from 0 to 400 ppm:
+≤2 seconds in standard configuration
+≤3 seconds in high altitude configuration
+Range:
+0 to 10,000 ppm
+Precision (1σ):
+0.10 ppm at 400 ppm with 1 second averaging
+0.04 ppm at 400 ppm with 5 second averaging
+Maximum Drift:
+< 0.2 ppm per 24-hour period
+H
+2
+O Measurements
+Range:
+100 to 60,000 ppm
+Precision (1σ):
+45 ppm at 10,000 ppm with 1 second averaging
+20 ppm at 10,000 ppm with 5 second averaging
+Specifications subject to change without notice.
+Figure C‑1
+.
+LI-7815
+dimensions. Clearance is required for the power cable and tubing, as well as 2 to 3 cm around the case vents.
+Share
+Copy Link
+Email
+Cite
+On this page:
+Specifications
+General
+CO2 Measurements
+H2O Measurements
+Was this helpful?
+Yes
+No
+We're sorry about that.
+Want to tell us more?
+Contact technical support.
+Great!
+Thanks for taking the time to give us feedback.
+Join Our Newsletter
+SUBSCRIBE
+LI-COR
+4647 Superior Street
+PO Box 4425
+Lincoln, NE 68504
+United States
+Phone:
+1-402-467-3576
+Toll-Free:
+1-800-447-3576
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Fax:
+1-402-467-2819
+www.licor.com
+COMPANY
+About Us
+Careers
+Copyrights & Trademarks
+International Distributors
+Patents
+Press & Media
+CONNECT
+OUR
+BRANDS
+Looking for
+LI-COR
+Biotechnology?
+LI-COR
+Biotechnology
+is now
+©2026 LI-COR, Inc. |
+Privacy Policy
+|
+Terms of Use
+|
+Cookie Notice

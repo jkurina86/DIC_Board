@@ -1,0 +1,1937 @@
+Using the LI-830 and
+LI-850 Gas Analyzers
+                                Using the LI-830 and LI-850
+                                                      Gas Analyzers
+
+
+
+
+LI-COR Environmental
+4647 Superior Street
+Lincoln, Nebraska 68504
+Phone: +1-402-467-3576
+Toll free: 800-447-3576 (U.S. & Canada)
+envsales@licor.com
+envsupport@licor.com
+licor.com/
+LI-COR GmbH, Germany
+Siemensstraße 25A
+61352 Bad Homburg
+Germany
+Phone: +49 (0) 6172 17 17 771
+envsales-gmbh@licor.com
+envsupport-eu@licor.com
+LI-COR Ltd., United Kingdom
+St. John’s Innovation Centre
+Cowley Road
+Cambridge
+CB4 0WS
+United Kingdom
+Phone: +44 (0) 1223 422102
+envsales-UK@licor.com
+envsupport-eu@licor.com
+Beijing LI-COR Bioscience Ltd.
+Room 502-503, 5th Floor, Jimen No.1 Office Building
+Xitucheng Road, Haidian District
+Beijing, China
+Phone: +86-400-1131-511
+china-sales@licor.com
+china-support@licor.com
+LI-COR Distributor Network
+licor.com/distributors
+Notice
+The information in this document is subject to change without notice.
+LI-COR MAKES NO WARRANTY OF ANY KIND WITH REGARD TO THIS MATERIAL, INCLUDING BUT NOT
+LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE. LI-COR shall not be held liable for errors contained herein or for incidental or consequential damages in con-
+nection with the furnishing, performance, or use of this material.
+This document contains proprietary information, which is protected by copyright. All rights are reserved. No part of this
+document may be photocopied, reproduced, or translated to another language without prior written consent of LI-COR,
+Inc.
+Windows® is a trademark of Microsoft, Inc. macOS® is a trademark of Apple, Inc., registered in the US and other coun-
+tries. Drierite is a registered trademark of the W.A. Hammond Drierite Company. Excelon Bev-a-line is a registered trade-
+mark of Thermoplastic Processes, Inc. All other trademarks and registered trademarks are property of their respective
+owners.
+U.S. Patents: licor.com/patents
+
+Printing History
+© Copyright 2018, LI-COR, Inc. All rights reserved.
+Publication Number: 984-17190
+Created on Friday, June 13, 2025
+
+Notes on Safety
+This LI-COR product has been designed to be safe when operated in the manner described in this manual. The safety of
+this product cannot be assured if the product is used in any other way than is specified in this manual. The product is
+intended to be used by qualified personnel. Read this entire manual before using the product.
+
+ Equipment markings:
+
+                   The product is marked with this symbol when it is necessary for you to refer to the manual or
+                   accompanying documents in order to protect against injury or damage to the product.
+                   The product is marked with this symbol when a hazardous voltage may be present.
+
+                   The product is marked with this symbol if a Chassis Ground connection is required.
+
+                   The product is marked with this symbol to indicate that a direct current (DC) power supply is
+                   required.
+   WARNING          Warnings must be followed carefully to avoid bodily injury.
+   CAUTION         Cautions must be observed to avoid damage to your equipment.
+ Manual markings:
+
+   Warning         Warnings must be followed carefully to avoid bodily injury.
+   Caution         Cautions must be observed to avoid damage to your equipment.
+   Note            Notes contain important information and useful tips on the operation of your equipment.
+
+
+
+
+                                                             ii
+CE Marking:
+This product is a CE marked product. For conformity information, (typically EMC, Safety, RoHS, and/or Wireless) contact
+LI-COR Support at envsupport@licor.com for a Declaration of Conformity. Outside the U.S., contact your local sales office
+or distributor.
+For ReaCH (Regulation (EC) n.1907/2006) related questions, information is available on the European Chemicals Agency
+maintained website for the Waste Framework Directive SCIP database.
+ You can search by product name (for this product “LI-830 or LI-850”), or request an “SCIP number” from the email
+above.
+LI-COR scientific products are for professional use (non-consumer products). These products do not fall within the vol-
+untary scopes of regulations: UNI EN ISO 14024, TCO Certified, EPEAT 2018, Blue Angel, TÜV Green Product Mark,
+Energy Star, EU GPP, or other similar regulations. The typical scope for these regulations is lighting, furniture, copiers,
+mobile phones, televisions, computer/servers, home appliances, to name a few. As such, our products do not use any
+labeling that indicates adherence thereof.
+
+California Proposition 65 Warning
+WARNING: This product contains chemicals known to the State of California to cause cancer and birth defects or other
+reproductive harm.
+
+Federal Communications Commission Radio Interference Statement
+WARNING: This equipment generates, uses, and can radiate radio frequency energy and if not installed in accordance
+with the instruction manual, may cause interference to radio communications. It has been tested and found to comply
+with the limits for a Class A computing device pursuant to Subpart J of Part 15 of FCC rules, which are designed to
+provide a reasonable protection against such interference when operated in a commercial environment. Operation of this
+equipment in a residential area is likely to cause interference in which case the user, at his own expense, will be required to
+take whatever measures may be required to correct the interference.
+
+Waste Electronic and Electrical Equipment (WEEE) Notice
+This symbol indicates that the product is to be collected separately from unsorted municipal waste. The fol-
+lowing applies to users in European countries: This product is designated for separate collection at an appro-
+priate collection point. Do not dispose of as household waste. For more information, contact your local
+distributor or the local authorities in charge of waste management.
+
+
+
+
+                                                              iii
+               LI-830 CO2 气体分析仪 and LI-850 CO2 / H2O 气体分析仪
+             LI-830 CO2 Gas Analyzer and LI-850 CO2/H2O Gas Analyzer
+ 零件名称                                         有毒有害物质或元素
+ Part Name                        Toxic and Hazardous Substances or Elements
+                                                                         多溴二苯
+                            铅          汞        镉     六价铬        多溴联苯
+                                                                            醚
+                           (PB)       (Hg)     (Cd)   (Cr(VI))   (PBB)
+                                                                          (PBDE)
+ 印刷电路板
+                            X          O        O        O        O            O
+ (PCBs)
+ 机电零件
+ (Electromechanical         X          O        O        O        O            O
+ Parts)
+ 光学平台
+                            X          O        O        O        O            O
+ (Optical Bench)
+ 泵套件
+                            X          O        O        O        O            O
+ (Pump Kit)
+ 金属零件
+                            X          O        O        O        O            O
+ (Metal Parts)
+ 外壳
+                            X          O        O        O        O            O
+ (Enclosure)
+ 显示
+                            O          O        O        O        O            O
+ (Display)
+ 该表是根据SJ / T 11364的规定编制的。
+
+ O = 表示零件所有均质材料中有毒有害物质的含量低于GB / T 26572中所述的浓度极限
+ 要求
+
+ indicates that the content of the toxic and hazardous substance in all the
+ Homogeneous Materials of the part is below the concentration limit
+ requirement as described in GB/T 26572
+
+ X = 表示零件的至少一种均质材料中有毒有害物质的含量超过了GB / T 26572中所述的
+ 浓度极限要求
+
+ indicates that the content of the toxic and hazardous substance in at least one
+ Homogeneous Material of the part exceeds the concentration limit requirement
+ as described in GB/T 26572
+
+
+
+
+Doc. #53-19136
+January 10, 2020
+
+
+
+
+                                                                         iv
+                                                Contents
+
+Section 1. Introduction to the instruments
+Online resources                                           1-1
+    Application software                                   1-1
+    Integrator's guide                                     1-1
+    Instruction manual                                     1-1
+What's what                                                1-2
+    Gas analyzer                                           1-2
+    Accessories kit                                        1-3
+    Air pump (optional)                                    1-3
+    Display (optional)                                     1-3
+
+
+Section 2. Connecting with the analyzer
+The terminal strip                                         2-3
+Powering the LI-830 and LI-850                             2-4
+    Using the universal power adapter                      2-4
+    Using the terminal strip power connectors              2-4
+Installing device drivers                                  2-5
+Storing the gas analyzer                                   2-5
+
+
+Section 3. Configuring the gas analyzer
+Overview of the software                                   3-1
+Configuring graphs                                         3-2
+Logging data to a PC                                       3-3
+Instrument settings                                        3-4
+    Configuring the DAC outputs                            3-4
+    Optimizing the DAC resolution                          3-4
+    Computing readings from the DAC output                 3-5
+    Other options                                          3-8
+Using the pump                                             3-8
+Using alarms                                               3-9
+
+
+Section 4. Troubleshooting
+Instrument will not power on                               4-1
+
+
+
+
+                                                   v
+Unable to span or zero the instrument                        4-1
+Instrument reports -50 ppm CO2 or measurements jump around   4-2
+Pump not working                                             4-2
+
+
+Section 5. Maintenance
+User calibration                                             5-1
+    Setting the CO2 zero                                     5-1
+    Setting the primary CO2 span                             5-2
+    Setting the secondary CO2 span                           5-3
+    Setting the H2O zero and spans (LI-850 only)             5-3
+    Recovering from a bad zero or span                       5-3
+Cleaning the optical bench                                   5-4
+Replacing a fuse                                             5-6
+
+
+Appendix A. Equation Summary
+
+Appendix B. Specifications
+
+Standard Terms and Conditions
+
+
+
+
+                                                   vi
+Section 1.
+Introduction to the instruments
+                   The LI-830 and LI-850 gas analyzers both measure CO2 in air at concentrations from
+                   0 to 20,000 ppm. The instruments differ in that the LI-850 measures water vapor in
+                   air, but the LI-830 does not. As a consequence of the water vapor measurement, the
+                   LI-850 is able to measure CO2 concentrations with greater accuracy than the LI-830.
+                   Regardless of this difference, operating both instruments is essentially the same. This
+                   document provides basic operating instructions for the analyzers.
+
+
+Online resources
+                   In addition to the contents of your box, you may be interested in the following
+                   resources. All are available from licor.com/support/home.html. Select the LI-830 and
+                   LI-850 Analyzer.
+
+                   Application software
+                   The software used to interact with the instrument is available for both Windows®
+                   and macOS® operating systems. It is used to configure the instrument, read meas-
+                   urements, and configure data logging to a computer. For Windows 7 and 8, the
+                   device drivers must be installed manually before you can connect with the instru-
+                   ment. Software is available from licor.com/support/LI-850/software.html.
+
+                   Integrator's guide
+                   The Integrator's Guide describes how to control the instrument using a terminal pro-
+                   gram and read data in a command-line interface.
+
+                   Instruction manual
+                   A .pdf version of this document can be downloaded to your computer.
+
+
+
+Using the LI-830 and LI-850 Gas Analyzers                                                              1-1
+Section 1. Introduction to the instruments
+
+
+
+
+What's what
+                    The LI-830 and LI-850 include a core set of components and each may include
+                    optional components. These are described below.
+
+                    Gas analyzer
+                    This is the gas analyzer in an enclosure. It may include an optional built-in pump
+                    and display.
+
+
+
+
+                     l   Power indicator: Illuminates when the instrument is powered on.
+                     l   Low Battery indicator: Illuminates if the power supply voltage drops below 10.5
+                         volts. The instrument will continue to operate with a low battery, but expect a
+                         corresponding decline in performance.
+                     l   Alarm indicators illuminate if an alarm threshold has been crossed. See Using
+                         alarms on page 3-9.
+                     l   RS-232 Serial and USB connectors to connect with a computer or serial device.
+                     l   Air Inlet and Air Outlets are shipped with covers in place. Keep the covers so you
+                         can put them back over the ports when the analyzer is not in use.
+                     l   Power In: Compatible with 12 to 30 VDC power supplies.
+                     l   The Terminal Strip has another power connector and outputs for alarms and
+                         digital-to-analog converters (DAC).
+
+
+
+
+1-2                                                                    Using the LI-830 and LI-850 Gas Analyzers
+                                                                                Section 1. Introduction to the instruments
+
+
+
+
+                   Accessories kit
+Part Number        The instrument includes a standard accessories kit, which has accessories and some
+9980-065           replacement parts for your gas analyzer. The accessories kit includes the following
+                   components:
+
+                    Description                                                          Quantity         Part Number
+                    Universal power supply; Input: 100 to 240 VAC, 50 to 60              1                591-19495
+                         Hz; Output: 12 VDC, 2.5 amps
+                         Outlet adapter kit for universal power supply                   1                591-13033
+                    USB cable; Standard 1.8 m USB-A to USB-Ba                            1                392-06652
+                    RS-232 null modem, cross-over cable kita                             1                9975-016
+                    14-pin terminal block; Includes label sticker (250-05340)            1                331-05273
+                    Tube fitting nuts for air inlet and outlet                           2                9861-036
+                    Bev-a-line IV plastic tubing; 3.6 meter roll                         1                222-01824
+                    Air filters                                                          2                9967-008
+                    Quick-connect straight unions                                        2                300-03123
+                    Cleaning kit                                                         1                9980-066
+                         3" Source and detector cleaning swabs                           5                610-05314
+                         5" Optical path cleaning swabs                                  5                610-05315
+                         O-Rings (AS-018 Nitrile 70)                                     4                192-00226
+                    Black polyurethane feet                                              4                234-02268
+
+                   Air pump (optional)
+                   An optional air pump is available for the gas analyzer. The pump (if applicable) is
+                   installed in the gas analyzer case. If you want to add a pump, you can order one
+                   later.
+
+                   Display (optional)
+                   An optional display is available. The display shows CO2 concentration, H2O con-
+                   centration (LI-850 only), bench temperature, and pressure.
+
+
+
+
+                  aThe use of cables other than those provided may result in improper electrical performance.
+
+
+
+Accessories kit                                                                                                       1-3
+Section 1. Introduction to the instruments
+
+
+
+
+1-4                                          Using the LI-830 and LI-850 Gas Analyzers
+Section 2.
+Connecting with the analyzer
+                   The following tutorial describes the basic steps you'll follow when you turn on the
+                   LI-830 or LI-850 for the first time.
+
+          1        Install the software on your computer
+                   The software is used to configure data communication, analog and digital outputs,
+                   alarms, data logging, and to verify the calibration. Software is available from
+                   licor.com/support/LI-850/software.html.
+
+          2        Install an air filter on the air-in port
+                     Caution: Always install an air filter on the input air before operating the LI-830
+                     or LI-850. Failure to use a filter will cause contamination of the optical bench. As
+                     an extra precaution, you can blow compressed air through the filter in the normal
+                     flow direction to remove any contaminants.
+
+                   Retrieve an air filter and tubing from the accessories kit. Cut a 5 to 10 cm piece of
+                   tubing. Attach the filter and tubing to the air-in port. Observe the arrow on the filter
+                   and be sure that the air flow is in the proper direction.
+
+
+
+
+Using the LI-830 and LI-850 Gas Analyzers                                                               2-1
+Section 2. Connecting with the analyzer
+
+
+
+
+          3        Install the USB cable
+                   The USB connection is the simplest way to connect the analyzer with a computer. If
+                   you want to use the RS-232 serial connection instead, connect the cable to the serial
+                   port, and install a serial-to-USB adapter on the serial cable, if needed.
+
+          4        Power on the gas analyzer
+                   The LI-830 and LI-850 will turn on when power is supplied, so plug in the power
+                   cable to turn it on. If you use an alternative power supply, it must be able to source
+                   a minimum of 1.2 A at 12 VDC while the instrument warms up. After the warmup,
+                   the instrument will draw about 0.3 A at 12 VDC.
+
+          5        Connect with the gas analyzer
+                    Start the software.
+
+
+
+
+                   Click the Connection button in the upper right of the display. Select your instru-
+                   ment from the list, set the data rate, then click Connect. Data will populate the win-
+                   dow after connecting. You can enter the COM port manually by checking Manual
+                   Port and setting the port number (COM#).
+                   If you are using Windows® 7 or 8, install the drivers before you connect, as
+                   described in Installing device drivers on page 2-5.
+
+
+
+2-2                                                                  Using the LI-830 and LI-850 Gas Analyzers
+                                                                         Section 2. Connecting with the analyzer
+
+
+
+
+The terminal strip
+                     The terminal strip connects to the front panel of the instrument. The pin assign-
+                     ments are given on the top of the instrument, and there is a sticker in the accessories
+                     kit that you can use to help identify which terminal is which.
+
+
+
+
+                     Terminal               Label                Description
+                     1                      12-30 VDC            Voltage In, 12-30 VDC
+                     2                      GND                  Ground
+                     3                      High Alarm           High Alarm
+                     4                      GND                  Ground
+                     5                      Low Alarm            Low Alarm
+                     6                      GND                  Ground
+                     7                      V OUT 2              Voltage output channel 2
+                     8                      GND                  Ground
+                     9                      V OUT 1              Voltage output channel 1
+                     10                     GND                  Ground
+                     11                     4-20 mA 2            Current output channel 2
+                     12                     GND                  Ground
+                     13                     4-20 mA 1            Current output channel 1
+                     14                     GND                  Ground
+
+
+
+
+The terminal strip                                                                                          2-3
+Section 2. Connecting with the analyzer
+
+
+
+
+Powering the LI-830 and LI-850
+                   A power supply—either a battery or the universal power adapter—can be connected
+                   to the LI-830 and LI-850 power jack or to pins 1 and 2 on the terminal strip. The
+                   instruments require 12 to 30 VDC. The power supply must be able to provide 14
+                   watts (1.2 A at 12 V) during warmup and about 3.6 watts (0.3 A at 12 V) during nor-
+                   mal operation.
+
+                   Using the universal power adapter
+                   The included power supply is compatible with mains power in most localities glob-
+                   ally (input 100 to 240 VAC, 50 to 60 Hz; output 12 VDC, 2.5 amps). You may need
+                   to install different blades from the outlet adapter kit to fit your wall outlets.
+
+                                      LOCK       Turn clockwise   Outlet Adapter Kit
+                                                 to lock
+                               OPEN
+
+
+
+
+                                                                               EN
+
+
+
+
+                                                                                          LO
+                                                                          OP
+
+
+
+
+                                                                                             CK
+                                        P US
+                                             H
+
+
+
+
+                                                                                    PU
+                                                                                                          N. America, Japan
+
+                                                                                     SH
+
+
+
+                    Push button, then
+                                                                            EN
+                                                                                          LO
+
+                                                                          OP
+                    turn counterclock-
+                                                                                             C
+                                                                                             K
+
+
+
+
+                    wise to release                                                 PU
+                                                                                                          Australia
+                                                                                     SH
+                                                                  OPEN
+
+
+
+
+                                                                                                  LOCK
+
+
+
+
+                                                                                    PU                    United Kingdom
+                                                                                     SH
+
+
+
+
+                                                                                                   LOCK
+                                                                   OPEN
+
+
+
+
+                                                                                    PU
+                                                                                                          Europe
+                                                                                     SH
+
+
+
+
+                   Using the terminal strip power connectors
+                   The terminal strip has connectors for any power supply that has bare leads. Pin 1 is
+                   the positive (+) terminal, and pin 2 is the negative (-) terminal.
+
+
+
+
+2-4                                                                                              Using the LI-830 and LI-850 Gas Analyzers
+                                                                              Section 2. Connecting with the analyzer
+
+
+
+
+Installing device drivers
+                     If you are using Windows 7 and 8, you'll need to install device drivers. After con-
+                     necting the LI-830 and LI-850 to your computer with the USB cable, follow these
+                     steps:
+
+                 1 Download the drivers and unzip the file.
+                     Drivers are available at licor.com/support/LI-850/software.html or directly at
+                     licor.app.boxenterprise.net/s/pamrygkdwsl8c61wj6y815gnf4tukh3t
+
+                 2 Press the Windows key (   ), type Device Manager, and press Enter to open your device
+                   manager.
+                 3 Under Other Devices, select the LI-830/LI-850.
+                 4 Right-click LI-830/LI-850 and select Update Driver Software.
+                 5 Browse and select the folder with the driver files.
+                 6 Click Next to finish installing the drivers.
+                     When they are installed, you should see LI-COR 8x0 under Ports (COM & LPT).
+
+
+Storing the gas analyzer
+                     When you are done using the gas analyzer, follow these practices to be sure that it is
+                     ready to use the next time you need it. The instrument can be stored in non-con-
+                     densing conditions. If the instrument is stored in high humidity or moderate humid-
+                     ity for a long time while powered off, some optical components may temporarily
+                     become saturated with humidity. If this occurs, the instrument may need to run for
+                     several days before readings return to normal. When storing the instrument.
+                      l     Install the covers over the air inlet and outlet. This will keep dust, bugs, and
+                            other contaminants out of the optical cell.
+                      l     Disconnect the power supply and power wires.
+                      l     If possible, store the instrument in an air conditioned environment.
+
+
+
+
+Installing device drivers                                                                                        2-5
+Section 2. Connecting with the analyzer
+
+
+
+
+2-6                                       Using the LI-830 and LI-850 Gas Analyzers
+Section 3.
+Configuring the gas analyzer
+                   This section describes the basic operating procedures for the LI-830 and LI-850 gas
+                   analyzers. This section depends upon the instrument software, which can be down-
+                   loaded from the LI-COR technical support web site: licor.com/support/home.html.
+
+
+Overview of the software
+                   After connecting, the software presents you with live data and graphs. With the
+                   LI-830, you'll have CO2; with the LI-850, you'll have both CO2 and H2O.
+
+
+
+
+Using the LI-830 and LI-850 Gas Analyzers                                                            3-1
+Section 3. Configuring the gas analyzer
+
+
+
+
+Configuring graphs
+                    The software will always display a graph on the main page (two with the LI-850),
+                    and you can configure the graphs by clicking the Charting button or any of the
+                    Chart Settings buttons beside a particular chart. The options available are the same,
+                    regardless of how you get to them.
+
+
+
+
+                    The graphs display a fixed variable: CO2 and H2O with the LI-850. You can con-
+                    figure the settings for each graph and add a second variable. The options are:
+                    Y-Scaling: Choose Autoscale or Fixed Scale. With Fixed Scale, you can set the min-
+                    imum and maximum value for each variable displayed.
+                    X-Axis: With Continuous checked, the graph will display all of the data from the
+                    time you connect to the instrument, rescaling the x-axis when needed. With Continu-
+                    ous cleared, the graph can be configured to display the most recent data for a time
+                    period.
+                    Series 2 is an option to plot a second variable on the graph with scaling on the right
+                    axis. When checked, you can choose from CO2 concentration, cell temperature, cell
+                    pressure, CO2 absorption, or input voltage. With the LI-850, the H2O concentration,
+                    H2O dewpoint, and H2O absorption will also be available.
+
+
+
+
+3-2                                                                   Using the LI-830 and LI-850 Gas Analyzers
+                                                                            Section 3. Configuring the gas analyzer
+
+
+
+
+Logging data to a PC
+                   The instrument can log data as a text file, which will be stored to the connected com-
+                   puter. Configure the log file under Settings > Logging Options. To log data:
+
+
+
+
+               1 Create a file.
+                   Click Select File, then choose the directory where you want to store the file, and
+                   name the file.
+               2 Configure the log parameters.
+                       l   File headings: When checked, the Date and Time and Field Labels for data
+                           columns will be included in the data file header.
+                       l   Field delimiter: Choose between a space, tab, or semi-colon delimited text file.
+                       l   Log rate (seconds): How often a value is recorded. This can be one measurement
+                           per 0.5, 1, 2, 3, 4, 5, 10, or 20 seconds. It is independent of the Filter setting
+                           (described in Other options on page 3-8).
+                       l   Log values: Select the values you want in the log file.
+               3 Click Start logging.
+                   The instrument will create a text file according to the parameters you set. You can
+                   open the logged data in a text editor or most spreadsheet programs.
+
+
+
+Logging data to a PC                                                                                           3-3
+Section 3. Configuring the gas analyzer
+
+
+
+
+Instrument settings
+                    Under Instrument > Settings, you'll find the DAC (digital-to-analog) Outputs (0 to
+                    2.5 V, which also enables the 4 to 20 mA output, and 0 to 5 V, which disables the 4
+                    to 20 mA output), and Other Options, including the heater controls, pressure com-
+                    pensation control, pump control, and the digital signal filter. The 4 to 20 mA output
+                    is enabled only when the 0 to 2.5 V range is selected.
+
+
+
+
+                    Configuring the DAC outputs
+                    This section describes how to configure the voltage and current outputs. Both
+                    voltage and current outputs are configured at the same time, in the same place:
+                     l   DAC 1 configures V Out 1 (pin 9) and 4-20 mA 1 (pin 13; only when the 0 to 2.5
+                         V range is selected) on the terminal strip
+                     l   DAC 2 configures V Out 2 (pin 7) and 4-20 mA 2 (pin 11; only when the 0 to 2.5
+                         V range is selected) on the terminal strip
+
+                    Optimizing the DAC resolution
+                    When configuring the analog outputs, keep in mind that the selected ppm range
+                    will affect the resolution of data that is sent over the analog outputs.
+                    Think of it like this: The 16-bit DACs can output a fixed number of values (65,536
+                    to be exact). If a DAC is configured to output 0 to 5000 mV, you will have res-
+                    olution of 0.076 mV per count.
+                                                                                                          3-1
+
+
+
+
+3-4                                                                  Using the LI-830 and LI-850 Gas Analyzers
+                                                                                                                                                        Section 3. Configuring the gas analyzer
+
+
+
+
+                  With the 0 to 5 volt output range corresponding with a 0 to 20,000 ppm CO2 con-
+                  centration range, the finest change in concentration that can be resolved is equal to
+                  0.31 ppm.
+                                                                                                                                                                                                           3-2
+
+                  If you are measuring concentrations between 0 and 10,000 ppm, the range is 10,000
+                  ppm. By configuring the DAC range for 0 V = 0 ppm CO2 and 5 V = 10,000 ppm,
+                  the DAC output will have twice the resolution as it would in the previous con-
+                  figuration.
+                                                                                                                                                                                                           3-3
+
+                                                   20,000                                                                                  20,000
+                  CO2 Concentration (μmol mol-1)
+
+
+
+
+                                                                                                          CO2 Concentration (μmol mol-1)
+                                                                65,536 discreet points over                                                                 65,536 discreet points over
+                                                   15,000                                                                                  15,000
+                                                                the 20,000 ppm range                                                                        the 10,000 ppm range gives 2x the resolution
+
+
+                                                   10,000                                                                                  10,000
+
+
+
+
+                                                   5,000                                                                                   5,000
+
+
+
+
+                                                      0                                                                                       0
+                                                            0         1          2            3   4   5                                             0   1     2           3   4   5
+                                                                                      Volts                                                                       Volts
+
+
+                  Figure 3-1. The resolution of the analog outputs depends upon the range. If the DACs are
+                  configured to output data over the full 0 to 20,000 ppm range, the data output over the
+                  DACs will have lower resolution (left). If the DACs are configured to output data over a
+                  narrower range (for example, 0 to 10,000 ppm as shown on the right), the data output over
+                  the DACs will have higher resolution.
+
+                  Also keep in mind that the instrument will not output meaningful information over
+                  the DACs if the measured value is outside of the configured output range.
+
+                  Computing readings from the DAC output
+                  Here we give some example computations.
+
+                  Example 1: Computing CO2 from a voltage output; 0 to 500 ppm range
+                  The CO2 concentration is calculated from the DAC output. In this example, let's
+                  configure the output range for 0 V = 0 ppm and 5 V = 500 ppm. The concentration
+                  is computed from:
+
+
+
+
+Computing readings from the DAC output                                                                                                                                                                     3-5
+Section 3. Configuring the gas analyzer
+
+
+
+
+                                                                                                              3-4
+
+
+                    If the output voltage is 2.9 V, then
+                                                                                                              3-5
+
+
+                    Example 2: Computing CO2 from a voltage output; 300 to 500 ppm range
+                    In this example, let's configure the output range for 0 V = 300 ppm and 5 V = 500
+                    ppm, so the full range is 200 ppm, and notably, 0 V is no longer 0 ppm.
+                                                                                                              3-6
+
+
+                    CO2max is the reading that corresponds with the high voltage output (500 ppm in
+                    this case), and CO2min is the reading that corresponds with the low voltage output
+                    (300 ppm in this case). With an output voltage of 2.9, the concentration is:
+                                                                                                              3-7
+
+
+                    Example 3: Computing CO2 from a current output; 0 to 500 ppm range
+                    Unlike the voltage outputs, which are 0 to 2.5 or 0 to 5 V, the current outputs are
+                    from 4 to 20 mA (the 4 to 20 mA output is only available when the 0 to 2.5 V range
+                    is selected). Therefore, the range is always 16 (20 - 4), and the offset is always 4. Elec-
+                    trical current is indicated with I. In this example, let's configure the output range for
+                    4 mA = 0 ppm and 20 mA = 500 ppm. The concentration is computed from:
+                                                                                                              3-8
+
+
+                    If the current is 16.25 mA, then
+                                                                                                              3-9
+
+
+                    Example 4: Computing CO2 from a current output; 300 to 500 ppm range
+                    In this example, let's configure the output range so that 4 mA = 300 ppm and 20 mA
+                    = 500 ppm (the 4 to 20 mA output is only available when the 0 to 2.5 V range is
+
+
+
+
+3-6                                                                      Using the LI-830 and LI-850 Gas Analyzers
+                                                                       Section 3. Configuring the gas analyzer
+
+
+
+
+                  selected). Now, we need an offset that corresponds with the minimum CO2 reading
+                  (300 ppm).
+                                                                                                         3-10
+
+
+                  If the current is 16.25 mA, then
+                                                                                                         3-11
+
+
+                  Example 5: Computing cell temperature from a voltage output
+                  Cell temperature (T in °C) is calculated from the DAC output with the following:
+                                                                                                         3-12
+
+                  where XF is the full scale temperature value that corresponds to the high voltage, XZ
+                  is the temperature value that corresponds to the low voltage, V is the voltage read-
+                  ing, and Vmax is the output range (either 2.5 V or 5 V).
+
+                  Example 6: Computing cell pressure from a voltage output
+                  Cell pressure (kPa) can be computed from a voltage output with the following:
+                                                                                                         3-13
+
+                  where XF is the full scale pressure value that corresponds to the high voltage, XZ is
+                  the pressure value that corresponds to the low voltage, V is the voltage reading, and
+                  Vmax is the output range (either 2.5 V or 5 V).
+
+
+
+
+Computing readings from the DAC output                                                                    3-7
+Section 3. Configuring the gas analyzer
+
+
+
+
+                    Other options
+                    Enable heater: The heater should be enabled to maintain the optical bench tem-
+                    perature. Normally the optical bench will be about 51.4 °C. If you disable the heater,
+                    the instrument will not perform as specified.
+                    Pressure compensation: Pressure compensation should be applied to ensure that
+                    the instrument compensates for changes in pressure. Disabling pressure com-
+                    pensation will lead to less accurate measurements.
+                    Enable pump: If your instrument is equipped with a pump, this box will be inter-
+                    active. Check it to turn the pump on. Clear it to turn the pump off.
+                    Filter: The digital filter instructs the instrument to average the readings. A value of 0
+                    means no averaging, whereas a value of 20 instructs the instrument to average the
+                    previous 20 seconds of measurements. Increasing the averaging time will decrease
+                    the variation in each reported value, but will also reduce the instrument response
+                    time.
+
+
+Using the pump
+                    For instruments that are equipped with the LI-COR-installed pump, the pump is
+                    activated through the interface.
+
+                     Note: The pump will not run until the optical cell has reached the operating tem-
+                     perature of about 50 °C, regardless of the setting. If the cell temperature drops
+                     below 50 °C, the instrument will disable the pump temporarily until the cell
+                     warms back up.
+
+                    To turn on the pump from the main window, click the pump button so it reads
+                    Pump: On. Or, click Settings > Instrument and check Enable pump.
+
+
+
+
+3-8                                                                     Using the LI-830 and LI-850 Gas Analyzers
+                                                                                                              Section 3. Configuring the gas analyzer
+
+
+
+
+Using alarms
+               The alarms can be set for CO2 or H2O (in the LI-850). Each alarm features an activ-
+               ation level and a deadband. The high alarm is activated if the measured con-
+               centration exceeds a high threshold. The high deadband is the range below the
+               threshold that the alarm remains activated. The low alarm is activated if the meas-
+               ured concentration drops below a low threshold. The low deadband is the range
+               above the low threshold that the alarm remains activated.
+                                              High threshold =700;   High deadband = 100;   Low threshold = 300;   Low deadband = 50;
+                                              Alarm activated when     Alarm deactivated    Alarm activated when    Alarm deactivated
+                                                 CO2 >700 ppm        when CO2 <600 ppm         CO2 <300 ppm        when CO2 >350 ppm
+
+                                        700
+                                                                                  High Deadband
+               CO2 Concentration, ppm
+
+
+
+
+                                        600
+
+
+                                        500
+
+
+                                        400
+
+                                                                                  Low Deadband
+                                        300
+
+
+                                                                                    Elapsed Time
+
+               Figure 3-2. An alarm is triggered when a concentration is outside of a threshold. For
+               example, the high alarm is activated if the CO2 concentration exceeds 700 ppm. The alarm
+               is deactivated when the concentration drops below 600 ppm (high deadband = 100). The
+               low alarm is activated if the concentration drops below 300 ppm and is deactivated when
+               the concentration rises above 350 ppm (low deadband = 50).
+
+
+
+
+               Figure 3-3. The Alarm Settings window is where you configure alarms. The settings shown
+               here will give the behavior shown in Figure 3-2 above.
+
+
+
+Using alarms                                                                                                                                     3-9
+Section 3. Configuring the gas analyzer
+
+
+
+
+                    In TTL mode (transistor-to-transistor logic), the instrument sends a +5 V signal when
+                    the alarm is off and a 0 V signal when it is on. The alarm can be used to activate a
+                    relay switch or send a digital signal, for example. In Open collector mode, the alarm
+                    works like a switch. There is infinite resistance when the alarm is off and low res-
+                    istance when the alarm is on, allowing current to flow between the pins.
+                    Alarms are configured under Settings > Alarm Thresholds. To configure the alarms:
+
+                1 Check Enable Alarms.
+                    Select whether the alarm should be for CO2 or H2O (with the LI-850). Alarms can
+                    be set for one or the other, not both.
+                2 Configure the High Alarms.
+                    l       The High threshold is the high level at which the alarm is activated.
+                    l       The High deadband is the range below the high threshold that the alarm remains
+                            activated.
+                3 Configure the Low Alarms.
+                    l       The Low threshold is the low level at which the alarm is activated.
+                    l       The Low deadband the range above the low threshold that the alarm remains
+                            activated.
+                4 Click Apply when you are done.
+
+
+
+
+                                                             1234
+
+
+
+                     Air
+                    Inlet
+                                                                                       Fan
+                              Filter
+
+
+                                                                    5 V Relay
+
+
+
+                                            +      -
+                                       12 VDC Power Supply
+
+                    Figure 3-4. In this example, the high alarm is used to activate a relay, which turns on a
+                    fan.
+
+
+
+
+3-10                                                                            Using the LI-830 and LI-850 Gas Analyzers
+Section 4.
+Troubleshooting
+                   In this section, we describe how to identify some potential problems. If you can't
+                   find a solution here, contact your local distributor or LI-COR technical support for
+                   more help.
+
+
+Instrument will not power on
+                   Power supply adequate? The power supply should source at least 1.2 amps at 12
+                   VDC (minimum of 14 watts during warmup).
+                   Blown fuse? The instrument can be powered from the power jack or pins one and
+                   two on the terminal strip. Each connection has its own fuse.
+                    l   If you are unable to power on the instrument using the jack, but can power it on
+                        using the terminal strip, you probably have a blown power jack fuse.
+                    l   If the opposite is true, you probably have a blown terminal strip fuse.
+                    l   If you can't power it using either connection, you may have blown both fuses.
+
+                   Check the resistance across the fuse contacts using an ohm meter. A reading of 0
+                   means that the fuse is good; a reading of 1 indicates that the fuse is blown.
+                   See Replacing a fuse on page 5-6 for complete instructions.
+
+
+Unable to span or zero the instrument
+                   Dirt in the optics? If the optical cell becomes contaminated, the instrument will drift
+                   in either the zero or span.
+                   See Cleaning the optical bench on page 5-4 for complete instructions.
+
+
+
+
+Using the LI-830 and LI-850 Gas Analyzers                                                              4-1
+Section 4. Troubleshooting
+
+
+
+
+Instrument reports -50 ppm CO2 or measurements jump around
+                   If the instrument measures -50 ppm or the measurements are going between neg-
+                   ative and positive values, or just simply not making any sense, the optical source
+                   may have failed or be in the midst of failure. Contact technical support for addi-
+                   tional troubleshooting help.
+
+
+Pump not working
+                   If CO2 and/or H2O do not change as quickly as expected, there might not be
+                   adequate flow through the analyzer. This can be from a failed or disabled pump. A
+                   simple way to test the pump is to turn it on in the software and exhale near the air
+                   inlet. You should see a drastic increase in CO2 concentration within a few seconds.
+                   If it takes significantly longer, the pump may not be functioning. You can also check
+                   the measured flow rate in the Diagnostics tab of the software. Otherwise,
+                   troubleshoot with these steps:
+                    l   Does the gas analyzer have a pump?
+                        LI-830 and LI-850 gas analyzers are available with no internal pump. You can
+                        check to see if yours has a pump in a few ways: connect to the instrument and
+                        check the Diagnostics tab in the software, or you can open the analyzer to phys-
+                        ically see if it has a pump installed.
+                    l   Analyzer not warmed up yet?
+                        If the heater is enabled, the pump only runs when the optics are warmed up.
+                        Make sure that the bench temperature is up to 51 °C. If it never heats up to 51
+                        °C, the optical source or detector may have failed or be on the brink of failure.
+                        Contact technical support for additional troubleshooting help.
+
+
+
+
+4-2                                                                    Using the LI-830 and LI-850 Gas Analyzers
+Section 5.
+Maintenance
+                   The LI-830 and LI-850 will require little maintenance. Typical maintenance pro-
+                   cedures are described in this section.
+
+
+User calibration
+                   If the instrument is not measuring as expected, or if you have disassembled the
+                   optical bench for any reason, you should check the zero and span settings and set
+                   them if necessary. The zero and span are an offset and slope. The zero value ensures
+                   that the instrument shows zero when the gas has a zero concentration. A change in
+                   the zero will affect every measurement. The span setting ensures a correct meas-
+                   urement at a known non-zero concentration. A change in the span affects higher
+                   concentration measurements more than lower ones.
+
+                   Setting the CO2 zero
+                   Always perform the zero first. To set the zero, you'll need either a tank of dry air
+                   that is free of CO2 or a CO2 scrubbing chemical such as wet soda lime and a desic-
+                   cant such as Drierite.
+
+                1 Plumb the zero-gas tank or scrubber to the air inlet.
+                   Be sure to use an air filter to prevent contaminants from entering the optical path.
+                    l   If using tank air, the pressure of the tank is sufficient to flow the gas through the
+                        analyzer. Allow at least 0.75 liters per minute to flow through the cell (no more
+                        than 1.0 lpm).
+                        Caution: Disable the pump to allow tank pressure to drive the flow of cal-
+                        ibration gases.
+                    l   If using a scrubbing chemical, use the internal pump or a user-supplied pump to
+                        draw air through the analyzer.
+
+
+Using the LI-830 and LI-850 Gas Analyzers                                                                  5-1
+Section 5. Maintenance
+
+
+
+
+               2 Install a 10 to 20 cm length of tubing to the air outlet.
+                  This vent prevents ambient air from diffusing upstream into the optical cell.
+                                                  Flow Meter
+                                                   Rotameter
+                                                   × 100 cc/min
+
+                                                             25
+
+                                                             20
+
+                                                             15
+
+                     Zero                                    10
+
+                     Gas    Regulator                        5
+
+
+
+
+                                                                                          Vent
+
+
+               3 When the CO2 concentration has stabilized, click the Zero CO2 button.
+
+
+
+
+                  Setting the primary CO2 span
+                  When choosing a span gas, we recommend a gas concentration that is close to the
+                  upper limit of what you expect to measure. For example, if you are measuring near-
+                  ambient levels, choose a span gas that is near 400 ppm CO2 (as opposed to 18,000
+                  ppm). Similarly, if you are measuring concentrations near 15,000 ppm CO2, a span
+                  gas with 100 ppm would not be ideal.
+
+               4 After zeroing, flow a gas with a known CO2 concentration through the analyzer at a rate of 0.5
+                 liters per minute.
+                 Caution: Disable the pump to allow tank pressure to drive the flow of calibration
+                 gases.
+                                                  Flow Meter
+                                                   Rotameter
+                                                   × 100 cc/min
+
+                                                              25
+
+                                                              20
+
+                                                              15
+
+                     CO2                                      10
+
+                     Span   Regulator                         5
+                     Gas
+
+
+                                                                                          Vent
+
+
+               5 Enter the CO2 concentration of the span gas into the software
+
+5-2                                                                          Using the LI-830 and LI-850 Gas Analyzers
+                                                                                     Section 5. Maintenance
+
+
+
+
+               6 When the CO2 reading has stabilized, click Span CO2.
+
+
+
+
+                  Setting the secondary CO2 span
+                  You can set a second span (using a gas that has a CO2 concentration that is higher or
+                  lower than the primary span gas) to improve the precision of the analyzer. The pro-
+                  cess is exactly the same as setting the primary span, only you'll enter a different con-
+                  centration and click Span2 CO2.
+
+                  Setting the H2O zero and spans (LI-850 only)
+                  The water vapor span can be set with a dew point generator such as the LI-610. The
+                  procedure is the same as setting the CO2 zero and spans, only this uses known con-
+                  centrations of water vapor rather than CO2.
+
+                    Caution: Setting the zero and span incorrectly for either CO2 or H2O will
+                    adversely impact the performance of your instrument. If you do not have the
+                    proper equipment to span the analyzer, it is best to leave it alone.
+
+
+                  Recovering from a bad zero or span
+                  If your attempt to zero or span does not go as planned, you can restore the factory
+                  default zero and span settings. The information you need is provided on the cal-
+                  ibration sheet (included with the instrument or available for download from
+                  licor.com/support/home.html). Under Settings > Calibrations > Advanced, enter the
+                  factory zero and span values for your instrument.
+
+
+
+
+Setting the secondary CO2 span                                                                          5-3
+Section 5. Maintenance
+
+
+
+
+Cleaning the optical bench
+                  The optical bench can be removed and cleaned if necessary. If, for example, you are
+                  unable to set the span, the optics may be contaminated. Generally speaking, don't
+                  undertake this procedure unless you've ruled out other potential problems. You'll
+                  have to set the instrument zero and span after reassembling the optical bench.
+
+               1 Turn off the instrument.
+                  Unplug the power cable.
+               2 Remove the top cover.
+                  It is attached with 6 captive screws. Loosen each of the screws until the top cover is
+                  free of the bottom. If your instrument has a display, carefully rotate the top cover
+                  out of the way without straining the cable, and then unplug the display cable. Set
+                  the cover aside, being careful not to strain the ribbon cable.
+               3 Remove the cables from the source and detector.
+                  Gently grasp the plug and pull it free of the assembly. Leave the tubes in place.
+
+
+
+
+               4 Carefully lift the optical bench out of the foam.
+               5 Remove the screws that secure the source and detector (4 each), then separate the source and
+                 detector housings (with circuit boards attached) from the optical path.
+
+
+
+
+5-4                                                                      Using the LI-830 and LI-850 Gas Analyzers
+                                                                                           Section 5. Maintenance
+
+
+
+
+               6 Clean the parts.
+
+
+
+
+                   Retrieve an optical path swab from the accessories kit. Dip one end into a 50:50 eth-
+                   anol-water mixture (mild dish washing soap and water will work too) and carefully
+                   swab both ends of the optical path. Dip a Source/Detector swab into the solution
+                   and then swab around the source and detector to remove any residue.
+
+                     Caution: Do not use abrasive cleansers. Abrasive cleaners can irreparably damage
+                     the gold plating on the optical path, source, or detector.
+
+               7 Inspect the hose barbs and tubing.
+                   If the tubes are dirty or damaged, replace them with new tubes (available from
+                   LI-COR, part number 6580-041). Carefully remove them from the hose barbs. If the
+                   tubes are in good condition and clean, you may be able to reuse them. If the hose
+                   barbs are dirty, remove them and clean them with rubbing alcohol or soapy water.
+                   Use caution: Do not scratch the hose barbs because scratches may cause leaks.
+               8 Inspect the O-rings.
+                   If they are smashed flat or damaged in any way, replace them with new O-rings (part
+                   number 192-00226) from the accessories kit.
+               9 Let the optical bench components dry.
+              10 Reassemble the optical bench.
+                   Attach the source and detector. The orientation of the optical path cylinder is unim-
+                   portant — either end can be inserted into the source and detector housing. Tighten
+                   each of the screws snugly.
+              11 Place the optical bench in the foam, plug in the source and detector connectors, and re-assemble
+                 the case.
+                 Be sure the foam insulation on the top cover is positioned over the optical bench. It
+                 is required for thermal stability.
+              12 Perform a zero and span calibration. See User calibration on page 5-1.
+
+
+
+
+Cleaning the optical bench                                                                                     5-5
+Section 5. Maintenance
+
+
+
+
+Replacing a fuse
+                  The power supply and terminal strip are both protected by fuses. The instrument has
+                  one extra fuse (Littelfuse 476 Series Nano2® 3 amp 125 V fuse) that can be used in
+                  the event that one of the fuses blows. If you are able to power on the instrument
+                  using one of these two ways—but not the other—a fuse may be blown. If you can't
+                  power the instrument using either way, both fuses may be blown (or you may have
+                  a power supply issue).
+                  Before simply replacing a fuse, be sure to identify the problem that caused the fuse
+                  to blow in the first place. Otherwise, you'll just blow the spare fuse, in which case,
+                  you'll still have the problem and you'll be out of spare fuses. After identifying and
+                  solving the problem that caused the fuse to blow, replace the fuse:
+
+               1 Open the case.
+                  Loosen each of the six top cover screws until the top cover is free of the bottom. If
+                  your instrument has a display, carefully rotate the top cover out of the way without
+                  straining the cable, and then unplug the display cable. Set the cover aside.
+               2 Locate the fuses.
+                  With the air-in and -out ports facing away from you, the fuses are mounted to the
+                  lower left corner of the lowest circuit board. In the image, ribbon cables and tubes
+                  have been removed for clarity.
+
+
+
+
+               3 Using a needle-nose pliers, grasp the blown fuse and remove it from the holder.
+               4 Replace it with a spare fuse.
+               5 Power on the instrument to verify that the issue is resolved.
+
+
+5-6                                                                         Using the LI-830 and LI-850 Gas Analyzers
+Appendix A.
+Equation Summary
+                   The LI-830 and LI-850 compute CO2 concentrations using an equation of the form
+                                                                                                        A-1
+
+                   where c is concentration, f() is the calibration function, a" is the absorptance, g (a,P)
+                   is the pressure correction, S(a) is the span, and T is the temperature (°C) of the gas
+                   in the cell, typically 51.5 °C. Absorptance is computed from
+                                                                                                        A-2
+
+                   a' is a span corrected absorptance, and g(a,P) is the pressure correction.
+                                                                                                        A-3
+
+                   S(a) is the span function, and raw absorptance a is computed from
+                                                                                                        A-4
+
+
+                   where V and Vo are the raw detector sample and reference readings, and Z is the zero-
+                   ing parameter.
+                   Span is a linear function of absorptance.
+                                                                                                        A-5
+
+
+
+
+Using the LI-830 and LI-850 Gas Analyzers                                                                A-1
+Appendix A. Equation Summary
+
+
+
+
+H2O Equations (LI-850 only)
+                 Absorptance aw for water vapor is computed from
+                                                                                                         A-6
+
+
+
+
+                 where Vw and Vwo are the sample and reference raw detector readings, and Zw is the
+                 zero parameter. The pressure correction for water vapor is an empirical function gw()
+                 of absorptance and pressure P:
+                                                                                                         A-7
+
+
+                 The value of Po is 99 kPa. When the pressure correction is not enabled, gw() is
+                 simply 1.0. Water vapor concentration W (mmol mol-1) is computed from
+                                                                                                         A-8
+
+                 where fw(x) is a third order polynomial whose coefficients are given on the cal-
+                 ibration sheet.
+                                                                                                         A-9
+
+
+CO2 Equations
+                 The measurement of CO2 is a bit more complicated than for H2O because of the
+                 influence of water vapor. There is a slight direct cross sensitivity in the CO2 signal to
+                 H2O. This is measured at the factory and accounted for in the computation of
+                 absorptance (equation A-10). There is also a band broadening effect that is accoun-
+                 ted for in the computation of concentration (equation A-14).
+
+                 CO2 absorptance αc is computed from
+                                                                                                        A-10
+
+
+
+
+A-2                                                                  Using the LI-830 and LI-850 Gas Analyzers
+                                                                            Appendix A. Equation Summary
+
+
+
+
+                 where Vc and Vco are the raw detector signals for sample and reference, Zc is the
+                 CO2 zero parameter, and Xwc is a cross sensitivity parameter for the effect of water
+                 vapor on CO2. Its value is reported on the calibration sheet as XS=.
+                 The empirical pressure correction function gc() depends on CO2 absorptance and
+                 pressure:
+                 When P = Po, gc() = 1.
+                 When P < Po
+
+
+
+
+                                                                                                   A-11
+
+
+
+
+                 where a = 1.10158, b = -6.1217E-3, c = -0.266278, d = 3.69895, and z is the asymptotic
+                 value of absorptance, obtained from the calibration coefficients (equation A-15).
+                                                                                                   A-12
+
+                 When P > Po
+
+
+
+                                                                                                   A-13
+
+                 where X, A, and B are computed as in equation A-11. CO2 concentration C (µmol
+                 mol-1) is computed from
+                                                                                                   A-14
+
+
+
+
+Appendix A. Equation Summary                                                                         A-3
+Appendix A. Equation Summary
+
+
+
+
+                 where fc(x) is a function whose inverse is a double rectangular hyperbola, and whose
+                 coefficients (a1…a4) are given on the calibration sheet.
+                                                                                                      A-15
+
+                 Solving equation A-15 for C yields the calibration function
+                                                                                                      A-16
+
+
+
+
+                 Where
+                                                                                                      A-17
+
+                 ψ(W) accounts for band broadening by water vapor.
+                                                                                                      A-18
+
+                 The band broadening coefficient h(ac) has been determined to be 1.45 for the instru-
+                 ment for CO2 concentrations near ambient. At higher concentrations, the value
+                 decreases. We capture this behavior with an empirical relationship (equation A-19).
+                                                                                                      A-19
+
+
+                 Where z is from equation A-12, and bw is the low concentration band broadening
+                 coefficient: 1.45. This is the value shown on the calibration sheet as BB = 1.45. The
+                 typical relationship between h(ac) and CO2 concentration is shown in Figure A-1 on
+                 the facing page. (‘Typical’ because the exact relationship depends on the relationship
+                 between absorptance and CO2, which is the calibration curve.)
+
+
+
+
+A-4                                                                Using the LI-830 and LI-850 Gas Analyzers
+                                                                                                        Appendix A. Equation Summary
+
+
+
+
+                  Bandbroadening Coeﬃcient for H2O
+                                                     1.5
+
+                                                     1.4
+
+                                                     1.3
+
+                                                     1.2
+
+                                                     1.1
+
+                                                     1.0
+                                                           100        1000             10000           100000
+                                                                 Approximate CO2 Concentration (ppm)
+                 Figure A-1. The typical relationship between h(ac) and CO2 concentration.
+
+                                    Note: We formulated equation A-19 with 0.64bw – 0.64 instead of the simple equi-
+                                    valent (0.29) because this allows band broadening corrections to be turned off by
+                                    setting bw to 1. When bw =1, h(ac) = 1 everywhere. Also, to avoid computational
+                                    problems (underflows, overflows, and division by zero) we constrain the argu-
+                                    ment ac when computing h(ac) to be 0.1 < ac ≤ z. ac - 0.1 is typically equivalent to
+                                    about 600 ppm.
+
+
+Calibration Equations
+                 The following equations describe the implementation of zero and span calibrations.
+
+                 Zeroing H2O (LI-850 only)
+                 When the command for zeroing water is received, the LI-850 computes the water
+                 zero from equation A-20, where  and        are averaged for 5 seconds.
+
+                                                                                                                               A-20
+
+
+                 Zeroing CO2
+                 When the command for zeroing CO2 is received, the instrument computes the CO2
+                 zero term from equation A-21, where  ,     ,    , and     are averaged for 5
+                 seconds.
+
+
+
+Appendix A. Equation Summary                                                                                                     A-5
+Appendix A. Equation Summary
+
+
+
+
+                                                                                                     A-21
+
+
+
+                 Spanning H2O (LI-850 only)
+                 When the command for setting the span for H2O is received, along with the target
+                 concentration WT, from the target concentration, the target absoprtance aT is com-
+                 puted from
+                                                                                                     A-22
+
+
+                 LI-850 computes Sw0 from equation A-23 , where      is averaged over five seconds.
+                                                                                                     A-23
+
+                 where
+                                                                                                     A-24
+
+                 The instrument retains the following values, which are used for subsequent sec-
+                 ondary spans:
+                                                                                                     A-25
+
+
+
+                 Secondary Span H2O (LI-850 only)
+                 When the secondary span command for H2O is received, the instrument computes
+                 new values for both Sw0 and Sw1. First, it measures a new     and computes a new
+                    from equation A-24. Then, it uses these plus the retained values (  and
+                 from the previous normal span) to compute
+                                                                                                     A-26
+
+
+                 Given the new span slope Sw1, it updates the span offset Sw0 by equation A-23.
+
+                 Spanning CO2
+                 When the command for setting the CO2 span is received, along with the target con-
+                 centration CT, the instrument computes Sc0 from equation A-28, where and
+
+
+
+A-6                                                               Using the LI-830 and LI-850 Gas Analyzers
+                                                                           Appendix A. Equation Summary
+
+
+
+
+                 are averaged for 5 seconds.
+                                                                                                   A-27
+
+
+                                                                                                   A-28
+
+                 where
+                                                                                                   A-29
+
+
+                 Note that
+
+
+
+                                                                                                   A-30
+
+
+
+
+                 We need αcT to compute           , but αcT depends on         . We resolve this by
+                 using an approximation (equation A-31) instead when computing equation A-30
+                                                                                                   A-31
+
+
+                 The instrument retains the following values, which are used for subsequent sec-
+                 ondary spans, if necessary:
+                                                                                                   A-32
+
+                                                                                                   A-33
+
+                 Secondary Span CO2
+                 When the secondary span command for CO2 is received, the instrument computes
+                 new values for both Sc0 and Sc1. First, it measures a new and computes a new βc
+                 from equation A-29. Then it uses these, plus the retained values (αc1 and βc1 from
+                 the previous normal span) to compute
+                                                                                                   A-34
+
+
+                 Given the new span slope Sc1, it updates the span offset Sc0 by equation A-28.
+
+
+Appendix A. Equation Summary                                                                          A-7
+Appendix A. Equation Summary
+
+
+
+
+A-8                            Using the LI-830 and LI-850 Gas Analyzers
+Appendix B.
+Specifications
+                   CO2 measurements
+                   Measurement range: 0 to 20,000 ppm
+                   Accuracy
+                       LI-850: Within 1.5% of reading
+                       LI-830: Within 3% of reading
+                   Calibration drift
+                       Zero drift1: <0.15 ppm / °C
+                       Span drift2: <0.03% / °C
+                       Total drift at 370 ppm3: <0.4 ppm / °C
+                   RMS noise at 370 ppm with 1 sec signal filtering: <1 ppm
+                   Sensitivity to water vapor (LI-850 only): <0.1 ppm CO2 / mmol mol-1 H2O
+                   Lower limit of detection: 1.5 ppm
+
+                   H2O measurements (LI-850 only)
+                   Measurement range: 0 to 60 mmol mol-1
+                   Accuracy: Better than 1.5% of reading
+                   Calibration drift
+                       Drift at 0 mmol mol-1: <0.005 mmol mol-1 / °C
+                       Span drift at 10 mmol mol-1: <0.006 mmol mol-1 / °C
+                       Total drift at 10 mmol mol-1: <0.016 mmol mol-1 / °C
+                   RMS noise at 10 mmol mol-1 with 1 sec signal filtering: <0.01 mmol mol-1
+                   Sensitivity to CO2: <0.0001 mmol mol-1 H2O / ppm CO2
+                   Lower limit of detection: 0.015 mmol mol-1
+
+
+
+                  1Zero drift is the change with temperature at 0 concentration.
+                  2Span drift is the residual error after re-zeroing following a temperature change.
+                  3Total drift is the change with temperature without re-zeroing or re-spanning.
+
+
+
+Using the LI-830 and LI-850 Gas Analyzers                                                              B-1
+Appendix B. Specifications
+
+
+
+
+                   General
+                   Output rate: Up to 2 measurements per second
+                   Response time (T90)
+                       CO2: <3.5 seconds from 0 to 375 ppm
+                       H2O (LI-850 only): <3.5 seconds from 0 to 21 mmol mol-1
+                   Measurement principle: Non-Dispersive Infrared
+                   Traceability
+                       CO2: Traceable gases to WMO standards from 0 to 3,000 ppm; traceable gases to
+                       EPA protocol gases from 3,000 to 20,000 ppm
+                       H2O (LI-850 only): NIST traceable LI-610 Portable Dew Point Generator
+                   Pressure compensation range: 50 to 110 kPa
+                   Maximum gas flow rate: 1 liter min-1
+                   Output signals: Two analog voltage (0 to 2.5 V or 0 to 5 V) and two current (4 to
+                       20 mA)
+                   Digital outputs: TTL (0 to 5 V) or Open Collector
+                   DAC resolution: 16 bits across user-specified range
+                   Power requirements
+                       Input voltage: 12-30 VDC
+                       After warmup (without pump): 0.33A @ 12 VDC (4.0 W) average
+                       After warmup (with pump): 0.42A @ 12 VDC (5.0 W) average
+                       During warmup: 1.2 A @ 12 VDC (14 W) maximum
+                   Operating temperature range: -20 to 45 °C
+                   Relative humidity range: 0 to 95% RH, Non-condensing
+                   Dimensions: 221 mm W × 146 mm D × 75 mm H
+                   Weight
+                       No pump, no display: 1.0 kg
+                       No pump, with display: 1.02 kg
+                       With pump, no display: 1.3 kg
+                       With pump, with display: 1.32 kg
+                   Internal optical cell volume: 14.5 mL
+
+                   Pump specifications (optional)
+                   Operating temperature range: 5 to 45 °C
+                   Storage temperature range: -20 to 60 °C
+                   Operating humidity range: 0 to 80% RH
+                   Nominal flow rate: 0.75 liters minute-1
+                   Power consumption: 1 W (nominally)
+                   Expected life span: 8,000 hrs in standard conditions with a normal load
+
+
+
+B-2                                                                Using the LI-830 and LI-850 Gas Analyzers
+                                                                                    Appendix B. Specifications
+
+
+
+
+                   Display specifications (optional)
+                   Dimensions: 67 mm corner-to-corner
+                   Resolution: 400 × 200 px; monochrome
+                   Power consumption: <200 µW
+                   Displayed variables: CO2 reading, H2O reading (LI-850 only), optical bench tem-
+                       perature, and pressure.
+
+                   Dimensional drawings
+
+
+
+
+                   Figure B-1. All models of the LI-830 and LI-850 cases have the same dimensions. All dimen-
+                   sions in mm unless indicated otherwise.
+
+
+
+Appendix B. Specifications                                                                                B-3
+Appendix B. Specifications
+
+
+
+
+                   Figure B-2. Dimensions for the versions with no case. All dimensions in inches unless indic-
+                   ated otherwise.
+
+
+
+
+B-4                                                                      Using the LI-830 and LI-850 Gas Analyzers
+                                                                               Appendix B. Specifications
+
+
+
+
+                   Serial cable pin assignments
+                   The image below shows the pin assignments for the 9-pin RS-232 serial connector.
+
+
+
+
+                   Serial communication parameters
+                   The LI-830 and LI-850 can communicate through a RS-232 serial port on the front of
+                   the instrument. You may need to set the communication parameters on your com-
+                   puter or your terminal emulator program. The RS-232 port is configured as Data Ter-
+                   minal Equipment (DTE) with no hardware handshaking. It is bi-directional,
+                   meaning information can be transferred both into and out of the instrument. The
+                   port is configured as follows:
+                    l   Baud Rate: 9600 bps
+                    l   Data Bits: 8
+                    l   Parity: None
+                    l   Stop Bits: 1
+                    l   Flow Control: None
+
+                   Specifications subject to change without notice.
+
+
+
+
+Appendix B. Specifications                                                                           B-5
+Appendix B. Specifications
+
+
+
+
+B-6                          Using the LI-830 and LI-850 Gas Analyzers
+Standard Terms and Conditions
+1. General. LI-COR Inc. (“LI-COR”) is delivering these goods and products (“Products”) and/or performing services (“Services”) subject to these
+Terms and Conditions of Sale (“Conditions”). Buyer will be deemed to have assented to these Conditions upon Buyer’s placement of order. Not-
+withstanding the above, failure of LI-COR to object to provisions contained in any purchase order or other form or document from Buyer shall
+not be construed as a waiver of these Conditions nor an acceptance of any such provision.
+2. Buyer’s Use Only/No Resale. The purchase of Products only conveys to Buyer the non-transferable right for only Buyer to use the quantity of
+Products and components of Products purchased in compliance with the applicable intended use statement, limited use statement or limited
+label license, if any, in LI-COR catalogues or on the label or other documentation accompanying the Products (all such statements or licenses
+being incorporated herein by reference as if set forth herein in their entirety). Buyer has no right to resell the Products, or any portion of them to
+a third party outside Buyer’s corporate organization, and any such purchase by a reseller for the purpose of resale is strictly prohibited unless
+LI-COR first accepts and approves a purchase order and acknowledges in writing that the Products may be resold by Buyer and the terms of such
+resale.
+3. Prices/Taxes. All prices are quoted for delivery to Buyer when goods are loaded on the carrier at LI-COR premises in Lincoln, Nebraska, USA
+exclusive of shipping, insurance and installation charges, all of which are Buyer’s sole responsibility. All prices are exclusive of all sales, use,
+excise, value added, withholding and other taxes, all customs, duties, documentation charges, and freights forwarder charges and charge of any
+nature now or hereafter claimed or imposed by any governmental authority upon the sale of the Products or performance of the Services. Any
+such charges will be added to the product invoice or subsequently invoiced to the Buyer. In the event LI-COR is required to pay any such tax,
+duty or charge, Buyer will promptly reimburse LI-COR.
+4. Payment Terms. All payments shall be made in immediately available U.S. Dollars net thirty (30) days from the date of invoice for qualified
+accounts, without set-off, deduction or withholding of any kind, unless otherwise stated by LI-COR in writing and may be paid by check (drawn
+on a U.S. bank), wire transfer or major credit card. All open account invoicing must be pre-approved. Any amounts not paid when due will
+accrue interest at the rate of 1 1/2% per month, or the maximum amount allowed by law, if lower. In the event that any payment is more than
+thirty (30) days late, LI-COR shall have the right to suspend doing business with Buyer until all past due balances are made current. Buyer shall
+pay for all costs (including reasonable fees) incurred by LI-COR in connection with the collection of late payments. Each accepted purchase
+order is a separate, independent transaction, and Buyer has no right of set-off against other purchase orders or other transactions with LI-COR.
+Buyer hereby grants LI-COR a security interest in the Products or any deliverable in the amount of the unpaid balance of the purchase price until
+paid in full. LI-COR may file a financing statement for such security interest and Buyer shall sign any such statements or other documentation
+necessary to perfect LI-COR security interest.
+5. Return Policy. Buyer may return non-consumable Products to LI- COR within forty-five (45) days of invoice date only with prior authorization
+by LI-COR. The Product(s) being returned new and unused condition and must be resalable as new. Any returned Product(s) are subject to pay-
+ment of a fifteen percent (15%) re- stocking fee on all items returned. Buyer shall be responsible to make payment to LI-COR for any and all
+expenses related to de-installation of the Product(s), including but not limited to shipping, duties, and taxes. All payments subject to this pro-
+vision shall be made to LI-COR within thirty (30) days of return, or de- installation, of the Product(s).
+6. Delays In Performance. LI-COR shall not be liable for any delay in performance hereunder due to unforeseen circumstances or due to cir-
+cumstances beyond its control including, but not limited to, acts of nature, acts of government, labor disputes, delays in transportation, delays in
+customs clearance and delays in delivery or inability to deliver by LI-COR suppliers.
+
+
+
+
+Using the LI-830 and LI-850 Gas Analyzers
+Standard Terms and Conditions
+
+
+
+7. Shipment and Packing. All Product prices exclude costs of shipping and handling and insurance, in accordance with delivery terms designated
+by LI-COR. Unless otherwise agreed in writing, such costs will be paid by the Buyer and will appear as a separate item on LI-COR invoice.
+LI-COR shall ship in accordance with LI-COR standard practices. Buyer may specify different shipping instructions, subject to agreement by
+LI-COR. Unless otherwise agreed to in writing by LI-COR, all products shall be packaged, if appropriate, for shipment and storage in accordance
+with standard commercial practices. All packing shall conform to carrier requirements.
+8. Partial Shipments. LI-COR reserves right to make delivery in partial shipments (“Installments”). Any Products delivered in Installments may
+be invoiced individually and is payable subject to Section 4 of these Conditions. Additional shipping and handling charges for Installments may
+apply. Delay in delivery of any Installment shall not relieve Buyer of Buyer’s obligation to accept remaining deliveries.
+9. Title/Risk of Loss. All domestic shipments are made FOB per Uniform Commercial Code. All international shipments are made per
+INCOTERMS 2020 designated by LI-COR. Title to the Products and the risk of loss of or damage to the Products ordered by the Buyer will pass
+to Buyer at time of LI-COR delivery of Products to the carrier. The carrier shall be deemed Buyer’s agent, and any claims for damages in ship-
+ment must be filed with the carrier. LI-COR is authorized to designate a carrier pursuant to LI-COR standard shipping practices unless otherwise
+specified in writing by Buyer.
+10. Intellectual Property Rights. Title to and ownership of the documentation, and any improved, updated, modified or additional parts thereof,
+and all copyright, patent, trade secret, trademark and other intellectual property rights embodied in the Products, shall at all times remain the
+property of LI-COR or LI-COR licensors.
+11. Acceptance. All sales are final and all Products shall automatically be deemed accepted upon delivery to Buyer when goods are loaded on the
+carrier at LI-COR premises in Lincoln, Nebraska, USA. Failure to provide written notice to LI-COR of any shortages, defects, or damages relating
+to the Products within fifteen (15) days after receipt shall conclusively deem that the Products conform to the terms set forth in these Condi-
+tions. Buyer may not return any Products to LI-COR except as provided for by LI-COR warranty or as provided herein.
+12. Product Warranties. Unless otherwise specified by LI-COR:
+   a) LI-COR warrants that, for a period of twenty-four (24) months from the date of shipment of the Products from LI-COR (the “Warranty
+   Period”), unless otherwise specified for individual Products (such as products with a specified shelf life) or extended by a Support Contract or
+   Extended Warranty Contract (the “Extended Warranty”), the Products sold hereunder will be free from material defects in materials and
+   workmanship and will conform to LI-COR published specifications in effect as of the date of manufacture. LI-COR SPECIFICALLY
+   DISCLAIMS ANY INDIRECT, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING LOSS OF USE OR LOST
+   PROFITS) WHICH MAY RESULT FROM THE USE OF PRODUCTS PURCHASED HEREUNDER, AS FURTHER SET FORTH IN
+   SECTION 13 OF THESE CONDITIONS OF SALE. This limited warranty extends only to Buyer as original purchaser unless otherwise agreed
+   upon in writing by LI-COR.
+   b) The foregoing warranty/extended warranty coverage shall not apply if the defective Product (i) has been subjected to abuse, misuse, neg-
+   lect, negligence, accident, improper testing, improper installation, improper storage, improper handling or use contrary to any instructions
+   issued by LI-COR, (ii) has been repaired or altered by persons other than LI-COR, (iii) has been moved/relocated once originally installed
+   unless LI-COR approved deinstall/reinstall procedures are followed; (iv) has not been installed, operated, repaired and maintained in accord-
+   ance with the documentation or operated outside of the environmental specifications for the Product; (v) has failed due an Act of God,
+   including but not limited to fire, flood, tornado, earthquake, hurricane or lightning or (vi) has been used with any devices, accessories or
+   products not manufactured by or approved by LI-COR. In addition, the foregoing warranty shall not apply to Products (i) marked or iden-
+   tified as “sample,” (ii) loaned or provided to Buyer at no cost, or (iii) which are sold “as is.”
+   c) If during the Warranty/Extended Warranty Period: (i) LI-COR is notified promptly in writing upon discovery of any defect in the Product,
+   including a detailed description of such alleged defect, (ii) such Product is returned, transportation charges prepaid, to LI-COR designated
+   manufacturing facility subject to the prior approval of LI-COR with a valid Return Material Authorization (“RMA”) number, and (iii)
+   LI-COR inspections and tests determine that the Product is indeed defective and the Product has not been subjected to any of the conditions
+   set forth above, then, as Buyer’s sole remedy and LI-COR sole obligation under the foregoing warranty, LI-COR will, at LI-COR option,
+   repair or replace without charge the defective Product. In no event will the Buyer itself nor will the Buyer allow any party other than LI-COR
+   or a third party authorized in writing by LI-COR to perform any service on the Products.
+   d) Any Product that has either been repaired or replaced under this warranty shall have warranty coverage (parts only) for the longer of one
+   (1) year or the remaining original warranty period. Replacement parts and/or replacement Products used in the repair or replacement of
+   Products may be new or equivalent to new at LI-COR sole discretion.
+
+
+
+
+                                                                                                Using the LI-830 and LI-850 Gas Analyzers
+                                                                                                                 Standard Terms and Conditions
+
+
+
+   e) EXCEPT FOR THE WARRANTIES SET FORTH IN THIS SECTION, LI-COR MAKES NO OTHER WARRANTIES, EXPRESS, IMPLIED
+   OR STATUTORY, WITH RESPECT TO ANY SERVICES, PRODUCTS OR OTHER PRODUCTS PROVIDED IN CONNECTION WITH
+   THESE CONDITIONS, INCLUDING WITHOUT LIMITATION ANY IMPLIED WARRANTY OF MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE, NONINFRINGEMENT, OR ARISING FROM COURSE OF PERFORMANCE, DEALING, USAGE OR TRADE.
+   f) Notwithstanding anything herein to the contrary, LI-COR makes no warranty with respect to any third party products provided under
+   these Conditions. Buyer’s sole remedy with respect to such third party products shall be pursuant to the original manufacturer’s or licensor’s
+   warranty, if any, to Buyer, to the extent permitted by the original manufacturer or licensor.
+13. Limitation of Liability. IN NO EVENT SHALL LI-COR, ITS LICENSORS OR ITS SUPPLIERS BE LIABLE TO BUYER OR ANY THIRD
+PARTY FOR COSTS OFPROCUREMENT OF SUBSTITUTE PRODUCTS OR SERVICES, LOST PROFITS, DATA OR BUSINESS, OR FOR
+ANY INDIRECT, SPECIAL, INCIDENTAL, EXEMPLARY OR CONSEQUENTIAL DAMAGES OF ANY KIND ARISING OUT OF OR IN
+CONNECTION WITH THE USE OF THE PRODUCTS OR THESE CONDITIONS, HOWEVER CAUSED AND ON ANY THEORY OF
+LIABILITY (WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, PRODUCTS LIABILITY OR
+OTHERWISE). LI-COR TOTAL AND CUMULATIVE LIABILITY ARISING OUT OF OR IN CONNECTION WITH ANY PRODUCTS
+PURCHASED BY BUYER OR SERVICES PERFORMED BY LI-COR ON BEHALF OF BUYER HEREUNDER SHALL IN NO EVENT EXCEED
+THE PURCHASE PRICE PAID BY BUYER FOR SUCH PRODUCTS OR SERVICES. THE LIMITATIONS SET FORTH IN THIS SECTION
+SHALL APPLY EVEN IF LI-COR OR ITS SUPPLIERS HAVE BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, AND
+NOTWITHSTANDING ANY FAILURE OF ESSENTIAL PURPOSE OF ANY LIMITED REMEDY.
+14. Severability. If any portion of these Conditions is held invalid, the parties agree that such invalidity shall not affect the validity of the remain-
+ing portions of these Conditions.
+15. Export Control. Buyer acknowledges and agrees that the Products purchased under these Conditions or Services performed by LI-COR may
+be subject to restrictions and controls imposed by the United States Government and the regulations thereunder. BUYER WARRANTS THAT IT
+WILL NOT EXPORT OR RE-EXPORT ANY PRODUCTS PURCHASED OR DELIVERABLES FROM SERVICES PERFORMED BY LI-COR
+WITHOUT PRIOR WRITTEN NOTIFICATION AND APPROVAL OF LI- COR.
+16. Assignment. Buyer shall not assign or transfer these Conditions or any rights or obligations under these Conditions, whether voluntary or by
+operation of law, without the prior written consent of LI-COR. LI-COR may freely assign these conditions. LI-COR or any successor may assign
+all or part of the right to payments under these Conditions. Any assignment or transfer of these Conditions made in contravention of the terms
+hereof shall be null and void. Subject to the foregoing, these Conditions shall be binding on and inure to the benefit of the parties’ respective suc-
+cessors and permitted assigns.
+17. Entire Agreement. These Conditions of Sale and Performance of Services take precedence over Buyer's additional or different terms and con-
+ditions, to which notice of objection is hereby given. Acceptance by Buyer is limited to LI-COR Conditions of Sale. Neither LI-COR com-
+mencement of performance nor delivery shall be deemed or construed as acceptance of Buyer's additional or different terms and conditions.
+These Conditions supersede all prior communications, transactions, and understandings, whether oral or written, and constitute the sole and
+entire agreement between the parties pertaining to the referenced quotation or purchase order, provided that: (1) these Conditions shall not,
+without LI- COR prior written consent, supersede any conflicting terms of: (a) prior written agreements duly executed by LI- COR, or (b) gov-
+ernmental purchase orders, terms of purchase, requests for quotation or acquisition regulations relative to governmental purchasers; and (2) to
+the extent not in conflict with any such prior or governmental terms, these Conditions shall supplement them. No modification, addition or dele-
+tion, or waiver of any of the terms and conditions of these Conditions shall be binding on either party unless made in a non-preprinted agree-
+ment clearly understood by both parties to be a modification or waiver, and signed by a duly authorized representative of each party.
+18. Force Majeure. Shipping/delivery dates are approximate and may be delayed absent prompt receipt from Buyer of all necessary information.
+LI- COR shall not be responsible for any failure to perform or delay attributable in whole or in part to any cause beyond its reasonable control,
+including but not limited to Acts of God, government actions, war, civil disturbance, insurrection, sabotage, labor shortages or disputes, failure
+or delay in delivery by LI-COR suppliers or subcontractors, transportation difficulties, customs clearance, shortage of energy, raw materials or
+equipment, or Buyer’s fault or negligence. In the event of any such delay the date of delivery shall, at the request of LI-COR, be deferred for a
+period equal to the time lost by reason of the delay.
+19. Governing Law and Venue. These Conditions and performance by the parties hereunder shall be construed in accordance with the laws of the
+State of Nebraska, U.S.A., without regard to provisions on the conflicts of law.
+
+
+
+
+Standard Terms and Conditions
+Standard Terms and Conditions
+
+
+
+
+C-4                             Using the LI-830 and LI-850 Gas Analyzers
+LI-COR Environmental
+4647 Superior Street
+Lincoln, Nebraska 68504
+Phone: +1-402-467-3576
+Toll free: 800-447-3576 (U.S. & Canada)
+envsales@licor.com
+envsupport@licor.com
+licor.com/
+LI-COR GmbH, Germany
+Siemensstraße 25A
+61352 Bad Homburg
+Germany
+Phone: +49 (0) 6172 17 17 771
+envsales-gmbh@licor.com
+envsupport-eu@licor.com
+LI-COR Ltd., United Kingdom
+St. John’s Innovation Centre
+Cowley Road
+Cambridge
+CB4 0WS
+United Kingdom
+Phone: +44 (0) 1223 422102
+envsales-UK@licor.com
+envsupport-eu@licor.com
+Beijing LI-COR Bioscience Ltd.
+Room 502-503, 5th Floor, Jimen No.1 Office Building
+Xitucheng Road, Haidian District
+Beijing, China
+Phone: +86-400-1131-511
+china-sales@licor.com
+china-support@licor.com
+LI-COR Distributor Network
+licor.com/distributors
+984-17190 • 06/2025
+

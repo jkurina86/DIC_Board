@@ -1,0 +1,393 @@
+                      Operating and Installation Instructions
+
+              Micro Diaphragm Gas Pumps
+
+
+
+
+ Typen range:        NMP 05 S                        NMP 09 S                                 NMP 015 S
+                     NMP 05 M                        NMP 09 M                                 NMP 015 M
+                     NMP 05 L                        NMP 09 L                                 NMP 015 L
+                     NMP 05 B                        NMP 09 B                                 NMP 015 B
+ You have selected a high-quality KNF product; the following tips will help you operate it safely, and
+ reliably over a long period of time. Carefully study the Operating and Installation Instructions before
+ using the pumps and observe at all times the relevant instructions to avoid dangerous situations. The
+ manual was produced for the serial pumps stated above. With customer-specified projects (pump
+ types starting with “PJM“ or “PMM“) there could be differences in detail. For customer-specified pro-
+ jects please therefore take into account any agreed technical specifications, as well as these instruc-
+ tions.
+
+
+
+
+KNF Micro AG                        Table of Contents                                                                           Page
+Zelglimatte 1b                      1.   Description, Operating Conditions............................................ 2
+CH-6260 Reiden                      2.   Safety ....................................................................................... 2
+Switzerland                         3.   Installation ................................................................................ 5
+Tel. 0041(0)62 787 88 88            4.   Operation .................................................................................. 8
+Fax 0041(0)62 787 88 99             5.   Trouble Shooting ...................................................................... 8
+E-mail: info.micro@knf.com          6.   Returns ................................................................................... 10
+www.knf.com                         7.   Appendix ................................................................................. 11
+
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                             Keep for future use
+Membranpumpen NMP 05, NMP 09, NMP 015                                 Description, Operating Conditions
+
+
+
+                                  1.     Description, Operating Conditions
+                                  KNF pumps in the NMP range transfer, evacuate and compress
+                                  100% oil-free. In operation they are maintenance-free
+                                         See the type- plate or data sheet for full electrical data.
+
+                                  1.1. Operating Conditions
+                                  Handling air, gases, and vapours at temperatures between
+                                  + 5 °C…+ 40 °C.
+                                  For maximum permissible operating pressure, ultimate vacuum,
+                                  and flow capacity see data sheet.
+                                  Ambient temperature during operation: between + 5 °C…+ 40 °C
+                                  The pumps must not be used in areas where there is a danger of
+                                  explosion.
+                                  Before pumping a medium, the compatibility of materials of pump
+                                  head, diaphragm and valves with the medium must be checked (for
+                                  pump materials: see data sheet).
+                                  KNF pumps in the NMP range must not be used for liquids. You
+                                  will find suitable liquid pumps in our Product Program.
+                                  If your potential application lies outside the above limits discuss it
+                                  with our technical adviser (see last page for contact telephone
+                                  number).
+
+
+                                  2.     Safety
+                                       Note the safety precautions in chapters 3. Installation and
+                                       connection, and 4. Operation.
+                                  The pumps are built according to the generally recognized rules of
+                                  technology and in accordance with the occupational safety and
+                                  accident prevention regulations. Nevertheless, dangers can result
+                                  during their use which lead to injuries to the user or others, or to
+                                  damage to the pump or other property.
+                                  Only use the pumps when they are in a good technical and proper
+                                  working order, in accordance with their intended use, observing the
+                                  safety advice within the Operating and Installation Instructions, at
+                                  all times.
+                    Personnel     Make sure that only trained and instructed personnel or specially
+                                  trained personnel work on the pumps. This especially applies to
+                                  assembly, connection and servicing work.
+                                  Make sure that the personnel has read and understood the Operat-
+                                  ing and Installation Instructions, and in particular the "Safety"
+                                  chapter.
+           Working in a safety-   Observe the accident prevention and safety regulations when
+            conscious manner      performing any work on the pump and during operation.
+     Handling dangerous media     When transferring dangerous media, observe the safety regula-
+                                  tions when handling these media.
+    Handling combustible media    Be aware that the pumps are not designed to be explosion-proof.
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                             2
+Membranpumpen NMP 05, NMP 09, NMP 015                                                                  Safety
+
+
+                                  Make sure the temperature of the medium is always sufficiently
+                                  below the ignition temperature of the medium, to avoid ignition or
+                                  explosion. This also applies for unusual operational situations.
+                                  Note that the temperature of the medium increases when the pump
+                                  compresses the medium.
+                                  Hence, make sure the temperature of the medium is sufficiently
+                                  below the ignition temperature of the medium, even when it is
+                                  compressed to the maximum permissible operating pressure of the
+                                  pump.
+                                  If necessary, consider any external sources of energy, such as
+                                  radiation, that may add heat to the medium.
+                                  In case of doubt, consult the KNF customer service.
+       Environmental protection   Store all replacement parts in a protected manner and dispose of
+                                  them properly in accordance with the applicable environmental
+                                  protection regulations. Observe the respective national and inter-
+                                  national regulations. This especially applies to parts contaminated
+                                  with toxic substances.
+                      Disposal    Dispose of all packaging in an environmentally-appropriate
+                                  manner. The packaging materials are recyclable.
+                                  Dispose of end-of-life equipment in an environmentally
+                                  friendly manner. Use appropriate waste collection systems
+                                  for the disposal of end-of-life equipment. Used pumps
+                                  contain valuable recyclable materials.
+      EC Directives / Standards   For the purposes of the Machinery Directive 2006/42/EC, pumps
+                                  are “partly completed machinery,” and are therefore to be regarded
+                                  as not ready for use. Partly completed machinery may not be
+                                  commissioned until such time as it has been determined that the
+                                  machine in which the partly completed machinery is to be
+                                  assembled is in conformity with the provisions of the Machinery
+                                  Directive 2006/42/EC. The following essential requirements of
+                                  Annex I of Directive 2006/42/EC (general principles) are applied
+                                  and observed:
+                                      −   General Principles No. 1
+                                      −   No. 1.1.2. / 1.1.3. / 1.3.1. / 1.3.3. / 1.3.4. / 1.4.1. / 1.5.8. /
+                                              1.5.9. / 1.7.4. / 1.7.4.1. / 1.7.4.3.
+                                  As these partly completed machinery are OEM-models the power
+                                  supplies and the equipment for disconnecting and switching-off the
+                                  partly completed machinery respectively have to be considered
+                                  when mounting as well as over-current and overload protective
+                                  gear.
+                                  In addition a protection against mechanical parts in motion and hot
+                                  parts, if existing, has to be provided when mounting.
+                                  The pumps conform to the Directive 2011/65/EU (RoHS2).
+                                  The pumps conform to the EC Directive 2014/30/EU concerning
+                                  Electromagnetic Compatibility.
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                                 3
+Membranpumpen NMP 05, NMP 09, NMP 015                                                             Safety
+
+
+                                    The declaration of the SJ-T 11364-2024 standard „Hazardous
+                                    Substance Disclosure Table 有害物质含量表“ is carried out in
+                                    accordance with the specifications detailed in the appendix of this
+                                    document.
+
+
+                                    The following harmonized standards have been used:
+              NMP 05 M                   NMP 05 L                      NMP 05 B               NMP 015 M
+              NMP 09 M                   NMP 09 L                      NMP 09 B
+                                         NMP015 L
+          DIN EN 61000-6-3       DIN EN 55022 (Class B)        DIN EN 61000-6-1/2/3/4      DIN EN 55014-1
+                                 DIN EN 61000-4-2/3/4/5/6/8
+                                    Tab. 1
+
+         Customer service and       Only have repairs to the pumps carried out by the KNF Customer
+                       repairs      Service responsible.
+
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                            4
+Membranpumpen NMP 05, NMP 09, NMP 015                                                      Installation
+
+
+
+                                 3.       Installation
+                                 Pumps in the NMP range are OEM models intended for instal-
+                                 lation in equipment. When installing them make certain that
+                                 accident prevention regulations, and safety instructions,
+                                 including those for subsequent operation are observed.
+                                 The dimensions of the mountings are given in Data Sheet.
+                                 Fit the pump at the highest point in the system, so that condensate
+                                 cannot collect in the head of the pump - that prolongs working life.
+                                 Compare the supply data with the motor data.
+                                 With dc motors the wires must be connected to the correct poles.
+                                 For brushless DC motors (type designation ending with B):
+                                      ▪    Caution; incorrect lead connection will damage motor elec-
+                                           tronics.
+                                      ▪    Correct connection:
+                                           + red cable
+                                           - black cable
+                                 In the electrical installation, arrangements (complying with EN
+                                 60335-1) must be made for disconnecting the pump motor from the
+                                 electrical supply.
+
+
+                                 EMC compatible installation (for NMP05/09 B)
+                                 The maximum length of the connection leads is limited irrespective
+                                 of whether the device is to be used in an industrial environment or
+                                 is for domestic use1).
+                                      ▪    All connection leads may not exceed a length of 3 m.
+                                 Compliance with the performance defined by the CE mark with
+                                 respect to emission and immunity requires additional EMC
+                                 measures:
+                                      ▪    Ensuring the allowable emission in domestic use can re-
+                                           quire the use of an EMC filter and / or an EMC suppressor
+                                           circuit.
+                                      ▪    Ensuring the necessary immunity in industrial uses can re-
+                                           quire use of an EMC suppressor circuit.
+                                                           Interference
+                                Intended environment                        Action
+                                                           type
+                                Domestic use1)             Emission         EMC filter
+                                                           Immunitiy        EMC suppressor
+                                Industrial use             Emission
+                                                           Immunitiy        EMC suppressor
+                                 Tab. 2
+                                 This table shows which additional EMC measures have to be taken
+                                 to ensure the equipment fulfils the performance regarding emission
+                                 and immunity defined by the Directive in the environment in the
+                                 intended environment.
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                       5
+Membranpumpen NMP 05, NMP 09, NMP 015                                                      Installation
+
+
+                                     1) Domestic means use in homes, business and commercial areas as
+
+                                       well as in small businesses.
+
+
+
+
+                                 It may not be necessary to implement the additional EMC
+                                 measures named. If the motor is fed e.g. from a CE-conforming
+                                 power supply unit which firstly is connected with the motor by the
+                                 shortest possible connection lead and secondly no other devices
+                                 are supplied, then the EMC filter (circuit diagram 1) or EMC sup-
+                                 pressor circuit (circuit diagram 3) can be dispensable. In this case
+                                 the power supply unit takes on the function of the EMC filter or the
+                                 EMC suppressor circuit according to circuit diagram 3.
+                                 The same applies accordingly to the EMC suppressor circuit ac-
+                                 cording to circuit diagram 2: The EMC suppressor circuit can be
+                                 dispensable if other design measures prevent emissions from
+                                 interfering with the control voltage for the desired speed and the
+                                 switch input for the direction of rotation.
+
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                          6
+Membranpumpen NMP 05, NMP 09, NMP 015                                                   Installation
+
+
+
+                                 3.1. Fixation
+                                 Fixation
+                                 The pump has two mounting points, which allow an
+                                 easy fixation of the pump with 2x Delta PT20 screws.
+
+
+
+
+                                 Fixation (for NMP05 M)
+                                 The pump has two mounting points, which allow an
+                                 easy fixation of the pump with 2x Delta PT20 screws.
+
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                    7
+Membranpumpen NMP 05, NMP 09, NMP 015                                                          Operation
+
+
+
+                                 4.       Operation
+                                 Specific safety instructions for the media being handled must
+                                 be observed.
+                                 Before pumping a medium, the compatibility of materials of pump
+                                 head, diaphragm and valves with the medium must be checked (for
+                                 pump materials: see data sheet)
+                                 The pump must not start against pressure or vacuum. When it is
+                                 switched on the pressure in the suction and pressure lines must be
+                                 atmospheric.
+                                 The maximum permissible operating pressure (see data sheet)
+                                 must not be exceeded.
+                                 Exception: If the data sheet includes values for intermittent opera-
+                                 tion, they may employed briefly.
+                                 To prevent the maximum permissible operating pressure being
+                                 exceeded, restriction or control of the air or gas flow should only be
+                                 carried out in the suction line.
+                                 If restriction or control of the air or gas flow is made on the pres-
+                                 sure side ensure that the maximum permissible operating pressure
+                                 is not exceeded.
+                                 When the pump is at a standstill the inlet and exhaust must be at
+                                 normal atmospheric pressure.
+
+
+                                 5.       Trouble Shooting
+                                 Flow, pressure or vacuum are too low, or: Pump produces no
+                                 flow:
+                                      ▪    Connections or lines are blocked.
+                                      ▪    There is a leak at a connector, in a line, or in the pump
+                                           head.
+                                      ▪    An external valve is closed, or a filter blocked.
+                                      ▪    Liquid (condensate) has collected in the pump head.
+                                                  Let the pump run for a few minutes pumping air (if
+                                                   necessary for safety reasons: pumping an inert
+                                                   gas.)
+                                                  Install the pump at the highest point in the system.
+                                      ▪    The cross-section of pneumatic lines, or connected com-
+                                           ponents is too small, or they are restricted.
+                                      ▪    There is pressure on the pressure side, and at the same
+                                           time vacuum, or a pressure above atmospheric, on the
+                                           suction side:
+                                                  The pump is not designed for this condition
+
+
+                                 If the pump does not operate properly and you cannot find any of
+                                 the above faults, send it to the KNF Service Department.
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                          8
+Membranpumpen NMP 05, NMP 09, NMP 015                                              Trouble Shooting
+
+
+                                 In order for KNF to repair the pump, the customer must provide a
+                                 statement on the media which were pumped and on pump clean-
+                                 ing. Please fill out the corresponding KNF form and submit it to-
+                                 gether with the pump.
+
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                       9
+Membranpumpen NMP 05, NMP 09, NMP 015                                                        Returns
+
+
+
+                                 6.    Returns
+                                 Preparing for return
+                                 1. Flush the pump with air for a few minutes (if necessary for
+                                    safety reasons: with inert gas) to free the pump head of dan-
+                                    gerous or aggressive gases (see Chapter Flushing the pump).
+                                      Please contact your KNF sales partner if the pump cannot be
+                                      flushed due to damages
+                                 2. Remove the pump.
+                                 3. Clean the pump (see the Chapter Cleaning the pump).
+                                 4. Send the pump together with completed Health and Safety
+                                    Clearance and Decontamination Form to KNF, stating the na-
+                                    ture of the transferred medium.
+                                 5. Package the device securely to prevent further damage to the
+                                    product. If necessary, request an original packaging at a char-
+                                    ge.
+                                 Returns
+                                 KNF shall undertake to repair the pump only under the condition
+                                 that the customer presents a certificate regarding the medium that
+                                 is pumped and the cleaning of the pump. Please follow the instruc-
+                                 tions at knf.com/repairs.
+                                 Contact your KNF sales partner directly if you require additional
+                                 support for your return service.
+
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                                                       10
+Membranpumpen NMP 05, NMP 09, NMP 015                              Appendix
+
+
+
+                                 7.     Appendix
+                                 7.1. RoHs Decleration for China
+
+
+
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                                          11
+ Membranpumpen NMP 05, NMP 09, NMP 015
+
+
+
+
+ KNF weltweit
+ Unsere lokalen KNF Partner finden Sie unter: www.knf.com
+
+KNF Neuberger BA121551-121553 NMP05_09_015-EN 1225
+Betriebs- und Montageanleitung                              12
+

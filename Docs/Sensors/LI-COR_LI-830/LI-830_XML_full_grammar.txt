@@ -1,0 +1,470 @@
+LI-850 | Full XML grammar
+Skip To Main Content
+Account
+Settings
+Logout
+placeholder
+Account
+Settings
+Logout
+Filter:
+All Files
+Submit Search
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse
+Gas Monitoring
+Agricultural
+Best Practices
+Environmental
+Protection
+Soil, Atmosphere,
+& Ocean Studies
+Energy & Indoor
+Air Monitoring
+Water
+Monitoring
+RESOURCES
+Resource Center
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT
+Contact LI-COR
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse Gas & Emissions
+Monitoring
+Agricultural Best Practices
+Environmental Protection
+Soil, Atmosphere, & Ocean Studies
+Indoor Environmental Monitoring
+Water Resource Management
+RESOURCES
+All Resources
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT US
+​
+Contact Support
+Phone
+1-402-467-3576
+Toll Free:
+1-800-447-3576
+Email
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Contact Forms
+LI-COR Sales
+LI-COR Support
+LICORbio Support
+International
+Europe
+Distributors
+Address
+4647 Superior St.
+P.O. Box 4425
+Lincoln, NE USA
+68504-0425
+HOBO Data Loggers
+HOBO Sales
+HOBO Help Center
+HOBO Support
+Support:
+Application Note
+Tech Tip
+LI-830
+and
+LI-850
+Gas Analyzers
+What are you looking for?
+General Help
+Calibration Certificates
+Filter:
+Filter Results
+Submit Search
+Calibration information is available for light sensors, gas analyzers, photosynthesis systems, calibrated chambers, calibrated light sources, and plant canopy analyzers.
+Find
+View Certificate
+Contents:
+Full XML grammar
+The full configuration grammar for the
+LI-850
+is given below. The
+LI-830
+grammar is identical except that the root tag is
+<li830>
+, and the tags related to H
+2
+O will be absent.
+Copy
+<LI850>
+<DATA>
+<FLOWRATE>
+{float}
+</FLOWRATE>
+<CELLTEMP>
+{float}
+</CELLTEMP>
+<CELLPRES>
+{float}
+</CELLPRES>
+<CO2>
+{float}
+</CO2>
+<CO2ABS>
+{float}
+</CO2ABS>
+<H2O>
+{float}
+</H2O>
+<H2OABS>
+{float}
+</H2OABS>
+<H2ODEWPOINT>
+{float}
+</H2ODEWPOINT>
+<IVOLT>
+{float}
+</IVOLT>
+<RAW>
+<CO2>
+{int}
+</CO2>
+<CO2REF>
+{int}
+</CO2REF>
+<H2O>
+{int}
+</H2O>
+<H2OREF>
+{int}
+</H2OREF>
+</RAW>
+</DATA>
+<AUXDATA>
+<PCA>
+{float}
+</PCA>
+<PHA>
+{float}
+</PHA>
+<BB_EFF>
+{float}
+</BB_EFF>
+<PSI>
+{float}
+</PSI>
+</AUXDATA>
+<CFG>
+<HEATER>
+{bool}
+</HEATER>
+<PCOMP>
+{bool}
+</PCOMP>
+<FILTER>
+{int}
+</FILTER>
+<OUTRATE>
+{float}
+</OUTRATE>
+<ALARMS>
+<LOGIC>
+ttl or swg
+</LOGIC>
+<SOURCE>
+H2O or CO2
+<SOURCE>
+<ENABLED>
+{bool}
+</ENABLED>
+<HIGH>
+{float}
+</HIGH>
+<HDEAD>
+{float}
+</HDEAD>
+<LOW>
+{float}
+</LOW>
+<LDEAD>
+{float}
+</LDEAD>
+</ALARMS>
+<BENCH>
+{14}
+</BENCH>
+<SPAN>
+{int}
+</SPAN>
+<DACS>
+<RANGE>
+{2.5 or 5.0}
+</RANGE>
+<D1>
+{NONE|CO2|H2O|H2ODP|CELLTEMP|CELLPRES}
+</D1>
+<D1_0>
+{float}
+</D1_0>
+<D1_F>
+{float}
+</D1_F>
+<D2>
+{NONE|CO2|H2O|H2ODP|CELLTEMP|CELLPRES}
+</D2>
+<D2_0>
+{float}
+</D2_0>
+<D2_0>
+{float}
+</D2_F>
+</DACS>
+</CFG>
+<PUMP>
+<ENABLED>
+{bool}
+</ENABLED>
+<TIME>
+{int}
+</TIME>
+<STATUS>
+{int}
+</STATUS>
+</PUMP>
+<SOURCE>
+<TIME>
+{int}
+</TIME>
+</SOURCE>
+<CAL>
+<CO2LASTZERO>
+{iso date}
+</CO2LASTZERO>
+<CO2KZERO>
+{float}
+</CO2KZERO>
+<CO2LASTSPAN>
+{iso date}
+</CO2LASTSPAN>
+<CO2LASTSPAN2>
+{iso date}
+</CO2LASTSPAN2>
+<CO2KSPAN>
+{float}
+</CO2KSPAN>
+<CO2KSPAN2>
+{float}
+</CO2KSPAN2>
+<H2OLASTZERO>
+{iso date}
+</H2OLASTZERO>
+<H2OKZERO>
+{bool}
+</H2OKZERO>
+<H2OLASTSPAN>
+{iso date}
+</H2OLASTSPAN>
+<H2OLASTSPAN2>
+{iso date}
+</H2OLASTSPAN2>
+<H2OKSPAN>
+{float}
+</H2OKSPAN>
+<H2OKSPAN2>
+{float}
+</H2OKSPAN2>
+</CAL>
+<POLY>
+<DATE>
+{string}
+</DATE>
+<BB>
+{float}
+</BB>
+<XS>
+{float}
+</XS>
+<RESET>
+{bool}
+</RESET>
+<CO2>
+<A1>
+{float}
+</A1>
+<A2>
+{float}
+</A2>
+<A3>
+{float}
+</A3>
+<A4>
+{float}
+</A4>
+</CO2>
+<H2O>
+<A1>
+{float}
+</A1>
+<A2>
+{float}
+</A2>
+<A3>
+{float}
+</A3>
+</H2O>
+<PRESS>
+<A0>
+{float}
+</A0>
+<A1>
+{float}
+</A1>
+</PRESS>
+</POLY>
+<RS232>
+<FLOWRATE>
+{bool}
+</FLOWRATE>
+<CO2>
+{bool}
+</CO2>
+<H2O>
+{bool}
+</H2O>
+<CELLTEMP>
+{bool}
+</CELLTEMP>
+<CELLPRES>
+{bool}
+</CELLPRES>
+<IVOLT>
+{bool}
+</IVOLT>
+<CO2ABS>
+{bool}
+</CO2ABS>
+<H2OABS>
+{bool}
+</H2OABS>
+<H2ODEWPOINT>
+{bool}
+</H2ODEWPOINT>
+<RAW>
+<CO2>
+{bool}
+</CO2>
+<CO2REF>
+{bool}
+</CO2REF>
+<H2O>
+{bool}
+</H2O>
+<H2OREF>
+{bool}
+</H2OREF>
+</RAW>
+<ECHO>
+{bool}
+</ECHO>
+<STRIP>
+{bool}
+</STRIP>
+</RS232>
+<VER>
+{string}
+</VER>
+<SERIALNUM>
+{string}
+</SERIALNUM>
+<ACK>
+{bool}
+</ACK>
+<ERROR>
+{string}
+</ERROR>
+</LI850>
+Share
+Copy Link
+Email
+Cite
+On this page:
+Full XML grammar
+Was this helpful?
+Yes
+No
+We're sorry about that.
+Want to tell us more?
+Contact technical support.
+Great!
+Thanks for taking the time to give us feedback.
+Join Our Newsletter
+SUBSCRIBE
+LI-COR
+4647 Superior Street
+PO Box 4425
+Lincoln, NE 68504
+United States
+Phone:
+1-402-467-3576
+Toll-Free:
+1-800-447-3576
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Fax:
+1-402-467-2819
+www.licor.com
+COMPANY
+About Us
+Careers
+Copyrights & Trademarks
+International Distributors
+Patents
+Press & Media
+CONNECT
+OUR
+BRANDS
+Looking for
+LI-COR
+Biotechnology?
+LI-COR
+Biotechnology
+is now
+©2026 LI-COR, Inc. |
+Privacy Policy
+|
+Terms of Use
+|
+Cookie Notice

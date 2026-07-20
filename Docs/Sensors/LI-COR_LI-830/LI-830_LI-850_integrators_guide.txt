@@ -1,0 +1,1618 @@
+The LI-830 and LI-850
+Integrator’s Guide
+             LI-830 and LI-850 Gas Analyzers
+                                                      Integrator's Guide
+
+
+
+
+LI-COR Environmental
+4647 Superior Street
+Lincoln, Nebraska 68504
+Phone: +1-402-467-3576
+Toll free: 800-447-3576 (U.S. & Canada)
+envsales@licor.com
+envsupport@licor.com
+licor.com/env
+LI-COR GmbH, Germany
+Siemensstraße 25A
+61352 Bad Homburg
+Germany
+Phone: +49 (0) 6172 17 17 771
+envsales-gmbh@licor.com
+envsupport-eu@licor.com
+LI-COR Ltd., United Kingdom
+St. John’s Innovation Centre
+Cowley Road
+Cambridge
+CB4 0WS
+United Kingdom
+Phone: +44 (0) 1223 422102
+envsales-UK@licor.com
+envsupport-eu@licor.com
+Beijing LI-COR Bioscience Ltd.
+Room 502-503, 5th Floor, Jimen No.1 Office Building
+Xitucheng Road, Haidian District
+Beijing, China
+Phone: +86-400-1131-511
+china-sales@licor.com
+china-support@licor.com
+LI-COR Distributor Network
+licor.com/env/distributors
+Notice
+The information in this document is subject to change without notice.
+LI-COR MAKES NO WARRANTY OF ANY KIND WITH REGARD TO THIS MATERIAL, INCLUDING BUT NOT
+LIMITED TO THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE. LI-COR shall not be held liable for errors contained herein or for incidental or consequential damages in con-
+nection with the furnishing, performance, or use of this material.
+This document contains proprietary information, which is protected by copyright. All rights are reserved. No part of this
+document may be photocopied, reproduced, or translated to another language without prior written consent of LI-COR,
+Inc.
+Microsoft, Windows, and Excel are registered trademarks of the Microsoft Corporation. Drierite is a registered trademark
+of the W.A. Hammond Drierite Company. Fetch is a registered trademark of Fetch Softworks LLC. Excelon Bev-a-line is a
+registered trademark of Thermoplastic Processes, Inc. Propafilm is a trademark of Innovia Films. All other trademarks and
+registered trademarks are property of their respective owners.
+U.S. Patents: licor.com/patents
+
+Printing History
+© Copyright 2017, LI-COR, Inc.
+Publication Number: 984-17191
+Created on Wednesday, April 10, 2024
+
+Notes on Safety
+This LI-COR product has been designed to be safe when operated in the manner described in this manual. The safety of
+this product cannot be assured if the product is used in any other way than is specified in this manual. The product is
+intended to be used by qualified personnel. Read this entire manual before using the product.
+
+ Equipment markings:
+
+                   The product is marked with this symbol when it is necessary for you to refer to the manual or
+                   accompanying documents in order to protect against injury or damage to the product.
+                   The product is marked with this symbol when a hazardous voltage may be present.
+
+                   The product is marked with this symbol if a Chassis Ground connection is required.
+
+                   The product is marked with this symbol to indicate that a direct current (DC) power supply is
+                   required.
+   WARNING         Warnings must be followed carefully to avoid bodily injury.
+   CAUTION         Cautions must be observed to avoid damage to your equipment.
+ Manual markings:
+
+   Warning         Warnings must be followed carefully to avoid bodily injury.
+   Caution         Cautions must be observed to avoid damage to your equipment.
+   Note            Notes contain important information and useful tips on the operation of your equipment.
+
+
+
+
+                                                             ii
+CE Marking:
+This product is a CE marked product. For conformity information, (typically EMC, Safety, RoHS, and/or Wireless) contact
+LI-COR Support at envsupport@licor.com for a Declaration of Conformity. Outside the U.S., contact your local sales office
+or distributor.
+For ReaCH (Regulation (EC) n.1907/2006) related questions, information is available on the European Chemicals Agency
+maintained website for the Waste Framework Directive SCIP database.
+You can search by product name (for this product “LI-830 and LI-850”), or request an “SCIP number” from the email
+above.
+LI-COR scientific products are for professional use (non-consumer products). These products do not fall within the vol-
+untary scopes of regulations: UNI EN ISO 14024, TCO Certified, EPEAT 2018, Blue Angel, TÜV Green Product Mark,
+Energy Star, EU GPP, or other similar regulations. The typical scope for these regulations is lighting, furniture, copiers,
+mobile phones, televisions, computer/servers, home appliances, to name a few. As such, our products do not use any
+labeling that indicates adherence thereof.
+
+California Proposition 65 Warning
+WARNING: This product contains chemicals known to the State of California to cause cancer and birth defects or other
+reproductive harm.
+
+Federal Communications Commission Radio Interference Statement
+WARNING: This equipment generates, uses, and can radiate radio frequency energy and if not installed in accordance
+with the instruction manual, may cause interference to radio communications. It has been tested and found to comply
+with the limits for a Class A computing device pursuant to Subpart J of Part 15 of FCC rules, which are designed to
+provide a reasonable protection against such interference when operated in a commercial environment. Operation of this
+equipment in a residential area is likely to cause interference in which case the user, at his own expense, will be required to
+take whatever measures may be required to correct the interference.
+
+Waste Electronic and Electrical Equipment (WEEE) Notice
+This symbol indicates that the product is to be collected separately from unsorted municipal waste. The fol-
+lowing applies to users in European countries: This product is designated for separate collection at an appro-
+priate collection point. Do not dispose of as household waste. For more information, contact your local
+distributor or the local authorities in charge of waste management.
+
+
+
+
+                                                              iii
+iv
+                                                  Contents
+
+Section 1. Configuration grammar
+About XML communications                                      1-1
+Types of data                                                 1-2
+Connecting over a terminal program                            1-3
+Sending a command                                             1-4
+Reading data from the instrument                              1-5
+    Configuring the output rate                               1-5
+    Enabling and disabling an output variable                 1-5
+    Turning off all output variables except CO2               1-6
+    Removing XML tags                                         1-7
+    Reading the full dataset                                  1-7
+Reading instrument settings                                   1-8
+    All settings                                              1-8
+    Configuration settings                                    1-8
+    Zero and span settings                                    1-8
+    Polynomial settings                                       1-9
+    Pump settings                                             1-9
+    Optical source hours of operation                         1-9
+    Serial number                                             1-9
+    Software version                                         1-10
+Applying instrument settings                                 1-11
+    Controlling the pump                                     1-11
+    Calibrating the instrument                               1-12
+    Configuring the alarms                                   1-13
+    Configuring the analog outputs                           1-15
+
+
+Section 2. Element descriptions
+Data tags                                                     2-2
+    Raw data tags                                             2-3
+Auxiliary data tags                                           2-3
+    RS-232 serial tags                                        2-4
+Configuration tags                                            2-5
+    Alarm tags                                                2-6
+    DAC tags                                                  2-7
+Pump tags                                                     2-8
+Source tag                                                    2-8
+Calibration tags                                              2-9
+Polynomial tags                                              2-11
+
+
+
+
+                                                     v
+Tech tags                                             2-12
+Full XML grammar                                      2-13
+
+
+Appendix A. Supplemental information
+Serial cable pin assignments                          A-1
+Circuit board connector                               A-1
+Dimensions                                            A-2
+Details on the serial connection                      A-3
+    Serial communication parameters                    A-3
+    Finding your Windows serial port                   A-3
+    Connecting with a Windows terminal program         A-3
+    Connecting with a Mac terminal program             A-4
+
+
+
+
+                                                 vi
+Section 1.
+Configuration grammar
+                    The LI-830 and LI-850 can communicate with a computer or a system controller
+                    through a serial connection (either the RS-232 or USB output). The following dis-
+                    cussion describes how to implement the communication protocol. To help facilitate
+                    this discussion, this document will rely exclusively on a terminal program to com-
+                    municate with the gas analyzer. To use this document, download and install a ter-
+                    minal program on your computer. We give examples using TeraTerm for Windows
+                    and Serial for Mac, but nearly any terminal program will work.
+
+
+About XML communications
+                    The configuration grammar used to communicate with the analyzer is based upon
+                    the eXtensible Markup Language (XML). XML relies on the use of tags to "Markup",
+                    or give structural rules to a set of data.
+                    A tag is a descriptive identifier enclosed between a less than (<) and a greater than
+                    (>) symbol, used in part to describe a piece of data. For example, <name> is a tag
+                    that describes a person's name. Each tag must have a corresponding end tag, denoted
+                    by '/'. Extending the example above, the end tag of <name> is </name>.
+                    Elements are the basic unit of XML content. An element consists of a start tag and
+                    an end tag, and everything in between. For example, consider the following element:
+
+                      <name>George</name>.
+
+
+                    In this example, <NAME> (start tag) and </NAME> (end tag) comprise the markup,
+                    and "george" comprises the data. Because XML is extensible, tags can be defined spe-
+                    cifically for the data they are meant to describe.
+                    Elements can also contain other elements other than data.
+
+
+LI-830 and LI-850 Gas Analyzers Integrator's Guide                                                    1-1
+Section 1. Configuration grammar
+
+
+
+                       <name>
+                           <first>George</first>
+                           <last>Smith</last>
+                       </name>
+
+                   In this example, the outermost element <NAME> encompasses two other elements
+                   that contain data. All elements combined make up the XML document.
+                   The LI-830 and LI-850 communications are not case sensitive. So, your commands
+                   can be upper case, lower case, or a combination of upper and lower case if you are
+                   so inclined. The instruments do not interpret upper case commands as yelling, in
+                   the way that people often do.
+
+
+Types of data
+                   An element includes a start tag, end tag, and the data inside the tags. The data can
+                   take any of the forms described in Table 1-1 below.
+
+                   Table 1-1. The types of information sent in the XML grammar.
+                   Value           Description                                                 Example
+                   {val | val |...} The value will be a member of the specified set. In this   2.5 | 5
+                                    document, the vertical bar (|) means "or".
+                   {bool}           Boolean values.                                            TRUE | FALSE
+                   {float}          Floating point values in decimal or exponential notation. 3.1415927
+                   {int}            Integers.                                                  25
+                   {iso date}       Date in the International Organization for Standards (ISO) 2017-11-07
+                                    format: 4-digit year, 2-digit month, and 2-digit day.
+                   {string}         A sequence of characters                                   HGA-4234
+                   '?'              The question mark, when sent in the XML, requests all
+                                    values for that XML tag.
+
+
+
+
+1-2                                                             LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                            Section 1. Configuration grammar
+
+
+
+
+Connecting over a terminal program
+                   To connect with the analyzer, power it on and connect the USB cable between the
+                   analyzer and your computer. Or, connect to the board as described in Circuit board
+                   connector on page A-1.
+
+
+
+
+               1 Launch the terminal program.
+                   In this example, we use TeraTerm for Windows and Serial for Mac. In either case,
+                   you can select from the devices that are connected to the computer.
+               2 Connect with the instrument.
+                          In TeraTerm on Windows:                            In Serial on Mac:
+                   Launch the TeraTerm app. Select Serial,        Launch the Serial app. It will open a
+                   select the port called COM#: USB Serial        window that lists all of the devices.
+                   Port (COM#), then click OK.                    Select LI-830/LI-850 and click Open.
+
+
+
+
+                   You may or may not see data stream into the terminal program immediately,
+                   depending on the current instrument configuration.
+                   The default configuration for serial communication is given in Details on the serial
+                   connection on page A-3.
+
+
+
+Connecting over a terminal program                                                                        1-3
+Section 1. Configuration grammar
+
+
+
+
+Sending a command
+                   It can be a bit tricky to send commands if you're unfamiliar with terminal programs.
+                   Here are some tips that might help you get started:
+
+                    Note: The root tag for the LI-850 is <li850> and the root tag for the LI-830 is
+                    <li830>. We use <li850> throughout most of this document.
+
+                           In TeraTerm on Windows:                             In Serial on Mac:
+                   Select the text below:                         Click Terminal > Send String.
+                   <li850>?</li850> or                            Type (or copy and paste) the com-
+                   <li830>?</li830>                               mand into the interface.
+                   and copy it to the clipboard (Ctrl + C).       <li850>?</li850> or
+                                                                  <li830>?</li830>
+                   In TeraTerm, click Edit > Paste <CR> to
+                   open a clipboard window, where you
+                   can edit the command.
+
+
+
+
+                                                                  Click Send to submit the command.
+
+
+                   Click OK to submit the command.
+                   The instrument will reply by returning the entire configuration as XML.
+
+                    Note: A simple way to write the commands is to copy the text from this doc-
+                    ument or type the command into a text editor and copy the text to your clipboard
+                    (select the text and press Ctrl+C). Then right-click in the terminal window and
+                    paste the command (or press Ctrl+V).
+
+
+
+
+1-4                                                           LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                         Section 1. Configuration grammar
+
+
+
+
+Reading data from the instrument
+                   This section describes how to view measurements from the instrument in a terminal
+                   program.
+
+                   Configuring the output rate
+                   Copy the following command and paste it into the TeraTerm window:
+                       <li850>
+                           <cfg>
+                                <outrate>1</outrate>
+                           </cfg>
+                       </li850>
+
+                   This will configure the instrument to send one measurement per second. The instru-
+                   ment will respond with a confirmation message (<li850><ack-
+                   >true</ack></li850>) and by sending data once per second. You still may not see
+                   data however, depending on the instrument settings.
+
+                   Enabling and disabling an output variable
+                   To include the CO2 reading among the data sent from the instrument, copy the fol-
+                   lowing command and paste it into the TeraTerm window:
+                       <li850>
+                           <rs232>
+                                <co2>true</co2>
+                           </rs232>
+                       </li850>
+
+                   This will configure the instrument to send the CO2 measurement. After sending the
+                   command you will see the confirmation message and other variables in addition to
+                   CO2, depending upon the instrument settings. The confirmation message is
+                   <li850><ack>true</ack></li850>.
+
+                   To exclude the CO2 reading from the data, send this command:
+                       <li850>
+                           <rs232>
+                                <co2>false</co2>
+                           </rs232>
+                       </li850>
+
+
+
+Reading data from the instrument                                                                      1-5
+Section 1. Configuration grammar
+
+
+
+
+                   CO2 will no longer be returned. You will still see all the measurements that are con-
+                   figured as TRUE but not specified here.
+
+                   Turning off all output variables except CO2
+                   Send this command to stop the instrument from sending all the measurements
+                   except CO2 and to send CO2 once per second:
+                       <li850>
+                           <cfg>
+                                <outrate>1</outrate>
+                           </cfg>
+                           <rs232>
+                                <co2>true</co2>
+                                <flowrate>false</flowrate>
+                                <h2o>false</h2o>
+                                <celltemp>false</celltemp>
+                                <cellpres>false</cellpres>
+                                <ivolt>false</ivolt>
+                                <co2abs>false</co2abs>
+                                <h2oabs>false</h2oabs>
+                                <h2odewpoint>false</h2odewpoint>
+                                <raw>false</raw>
+                                <echo>false</echo>
+                                <strip>false</strip>
+                           </rs232>
+                       </li850>
+
+                   It may be evident by now that the TRUE command means do send; whereas the
+                   FALSE command means do not send. Also, here we included the command to con-
+                   figure the output rate to once per second.
+
+
+
+
+1-6                                                          LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                              Section 1. Configuration grammar
+
+
+
+
+                    Removing XML tags
+                    So far we've been viewing data inside the XML tags. If you simply want to see the
+                    data without the enclosing XML tags, send this command:
+                       <li850>
+                           <rs232>
+                                <strip>true</strip>
+                           </rs232>
+                       </li850>
+
+                    The instrument will respond with the confirmation message:
+
+                     <li850><ack>true</ack></li850>
+
+
+                    and by streaming space-delimited text rather than XML text. Send this command to
+                    return the data with XML tags:
+                       <li850>
+                           <rs232>
+                                <strip>false</strip>
+                           </rs232>
+                       </li850>
+
+                    The instrument will respond with the confirmation message and by streaming data
+                    as XML text.
+
+                    Reading the full dataset
+                    Sending this command:
+                       <li850>
+                           <data>?</data>
+                       </li850>
+
+                    instructs the analyzer to send the most recent set of data values according to the cur-
+                    rent configuration. You will only see data values that are set as true (see Enabling
+                    and disabling an output variable on page 1-5). In other words, you may see no data,
+                    some data, or all of the data.
+
+
+
+
+Removing XML tags                                                                                          1-7
+Section 1. Configuration grammar
+
+
+
+
+Reading instrument settings
+                   Previously we described how to configure the data that is sent over the serial port
+                   (RS-232 or USB). Here we describe how to read the current settings in the instru-
+                   ment. You may want to set the output rate (<outrate>) to 0 for these exercises.
+                   The analyzer can be polled for individual sets of data by sending an XML document
+                   with a ? in place of the set of elements requested. The element sets that can be
+                   requested include the data set, the current configuration, and the entire state of the
+                   instrument.
+
+                   All settings
+                   To receive the entire state of the instrument as an XML document (except the
+                   <TECH> information), send this command:
+
+                       <li850>?</li850>
+
+                   The instrument will reply with the full configuration followed by the confirmation
+                   message.
+
+                   Configuration settings
+                   To receive all of the configuration information, send this command:
+                       <li850>
+                           <cfg>?</cfg>
+                       </li850>
+
+                   The instrument will return the current configuration, including heater status, filter
+                   settings, DACs, and alarms, followed by the confirmation message. See Configuration
+                   tags on page 2-5 for the full description.
+
+                   Zero and span settings
+                   To receive the user-settable zero and span calibration settings, send:
+                       <li850>
+                           <cal>?</cal>
+                       </li850>
+
+
+
+
+1-8                                                            LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                               Section 1. Configuration grammar
+
+
+
+
+                      The instrument will return the current zero and span calibration information,
+                      including the dates of calibrations and the zero and span coefficients. See Calibration
+                      tags on page 2-9 for the full description.
+
+                      Polynomial settings
+                      To receive the coefficients for the calibration polynomial function, send:
+                         <li850>
+                             <poly>?</poly>
+                         </li850>
+
+                      The instrument will return the factory-determined polynomial coefficients that are
+                      unique to your instrument. See Polynomial tags on page 2-11 for the full description.
+
+                      Pump settings
+                      To receive the pump settings, send:
+                         <li850>
+                             <pump>?</pump>
+                         </li850>
+
+                      If the LI-COR pump is installed, the instrument will return all of the pump settings
+                      and the confirmation message. See Pump tags on page 2-8 for the full description.
+
+                      Optical source hours of operation
+                      To receive the hours of operation for the optical source, send:
+                         <li850>
+                             <source>?</source>
+                         </li850>
+
+                      The instrument will return the number of hours on the source, followed by con-
+                      firmation.
+
+                      Serial number
+                      To request the serial number of your instrument, send the following:
+                         <li850>
+
+
+
+
+Polynomial settings                                                                                         1-9
+Section 1. Configuration grammar
+
+
+
+                           <serialnum>?</serialnum>
+                       </li850>
+
+                   The instrument will return the serial number of the instrument, followed by con-
+                   firmation.
+
+                   Software version
+                   To request the software version, send:
+                       <li850>
+                           <ver>?</ver>
+                       </li850>
+
+                   The instrument will return the software version number.
+
+
+
+
+1-10                                                        LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                          Section 1. Configuration grammar
+
+
+
+
+Applying instrument settings
+                   Here we describe how to apply some settings. Earlier we described how to set the
+                   output rate. The output rate is a configuration:
+                       <li850>
+                           <cfg>
+                                <outrate>1</outrate>
+                           </cfg>
+                       </li850>
+
+                   You can also configure the other settings. For example, sending this command:
+                       <li850>
+                           <cfg>
+                                <heater>false</heater>
+                           </cfg>
+                       </li850>
+
+                   will turn the optical bench heater off and return a confirmation message. You nor-
+                   mally don't want the heater off, so send this command to reenable it:
+                       <li850>
+                           <cfg>
+                                <heater>true</heater>
+                           </cfg>
+                       </li850>
+
+
+                   Controlling the pump
+                   For instruments that are equipped with a LI-COR-installed pump, the pump con-
+                   trols are in their own tag: <pump>. To enable the pump, send:
+                       <li850>
+                           <pump>
+                                <enabled>true</enabled>
+                           </pump>
+                       </li850>
+
+                   The instrument will respond with a confirmation message.
+                   To disable the pump, send:
+
+
+
+
+Applying instrument settings                                                                          1-11
+Section 1. Configuration grammar
+
+
+
+                       <li850>
+                           <pump>
+                                <enabled>false</enabled>
+                           </pump>
+                       </li850>
+
+                   The instrument will respond with a confirmation message.
+
+                   Calibrating the instrument
+                   The analyzer CO2 and H2O (LI-850 only) zeros and spans can be performed using
+                   XML grammar. Just like when you calibrate with the software, be sure that a suit-
+                   able calibration gas is flowing through the optical cell before changing a zero or
+                   span. See the instruction manual for details. To request the calibration information
+                   (optional), enter the following command:
+                       <li850>
+                           <cal>?</cal>
+                       </li850>
+
+                   The instrument will respond with the current calibration information and a con-
+                   firmation message: <li850><ack>true</ack></li850>. If the calibration cannot
+                   be performed, an error is returned: <LI850><ERROR>Text</ERROR></LI850>.
+
+               1 Set the CO2 zero.
+                   With suitable CO2-free air flowing through the analyzer cell:
+                   A Send the command to initiate the zero. The date and concentration must be sent together.
+                       <li850>
+                           <cal>
+                                <date>yyyy-mm-dd</date>
+                                <co2zero>true</co2zero>
+                           </cal>
+                       </li850>
+
+
+                   B Wait for the acknowledgment.
+                   When the zero is set the instrument will return confirmation. If the operation fails
+                   the instrument will return an error message.
+
+               2 Set the primary CO2 span.
+                   Using a CO2 span gas with a known concentration of CO2 in air:
+
+
+
+1-12                                                              LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                            Section 1. Configuration grammar
+
+
+
+
+                   A Send the command to initiate the span.
+                         <li850>
+                             <cal>
+                                  <date>yyyy-mm-dd</date>
+                                  <co2span>gas concentration</co2span>
+                             </cal>
+                         </li850>
+
+
+                   B Wait for the acknowledgment.
+                   When the primary span is set the instrument will return confirmation. If the oper-
+                   ation fails the instrument will return an error message.
+
+               3 Set the secondary CO2 span (optional).
+                   Using a CO2 span gas with a known concentration of CO2 in air (different from the
+                   concentration used to set the primary span):
+                   A Send the XML command to initiate the second span.
+                         <li850>
+                             <cal>
+                                  <date>yyyy-mm-dd</date>
+                                  <co2span2>gas concentration</co2span2>
+                             </cal>
+                         </li850>
+
+
+                   B Wait for the acknowledgment.
+                   When the secondary span is set the instrument will return confirmation. If the oper-
+                   ation fails the instrument will return an error message.
+                   You can verify that all the calibrations were set by querying the instrument:
+                         <li850>
+                             <cal>?</cal>
+                         </li850>
+
+                   The instrument will return the calibration settings and dates.
+
+                   Configuring the alarms
+                   The alarms can be set for either CO2 or H2O (in the LI-850). In either case, each
+                   alarm features a level and a deadband. The low alarm (<LOW>) is triggered when the
+                   reading drops below the setting. It is deactivated when the reading rises above the
+
+
+
+Configuring the alarms                                                                                  1-13
+Section 1. Configuration grammar
+
+
+
+
+                   deadband setting (<LDEAD>). The high alarm (<HIGH>) is triggered when the reading
+                   exceeds the setting. It is deactivated when the reading drops below the deadband set-
+                   ting (<HDEAD>).
+                                                  High threshold =700;   High deadband = 100;   Low threshold = 300;   Low deadband = 50;
+                                                  Alarm activated when     Alarm deactivated    Alarm activated when    Alarm deactivated
+                                                     CO2 >700 ppm        when CO2 <600 ppm         CO2 <300 ppm        when CO2 >350 ppm
+
+                                            700
+                                                                                      High Deadband
+                   CO2 Concentration, ppm
+
+
+
+
+                                            600
+
+
+                                            500
+
+
+                                            400
+
+                                                                                      Low Deadband
+                                            300
+
+
+                                                                                        Elapsed Time
+
+                   Figure 1-1. An alarm is triggered when a concentration exceeds a threshold. For example,
+                   the low alarm is triggered if the concentration drops below 300 ppm and is deactivated
+                   when the concentrations rises above 400 ppm. The high alarm is triggered if the CO2 con-
+                   centration exceeds 700 ppm. The alarm remains triggered until the concentration drops
+                   below 600 ppm.
+
+                   Sending this command will configure the alarm on for CO2 readings in the manner
+                   shown in Figure 1-1 above.
+                                            <li850>
+                                                <cfg>
+                                                     <alarms>
+                                                         <enabled>true</enabled>
+                                                         <source>co2</source>
+                                                         <low>300</low>
+                                                         <ldead>400</ldead>
+                                                         <high>700</high>
+                                                         <hdead>600</hdead>
+                                                     </alarms>
+                                                </cfg>
+                                            </li850>
+
+
+
+
+1-14                                                                                      LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                            Section 1. Configuration grammar
+
+
+
+
+                   Configuring the analog outputs
+                   The LI-830 and LI-850 can send two analog signals over analog output channels
+                   (either voltage or current). Analog signals are linear, single-ended outputs.
+                   The voltage channels (pins 7 and 9) can be configured for ranges of 0 to 2.5 V or 0
+                   to 5.0 V. The current channels (pins 11 and 13) are fixed to a range of 4 to 20 mA.
+                    l   <d1> configures V Out 1 (pin 9) and 4-20 mA 1 (pin 13) on the terminal strip
+                    l   <d2> configures V Out 2 (pin 7) and 4-20 mA 2 (pin 11) on the terminal strip
+
+                   The data that can be sent as analog signals are:
+
+                   XML variable            Data sent
+                   co2                     CO2 concentration (ppm)
+                   h2o                     H2O concentration (mmol mol-1; LI-850 only)
+                   h2odewpoint             H2O dewpoint temperature (°C; LI-850 only)
+                   cellpress               Pressure in the optical cell (kPa)
+                   celltemp                Temperature in the optical cell (°C)
+                   none                    None
+
+                   Sending the following command will configure the analog voltage output for a
+                   range of 0 to 5 V, and configure V Out 1 (pin 9) to output 0 V when the instrument
+                   measures 200 ppm CO2 and 5.0 V when the instrument measures 1000 ppm. This
+                   command will also configure the current output for 4-20 mA 2 (pin 11) will output
+                   4 mA when the instrument measures 200 ppm and 20 mA when it measures 1000
+                   ppm.
+                        <li850>
+                            <cfg>
+                                 <dacs>
+                                     <range>5.0</range>
+                                     <d1>co2</d1>
+                                     <d1_0>200</d1_0>
+                                     <d1_f>1000</d1_f>
+                                 </dacs>
+                            </cfg>
+                        </li850>
+
+
+
+
+Configuring the analog outputs                                                                          1-15
+Section 1. Configuration grammar
+
+
+
+
+1-16                               LI-830 and LI-850 Gas Analyzers Integrator's Guide
+Section 2.
+Element descriptions
+                    In this section we break down each subset of the XML tags. We begin with the root-
+                    level tags and then describe the subordinate tags in greater detail.
+
+                    Table 2-1. The root tag for all XML communication is <LI850> or <LI830>.
+                    Root            Parent           Value        Definition
+                                    <data>           Float        See Data tags on the next page.
+                                    <auxdata>        Float        See Auxiliary data tags on page 2-3.
+                                    <cfg>            Various      See Configuration tags on page 2-5.
+                                    <pump>           Various      Pump status. See Pump tags on
+                                                                  page 2-8.
+                                    <source>         Integer      Hours the source has operated. See
+                                                                  Source tag on page 2-8.
+                      <li850>       <cal>            Various      See Calibration tags on page 2-9.
+                         or         <poly>           Various      See Polynomial tags on page 2-11.
+                      <li830>       <rs232>          True | False See RS-232 serial tags on page 2-4.
+                                    <ver>            String       Software version. See Software version
+                                                                  on page 1-10.
+                                    <serialnum>      String       Serial number. See Serial number on
+                                                                  page 1-9.
+                                    <ack>            True | False Acknowledgment of a command.
+                                    <error>          String       Error. Includes a message.
+                                    <tech>           Various      Diagnostics. See Tech tags on page 2-12.
+
+                    Sending this command will return the full configuration file and measured values
+                    that are configured to be sent over the serial connection.
+
+                      <li850>?</li850>
+
+
+                    The instrument will reply by sending the data and the confirmation message:
+
+
+LI-830 and LI-850 Gas Analyzers Integrator's Guide                                                      2-1
+Section 2. Element descriptions
+
+
+
+
+                      <li850><ack>true</ack></li850>
+
+
+
+Data tags
+                   The <data> tag contains all data values sent from the instrument. All of the ele-
+                   ments within <data> are readable only. The <h2o>-related tags apply to the LI-850
+                   only.
+
+                   Table 2-2. Elements available in the <data> tag.
+                    Root          Parent   Children             Values     R/W       Comments
+                                           <co2>                Float    R        CO2 in ppm
+                                           <co2abs>             Float    R        CO2 absorption
+                                           <h2o>                Float    R        H2O in mmol/mol
+                                           <h2odewpoint>        Float    R        H2O in °C
+                    <li850>                <h2oabs>             Float    R        H2O absorption
+                      or    <data>
+                    <li830>
+                                           <celltemp>           Float    R        Cell temperature
+                                           <cellpres>           Float    R        Cell pressure
+                                           <ivolt>              Float    R        Input voltage
+                                           <flowrate>           Integer  R        Measured flow rate
+                                           <raw>                See Raw data tags on the facing page
+
+                   To query the data, send:
+                        <li850>
+                            <data>?</data>
+                        </li850>
+
+                   If a data value is not returned, it is probably "turned off" in the serial data stream.
+                   See RS-232 serial tags on page 2-4 for more information.
+
+
+
+
+2-2                                                             LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                          Section 2. Element descriptions
+
+
+
+
+                Raw data tags
+                The raw detector counts can be retrieved by querying the parent <data> tag. The
+                <h2o>-related tags apply to the LI-850 only. To see the raw detector counts, send:
+
+                   <li850>
+                       <data>
+                            <raw>?</raw>
+                       </data>
+                   </li850>
+
+
+                Table 2-3. Elements within the <RAW> tag. These are raw detector readings.
+                Root           Parent         Parent       Children          Values         R/W
+                                                           <co2>             Integer        R
+                   <li850>                                 <co2ref>          Integer        R
+                     or        <data>         <raw>
+                   <li830>
+                                                           <h2o>             Integer        R
+                                                           <h2oref>          Integer        R
+
+                To disable the raw data from the serial data stream, you have to modify the instruc-
+                tions under the <rs232> tag. So, send:
+                   <li850>
+                       <rs232>
+                            <raw>false</raw>
+                       </rs232>
+                   </li850>
+
+
+
+Auxiliary data tags
+                The <auxdata> tag contains all auxiliary data values that can be retrieved from the
+                instrument. All of the elements within the <auxdata> tag are readable only.
+
+                Table 2-4. These tags are under <auxdata>.
+                Root             Parent                Children          Values            R/W
+                                                       <pca>             Float             R
+                    <li850>                            <pha>             Float             R
+                      or         <auxdata>
+                    <li830>
+                                                       <psi>             Float             R
+                                                       <bb_eff>          Float             R
+
+                To query the auxdata, send:
+
+
+
+
+Raw data tags                                                                                        2-3
+Section 2. Element descriptions
+
+
+
+                        <li850>
+                            <auxdata>?</auxdata>
+                        </li850>
+
+
+                   RS-232 serial tags
+                   The <rs232> tag is where you set which values are output in <data>. TRUE means
+                   that the value will be sent; FALSE means it will not be sent. The <h2o>-related tags
+                   apply to the LI-850 only.
+
+                   Table 2-5. Setting the <rs232> values will determine which values are output in
+                   <data>.
+                    Root          Parent   Children          Values         R/W      Comments
+                                           <co2>             True | False   R/W      CO2 in ppm
+                                           <co2abs>          True | False   R/W      CO2 absorption
+                                           <h2o>             True | False   R/W      H2O in mmol/mol
+                                           <h2odewpoint>     True | False   R/W      H2O dew point
+                     <li850>               <h2oabs>          True | False   R/W      H2O absorption
+                       or    <rs232>       <celltemp>        True | False   R/W      Cell temperature
+                     <li830>               <cellpres>        True | False   R/W      Cell pressure
+                                           <ivolt>           True | False   R/W      Input voltage
+                                           <echo>            True | False   R/W      Echo commands sent
+                                           <strip>           True | False   R/W      Strip XML
+                                           <flowrate>        True | False   R/W      Flow rate
+
+                   Sending this command will configure the output rate and the variables output over
+                   the serial connection.
+                        <li850>
+                            <cfg>
+                                <outrate>1</outrate>
+                            </cfg>
+                            <rs232>
+                                <co2>true</co2>
+                                <co2abs>true</co2abs>
+                                <h2o>false</h2o>
+                                <h2odewpoint>false</h2odewpoint>
+                                <h2oabs>false</h2oabs>
+                                <celltemp>true</celltemp>
+                                <cellpres>true</cellpres>
+
+
+
+
+2-4                                                          LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                                Section 2. Element descriptions
+
+
+
+                                 <ivolt>true</ivolt>
+                                 <echo>false</echo>
+                                 <strip>false</strip>
+                                 <flowrate>false</flowrate>
+                            </rs232>
+                        </li850>
+
+
+
+Configuration tags
+                     Configuration tags are used to apply settings to the instrument.
+
+                     Table 2-6. Elements within the <cfg> tag.
+                     Root        Parent     Children      Values      R/W       Comments
+                                            <outrate>     0.5 to 20   R/W       Output data every N
+                                                                                seconds (0.5 second
+                                                                                increments).
+                                            <heater>      True |      R/W       Turn heater on/off.
+                                                          False
+                      <li850>               <pcomp>       True |      R/W       Pressure compensation
+                         or   <cfg>
+                                                          False                 on/off.
+                      <li830>
+                                            <filter>      0 to 20     R/W       Set a 0 to 20 second filter
+                                                                                for data logging.
+                                            <bench>       14          R         Bench length (not used).
+                                            <alarms>      Alarm settings. See Alarm tags on the next page.
+                                            <dacs>        DAC output settings. See DAC tags on page 2-7.
+
+                     Sending this command will set the output rate to 1 per second, turn the optical
+                     bench heater on, apply the pressure compensation, and turn off data filtering:
+                        <li850>
+                            <cfg>
+                                 <outrate1</outrate>
+                                 <heater>true</heater>
+                                 <pcomp>true</pcomp>
+                                 <filter>0</filter>
+                            </cfg>
+                        </li850>
+
+
+
+
+Configuration tags                                                                                         2-5
+Section 2. Element descriptions
+
+
+
+
+                   Alarm tags
+                   Alarm tags configure the alarm states.
+
+                    Root          Parent   Parent     Children       Values         R/W       Comments
+                                                      <enabled>      True | False R/W         Enable alarms
+                                                      <source>       co2 | h2o    R/W         Channel (CO2,
+                                                                                              H2O)
+                                                      <high>         Float          R/W       High alarm on
+                     <li850>                                                                  at this value
+                       or    <cfg>         <alarms>   <hdead>        Float          R/W       High alarm off
+                     <li830>                                                                  at this value
+                                                      <low>          Float          R/W       Low alarm on
+                                                                                              at this value
+                                                      <ldead>        Float          R/W       Low alarm off
+                                                                                              at this value
+
+                   To configure the alarms, send:
+                        <li850>
+                            <cfg>
+                                 <alarms>
+                                     <enabled>{bool}</enabled>
+                                     <source>h2o | co2<source>
+                                     <high>{float}</high>
+                                     <hdead>{float}</hdead>
+                                     <low>{float}</low>
+                                     <ldead>{float}</ldead>
+                                 </alarms>
+                            </cfg>
+                        </li850>
+
+
+
+
+2-6                                                           LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                   Section 2. Element descriptions
+
+
+
+
+           DAC tags
+           DAC tags configure the analog outputs.
+
+           Root       Parent   Parent     Children   Values      R/W   Comments
+                                          <range>    2.5 | 5.0   R/W   Output voltage. 0 to
+                                                                       2.5V or 0 to 5.0V
+                                          <d1>       Various     R/W   CO2 | H2O |
+                                                                       H2ODEWPOINT |
+                                                                       CELLPRES |
+                                                                       CELLTEMP | NONE
+                                                                       from DAC1
+                                          <d1_0>     Float       R/W   Value where DAC1
+                                                                       outputs 0V
+            <li850>
+                                          <d1_F>     Float       R/W   Value where DAC1
+              or    <cfg>      <dacs>
+                                                                       outputs full scale
+            <li830>
+                                          <d2>       Various     R/W   CO2 | H2O |
+                                                                       H2ODEWPOINT |
+                                                                       CELLPRES |
+                                                                       CELLTEMP | NONE
+                                                                       from DAC2
+                                          <d2_0>     Float       R/W   Value where DAC2
+                                                                       outputs 0V
+                                          <d2_F>     Float       R/W   Value where DAC2
+                                                                       outputs full scale
+
+           To configure the DACs, send:
+              <li850>
+                  <cfg>
+                       <dacs>
+                           <range>{2.5|5.0}</range>
+                           <d1>{none|co2|h2o|h2odp|celltemp|cellpres}</d1>
+                           <d1_0>{float}</d1_0>
+                           <d1_f>{float}</d1_f>
+                           <d2>{none|co2|h2o|h2odp|celltemp|cellpres}</d2>
+                           <d2_0>{float}</d2_0>
+                           <d2_0>{float}</d2_f>
+                       </dacs>
+                  </cfg>
+              </li850>
+
+
+
+
+DAC tags                                                                                      2-7
+Section 2. Element descriptions
+
+
+
+
+Pump tags
+                   Pump tags are used to control the LI-COR pump.
+
+                   Table 2-7. Tags used to control the pump (if applicable).
+                    Root          Parent   Children      Values          R/W      Comments
+                                           <enabled>     True | False    R/W      Turns pump on/off
+                                           <time>        Integer         R/W      Number of hours pump
+                     <li850>                                                      has run
+                       or    <pump>        <status>      Integer         R/W      Pump and flow meter
+                     <li830>                                                      present? (0 = pump, 1 =
+                                                                                  flow meter, 2 = pump and
+                                                                                  flow meter, 3 = neither)
+
+                   To enable the pump, send:
+                        <li850>
+                            <PUMP>
+                                 <ENABLED>true</ENABLED>
+                            </PUMP>
+                        </li850>
+
+                   To reset the pump hours (after replacing it, for example), send:
+                        <li850>
+                            <PUMP>
+                                 <HOURS>0</HOURS>
+                            </PUMP>
+                        </li850>
+
+
+
+Source tag
+                   The source tag indicates the number of hours that the optical source has operated.
+                   This information is useful for diagnostic purposes.
+
+                    Root          Parent     Children     Values        R/W     Comments
+                     <li850>                              Integer       R/W     Number of hours of source
+                       or    <source>        <time>                             operation
+                     <li830>
+
+                   To read the source time, send:
+
+
+
+2-8                                                           LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                              Section 2. Element descriptions
+
+
+
+                      <li850>
+                          <source>?</source>
+                      </li850>
+
+
+
+Calibration tags
+                   Calibration tags are used to start a calibration or read calibration information. When
+                   calibrating, <date> must be paired with a <co2zero> or a <co2span>, or a
+                   <h2ozero> or <h2ospan>. The <h2o>-related tags apply to the LI-850 only.
+
+
+
+
+Calibration tags                                                                                         2-9
+Section 2. Element descriptions
+
+
+
+
+                   Table 2-8. Tags used to calibrate the instrument.
+                    Root          Parent   Children          Values             R/W       Comments
+                                           <date>            20 character date W          The current date
+                                           <H2OZERO>         True | False      W          Start H2O zero
+                                           <H2OSPAN>         Float (h2o)       W          Start the H2O span
+                                                                                          1
+                                           <H2OSPAN2>        Float (h2o)        W         Start the H2O span
+                                                                                          2
+                                           <H2OLASTZERO>     20 character date R          Date of last H2O
+                                                                                          zero
+                                           <H2OLASTSPAN>     20 character date R          Date of last H2O
+                                                                                          span
+                                           <H2OKZERO>        Float              R/W       Calibration
+                                                                                          constant
+                                           <H2OKSPAN>        Float              R/W       Calibration
+                                                                                          constant
+                     <li850>               <H2OKSPAN2>       Float              R/W       Calibration
+                       or    <cal>                                                        constant
+                     <li830>               <CO2ZERO>         True | False       W         Start a CO2 zero
+                                           <CO2SPAN>         Float (co2 ppm)    W         Start the CO2 span
+                                                                                          1
+                                           <CO2SPAN2>        Float (co2 ppm)    W         Start the CO2 span
+                                                                                          2
+                                           <CO2LASTZERO>     20 character date R          Date of last CO2
+                                                                                          zero
+                                           <CO2LASTSPAN>     20 character date R          Date of last CO2
+                                                                                          span
+                                           <CO2KZERO>        Float              R/W       Calibration
+                                                                                          constant
+                                           <CO2KSPAN>        Float              R/W       Calibration
+                                                                                          constant
+                                           <CO2KSPAN>        Float              R/W       Calibration
+                                                                                          constant
+
+                   Calibration instructions are given in Zero and span settings on page 1-8. To read the
+                   current calibration, send:
+                        <li850>
+                            <cal>?</cal>
+                        </li850>
+
+
+
+2-10                                                          LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                            Section 2. Element descriptions
+
+
+
+
+Polynomial tags
+                  Polynomial tags contain calibration information from the instrument. The values
+                  included are determined at the factory. Do not change the polynomial values
+                  because that will adversely affect the analyzer performance. The <h2o>-related tags
+                  apply to the LI-850 only.
+
+                  Table 2-9. Calibration polynomial related tags.
+                  Root Tag    Parent    Children     Value(s)       R/W     Comments
+                                        <date>        Serial        R/W      Serial number and factory
+                                                      number and             calibration date: HGA
+                                                      ISO date               XXXX yyyy-mm-dd
+                                        <bb>          Float         R/W      Band broadening value
+                                        <xs>          Float         R/W      Cross sensitivity value
+                                        <co2>         <a1><a2>      R/W      Floating point coefficients
+                   <li850>                            <a3><a4>               for the CO2 calibration
+                     or    <poly>                                            inverse rectangular
+                   <li830>                                                   hyperbola
+                                        <h2o>         <a1><a2>      R/W      Floating point coefficients
+                                                      <a3>                   for the H2O calibration
+                                                                             polynomial
+                                        <press>       <a0><a1>      R/W      Floating point coefficient
+                                                                             for CO2 pressure
+                                                                             correction
+
+                  To read the polynomial information, send:
+                     <li850>
+                         <poly>?</poly>
+                     </li850>
+
+
+
+
+Polynomial tags                                                                                       2-11
+Section 2. Element descriptions
+
+
+
+
+Tech tags
+                   Tech tags indicate information about the instrument, including pump and optical
+                   source information. They are not included in the status information returned by the
+                   instrument. You can poll the tech information specifically.
+
+                   Table 2-10. Tags used to read information about the pump and source.
+                    Root          Parent   Parent     Children        Values      R/W       Comments
+                                                      <MODEL>         String      R/W       Pump model
+                                                      <Ki>            Integer     R/W       Integer value for
+                                                                                            PID control
+                                                      <Kp>            Integer     R/W       Proportional
+                                                                                            value for PID
+                                                                                            control
+                                                      <Kd>            Integer     R/W       Derivative value
+                     <li850>               <pump>
+                                                                                            for PID control
+                        or   <tech>
+                     <li830>
+                                                      <OFFSET>        Integer     R/W       Pump control
+                                                                                            offset
+                                                      <GAIN>          Integer     R/W       Pump control
+                                                                                            gain
+                                                      <FLOW>          0 to 1.0    R/W       Flow setting in
+                                                                                            LPM
+                                           <SOURCE>   <VOLTAGE>       0 to 5.0    R/W       Source voltage
+                                                                                            setting
+
+                   To read the tech information, send:
+                        <li850>
+                            <tech>?</tech>
+                        </li850>
+
+
+
+
+2-12                                                           LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                              Section 2. Element descriptions
+
+
+
+
+Full XML grammar
+                   The full configuration grammar for the LI-850 is given below. The LI-830 grammar
+                   is identical except that the root tag is <li830>, and the tags related to H2O will be
+                   absent.
+                      <li850>
+                          <data>
+                              <flowrate>{float}</flowrate>
+                              <celltemp>{float}</celltemp>
+                              <cellpres>{float}</cellpres>
+                              <co2>{float}</co2>
+                              <co2abs>{float}</co2abs>
+                              <h2o>{float}</h2o>
+                              <h2oabs>{float}</h2oabs>
+                              <h2odewpoint>{float}</h2odewpoint>
+                              <ivolt>{float}</ivolt>
+                              <raw>
+                                  <co2>{int}</co2>
+                                  <co2ref>{int}</co2ref>
+                                  <h2o>{int}</h2o>
+                                  <h2oref>{int}</h2oref>
+                              </raw>
+                          </data>
+                          <auxdata>
+                              <pca>{float}</pca>
+                              <pha>{float}</pha>
+                              <bb_eff>{float}</bb_eff>
+                              <psi>{float}</psi>
+                          </auxdata>
+                          <cfg>
+                              <heater>{bool}</heater>
+                              <pcomp>{bool}</pcomp>
+                              <filter>{int}</filter>
+                              <outrate>{float}</outrate>
+                              <alarms>
+                                  <logic>ttl or swg</logic>
+                                  <source>h2o or co2<source>
+                                  <enabled>{bool}</enabled>
+                                  <high>{float}</high>
+                                  <hdead>{float}</hdead>
+                                  <low>{float}</low>
+                                  <ldead>{float}</ldead>
+
+
+
+
+Full XML grammar                                                                                        2-13
+Section 2. Element descriptions
+
+
+
+                                  </alarms>
+                                  <bench>{14}</bench>
+                                  <span>{int}</span>
+                                  <dacs>
+                                       <range>{2.5 or 5.0}</range>
+                                       <d1>{none|co2|h2o|h2odp|celltemp|cellpres}</d1>
+                                       <d1_0>{float}</d1_0>
+                                       <d1_f>{float}</d1_f>
+                                       <d2>{none|co2|h2o|h2odp|celltemp|cellpres}</d2>
+                                       <d2_0>{float}</d2_0>
+                                       <d2_0>{float}</d2_f>
+                                  </dacs>
+                              </cfg>
+                              <pump>
+                                  <enabled>{bool}</enabled>
+                                  <time>{int}</time>
+                                  <status>{int}</status>
+                              </pump>
+                              <source>
+                                  <time>{int}</time>
+                              </source>
+                              <cal>
+                                  <co2lastzero>{iso date}</co2lastzero>
+                                  <co2kzero>{float}</co2kzero>
+                                  <co2lastspan>{iso date}</co2lastspan>
+                                  <co2lastspan2>{iso date}</co2lastspan2>
+                                  <co2kspan>{float}</co2kspan>
+                                  <co2kspan2>{float}</co2kspan2>
+                                  <h2olastzero>{iso date}</h2olastzero>
+                                  <h2okzero>{bool}</h2okzero>
+                                  <h2olastspan>{iso date}</h2olastspan>
+                                  <h2olastspan2>{iso date}</h2olastspan2>
+                                  <h2okspan>{float}</h2okspan>
+                                  <h2okspan2>{float}</h2okspan2>
+                              </cal>
+                              <poly>
+                                  <date>{string}</date>
+                                  <bb>{float}</bb>
+                                  <xs>{float}</xs>
+                                  <reset>{bool}</reset>
+                                  <co2>
+                                       <a1>{float}</a1>
+                                       <a2>{float}</a2>
+                                       <a3>{float}</a3>
+                                       <a4>{float}</a4>
+                                  </co2>
+
+
+
+
+2-14                                                     LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                Section 2. Element descriptions
+
+
+
+                            <h2o>
+                                <a1>{float}</a1>
+                                <a2>{float}</a2>
+                                <a3>{float}</a3>
+                            </h2o>
+                            <press>
+                                <a0>{float}</a0>
+                                <a1>{float}</a1>
+                            </press>
+                       </poly>
+                       <rs232>
+                            <flowrate>{bool}</flowrate>
+                            <co2>{bool}</co2>
+                            <h2o>{bool}</h2o>
+                            <celltemp>{bool}</celltemp>
+                            <cellpres>{bool}</cellpres>
+                            <ivolt>{bool}</ivolt>
+                            <co2abs>{bool}</co2abs>
+                            <h2oabs>{bool}</h2oabs>
+                            <h2odewpoint>{bool}</h2odewpoint>
+                            <raw>
+                                <co2>{bool}</co2>
+                                <co2ref>{bool}</co2ref>
+                                <h2o>{bool}</h2o>
+                            <h2oref>{bool}</h2oref>
+                            </raw>
+                            <echo>{bool}</echo>
+                            <strip>{bool}</strip>
+                       </rs232>
+                       <ver>{string}</ver>
+                       <serialnum>{string}</serialnum>
+                       <ack>{bool}</ack>
+                       <error>{string}</error>
+                   </li850>
+
+
+
+
+Full XML grammar                                                                          2-15
+Section 2. Element descriptions
+
+
+
+
+2-16                              LI-830 and LI-850 Gas Analyzers Integrator's Guide
+Appendix A.
+Supplemental information
+
+Serial cable pin assignments
+                    The image below shows the pin assignments for the 9-pin RS-232 serial connector.
+
+
+
+
+Circuit board connector
+                    The LI-830 and LI-850 circuit board has a connector that can be used as an altern-
+                    ative to the DB-9 and USB connectors on the case, or if your instrument was
+                    provided without a case in the OEM configuration. The terminals are labeled on the
+                    board.
+
+
+
+
+LI-830 and LI-850 Gas Analyzers Integrator's Guide                                                 A-1
+Appendix A. Supplemental information
+
+
+
+
+Dimensions
+
+
+
+
+                  Figure A-1. Dimensions for the versions with no case. All dimensions in inches unless indic-
+                  ated otherwise.
+
+
+
+
+A-2                                                             LI-830 and LI-850 Gas Analyzers Integrator's Guide
+                                                                          Appendix A. Supplemental information
+
+
+
+
+Details on the serial connection
+                    If you are experiencing difficulty connecting to the instrument, here are some tips
+                    that may help resolve the issue.
+
+                    Serial communication parameters
+                    The LI-830 and LI-850 can communicate through a RS-232 serial port on the front of
+                    the instrument. You may need to set the communication parameters on your com-
+                    puter or your terminal emulator program. The RS-232 port is configured as Data Ter-
+                    minal Equipment (DTE) with no hardware handshaking. It is bi-directional,
+                    meaning information can be transferred both into and out of the instrument. The
+                    port is configured as follows:
+                     l   Baud Rate: 9600 bps
+                     l   Data Bits: 8
+                     l   Parity: None
+                     l   Stop Bits: 1
+                     l   Flow Control: None
+
+                    Finding your Windows serial port
+                    Although unlikely, you may need to manually identify your serial port before you
+                    can connect with the instrument. Here's how to find it in Windows:
+
+                1 Press the Windows key (           ), type in Device Manager, and press Enter.
+                2 Expand the entry called Ports (COM & LPT).
+                3 Look for USB Serial Port (COM#).
+                    Your serial port number is indicated by the number.
+
+                    Connecting with a Windows terminal program
+                    If you have trouble connecting using TeraTerm, you may need to change the serial
+                    settings. Under Setup > Serial Port, you can set the baud rate, data bits, parity and
+                    stop bits, as described in Serial communication parameters above.
+
+
+
+
+Details on the serial connection                                                                          A-3
+Appendix A. Supplemental information
+
+
+
+
+                  Connecting with a Mac terminal program
+                  There are many terminal programs available (in addition to Mac's built in command
+                  prompt). Most modern programs will work, and you will not need to identify the
+                  port on a Mac.
+                  We tested a terminal program for Mac called Serial. Serial is available from the App
+                  Store and the developer: https://www.decisivetactics.com/products/serial/
+                  Typically, you can connect to the instrument immediately without making any
+                  changes to the configuration. The program will automatically identify serial devices
+                  and allow you to select the analyzer from a list. You can, however, set the baud rate,
+                  data bits, parity and stop bits under Terminal > Settings, as described in Serial com-
+                  munication parameters on the previous page.
+
+
+
+
+A-4                                                          LI-830 and LI-850 Gas Analyzers Integrator's Guide
+LI-COR Environmental
+4647 Superior Street
+Lincoln, Nebraska 68504
+Phone: +1-402-467-3576
+Toll free: 800-447-3576 (U.S. & Canada)
+envsales@licor.com
+envsupport@licor.com
+licor.com/env
+LI-COR GmbH, Germany
+Siemensstraße 25A
+61352 Bad Homburg
+Germany
+Phone: +49 (0) 6172 17 17 771
+envsales-gmbh@licor.com
+envsupport-eu@licor.com
+LI-COR Ltd., United Kingdom
+St. John’s Innovation Centre
+Cowley Road
+Cambridge
+CB4 0WS
+United Kingdom
+Phone: +44 (0) 1223 422102
+envsales-UK@licor.com
+envsupport-eu@licor.com
+Beijing LI-COR Bioscience Ltd.
+Room 502-503, 5th Floor, Jimen No.1 Office Building
+Xitucheng Road, Haidian District
+Beijing, China
+Phone: +86-400-1131-511
+china-sales@licor.com
+china-support@licor.com
+LI-COR Distributor Network
+licor.com/env/distributors
+984-17191 • 04/2024
+

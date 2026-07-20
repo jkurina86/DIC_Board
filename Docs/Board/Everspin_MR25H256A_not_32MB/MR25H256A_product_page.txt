@@ -1,0 +1,379 @@
+MR25H256 | Everspin
+Skip to main content
+Products
+PERSYST
+UNISYST
+Custom
+Memory Cross Reference
+Applications
+Aerospace & Defense
+AI
+Automotive
+Data Centers
+Gaming
+Industrial
+Medical
+Smart Energy & Utilities
+Order
+Design Support
+About
+Quality & Reliability
+Leadership
+Careers
+News
+Investors
+Sales login
+Actions
+Open menu
+Requests
+Search
+EN
+Mobile main navigation
+Products
+PERSYST
+UNISYST
+Custom
+Memory Cross Reference
+Applications
+Aerospace & Defense
+AI
+Automotive
+Data Centers
+Gaming
+Industrial
+Medical
+Smart Energy & Utilities
+Order
+Design Support
+About
+Quality & Reliability
+Leadership
+Careers
+Mobile secondary navigation
+News
+Investors
+Sales login
+Breadcrumb
+Home
+Products
+MR25H256
+en
+ja
+zh-CN
+ko
+es
+de
+fr
+Search products
+MR25H256 - 256Kb Serial SPI Interface MRAM
+The MR25H256 is the ideal memory for applications that must store and retrieve data and programs quickly using a minimum number of pins.
+AEC-Q100 Grade 1 Qualified options available.
+40MHz Read/Write speed with unlimited endurance.
+Data non-volatile with 20 years retention.
+Data retained on power loss.
+RoHS compliant packages.
+Download datasheet
+Search Our Products
+Filters
+Product Family
+PERSYST
+Avail
+NR
+MP
+Interface
+Serial
+Interface Type
+SPI
+Family Page
+MR25H256
+Technology
+Toggle MRAM
+Density
+256Kb
+I/O Width
+SPI
+Operating Temp
+-40 to +125C
+-40 to +85C
+Speed
+40MHz
+Vdd
+3.3
+Package
+DFN-8
+DFN-8 Small Flag
+Product Family
+Orderable P/N
+Technology
+Avail
+Interface
+Interface Type
+Density
+I/O Width
+Operating Temp
+Speed
+Vdd
+Package
+Where to Buy
+Documents
+Product Inquiry
+Sample Request
+PERSYST
+MR25H256MDC
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +125C
+40MHz
+3.3
+DFN-8
+Order MR25H256MDC
+Documents MR25H256MDC
+Product Inquiry MR25H256MDC
+Sample Request MR25H256MDC
+PERSYST
+MR25H256MDCR
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +125C
+40MHz
+3.3
+DFN-8
+Order MR25H256MDCR
+Documents MR25H256MDCR
+Product Inquiry MR25H256MDCR
+Sample Request MR25H256MDCR
+PERSYST
+MR25H256CDC
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8
+Order MR25H256CDC
+Documents MR25H256CDC
+Product Inquiry MR25H256CDC
+Sample Request MR25H256CDC
+PERSYST
+MR25H256CDCR
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8
+Order MR25H256CDCR
+Documents MR25H256CDCR
+Product Inquiry MR25H256CDCR
+Sample Request MR25H256CDCR
+PERSYST
+MR25H256CDF
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256CDF
+Documents MR25H256CDF
+Product Inquiry MR25H256CDF
+Sample Request MR25H256CDF
+PERSYST
+MR25H256CDFR
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256CDFR
+Documents MR25H256CDFR
+Product Inquiry MR25H256CDFR
+Sample Request MR25H256CDFR
+PERSYST
+MR25H256MDF
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +125C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256MDF
+Documents MR25H256MDF
+Product Inquiry MR25H256MDF
+Sample Request MR25H256MDF
+PERSYST
+MR25H256MDFR
+Toggle MRAM
+NR
+Serial
+SPI
+256Kb
+SPI
+-40 to +125C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256MDFR
+Documents MR25H256MDFR
+Product Inquiry MR25H256MDFR
+Sample Request MR25H256MDFR
+PERSYST
+MR25H256ACDF
+Toggle MRAM
+MP
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256ACDF
+Documents MR25H256ACDF
+Product Inquiry MR25H256ACDF
+Sample Request MR25H256ACDF
+PERSYST
+MR25H256ACDFR
+Toggle MRAM
+MP
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256ACDFR
+Documents MR25H256ACDFR
+Product Inquiry MR25H256ACDFR
+Sample Request MR25H256ACDFR
+PERSYST
+MR25H256AMDF
+Toggle MRAM
+MP
+Serial
+SPI
+256Kb
+SPI
+-40 to +125C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256AMDF
+Documents MR25H256AMDF
+Product Inquiry MR25H256AMDF
+Sample Request MR25H256AMDF
+PERSYST
+MR25H256AMDFR
+Toggle MRAM
+MP
+Serial
+SPI
+256Kb
+SPI
+-40 to +125C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256AMDFR
+Documents MR25H256AMDFR
+Product Inquiry MR25H256AMDFR
+Sample Request MR25H256AMDFR
+PERSYST
+MR25H256APDF
+Toggle MRAM
+MP
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256APDF
+Documents MR25H256APDF
+Product Inquiry MR25H256APDF
+Sample Request MR25H256APDF
+PERSYST
+MR25H256APDFR
+Toggle MRAM
+MP
+Serial
+SPI
+256Kb
+SPI
+-40 to +85C
+40MHz
+3.3
+DFN-8 Small Flag
+Order MR25H256APDFR
+Documents MR25H256APDFR
+Product Inquiry MR25H256APDFR
+Sample Request MR25H256APDFR
+Export table
+Looking for more options? View the full list.
+Interested in our newsletter?
+5670 W. Chandler Blvd., Suite 130
+Chandler, Arizona 85226
++1-877-480-MRAM (6726)
+Footer Main Menu
+Products
+PERSYST
+UNISYST
+Custom
+Memory Cross Reference
+Applications
+Aerospace & Defense
+AI
+Automotive
+Data Centers
+Gaming
+Industrial
+Medical
+Smart Energy & Utilities
+Order
+Design Support
+About
+Quality & Reliability
+Leadership
+Careers
+Footer
+Contact Us
+Privacy Policy
+Resources
+Copyright © 2026 Everspin Technologies Inc.
+Follow us on
+LinkedIn
+X

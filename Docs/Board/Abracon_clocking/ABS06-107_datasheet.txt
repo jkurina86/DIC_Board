@@ -1,0 +1,187 @@
+ SMD Low ESR Crystal
+   ABS06-107-32.768kHz-T                                                                    Pb RoHS/RoHS II Compliant
+                                                                                                                                                2.0 x 1.2 x 0.6mm
+                                                                                                                                                | | | | | | | | | | | | | | |
+
+Moisture Sensitivity Level (MSL) – This product is Hermetically Sealed and not Moisture Sensitive - MSL = N/A: Not Applicable
+
+FEATURES:                                                                              APPLICATIONS:
+
+
+
+
+Overview
+ABR           ABS06-107-32.768kHz-T                                                        mz                  P
+m m                (   )         -L      R.                                                xm                  SR       0k
+         Ultra-Low Power - Real Time Clocking                                                 x                                  w
+(Reference; S        STM32L1, F2 F4 µ                                    ).
+
+Key Attributes
+                                                                 w                                                                          (gm) < 3µ
+                   xm        SR      0                                                              m                         G         M
+                    S               <                                                                      L        L
+                    T              R         (-                          )
+  <                                      -                       ;                                                           m
+       ±
+                      -                      S                                  L1, F2          F4 R
+  S              2.0x1.2x0.6 mm              S                       S          k
+  L                                                 G
+
+Reference Design Information
+ABS06-107-32.768kHz-                                                               S                 R
+STM32F2 Series:              w               w                           m                 S               SS
+STM32F4 Series               w               w                           m                 S               SS
+STM32L1 Series:              w               w                           m                 S               SS
+
+
+
+
+                                                        5101 Hidden Creek Ln Spicewood TX 78669                                                  ABRACON IS
+                                                        Phone: 512-371-6159 | Fax: 512-351-8858
+                                                                                                                    REVISED: 07-20-20            ISO9001-2015
+                                              LLC       For terms and conditions of sales, please visit:
+                                                                                                                                                  CERTIFIED
+                                                        www.abracon.com
+SMD Low ESR Crystal
+   ABS06-107-32.768kHz-T                                                              Pb RoHS/RoHS II Compliant
+                                                                                                                                 2.0 x 1.2 x 0.6mm
+                                                                                                                                    | | | | | | | | | | | | | | |
+
+
+
+STANDARD SPECIFICATIONS:
+               Parameters               Minimum                Typical           Maximum             Units              otes
+ Frequency                                                      32.768                                kHz
+ Operation Mode                                   Flexural Mode (Tuning Fork)
+ Operating Temperature                          -40                         +85                        ºC
+ Storage Temperature                            -55                        +125                        ºC
+ Temperature Coefficient:                     -0.039        -0.034        -0.029                     ppm/T²
+ Turn-over temperature:                        +20           +25            +30                        ºC
+                                                                                                                  Relative to the
+ Frequency Stability over temperature         -250             < ±175                +250             ppm      measured frequency at
+                                                                                                                   25ºC ± 3ºC
+ Equivalent series resistance (R1)                               < 60                  80             k
+ Shunt Capacitance (C0)                                         < 1.50                1.70            pF
+ Load capacitance (CL)                        3.90               4.00                 4.10            pF            See Note#1
+                                                                                                              ABS06-107
+                                                                                                                   See Note#2
+ Frequency Tolerance @+25°C                    -20                                    +20             ppm
+                                                                                                                  Tested at 0.5µW
+ Drive Level                                                     0.1                   0.5            µW
+ Q value                                      9000              20,000
+ Aging@25°C±3°C                                 -3                                      3             ppm           First year
+ Insulation Resistance                         500                                                    M          @ 100Vdc ± 15V
+
+Note #1: The oscillator loop needs to present an effective loop capacitance of 4.0 pF, not to exceed 4.50 pF.
+         This loop capacitance is required to ensure Safety Factor of > 5.0 for the entire population of crystals.
+Note #2: With an effective loop capacitance of 4.0 pF, the oscillator circuit will be with-in (32.768 kHz) ±20 ppm.
+         Depending on production equipment capability, these parts might be tested at a different load, with guaranteed
+         projected performance at 4.0 pF.
+ FREQUENCY VS. TEMPERATURE CHARACTERISTICS
+                               :
+
+
+
+
+                                                  5101 Hidden Creek Ln Spicewood TX 78669                                           ABRACON IS
+                                                  Phone: 512-371-6159 | Fax: 512-351-8858
+                                                                                                        REVISED: 07-20-20           ISO9001-2015
+                                        LLC       For terms and conditions of sales, please visit:
+                                                                                                                                     CERTIFIED
+                                                  www.abracon.com
+SMD Low ESR Crystal
+ ABS06-107-32.768kHz-T                                                                              Pb RoHS/RoHS II Compliant
+                                                                                                                                                         2.0 x 1.2 x 0.6mm
+                                                                                                                                                          | | | | | | | | | | | | | | |
+
+
+SPICE MODEL:
+SPICE Model (based on typical values at 25ºC ± 3ºC):
+
+
+                                                                                               C0         =             1.30 pF
+                                                                                               R1         =             57 kΩ
+                                                                                               L1         =             4,625 H
+                                                                                               C1         =             5.51 fF
+
+
+PART IDENTIFICATION
+
+                                         ABS06-107-32.768 kHz-T
+
+OUTLINE DIMENSIONS:
+
+
+
+
+ Note:                    m                                                                                                    m
+                                                                                                                               Dimensions: inches (mm)
+REFLOW PROFILE:
+                                                                          3
+                                                                Tp
+                          Tp                                                  Critical Zone
+
+                                                      Ramp Up
+                                                                               TL to Tp
+                                                                                                   Zone        Description         Temperature         Time
+                          TL                                                                                                        TSMIN ~ TSMAX
+                                 TSMAX                               TL                              1        Preheat / Soak                        60 ~ 120 sec.
+                                                                                                                                   150°C ~ 180°C
+            Temperature
+
+
+
+
+                                                                                                                                         TL
+                               TSMIN                                                                 2                                              30 ~ 40 sec.
+                                                                                                                                       230°C
+                                                                Ramp Down                                                               TP
+                                         Preheat
+                                                                                                     3             Peak heat                        10 sec. MAX
+                                                                                                                                      260°C
+                                           1                     2
+                          25
+
+
+                                               Time
+
+
+
+
+                                                                5101 Hidden Creek Ln Spicewood TX 78669                                                    ABRACON IS
+                                                                Phone: 512-371-6159 | Fax: 512-351-8858
+                                                                                                                           REVISED: 07-20-20               ISO9001-2015
+                                                        LLC     For terms and conditions of sales, please visit:
+                                                                                                                                                            CERTIFIED
+                                                                www.abracon.com
+    SMD Low ESR Crystal
+        ABS06-107-32.768kHz-T                                                                          Pb RoHS/RoHS II Compliant
+                                                                                                                                                      2.0 x 1.2 x 0.6mm
+                                                                                                                                                      | | | | | | | | | | | | | | |
+
+
+
+     TAPE & REEL:
+
+      T=Tape and reel (3,000pcs/reel)
+
+
+
+
+                                                                                                                                      Dimensions: mm
+
+
+
+
+ATTENTION: Abracon LLC’s products are COTS – Commercial-Off-The-Shelf products; suitable for Commercial, Industrial and, where designated, Automotive Applica-
+tions. Abracon’s products are not specifically designed for Military, Aviation, Aerospace, Life-dependent Medical applications or any application requiring high reliability
+where component failure could result in loss of life and/or property. For applications requiring high reliability and/or presenting an extreme operating environment,
+written consent and authorization from Abracon LLC is required. Please contact Abracon LLC for more information.
+
+                                                                   5101 Hidden Creek Ln Spicewood TX 78669                                             ABRACON IS
+                                                                   Phone: 512-371-6159 | Fax: 512-351-8858
+                                                                                                                       REVISED: 07-20-20               ISO9001-2015
+                                                            LLC    For terms and conditions of sales, please visit:
+                                                                                                                                                        CERTIFIED
+                                                                   www.abracon.com
+

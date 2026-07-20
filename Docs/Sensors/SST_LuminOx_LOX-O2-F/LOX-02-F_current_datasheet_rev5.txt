@@ -1,0 +1,137 @@
+Luminescence-based Optical Series
+Optical Oxygen Sensors - LuminOx Flow-Through - LOX-02-F
+Description
+Developed by SST, the LuminOx family offers factory-calibrated
+oxygen sensors using luminescence-based optical technology.
+Featuring internal temperature and barometric sensors, these
+sensors accurately calculate and transmit oxygen concentration,
+partial pressure, temperature, and pressure data.
+
+
+The LOX-02-F offers faster response and a sealed flow-through
+housing that allows the sensor to be removed from the process
+environment. The optical technology ensures low power
+consumption and a significantly longer lifespan compared to
+electrochemical sensors. Internally temperature compensated, they
+communicate directly via UART without requiring additional signal
+conditioning circuitry. Being solid-state, lead-free, and 100% RoHS
+compliant, LuminOx sensors exhibit minimal cross sensitivity, making
+them reliable even in complex gas mixtures.
+
+
+
+Specifications                                                                                              •      Flow-through housing for easy sample gas
+                                                                                                                   management (See LOX-02 and LOX-02-S for full
+     Technical Specifications                                                                                      immersion and sealed versions)
+     Supply voltage (Vs)                5VDC (4.5...5.5VDC)                                                 •      Virtually no cross-sensitivity to other gases
+                                        <7.5mA (streaming one sample per                                    •      RoHS & REACH compliant
+     Supply current (ls)                second), <20mA Peak
+                                                                                                            •      Works in partial vacuum and high oxygen
+     Output Type                        3.3V TTL level UART                                                        concentrations
+     Barometric pressure                                                                                    •      Works directly with a microcontroller including Arduino
+                                        500...1200mbar
+     range                                                                                                         and Raspberry Pi
+     Flow rate                          0.5...1.0 litre/min                                                 •      Provides partial pressure O2, percent O2, temperature
+                                        Operating: +0...+45°C                                                      and barometric pressure outputs
+     Temperature                        Storage: -30...+60°C                                                •      Non-depleting luminescence technology developed
+                                        Humidity: 0—99% Rh (non-condensing)                                        in-house
+
+     Output Values
+     Oxygen range                       0...25% O2
+                                                                                                             Core Applications
+     Oxygen pressure
+                                        0...300mbar ppO2
+     range                                                                                                   •     Clean environments
+     Response time                      T90 < 10s (typical)                                                  •     Welding
+     Accuracy a                                                                                              •     Incubators
+     ppO2                               < 2% FS                                                              •     Inert gas processes
+
+     Temperature                        Indication only                                                      •     Transportation
+
+     Pressure                           ±5mbar                                                               •     Controlled atmosphere
+
+                                        Determined by ppO2 & pressure
+     O2                                 accuracy
+     Resolution
+     ppO2                               0.1mbar
+     Temperature                        0.1°C
+     Pressure                           1mbar
+     O2                                 0.01%
+
+
+
+
+a)
+     At ambient conditions. All performance measurements are at STP unless otherwise stated. Following extreme temperature fluctuations, re-calibration may be required.
+
+www.sstsensing.com                                                                                                                                                         SST-DS-0145 Rev5
+Outline Drawing                                                                                  Electrical Interface
+All dimensions shown in mm. Tolerances = ±0.5mm.
+
+
+
+                                                                                                                                              Pin             Designation
+                                                                                                                                              1               Vs (+5V)
+                                                                                                                                              2               GND (0V)
+                                                                                                                                                              3.3V UART*
+                                                                                                                                              3
+                                                                                                                                                              Sensor Transmit
+                                                                                                                                                              3.3V UART*
+                                                                                                                                              4
+                                                                                                                                                              Sensor Receive
+                                                                                                                                              *5V tolerant.
+   NOTE: 4.5mm OD push-fit tubing connectors.
+
+
+Sensor Construction                                                                              Connection: Four gold-plated pins (0.64mm2) on a 2.54mm grid for PCB
+                                                                                                 mounting via sockets or hand soldering using no-clean flux.
+
+                                                                                                 Note: If hand soldering, recommended iron temperature is 370°C for < 3s per
+                                                                                                 pin.
+
+                                                                                                 Note: Do NOT put the sensor through a PCB washing process.
+
+                                                                                                 Always apply power to sensor pins 1 and 2 before attempting to communicate
+                                                                                                 on pins 3 and 4.
+
+                                                                                                         The sensor should be treated as an electronic component and
+                                                                                                         handled using the correct ESD handling precautions
+
+
+
+
+                                                                                                 Order Information
+                                                                                                 Specify the part number below when ordering. Quantity price breaks apply.
+
+
+
+                                                                                                           L        O         X         -         0       2         -        F
+
+
+
+
+            Caution                                                                          Information
+
+            Do not exceed maximum ratings and ensure sensor(s) are operated in               As customer applications are outside of SST Sensing Ltd.’s control, the
+            accordance with their requirements.                                              information provided is given without legal responsibility. Customers should
+                                                                                             test under their own conditions to ensure that the equipment is suitable for
+            Carefully follow all wiring instructions. Incorrect wiring can cause permanent   their intended application.
+            damage to the device.
+
+                                                                                             General Note: SST Sensing Ltd. reserves the right to make changes to product
+            Do NOT use chemical cleaning agents. The sensor housing can be cleaned
+            using a damp cloth. Do NOT immerse the sensor in any cleaning media.             specifications without notice or liability. All information is subject to SST Sensing
+                                                                                             Ltd‘s own data and considered accurate at time of going to print.
+
+            Failure to comply with these instructions may result in product damage.
+                                                                                             For technical assistance or advice, please email: sensors@dwyeromega.com
+
+            These products must not be used in safety applications where product failure
+            could cause injury or risk to life.
+
+
+
+
+SST Sensing Ltd, 5 Hagmill Crescent , Coatbridge, ML5 4NS United Kingdom, Tel: +44 1236 459020                                                                            SST-DS-0145 Rev5
+www.sstsensing.com, e-mail: sensors@dwyeromega.com
+

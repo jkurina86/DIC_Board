@@ -1,0 +1,372 @@
+O2 SENSORS – LuminOx User’s Guide
+This document describes the LuminOx sensor installation and operation processes.
+
+
+
+
+The LuminOx family (LOX) is a range of factory calibrated oxygen sensors which measure ambient
+oxygen partial pressure (ppO₂) levels using the principle of luminescence quenching by oxygen.
+
+LuminOx measures ppO2 (mbar) and temperature (°C). An optional pressure sensor enables LuminOx
+to also measure barometric pressure (mbar) and to convert the ppO2 reading to an oxygen
+concentration (O2%).
+
+The sensor benefits from low power operation, traditionally associated with electrochemical and
+galvanic sensors, while providing a much longer lifetime due to the non-depleting sensing principle.
+
+LuminOx is ppO2 and temperature compensated, enabling linear operation over a wide
+environmental range without the need for additional system components. LuminOx does not
+contain lead or any other hazardous materials and has negligible cross sensitivity to other gases.
+Contents
+1     DEFINITIONS ................................................................................................................................. 1-1
+2     SAFETY INSTRUCTIONS................................................................................................................. 2-1
+3     TECHNICAL SPECIFICATIONS ........................................................................................................ 3-1
+4     INSTALLATION .............................................................................................................................. 4-1
+    4.1      USART Setup ........................................................................................................................ 4-1
+    4.2      USART Command Set ........................................................................................................... 4-1
+5     OPERATION .................................................................................................................................. 5-1
+    5.1      Cross Sensitivity ................................................................................................................... 5-1
+    5.2      Gas Compatibility Process .................................................................................................... 5-2
+6     MAINTENANCE ............................................................................................................................. 6-1
+    6.1      Cleaning................................................................................................................................ 6-1
+    6.2      Disposal ................................................................................................................................ 6-1
+1    DEFINITIONS
+The following definitions apply to WARNINGS, CAUTIONS and NOTES used throughout this manual.
+
+
+       WARNING:
+The warning symbol is used to indicate instructions that, if they are not followed, can result in minor,
+serious or even fatal injuries to personnel.
+
+
+      CAUTION:
+The caution symbol is used to indicate instructions that, if they are not followed, can result in
+damage to the equipment (hardware and/or software), or a system failure occurring.
+
+NOTE: Highlights an essential operating procedure, condition or statement.
+
+
+
+
+                                                                                              Page | 1-1
+2   SAFETY INSTRUCTIONS
+    •   This equipment may only be installed by a suitably qualified technician in accordance with
+        the instructions in this manual and any applicable standards associated with the country or
+        industry.
+    •   This equipment may only be operated and maintained by trained technical personnel. The
+        technical personnel must strictly adhere to the instructions given in this manual, and any
+        prevailing standards/certificates (depending on application).
+    •   Where instructed, you must read the User Guides and Datasheets referenced within this
+        manual. There, you can find detailed information on the equipment.
+    •   The operator may only perform modifications and repairs to the equipment/system with
+        written approval of the manufacturer.
+    •   Do NOT operate damaged equipment.
+    •   If faults cannot be rectified, the equipment must be taken out of service and secured against
+        unintentional commissioning.
+
+
+
+
+                                                                                           Page | 2-1
+3    TECHNICAL SPECIFICATIONS
+Electrical Specifications
+    •   Supply voltage; 4.5 to 5.5VDC
+    •   Supply current; <7.5mA (streaming 1 sample per second)
+                        <20mA peak
+
+Output Options
+    •   Digital output; 3.3V TTL level USART
+
+Performance Specifications a
+    •   Oxygen measuring range;
+           o ppO2 version; 0 – 300mbar
+           o O2% version; 0 – 25%
+    •   Response time; T90 <30s (typical)
+    •   Accuracy;
+           o ppO2; <2% FS
+           o Temperature; indication only
+           o Pressure; ±5mbar (LOX-02)
+           o O2%; determined by ppO2 and pressure accuracy (LOX-02)
+    •   Resolution;
+           o ppO2; 0.1mbar
+           o Temperature; 0.1°C
+           o Pressure; 1mbar (LOX-02)
+           o O2%; 0.01% (LOX-02)
+
+Environmental Specifications
+    •   Operating temperature; -30 to +60°C
+    •   Storage temperature; -30 to +60°C
+    •   Humidity; 0 – 99% Rh (non-condensing)
+    •   Barometric pressure range; 100 – 1400mbar (LOX-01)
+                                   500 – 1200mbar (LOX-02)
+
+Mechanical Specifications
+    •   Connection; 4 gold-plated pins (0.64mm2) on a 2.54mm grid for PCB mounting via sockets or
+        hand soldering with a no-clean flux b
+    •   Housing dimensions; 20mm maximum diameter x 12.5mm high
+
+
+
+
+a
+  At ambient conditions. All performance measurements are at STP unless otherwise stated. Following extreme
+temperature fluctuations, recalibration may be required.
+b
+  Do NOT put the sensor through a PCB washing process.
+
+
+                                                                                                Page | 3-1
+4   INSTALLATION
+        LuminOx sensors should be treated as an electronic component and handled using the
+        correct ESD handling precautions.
+
+LuminOx requires no additional signal conditioning circuitry and connects directly to the interfacing
+microcontroller via a 3.3V-level USART link.
+
+The minimum and maximum allowable supply voltage range is 4.5 to 5.5VDC.
+
+
+                           PINOUT:
+                           Pin 1: Vs (+5VDC)
+                           Pin 2: GND (0V)
+                           Pin 3: 3.3V USART Sensor Transmit
+                           Pin 4: 3.3V USART Sensor Receive
+
+
+NOTE: Always apply power to the sensor pins 1 and 2 before attempting to communicate on pins 3
+and 4.
+
+4.1 USART Setup
+The following setup should be used when using the USART interface:
+
+    •   Baudrate:               9600
+    •   Flow Control:           None
+    •   Parity:                 None
+    •   Stop bits:              One
+    •   Data Length:            8 bits
+
+4.2 USART Command Set
+All USART communication is preformed using ascii characters; Table 4-1 shows the legal characters
+for each description block.
+
+                                     Table 4-1 - USART Command Set
+
+ Description Block       Legal Character(s)                  Hex
+ <Command>               “M”, “O”, “%”, “T”, “P”, “A”,       0x4D, 0x4F, 0x25, 0x54, 0x50, 0x41,
+                         “#”, “e”                            0x23, 0x65
+ <Argument>              “0” – “9”                           0x30 – 0x39
+ <Separator>             “”                                  0x20
+ <Terminator>            “\r\n”                              0x0D 0x0A
+
+There are three modes available; Poll Mode, Stream Mode and Off Mode.
+
+
+
+
+                                                                                            Page | 4-1
+4.2.1 Poll Mode (M1)
+Each request is built using a combination of the description blocks, refer to Table 4-1 on page 4-1.
+A typical arrangement will be one of the following formats:
+
+       •    <Command><Terminator>
+       •    <Command>< Separator><Argument><Terminator>
+
+Each response will reply in the following format:
+            <Command>< Separator><Argument><Terminator>
+
+NOTE: Use the frame terminator “\r\n” to detect that the response has been received before
+sending the next request. A timeout should also be included and should be no less than one second.
+
+Table 4-2 provides a description of all commands and the valid arguments that can be applied to the
+interface when in Poll Mode (M1).
+
+NOTE: All commands are case sensitive.
+
+                                                Table 4-2 - Poll Mode (M1)
+
+    Command Description                          Arguments               Response
+    “M”     Output Mode                          0 = Stream              “M xx\r\n”
+                                                 1 = Poll                Where xx equals the Argument of the
+                                                 2 = Off                 command
+    “O”            Request current ppO2          N/A                     “O xxxx.x\r\n”
+                   value                                                 Where xxxx.x equals the ppO2 in mbar
+    “%”            Request current O2            N/A                     “% xxx.xx\r\n”
+                   value c                                               Where xxx.xx equals the O2 in
+                                                                         percent %
+    “T”            Request current               N/A                     “T yxx.x\r\n”
+                   temperature inside                                    Where y equals the sign “-” or “+” and
+                   sensor                                                xx.x equals the temperature in °C
+    “P”            Request current               N/A                     “P xxxx\r\n”
+                   barometric pressurec                                  Where xxxx equals the pressure in
+                                                                         mbar
+    “e”            Sensor Status                 N/A                     “e 0000\r\n” = Sensor Status Good
+                                                                         “e xxxx\r\n” = Any other response,
+                                                                         contact SST Sensing for advice
+    “A”            Request all values (see       N/A                     See Stream Mode (M0) on page 4-3
+                   above: O, %, T, P and e)
+    “#”            Sensor Information            0 = Date of             “# YYYYY DDDDD\r\n”
+                                                 manufacture
+                                                 1 = Serial Number       “# xxxxx xxxxx\r\n”
+                                                 2 = Software            “# xxxxx\r\n”
+                                                 Revision
+
+Example 1:
+   • Request (What is the current oxygen partial pressure?):
+      “O\r\n”               “0x4F 0x0D 0x0A”
+
+c
+    Only valid for sensors fitted with barometric pressure sensor. Otherwise returns “- - - - - -”.
+
+
+                                                                                                      Page | 4-2
+    •   Response (210.3mbar):
+        “O 210.3\r\n”         “0x4F 0x20 0x30 0x32 0x31 0x30 0x2E 0x33 0x0D 0x0A”
+
+Example 2:
+   • Request (Put LuminOx into streaming mode):
+      “M 0\r\n”            “0x4D 0x20 0x30 0x0D 0x0A”
+   • Response (LuminOx is now in streaming mode):
+      “M 00\r\n”           “0x4D 0x20 0x30 0x30 0x0D 0x0A”
+
+4.2.2 Error Codes
+When a request has been unsuccessfully received, an error code may appear in a response format.
+Table 4-3 provides more information on possible causes and actions.
+
+                                           Table 4-3 - Error Codes
+
+ Response      Description             Possible Cause                Action
+ “E 00\r\n”    USART Receiver          No <Terminator> received      •Check USART Setup
+               Overflow                before overflow               •Confirm correct termination
+ “E 01\r\n”    Invalid Command         Unrecognised <Command>        •Check command is valid
+                                       received                      •Check command is uppercase
+                                                                     “M” instead of “m”
+ “E 02\r\n”    Invalid Frame           Incorrect character in        Check correct separator is used
+                                       frame <Separator>
+ “E 03\r\n”    Invalid Argument        <Argument> not allowed or     •Check Argument is no longer
+                                       in limits                     the 6 characters
+                                                                     •Check Argument is within limits
+                                                                     •Check Argument is available for
+                                                                     command
+
+
+4.2.3 Stream Mode (M0)
+By default, stream mode is initiated on sensor power-up and will supply an output string
+approximately once every second. This provides the data for ppO2, Temperature, Pressure, O2 and
+sensor status. Format is shown below, for more details on the Argument see Table 4-2 on page 4-2.
+
+        “O xxxx.x T yxx.x P xxxx % xxx.xx e xxxx\r\n”
+
+or the equivalent block description:
+
+        “<Command>< Separator><Argument>< Separator><Command>< Separator><Argument>< Separator>
+        <Command>< Separator><Argument>< Separator><Command>< Separator><Argument>< Separator>
+        <Command>< Separator><Argument><Terminator>”
+
+4.2.4 Off Mode (M2)
+In this mode, LuminOx stops taking measurements and current consumption reduces to less than
+6mA constantly.
+
+
+
+
+                                                                                             Page | 4-3
+5   OPERATION
+The LuminOx range has been designed as an alternative to electrochemical sensors but with the
+benefits of RoHS compliance, long life and complete environmental compensation built-in.
+
+The sensor is available with and without a built-in barometric pressure sensor. LuminOx’s native
+measurement is partial oxygen pressure (ppO2) in mbar. By incorporating a barometric pressure
+sensor, LuminOx is able to measure O2 vol. % in addition to ppO2. LuminOx is designed to measure
+ambient oxygen levels, therefore the entire sensor must be in the measurement gas for correct
+operation.
+
+5.1 Cross Sensitivity
+The list below details the gases that have been tested for cross sensitivity with the LuminOx range.
+
+The list below is not exhaustive. Compatibility with gases not on this list needs to be tested by the
+customer; refer to 5.2 Gas Compatibility Process on page 5-2. The luminescence technology used in
+LuminOx is inherently extremely selective to O2 so cross sensitivity is generally unlikely.
+
+Gas Measured                                           Cross Sensitivity
+200 ppm NO in N2                                       None
+100 ppm Acetaldehyde                                   None
+100 ppm SO2 in N2                                      None
+100 ppm H2S in N2                                      None
+100 ppm HCl in N2                                      None
+5 ppm Ethylene                                         None
+1% methane in N2                                       None
+0.5% CO                                                None
+100% CO2                                               None
+100 ppm NO2 in air                                     No result observed due to instability of NO2
+                                                       sample gas
+
+
+
+
+                                                                                            Page | 5-1
+5.2 Gas Compatibility Process
+The cross sensitivity list on page 5-1 is not exhaustive and customers often want to use the sensors
+with gases that have not been approved before. In this case, a compatibility test should be
+performed using a sensor of the specification you wish to use.
+
+If unsure, please contact technical@sstsensing.com for guidance when using the sensor with gases
+not on the cross-sensitivity list, we can advise on a suitable test procedure.
+
+Once compatibility testing is complete, the sensor should be tested in accordance with its operating
+procedure to ensure it remains functional and within specification. If the sensor passes its functional
+test, then the gas can be considered to be compatible with the sensor.
+
+
+
+
+                                                                                             Page | 5-2
+6   MAINTENANCE
+
+6.1 Cleaning
+If necessary, clean the outer surfaces of the sensor housing using a damp cloth.
+
+NOTE: Do NOT immerse the sensor in any cleaning media.
+NOTE: Do NOT use alcohols.
+
+6.2 Disposal
+LuminOx sensors contain no hazardous materials therefore are RoHS compliant; they should be
+disposed of as electronic waste. Please observe your local regulations.
+
+
+
+
+                                                                                      Page | 6-1
+REFERENCE DOCUMENTS
+Other documents in the LuminOx product range are listed below; this list is not exhaustive, always
+refer to the SST website for the latest information.
+
+ Part Number                    Title
+ DS-0030                        LuminOx O2 Sensor Datasheet
+ DS-0059                        LuminOx O2 Sensor Evaluation Interface Board Datasheet
+ UG-002                         LuminOx O2 Sensor Evaluation Interface Board User’s Guide
+
+
+
+
+      CAUTION                                                         INFORMATION
+ Do not exceed maximum ratings and ensure                      As customer applications are outside of SST Sensing
+ sensor(s) are operated in accordance with their               Ltd.’s control, the information provided is given
+ requirements.                                                 without legal responsibility. Customers should test
+ Carefully follow all wiring instructions. Incorrect           under their own conditions to ensure that the
+ wiring can cause permanent damage to the device.              equipment is suitable for their intended application.
+ Do NOT use chemical cleaning agents.
+                                                               For technical assistance or advice, please email:
+ Failure to comply with these instructions may                 technical@sstsensing.com
+ result in product damage.
+
+ General Note: SST Sensing Ltd. reserves the right to make changes to product specifications without notice or liability.
+ All information is subject to SST Sensing Ltd.'s own data and considered accurate at time of going to print.
+
+       SST SENSING LIMITED, 5 HAGMILL CRESCENT, SHAWHEAD INDUSTRIAL ESTATE, COATBRIDGE, UK, ML5 4NS
+            www.sstsensing.com | e: sales@sstsensing.com | t: +44 (0)1236 459 020 | f: +44 (0)1236 459 026
+
+
+
+
+UG-001 Rev 2                                                                                © 2017 SST SENSING LTD.
+

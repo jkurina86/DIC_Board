@@ -1,0 +1,1086 @@
+DATA SHEET
+
+Type 6724
+
+
+
+
+                                                           2/2 or 3/2-way Whisper Valve with media separation
+                                                           • Highest chemical resistance
+                                                           • Compact design with 8.9 mm installation width
+                                                           • DN 0.8 mm (vacuum up to 5 bar) and 1.2 mm (vacuum up to 3 bar)
+                                                           • Very fast, almost silent switching with < 20 dB (A) and very low power
+                                                             consumption
+                                                           • High back-pressure tightness, excellent cleanability and 100% duty
+                                                             cycle
+
+
+
+
+                                                           Product variants described in the data sheet may differ from the product presentation and description.
+
+
+
+
+Can be combined with                                       Type description
+                    Type 2503                             Many fluidic processes moving closer to where they are actually required. In the
+                    Cable plug for whisper valve           field of medical devices, for example, treatments such as dialysis can be provided
+                    Types 6712 and 6724                    to patients in convenient surroundings at home. Washing units in analytical equip-
+ ﻿              ﻿                                          ment are positioned on the pipetting arm or directly on the print head in printing
+                    Type 8763                             applications. This imposes different requirements on the components used. Sole-
+                    Pressure controller for                noid valves must be able to switch without being heard. They need to be smaller
+                    precise time-pressure dosing           and lighter to be used in mobile devices. However, their ability to achieve a long
+ ﻿              ﻿                                          service life and excellent switching characteristics is every bit as important. The
+                                                           Whisper Valve Type 6724 combines all of these traits and, thanks to its modular
+                                                           structure and range of available material variants, this valve is universally applica-
+                                                           ble.
+
+
+
+
+Standard | EU | en | 2025-12-12 | 20
+© Christian Bürkert GmbH & Co. KG, Subject to alteration                                                                                            Visit product website 
+Type 6724
+
+
+
+
+Table of contents
+1.   General technical data                                                                                                                                                                                                                 3
+     1.1..        General data.............................................................................................................................................................................................................3
+     1.2..        Medium pressure.....................................................................................................................................................................................................4
+
+
+2. Product variants                                                                                                                                                                                                                         5
+
+
+3. Circuit functions                                                                                                                                                                                                                        5
+
+
+4. Approvals and conformities                                                                                                                                                                                                               6
+     4.1.. General notes...........................................................................................................................................................................................................6
+     4.2..Conformity................................................................................................................................................................................................................6
+     4.3..Standards. ................................................................................................................................................................................................................6
+     4.4.. Foods and beverages/Hygiene.............................................................................................................................................................................6
+
+
+5.   Materials                                                                                                                                                                                                                              7
+     5.1..        Bürkert resistApp.....................................................................................................................................................................................................7
+     5.2..        Material specifications............................................................................................................................................................................................7
+
+
+6. Dimensions                                                                                                                                                                                                                               8
+     6.1..        Bürkert sub-base (9 x 26) – PPS or PEEK. .........................................................................................................................................................8
+     6.2..        Bürkert sub-base (9 x 26) – PVDF.......................................................................................................................................................................9
+     6.3..        Flange pattern (Bürkert sub-base 9 x 26)........................................................................................................................................................10
+     6.4..        Bürkert sub-base (26 x 57) horizontal...............................................................................................................................................................11
+     6.5..        Flange pattern (Bürkert sub-base 26 x 57). .....................................................................................................................................................11
+     6.6..        Threaded port variant (UNF ¼”- 28).................................................................................................................................................................. 12
+     6.7..        Tube connector variant. .......................................................................................................................................................................................13
+
+
+7.   Product connections                                                                                                                                                                                                                  13
+     7.1..        Electrical connection . ..........................................................................................................................................................................................13
+                  Pin assignment. .....................................................................................................................................................................................................13
+
+
+8. Ordering information                                                                                                                                                                                                                   14
+     8.1..        Bürkert eShop........................................................................................................................................................................................................14
+     8.2..        Bürkert product filter. ...........................................................................................................................................................................................14
+     8.3..        Ordering chart........................................................................................................................................................................................................ 15
+                  Standard variant. ...................................................................................................................................................................................................15
+                  Impulse variant.......................................................................................................................................................................................................16
+     8.4..        Ordering chart accessories. ................................................................................................................................................................................ 17
+                  Manifolds. ............................................................................................................................................................................................................... 17
+                  Cable plug Type 2503.......................................................................................................................................................................................... 17
+                  Fittings and hoses................................................................................................................................................................................................. 17
+
+
+
+
+Visit product website                                                                                                                                                                                                                2 | 17
+Type 6724
+
+
+
+
+1.      General technical data
+1.1.    General data
+Product properties
+Dimensions                         Further information can be found in chapter “6. Dimensions” on page 8.
+Material
+Seal                               FFKM, EPDM, FKM, FFKM HCR (High Chemical Resistance)
+Valve body                         PEEK, PPS, PVDF
+Internal volume                    Bürkert sub-base (9 x 26): approx. 38 µl
+                                   Bürkert sub-base (26 x 57) horizontal: approx. 93 µl
+                                   Threaded variant UNF ¼"- 28: approx. 59 µl
+                                   Tube connector: approx. 68 µl
+Orifice
+Standard variant                   DN 0.8, DN 1.2
+Impulse variant                    DN 1.2
+FFKM HCR variant                   DN 1.2
+Circuit function                   Further information can be found in chapter “3. Circuit functions” on page 5.
+Typical product service life 1.)   10 million switching cycles (acc. to laboratory duration tests)
+Performance data
+Pressure range                     Further information can be found in chapter “1.2. Medium pressure” on page 4.
+Duty cycle 4.)                     100 % continuous operation
+Switching noise                    30 dB (A) (< 20 dB (A) on request 2.))
+Switching time 3.)                 Opening: approx. 3 ms (Pressure build-up 0…10 %)
+                                   Closing: approx. 3 ms (Pressure reduction 100…90 %)
+Electrical data
+Operating voltage                  12 V DC, 24 V DC (other voltages on request)
+Nominal power
+Standard variant                   1.25 W 5.)
+Impulse variant                    Switching 1.25 W 5.) (pulse length minimum 500 ms), holding power 0 W
+Voltage tolerance
+Standard variant                   - 10 %/+ 5 % (including residual ripple)
+Impulse variant                    ± 5 % (including residual ripple)
+Medium data
+Operating medium                   Resistant to neutral and aggressive gases and liquids.
+                                   Further information can be found in chapter “5.1. Bürkert resistApp” on page 7.
+Medium temperature
+Standard variant                   FFKM: + 15 °C…+ 50 °C (+ 59 °F…+ 122 °F)
+                                   FKM: 0 °C…+ 50 °C (+ 32 °F…+ 122 °F)
+                                   EPDM: 0 °C…+ 50 °C (+ 32 °F…+ 122 °F)
+Impulse variant                    FFKM: + 15 °C…+ 40 °C (+ 59 °F…+ 104 °F)
+                                   FKM: 0 °C…+ 40 °C (+ 32 °F…+ 104 °F)
+                                   EPDM: 0 °C…+ 40 °C (+ 32 °F…+ 104 °F)
+                                   (Higher temperature range on request)
+Viscosity                          Max. 21 mm2/s
+Product connections
+Electrical connection 6.)          Cable plug Type 2503  with grid dimension 2 mm
+                                   Further information can be found in chapter “Cable plug Type 2503” on page 17.
+                                   Two PVC strands 0.22 mm² (AWG24), pre-assembled, for non-detachable push-on installation by the
+                                   customer
+Port connection                    Bürkert sub-base (9 x 26 mm)
+                                   Bürkert sub-base horizontal (26 x 57 mm)
+                                   Threaded variant UNF ¼"- 28
+                                   Tube connector variant
+Approvals and conformities
+Degree of protection               IP10 (IP40 for stranded wire variant with correctly installed connection cable)
+Foods and beverages/Hygiene        FDA (on request only with seal material EPDM)
+                                   Further information can be found in chapter “4.4. Foods and beverages/Hygiene” on page 6.
+
+
+
+
+Visit product website                                                                                                          3 | 17
+Type 6724
+
+
+
+
+ Environment and installation
+ Installation position                          As required, preferably with actuator upright
+ Ambient temperature
+ FFKM                                           + 15 °C…+ 50 °C (+ 59 °F…+ 122 °F)
+ FKM                                            0 °C…+ 50 °C (+ 32 °F…+ 122 °F)
+ EPDM                                           0 °C…+ 50 °C (+ 32 °F…+ 122 °F)
+1.) Service life depends on the type of medium, the temperature, the pressure, the seal material, control and the specific operational conditions. The use of a freewheeling diode is
+    recommended to extend the service life.
+2.) The maximum body temperature must not exceed + 110 °C. In continuous operation, care must be taken to ensure sufficient heat dissipation (convection) on the metal surface of the
+    valve. Overheating of the valve can lead to damage.
+3.) May be higher with impulse variant. < 20 dB(A) with optional soft-close electronics only possible in conjunction with standard valve.
+4.) Measurement at + 20 °C, 2 bar at the valve outlet acc. to DIN ISO 12238:2001
+5.) No further power reduction possible
+6.) Please order socket with flying leads separately (see “8.4. Ordering chart accessories” on page 17).
+    Other suitable push-in connectors are, for example W+P: Series 521 (socket 521S- 02 - 1; contact 521S- 01 - 2 - 00) or JST (socket PHR- 2; contact SPH- 002GW-P0.5S), version
+    04/2015). As a PCB connector we recommend a pin size of 0.5 x 0.5 mm, grid size 2 mm and a maximum connector size of 4.9 x 2.5 mm. E.g. Samtec SQT- 102 - 01-x-S (x=L or F) or
+    W+P Series 257 Part No. 257 - 002 - 1 - 50 - 00 - 6.
+
+
+
+
+1.2.      Medium pressure
+ Circuit function                               Orifice                            Pressure range at the connection                                      Max. differential
+                                                                                   NC              COM              NO                                   pressure
+                                                [mm]                               [bar]           [bar]            [bar]                                [bar]
+ CF A                                           0.8                                Vac…5 1.) 2.)          N/A                     – 2.) 3.)              5
+ 2/2-way solenoid valve                         1.2                                Vac…3 1.)              N/A                     – 2.) 3.)              3
+ Direct-acting
+                                                1.2 (with boost                    Vac…7 1.)              N/A                     – 2.) 3.)              7
+ Normally closed
+                                                electronics 4.))
+                                                1.2 (with seal material            Vac…2 1.)              N/A                     – 2.) 3.)              2
+             NC
+                                                FFKM HCR)
+ CF B                                           0.8                                0…3 1.) 3.)            N/A                     Vac…5                  5
+ 2/2-way solenoid valve                         1.2                                – 1.) 2.) 3.)          N/A                     Vac…2                  2
+ Direct-acting
+ Normally open
+
+              NO
+
+ CF P                                           1.2                                Vac…2 1.)              N/A                     – 2.) 3.)              2
+ 2/2-way impulse solenoid valve
+ Direct-acting
+
+
+              NC
+
+ CF S                                           1.2                                Vac…2 1.)              0…2 3.)                 Vac…2 1.)              2
+ 3/2-way impulse solenoid valve
+ Direct-acting
+ Flow direction unrestricted
+
+
+        NC     NO
+
+ CF T                                           0.8                                Vac…5 1.)              0…3 3.)                 Vac…5 1.)              5
+ 3/2-way solenoid valve                         1.2                                Vac…3 1.)              0…3    3.)
+                                                                                                                                  Vac…3 1.)              3
+ Direct-acting
+                                                1.2 (with boost                    Vac…7 1.)              0…5 3.)                 Vac…2 1.)              7
+ Flow direction optional
+                                                electronics 4.))
+ Universal
+                                                1.2 (with seal material            Vac…2 1.)              0…2 3.)                 Vac…2 1.)              2
+                                                FFKM HCR)
+        NC     NO
+
+1.) Connect technical vacuum (- 0.8 bar) to NC or NO. If vacuum is connected to (COM/OUT), significantly reduced flow must be expected.
+2.) Up to 2 bar, the flow direction is permissible even against the specification.
+3.) Low vacuum due to back pressure at media flow permissible. In case of continuous operation with higher vacuum, there is a risk of flow reduction. In case of doubt, please contact your
+    Bürkert sales office.
+4.) For information on the optional boost electronics see chapter “8.4. Ordering chart accessories” on page 17.
+
+
+
+
+Visit product website                                                                                                                                                               4 | 17
+Type 6724
+
+
+
+
+2.      Product variants
+     Bürkert sub-base (9 x 26)      Bürkert sub-base (26 x 57)       Threaded variant       Tube connector variant
+                                            horizontal                 (UNF ¼"- 28)
+
+
+
+
+ Electrical connection stranded        Electrical connection        Electrical connection
+    wire, Bürkert sub-basea                stranded wire                stranded wire
+         (9 x 26) – PVDF             Bürkert sub-base (9 x 26)     tube connector variant
+
+
+
+
+3.      Circuit functions
+Symbol                            Description
+                                  Circuit function A (CF A)
+                                  2/2-way solenoid valve
+            NC
+                                  Direct-acting
+                                  Normally closed
+                                  Circuit function B (CF B)
+                                  2/2-way solenoid valve
+            NO
+                                  Direct-acting
+                                  Normally open
+                                  Circuit function P (CF P)
+                                  2/2-way impulse solenoid valve
+            NC                    Direct-acting
+                                  Circuit function S (CF S)
+                                  3/2-way impulse solenoid valve
+       NC   NO                    Direct-acting
+                                  Flow direction unrestricted
+
+
+
+
+Visit product website                                                                                               5 | 17
+Type 6724
+
+
+
+
+Symbol                              Description
+                                    Circuit function T (CF T)
+                                    3/2-way solenoid valve
+       NC   NO
+                                    Direct-acting
+                                    Flow direction optional
+                                    Universal
+
+
+
+
+4.      Approvals and conformities
+4.1.    General notes
+• The approvals and conformities listed below must be stated when making enquiries. This is the only way to ensure that the product
+  complies with all required specifications.
+• Not all available variants can be supplied with the below mentioned approvals or conformities.
+
+
+
+
+4.2.    Conformity
+In accordance with the Declaration of Conformity, the product is compliant with the EU Directives.
+
+
+
+
+4.3.    Standards
+The applied standards which are used to demonstrate compliance with the EU Directives are listed in the EU-Type Examination Certificate
+and/or the EU Declaration of Conformity.
+
+
+
+
+4.4.    Foods and beverages/Hygiene
+Conformity            Description
+      FDA             FDA – Code of Federal Regulations (valid for the variable code PL03)
+                      All wetted materials are compliant with the Code of Federal Regulations published by the FDA (Food and Drug
+                      Administration, USA) according to the manufacturer‘s declaration.
+
+
+
+
+Visit product website                                                                                                                6 | 17
+Type 6724
+
+
+
+
+5.     Materials
+5.1.   Bürkert resistApp
+
+
+                                 Bürkert resistApp – Chemical resistance chart
+
+                                 You want to ensure the reliability and durability of the materials in your individual application
+                                 case? Verify your combination of media and materials on our website or in our resistApp.
+
+                                     Start chemical resistance check
+
+
+
+
+5.2.   Material specifications
+                                       No.     Element                                   Material
+                                 1
+                                        1      Cover                                     LCP
+                                        2      Coil housing                              Nickel-plated
+                                 2      3      Valve housing                             PPS
+                                        4      Valve body 1.)                            PEEK, PPS or PVDF
+                                        5      Sub-base seal 1.)                         FFKM, EPDM or FKM
+                                        6      Diaphragm 1.)                             FFKM, EPDM, FKM or FFKM HCR (High
+                                                                                         Chemical Resistance)
+                                         7     Additional connection housing 1.) 2.)     PEEK or PPS
+6                                3
+5                                4   1.) Wetted
+                                     2.) Not available for flange connection
+                                 7
+
+
+
+
+Visit product website                                                                                                          7 | 17
+Type 6724
+
+
+
+
+6.      Dimensions
+6.1.    Bürkert sub-base (9 x 26) – PPS or PEEK
+Note:
+• Dimensions in mm
+• Including fastening screws M2 x 10
+
+
+                      16.1
+
+
+                                               6.5
+       48
+
+
+
+
+                                        41.9
+            38.1
+
+
+
+
+                                  4.9
+                                        5.6
+
+
+
+
+                      26                       8.9
+                                  2.6
+            2.6
+
+
+
+
+                                       2.2
+                       21
+
+
+
+
+Visit product website                               8 | 17
+Type 6724
+
+
+
+
+6.2.   Bürkert sub-base (9 x 26) – PVDF
+Note:
+• Dimensions in mm
+• Including fastening screws M2 x 10
+
+
+                      16.1
+
+                                               6.5
+       48
+
+
+
+
+                                        42.8
+            39
+
+
+
+
+                                  5.8
+                                        4.2
+
+
+
+
+                       26                      8.9
+                                   2.6
+            2.6
+
+
+
+
+                                       2.2
+                       21
+
+
+
+
+Visit product website                               9 | 17
+                 max. Ø 1.5                             M2    min. 7                                 max. Ø 1.5                          M2      min. 7
+
+
+
+
+                                                              9
+
+
+
+
+                                                                                                                                              9
+          Type 6724
+
+                                      8                                                                                  8
+
+
+
+
+                                                         R3
+
+
+
+
+                                                                                                                                         R3
+                                     21                                                                                  21
+
+                                     26                                                                                  26
+          6.3.     Flange pattern (Bürkert sub-base 9 x 26)
+          Note:
+          Dimensions in mm
+                                                                                                          max. Ø 1.8
+                                  Preferred threaded connection                                         Further possible connection (diagonal)
+                                                                                                     max. Ø 1.5                          M2      min. 7
+                                                                             2/2-way (variant A1)
+                     max. Ø 1.8
+                 max. Ø 1.5                             M2    min. 7                                max. Ø 1.5                          M2       min. 7
+7                       max. Ø 1.5                            M2     min. 7
+
+
+
+
+                                                                                                                                                 9
+    2.6
+
+
+
+
+                                                                                         2.6
+                                                                                                                          8
+
+
+
+
+                                                                                                                                          R3
+
+
+
+
+                                                                                                                                                        9
+                                                                    9
+                                                                                                                         21
+
+                                                                                                                         26
+                                                              2.6
+
+
+
+
+                                                                                                                                                 2.6
+                                                         R3
+
+
+
+
+                                      8     8                                                                            8
+
+
+
+
+                                                                                                                                          R3
+                                                               R3
+
+
+
+
+                                     21     21                                                                           21
+                                     26     26                                                                           26
+
+
+                                                                             3/2-way (variant A2)
+
+                               max. Ø 1.8                                                                max. Ø 1.8
+
+                        max. Ø 1.5                            M2       min. 7                        max. Ø 1.5
+                                                                                                            max. Ø 1.5                   M2      min.
+                                                                                                                                                 M2 7 min. 7
+                                                                                          2.6
+
+
+
+
+7                      max. Ø 1.5                             M2       min. 7
+                                                                       9
+
+
+
+
+                                                                                                                                                          9
+            2.6
+
+
+
+
+                                                                                                                                                  2.6
+                                                                                                                                          R3
+                                             8                                                                            8   8
+                                                                  R3
+9
+
+
+
+
+                                                                              9
+
+
+
+
+                                                                                                                                                  R3
+                                            21                                                                           21   21
+
+                                            26                                                                           26   26
+                                                                       2.6
+
+
+
+
+                                            8
+                                                                  R3
+
+
+
+
+                                            21
+                                            26
+
+
+
+
+                              max. Ø 1.8
+                        max. Ø 1.5                             M2      min. 7                              max. Ø 1.5                            M2       min. 7
+             2.6
+
+
+
+
+                                                                                                2.6
+                                                                                9
+
+
+
+
+                                                                                                                                                                9
+                                                                        2.6
+
+
+
+
+                                                                                                                                                          2.6
+                                                                  R3
+
+
+
+
+                                             8                                                                                8
+                                                                                                                                                   R3
+
+
+
+
+                                            21                                                                                21
+                                            26                                                                                26
+
+
+
+
+          Visit product website                                                                                                                            10 | 17
+Type 6724
+
+
+
+
+6.4.      Bürkert sub-base (26 x 57) horizontal
+Note:
+• Dimensions in mm
+• Optional: Sub-base can be turned by 180°
+• Including fastening screws M2 x 6
+
+
+                             16.1
+
+
+                                                                            6.5
+        51.1
+   57
+
+
+               47.3
+
+
+
+
+                                                  4.9
+
+
+                                                           M2
+
+
+
+
+                             2.15                         2.8
+                      2.7
+
+
+
+
+                              20.5                              3.2
+                             26.2                                           10
+
+
+
+
+6.5.      Flange pattern (Bürkert sub-base 26 x 57)
+Note:
+Dimensions in mm
+                                                                            57
+                                                                      2.7
+
+
+
+
+                                        max.        1.5
+
+               M2 min. 3.5               8
+
+                                     20.5 ( ! )
+
+                                        26
+
+
+
+
+Visit product website                                                            11 | 17
+Type 6724
+
+
+
+
+6.6.   Threaded port variant (UNF ¼”- 28)
+Note:
+Dimensions in mm
+
+
+                                16.1
+
+
+                                                                    6.5
+                          51
+
+
+
+
+                                            41.2
+
+
+                                                          56.4
+                                                   52.6
+
+                   3.2
+                  5.5
+            5.9
+
+
+
+
+                                60°                                 11
+                                 40                3 x 1/4-28 UNF
+                                 46                FLAT BOTTOM
+
+                   3.3
+
+
+
+
+                                 40
+
+
+
+
+Visit product website                                                    12 | 17
+Type 6724
+
+
+
+
+6.7.         Tube connector variant
+Note:
+Dimensions in mm
+
+
+                         16.1
+
+
+                                                            6.5
+
+
+
+
+                                                 44.8
+       51
+
+
+
+
+                                           41
+                                           3.1
+                                                 5.7
+
+
+
+
+             3.2
+                         6.8°                               9
+                         9.55
+                          25
+                                                             1.5
+                                                                   4.5
+
+
+
+
+                                                        2
+                                                                  2.6
+                                                 3.2
+                         33.4
+                          40
+
+
+
+
+7.           Product connections
+7.1.         Electrical connection
+Pin assignment
+Electrical control for impulse variants                                   Impulse 500 ms
+                                                                         1              2
+CF P                                  NC                                 –             +       1
+2/2-way impulse solenoid valve        (open)                                                   2
+Direct-acting                         NC                                 +             –
+                                      (closed)
+                 NC
+
+CF S                                  NC ↔ COM                           –             +
+3/2-way impulse solenoid valve        (open)
+Direct-acting                         NO ↔ COM                           +             –
+Flow direction unrestricted           (open)
+
+            NC     NO
+
+
+
+
+Visit product website                                                                      13 | 17
+Type 6724
+
+
+
+
+8.     Ordering information
+8.1.   Bürkert eShop
+
+
+                                Bürkert eShop – Easy ordering and quick delivery
+
+                                You want to find your desired Bürkert product or spare part quickly and order directly? Our
+                                online shop is available for you 24/7. Sign up and enjoy all the benefits.
+
+                                       Order online now
+
+
+
+
+﻿
+
+8.2.   Bürkert product filter
+
+
+                                Bürkert product filter – Get quickly to the right product
+
+                                You want to select products comfortably based on your technical requirements?
+                                Use the Bürkert product filter and find suitable articles for your application quickly and easily.
+
+                                   Try out our product filter
+
+
+
+
+Visit product website                                                                                                        14 | 17
+Type 6724
+
+
+
+
+8.3.   Ordering chart
+Standard variant
+Note:
+• Push-in connectors with stranded wire or electronics Type 2503 are not included in the scope of delivery and must be ordered sepa-
+  rately, see “8.4. Ordering chart accessories” on page 17).
+• Including fastening screws for the following port connections:
+  Bürkert sub-base (9 x 26): M2 x 10-TORX T6-A2, Bürkert sub-base (26 x 57) horizontal: M2 x 6-TORX T6-A2
+• Fastening screws M1.6 x 8-ISK for replacing Type 6604 with Type 6724 are available on request.
+• The ‘stranded wire connection’ variant includes a plug connector with pre-assembled strands. This can be installed by the customer and
+  plugged into the device for commissioning.
+
+Circuit           Port         Orifice QNn       KV value    CV         Voltage/    Pressure    Max.       Body       Seal       Electrical    Article no.
+function          connec-              value     water 1.)   value      frequency   range 3.)   pressure   material   material   connection
+                  tion                 air 2.)               water                              difference
+                               [mm]     [l/      [m3/h]      [gpm]      [V]         [bar]       [bar]
+                                        min]
+CF A              Bürkert      0.8      10.7     0.01        0.012      24          Vac…5       5          PEEK       FFKM       Plug         20034162 
+2/2-way           sub-base                                                                                 PPS        FKM                     20071070 
+solenoid valve    (9 x 26)
+Direct-acting                                                                                                         EPDM                    20037617 
+Normally closed   UNF                   10.7     0.01        0.012      24          Vac…5       5          PEEK       FFKM                    20071068 
+                  ¼"- 28
+                  Tube                  10.7     0.01        0.012      24          Vac…5       5          PEEK       FFKM                    20071231 
+                  connector                                                                                           EPDM                    20071233 
+           NC
+                  Bürkert               10.7     0.01        0.012      24          Vac…5       5          PPS        EPDM                    20071279 
+                  sub-base
+                  (26 x 57)
+                  horizontal
+                  Bürkert      1.2      28       0.026       0.03       24          Vac…3       3          PEEK       FFKM                    20027698 
+                  sub-base                                                                                                       Strand       20094654 
+                  (9 x 26)                                                                                                       500 mm
+                                                                                                           PVDF                  Plug         20071187 
+                                                                                                           PPS        FKM                     20071048 
+                                                                                                                      EPDM                    20037618 
+                                                                                                                                 Strand       20095102 
+                                                                                                                                 500 mm
+                  UNF                   28 4.)   0.026 4.)   0.03 4.)   24          Vac…3       3          PEEK       FFKM       Plug         20071047 
+                  ¼"- 28                                                                                                         Strand       20095105 
+                                                                                                                                 500 mm
+                                                                        12                                            FKM        Plug         20071065 
+                                                                                    Vac…2       2                     FFKM                    20075595 
+                  Bürkert               28       0.026       0.03       24          Vac…2       2                     HCR                     20048280 
+                  sub-base
+                  (9 x 26)
+CF B              Bürkert      1.2      28       0.026       0.03       24          Vac…2       2          PEEK       FFKM       Plug         20071046 
+2/2-way           sub-base
+solenoid valve    (9 x 26)
+Direct-acting
+Normally open
+
+
+
+           NO
+
+
+
+
+Visit product website                                                                                                                               15 | 17
+Type 6724
+
+
+
+
+ Circuit              Port           Orifice QNn         KV value      CV          Voltage/        Pressure      Max.       Body             Seal         Electrical         Article no.
+ function             connec-                value       water 1.)     value       frequency       range 3.)     pressure   material         material     connection
+                      tion                   air 2.)                   water                                     difference
+                                     [mm]       [l/      [m3/h]        [gpm]       [V]             [bar]         [bar]
+                                                min]
+ CF T                 Bürkert        0.8        10.7     0.01          0.012       24              0…3 5.)       5              PEEK         FFKM         Plug             20030343 
+ 3/2-way              sub-base                                                                                                  PPS          FKM                            20071074 
+ solenoid valve       (9 x 26)
+ Direct-acting                                                                     12                                                        EPDM                           20071081 
+ Flow direction                                                                    24                                                                                       20035617 
+ optional             UNF                       10.7     0.01          0.012       24              0…3 5.)       5              PEEK         FFKM                           20071072 
+ Universal            ¼"- 28
+                      Tube                      10.7     0.01          0.012       24              0…3 5.)       5              PEEK         FFKM                           20071230 
+                      connector                                                                                                              EPDM                           20071234 
+        NC     NO
+                      Bürkert                   10.7     0.01          0.012       24              0…3 5.)       5              PPS          FKM                           20071281 
+                      sub-base                                                                                                               EPDM                          20071280 
+                      (26 x 57)
+                      horizontal
+                      Bürkert        1.2        28       0.026         0.03        12              Vac…3         3              PEEK         FFKM                           20071063 
+                      sub-base                                                     24                                                        FFKM                           20027694 
+                      (9 x 26)
+                                                                                                                                                          Strand           20094659 
+                                                                                                                                                          500 mm
+                                                                                                                                PVDF                      Plug             20094666 
+                                                                                                                                PPS          FKM                            20071049 
+                                                                                                                                             EPDM                          20035624 
+                                                                                                                                                          Strand           20094663 
+                                                                                                                                                          500 mm
+                      UNF                       28 4.)   0.026 4.)     0.03 4.)    24              Vac…3         3              PEEK         FFKM         Plug              20071045 
+                      ¼"- 28                                                                                                                              Strand           20084556 
+                                                                                                                                                          500 mm
+                                                                                                   Vac…2         2                           FFKM         Plug             20054962 
+                      Bürkert                   28 4.)   0.026 4.)     0.03 4.)    24              Vac…2         2                           HCR                            20075596 
+                      sub-base
+                      (9 x 26)
+
+1.) Measurement at + 20 °C, 1 bar at the valve inlet and free outlet
+2.) Converted to standard conditions
+3.) Connect technical vacuum (- 0.8 bar) to NC or NO. If vacuum is connected to (COM/OUT), significantly reduced flow must be expected.
+4.)	KV value of the valve. The UNF connections have a diameter of 1.2 mm; in conjunction with conventional connection technology (10 cm hose each with ID= 1.6 mm), this results in practi-
+    cal values of KV= 0.015 m³/h; CV= 0.017 gpm; QNn= 21.8 l/min.
+5.) Applies to pressure port at COM. For pressure port at NC or NO Vac…5 bar applies.
+
+
+
+
+Impulse variant
+ Circuit               Port                    Orifice QNn             KV value      CV value Voltage/  Pressure Max.            Body                       Seal             Article no.
+ function              connection                      value           water 1.)     water    frequency range 3.) 4.) pressure   material                   material
+                                                       air 2.)                                                        difference
+                                               [mm]      [l/min]       [m3/h]        [gpm]        [V]            [bar]         [bar]
+ CF P                  Bürkert sub-base        1.2       25            0.024         0.027        24             Vac…2         2              PPS           FKM              355749 
+ 2/2-way impulse       (9 x 26)                                                                   24                                          PEEK          FFKM             355744 
+ solenoid valve
+ Direct-acting                                                                                    12                                                                         355750 
+                       UNF ¼"- 28                        25 5.)        0.024 5.)     0.027 5.)    24             Vac…2         2                                             355745 
+
+
+              NC
+
+ CF S                  Bürkert sub-base        1.2       28            0.026         0.03         24             Vac…2         2              PPS           FKM              355756 
+ 3/2-way impulse       (9 x 26)                                                                   24                                          PEEK          FFKM             355754 
+ solenoid valve
+ Direct-acting                                                                                    12                                                                        20005293 
+ Flow direction        UNF ¼"- 28                        28 5.)        0.026 5.)     0.03 5.)     24             Vac…2         2                                             355755 
+ unrestricted
+
+
+
+        NC     NO
+
+1.) Measurement at + 20 °C, 1 bar at the valve inlet and free outlet
+2.) Converted to standard conditions
+3.) Pressure data: Overpressure to atmospheric pressure
+4.) Connect technical vacuum (- 0.8 bar) to NC or NO. If vacuum is connected to (COM/OUT), significantly reduced flow must be expected.
+5.)	KV value of the valve. The UNF connections have a diameter of 1.2 mm; in conjunction with conventional connection technology (10 cm hose each with ID= 1.6 mm), this results in practi-
+     cal values of KV= 0.015 m³/h; CV= 0.017 gpm; QNn= 21.8 l/min.
+
+
+
+
+Visit product website                                                                                                                                                              16 | 17
+Type 6724
+
+
+
+
+8.4.   Ordering chart accessories
+Manifolds
+Note:
+Customised for manifolds, on request.
+
+
+Cable plug Type 2503
+Accessories                        Description                                                                                  Article no.
+                                   Cable plug with 500 mm flying leads AWG 24                                                   689974 
+                                   For further information please refer to data sheet Type 2503 .
+
+
+
+
+                                   Cable plug with 500 mm flying leads and boost-close electronics to increase the              689998 
+                                   permissible pressure under NC.
+                                   For further information refer to the operating instructions for Type 2503  BoostClose
+                                   or see data sheet Type 2503 .
+
+
+
+
+                                   Cable plug with 500 mm flying leads and Soft Close Elektronic for noise minimization.        689999 
+                                   For further information refer to the operating instructions for Type 2503  SoftClose
+                                   or see data sheet Type 2503 .
+
+
+
+
+                                   The electronic accessory “Impulse” was specially developed for the impulse variant of        366210 
+                                   the solenoid valve Type 6724. With the help of the electronics, the impulse valve is
+                                   activated by reversing the polarity of the voltage. The electronics automatically choose
+                                   the correct polarity for the valve. This means that no polarity reversal logic needs to be
+                                   provided in the control system.
+                                   For further information refer to the operating instructions for Type 2503  Impulse or
+                                   see data sheet Type 2503 .
+
+
+
+
+Fittings and hoses
+Accessories             Description                                                                                             Article no.
+                        Fittings and hoses for UNF connections and hoses see type Type TVU003 .                                   see
+                                                                                                                                data sheet
+                                                                                                                                TVU003 
+
+
+
+
+Visit product website                                                                                                                 17 | 17
+

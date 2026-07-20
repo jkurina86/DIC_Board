@@ -1,0 +1,326 @@
+               USB Control and Configuration of the
+
+                                  LAC
+        (Linear Actuator Control Board)
+
+Compatible Products:
+LAC
+L8-SS-GG-VV-P
+P8-SS-GG-VV-P
+L12-SS-GG-VV-P
+L16-SS-GG-VV-P
+PQ12-GG-VV-P
+P16-SS-GG-VV-P
+T16-SS-GG-VV-P
+
+This note provides further information regarding the Linear Actuator Control board,
+with the intent to allow custom computer control and configuration.
+Manual Quick Start:
+
+The LAC board is static sensitive. Ensure your work area is
+static safe prior to removing the board from the static bag or
+optional housing.
+
+
+
+
+With all power and USB cables disconnected, connect an actuator to either the screw
+terminal header or the Actuonix connectors as described in the datasheet.
+
+
+
+
+PQ12–P : Copper faces contacts    All other Actuonix P-series   3rd party actuators: Colours may differ
+
+
+
+Connect the external potentiometer, control signal, or RC connector.
+
+
+
+
+External Pot : Wiper wire to VC   Signal : Connect RC, IC, or VC   RC Receiver : Standard Connector
+
+
+If connecting a signal to RC, IC, or VC, make sure the signal ground is connected to the
+power supply ground (-).
+Apply power to the LAC board. If using the RC connector, do not connect a separate
+power supply. This can result in large currents flowing between power supplies. If you
+do wish to connect a separate supply, ensure the Red RC wire is disconnected.
+
+
+
+
+           +/- Power terminals                    RC connector : No other power
+
+You system should now operate normally with Actuonix’s default configuration.
+
+
+
+
+        Actuonix LAC : Battery Powered, L12-P Actuator, Potentiometer Controlled
+
+To manually adjust the LAC configuration, rotate the four potentiometers on the LAC to
+the desired locations. Counter clockwise reduces the corresponding value, while
+clockwise rotation increases the value. Power must be cycled before changes take effect.
+Limits – The Potentiometer closer to the USB connector is the retract limit, and the one
+further away is the extend limit. For maximum stroke, set each potentiometer to fully
+clockwise. Rotating counter clockwise from this position will move the limits inward,
+from either end. If your settings overlap, the actuator will not move at all.
+Speed – Fully counter clockwise, sets the speed to zero. Fully clockwise, sets the speed
+to maximum.
+
+Accuracy – Fully clockwise rotation sets the precision to maximum. Rotating counter
+clockwise increases the distance around the desired position where the actuator will stop
+moving. If the actuator is jittery, reduce the precision slightly.
+
+Advanced USB control options:
+
+
+
+
+The included Advanced Configuration Program allows all the manual settings, and many
+other control values, to be set by USB.
+
+The Direct Control Tab, shown above, allows simple USB control of Position and the
+four regular potentiometer controls. All these controls accept values from 0 to 100
+percent.
+
+The Advanced Configuration Tab provides full configuration control. Values can be set
+to override the defaults, and the potentiometers, by pressing the Disable Defaults button.
+The entered values will then be retained even when power is cycled. To return to the
+default state, reconnect to the LAC Configuration Utility and press the Re-enable
+Defaults button.
+Advanced configuration settings can be saved and re-opened, through the File menu.
+
+
+
+
+Brief descriptions for each value can be seen by moving the mouse over the
+corresponding label (“Stall Time”, “Accuracy”, etc). More detailed descriptions are
+given in the Custom Windows Programs section of this document.
+
+
+Custom Control Programs:
+
+The supplied .dll file can be used to interface with the Actuonix LAC using a variety of
+Windows based programming languages, including Visual C++ and Labview. The
+standard functions are described in the mpusbapi.h file, while the LAC specific details
+are described below.
+
+The MPUSBOpen function is used to retrieve INHandle and OUTHandle. Once a valid
+connection is established, all LAC functions are accessed using MPUSBWrite(...) and
+MPUSBRead(...). Be sure to close any openHandles with MPUSBClose before exiting
+your program. Labview example code is available.
+Format: 3-byte packet
+
+ Control, Data Low, Data High
+
+        Buffer[0]=Control
+        Buffer[1]=Data Low
+        Buffer[2]=Data High
+
+Write: MPUSBWrite(OUTHandle, Buffer, 3, &ActualLength, 1000)
+Read : MPUSBRead(INHandle, Buffer, 3, &ActualLength, 1000)
+
+Control Values:
+
+0x01 SET_ACCURACY                                   0x10 GET_FEEDBACK
+0x02 SET_RETRACT_LIMIT
+0x03 SET_EXTEND_LIMIT                               0x20 SET_POSITION
+0x04 SET_MOVEMENT_THRESHOLD                         0x21 SET_SPEED
+0x05 SET_STALL_TIME
+0x06 SET_PWM_THRESHOLD                              0x30 DISABLE_MANUAL
+0x07 SET_DERIVATIVE_THRESHOLD
+0x08 SET_DERIVATIVE_MAXIMUM                         0x50 SET_SERIAL_NUM
+0x09 SET_DERIVATIVE_MINIMUM                         0x51 GET_SERIAL_NUM
+0x0A SET_PWM_MAXIMUM
+0x0B SET_PWM_MINIMUM                                0xFF RESET
+0x0C SET_PROPORTIONAL_GAIN
+0x0D SET_DERIVATIVE_GAIN
+0x0E SET_AVERAGE_RC
+0x0F SET_AVERAGE_ADC
+
+
+Note: Whenever a command is sent, the LAC will echo back the command. The
+exception is SET_POSITION, which returns the current position.
+
+
+0x01 SET_ACCURACY:
+
+This is the value controlled by the Accuracy Potentiometer. A value between 0-1023 is
+accepted. When the feedback position is plus or minus this value, the actuator will stop
+moving. Reducing this too far will result in the actuator continuously moving back and
+forth, never reaching the set point. The default value is four. To find the equivalent
+distance, use the formula:
+                                      Value
+                                            × Stroke
+                                      1024
+
+For example, a value of four will give you +/- 0.117mm accuracy when controlling a
+30mm actuator.
+
+                                   4
+                                      × 30mm= 0.117mm
+                                 1024
+
+0x02 SET_RETRACT_LIMIT and 0x03 SET_EXTEND_LIMIT
+
+These are the values that are set with the Limits Potentiometers. Setting the
+Extend_Limit to 1023 and the Retract_Limit to zero will allow movement over the full
+range. However, it is recommended to offset these values to ensure the actuator is never
+driven into the physical end stops. This increases cycle life considerably. To set the
+desired limits take the distance (mm) from the physical stop you wish to limit the actuator
+to, and plug it into the following equation.
+
+                                     Distance
+                                              × 1023
+                                      Stroke
+
+For example, to set the limits to 1mm from the end stop of a 30mm stroke actuator, set
+EXTEND_LIMIT to 34.
+
+                                       1
+                                         × 1023= 34
+                                      30
+
+0x04 SET_MOVEMENT_THRESHOLD
+
+This value determines the minimum actuator speed that is considered a stall. When the
+actuator speed drops below this value, the stall timer begins counting.
+
+0x05 SET_STALL_TIME
+
+This is the amount of time in milliseconds that the actuator will wait before turning off
+the motor when a stall is detected. This timer is triggered when the actuator determines
+the speed of movement is below an acceptable level. The actuator will exit this state
+when the input signal tells the actuator to move in the opposite direction.
+0x06 SET_PWM_THRESHOLD
+
+This value sets the distance around the set point where the PWM PD controller is active.
+When the distance between the feedback and set point is greater than this value the
+actuator speed is set to maximum.
+0x07 SET_DERIVATIVE_THRESHOLD
+
+This value is compared to the measured speed to determine when the PWM should be
+increased to attempt to exit a stall condition. This is normally set to the same value as the
+MOVEMENT_THRESHOLD.
+
+0x08 SET_MAX_DERIVATIVE
+
+This value sets the maximum value that the derivative term can contribute to the control
+speed.
+
+0x09 SET_MIN_DERIVATIVE
+
+This is the minimum value that the derivative can contribute to the control speed.
+
+0x0A SET_MAX_PWM_VALUE
+
+This is the value that is manually controlled by the speed potentiometer. This is the
+speed that the actuator runs at when outside the PWM_THRESHOLD. Setting this to
+1023 will allow the actuator to achieve full speed. The actuator may exceed this value
+while attempting to overcome a stall condition.
+
+0x0B SET_MIN_PWM_VALUE
+
+This is the minimum PWM value that can be applied by the PD control.
+
+0x0C SET_Kp
+
+This is the constant for the proportional control term. Increasing this value will make the
+actuator approach the set point faster; reducing this will make the approach slower. If the
+actuator is overshooting the set point before stopping, then reducing this value will
+reduce the amount of overshoot.
+
+0x0D SET_Kd
+
+This value sets the rate at which the differential portion of the controller increases during
+a stall condition. This is not a true differential term. However, the effect is similar. As
+long as the actuator detects a stall condition, the derivative term is incremented. If the
+stall condition is resolved the stall timer will be reset, otherwise the stall timer will elapse
+and stop the motor.
+0x0E SET_AVERAGE_RC
+This value determines the number of samples used in filtering the RC input signal before
+the actuator moves to a new position. Increasing this value can increase stability but does
+effect response time. The default value is four. The delay time can be calculated by
+multiplying this value by 20ms. This value does not affect the feedback filter delay. The
+actuators control response to a valid input signal will not be affected.
+
+0x0F SET_AVERAGE_ADC
+
+This value determines the number of samples used in filtering the feedback and analog
+input signals (if active). Increasing this value has a similar delay effect as described
+above, however this delay does affect actuator control response. Since this delay allows
+the actuator to move a certain distance before updating the speed based on the PD values,
+other values may need to be re-tuned if this value is changed.
+
+0x10 GET_FEEDBACK
+
+This command causes the actuator to respond with a feedback packet containing the
+current actuator position. This is read directly from the ADC and may not be equal to the
+set point if the actuator has not yet reached it.
+
+0x20 SET_POSITION
+
+This command allows USB control and disables RC, I, and V inputs until the system is
+rebooted. The data sent with this command determines what position the actuator moves
+too.
+
+                                     Distance
+                                              × 1023
+                                      Stroke
+
+For example, to half way extend(25mm) a 50mm actuator, send 512. (The calculated
+value is rounded to a whole number).
+
+0x30 DISABLE_MANUAL
+
+This command saves the current configuration settings to EEPROM and disables the four
+potentiometers. On reboot, these values will continue to be used instead of the
+potentiometer values. Analog inputs will still function as normal.
+0x50 SET_SERIAL_NUM
+
+This is a serial number between 0-255 you can assign to an LAC and is intended to be
+used when multiple LACs are connected simultaneously. Once set, this value can be
+polled using the subsequent command to verify that the correct LAC is connected &
+being interfaced with.
+
+0x51 GET_SERIAL_NUM
+
+Reads back the device serial number that was written to it by the SET_SERIAL_NUM.
+Can be used to verify a USB connection with the correct LAC, in the event that multiple
+LACs are connected simultaneously.
+
+0xFF RESET
+
+This command turns the manual control potentiometers on and resets the configuration
+settings to factory default.
+
+Related Articles:
+       • Linear Actuator Control Board - Intro and Setup
+       • Tips For Extending The Life Of Your Linear Actuator
+
+
+Technical assistance and design support services — Disclaimer of Warranties; Release of Claims
+
+Actuonix offers technical assistance and design support services as a convenience to Actuonix customers.
+Actuonix personnel strive to provide useful information regarding Actuonix products. Actuonix does not
+guarantee that any information or recommendation provided is accurate, complete, or correct, and
+Actuonix shall have no responsibility or liability whatsoever in connection with any information or
+recommendation provided, or the customer's reliance on such information or recommendation. The
+customer is solely responsible for analyzing and determining the appropriateness of any information or
+recommendation provided by Actuonix personnel, and any reliance on such information or
+recommendation is at the customer's sole risk and discretion. Accordingly, the customer shall release and
+hold Actuonix harmless from and against any and all loss, liability, and damage incurred by the customer
+or any third party as a result of any information or recommendation provided to the customer or the
+customer's reliance on such information or recommendation.
+
+
+
+All information provided on this datasheet is subject to change. Purchase or use of
+Actuonix actuators is subject to acceptance of our terms and conditions as posted
+here: http://www.actuonix.com/terms.asp
+
+Revised Sep 2025
+

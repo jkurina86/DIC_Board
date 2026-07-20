@@ -1,0 +1,325 @@
+LI-850 | Connecting with the analyzer
+Skip To Main Content
+Account
+Settings
+Logout
+placeholder
+Account
+Settings
+Logout
+Filter:
+All Files
+Submit Search
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse
+Gas Monitoring
+Agricultural
+Best Practices
+Environmental
+Protection
+Soil, Atmosphere,
+& Ocean Studies
+Energy & Indoor
+Air Monitoring
+Water
+Monitoring
+RESOURCES
+Resource Center
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT
+Contact LI-COR
+PRODUCTS
+Plant Physiology
+Eddy Covariance
+Trace Gas Concentration
+Soil Gas Flux
+Plant Canopy
+PAR & Global Solar Radiation
+Soil Moisture
+Meteorology
+Water Levels & Water Quality
+Indoor Environment
+SOLUTIONS
+Greenhouse Gas & Emissions
+Monitoring
+Agricultural Best Practices
+Environmental Protection
+Soil, Atmosphere, & Ocean Studies
+Indoor Environmental Monitoring
+Water Resource Management
+RESOURCES
+All Resources
+Blog
+Publications
+Support
+Webinars
+Workshops
+View All
+CONTACT US
+​
+Contact Support
+Phone
+1-402-467-3576
+Toll Free:
+1-800-447-3576
+Email
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Contact Forms
+LI-COR Sales
+LI-COR Support
+LICORbio Support
+International
+Europe
+Distributors
+Address
+4647 Superior St.
+P.O. Box 4425
+Lincoln, NE USA
+68504-0425
+HOBO Data Loggers
+HOBO Sales
+HOBO Help Center
+HOBO Support
+Support:
+Application Note
+Tech Tip
+LI-830
+and
+LI-850
+Gas Analyzers
+What are you looking for?
+General Help
+Calibration Certificates
+Filter:
+Filter Results
+Submit Search
+Calibration information is available for light sensors, gas analyzers, photosynthesis systems, calibrated chambers, calibrated light sources, and plant canopy analyzers.
+Find
+View Certificate
+Contents:
+Connecting with the analyzer
+The following tutorial describes the basic steps you'll follow when you turn on the
+LI-830
+or
+LI-850
+for the first time.
+1.
+Install the software on your computer
+The software is used to configure data communication, analog and digital outputs, alarms, data logging, and to verify the calibration. Software is available from
+licor.com/support/LI-850/software.html
+.
+2.
+Install an air filter on the air-in port
+Caution:
+Always install an air filter on the input air before operating the
+LI-830
+or
+LI-850
+. Failure to use a filter will cause contamination of the optical bench. As an extra precaution, you can blow compressed air through the filter in the normal flow direction to remove any contaminants.
+Retrieve an air filter and tubing from the accessories kit. Cut a 5 to 10 cm piece of tubing. Attach the filter and tubing to the air-in port. Observe the arrow on the filter and be sure that the air flow is in the proper direction.
+3.
+Install the USB cable
+The USB connection is the simplest way to connect the analyzer with a computer. If you want to use the RS-232 serial connection instead, connect the cable to the serial port, and install a serial-to-USB adapter on the serial cable, if needed.
+4.
+Power on the gas analyzer
+The
+LI-830
+and
+LI-850
+will turn on when power is supplied, so plug in the power cable to turn it on. If you use an alternative power supply, it must be able to source a minimum of 1.2 A at 12 VDC while the instrument warms up. After the warmup, the instrument will draw about 0.3 A at 12 VDC.
+5.
+Connect with the gas analyzer
+Start the software.
+Click the
+Connection
+button in the upper right of the display. Select your instrument from the list, set the data rate, then click
+Connect
+. Data will populate the window after connecting. You can enter the COM port manually by checking Manual Port and setting the port number (COM#).
+If you are using Windows
+®
+7 or 8, install the drivers before you connect, as described in
+Installing device drivers
+.
+The terminal strip
+The terminal strip connects to the front panel of the instrument. The pin assignments are given on the top of the instrument, and there is a sticker in the accessories kit that you can use to help identify which terminal is which.
+Terminal
+Label
+Description
+1
+12-30 VDC
+Voltage In, 12-30 VDC
+2
+GND
+Ground
+3
+High Alarm
+High Alarm
+4
+GND
+Ground
+5
+Low Alarm
+Low Alarm
+6
+GND
+Ground
+7
+V OUT 2
+Voltage output channel 2
+8
+GND
+Ground
+9
+V OUT 1
+Voltage output channel 1
+10
+GND
+Ground
+11
+4-20 mA 2
+Current output channel 2
+12
+GND
+Ground
+13
+4-20 mA 1
+Current output channel 1
+14
+GND
+Ground
+Powering the
+LI-830
+and
+LI-850
+A power supply—either a battery or the universal power adapter—can be connected to the
+LI-830
+and
+LI-850
+power jack or to pins 1 and 2 on the terminal strip. The instruments require 12 to 30 VDC. The power supply must be able to provide 14 watts (1.2 A at 12 V) during warmup and about 3.6 watts (0.3 A at 12 V) during normal operation.
+Using the universal power adapter
+The included power supply is compatible with mains power in most localities globally (input 100 to 240 VAC, 50 to 60 Hz; output 12 VDC, 2.5 amps). You may need to install different blades from the outlet adapter kit to fit your wall outlets.
+Using the terminal strip power connectors
+The terminal strip has connectors for any power supply that has bare leads. Pin 1 is the positive (+) terminal, and pin 2 is the negative (-) terminal.
+Installing device drivers
+If you are using Windows 7 and 8, you'll need to install device drivers. After connecting the
+LI-830
+and
+LI-850
+to your computer with the USB cable, follow these steps:
+Download the drivers and unzip the file.
+Drivers are available at
+licor.com/support/LI-850/software.html
+or directly at
+licor.app.boxenterprise.net/s/pamrygkdwsl8c61wj6y815gnf4tukh3t
+Press the Windows key (
+), type
+Device Manager
+, and press
+Enter
+to open your device manager.
+Under
+Other Devices
+, select the
+LI-830
+/
+LI-850
+.
+Right-click
+LI-830
+/
+LI-850
+and select
+Update Driver Software
+.
+Browse and select the folder with the driver files.
+Click
+Next
+to finish installing the drivers.
+When they are installed, you should see
+LI-COR
+8x0
+under
+Ports (COM & LPT)
+.
+Storing the gas analyzer
+When you are done using the gas analyzer, follow these practices to be sure that it is ready to use the next time you need it. The instrument can be stored in non-condensing conditions. If the instrument is stored in high humidity or moderate humidity for a long time while powered off, some optical components may temporarily become saturated with humidity. If this occurs, the instrument may need to run for several days before readings return to normal. When storing the instrument.
+Install the covers over the air inlet and outlet. This will keep dust, bugs, and other contaminants out of the optical cell.
+Disconnect the power supply and power wires.
+If possible, store the instrument in an air conditioned environment.
+Share
+Copy Link
+Email
+Cite
+On this page:
+Connecting with the analyzer
+The terminal strip
+Powering the LI-830 and LI-850
+Installing device drivers
+Storing the gas analyzer
+Was this helpful?
+Yes
+No
+We're sorry about that.
+Want to tell us more?
+Contact technical support.
+Great!
+Thanks for taking the time to give us feedback.
+Join Our Newsletter
+SUBSCRIBE
+LI-COR
+4647 Superior Street
+PO Box 4425
+Lincoln, NE 68504
+United States
+Phone:
+1-402-467-3576
+Toll-Free:
+1-800-447-3576
+Sales:
+envsales@licor.com
+Support:
+envsupport@licor.com
+Fax:
+1-402-467-2819
+www.licor.com
+COMPANY
+About Us
+Careers
+Copyrights & Trademarks
+International Distributors
+Patents
+Press & Media
+CONNECT
+OUR
+BRANDS
+Looking for
+LI-COR
+Biotechnology?
+LI-COR
+Biotechnology
+is now
+©2026 LI-COR, Inc. |
+Privacy Policy
+|
+Terms of Use
+|
+Cookie Notice
