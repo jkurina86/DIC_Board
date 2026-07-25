@@ -7,4 +7,11 @@
 		(options "")
 		(descr "Project-specific symbols for DIC_Board")
 	)
+	(lib
+		(name "LCSC")
+		(type "KiCad")
+		(uri "${KIPRJMOD}/LCSC.kicad_sym")
+		(options "")
+		(descr "Symbols imported from the LCSC EasyEDA library")
+	)
 )
