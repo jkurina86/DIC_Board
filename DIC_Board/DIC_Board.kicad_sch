@@ -6,6 +6,192 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 147.32 26.67)
+		(size 48.26 44.45)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "4eaefdb2-a0a4-4c79-8702-5dad81347158")
+		(property "Sheetname" "Valve Control Bank 1"
+			(at 147.32 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Valve_Control.kicad_sch"
+			(at 147.32 71.7046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VALVE_SDATA" input
+			(at 147.32 39.37 180)
+			(uuid "2df147a2-34d3-4684-a8cb-cbed95376e1e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_SCLK" input
+			(at 147.32 41.91 180)
+			(uuid "1e7e524b-32cd-4dc8-aead-1ab92c1ed4a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_CS1" input
+			(at 147.32 44.45 180)
+			(uuid "d9b0104f-4ac2-4df5-86c1-ad8797a94c61")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_LATCH" input
+			(at 147.32 46.99 180)
+			(uuid "779864a7-fdf9-47bd-92db-3412e72b9e28")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_RESET_N" input
+			(at 147.32 49.53 180)
+			(uuid "3243b68c-eaaa-4acf-87bd-47f21b56d952")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_SLEEP_N" input
+			(at 147.32 52.07 180)
+			(uuid "3e88ccb5-d19d-4e93-8cdb-4f36448e17d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE1_A" output
+			(at 195.58 34.29 0)
+			(uuid "80cfbd4d-5efb-479b-bd95-b1817831eaf8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE1_B" output
+			(at 195.58 36.83 0)
+			(uuid "a8505650-7cd3-4402-ad89-143591921765")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE2_A" output
+			(at 195.58 39.37 0)
+			(uuid "fbe33be6-8cda-42b1-a403-c024d61a3279")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE2_B" output
+			(at 195.58 41.91 0)
+			(uuid "06f86e2f-7331-4932-93b3-ac8b69c2123d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE3_A" output
+			(at 195.58 44.45 0)
+			(uuid "ce66483f-64eb-472b-b82c-a211688498bc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE3_B" output
+			(at 195.58 46.99 0)
+			(uuid "d4c3a728-a5da-421a-81ac-bdb547354b97")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE4_A" output
+			(at 195.58 49.53 0)
+			(uuid "6639c989-e4bc-4b72-80a8-194238bb54b3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE4_B" output
+			(at 195.58 52.07 0)
+			(uuid "9b1146e1-c45c-4d6c-b6d5-24e3518e21f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 91.44 26.67)
 		(size 48.26 44.45)
 		(exclude_from_sim no)
@@ -102,5 +288,4 @@
 			(page "1")
 		)
 	)
-	(embedded_fonts no)
 )
