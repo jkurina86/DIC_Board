@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 147.32 26.67)
-		(size 48.26 44.45)
+		(at 157.48 20.32)
+		(size 76.2 76.2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -21,8 +21,8 @@
 			(color 0 0 0 0)
 		)
 		(uuid "4eaefdb2-a0a4-4c79-8702-5dad81347158")
-		(property "Sheetname" "Valve Control Bank 1"
-			(at 147.32 25.9584 0)
+		(property "Sheetname" "Valve Control"
+			(at 157.48 19.6084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "Valve_Control.kicad_sch"
-			(at 147.32 71.7046 0)
+			(at 157.48 97.2316 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44,8 +44,8 @@
 			)
 		)
 		(pin "VALVE_SDATA" input
-			(at 147.32 39.37 180)
-			(uuid "2df147a2-34d3-4684-a8cb-cbed95376e1e")
+			(at 157.48 27.94 180)
+			(uuid "e90658d4-f5e2-4761-93bf-e7bc05f9c3d9")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -54,8 +54,8 @@
 			)
 		)
 		(pin "VALVE_SCLK" input
-			(at 147.32 41.91 180)
-			(uuid "1e7e524b-32cd-4dc8-aead-1ab92c1ed4a2")
+			(at 157.48 30.48 180)
+			(uuid "05807a2f-4378-41d4-9fa8-e93fcb831170")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -64,8 +64,28 @@
 			)
 		)
 		(pin "VALVE_CS1" input
-			(at 147.32 44.45 180)
-			(uuid "d9b0104f-4ac2-4df5-86c1-ad8797a94c61")
+			(at 157.48 33.02 180)
+			(uuid "6acf41e2-8ae7-4552-b10f-a0bb504a873e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_CS2" input
+			(at 157.48 35.56 180)
+			(uuid "59760b2a-47c6-46a0-9294-cf78d49e89f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_CS3" input
+			(at 157.48 38.1 180)
+			(uuid "161db633-6ac2-4e86-b93d-47511c58333e")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -74,8 +94,8 @@
 			)
 		)
 		(pin "VALVE_LATCH" input
-			(at 147.32 46.99 180)
-			(uuid "779864a7-fdf9-47bd-92db-3412e72b9e28")
+			(at 157.48 40.64 180)
+			(uuid "9a405b74-973b-4011-a3f2-5dc5bd56c279")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -84,8 +104,8 @@
 			)
 		)
 		(pin "VALVE_RESET_N" input
-			(at 147.32 49.53 180)
-			(uuid "3243b68c-eaaa-4acf-87bd-47f21b56d952")
+			(at 157.48 43.18 180)
+			(uuid "cf7cad8c-c6fb-47b8-9149-33653a5b6a5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -94,8 +114,8 @@
 			)
 		)
 		(pin "VALVE_SLEEP_N" input
-			(at 147.32 52.07 180)
-			(uuid "3e88ccb5-d19d-4e93-8cdb-4f36448e17d6")
+			(at 157.48 45.72 180)
+			(uuid "d7460144-522c-4873-92eb-4cd38746dbd8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -104,8 +124,8 @@
 			)
 		)
 		(pin "VALVE1_A" output
-			(at 195.58 34.29 0)
-			(uuid "80cfbd4d-5efb-479b-bd95-b1817831eaf8")
+			(at 233.68 27.94 0)
+			(uuid "21cbfa6a-1fa5-4007-a222-f65f2cf4cf9f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -114,8 +134,8 @@
 			)
 		)
 		(pin "VALVE1_B" output
-			(at 195.58 36.83 0)
-			(uuid "a8505650-7cd3-4402-ad89-143591921765")
+			(at 233.68 30.48 0)
+			(uuid "170c62cb-d033-40be-8bd5-276fa1fd8519")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -124,8 +144,8 @@
 			)
 		)
 		(pin "VALVE2_A" output
-			(at 195.58 39.37 0)
-			(uuid "fbe33be6-8cda-42b1-a403-c024d61a3279")
+			(at 233.68 33.02 0)
+			(uuid "df9a2e92-d0db-4d57-8fd9-c24a55bc644d")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -134,8 +154,8 @@
 			)
 		)
 		(pin "VALVE2_B" output
-			(at 195.58 41.91 0)
-			(uuid "06f86e2f-7331-4932-93b3-ac8b69c2123d")
+			(at 233.68 35.56 0)
+			(uuid "38ac2003-ff24-4c06-ae42-148e712b39cd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -144,8 +164,8 @@
 			)
 		)
 		(pin "VALVE3_A" output
-			(at 195.58 44.45 0)
-			(uuid "ce66483f-64eb-472b-b82c-a211688498bc")
+			(at 233.68 38.1 0)
+			(uuid "787f62ef-fb1b-4574-bca4-2f077e0ba282")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -154,8 +174,8 @@
 			)
 		)
 		(pin "VALVE3_B" output
-			(at 195.58 46.99 0)
-			(uuid "d4c3a728-a5da-421a-81ac-bdb547354b97")
+			(at 233.68 40.64 0)
+			(uuid "1637e962-3d20-4437-b423-84ed41b7a0f0")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -164,8 +184,8 @@
 			)
 		)
 		(pin "VALVE4_A" output
-			(at 195.58 49.53 0)
-			(uuid "6639c989-e4bc-4b72-80a8-194238bb54b3")
+			(at 233.68 43.18 0)
+			(uuid "41fc6251-07ae-478c-a15b-cb9c4598c633")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -174,8 +194,168 @@
 			)
 		)
 		(pin "VALVE4_B" output
-			(at 195.58 52.07 0)
-			(uuid "9b1146e1-c45c-4d6c-b6d5-24e3518e21f8")
+			(at 233.68 45.72 0)
+			(uuid "7297185a-fe6d-4051-8b33-49309e718b4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE5_A" output
+			(at 233.68 48.26 0)
+			(uuid "a7e974be-81ed-49de-ba3c-8426f63f5410")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE5_B" output
+			(at 233.68 50.8 0)
+			(uuid "03f6ece3-e249-4e65-9a85-20849f82167d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE6_A" output
+			(at 233.68 53.34 0)
+			(uuid "a74a7881-8616-40cf-94eb-af32b23df522")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE6_B" output
+			(at 233.68 55.88 0)
+			(uuid "fc889621-8ba7-4026-aef4-69b0a01144f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE7_A" output
+			(at 233.68 58.42 0)
+			(uuid "0882949f-11fc-491c-aa8b-0e95617435eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE7_B" output
+			(at 233.68 60.96 0)
+			(uuid "4ccf636f-5b16-42f3-a5df-3e4b14eeae74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE8_A" output
+			(at 233.68 63.5 0)
+			(uuid "20a2ade5-8cb7-4330-89cb-920c25f19f51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE8_B" output
+			(at 233.68 66.04 0)
+			(uuid "1090c59d-7d50-498a-a3f6-c05e21cd93a6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE9_A" output
+			(at 233.68 68.58 0)
+			(uuid "fb505d99-c0fa-423e-b0a2-91145fd42d96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE9_B" output
+			(at 233.68 71.12 0)
+			(uuid "7084c2a5-3e92-403b-af27-a6b282850987")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE10_A" output
+			(at 233.68 73.66 0)
+			(uuid "93c91f2c-6a7b-4392-ace0-6f9a1b7bf351")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE10_B" output
+			(at 233.68 76.2 0)
+			(uuid "fc4d1d81-5840-44c9-973a-dba0cba779fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE11_A" output
+			(at 233.68 78.74 0)
+			(uuid "8e8b4b83-e4ed-4ebc-80af-5a22f4a8ce32")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE11_B" output
+			(at 233.68 81.28 0)
+			(uuid "aef8b5a0-cac2-4664-8334-dfa69517d249")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE12_A" output
+			(at 233.68 83.82 0)
+			(uuid "caf9fcd7-68bd-4ab1-825e-461d67893a00")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VALVE12_B" output
+			(at 233.68 86.36 0)
+			(uuid "e4b0056a-da25-49f8-8264-e712cce9f762")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -288,4 +468,5 @@
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )

@@ -663,6 +663,22 @@
     [
       "b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20",
       "Power"
+    ],
+    [
+      "4eaefdb2-a0a4-4c79-8702-5dad81347158",
+      "Valve Control"
+    ],
+    [
+      "bb96aef0-a293-4f2f-afab-58a941f960d6",
+      "Valve Control Bank 1"
+    ],
+    [
+      "a60ab3bd-76d7-4549-93c3-469c7eb3b757",
+      "Valve Control Bank 2"
+    ],
+    [
+      "c8a80f6b-6991-4994-9972-cf9280af84d9",
+      "Valve Control Bank 3"
     ]
   ],
   "text_variables": {},
