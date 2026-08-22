@@ -1,0 +1,150 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "e4d09336-6975-41c7-9f79-b506a9c9cd93")
+	(paper "A4")
+	(title_block
+		(title "Pump Control")
+	)
+	(lib_symbols)
+	(sheet
+		(at 25.4 25.4)
+		(size 48.26 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8810525e-14a4-4f99-ac27-94524d23e92b")
+		(property "Sheetname" "Water_Pump"
+			(at 25.4 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Water_Pump.kicad_sch"
+			(at 25.4 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 86.36 25.4)
+		(size 48.26 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "db16e425-44ca-40f9-b8f4-64b10021b74e")
+		(property "Sheetname" "Acid_Pump"
+			(at 86.36 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Acid_Pump.kicad_sch"
+			(at 86.36 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 147.32 25.4)
+		(size 48.26 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c8a1a135-8c9f-467f-bb2b-f71123dfca54")
+		(property "Sheetname" "Air_Pump"
+			(at 147.32 24.6884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Air_Pump.kicad_sch"
+			(at 147.32 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a"
+					(page "11")
+				)
+			)
+		)
+	)
+	(embedded_fonts no)
+)

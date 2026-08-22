@@ -9,7 +9,513 @@
 		(comment 1 "Three DRV8823-Q1 child banks; 12 H-bridges for 4/8/10-valve variants")
 		(comment 2 "Channels 11-12 are reserved spares in the 10-valve population")
 	)
-	(lib_symbols)
+	(lib_symbols
+		(symbol "DIC_Board:Molex_0430451200"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 1.27 7.62 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "0430451200"
+				(at 1.27 -10.16 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "DIC_Board:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.molex.com/pdm_docs/sd/430450201_sd.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Molex Micro-Fit 3.0 right-angle through-hole header, dual row, 12 circuits, 3.00 mm pitch, MPN 0430451200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "MPN" "0430451200"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Molex"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "DigiKey" "WM1818-ND"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Molex Micro-Fit 3.0 connector 2x06 12-pin right-angle"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "DIC_Board:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Molex_0430451200_1_1"
+				(rectangle
+					(start -1.27 6.35)
+					(end 3.81 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 5.207)
+					(end 2.54 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 2.667)
+					(end 2.54 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 0.127)
+					(end 2.54 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -2.413)
+					(end 2.54 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -4.953)
+					(end 2.54 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 3.81 -7.493)
+					(end 2.54 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 5.08 180)
+					(length 3.81)
+					(name "Pin_7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 2.54 180)
+					(length 3.81)
+					(name "Pin_8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name "Pin_9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -2.54 180)
+					(length 3.81)
+					(name "Pin_10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -5.08 180)
+					(length 3.81)
+					(name "Pin_11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 -7.62 180)
+					(length 3.81)
+					(name "Pin_12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(rectangle
+		(start 16.51 69.85)
+		(end 73.66 118.11)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "f2a98442-cb9a-431d-a287-d01776d8c1ba")
+	)
+	(text "INPUTS"
+		(exclude_from_sim no)
+		(at 21.336 72.898 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "2ba1363c-ae41-4e6d-9433-d77eb3b09a1b")
+	)
 	(text "VALVE CONTROL — THREE CHILD BANKS, 12 POLARITY-REVERSING CHANNELS"
 		(exclude_from_sim no)
 		(at 25.4 20.32 0)
@@ -24,7 +530,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 85.09) (xy 177.8 85.09)
+			(xy 96.52 99.06) (xy 121.92 99.06)
 		)
 		(stroke
 			(width 0)
@@ -34,7 +540,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 45.72) (xy 50.8 45.72)
+			(xy 40.64 90.17) (xy 50.8 90.17)
 		)
 		(stroke
 			(width 0)
@@ -44,7 +550,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 77.47) (xy 260.35 77.47)
+			(xy 170.18 91.44) (xy 262.89 91.44)
 		)
 		(stroke
 			(width 0)
@@ -54,7 +560,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 90.17) (xy 177.8 90.17)
+			(xy 260.35 59.69) (xy 260.35 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "09377a6a-49ba-44f3-a4a1-9a8687a9dd6c")
+	)
+	(wire
+		(pts
+			(xy 96.52 104.14) (xy 121.92 104.14)
 		)
 		(stroke
 			(width 0)
@@ -64,7 +580,27 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 27.94) (xy 260.35 27.94)
+			(xy 260.35 76.2) (xy 259.08 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1558b343-ba98-4e04-866f-72bf92e65cae")
+	)
+	(wire
+		(pts
+			(xy 265.43 81.28) (xy 259.08 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1688fd70-98c0-4915-adb3-65f2b7bd2755")
+	)
+	(wire
+		(pts
+			(xy 170.18 41.91) (xy 233.68 41.91)
 		)
 		(stroke
 			(width 0)
@@ -74,7 +610,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 87.63) (xy 177.8 87.63)
+			(xy 96.52 101.6) (xy 121.92 101.6)
 		)
 		(stroke
 			(width 0)
@@ -84,7 +620,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 49.53) (xy 50.8 49.53)
+			(xy 40.64 93.98) (xy 50.8 93.98)
 		)
 		(stroke
 			(width 0)
@@ -94,7 +630,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 43.18) (xy 260.35 43.18)
+			(xy 170.18 57.15) (xy 262.89 57.15)
 		)
 		(stroke
 			(width 0)
@@ -104,7 +640,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 53.34) (xy 50.8 53.34)
+			(xy 236.22 135.89) (xy 236.22 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25385e7f-5024-4aaa-b339-b72f35763cbd")
+	)
+	(wire
+		(pts
+			(xy 40.64 97.79) (xy 50.8 97.79)
 		)
 		(stroke
 			(width 0)
@@ -114,7 +660,37 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 50.8 60.96)
+			(xy 262.89 78.74) (xy 259.08 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ddb5ed2-dc73-4950-8569-bda6dafa3133")
+	)
+	(wire
+		(pts
+			(xy 231.14 73.66) (xy 246.38 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f0ce32e-fe20-4c69-be24-d60c3960edf5")
+	)
+	(wire
+		(pts
+			(xy 238.76 138.43) (xy 238.76 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38b21b82-8ec8-4193-8377-b98714e112e6")
+	)
+	(wire
+		(pts
+			(xy 40.64 105.41) (xy 50.8 105.41)
 		)
 		(stroke
 			(width 0)
@@ -124,7 +700,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 41.91) (xy 50.8 41.91)
+			(xy 40.64 86.36) (xy 50.8 86.36)
 		)
 		(stroke
 			(width 0)
@@ -134,7 +710,57 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 64.77) (xy 50.8 64.77)
+			(xy 233.68 41.91) (xy 233.68 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4312db9c-ed7d-4b15-925e-46eaa51e2735")
+	)
+	(wire
+		(pts
+			(xy 271.78 151.13) (xy 271.78 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4765ff38-e539-4209-b966-199c1abd4540")
+	)
+	(wire
+		(pts
+			(xy 265.43 93.98) (xy 265.43 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4b82ec97-c27a-42f3-a7ae-18cce7b0325d")
+	)
+	(wire
+		(pts
+			(xy 266.7 121.92) (xy 259.08 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d8cb6d9-1abe-4b05-86e9-3515514d5753")
+	)
+	(wire
+		(pts
+			(xy 261.62 116.84) (xy 259.08 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e310340-0edb-4e03-977f-c761e613d8c4")
+	)
+	(wire
+		(pts
+			(xy 40.64 109.22) (xy 50.8 109.22)
 		)
 		(stroke
 			(width 0)
@@ -144,7 +770,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 139.7) (xy 177.8 139.7)
+			(xy 96.52 153.67) (xy 121.92 153.67)
 		)
 		(stroke
 			(width 0)
@@ -154,7 +780,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 35.56) (xy 177.8 35.56)
+			(xy 96.52 49.53) (xy 121.92 49.53)
 		)
 		(stroke
 			(width 0)
@@ -164,7 +790,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 82.55) (xy 260.35 82.55)
+			(xy 170.18 96.52) (xy 267.97 96.52)
 		)
 		(stroke
 			(width 0)
@@ -174,7 +800,47 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 92.71) (xy 177.8 92.71)
+			(xy 241.3 101.6) (xy 241.3 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "541f84f5-fcba-4780-9b7f-41ab18249059")
+	)
+	(wire
+		(pts
+			(xy 271.78 127) (xy 259.08 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54e5595f-d007-40e0-a5b3-289176ec003b")
+	)
+	(wire
+		(pts
+			(xy 246.38 83.82) (xy 220.98 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "552c440e-7fc6-4390-a119-e1085a2f9d84")
+	)
+	(wire
+		(pts
+			(xy 243.84 99.06) (xy 243.84 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "57736fe1-fde3-49b8-968f-da0dd90cf008")
+	)
+	(wire
+		(pts
+			(xy 96.52 106.68) (xy 121.92 106.68)
 		)
 		(stroke
 			(width 0)
@@ -184,7 +850,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 85.09) (xy 260.35 85.09)
+			(xy 170.18 99.06) (xy 243.84 99.06)
 		)
 		(stroke
 			(width 0)
@@ -194,7 +860,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 137.16) (xy 260.35 137.16)
+			(xy 170.18 151.13) (xy 271.78 151.13)
 		)
 		(stroke
 			(width 0)
@@ -204,7 +870,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 80.01) (xy 260.35 80.01)
+			(xy 170.18 93.98) (xy 265.43 93.98)
 		)
 		(stroke
 			(width 0)
@@ -214,7 +880,17 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 132.08) (xy 260.35 132.08)
+			(xy 231.14 44.45) (xy 231.14 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c1e7fc2-15a1-41d3-adb8-9e15ddd74051")
+	)
+	(wire
+		(pts
+			(xy 170.18 146.05) (xy 266.7 146.05)
 		)
 		(stroke
 			(width 0)
@@ -224,7 +900,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 87.63) (xy 260.35 87.63)
+			(xy 170.18 101.6) (xy 241.3 101.6)
 		)
 		(stroke
 			(width 0)
@@ -234,7 +910,17 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 33.02) (xy 260.35 33.02)
+			(xy 246.38 78.74) (xy 226.06 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72cea14f-d4a6-45cf-82dc-2ff2121fb828")
+	)
+	(wire
+		(pts
+			(xy 170.18 46.99) (xy 228.6 46.99)
 		)
 		(stroke
 			(width 0)
@@ -244,7 +930,17 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 38.1) (xy 50.8 38.1)
+			(xy 228.6 76.2) (xy 228.6 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75aea090-c0fd-4a34-a429-0a02fdc0e24c")
+	)
+	(wire
+		(pts
+			(xy 40.64 82.55) (xy 50.8 82.55)
 		)
 		(stroke
 			(width 0)
@@ -254,7 +950,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 80.01) (xy 177.8 80.01)
+			(xy 96.52 93.98) (xy 121.92 93.98)
 		)
 		(stroke
 			(width 0)
@@ -264,7 +960,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 33.02) (xy 177.8 33.02)
+			(xy 243.84 116.84) (xy 246.38 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8642c14b-3b7e-4b5c-8763-9a19fde4232b")
+	)
+	(wire
+		(pts
+			(xy 96.52 46.99) (xy 121.92 46.99)
 		)
 		(stroke
 			(width 0)
@@ -274,7 +980,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 124.46) (xy 260.35 124.46)
+			(xy 170.18 138.43) (xy 238.76 138.43)
 		)
 		(stroke
 			(width 0)
@@ -284,7 +990,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 127) (xy 177.8 127)
+			(xy 246.38 81.28) (xy 223.52 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d66a353-02c0-4ddd-803f-fb981836f22a")
+	)
+	(wire
+		(pts
+			(xy 96.52 140.97) (xy 121.92 140.97)
 		)
 		(stroke
 			(width 0)
@@ -294,7 +1010,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 134.62) (xy 260.35 134.62)
+			(xy 170.18 148.59) (xy 269.24 148.59)
 		)
 		(stroke
 			(width 0)
@@ -304,7 +1020,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 57.15) (xy 50.8 57.15)
+			(xy 40.64 101.6) (xy 50.8 101.6)
 		)
 		(stroke
 			(width 0)
@@ -314,7 +1030,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 129.54) (xy 260.35 129.54)
+			(xy 170.18 143.51) (xy 264.16 143.51)
 		)
 		(stroke
 			(width 0)
@@ -324,7 +1040,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 134.62) (xy 177.8 134.62)
+			(xy 236.22 106.68) (xy 236.22 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99545390-4642-4445-90c3-eea0f914ec59")
+	)
+	(wire
+		(pts
+			(xy 96.52 148.59) (xy 121.92 148.59)
 		)
 		(stroke
 			(width 0)
@@ -334,7 +1060,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 137.16) (xy 177.8 137.16)
+			(xy 274.32 153.67) (xy 274.32 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bcc8463-8ddd-480e-862f-813590736a9c")
+	)
+	(wire
+		(pts
+			(xy 96.52 151.13) (xy 121.92 151.13)
 		)
 		(stroke
 			(width 0)
@@ -344,7 +1080,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 38.1) (xy 260.35 38.1)
+			(xy 170.18 52.07) (xy 223.52 52.07)
 		)
 		(stroke
 			(width 0)
@@ -354,7 +1090,17 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 45.72) (xy 260.35 45.72)
+			(xy 238.76 104.14) (xy 238.76 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a079f864-3a2d-485b-8d0d-793bb02a2e60")
+	)
+	(wire
+		(pts
+			(xy 170.18 59.69) (xy 260.35 59.69)
 		)
 		(stroke
 			(width 0)
@@ -364,7 +1110,47 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 127) (xy 260.35 127)
+			(xy 262.89 91.44) (xy 262.89 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a249095d-7c3c-48d0-9954-e94c841312a4")
+	)
+	(wire
+		(pts
+			(xy 264.16 119.38) (xy 259.08 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7895f92-ae46-47cb-876a-195ef137b6d1")
+	)
+	(wire
+		(pts
+			(xy 261.62 140.97) (xy 261.62 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a79d22d5-9f36-46d1-a221-06a2b02678b5")
+	)
+	(wire
+		(pts
+			(xy 226.06 78.74) (xy 226.06 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7d68744-0a53-4fda-a5ab-374fcdc827a5")
+	)
+	(wire
+		(pts
+			(xy 170.18 140.97) (xy 261.62 140.97)
 		)
 		(stroke
 			(width 0)
@@ -374,7 +1160,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 30.48) (xy 260.35 30.48)
+			(xy 170.18 44.45) (xy 231.14 44.45)
 		)
 		(stroke
 			(width 0)
@@ -384,7 +1170,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 82.55) (xy 177.8 82.55)
+			(xy 238.76 121.92) (xy 246.38 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7301c31-dc0a-42a4-877a-8d7cfd4a1c7f")
+	)
+	(wire
+		(pts
+			(xy 96.52 96.52) (xy 121.92 96.52)
 		)
 		(stroke
 			(width 0)
@@ -394,7 +1190,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 92.71) (xy 260.35 92.71)
+			(xy 170.18 106.68) (xy 236.22 106.68)
 		)
 		(stroke
 			(width 0)
@@ -404,7 +1200,27 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 121.92) (xy 260.35 121.92)
+			(xy 260.35 88.9) (xy 260.35 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9cda138-d9c8-4ae2-8413-8b90a12bd593")
+	)
+	(wire
+		(pts
+			(xy 269.24 148.59) (xy 269.24 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be65b1b9-b929-47b0-83f1-5f83011b7481")
+	)
+	(wire
+		(pts
+			(xy 170.18 135.89) (xy 236.22 135.89)
 		)
 		(stroke
 			(width 0)
@@ -414,7 +1230,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 139.7) (xy 260.35 139.7)
+			(xy 170.18 153.67) (xy 274.32 153.67)
 		)
 		(stroke
 			(width 0)
@@ -424,7 +1240,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 45.72) (xy 177.8 45.72)
+			(xy 96.52 59.69) (xy 121.92 59.69)
 		)
 		(stroke
 			(width 0)
@@ -434,7 +1250,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 40.64) (xy 260.35 40.64)
+			(xy 170.18 54.61) (xy 220.98 54.61)
 		)
 		(stroke
 			(width 0)
@@ -444,7 +1260,27 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 35.56) (xy 260.35 35.56)
+			(xy 241.3 119.38) (xy 246.38 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7a80590-979d-4303-973b-996451298601")
+	)
+	(wire
+		(pts
+			(xy 220.98 83.82) (xy 220.98 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c89da16f-6c4f-48d9-9b81-81e54dc326e0")
+	)
+	(wire
+		(pts
+			(xy 170.18 49.53) (xy 226.06 49.53)
 		)
 		(stroke
 			(width 0)
@@ -454,7 +1290,47 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 129.54) (xy 177.8 129.54)
+			(xy 260.35 73.66) (xy 259.08 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce52dc42-22c5-415f-9aa1-5c133888dd97")
+	)
+	(wire
+		(pts
+			(xy 267.97 96.52) (xy 267.97 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce6ebdc7-930b-4302-a860-66f9487888ba")
+	)
+	(wire
+		(pts
+			(xy 223.52 81.28) (xy 223.52 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1b6df7d-7bc4-4393-a302-2c0532a87263")
+	)
+	(wire
+		(pts
+			(xy 262.89 71.12) (xy 259.08 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6b8fd55-31ce-4f06-bc6a-34676d1ce2eb")
+	)
+	(wire
+		(pts
+			(xy 96.52 143.51) (xy 121.92 143.51)
 		)
 		(stroke
 			(width 0)
@@ -464,7 +1340,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 74.93) (xy 260.35 74.93)
+			(xy 170.18 88.9) (xy 260.35 88.9)
 		)
 		(stroke
 			(width 0)
@@ -474,7 +1350,27 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 38.1) (xy 177.8 38.1)
+			(xy 266.7 146.05) (xy 266.7 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e10e9e29-8587-4c4e-937d-bf7c2733453b")
+	)
+	(wire
+		(pts
+			(xy 262.89 57.15) (xy 262.89 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3c6f9f0-0c25-4070-86b9-9f94577cee12")
+	)
+	(wire
+		(pts
+			(xy 96.52 52.07) (xy 121.92 52.07)
 		)
 		(stroke
 			(width 0)
@@ -484,7 +1380,17 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 90.17) (xy 260.35 90.17)
+			(xy 236.22 127) (xy 246.38 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edc4387f-96a9-49b2-9454-5af5570c7d63")
+	)
+	(wire
+		(pts
+			(xy 170.18 104.14) (xy 238.76 104.14)
 		)
 		(stroke
 			(width 0)
@@ -494,7 +1400,47 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 132.08) (xy 177.8 132.08)
+			(xy 264.16 143.51) (xy 264.16 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee50a0e4-7fdf-40e0-9e8f-e2dd3fbd3f80")
+	)
+	(wire
+		(pts
+			(xy 236.22 124.46) (xy 246.38 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0bdc5c4-604d-4c4b-9bc1-cc9833147f60")
+	)
+	(wire
+		(pts
+			(xy 267.97 83.82) (xy 259.08 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f11c6331-7661-471a-b793-16ac5935e572")
+	)
+	(wire
+		(pts
+			(xy 238.76 129.54) (xy 246.38 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2c58ffd-7ad6-4758-8c6d-6d849fd15169")
+	)
+	(wire
+		(pts
+			(xy 96.52 146.05) (xy 121.92 146.05)
 		)
 		(stroke
 			(width 0)
@@ -504,7 +1450,17 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 43.18) (xy 177.8 43.18)
+			(xy 233.68 71.12) (xy 246.38 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f805bccd-62e2-43a0-9fff-04151cae1c64")
+	)
+	(wire
+		(pts
+			(xy 96.52 57.15) (xy 121.92 57.15)
 		)
 		(stroke
 			(width 0)
@@ -514,7 +1470,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 40.64) (xy 177.8 40.64)
+			(xy 96.52 54.61) (xy 121.92 54.61)
 		)
 		(stroke
 			(width 0)
@@ -522,8 +1478,38 @@
 		)
 		(uuid "f91011cc-578b-4e61-ac7f-063bd2da057d")
 	)
+	(wire
+		(pts
+			(xy 274.32 129.54) (xy 259.08 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f921e00b-e4b3-4910-82d0-ac282dc4aefc")
+	)
+	(wire
+		(pts
+			(xy 269.24 124.46) (xy 259.08 124.46)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbc1de57-bef6-4154-a16f-5e8031e51967")
+	)
+	(wire
+		(pts
+			(xy 246.38 76.2) (xy 228.6 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd913f6e-f79c-4509-9e2a-f1c24e3a27e8")
+	)
 	(label "VALVE_SDATA"
-		(at 50.8 38.1 0)
+		(at 50.8 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -533,7 +1519,7 @@
 		(uuid "1ed1a69d-b68b-4da1-966d-2688ed1f50a5")
 	)
 	(label "VALVE_RESET_N"
-		(at 152.4 137.16 180)
+		(at 96.52 151.13 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -543,7 +1529,7 @@
 		(uuid "1fcd1e9e-7680-459a-8d48-fdde1f4f56ab")
 	)
 	(label "VALVE_SDATA"
-		(at 152.4 80.01 180)
+		(at 96.52 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -553,7 +1539,7 @@
 		(uuid "2b304350-6107-4fb0-bbc1-b2c790d34ae3")
 	)
 	(label "VALVE_SDATA"
-		(at 152.4 33.02 180)
+		(at 96.52 46.99 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -563,7 +1549,7 @@
 		(uuid "303d8592-a8bd-456f-bf7e-6bd12642fd8d")
 	)
 	(label "VALVE_CS1"
-		(at 50.8 45.72 0)
+		(at 50.8 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -573,7 +1559,7 @@
 		(uuid "3141d744-36af-4a6a-a043-6cc722423380")
 	)
 	(label "VALVE_SCLK"
-		(at 152.4 129.54 180)
+		(at 96.52 143.51 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -583,7 +1569,7 @@
 		(uuid "355cf9f5-9237-4f18-be3d-fe733a2df4d3")
 	)
 	(label "VALVE_RESET_N"
-		(at 152.4 90.17 180)
+		(at 96.52 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -593,7 +1579,7 @@
 		(uuid "3fb8edd9-f1db-4e6d-9a28-de74146ed9a8")
 	)
 	(label "VALVE_SCLK"
-		(at 50.8 41.91 0)
+		(at 50.8 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -603,7 +1589,7 @@
 		(uuid "550f1bea-1ad8-4f5c-906f-6379b7b73b6f")
 	)
 	(label "VALVE_CS1"
-		(at 152.4 38.1 180)
+		(at 96.52 52.07 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -613,7 +1599,7 @@
 		(uuid "55f82b23-9a51-4f41-9fc7-345d00b10efa")
 	)
 	(label "VALVE_CS3"
-		(at 50.8 53.34 0)
+		(at 50.8 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -623,7 +1609,7 @@
 		(uuid "638c9f38-cbba-4308-8a56-8a809663e9be")
 	)
 	(label "VALVE_RESET_N"
-		(at 152.4 43.18 180)
+		(at 96.52 57.15 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -633,7 +1619,7 @@
 		(uuid "8b559eb7-336b-403e-8cd9-53a473171a27")
 	)
 	(label "VALVE_SCLK"
-		(at 152.4 35.56 180)
+		(at 96.52 49.53 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -643,7 +1629,7 @@
 		(uuid "8bb1b457-d600-44f1-9b5f-40ff670a6684")
 	)
 	(label "VALVE_LATCH"
-		(at 152.4 87.63 180)
+		(at 96.52 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -653,7 +1639,7 @@
 		(uuid "8eca17fa-77ff-4919-9a57-28fd56c447eb")
 	)
 	(label "VALVE_SLEEP_N"
-		(at 50.8 64.77 0)
+		(at 50.8 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -663,7 +1649,7 @@
 		(uuid "9525d928-d5f6-496d-a53b-d1b5716d8827")
 	)
 	(label "VALVE_LATCH"
-		(at 50.8 57.15 0)
+		(at 50.8 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -673,7 +1659,7 @@
 		(uuid "9e738782-e5e7-41a8-bb10-d1358a779a75")
 	)
 	(label "VALVE_CS2"
-		(at 152.4 85.09 180)
+		(at 96.52 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -683,7 +1669,7 @@
 		(uuid "a2284c62-8ea4-4453-b02c-2d971b6945a1")
 	)
 	(label "VALVE_SLEEP_N"
-		(at 152.4 139.7 180)
+		(at 96.52 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -693,7 +1679,7 @@
 		(uuid "a4894bb5-5e7f-474b-94fd-25320ea0c69a")
 	)
 	(label "VALVE_SLEEP_N"
-		(at 152.4 45.72 180)
+		(at 96.52 59.69 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -703,7 +1689,7 @@
 		(uuid "a74d45c7-e0a1-4af8-ad58-a6c98ab2bfe6")
 	)
 	(label "VALVE_RESET_N"
-		(at 50.8 60.96 0)
+		(at 50.8 105.41 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -713,7 +1699,7 @@
 		(uuid "b92ace5b-9861-4051-802d-7b2e3ff49918")
 	)
 	(label "VALVE_LATCH"
-		(at 152.4 40.64 180)
+		(at 96.52 54.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -723,7 +1709,7 @@
 		(uuid "c2021013-8aaa-40f1-9814-e84784005412")
 	)
 	(label "VALVE_LATCH"
-		(at 152.4 134.62 180)
+		(at 96.52 148.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -733,7 +1719,7 @@
 		(uuid "ca7fe02a-9ced-42ba-bdad-321087c458dc")
 	)
 	(label "VALVE_CS3"
-		(at 152.4 132.08 180)
+		(at 96.52 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -743,7 +1729,7 @@
 		(uuid "d217b4fb-6042-42b8-9b4f-09b2f27c4272")
 	)
 	(label "VALVE_SDATA"
-		(at 152.4 127 180)
+		(at 96.52 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -753,7 +1739,7 @@
 		(uuid "daf63002-7dff-4c79-a4cc-d88b8ee2d07d")
 	)
 	(label "VALVE_CS2"
-		(at 50.8 49.53 0)
+		(at 50.8 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -763,7 +1749,7 @@
 		(uuid "db239809-a8db-42ea-a4bb-a3a22cb58c90")
 	)
 	(label "VALVE_SLEEP_N"
-		(at 152.4 92.71 180)
+		(at 96.52 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -773,7 +1759,7 @@
 		(uuid "f027835b-4b25-4ebe-bd4a-5ddb820fc1e1")
 	)
 	(label "VALVE_SCLK"
-		(at 152.4 82.55 180)
+		(at 96.52 96.52 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -782,20 +1768,9 @@
 		)
 		(uuid "fbffe002-32a3-46eb-a317-371dfe1d13c8")
 	)
-	(hierarchical_label "VALVE2_B"
-		(shape output)
-		(at 260.35 35.56 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "0248606e-d65f-4a97-a250-e32fd17832a0")
-	)
 	(hierarchical_label "VALVE_SCLK"
 		(shape input)
-		(at 40.64 41.91 180)
+		(at 40.64 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -806,7 +1781,7 @@
 	)
 	(hierarchical_label "VALVE_RESET_N"
 		(shape input)
-		(at 40.64 60.96 180)
+		(at 40.64 105.41 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -817,7 +1792,7 @@
 	)
 	(hierarchical_label "VALVE_SLEEP_N"
 		(shape input)
-		(at 40.64 64.77 180)
+		(at 40.64 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -826,86 +1801,9 @@
 		)
 		(uuid "09a033ab-0748-4633-8c4d-c1ba87fea3a2")
 	)
-	(hierarchical_label "VALVE6_B"
-		(shape output)
-		(at 260.35 82.55 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1f366f4a-8c18-44a4-b25b-014d2365ef14")
-	)
-	(hierarchical_label "VALVE7_B"
-		(shape output)
-		(at 260.35 87.63 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "22e0df68-bb12-4559-9509-f22504fcbb12")
-	)
-	(hierarchical_label "VALVE3_B"
-		(shape output)
-		(at 260.35 40.64 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "249d7da4-447e-4096-b9d9-54e71b6705f5")
-	)
-	(hierarchical_label "VALVE2_A"
-		(shape output)
-		(at 260.35 33.02 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "2c78cf0a-dc24-4e35-a06f-a725fd08022c")
-	)
-	(hierarchical_label "VALVE5_A"
-		(shape output)
-		(at 260.35 74.93 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "34c32f54-ea3b-4e72-baf3-38a1c44cd83a")
-	)
-	(hierarchical_label "VALVE11_B"
-		(shape output)
-		(at 260.35 134.62 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "3f0dd18b-ec53-420b-9e6c-2eab19b9c28e")
-	)
-	(hierarchical_label "VALVE8_A"
-		(shape output)
-		(at 260.35 90.17 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "41a6bfad-e89d-4884-9f1e-c20d7d844a6e")
-	)
 	(hierarchical_label "VALVE_CS1"
 		(shape input)
-		(at 40.64 45.72 180)
+		(at 40.64 90.17 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -914,20 +1812,9 @@
 		)
 		(uuid "42b710c9-d47d-4e18-86eb-52b35ea036ce")
 	)
-	(hierarchical_label "VALVE4_B"
-		(shape output)
-		(at 260.35 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "51a1155a-0d6b-4679-bfd5-f0a4a712f47c")
-	)
 	(hierarchical_label "VALVE_SDATA"
 		(shape input)
-		(at 40.64 38.1 180)
+		(at 40.64 82.55 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -936,75 +1823,9 @@
 		)
 		(uuid "5aa3fb90-de3f-4245-bea7-729f94b90000")
 	)
-	(hierarchical_label "VALVE1_B"
-		(shape output)
-		(at 260.35 30.48 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "6260773d-763b-4c2a-ada6-4f0c89788e8a")
-	)
-	(hierarchical_label "VALVE9_B"
-		(shape output)
-		(at 260.35 124.46 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "67085c09-dc2f-4dd7-a5e6-5d314feb3672")
-	)
-	(hierarchical_label "VALVE12_A"
-		(shape output)
-		(at 260.35 137.16 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "724d3418-d39c-4a7e-882b-f29ed2fd96c6")
-	)
-	(hierarchical_label "VALVE5_B"
-		(shape output)
-		(at 260.35 77.47 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "79bcbde3-1380-41a0-b50a-2dee1785c8d3")
-	)
-	(hierarchical_label "VALVE9_A"
-		(shape output)
-		(at 260.35 121.92 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "80f25984-603c-46d8-9bf9-de7ae93cdb3d")
-	)
-	(hierarchical_label "VALVE7_A"
-		(shape output)
-		(at 260.35 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "81395152-feac-435a-aa15-c8517e87ae91")
-	)
 	(hierarchical_label "VALVE_CS2"
 		(shape input)
-		(at 40.64 49.53 180)
+		(at 40.64 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1013,53 +1834,9 @@
 		)
 		(uuid "8cac9d1e-e2a4-4bab-91a0-e0c0da1d831b")
 	)
-	(hierarchical_label "VALVE6_A"
-		(shape output)
-		(at 260.35 80.01 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "910907fd-dd76-4b5f-bbc4-b248dfff942a")
-	)
-	(hierarchical_label "VALVE8_B"
-		(shape output)
-		(at 260.35 92.71 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "94ebf892-7a91-4920-8756-d343a24f6a23")
-	)
-	(hierarchical_label "VALVE1_A"
-		(shape output)
-		(at 260.35 27.94 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a5a1f393-f2b0-476c-8998-1758de9289ae")
-	)
-	(hierarchical_label "VALVE10_A"
-		(shape output)
-		(at 260.35 127 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "b63f9d2c-0fcd-4ab0-8dfb-cffb21ccbd28")
-	)
 	(hierarchical_label "VALVE_CS3"
 		(shape input)
-		(at 40.64 53.34 180)
+		(at 40.64 97.79 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1068,20 +1845,9 @@
 		)
 		(uuid "b7a717fd-c74a-41c8-9f58-93d33898309a")
 	)
-	(hierarchical_label "VALVE3_A"
-		(shape output)
-		(at 260.35 38.1 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "ca510561-57de-40ff-b59c-8e5a9be1e33d")
-	)
 	(hierarchical_label "VALVE_LATCH"
 		(shape input)
-		(at 40.64 57.15 180)
+		(at 40.64 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1090,52 +1856,294 @@
 		)
 		(uuid "d9b4fabf-23d4-4597-b740-996f44b80b83")
 	)
-	(hierarchical_label "VALVE10_B"
-		(shape output)
-		(at 260.35 129.54 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+	(symbol
+		(lib_id "DIC_Board:Molex_0430451200")
+		(at 251.46 76.2 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "547c251b-d863-4f08-932c-e3572ecfa016")
+		(property "Reference" "J3"
+			(at 252.73 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify left)
 		)
-		(uuid "e6b25a28-63de-4f01-81fc-7b07ea40e7e2")
+		(property "Value" "0430451200"
+			(at 252.73 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "DIC_Board:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal"
+			(at 251.46 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/430450201_sd.pdf"
+			(at 251.46 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Molex Micro-Fit 3.0 right-angle through-hole header, dual row, 12 circuits, 3.00 mm pitch, MPN 0430451200"
+			(at 251.46 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0430451200"
+			(at 251.46 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 251.46 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "WM1818-ND"
+			(at 251.46 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "7"
+			(uuid "9960e65d-f447-4cf9-bbf8-4626df0ecfbb")
+		)
+		(pin "10"
+			(uuid "4feeb03b-4f76-424d-9ae3-baf9fbc3a580")
+		)
+		(pin "12"
+			(uuid "d1d78b5f-d6c8-48aa-92d1-a1a8457fd8cb")
+		)
+		(pin "11"
+			(uuid "28c0a8b4-e496-4d8f-8507-9a4aa059ce65")
+		)
+		(pin "3"
+			(uuid "1d351235-c42c-441c-a528-df6f6a248c3b")
+		)
+		(pin "5"
+			(uuid "94ae8c4b-1be2-48a0-9c3a-354c2365b2e0")
+		)
+		(pin "1"
+			(uuid "fbb4420d-d358-4603-929f-acfc9787e3d6")
+		)
+		(pin "2"
+			(uuid "7b12e23a-b213-410b-b242-04d075e2b2ad")
+		)
+		(pin "4"
+			(uuid "e81c9182-b710-4c4c-b905-12f9308ba604")
+		)
+		(pin "6"
+			(uuid "f79e351b-378c-4a32-a6aa-dc5bd1fe8549")
+		)
+		(pin "9"
+			(uuid "0db41e7a-4a28-4dbf-b8f0-ad1b721391e8")
+		)
+		(pin "8"
+			(uuid "0202f033-8dec-4690-896e-cb08074f3367")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/4eaefdb2-a0a4-4c79-8702-5dad81347158"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
 	)
-	(hierarchical_label "VALVE4_A"
-		(shape output)
-		(at 260.35 43.18 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+	(symbol
+		(lib_id "DIC_Board:Molex_0430451200")
+		(at 251.46 121.92 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9368b3bd-a3d0-4790-addc-8c3952ad3465")
+		(property "Reference" "J4"
+			(at 252.73 110.49 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify left)
 		)
-		(uuid "ec31a4ed-e071-4875-b7d3-5dc1692b9bbc")
-	)
-	(hierarchical_label "VALVE11_A"
-		(shape output)
-		(at 260.35 132.08 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(property "Value" "0430451200"
+			(at 252.73 113.03 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify left)
 		)
-		(uuid "f3b541c0-c131-43c9-9229-94b7bd89781f")
-	)
-	(hierarchical_label "VALVE12_B"
-		(shape output)
-		(at 260.35 139.7 0)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(property "Footprint" "DIC_Board:Molex_Micro-Fit_3.0_43045-1200_2x06_P3.00mm_Horizontal"
+			(at 251.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
-			(justify left)
 		)
-		(uuid "fb4b3a5d-a8f6-41cf-8e3b-9778f4deeb21")
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/430450201_sd.pdf"
+			(at 251.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Molex Micro-Fit 3.0 right-angle through-hole header, dual row, 12 circuits, 3.00 mm pitch, MPN 0430451200"
+			(at 251.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0430451200"
+			(at 251.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 251.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" "WM1818-ND"
+			(at 251.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c0fa909-e394-43cc-beda-f1f831c20653")
+		)
+		(pin "4"
+			(uuid "533cc111-f292-4ab0-bbdb-fb1ed40dee88")
+		)
+		(pin "6"
+			(uuid "64092dd8-9ff6-4bf6-b487-b71233acc7a4")
+		)
+		(pin "10"
+			(uuid "d42d0c67-85a2-42ff-915d-b4b8082ef674")
+		)
+		(pin "8"
+			(uuid "eef34b99-0a7e-4b44-961d-316fa5f5a7d6")
+		)
+		(pin "5"
+			(uuid "e3281b35-459a-4dd7-a6e1-b66914b27374")
+		)
+		(pin "7"
+			(uuid "ef894aa2-df8a-4f02-a8c6-8a57e9af2d1b")
+		)
+		(pin "9"
+			(uuid "a7461ace-6f36-4de3-9c4d-7658f0497ac4")
+		)
+		(pin "11"
+			(uuid "d6b150b3-5db0-4175-91ac-8bf979973c0d")
+		)
+		(pin "12"
+			(uuid "c785d107-f774-4164-bc3c-b46171d8b3c4")
+		)
+		(pin "2"
+			(uuid "e3bf1b7b-a74f-4eab-91b5-46a92edcc9b0")
+		)
+		(pin "3"
+			(uuid "d9e95f8a-196f-4011-adc3-b33988a025f7")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/4eaefdb2-a0a4-4c79-8702-5dad81347158"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(sheet
-		(at 177.8 67.31)
+		(at 121.92 81.28)
 		(size 48.26 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1151,7 +2159,7 @@
 		)
 		(uuid "a60ab3bd-76d7-4549-93c3-469c7eb3b757")
 		(property "Sheetname" "Valve Control Bank 2"
-			(at 177.8 66.598 0)
+			(at 121.92 80.568 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1162,7 +2170,7 @@
 			)
 		)
 		(property "Sheetfile" "Valve_Control_Bank2.kicad_sch"
-			(at 177.8 103.5816 0)
+			(at 121.92 117.5516 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1173,143 +2181,143 @@
 			)
 		)
 		(pin "VALVE_SDATA" input
-			(at 177.8 80.01 180)
+			(at 121.92 93.98 180)
 			(uuid "4b77a5a9-641a-4415-bf93-4c9c8b369637")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SCLK" input
-			(at 177.8 82.55 180)
+			(at 121.92 96.52 180)
 			(uuid "67ed13d4-f13e-4ff0-98af-7260a86ba5ec")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_CS2" input
-			(at 177.8 85.09 180)
+			(at 121.92 99.06 180)
 			(uuid "3c227833-374e-40cb-af72-675e34296ee7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_LATCH" input
-			(at 177.8 87.63 180)
+			(at 121.92 101.6 180)
 			(uuid "f868e767-a4d1-4303-a582-df2b3653a673")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_RESET_N" input
-			(at 177.8 90.17 180)
+			(at 121.92 104.14 180)
 			(uuid "2586f0cc-c402-455c-bb93-a8f064f57bdd")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SLEEP_N" input
-			(at 177.8 92.71 180)
+			(at 121.92 106.68 180)
 			(uuid "e296d353-e723-4254-bb9c-85f9e6f8165e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE5_A" output
-			(at 226.06 74.93 0)
+			(at 170.18 88.9 0)
 			(uuid "290d560e-08aa-4601-a5e0-32ee4b96ef7e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE5_B" output
-			(at 226.06 77.47 0)
+			(at 170.18 91.44 0)
 			(uuid "eaeb3f45-5be2-4135-a13f-beb8a7d39724")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE6_A" output
-			(at 226.06 80.01 0)
+			(at 170.18 93.98 0)
 			(uuid "c51eaba7-3581-435f-8548-6dea12c3856d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE6_B" output
-			(at 226.06 82.55 0)
+			(at 170.18 96.52 0)
 			(uuid "932a82ef-7af8-44e7-89da-0216866b2880")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE7_A" output
-			(at 226.06 85.09 0)
+			(at 170.18 99.06 0)
 			(uuid "97526c85-26e9-4382-91ed-68bbf9d88fd1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE7_B" output
-			(at 226.06 87.63 0)
+			(at 170.18 101.6 0)
 			(uuid "c98e97fd-d915-47a5-925d-d0e54f610d5b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE8_A" output
-			(at 226.06 90.17 0)
+			(at 170.18 104.14 0)
 			(uuid "420a21b2-e0a7-43dc-8ebc-61a36581f360")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE8_B" output
-			(at 226.06 92.71 0)
+			(at 170.18 106.68 0)
 			(uuid "a3d8e065-4b82-402e-9f0a-aa15c86b214d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
@@ -1321,7 +2329,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 20.32)
+		(at 121.92 34.29)
 		(size 48.26 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1337,7 +2345,7 @@
 		)
 		(uuid "bb96aef0-a293-4f2f-afab-58a941f960d6")
 		(property "Sheetname" "Valve Control Bank 1"
-			(at 177.8 19.6084 0)
+			(at 121.92 33.5784 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1348,7 +2356,7 @@
 			)
 		)
 		(property "Sheetfile" "Valve_Control_Bank1.kicad_sch"
-			(at 177.8 56.5916 0)
+			(at 121.92 70.5616 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1359,143 +2367,143 @@
 			)
 		)
 		(pin "VALVE_SDATA" input
-			(at 177.8 33.02 180)
+			(at 121.92 46.99 180)
 			(uuid "2df147a2-34d3-4684-a8cb-cbed95376e1e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SCLK" input
-			(at 177.8 35.56 180)
+			(at 121.92 49.53 180)
 			(uuid "1e7e524b-32cd-4dc8-aead-1ab92c1ed4a2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_CS1" input
-			(at 177.8 38.1 180)
+			(at 121.92 52.07 180)
 			(uuid "d9b0104f-4ac2-4df5-86c1-ad8797a94c61")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_LATCH" input
-			(at 177.8 40.64 180)
+			(at 121.92 54.61 180)
 			(uuid "779864a7-fdf9-47bd-92db-3412e72b9e28")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_RESET_N" input
-			(at 177.8 43.18 180)
+			(at 121.92 57.15 180)
 			(uuid "3243b68c-eaaa-4acf-87bd-47f21b56d952")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SLEEP_N" input
-			(at 177.8 45.72 180)
+			(at 121.92 59.69 180)
 			(uuid "3e88ccb5-d19d-4e93-8cdb-4f36448e17d6")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE1_A" output
-			(at 226.06 27.94 0)
+			(at 170.18 41.91 0)
 			(uuid "80cfbd4d-5efb-479b-bd95-b1817831eaf8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE1_B" output
-			(at 226.06 30.48 0)
+			(at 170.18 44.45 0)
 			(uuid "a8505650-7cd3-4402-ad89-143591921765")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE2_A" output
-			(at 226.06 33.02 0)
+			(at 170.18 46.99 0)
 			(uuid "fbe33be6-8cda-42b1-a403-c024d61a3279")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE2_B" output
-			(at 226.06 35.56 0)
+			(at 170.18 49.53 0)
 			(uuid "06f86e2f-7331-4932-93b3-ac8b69c2123d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE3_A" output
-			(at 226.06 38.1 0)
+			(at 170.18 52.07 0)
 			(uuid "ce66483f-64eb-472b-b82c-a211688498bc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE3_B" output
-			(at 226.06 40.64 0)
+			(at 170.18 54.61 0)
 			(uuid "d4c3a728-a5da-421a-81ac-bdb547354b97")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE4_A" output
-			(at 226.06 43.18 0)
+			(at 170.18 57.15 0)
 			(uuid "6639c989-e4bc-4b72-80a8-194238bb54b3")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE4_B" output
-			(at 226.06 45.72 0)
+			(at 170.18 59.69 0)
 			(uuid "9b1146e1-c45c-4d6c-b6d5-24e3518e21f8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
@@ -1507,7 +2515,7 @@
 		)
 	)
 	(sheet
-		(at 177.8 114.3)
+		(at 121.92 128.27)
 		(size 48.26 35.56)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1523,7 +2531,7 @@
 		)
 		(uuid "c8a80f6b-6991-4994-9972-cf9280af84d9")
 		(property "Sheetname" "Valve Control Bank 3"
-			(at 177.8 113.588 0)
+			(at 121.92 127.558 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1534,7 +2542,7 @@
 			)
 		)
 		(property "Sheetfile" "Valve_Control_Bank3.kicad_sch"
-			(at 177.8 150.5716 0)
+			(at 121.92 164.5416 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1545,143 +2553,143 @@
 			)
 		)
 		(pin "VALVE_SDATA" input
-			(at 177.8 127 180)
+			(at 121.92 140.97 180)
 			(uuid "ef27f140-02f3-4bcf-a0cf-28fc10055b84")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SCLK" input
-			(at 177.8 129.54 180)
+			(at 121.92 143.51 180)
 			(uuid "2e213c4e-84e8-493f-9461-984e32b260d7")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_CS3" input
-			(at 177.8 132.08 180)
+			(at 121.92 146.05 180)
 			(uuid "6d05c4a9-1343-40c2-8a65-5e5c4fbc40e2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_LATCH" input
-			(at 177.8 134.62 180)
+			(at 121.92 148.59 180)
 			(uuid "acc7b92c-86b6-4bb4-9951-90be31dbcaa5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_RESET_N" input
-			(at 177.8 137.16 180)
+			(at 121.92 151.13 180)
 			(uuid "29b1759d-9653-4d37-a770-162a1649b794")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SLEEP_N" input
-			(at 177.8 139.7 180)
+			(at 121.92 153.67 180)
 			(uuid "cd9f8b5b-ca78-4f40-b8a5-4cebf62cb1b1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE9_A" output
-			(at 226.06 121.92 0)
+			(at 170.18 135.89 0)
 			(uuid "a96c0855-afae-4ee0-8a3b-c8e658162e97")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE9_B" output
-			(at 226.06 124.46 0)
+			(at 170.18 138.43 0)
 			(uuid "3ca7edb7-1a83-436e-8595-20d632971acb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE10_A" output
-			(at 226.06 127 0)
+			(at 170.18 140.97 0)
 			(uuid "b37bb560-41ee-4bb4-9cb4-33ceb77bc835")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE10_B" output
-			(at 226.06 129.54 0)
+			(at 170.18 143.51 0)
 			(uuid "2bc07740-56a6-4c5c-885d-12fc64bf2fd5")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE11_A" output
-			(at 226.06 132.08 0)
+			(at 170.18 146.05 0)
 			(uuid "ca61a64f-da58-43a6-98a1-ce0bbd3cc977")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE11_B" output
-			(at 226.06 134.62 0)
+			(at 170.18 148.59 0)
 			(uuid "8e48c344-9001-40b9-a3f8-ecab29db7f49")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE12_A" output
-			(at 226.06 137.16 0)
+			(at 170.18 151.13 0)
 			(uuid "219bd61f-7b52-47d1-a34d-d842d9b1373e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(pin "VALVE12_B" output
-			(at 226.06 139.7 0)
+			(at 170.18 153.67 0)
 			(uuid "d97186c0-daf7-43a1-87ef-4e7707f6662b")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances

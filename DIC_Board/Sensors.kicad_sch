@@ -1,0 +1,12 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "f45defaa-e499-446a-bbfd-37cb694f98ed")
+	(paper "A4")
+	(title_block
+		(title "Sensors")
+	)
+	(lib_symbols)
+	(embedded_fonts no)
+)

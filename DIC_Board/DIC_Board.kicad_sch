@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 157.48 20.32)
-		(size 76.2 76.2)
+		(at 200.66 35.56)
+		(size 24.13 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "4eaefdb2-a0a4-4c79-8702-5dad81347158")
 		(property "Sheetname" "Valve Control"
-			(at 157.48 19.6084 0)
+			(at 200.66 34.8484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "Valve_Control.kicad_sch"
-			(at 157.48 97.2316 0)
+			(at 200.66 66.6246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -44,318 +44,78 @@
 			)
 		)
 		(pin "VALVE_SDATA" input
-			(at 157.48 27.94 180)
+			(at 200.66 43.18 180)
 			(uuid "e90658d4-f5e2-4761-93bf-e7bc05f9c3d9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SCLK" input
-			(at 157.48 30.48 180)
+			(at 200.66 45.72 180)
 			(uuid "05807a2f-4378-41d4-9fa8-e93fcb831170")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_CS1" input
-			(at 157.48 33.02 180)
+			(at 200.66 48.26 180)
 			(uuid "6acf41e2-8ae7-4552-b10f-a0bb504a873e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_CS2" input
-			(at 157.48 35.56 180)
+			(at 200.66 50.8 180)
 			(uuid "59760b2a-47c6-46a0-9294-cf78d49e89f1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_CS3" input
-			(at 157.48 38.1 180)
+			(at 200.66 53.34 180)
 			(uuid "161db633-6ac2-4e86-b93d-47511c58333e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_LATCH" input
-			(at 157.48 40.64 180)
+			(at 200.66 55.88 180)
 			(uuid "9a405b74-973b-4011-a3f2-5dc5bd56c279")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_RESET_N" input
-			(at 157.48 43.18 180)
+			(at 200.66 58.42 180)
 			(uuid "cf7cad8c-c6fb-47b8-9149-33653a5b6a5f")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(pin "VALVE_SLEEP_N" input
-			(at 157.48 45.72 180)
+			(at 200.66 60.96 180)
 			(uuid "d7460144-522c-4873-92eb-4cd38746dbd8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "VALVE1_A" output
-			(at 233.68 27.94 0)
-			(uuid "21cbfa6a-1fa5-4007-a222-f65f2cf4cf9f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE1_B" output
-			(at 233.68 30.48 0)
-			(uuid "170c62cb-d033-40be-8bd5-276fa1fd8519")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE2_A" output
-			(at 233.68 33.02 0)
-			(uuid "df9a2e92-d0db-4d57-8fd9-c24a55bc644d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE2_B" output
-			(at 233.68 35.56 0)
-			(uuid "38ac2003-ff24-4c06-ae42-148e712b39cd")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE3_A" output
-			(at 233.68 38.1 0)
-			(uuid "787f62ef-fb1b-4574-bca4-2f077e0ba282")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE3_B" output
-			(at 233.68 40.64 0)
-			(uuid "1637e962-3d20-4437-b423-84ed41b7a0f0")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE4_A" output
-			(at 233.68 43.18 0)
-			(uuid "41fc6251-07ae-478c-a15b-cb9c4598c633")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE4_B" output
-			(at 233.68 45.72 0)
-			(uuid "7297185a-fe6d-4051-8b33-49309e718b4a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE5_A" output
-			(at 233.68 48.26 0)
-			(uuid "a7e974be-81ed-49de-ba3c-8426f63f5410")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE5_B" output
-			(at 233.68 50.8 0)
-			(uuid "03f6ece3-e249-4e65-9a85-20849f82167d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE6_A" output
-			(at 233.68 53.34 0)
-			(uuid "a74a7881-8616-40cf-94eb-af32b23df522")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE6_B" output
-			(at 233.68 55.88 0)
-			(uuid "fc889621-8ba7-4026-aef4-69b0a01144f1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE7_A" output
-			(at 233.68 58.42 0)
-			(uuid "0882949f-11fc-491c-aa8b-0e95617435eb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE7_B" output
-			(at 233.68 60.96 0)
-			(uuid "4ccf636f-5b16-42f3-a5df-3e4b14eeae74")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE8_A" output
-			(at 233.68 63.5 0)
-			(uuid "20a2ade5-8cb7-4330-89cb-920c25f19f51")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE8_B" output
-			(at 233.68 66.04 0)
-			(uuid "1090c59d-7d50-498a-a3f6-c05e21cd93a6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE9_A" output
-			(at 233.68 68.58 0)
-			(uuid "fb505d99-c0fa-423e-b0a2-91145fd42d96")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE9_B" output
-			(at 233.68 71.12 0)
-			(uuid "7084c2a5-3e92-403b-af27-a6b282850987")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE10_A" output
-			(at 233.68 73.66 0)
-			(uuid "93c91f2c-6a7b-4392-ace0-6f9a1b7bf351")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE10_B" output
-			(at 233.68 76.2 0)
-			(uuid "fc4d1d81-5840-44c9-973a-dba0cba779fc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE11_A" output
-			(at 233.68 78.74 0)
-			(uuid "8e8b4b83-e4ed-4ebc-80af-5a22f4a8ce32")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE11_B" output
-			(at 233.68 81.28 0)
-			(uuid "aef8b5a0-cac2-4664-8334-dfa69517d249")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE12_A" output
-			(at 233.68 83.82 0)
-			(uuid "caf9fcd7-68bd-4ab1-825e-461d67893a00")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "VALVE12_B" output
-			(at 233.68 86.36 0)
-			(uuid "e4b0056a-da25-49f8-8264-e712cce9f762")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -372,7 +132,7 @@
 		)
 	)
 	(sheet
-		(at 91.44 26.67)
+		(at 25.4 26.67)
 		(size 48.26 44.45)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -388,7 +148,7 @@
 		)
 		(uuid "b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20")
 		(property "Sheetname" "Power"
-			(at 91.44 25.9584 0)
+			(at 25.4 25.9584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -399,7 +159,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 91.44 71.7046 0)
+			(at 25.4 71.7046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -418,8 +178,8 @@
 		)
 	)
 	(sheet
-		(at 35.56 26.67)
-		(size 48.26 44.45)
+		(at 101.6 25.4)
+		(size 48.26 105.41)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -434,7 +194,7 @@
 		)
 		(uuid "ef2b3969-ba29-4866-a95a-5e275b2bf226")
 		(property "Sheetname" "STM32 MCU"
-			(at 35.56 25.9584 0)
+			(at 101.6 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -445,7 +205,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 35.56 71.7046 0)
+			(at 101.6 131.3946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -459,6 +219,98 @@
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
 					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 200.66 82.55)
+		(size 48.26 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a")
+		(property "Sheetname" "Pump_Control"
+			(at 200.66 81.8384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Pump_Control.kicad_sch"
+			(at 200.66 113.6146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 88.9)
+		(size 48.26 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "15388a04-aea8-414b-8903-58a719a8054d")
+		(property "Sheetname" "Sensors"
+			(at 25.4 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors.kicad_sch"
+			(at 25.4 120.0146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
+					(page "12")
 				)
 			)
 		)

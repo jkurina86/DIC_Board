@@ -1,0 +1,12 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "15839161-04aa-4826-802e-dad4eabc41b4")
+	(paper "A4")
+	(title_block
+		(title "Air Pump")
+	)
+	(lib_symbols)
+	(embedded_fonts no)
+)

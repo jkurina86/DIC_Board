@@ -1,0 +1,12 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "5cccc61e-8f22-4fbf-aea1-08fbd4c6b039")
+	(paper "A4")
+	(title_block
+		(title "Water Pump")
+	)
+	(lib_symbols)
+	(embedded_fonts no)
+)
