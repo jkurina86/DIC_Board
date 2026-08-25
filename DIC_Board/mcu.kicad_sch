@@ -10871,6 +10871,30 @@
 			)
 		)
 	)
+	(global_label "WATER_PUMP_EN"
+		(shape output)
+		(at 290.83 104.14 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f34139cb-559e-4e4d-a36c-f110630c12b1")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 281.94 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "BOOT0"
 		(shape input)
 		(at 189.23 245.11 180)

@@ -648,7 +648,7 @@
         "uuid": "bb0ef0df-c181-443a-843c-695cd2e0efee"
       }
     ],
-    "used_designators": "U1-2,J2-4,R1-4,R9-19,R111,C21-27,C32,SW1,BT1,Y1-2,FB1,#PWR112",
+    "used_designators": "U1-2,U14,R1-4,R9-19,R111,R122-124,J2-4,C21-27,C32,C130-134,SW1,BT1,Y1-2,FB1,#PWR1-3,#PWR44,#PWR107,#PWR112,TP26",
     "variants": []
   },
   "sheets": [
@@ -679,6 +679,26 @@
     [
       "c8a80f6b-6991-4994-9972-cf9280af84d9",
       "Valve Control Bank 3"
+    ],
+    [
+      "c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a",
+      "Pump_Control"
+    ],
+    [
+      "8810525e-14a4-4f99-ac27-94524d23e92b",
+      "Water_Pump"
+    ],
+    [
+      "db16e425-44ca-40f9-b8f4-64b10021b74e",
+      "Acid_Pump"
+    ],
+    [
+      "c8a1a135-8c9f-467f-bb2b-f71123dfca54",
+      "Air_Pump"
+    ],
+    [
+      "15388a04-aea8-414b-8903-58a719a8054d",
+      "Sensors"
     ]
   ],
   "text_variables": {},

@@ -6,6 +6,52 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
+		(at 25.4 88.9)
+		(size 48.26 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "15388a04-aea8-414b-8903-58a719a8054d")
+		(property "Sheetname" "Sensors"
+			(at 25.4 88.1884 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensors.kicad_sch"
+			(at 25.4 120.0146 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 200.66 35.56)
 		(size 24.13 30.48)
 		(exclude_from_sim no)
@@ -178,52 +224,6 @@
 		)
 	)
 	(sheet
-		(at 101.6 25.4)
-		(size 48.26 105.41)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0)
-		)
-		(uuid "ef2b3969-ba29-4866-a95a-5e275b2bf226")
-		(property "Sheetname" "STM32 MCU"
-			(at 101.6 24.6884 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "mcu.kicad_sch"
-			(at 101.6 131.3946 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(instances
-			(project "DIC_Board"
-				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 200.66 82.55)
 		(size 48.26 30.48)
 		(exclude_from_sim no)
@@ -270,8 +270,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 88.9)
-		(size 48.26 30.48)
+		(at 101.6 25.4)
+		(size 48.26 105.41)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -284,9 +284,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "15388a04-aea8-414b-8903-58a719a8054d")
-		(property "Sheetname" "Sensors"
-			(at 25.4 88.1884 0)
+		(uuid "ef2b3969-ba29-4866-a95a-5e275b2bf226")
+		(property "Sheetname" "STM32 MCU"
+			(at 101.6 24.6884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -296,8 +296,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "Sensors.kicad_sch"
-			(at 25.4 120.0146 0)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 101.6 131.3946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -310,7 +310,7 @@
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
-					(page "12")
+					(page "2")
 				)
 			)
 		)

@@ -8,5 +8,4 @@
 		(title "Sensors")
 	)
 	(lib_symbols)
-	(embedded_fonts no)
 )
