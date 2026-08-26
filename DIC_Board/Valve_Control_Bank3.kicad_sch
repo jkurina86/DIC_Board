@@ -2898,16 +2898,6 @@
 		)
 		(uuid "ff60f736-866b-414d-8959-76edac9390aa")
 	)
-	(label "GND"
-		(at 172.72 87.63 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4a3a78c6-85be-43e2-9cbc-c772a37ae089")
-	)
 	(label "VREF1"
 		(at 97.79 64.77 0)
 		(effects

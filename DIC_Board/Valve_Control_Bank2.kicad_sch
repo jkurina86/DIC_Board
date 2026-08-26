@@ -2892,16 +2892,6 @@
 		)
 		(uuid "35e17839-4fb9-4d22-af62-9f859baffc9d")
 	)
-	(label "GND"
-		(at 171.45 69.85 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ad9a706e-d830-4c24-8f7d-d921d45b3322")
-	)
 	(hierarchical_label "VALVE8_B"
 		(shape output)
 		(at 174.625 124.46 0)
