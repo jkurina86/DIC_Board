@@ -24,7 +24,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "8810525e-14a4-4f99-ac27-94524d23e92b")
-		(property "Sheetname" "Water_Pump"
+		(property "Sheetname" "Water Pump"
 			(at 137.16 27.2284 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -70,7 +70,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "c8a1a135-8c9f-467f-bb2b-f71123dfca54")
-		(property "Sheetname" "Air_Pump"
+		(property "Sheetname" "Air Pump"
 			(at 135.89 119.9384 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -116,7 +116,7 @@
 			(color 0 0 0 0)
 		)
 		(uuid "db16e425-44ca-40f9-b8f4-64b10021b74e")
-		(property "Sheetname" "Acid_Pump"
+		(property "Sheetname" "Acid Pump"
 			(at 137.16 74.2184 0)
 			(show_name no)
 			(do_not_autoplace no)

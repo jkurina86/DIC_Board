@@ -648,7 +648,7 @@
         "uuid": "bb0ef0df-c181-443a-843c-695cd2e0efee"
       }
     ],
-    "used_designators": "U1-2,U14,R1-4,R9-19,R111,R122-124,R329,J2-4,C21-27,C32,C130-134,SW1,BT1,Y1-2,FB1,#PWR1-4,#PWR44,#PWR107,#PWR112,TP26",
+    "used_designators": "U1-2,U4,U10-14,U31,U33,U35,#FLG2,R1-4,R9-19,R100-124,R303-311,R329,J2-4,J31,J33-36,C21-27,C32,C102-134,C303-308,C314-316,SW1,BT1,Y1-2,FB1,#PWR1-11,#PWR43-44,#PWR103-112,#PWR114-145,TP22-26,L10,Q100-101",
     "variants": []
   },
   "sheets": [
@@ -682,23 +682,63 @@
     ],
     [
       "c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a",
-      "Pump_Control"
+      "Pump Control"
     ],
     [
       "8810525e-14a4-4f99-ac27-94524d23e92b",
-      "Water_Pump"
+      "Water Pump"
     ],
     [
       "db16e425-44ca-40f9-b8f4-64b10021b74e",
-      "Acid_Pump"
+      "Acid Pump"
     ],
     [
       "c8a1a135-8c9f-467f-bb2b-f71123dfca54",
-      "Air_Pump"
+      "Air Pump"
     ],
     [
       "15388a04-aea8-414b-8903-58a719a8054d",
       "Sensors"
+    ],
+    [
+      "90896a52-6a15-4861-9fbc-84f5783b3f4c",
+      "Licor"
+    ],
+    [
+      "a18bb969-316f-4822-a8ba-f772f1045bbc",
+      "RH Sensor"
+    ],
+    [
+      "e424d377-f4a1-4385-9082-f887d8dd24b1",
+      "O2 Sensor"
+    ],
+    [
+      "f4c35e7d-59ac-4bb5-a4f9-d6a34bb3efe0",
+      "ADMONT K96"
+    ],
+    [
+      "2161909f-1018-4cef-9d4b-129c48d3907b",
+      "3V3"
+    ],
+    [
+      "2205258c-ee4f-4cb6-91e6-2b34d15a3e61",
+      "6V6"
+    ],
+    [
+      "96bce7ce-4347-4977-a5db-c3e69279f723",
+      "2V8"
+    ],
+    [
+      "ffae8f3f-d403-4e51-b505-2432024a2a27",
+      "5V"
+    ],
+    [
+      "798b703e-0267-4100-ae8b-602a191eef64",
+      "12V"
+    ],
+    [
+      "26910e19-2db1-434f-ad74-0de34241d1a4",
+      "Actuators"
     ]
   ],
   "text_variables": {},

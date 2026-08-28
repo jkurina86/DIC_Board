@@ -8,4 +8,188 @@
 		(title "Sensors")
 	)
 	(lib_symbols)
+	(sheet
+		(at 55.88 44.45)
+		(size 21.59 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "90896a52-6a15-4861-9fbc-84f5783b3f4c")
+		(property "Sheetname" "Licor"
+			(at 55.88 43.7384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Licor.kicad_sch"
+			(at 55.88 69.1646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d"
+					(page "13")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 101.6 44.45)
+		(size 30.48 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "a18bb969-316f-4822-a8ba-f772f1045bbc")
+		(property "Sheetname" "RH Sensor"
+			(at 101.6 43.7384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "rh_sensor.kicad_sch"
+			(at 101.6 69.1646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 151.13 44.45)
+		(size 25.4 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "e424d377-f4a1-4385-9082-f887d8dd24b1")
+		(property "Sheetname" "O2 Sensor"
+			(at 151.13 43.7384 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "o2_sensor.kicad_sch"
+			(at 151.13 70.4346 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 191.77 46.99)
+		(size 26.67 24.13)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f4c35e7d-59ac-4bb5-a4f9-d6a34bb3efe0")
+		(property "Sheetname" "ADMONT K96"
+			(at 191.77 46.2784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "admont_k96.kicad_sch"
+			(at 191.77 71.7046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d"
+					(page "16")
+				)
+			)
+		)
+	)
 )

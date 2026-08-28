@@ -6,8 +6,8 @@
 	(paper "A4")
 	(lib_symbols)
 	(sheet
-		(at 25.4 88.9)
-		(size 48.26 30.48)
+		(at 115.57 138.43)
+		(size 25.4 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -22,7 +22,7 @@
 		)
 		(uuid "15388a04-aea8-414b-8903-58a719a8054d")
 		(property "Sheetname" "Sensors"
-			(at 25.4 88.1884 0)
+			(at 115.57 137.7184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33,7 +33,7 @@
 			)
 		)
 		(property "Sheetfile" "Sensors.kicad_sch"
-			(at 25.4 120.0146 0)
+			(at 115.57 161.8746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -52,8 +52,54 @@
 		)
 	)
 	(sheet
-		(at 200.66 35.56)
-		(size 24.13 30.48)
+		(at 116.84 17.78)
+		(size 24.13 21.59)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "26910e19-2db1-434f-ad74-0de34241d1a4")
+		(property "Sheetname" "Actuators"
+			(at 116.84 17.0684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "actuators.kicad_sch"
+			(at 116.84 39.9546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
+					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 115.57 76.2)
+		(size 25.4 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -68,7 +114,7 @@
 		)
 		(uuid "4eaefdb2-a0a4-4c79-8702-5dad81347158")
 		(property "Sheetname" "Valve Control"
-			(at 200.66 34.8484 0)
+			(at 115.57 75.4884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -79,7 +125,7 @@
 			)
 		)
 		(property "Sheetfile" "Valve_Control.kicad_sch"
-			(at 200.66 66.6246 0)
+			(at 115.57 100.9146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -90,7 +136,7 @@
 			)
 		)
 		(pin "VALVE_SDATA" input
-			(at 200.66 43.18 180)
+			(at 115.57 78.74 180)
 			(uuid "e90658d4-f5e2-4761-93bf-e7bc05f9c3d9")
 			(effects
 				(font
@@ -100,7 +146,7 @@
 			)
 		)
 		(pin "VALVE_SCLK" input
-			(at 200.66 45.72 180)
+			(at 115.57 81.28 180)
 			(uuid "05807a2f-4378-41d4-9fa8-e93fcb831170")
 			(effects
 				(font
@@ -110,7 +156,7 @@
 			)
 		)
 		(pin "VALVE_CS1" input
-			(at 200.66 48.26 180)
+			(at 115.57 83.82 180)
 			(uuid "6acf41e2-8ae7-4552-b10f-a0bb504a873e")
 			(effects
 				(font
@@ -120,7 +166,7 @@
 			)
 		)
 		(pin "VALVE_CS2" input
-			(at 200.66 50.8 180)
+			(at 115.57 86.36 180)
 			(uuid "59760b2a-47c6-46a0-9294-cf78d49e89f1")
 			(effects
 				(font
@@ -130,7 +176,7 @@
 			)
 		)
 		(pin "VALVE_CS3" input
-			(at 200.66 53.34 180)
+			(at 115.57 88.9 180)
 			(uuid "161db633-6ac2-4e86-b93d-47511c58333e")
 			(effects
 				(font
@@ -140,7 +186,7 @@
 			)
 		)
 		(pin "VALVE_LATCH" input
-			(at 200.66 55.88 180)
+			(at 115.57 91.44 180)
 			(uuid "9a405b74-973b-4011-a3f2-5dc5bd56c279")
 			(effects
 				(font
@@ -150,7 +196,7 @@
 			)
 		)
 		(pin "VALVE_RESET_N" input
-			(at 200.66 58.42 180)
+			(at 115.57 93.98 180)
 			(uuid "cf7cad8c-c6fb-47b8-9149-33653a5b6a5f")
 			(effects
 				(font
@@ -160,7 +206,7 @@
 			)
 		)
 		(pin "VALVE_SLEEP_N" input
-			(at 200.66 60.96 180)
+			(at 115.57 96.52 180)
 			(uuid "d7460144-522c-4873-92eb-4cd38746dbd8")
 			(effects
 				(font
@@ -178,8 +224,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 26.67)
-		(size 48.26 44.45)
+		(at 115.57 45.72)
+		(size 25.4 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -194,7 +240,7 @@
 		)
 		(uuid "b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20")
 		(property "Sheetname" "Power"
-			(at 25.4 25.9584 0)
+			(at 115.57 45.0084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -205,7 +251,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 25.4 71.7046 0)
+			(at 115.57 69.1646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -224,8 +270,8 @@
 		)
 	)
 	(sheet
-		(at 200.66 82.55)
-		(size 48.26 30.48)
+		(at 115.57 107.95)
+		(size 25.4 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -239,8 +285,8 @@
 			(color 0 0 0 0)
 		)
 		(uuid "c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a")
-		(property "Sheetname" "Pump_Control"
-			(at 200.66 81.8384 0)
+		(property "Sheetname" "Pump Control"
+			(at 115.57 107.2384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -251,7 +297,7 @@
 			)
 		)
 		(property "Sheetfile" "Pump_Control.kicad_sch"
-			(at 200.66 113.6146 0)
+			(at 115.57 131.3946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -270,8 +316,8 @@
 		)
 	)
 	(sheet
-		(at 101.6 25.4)
-		(size 48.26 105.41)
+		(at 25.4 83.82)
+		(size 38.1 55.88)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -286,7 +332,7 @@
 		)
 		(uuid "ef2b3969-ba29-4866-a95a-5e275b2bf226")
 		(property "Sheetname" "STM32 MCU"
-			(at 101.6 24.6884 0)
+			(at 25.4 83.1084 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -297,7 +343,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 101.6 131.3946 0)
+			(at 25.4 140.2846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
