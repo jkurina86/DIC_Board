@@ -1743,7 +1743,7 @@
 		)
 	)
 	(global_label "ADMONT_RX"
-		(shape input)
+		(shape output)
 		(at 82.55 109.22 180)
 		(fields_autoplaced yes)
 		(effects

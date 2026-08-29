@@ -648,7 +648,7 @@
         "uuid": "bb0ef0df-c181-443a-843c-695cd2e0efee"
       }
     ],
-    "used_designators": "U1-2,U4,U10-14,U31,U33,U35,#FLG2,R1-4,R9-19,R100-124,R303-311,R329,J2-4,J31,J33-36,C21-27,C32,C102-134,C303-308,C314-316,SW1,BT1,Y1-2,FB1,#PWR1-11,#PWR43-44,#PWR103-112,#PWR114-145,TP22-26,L10,Q100-101",
+    "used_designators": "U1-2,U4,U10-14,U31,U33,U35-38,#FLG2,R1-4,R9-19,R100-124,R303-319,R329-342,J2-7,J31,J33-38,C21-27,C32,C102-134,C303-308,C314-319,C325-330,SW1,BT1,Y1-2,FB1,#PWR1-16,#PWR43-44,#PWR103-112,#PWR114-148,TP22-26,L10,Q100-101",
     "variants": []
   },
   "sheets": [
@@ -665,36 +665,24 @@
       "Power"
     ],
     [
-      "4eaefdb2-a0a4-4c79-8702-5dad81347158",
-      "Valve Control"
+      "2161909f-1018-4cef-9d4b-129c48d3907b",
+      "3V3"
     ],
     [
-      "bb96aef0-a293-4f2f-afab-58a941f960d6",
-      "Valve Control Bank 1"
+      "2205258c-ee4f-4cb6-91e6-2b34d15a3e61",
+      "6V6"
     ],
     [
-      "a60ab3bd-76d7-4549-93c3-469c7eb3b757",
-      "Valve Control Bank 2"
+      "96bce7ce-4347-4977-a5db-c3e69279f723",
+      "2V8"
     ],
     [
-      "c8a80f6b-6991-4994-9972-cf9280af84d9",
-      "Valve Control Bank 3"
+      "ffae8f3f-d403-4e51-b505-2432024a2a27",
+      "5V"
     ],
     [
-      "c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a",
-      "Pump Control"
-    ],
-    [
-      "8810525e-14a4-4f99-ac27-94524d23e92b",
-      "Water Pump"
-    ],
-    [
-      "db16e425-44ca-40f9-b8f4-64b10021b74e",
-      "Acid Pump"
-    ],
-    [
-      "c8a1a135-8c9f-467f-bb2b-f71123dfca54",
-      "Air Pump"
+      "798b703e-0267-4100-ae8b-602a191eef64",
+      "12V"
     ],
     [
       "15388a04-aea8-414b-8903-58a719a8054d",
@@ -717,24 +705,36 @@
       "ADMONT K96"
     ],
     [
-      "2161909f-1018-4cef-9d4b-129c48d3907b",
-      "3V3"
+      "c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a",
+      "Pump Control"
     ],
     [
-      "2205258c-ee4f-4cb6-91e6-2b34d15a3e61",
-      "6V6"
+      "8810525e-14a4-4f99-ac27-94524d23e92b",
+      "Water Pump"
     ],
     [
-      "96bce7ce-4347-4977-a5db-c3e69279f723",
-      "2V8"
+      "db16e425-44ca-40f9-b8f4-64b10021b74e",
+      "Acid Pump"
     ],
     [
-      "ffae8f3f-d403-4e51-b505-2432024a2a27",
-      "5V"
+      "c8a1a135-8c9f-467f-bb2b-f71123dfca54",
+      "Air Pump"
     ],
     [
-      "798b703e-0267-4100-ae8b-602a191eef64",
-      "12V"
+      "4eaefdb2-a0a4-4c79-8702-5dad81347158",
+      "Valve Control"
+    ],
+    [
+      "bb96aef0-a293-4f2f-afab-58a941f960d6",
+      "Valve Control Bank 1"
+    ],
+    [
+      "a60ab3bd-76d7-4549-93c3-469c7eb3b757",
+      "Valve Control Bank 2"
+    ],
+    [
+      "c8a80f6b-6991-4994-9972-cf9280af84d9",
+      "Valve Control Bank 3"
     ],
     [
       "26910e19-2db1-434f-ad74-0de34241d1a4",

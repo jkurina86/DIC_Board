@@ -46,7 +46,7 @@
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
-					(page "12")
+					(page "9")
 				)
 			)
 		)
@@ -218,7 +218,7 @@
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
-					(page "4")
+					(page "18")
 				)
 			)
 		)
@@ -310,7 +310,7 @@
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
-					(page "8")
+					(page "14")
 				)
 			)
 		)

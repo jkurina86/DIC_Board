@@ -49,7 +49,7 @@
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a"
-					(page "9")
+					(page "15")
 				)
 			)
 		)
@@ -95,7 +95,7 @@
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a"
-					(page "11")
+					(page "17")
 				)
 			)
 		)
@@ -141,7 +141,7 @@
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a"
-					(page "10")
+					(page "16")
 				)
 			)
 		)
