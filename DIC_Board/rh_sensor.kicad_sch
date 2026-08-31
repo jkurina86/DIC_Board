@@ -780,10 +780,9 @@
 		)
 		(uuid "db8f8283-6fba-408e-82ca-f7d6ff53b841")
 	)
-	(global_label "RH_SCL"
-		(shape input)
+	(hierarchical_label "RH_SCL"
+		(shape bidirectional)
 		(at 124.46 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -791,23 +790,10 @@
 			(justify right)
 		)
 		(uuid "38968266-97c8-4701-9b0f-c36ed9c64820")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 114.3991 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "RH_SDA"
+	(hierarchical_label "RH_SDA"
 		(shape bidirectional)
 		(at 124.46 101.6 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -815,18 +801,6 @@
 			(justify right)
 		)
 		(uuid "fb4599f3-a31d-4887-a124-1be58d595780")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 113.2273 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R")

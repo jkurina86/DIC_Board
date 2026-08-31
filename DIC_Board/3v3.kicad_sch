@@ -1840,6 +1840,17 @@
 		)
 		(uuid "fffb9560-3933-4cd2-b49a-cf9601204dd1")
 	)
+	(hierarchical_label "P_IN"
+		(shape input)
+		(at 88.9 91.44 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9c9d37b8-f204-4937-9dc0-c4a79b220b82")
+	)
 	(symbol
 		(lib_id "Device:R")
 		(at 170.18 113.03 0)
@@ -2493,83 +2504,6 @@
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/2161909f-1018-4cef-9d4b-129c48d3907b"
 					(reference "#PWR043")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 88.9 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9c9d37b8-f204-4937-9dc0-c4a79b220b82")
-		(property "Reference" "#PWR0108"
-			(at 91.44 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+12V"
-			(at 88.9 87.122 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 88.9 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1a9e7468-5e86-4aa0-b247-13c08c83a8bc")
-		)
-		(instances
-			(project "DIC_Board"
-				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/2161909f-1018-4cef-9d4b-129c48d3907b"
-					(reference "#PWR0108")
 					(unit 1)
 				)
 			)

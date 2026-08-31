@@ -1270,17 +1270,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 115.57) (xy 189.23 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1e456418-7e39-4bdc-b52e-61a9658bcff7")
-	)
-	(wire
-		(pts
-			(xy 186.69 118.11) (xy 191.77 118.11)
+			(xy 189.23 109.22) (xy 193.04 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1310,7 +1300,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 111.76) (xy 193.04 111.76)
+			(xy 166.37 111.76) (xy 193.04 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1390,7 +1380,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 101.6) (xy 171.45 111.76)
+			(xy 166.37 101.6) (xy 166.37 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1420,7 +1410,7 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 101.6) (xy 171.45 101.6)
+			(xy 154.94 101.6) (xy 166.37 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1530,16 +1520,6 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 115.57) (xy 189.23 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9de7645b-381c-4d56-b93e-fa44cbe51127")
-	)
-	(wire
-		(pts
 			(xy 154.94 118.11) (xy 154.94 127)
 		)
 		(stroke
@@ -1587,16 +1567,6 @@
 			(type default)
 		)
 		(uuid "be3c1854-9178-4a62-b3a0-ce887ccbabff")
-	)
-	(wire
-		(pts
-			(xy 191.77 118.11) (xy 191.77 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2e2a479-2c9d-4bbf-97c6-d90508b5a860")
 	)
 	(wire
 		(pts
@@ -1657,16 +1627,6 @@
 			(type default)
 		)
 		(uuid "e17f5c2c-d461-4843-8549-1457e3959073")
-	)
-	(wire
-		(pts
-			(xy 191.77 109.22) (xy 193.04 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9c56c80-0636-4361-a5f5-b4636534e64f")
 	)
 	(wire
 		(pts
@@ -1738,10 +1698,9 @@
 		)
 		(uuid "ff1ec48d-27fc-4777-8f3d-f51d79c0582e")
 	)
-	(global_label "O2_SENSOR_TX"
+	(hierarchical_label "O2_SENSOR_TX"
 		(shape input)
-		(at 186.69 115.57 180)
-		(fields_autoplaced yes)
+		(at 189.23 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1749,23 +1708,10 @@
 			(justify right)
 		)
 		(uuid "a518902a-40ef-40a6-b8e1-47ecf6b7bc4d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.5535 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "O2_SENSOR_EN"
+	(hierarchical_label "O2_SENSOR_EN"
 		(shape input)
 		(at 86.36 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1773,23 +1719,10 @@
 			(justify right)
 		)
 		(uuid "b47f5daa-782b-4400-a73e-a83d2d899277")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.9211 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "O2_SENSOR_RX"
+	(hierarchical_label "O2_SENSOR_RX"
 		(shape output)
-		(at 186.69 118.11 180)
-		(fields_autoplaced yes)
+		(at 189.23 109.22 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1797,18 +1730,6 @@
 			(justify right)
 		)
 		(uuid "b6a323b8-8487-4063-af34-e05387ea8890")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 169.2511 118.11 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")

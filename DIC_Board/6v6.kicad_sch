@@ -1175,7 +1175,7 @@
 		)
 		(uuid "1251030e-04a3-42a5-b47f-061e889b79c2")
 	)
-	(text "K96 + KNF; pump tested at 6.6 V"
+	(text "K96 + KNF; pump tested at 6.6 V; default-on, MCU-controllable"
 		(exclude_from_sim no)
 		(at 113.538 72.644 0)
 		(effects
@@ -1814,10 +1814,9 @@
 		)
 		(uuid "f7a19130-04e1-47b0-a029-e3729a769493")
 	)
-	(global_label "6V6_EN"
+	(hierarchical_label "6V6_EN"
 		(shape input)
 		(at 81.28 92.71 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1825,18 +1824,6 @@
 			(justify right)
 		)
 		(uuid "7f001c72-cbea-41c8-acaf-316430c6ebda")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 71.3401 92.71 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Device:R")

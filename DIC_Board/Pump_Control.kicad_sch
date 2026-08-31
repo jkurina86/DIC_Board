@@ -8,6 +8,132 @@
 		(title "Pump Control")
 	)
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 125.73 33.02) (xy 137.16 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52000000-0000-4000-8000-000000000001")
+	)
+	(wire
+		(pts
+			(xy 125.73 80.01) (xy 137.16 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52000000-0000-4000-8000-000000000002")
+	)
+	(wire
+		(pts
+			(xy 125.73 82.55) (xy 137.16 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52000000-0000-4000-8000-000000000003")
+	)
+	(wire
+		(pts
+			(xy 125.73 85.09) (xy 137.16 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52000000-0000-4000-8000-000000000004")
+	)
+	(wire
+		(pts
+			(xy 125.73 87.63) (xy 137.16 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52000000-0000-4000-8000-000000000005")
+	)
+	(wire
+		(pts
+			(xy 125.73 125.73) (xy 135.89 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52000000-0000-4000-8000-000000000006")
+	)
+	(hierarchical_label "WATER_PUMP_EN"
+		(shape input)
+		(at 125.73 33.02 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52000000-0000-4000-8000-000000000101")
+	)
+	(hierarchical_label "ACID_PUMP_DIR"
+		(shape input)
+		(at 125.73 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52000000-0000-4000-8000-000000000102")
+	)
+	(hierarchical_label "ACID_PUMP_STEP"
+		(shape input)
+		(at 125.73 82.55 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52000000-0000-4000-8000-000000000103")
+	)
+	(hierarchical_label "ACID_PUMP_EN_FAULT_N"
+		(shape bidirectional)
+		(at 125.73 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52000000-0000-4000-8000-000000000104")
+	)
+	(hierarchical_label "ACID_PUMP_RESET_N"
+		(shape input)
+		(at 125.73 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52000000-0000-4000-8000-000000000105")
+	)
+	(hierarchical_label "AIR_PUMP_EN"
+		(shape input)
+		(at 125.73 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "52000000-0000-4000-8000-000000000106")
+	)
 	(sheet
 		(at 137.16 27.94)
 		(size 48.26 30.48)
@@ -44,6 +170,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "WATER_PUMP_EN" input
+			(at 137.16 33.02 180)
+			(uuid "52000000-0000-4000-8000-000000000201")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -92,6 +228,16 @@
 				(justify left top)
 			)
 		)
+		(pin "AIR_PUMP_EN" input
+			(at 135.89 125.73 180)
+			(uuid "52000000-0000-4000-8000-000000000206")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a"
@@ -136,6 +282,46 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "ACID_PUMP_DIR" input
+			(at 137.16 80.01 180)
+			(uuid "52000000-0000-4000-8000-000000000202")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACID_PUMP_STEP" input
+			(at 137.16 82.55 180)
+			(uuid "52000000-0000-4000-8000-000000000203")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACID_PUMP_EN_FAULT_N" bidirectional
+			(at 137.16 85.09 180)
+			(uuid "52000000-0000-4000-8000-000000000204")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACID_PUMP_RESET_N" input
+			(at 137.16 87.63 180)
+			(uuid "52000000-0000-4000-8000-000000000205")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

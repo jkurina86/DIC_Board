@@ -1175,7 +1175,7 @@
 		)
 		(uuid "419e2060-f7b0-4a21-83a9-1b95b473bb9c")
 	)
-	(text "TPSM53603 step-down module, always enabled"
+	(text "TPSM53603 step-down module; default-on, MCU-controllable"
 		(exclude_from_sim no)
 		(at 105.918 72.898 0)
 		(effects
@@ -1814,10 +1814,9 @@
 		)
 		(uuid "f5a61e65-71bd-44e6-b31f-b735cb1b2f02")
 	)
-	(global_label "2V8_EN"
+	(hierarchical_label "2V8_EN"
 		(shape input)
 		(at 76.2 95.25 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1825,18 +1824,6 @@
 			(justify right)
 		)
 		(uuid "1ef047d6-6f02-4791-9ddd-a56671be3e59")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 66.2601 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:+2V8")

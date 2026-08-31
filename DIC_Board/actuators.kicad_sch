@@ -2440,10 +2440,9 @@
 		)
 		(uuid "ffb8030b-0879-48db-9d0a-05839a78e710")
 	)
-	(global_label "ACTUATOR_1_POS"
+	(hierarchical_label "ACTUATOR_1_POS"
 		(shape output)
 		(at 251.46 93.98 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2451,23 +2450,10 @@
 			(justify right)
 		)
 		(uuid "0ff52b52-b53c-4c95-8f52-c10b9cde5246")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.2067 93.98 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ACTUATOR_1_PWM"
+	(hierarchical_label "ACTUATOR_1_PWM"
 		(shape input)
 		(at 251.46 91.44 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2475,23 +2461,10 @@
 			(justify right)
 		)
 		(uuid "3ec5cf20-c7f5-4ad2-8b10-cba69edd18f1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.8439 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ACTUATOR_2_EN"
+	(hierarchical_label "ACTUATOR_2_EN"
 		(shape input)
 		(at 44.45 140.97 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2499,23 +2472,10 @@
 			(justify right)
 		)
 		(uuid "4f7f8f84-4ada-4d44-8d2f-07c10ec0fada")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.5272 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ACTUATOR_1_EN"
+	(hierarchical_label "ACTUATOR_1_EN"
 		(shape input)
 		(at 44.45 53.34 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2523,23 +2483,10 @@
 			(justify right)
 		)
 		(uuid "634a4cec-9f4a-4125-b8f6-855fc8c7b802")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 25.8016 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ACTUATOR_1_CURRENT"
+	(hierarchical_label "ACTUATOR_1_CURRENT"
 		(shape output)
 		(at 251.46 96.52 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2547,23 +2494,10 @@
 			(justify right)
 		)
 		(uuid "6a20ed66-3b2e-450f-89a5-7e297516bb43")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.4291 96.52 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ACTUATOR_2_CURRENT"
+	(hierarchical_label "ACTUATOR_2_CURRENT"
 		(shape output)
 		(at 251.46 109.22 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2571,23 +2505,10 @@
 			(justify right)
 		)
 		(uuid "751b5393-3c7b-4bb2-a9d6-1a47bdcc9264")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 227.4291 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ACTUATOR_2_PWM"
+	(hierarchical_label "ACTUATOR_2_PWM"
 		(shape input)
 		(at 251.46 104.14 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2595,23 +2516,10 @@
 			(justify right)
 		)
 		(uuid "86df044b-9453-4fd9-a803-e65cb093723d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 231.8439 104.14 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
-	(global_label "ACTUATOR_2_POS"
+	(hierarchical_label "ACTUATOR_2_POS"
 		(shape output)
 		(at 251.46 106.68 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2619,18 +2527,6 @@
 			(justify right)
 		)
 		(uuid "e6e7d7d7-87d8-46bb-ac82-a413ae1ce918")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 232.2067 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "DIC_Board:TPS27S100A")

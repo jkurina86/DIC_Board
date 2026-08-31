@@ -1603,10 +1603,9 @@
 		)
 		(uuid "ff765f0b-a048-4a91-8c6e-ef4a1f1707fc")
 	)
-	(global_label "AIR_PUMP_EN"
+	(hierarchical_label "AIR_PUMP_EN"
 		(shape input)
 		(at 99.06 88.9 180)
-		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1614,18 +1613,6 @@
 			(justify right)
 		)
 		(uuid "27eed726-5a28-4296-a805-0dd26444492e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 83.3748 88.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 	)
 	(symbol
 		(lib_id "power:GND")

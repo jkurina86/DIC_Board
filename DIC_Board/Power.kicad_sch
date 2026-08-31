@@ -1344,6 +1344,12 @@
 		(uuid "18665567-0aa2-4e41-91d0-36a56d2442ab")
 	)
 	(junction
+		(at 149.86 54.61)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "41f2d8a7-9c54-4eb3-a6d1-0f27b8c95e42")
+	)
+	(junction
 		(at 71.12 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1437,6 +1443,36 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 142.24) (xy 166.37 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53000000-0000-4000-8000-000000000001")
+	)
+	(wire
+		(pts
+			(xy 149.86 189.23) (xy 167.64 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53000000-0000-4000-8000-000000000002")
+	)
+	(wire
+		(pts
+			(xy 149.86 246.38) (xy 171.45 246.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "53000000-0000-4000-8000-000000000003")
+	)
+	(wire
+		(pts
 			(xy 58.42 54.61) (xy 58.42 55.88)
 		)
 		(stroke
@@ -1474,6 +1510,16 @@
 			(type default)
 		)
 		(uuid "6d0fb97f-5852-497a-8dcc-0f7350bb5696")
+	)
+	(wire
+		(pts
+			(xy 149.86 54.61) (xy 149.86 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e3a91c4-2d68-4f5b-b017-6c94a8e253d1")
 	)
 	(wire
 		(pts
@@ -1527,7 +1573,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 54.61) (xy 119.38 54.61)
+			(xy 110.49 54.61) (xy 166.37 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1544,6 +1590,16 @@
 			(type default)
 		)
 		(uuid "c1708468-0e6f-47c3-8677-41d242c6d707")
+	)
+	(wire
+		(pts
+			(xy 149.86 99.06) (xy 167.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5b84f16-7a23-4d9e-81f6-3e2a7059bc44")
 	)
 	(wire
 		(pts
@@ -1625,27 +1681,38 @@
 		)
 		(uuid "f5ef144c-b846-4192-a0fa-8949ca9137f2")
 	)
-	(global_label "P_IN_PROTECTED"
-		(shape passive)
-		(at 119.38 54.61 0)
+	(hierarchical_label "5V_EN"
+		(shape input)
+		(at 149.86 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
-		(uuid "6a68f80b-7a12-4326-8eb2-85ee6ef5fd9f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 119.38 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
+		(uuid "53000000-0000-4000-8000-000000000101")
+	)
+	(hierarchical_label "6V6_EN"
+		(shape input)
+		(at 149.86 189.23 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right)
 		)
+		(uuid "53000000-0000-4000-8000-000000000102")
+	)
+	(hierarchical_label "2V8_EN"
+		(shape input)
+		(at 149.86 246.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "53000000-0000-4000-8000-000000000103")
 	)
 	(symbol
 		(lib_id "power:PWR_FLAG")
@@ -2426,7 +2493,7 @@
 				)
 			)
 		)
-		(property "Value" "P_IN_PROTECTED"
+		(property "Value" "P_IN"
 			(at 114.808 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2635,8 +2702,8 @@
 		)
 	)
 	(sheet
-		(at 167.64 38.1)
-		(size 26.67 24.13)
+		(at 167.64 87.63)
+		(size 31.75 31.75)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -2651,7 +2718,7 @@
 		)
 		(uuid "2161909f-1018-4cef-9d4b-129c48d3907b")
 		(property "Sheetname" "3V3"
-			(at 167.64 37.3884 0)
+			(at 167.64 86.9184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2662,7 +2729,7 @@
 			)
 		)
 		(property "Sheetfile" "3v3.kicad_sch"
-			(at 167.64 62.8146 0)
+			(at 167.64 119.9646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2670,6 +2737,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "P_IN" input
+			(at 167.64 99.06 180)
+			(uuid "d2f640a9-1e75-4c83-b926-58a31f07de64")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -2681,7 +2758,7 @@
 		)
 	)
 	(sheet
-		(at 167.64 135.89)
+		(at 167.64 184.15)
 		(size 31.75 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2697,7 +2774,7 @@
 		)
 		(uuid "2205258c-ee4f-4cb6-91e6-2b34d15a3e61")
 		(property "Sheetname" "6V6"
-			(at 167.64 135.1784 0)
+			(at 167.64 183.4384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2708,7 +2785,7 @@
 			)
 		)
 		(property "Sheetfile" "6v6.kicad_sch"
-			(at 167.64 161.8746 0)
+			(at 167.64 210.1346 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2716,6 +2793,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "6V6_EN" input
+			(at 167.64 189.23 180)
+			(uuid "53000000-0000-4000-8000-000000000202")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -2727,7 +2814,7 @@
 		)
 	)
 	(sheet
-		(at 170.18 237.49)
+		(at 166.37 40.64)
 		(size 33.02 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2743,7 +2830,7 @@
 		)
 		(uuid "798b703e-0267-4100-ae8b-602a191eef64")
 		(property "Sheetname" "12V"
-			(at 170.18 236.7784 0)
+			(at 166.37 39.9284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2754,7 +2841,7 @@
 			)
 		)
 		(property "Sheetfile" "12v.kicad_sch"
-			(at 170.18 268.5546 0)
+			(at 166.37 71.7046 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2762,6 +2849,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "P_IN" input
+			(at 166.37 54.61 180)
+			(uuid "a7c0d6e5-6f90-4f7c-9ef1-2b4d8a6c3e11")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -2773,7 +2870,7 @@
 		)
 	)
 	(sheet
-		(at 171.45 193.04)
+		(at 171.45 241.3)
 		(size 27.94 26.67)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2789,7 +2886,7 @@
 		)
 		(uuid "96bce7ce-4347-4977-a5db-c3e69279f723")
 		(property "Sheetname" "2V8"
-			(at 171.45 192.3284 0)
+			(at 171.45 240.5884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2800,7 +2897,7 @@
 			)
 		)
 		(property "Sheetfile" "2v8.kicad_sch"
-			(at 171.45 220.2946 0)
+			(at 171.45 268.5546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2808,6 +2905,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "2V8_EN" input
+			(at 171.45 246.38 180)
+			(uuid "53000000-0000-4000-8000-000000000203")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -2819,7 +2926,7 @@
 		)
 	)
 	(sheet
-		(at 166.37 88.9)
+		(at 166.37 137.16)
 		(size 30.48 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2835,7 +2942,7 @@
 		)
 		(uuid "ffae8f3f-d403-4e51-b505-2432024a2a27")
 		(property "Sheetname" "5V"
-			(at 166.37 88.1884 0)
+			(at 166.37 136.4484 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2846,7 +2953,7 @@
 			)
 		)
 		(property "Sheetfile" "5v.kicad_sch"
-			(at 166.37 114.8846 0)
+			(at 166.37 163.1446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2854,6 +2961,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "5V_EN" input
+			(at 166.37 142.24 180)
+			(uuid "53000000-0000-4000-8000-000000000201")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

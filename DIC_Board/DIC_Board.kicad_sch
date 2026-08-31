@@ -5,9 +5,369 @@
 	(uuid "bb0ef0df-c181-443a-843c-695cd2e0efee")
 	(paper "A4")
 	(lib_symbols)
+	(wire
+		(pts
+			(xy 63.5 20.32) (xy 116.84 20.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000001")
+	)
+	(wire
+		(pts
+			(xy 63.5 22.86) (xy 116.84 22.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000002")
+	)
+	(wire
+		(pts
+			(xy 63.5 25.4) (xy 116.84 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000003")
+	)
+	(wire
+		(pts
+			(xy 63.5 27.94) (xy 116.84 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000004")
+	)
+	(wire
+		(pts
+			(xy 63.5 30.48) (xy 116.84 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000005")
+	)
+	(wire
+		(pts
+			(xy 63.5 33.02) (xy 116.84 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000006")
+	)
+	(wire
+		(pts
+			(xy 63.5 35.56) (xy 116.84 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000007")
+	)
+	(wire
+		(pts
+			(xy 63.5 38.1) (xy 116.84 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000008")
+	)
+	(wire
+		(pts
+			(xy 63.5 48.26) (xy 115.57 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000009")
+	)
+	(wire
+		(pts
+			(xy 63.5 50.8) (xy 115.57 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000000a")
+	)
+	(wire
+		(pts
+			(xy 63.5 53.34) (xy 115.57 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000000b")
+	)
+	(wire
+		(pts
+			(xy 63.5 78.74) (xy 115.57 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000000c")
+	)
+	(wire
+		(pts
+			(xy 63.5 81.28) (xy 115.57 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000000d")
+	)
+	(wire
+		(pts
+			(xy 63.5 83.82) (xy 115.57 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000000e")
+	)
+	(wire
+		(pts
+			(xy 63.5 86.36) (xy 115.57 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000000f")
+	)
+	(wire
+		(pts
+			(xy 63.5 88.9) (xy 115.57 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000010")
+	)
+	(wire
+		(pts
+			(xy 63.5 91.44) (xy 115.57 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000011")
+	)
+	(wire
+		(pts
+			(xy 63.5 93.98) (xy 115.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000012")
+	)
+	(wire
+		(pts
+			(xy 63.5 96.52) (xy 115.57 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000013")
+	)
+	(wire
+		(pts
+			(xy 63.5 110.49) (xy 115.57 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000014")
+	)
+	(wire
+		(pts
+			(xy 63.5 113.03) (xy 115.57 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000015")
+	)
+	(wire
+		(pts
+			(xy 63.5 115.57) (xy 115.57 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000016")
+	)
+	(wire
+		(pts
+			(xy 63.5 118.11) (xy 115.57 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000017")
+	)
+	(wire
+		(pts
+			(xy 63.5 120.65) (xy 115.57 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000018")
+	)
+	(wire
+		(pts
+			(xy 63.5 123.19) (xy 115.57 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000019")
+	)
+	(wire
+		(pts
+			(xy 63.5 140.97) (xy 115.57 140.97)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000001a")
+	)
+	(wire
+		(pts
+			(xy 63.5 143.51) (xy 115.57 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000001b")
+	)
+	(wire
+		(pts
+			(xy 63.5 146.05) (xy 115.57 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000001c")
+	)
+	(wire
+		(pts
+			(xy 63.5 148.59) (xy 115.57 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000001d")
+	)
+	(wire
+		(pts
+			(xy 63.5 151.13) (xy 115.57 151.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000001e")
+	)
+	(wire
+		(pts
+			(xy 63.5 153.67) (xy 115.57 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-00000000001f")
+	)
+	(wire
+		(pts
+			(xy 63.5 156.21) (xy 115.57 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000020")
+	)
+	(wire
+		(pts
+			(xy 63.5 158.75) (xy 115.57 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000021")
+	)
+	(wire
+		(pts
+			(xy 63.5 161.29) (xy 115.57 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000022")
+	)
+	(wire
+		(pts
+			(xy 63.5 163.83) (xy 115.57 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000023")
+	)
+	(wire
+		(pts
+			(xy 63.5 166.37) (xy 115.57 166.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54000000-0000-4000-8000-000000000024")
+	)
 	(sheet
 		(at 115.57 138.43)
-		(size 25.4 22.86)
+		(size 25.4 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -33,7 +393,7 @@
 			)
 		)
 		(property "Sheetfile" "Sensors.kicad_sch"
-			(at 115.57 161.8746 0)
+			(at 115.57 169.4946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -41,6 +401,116 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "LICOR_TX" input
+			(at 115.57 140.97 180)
+			(uuid "54000000-0000-4000-8000-000000000201")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LICOR_RX" output
+			(at 115.57 143.51 180)
+			(uuid "54000000-0000-4000-8000-000000000202")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LICOR_EN" input
+			(at 115.57 146.05 180)
+			(uuid "54000000-0000-4000-8000-000000000203")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RH_SDA" bidirectional
+			(at 115.57 148.59 180)
+			(uuid "54000000-0000-4000-8000-000000000204")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "RH_SCL" bidirectional
+			(at 115.57 151.13 180)
+			(uuid "54000000-0000-4000-8000-000000000205")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "O2_SENSOR_TX" input
+			(at 115.57 153.67 180)
+			(uuid "54000000-0000-4000-8000-000000000206")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "O2_SENSOR_RX" output
+			(at 115.57 156.21 180)
+			(uuid "54000000-0000-4000-8000-000000000207")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "O2_SENSOR_EN" input
+			(at 115.57 158.75 180)
+			(uuid "54000000-0000-4000-8000-000000000208")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADMONT_TX" input
+			(at 115.57 161.29 180)
+			(uuid "54000000-0000-4000-8000-000000000209")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADMONT_RX" output
+			(at 115.57 163.83 180)
+			(uuid "54000000-0000-4000-8000-00000000020a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ADMONT_EN" input
+			(at 115.57 166.37 180)
+			(uuid "54000000-0000-4000-8000-00000000020b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -87,6 +557,86 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "ACTUATOR_1_EN" input
+			(at 116.84 20.32 180)
+			(uuid "54000000-0000-4000-8000-00000000020c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACTUATOR_1_PWM" input
+			(at 116.84 22.86 180)
+			(uuid "54000000-0000-4000-8000-00000000020d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACTUATOR_1_POS" output
+			(at 116.84 25.4 180)
+			(uuid "54000000-0000-4000-8000-00000000020e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACTUATOR_1_CURRENT" output
+			(at 116.84 27.94 180)
+			(uuid "54000000-0000-4000-8000-00000000020f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACTUATOR_2_EN" input
+			(at 116.84 30.48 180)
+			(uuid "54000000-0000-4000-8000-000000000210")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACTUATOR_2_PWM" input
+			(at 116.84 33.02 180)
+			(uuid "54000000-0000-4000-8000-000000000211")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACTUATOR_2_POS" output
+			(at 116.84 35.56 180)
+			(uuid "54000000-0000-4000-8000-000000000212")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACTUATOR_2_CURRENT" output
+			(at 116.84 38.1 180)
+			(uuid "54000000-0000-4000-8000-000000000213")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
@@ -261,6 +811,36 @@
 				(justify left top)
 			)
 		)
+		(pin "2V8_EN" input
+			(at 115.57 48.26 180)
+			(uuid "54000000-0000-4000-8000-000000000214")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "5V_EN" input
+			(at 115.57 50.8 180)
+			(uuid "54000000-0000-4000-8000-000000000215")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "6V6_EN" input
+			(at 115.57 53.34 180)
+			(uuid "54000000-0000-4000-8000-000000000216")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
@@ -307,6 +887,66 @@
 				(justify left top)
 			)
 		)
+		(pin "WATER_PUMP_EN" input
+			(at 115.57 110.49 180)
+			(uuid "54000000-0000-4000-8000-000000000217")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AIR_PUMP_EN" input
+			(at 115.57 113.03 180)
+			(uuid "54000000-0000-4000-8000-000000000218")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACID_PUMP_DIR" input
+			(at 115.57 115.57 180)
+			(uuid "54000000-0000-4000-8000-000000000219")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACID_PUMP_STEP" input
+			(at 115.57 118.11 180)
+			(uuid "54000000-0000-4000-8000-00000000021a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACID_PUMP_EN_FAULT_N" bidirectional
+			(at 115.57 120.65 180)
+			(uuid "54000000-0000-4000-8000-00000000021b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ACID_PUMP_RESET_N" input
+			(at 115.57 123.19 180)
+			(uuid "54000000-0000-4000-8000-00000000021c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
@@ -316,8 +956,8 @@
 		)
 	)
 	(sheet
-		(at 25.4 83.82)
-		(size 38.1 55.88)
+		(at 25.4 17.78)
+		(size 38.1 151.13)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -332,7 +972,7 @@
 		)
 		(uuid "ef2b3969-ba29-4866-a95a-5e275b2bf226")
 		(property "Sheetname" "STM32 MCU"
-			(at 25.4 83.1084 0)
+			(at 25.4 17.0684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -343,7 +983,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 25.4 140.2846 0)
+			(at 25.4 169.4946 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -351,6 +991,366 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "ACTUATOR_1_EN" output
+			(at 63.5 20.32 0)
+			(uuid "54000000-0000-4000-8000-000000000301")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACTUATOR_1_PWM" output
+			(at 63.5 22.86 0)
+			(uuid "54000000-0000-4000-8000-000000000302")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACTUATOR_1_POS" input
+			(at 63.5 25.4 0)
+			(uuid "54000000-0000-4000-8000-000000000303")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACTUATOR_1_CURRENT" input
+			(at 63.5 27.94 0)
+			(uuid "54000000-0000-4000-8000-000000000304")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACTUATOR_2_EN" output
+			(at 63.5 30.48 0)
+			(uuid "54000000-0000-4000-8000-000000000305")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACTUATOR_2_PWM" output
+			(at 63.5 33.02 0)
+			(uuid "54000000-0000-4000-8000-000000000306")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACTUATOR_2_POS" input
+			(at 63.5 35.56 0)
+			(uuid "54000000-0000-4000-8000-000000000307")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACTUATOR_2_CURRENT" input
+			(at 63.5 38.1 0)
+			(uuid "54000000-0000-4000-8000-000000000308")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "2V8_EN" output
+			(at 63.5 48.26 0)
+			(uuid "54000000-0000-4000-8000-000000000309")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5V_EN" output
+			(at 63.5 50.8 0)
+			(uuid "54000000-0000-4000-8000-00000000030a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "6V6_EN" output
+			(at 63.5 53.34 0)
+			(uuid "54000000-0000-4000-8000-00000000030b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_SDATA" output
+			(at 63.5 78.74 0)
+			(uuid "54000000-0000-4000-8000-00000000030c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_SCLK" output
+			(at 63.5 81.28 0)
+			(uuid "54000000-0000-4000-8000-00000000030d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_CS1" output
+			(at 63.5 83.82 0)
+			(uuid "54000000-0000-4000-8000-00000000030e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_CS2" output
+			(at 63.5 86.36 0)
+			(uuid "54000000-0000-4000-8000-00000000030f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_CS3" output
+			(at 63.5 88.9 0)
+			(uuid "54000000-0000-4000-8000-000000000310")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_LATCH" output
+			(at 63.5 91.44 0)
+			(uuid "54000000-0000-4000-8000-000000000311")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_RESET_N" output
+			(at 63.5 93.98 0)
+			(uuid "54000000-0000-4000-8000-000000000312")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VALVE_SLEEP_N" output
+			(at 63.5 96.52 0)
+			(uuid "54000000-0000-4000-8000-000000000313")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "WATER_PUMP_EN" output
+			(at 63.5 110.49 0)
+			(uuid "54000000-0000-4000-8000-000000000314")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AIR_PUMP_EN" output
+			(at 63.5 113.03 0)
+			(uuid "54000000-0000-4000-8000-000000000315")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACID_PUMP_DIR" output
+			(at 63.5 115.57 0)
+			(uuid "54000000-0000-4000-8000-000000000316")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACID_PUMP_STEP" output
+			(at 63.5 118.11 0)
+			(uuid "54000000-0000-4000-8000-000000000317")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACID_PUMP_EN_FAULT_N" bidirectional
+			(at 63.5 120.65 0)
+			(uuid "54000000-0000-4000-8000-000000000318")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ACID_PUMP_RESET_N" output
+			(at 63.5 123.19 0)
+			(uuid "54000000-0000-4000-8000-000000000319")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LICOR_TX" output
+			(at 63.5 140.97 0)
+			(uuid "54000000-0000-4000-8000-00000000031a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LICOR_RX" input
+			(at 63.5 143.51 0)
+			(uuid "54000000-0000-4000-8000-00000000031b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LICOR_EN" output
+			(at 63.5 146.05 0)
+			(uuid "54000000-0000-4000-8000-00000000031c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RH_SDA" bidirectional
+			(at 63.5 148.59 0)
+			(uuid "54000000-0000-4000-8000-00000000031d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "RH_SCL" bidirectional
+			(at 63.5 151.13 0)
+			(uuid "54000000-0000-4000-8000-00000000031e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "O2_SENSOR_TX" output
+			(at 63.5 153.67 0)
+			(uuid "54000000-0000-4000-8000-00000000031f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "O2_SENSOR_RX" input
+			(at 63.5 156.21 0)
+			(uuid "54000000-0000-4000-8000-000000000320")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "O2_SENSOR_EN" output
+			(at 63.5 158.75 0)
+			(uuid "54000000-0000-4000-8000-000000000321")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADMONT_TX" output
+			(at 63.5 161.29 0)
+			(uuid "54000000-0000-4000-8000-000000000322")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADMONT_RX" input
+			(at 63.5 163.83 0)
+			(uuid "54000000-0000-4000-8000-000000000323")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "ADMONT_EN" output
+			(at 63.5 166.37 0)
+			(uuid "54000000-0000-4000-8000-000000000324")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
