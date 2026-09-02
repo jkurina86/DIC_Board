@@ -7,6 +7,96 @@
 	(lib_symbols)
 	(wire
 		(pts
+			(xy 63.5 106.68) (xy 115.57 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f960a3f-a302-4cd8-b0e2-ec79b60a047d")
+	)
+	(wire
+		(pts
+			(xy 63.5 114.3) (xy 115.57 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fbf9b5e-8714-4432-9675-6c4a6eb44f98")
+	)
+	(wire
+		(pts
+			(xy 63.5 144.78) (xy 115.57 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "118f00e8-4380-4cf0-9fdf-921fe97a779b")
+	)
+	(wire
+		(pts
+			(xy 63.5 157.48) (xy 115.57 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ef92d5-807d-492b-ab68-c44ccb539ac8")
+	)
+	(wire
+		(pts
+			(xy 63.5 152.4) (xy 115.57 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f639960-9940-41b6-b5c3-3e0560c00ab8")
+	)
+	(wire
+		(pts
+			(xy 63.5 109.22) (xy 115.57 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "231aa3ca-0044-424f-95b5-795300361da3")
+	)
+	(wire
+		(pts
+			(xy 63.5 87.63) (xy 115.57 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f51b385-709b-4213-a9b6-181d352f6662")
+	)
+	(wire
+		(pts
+			(xy 63.5 147.32) (xy 115.57 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3cb2fbd4-2b49-4f2f-a197-fd16dcbc6d04")
+	)
+	(wire
+		(pts
+			(xy 63.5 104.14) (xy 115.57 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "452a751b-98d9-4de5-b289-e9a4bffab0cb")
+	)
+	(wire
+		(pts
 			(xy 63.5 20.32) (xy 116.84 20.32)
 		)
 		(stroke
@@ -117,256 +207,226 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 78.74) (xy 115.57 78.74)
+			(xy 63.5 137.16) (xy 115.57 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000000c")
+		(uuid "5bb70a1b-bb1a-48f6-b434-54ec3261e158")
 	)
 	(wire
 		(pts
-			(xy 63.5 81.28) (xy 115.57 81.28)
+			(xy 63.5 111.76) (xy 115.57 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000000d")
+		(uuid "618661ee-c6c4-4d3f-ae31-1c7d4b960820")
 	)
 	(wire
 		(pts
-			(xy 63.5 83.82) (xy 115.57 83.82)
+			(xy 63.5 116.84) (xy 115.57 116.84)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000000e")
+		(uuid "6de066f1-feb4-45c9-86e8-d1955d73af3d")
 	)
 	(wire
 		(pts
-			(xy 63.5 86.36) (xy 115.57 86.36)
+			(xy 63.5 72.39) (xy 115.57 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000000f")
+		(uuid "6f280db3-4d52-4961-bd5c-94763ac80cd6")
 	)
 	(wire
 		(pts
-			(xy 63.5 88.9) (xy 115.57 88.9)
+			(xy 63.5 170.18) (xy 115.57 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000010")
+		(uuid "74000000-0000-4000-8000-000000000001")
 	)
 	(wire
 		(pts
-			(xy 63.5 91.44) (xy 115.57 91.44)
+			(xy 63.5 172.72) (xy 115.57 172.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000011")
+		(uuid "74000000-0000-4000-8000-000000000002")
 	)
 	(wire
 		(pts
-			(xy 63.5 93.98) (xy 115.57 93.98)
+			(xy 63.5 175.26) (xy 115.57 175.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000012")
+		(uuid "74000000-0000-4000-8000-000000000003")
 	)
 	(wire
 		(pts
-			(xy 63.5 96.52) (xy 115.57 96.52)
+			(xy 63.5 177.8) (xy 115.57 177.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000013")
+		(uuid "74000000-0000-4000-8000-000000000004")
 	)
 	(wire
 		(pts
-			(xy 63.5 110.49) (xy 115.57 110.49)
+			(xy 63.5 180.34) (xy 115.57 180.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000014")
+		(uuid "74000000-0000-4000-8000-000000000005")
 	)
 	(wire
 		(pts
-			(xy 63.5 113.03) (xy 115.57 113.03)
+			(xy 63.5 182.88) (xy 115.57 182.88)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000015")
+		(uuid "74000000-0000-4000-8000-000000000006")
 	)
 	(wire
 		(pts
-			(xy 63.5 115.57) (xy 115.57 115.57)
+			(xy 63.5 142.24) (xy 115.57 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000016")
+		(uuid "78f0ed97-db9d-4bcf-8e57-f46399c8285d")
 	)
 	(wire
 		(pts
-			(xy 63.5 118.11) (xy 115.57 118.11)
+			(xy 63.5 134.62) (xy 115.57 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000017")
+		(uuid "7eefb39a-15cd-4b71-a520-7acd06eee963")
 	)
 	(wire
 		(pts
-			(xy 63.5 120.65) (xy 115.57 120.65)
+			(xy 63.5 154.94) (xy 115.57 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000018")
+		(uuid "845a1536-acd2-4a18-80ab-afed0f047f0f")
 	)
 	(wire
 		(pts
-			(xy 63.5 123.19) (xy 115.57 123.19)
+			(xy 63.5 80.01) (xy 115.57 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000019")
+		(uuid "91ef4896-7b93-4302-acf6-4532018e24e8")
 	)
 	(wire
 		(pts
-			(xy 63.5 140.97) (xy 115.57 140.97)
+			(xy 63.5 139.7) (xy 115.57 139.7)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000001a")
+		(uuid "9598e120-c080-4230-b8f9-366c27615a1b")
 	)
 	(wire
 		(pts
-			(xy 63.5 143.51) (xy 115.57 143.51)
+			(xy 63.5 85.09) (xy 115.57 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000001b")
+		(uuid "b109596c-e274-4dbc-a7db-49350c12752b")
 	)
 	(wire
 		(pts
-			(xy 63.5 146.05) (xy 115.57 146.05)
+			(xy 63.5 90.17) (xy 115.57 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000001c")
+		(uuid "b408a73c-8ce2-40ac-b406-e0713fbde8e7")
 	)
 	(wire
 		(pts
-			(xy 63.5 148.59) (xy 115.57 148.59)
+			(xy 63.5 82.55) (xy 115.57 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000001d")
+		(uuid "b649415c-9f33-4ef7-87b3-463a1d45fc84")
 	)
 	(wire
 		(pts
-			(xy 63.5 151.13) (xy 115.57 151.13)
+			(xy 115.57 160.02) (xy 63.5 160.02)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000001e")
+		(uuid "b7f1deb0-a8dc-421b-8ac1-d78dea0d55e9")
 	)
 	(wire
 		(pts
-			(xy 63.5 153.67) (xy 115.57 153.67)
+			(xy 63.5 77.47) (xy 115.57 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-00000000001f")
+		(uuid "da3304dc-13fc-4a4a-b0fa-ff4de4922be7")
 	)
 	(wire
 		(pts
-			(xy 63.5 156.21) (xy 115.57 156.21)
+			(xy 63.5 74.93) (xy 115.57 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000020")
+		(uuid "deef9e72-11da-443a-a042-2950c67739cd")
 	)
 	(wire
 		(pts
-			(xy 63.5 158.75) (xy 115.57 158.75)
+			(xy 63.5 149.86) (xy 115.57 149.86)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54000000-0000-4000-8000-000000000021")
-	)
-	(wire
-		(pts
-			(xy 63.5 161.29) (xy 115.57 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54000000-0000-4000-8000-000000000022")
-	)
-	(wire
-		(pts
-			(xy 63.5 163.83) (xy 115.57 163.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54000000-0000-4000-8000-000000000023")
-	)
-	(wire
-		(pts
-			(xy 63.5 166.37) (xy 115.57 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54000000-0000-4000-8000-000000000024")
+		(uuid "fa9d2f27-ae43-4a79-9aad-5e44f48f036a")
 	)
 	(sheet
-		(at 115.57 138.43)
+		(at 115.57 132.08)
 		(size 25.4 30.48)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -382,7 +442,7 @@
 		)
 		(uuid "15388a04-aea8-414b-8903-58a719a8054d")
 		(property "Sheetname" "Sensors"
-			(at 115.57 137.7184 0)
+			(at 115.57 131.3684 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -393,7 +453,7 @@
 			)
 		)
 		(property "Sheetfile" "Sensors.kicad_sch"
-			(at 115.57 169.4946 0)
+			(at 115.57 163.1446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -404,7 +464,7 @@
 			)
 		)
 		(pin "LICOR_TX" input
-			(at 115.57 140.97 180)
+			(at 115.57 134.62 180)
 			(uuid "54000000-0000-4000-8000-000000000201")
 			(effects
 				(font
@@ -414,7 +474,7 @@
 			)
 		)
 		(pin "LICOR_RX" output
-			(at 115.57 143.51 180)
+			(at 115.57 137.16 180)
 			(uuid "54000000-0000-4000-8000-000000000202")
 			(effects
 				(font
@@ -424,7 +484,7 @@
 			)
 		)
 		(pin "LICOR_EN" input
-			(at 115.57 146.05 180)
+			(at 115.57 139.7 180)
 			(uuid "54000000-0000-4000-8000-000000000203")
 			(effects
 				(font
@@ -434,7 +494,7 @@
 			)
 		)
 		(pin "RH_SDA" bidirectional
-			(at 115.57 148.59 180)
+			(at 115.57 142.24 180)
 			(uuid "54000000-0000-4000-8000-000000000204")
 			(effects
 				(font
@@ -444,7 +504,7 @@
 			)
 		)
 		(pin "RH_SCL" bidirectional
-			(at 115.57 151.13 180)
+			(at 115.57 144.78 180)
 			(uuid "54000000-0000-4000-8000-000000000205")
 			(effects
 				(font
@@ -454,7 +514,7 @@
 			)
 		)
 		(pin "O2_SENSOR_TX" input
-			(at 115.57 153.67 180)
+			(at 115.57 147.32 180)
 			(uuid "54000000-0000-4000-8000-000000000206")
 			(effects
 				(font
@@ -464,7 +524,7 @@
 			)
 		)
 		(pin "O2_SENSOR_RX" output
-			(at 115.57 156.21 180)
+			(at 115.57 149.86 180)
 			(uuid "54000000-0000-4000-8000-000000000207")
 			(effects
 				(font
@@ -474,7 +534,7 @@
 			)
 		)
 		(pin "O2_SENSOR_EN" input
-			(at 115.57 158.75 180)
+			(at 115.57 152.4 180)
 			(uuid "54000000-0000-4000-8000-000000000208")
 			(effects
 				(font
@@ -484,7 +544,7 @@
 			)
 		)
 		(pin "ADMONT_TX" input
-			(at 115.57 161.29 180)
+			(at 115.57 154.94 180)
 			(uuid "54000000-0000-4000-8000-000000000209")
 			(effects
 				(font
@@ -494,7 +554,7 @@
 			)
 		)
 		(pin "ADMONT_RX" output
-			(at 115.57 163.83 180)
+			(at 115.57 157.48 180)
 			(uuid "54000000-0000-4000-8000-00000000020a")
 			(effects
 				(font
@@ -504,7 +564,7 @@
 			)
 		)
 		(pin "ADMONT_EN" input
-			(at 115.57 166.37 180)
+			(at 115.57 160.02 180)
 			(uuid "54000000-0000-4000-8000-00000000020b")
 			(effects
 				(font
@@ -648,7 +708,7 @@
 		)
 	)
 	(sheet
-		(at 115.57 76.2)
+		(at 115.57 69.85)
 		(size 25.4 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -664,7 +724,7 @@
 		)
 		(uuid "4eaefdb2-a0a4-4c79-8702-5dad81347158")
 		(property "Sheetname" "Valve Control"
-			(at 115.57 75.4884 0)
+			(at 115.57 69.1384 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -675,7 +735,7 @@
 			)
 		)
 		(property "Sheetfile" "Valve_Control.kicad_sch"
-			(at 115.57 100.9146 0)
+			(at 115.57 94.5646 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -686,7 +746,7 @@
 			)
 		)
 		(pin "VALVE_SDATA" input
-			(at 115.57 78.74 180)
+			(at 115.57 72.39 180)
 			(uuid "e90658d4-f5e2-4761-93bf-e7bc05f9c3d9")
 			(effects
 				(font
@@ -696,7 +756,7 @@
 			)
 		)
 		(pin "VALVE_SCLK" input
-			(at 115.57 81.28 180)
+			(at 115.57 74.93 180)
 			(uuid "05807a2f-4378-41d4-9fa8-e93fcb831170")
 			(effects
 				(font
@@ -706,7 +766,7 @@
 			)
 		)
 		(pin "VALVE_CS1" input
-			(at 115.57 83.82 180)
+			(at 115.57 77.47 180)
 			(uuid "6acf41e2-8ae7-4552-b10f-a0bb504a873e")
 			(effects
 				(font
@@ -716,7 +776,7 @@
 			)
 		)
 		(pin "VALVE_CS2" input
-			(at 115.57 86.36 180)
+			(at 115.57 80.01 180)
 			(uuid "59760b2a-47c6-46a0-9294-cf78d49e89f1")
 			(effects
 				(font
@@ -726,7 +786,7 @@
 			)
 		)
 		(pin "VALVE_CS3" input
-			(at 115.57 88.9 180)
+			(at 115.57 82.55 180)
 			(uuid "161db633-6ac2-4e86-b93d-47511c58333e")
 			(effects
 				(font
@@ -736,7 +796,7 @@
 			)
 		)
 		(pin "VALVE_LATCH" input
-			(at 115.57 91.44 180)
+			(at 115.57 85.09 180)
 			(uuid "9a405b74-973b-4011-a3f2-5dc5bd56c279")
 			(effects
 				(font
@@ -746,7 +806,7 @@
 			)
 		)
 		(pin "VALVE_RESET_N" input
-			(at 115.57 93.98 180)
+			(at 115.57 87.63 180)
 			(uuid "cf7cad8c-c6fb-47b8-9149-33653a5b6a5f")
 			(effects
 				(font
@@ -756,7 +816,7 @@
 			)
 		)
 		(pin "VALVE_SLEEP_N" input
-			(at 115.57 96.52 180)
+			(at 115.57 90.17 180)
 			(uuid "d7460144-522c-4873-92eb-4cd38746dbd8")
 			(effects
 				(font
@@ -774,8 +834,114 @@
 		)
 	)
 	(sheet
+		(at 115.57 167.64)
+		(size 24.13 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "973d4d17-d26b-4c44-9698-9d58019fed5c")
+		(property "Sheetname" "Comms"
+			(at 115.57 166.9284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "comms.kicad_sch"
+			(at 115.57 193.6246 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "COMM_EN" input
+			(at 115.57 170.18 180)
+			(uuid "75000000-0000-4000-8000-000000000001")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "COMM_TX" input
+			(at 115.57 172.72 180)
+			(uuid "75000000-0000-4000-8000-000000000002")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "COMM_RX" output
+			(at 115.57 175.26 180)
+			(uuid "75000000-0000-4000-8000-000000000003")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AUX_EN" input
+			(at 115.57 177.8 180)
+			(uuid "75000000-0000-4000-8000-000000000004")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AUX_TX" input
+			(at 115.57 180.34 180)
+			(uuid "75000000-0000-4000-8000-000000000005")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "AUX_RX" output
+			(at 115.57 182.88 180)
+			(uuid "75000000-0000-4000-8000-000000000006")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee"
+					(page "23")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 115.57 45.72)
-		(size 25.4 22.86)
+		(size 25.4 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -801,7 +967,7 @@
 			)
 		)
 		(property "Sheetfile" "Power.kicad_sch"
-			(at 115.57 69.1646 0)
+			(at 115.57 62.8146 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -850,7 +1016,7 @@
 		)
 	)
 	(sheet
-		(at 115.57 107.95)
+		(at 115.57 101.6)
 		(size 25.4 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -866,7 +1032,7 @@
 		)
 		(uuid "c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a")
 		(property "Sheetname" "Pump Control"
-			(at 115.57 107.2384 0)
+			(at 115.57 100.8884 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -877,7 +1043,7 @@
 			)
 		)
 		(property "Sheetfile" "Pump_Control.kicad_sch"
-			(at 115.57 131.3946 0)
+			(at 115.57 125.0446 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -888,7 +1054,7 @@
 			)
 		)
 		(pin "WATER_PUMP_EN" input
-			(at 115.57 110.49 180)
+			(at 115.57 104.14 180)
 			(uuid "54000000-0000-4000-8000-000000000217")
 			(effects
 				(font
@@ -898,7 +1064,7 @@
 			)
 		)
 		(pin "AIR_PUMP_EN" input
-			(at 115.57 113.03 180)
+			(at 115.57 106.68 180)
 			(uuid "54000000-0000-4000-8000-000000000218")
 			(effects
 				(font
@@ -908,7 +1074,7 @@
 			)
 		)
 		(pin "ACID_PUMP_DIR" input
-			(at 115.57 115.57 180)
+			(at 115.57 109.22 180)
 			(uuid "54000000-0000-4000-8000-000000000219")
 			(effects
 				(font
@@ -918,7 +1084,7 @@
 			)
 		)
 		(pin "ACID_PUMP_STEP" input
-			(at 115.57 118.11 180)
+			(at 115.57 111.76 180)
 			(uuid "54000000-0000-4000-8000-00000000021a")
 			(effects
 				(font
@@ -928,7 +1094,7 @@
 			)
 		)
 		(pin "ACID_PUMP_EN_FAULT_N" bidirectional
-			(at 115.57 120.65 180)
+			(at 115.57 114.3 180)
 			(uuid "54000000-0000-4000-8000-00000000021b")
 			(effects
 				(font
@@ -938,7 +1104,7 @@
 			)
 		)
 		(pin "ACID_PUMP_RESET_N" input
-			(at 115.57 123.19 180)
+			(at 115.57 116.84 180)
 			(uuid "54000000-0000-4000-8000-00000000021c")
 			(effects
 				(font
@@ -957,7 +1123,7 @@
 	)
 	(sheet
 		(at 25.4 17.78)
-		(size 38.1 151.13)
+		(size 38.1 175.26)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -983,7 +1149,7 @@
 			)
 		)
 		(property "Sheetfile" "mcu.kicad_sch"
-			(at 25.4 169.4946 0)
+			(at 25.4 193.6246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -991,6 +1157,66 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "COMM_EN" output
+			(at 63.5 170.18 0)
+			(uuid "76000000-0000-4000-8000-000000000001")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "COMM_TX" output
+			(at 63.5 172.72 0)
+			(uuid "76000000-0000-4000-8000-000000000002")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "COMM_RX" input
+			(at 63.5 175.26 0)
+			(uuid "76000000-0000-4000-8000-000000000003")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AUX_EN" output
+			(at 63.5 177.8 0)
+			(uuid "76000000-0000-4000-8000-000000000004")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AUX_TX" output
+			(at 63.5 180.34 0)
+			(uuid "76000000-0000-4000-8000-000000000005")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "AUX_RX" input
+			(at 63.5 182.88 0)
+			(uuid "76000000-0000-4000-8000-000000000006")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(pin "ACTUATOR_1_EN" output
@@ -1104,7 +1330,7 @@
 			)
 		)
 		(pin "VALVE_SDATA" output
-			(at 63.5 78.74 0)
+			(at 63.5 72.39 0)
 			(uuid "54000000-0000-4000-8000-00000000030c")
 			(effects
 				(font
@@ -1114,7 +1340,7 @@
 			)
 		)
 		(pin "VALVE_SCLK" output
-			(at 63.5 81.28 0)
+			(at 63.5 74.93 0)
 			(uuid "54000000-0000-4000-8000-00000000030d")
 			(effects
 				(font
@@ -1124,7 +1350,7 @@
 			)
 		)
 		(pin "VALVE_CS1" output
-			(at 63.5 83.82 0)
+			(at 63.5 77.47 0)
 			(uuid "54000000-0000-4000-8000-00000000030e")
 			(effects
 				(font
@@ -1134,7 +1360,7 @@
 			)
 		)
 		(pin "VALVE_CS2" output
-			(at 63.5 86.36 0)
+			(at 63.5 80.01 0)
 			(uuid "54000000-0000-4000-8000-00000000030f")
 			(effects
 				(font
@@ -1144,7 +1370,7 @@
 			)
 		)
 		(pin "VALVE_CS3" output
-			(at 63.5 88.9 0)
+			(at 63.5 82.55 0)
 			(uuid "54000000-0000-4000-8000-000000000310")
 			(effects
 				(font
@@ -1154,7 +1380,7 @@
 			)
 		)
 		(pin "VALVE_LATCH" output
-			(at 63.5 91.44 0)
+			(at 63.5 85.09 0)
 			(uuid "54000000-0000-4000-8000-000000000311")
 			(effects
 				(font
@@ -1164,7 +1390,7 @@
 			)
 		)
 		(pin "VALVE_RESET_N" output
-			(at 63.5 93.98 0)
+			(at 63.5 87.63 0)
 			(uuid "54000000-0000-4000-8000-000000000312")
 			(effects
 				(font
@@ -1174,7 +1400,7 @@
 			)
 		)
 		(pin "VALVE_SLEEP_N" output
-			(at 63.5 96.52 0)
+			(at 63.5 90.17 0)
 			(uuid "54000000-0000-4000-8000-000000000313")
 			(effects
 				(font
@@ -1184,7 +1410,7 @@
 			)
 		)
 		(pin "WATER_PUMP_EN" output
-			(at 63.5 110.49 0)
+			(at 63.5 104.14 0)
 			(uuid "54000000-0000-4000-8000-000000000314")
 			(effects
 				(font
@@ -1194,7 +1420,7 @@
 			)
 		)
 		(pin "AIR_PUMP_EN" output
-			(at 63.5 113.03 0)
+			(at 63.5 106.68 0)
 			(uuid "54000000-0000-4000-8000-000000000315")
 			(effects
 				(font
@@ -1204,7 +1430,7 @@
 			)
 		)
 		(pin "ACID_PUMP_DIR" output
-			(at 63.5 115.57 0)
+			(at 63.5 109.22 0)
 			(uuid "54000000-0000-4000-8000-000000000316")
 			(effects
 				(font
@@ -1214,7 +1440,7 @@
 			)
 		)
 		(pin "ACID_PUMP_STEP" output
-			(at 63.5 118.11 0)
+			(at 63.5 111.76 0)
 			(uuid "54000000-0000-4000-8000-000000000317")
 			(effects
 				(font
@@ -1224,7 +1450,7 @@
 			)
 		)
 		(pin "ACID_PUMP_EN_FAULT_N" bidirectional
-			(at 63.5 120.65 0)
+			(at 63.5 114.3 0)
 			(uuid "54000000-0000-4000-8000-000000000318")
 			(effects
 				(font
@@ -1234,7 +1460,7 @@
 			)
 		)
 		(pin "ACID_PUMP_RESET_N" output
-			(at 63.5 123.19 0)
+			(at 63.5 116.84 0)
 			(uuid "54000000-0000-4000-8000-000000000319")
 			(effects
 				(font
@@ -1244,7 +1470,7 @@
 			)
 		)
 		(pin "LICOR_TX" output
-			(at 63.5 140.97 0)
+			(at 63.5 134.62 0)
 			(uuid "54000000-0000-4000-8000-00000000031a")
 			(effects
 				(font
@@ -1254,7 +1480,7 @@
 			)
 		)
 		(pin "LICOR_RX" input
-			(at 63.5 143.51 0)
+			(at 63.5 137.16 0)
 			(uuid "54000000-0000-4000-8000-00000000031b")
 			(effects
 				(font
@@ -1264,7 +1490,7 @@
 			)
 		)
 		(pin "LICOR_EN" output
-			(at 63.5 146.05 0)
+			(at 63.5 139.7 0)
 			(uuid "54000000-0000-4000-8000-00000000031c")
 			(effects
 				(font
@@ -1274,7 +1500,7 @@
 			)
 		)
 		(pin "RH_SDA" bidirectional
-			(at 63.5 148.59 0)
+			(at 63.5 142.24 0)
 			(uuid "54000000-0000-4000-8000-00000000031d")
 			(effects
 				(font
@@ -1284,7 +1510,7 @@
 			)
 		)
 		(pin "RH_SCL" bidirectional
-			(at 63.5 151.13 0)
+			(at 63.5 144.78 0)
 			(uuid "54000000-0000-4000-8000-00000000031e")
 			(effects
 				(font
@@ -1294,7 +1520,7 @@
 			)
 		)
 		(pin "O2_SENSOR_TX" output
-			(at 63.5 153.67 0)
+			(at 63.5 147.32 0)
 			(uuid "54000000-0000-4000-8000-00000000031f")
 			(effects
 				(font
@@ -1304,7 +1530,7 @@
 			)
 		)
 		(pin "O2_SENSOR_RX" input
-			(at 63.5 156.21 0)
+			(at 63.5 149.86 0)
 			(uuid "54000000-0000-4000-8000-000000000320")
 			(effects
 				(font
@@ -1314,7 +1540,7 @@
 			)
 		)
 		(pin "O2_SENSOR_EN" output
-			(at 63.5 158.75 0)
+			(at 63.5 152.4 0)
 			(uuid "54000000-0000-4000-8000-000000000321")
 			(effects
 				(font
@@ -1324,7 +1550,7 @@
 			)
 		)
 		(pin "ADMONT_TX" output
-			(at 63.5 161.29 0)
+			(at 63.5 154.94 0)
 			(uuid "54000000-0000-4000-8000-000000000322")
 			(effects
 				(font
@@ -1334,7 +1560,7 @@
 			)
 		)
 		(pin "ADMONT_RX" input
-			(at 63.5 163.83 0)
+			(at 63.5 157.48 0)
 			(uuid "54000000-0000-4000-8000-000000000323")
 			(effects
 				(font
@@ -1344,7 +1570,7 @@
 			)
 		)
 		(pin "ADMONT_EN" output
-			(at 63.5 166.37 0)
+			(at 63.5 160.02 0)
 			(uuid "54000000-0000-4000-8000-000000000324")
 			(effects
 				(font

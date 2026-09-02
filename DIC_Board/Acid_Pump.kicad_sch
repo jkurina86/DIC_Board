@@ -1186,7 +1186,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Firmware must preserve STEP low and DIR high while releasing RESET; afterwards they are normal controls."
+	(text "Firmware must pull STEP low and DIR high while releasing RESET afterwards they are normal controls."
 		(exclude_from_sim no)
 		(at 25.4 29.21 0)
 		(effects
@@ -1197,7 +1197,7 @@
 		)
 		(uuid "553f2b20-5582-54b1-92e3-96c727664830")
 	)
-	(text "ACID PUMP STEPPER DRIVER — STSPIN220, +2V8 MOTOR SUPPLY"
+	(text "ACID PUMP STEPPER DRIVER STSPIN220, +2V8 MOTOR SUPPLY"
 		(exclude_from_sim no)
 		(at 25.4 20.32 0)
 		(effects
@@ -1230,7 +1230,7 @@
 		)
 		(uuid "bbdfbace-b34b-55d1-a14d-6ed9a78dfecd")
 	)
-	(text "Current limit: 0.5 ohm sense, VREF adjustable 0–0.471 V; IPEAK approximately VREF/RSENSE = 0–0.94 A."
+	(text "Current limit: 0.5 ohm sense, VREF adjustable 0–0.471 V I_PEAK approximately VREF/RSENSE = 0–0.94 A."
 		(exclude_from_sim no)
 		(at 25.4 33.02 0)
 		(effects

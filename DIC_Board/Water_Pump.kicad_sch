@@ -6,8 +6,8 @@
 	(paper "A4")
 	(title_block
 		(title "Water Pump")
-		(comment 1 "Sea-Bird SBE 5P pump, 12-V high-side control")
-		(comment 2 "TPS27S100A smart switch; nominal 2.5-A current limit")
+		(comment 1 "Sea-Bird SBE 5P pump, 12V high-side control")
+		(comment 2 "TPS27S100A smart switch nominal 2.5 A current limit")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
@@ -1097,7 +1097,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "SBE 5P: 10-18 V option; 1.8 A maximum turn-on surge, approximately 0.25 s."
+	(text "SBE 5P: 10-18 V option 1.8 A maximum turn-on surge, approximately 0.25 s."
 		(exclude_from_sim no)
 		(at 29.21 23.876 0)
 		(effects
@@ -1108,7 +1108,7 @@
 		)
 		(uuid "179e522d-619b-59f5-af43-5c27230a7479")
 	)
-	(text "Pump has internal reverse-polarity diode; TPS27S100A provides inductive turn-off clamp."
+	(text "Pump has internal reverse-polarity diode TPS27S100A provides inductive turn-off clamp."
 		(exclude_from_sim no)
 		(at 29.21 31.496 0)
 		(effects
@@ -1119,7 +1119,7 @@
 		)
 		(uuid "23d55449-530e-5e33-8c8b-93ea04e33a58")
 	)
-	(text "TPS27S100A: 40 V / 4 A smart switch; R302 = 1.00 kOhm sets approximately 2.5 A limit."
+	(text "TPS27S100A: 40 V / 4 A switch R302 = 1.00 kOhm sets approximately 2.5 A limit."
 		(exclude_from_sim no)
 		(at 29.21 27.686 0)
 		(effects

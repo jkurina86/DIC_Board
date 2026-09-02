@@ -33,5 +33,5 @@ python3 Docs/download_sources.py
 ## Verification
 
 - Use the matching `kicad-happy` skill for KiCad analysis, BOM/sourcing, datasheets, SPICE, EMC, and fabrication tasks instead of building ad hoc parsers or workflows.
-- KiCad is installed as Flatpak `org.kicad.kicad`; `kicad-cli` is not on `PATH`. Invoke it as `flatpak run --command=kicad-cli org.kicad.kicad ...`.
-- No CI, lint, test, or task-runner configuration is committed. For schematic changes, run KiCad 10 ERC on `DIC_Board/DIC_Board.kicad_sch`; PCB DRC is not meaningful until the placeholder PCB is populated.
+- No CI, lint, test, task-runner, or KiCad CLI wrapper is committed. For schematic changes, run KiCad 10 ERC on `DIC_Board/DIC_Board.kicad_sch`; PCB DRC is not meaningful until the placeholder PCB is populated.
+- `/analysis/` and `/DIC_Board/analysis/` are ignored generated outputs. Regenerate them for the current sources rather than treating an existing report as authoritative.
