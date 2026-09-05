@@ -1,0 +1,491 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [],
+    "description": "Inline Ext-R controller with RC servo input, position feedback control, stall protection, and adjustable 0-1 A current limit",
+    "esd": null,
+    "family": "external RC linear actuator control board configured for P16 actuators",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 6.7,
+        "length": 36,
+        "width": 15
+      },
+      "code": "Ext-R-P16 inline board with X1, X2, and X3 connectors",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 1,
+        "section": "Specifications"
+      },
+      "pin_count": 12
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Radio-control receiver connector ground.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X1"
+        },
+        "is_5v_tolerant": null,
+        "name": "-",
+        "notes": null,
+        "numbers": [
+          "X1.1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "ground; black wire",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "6-12 VDC power input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X1"
+        },
+        "is_5v_tolerant": null,
+        "name": "+",
+        "notes": "The board may be powered through the three-wire RC connection or an external supply on the extra pins.",
+        "numbers": [
+          "X1.2"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "red wire",
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "RC / hobby servo input signal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X1"
+        },
+        "is_5v_tolerant": true,
+        "name": "S",
+        "notes": null,
+        "numbers": [
+          "X1.3"
+        ],
+        "power_domain": null,
+        "recommended": [
+          {
+            "condition": "5 V amplitude, 50-300 Hz period rate",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 1,
+              "section": "Specifications / Operation"
+            },
+            "max": 0.002,
+            "min": 0.001,
+            "notes": "1 ms commands full retract; 2 ms commands full extend.",
+            "typ": null,
+            "unit": "s"
+          }
+        ],
+        "subtype": "RC / hobby servo; white wire",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "No internal connection.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X1"
+        },
+        "is_5v_tolerant": null,
+        "name": "No Internal Connection",
+        "notes": null,
+        "numbers": [
+          "X1.4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "red wire",
+        "type": "not_connected"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Radio-control receiver connector ground.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X1"
+        },
+        "is_5v_tolerant": null,
+        "name": "-",
+        "notes": null,
+        "numbers": [
+          "X1.5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "ground; black wire",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Positive actuator potentiometer reference.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Positive Reference",
+        "notes": null,
+        "numbers": [
+          "X2.1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "yellow wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Black actuator motor terminal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor",
+        "notes": null,
+        "numbers": [
+          "X2.2"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "black wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Red actuator motor terminal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor",
+        "notes": null,
+        "numbers": [
+          "X2.3"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "red wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Actuator position-feedback potentiometer wiper.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Position Feedback",
+        "notes": null,
+        "numbers": [
+          "X2.4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "purple wire",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Negative actuator potentiometer reference.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Negative Reference",
+        "notes": null,
+        "numbers": [
+          "X2.5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "orange wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Position feedback, linear from 3.3 V fully retracted to 0 V fully extended.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X3"
+        },
+        "is_5v_tolerant": null,
+        "name": "F1",
+        "notes": "Any connection to F1 must be high impedance or actuator performance may be affected.",
+        "numbers": [
+          "X3.1"
+        ],
+        "power_domain": null,
+        "recommended": [
+          {
+            "condition": "3.3 V fully retracted; 0 V fully extended",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 1,
+              "section": "Operation"
+            },
+            "max": 3.3,
+            "min": 0,
+            "notes": "Any connection must be high impedance.",
+            "typ": null,
+            "unit": "V"
+          }
+        ],
+        "subtype": "analog position feedback",
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Current feedback with a 3.3:1 voltage-to-current scaling; 0 V represents 0 A and 3.3 V represents 1 A.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X3"
+        },
+        "is_5v_tolerant": null,
+        "name": "F2",
+        "notes": "Any connection to F2 must be high impedance or actuator performance may be affected.",
+        "numbers": [
+          "X3.2"
+        ],
+        "power_domain": null,
+        "recommended": [
+          {
+            "condition": "0-1 A actuator current represented by 0-3.3 V",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 1,
+              "section": "Operation"
+            },
+            "max": 3.3,
+            "min": 0,
+            "notes": "Any connection must be high impedance.",
+            "typ": null,
+            "unit": "V"
+          }
+        ],
+        "subtype": "analog current feedback",
+        "type": "output"
+      }
+    ],
+    "recommended_operating": {
+      "CURRENT_LIMIT": [
+        {
+          "condition": "P1 adjustment; clockwise lowers, counter-clockwise raises",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 1,
+            "section": "Operation"
+          },
+          "max": 1,
+          "min": 0,
+          "notes": null,
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "RC_PWM_AMPLITUDE": [
+        {
+          "condition": "RC servo input",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 5,
+          "unit": "V"
+        }
+      ],
+      "RC_PWM_FREQUENCY": [
+        {
+          "condition": "RC servo input",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 300,
+          "min": 50,
+          "notes": null,
+          "typ": null,
+          "unit": "Hz"
+        }
+      ],
+      "RC_PWM_HIGH_TIME": [
+        {
+          "condition": "RC servo command; full retract to full extend",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 0.002,
+          "min": 0.001,
+          "notes": null,
+          "typ": null,
+          "unit": "s"
+        }
+      ],
+      "RH": [
+        {
+          "condition": "Operating environment",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 80,
+          "min": 10,
+          "notes": null,
+          "typ": null,
+          "unit": "%"
+        }
+      ],
+      "SUPPLY_CURRENT_MIN": [
+        {
+          "condition": "External supply rating",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": null,
+          "min": 1,
+          "notes": "Datasheet states 1 A minimum.",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Operating environment",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 70,
+          "min": -10,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "Supply voltage must match the actuator's rated voltage.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 12,
+          "min": 6,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:56:27Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "Ext-R-P16.plan.json",
+    "quality_score": 59
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "April 2024",
+    "datasheet_revision": "Revision C",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Actuonix_P16-50-256-12-P\\Actuonix Ext -R Datasheet.pdf",
+    "manufacturer": "Actuonix Motion Devices Inc.",
+    "mpn": "Ext-R-P16",
+    "page_count": 2,
+    "sha256": "sha256:052213fde5b15dace8421f1d2265b13679b47a89b710d49c1411522e3d692676",
+    "source_url": null
+  }
+}

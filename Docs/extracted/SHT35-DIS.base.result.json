@@ -1,0 +1,80 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:45:28Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "digital humidity and temperature sensor",
+    "description": "SHT35 accuracy-class humidity and temperature sensor with I2C interface in an 8-pin open-cavity DFN package.",
+    "package": {
+      "code": "8-pin open-cavity DFN",
+      "pin_count": 8,
+      "pitch_mm": 0.5,
+      "body_mm": {"length": 2.5, "width": 2.5, "height": 0.9},
+      "thermal_pad": false,
+      "evidence": {"page": 17, "section": "5.2 Package Outline", "confidence": "high", "method": "table"}
+    },
+    "thermal": null,
+    "absolute_max": {
+      "VDD": [
+        {"min": -0.3, "typ": null, "max": 6.0, "unit": "V", "condition": "Stress rating", "notes": null, "evidence": {"page": 7, "section": "2.3 Absolute Minimum and Maximum Ratings", "confidence": "high", "method": "table"}}
+      ],
+      "input_current_any_pin": [
+        {"min": -0.1, "typ": null, "max": 0.1, "unit": "A", "condition": "Any pin", "notes": "Published as ±100 mA.", "evidence": {"page": 7, "section": "2.3 Absolute Minimum and Maximum Ratings", "confidence": "high", "method": "table"}}
+      ],
+      "operating_temperature": [
+        {"min": -40, "typ": null, "max": 125, "unit": "°C", "condition": "Stress rating", "notes": null, "evidence": {"page": 7, "section": "2.3 Absolute Minimum and Maximum Ratings", "confidence": "high", "method": "table"}}
+      ],
+      "storage_temperature": [
+        {"min": -40, "typ": null, "max": 150, "unit": "°C", "condition": "Storage", "notes": null, "evidence": {"page": 7, "section": "2.3 Absolute Minimum and Maximum Ratings", "confidence": "high", "method": "table"}}
+      ]
+    },
+    "recommended_operating": {
+      "VDD": [
+        {"min": 2.15, "typ": 3.3, "max": 5.5, "unit": "V", "condition": null, "notes": null, "evidence": {"page": 6, "section": "2.1 Electrical Specifications", "confidence": "high", "method": "table"}}
+      ],
+      "TA": [
+        {"min": -40, "typ": null, "max": 125, "unit": "°C", "condition": "Electrical specification range", "notes": null, "evidence": {"page": 6, "section": "2.1 Electrical Specifications", "confidence": "high", "method": "table"}}
+      ],
+      "normal_temperature": [
+        {"min": 5, "typ": null, "max": 60, "unit": "°C", "condition": "Recommended normal range for best sensor performance", "notes": null, "evidence": {"page": 6, "section": "1.1 Recommended Operating Condition", "confidence": "high", "method": "prose"}}
+      ],
+      "normal_relative_humidity": [
+        {"min": 20, "typ": null, "max": 80, "unit": "%", "condition": "Recommended normal range for best sensor performance", "notes": "Published as %RH.", "evidence": {"page": 6, "section": "1.1 Recommended Operating Condition", "confidence": "high", "method": "prose"}}
+      ],
+      "supply_current_measuring": [
+        {"min": null, "typ": 0.0006, "max": 0.0015, "unit": "A", "condition": "While measuring", "notes": null, "evidence": {"page": 6, "section": "2.1 Electrical Specifications", "confidence": "high", "method": "table"}}
+      ],
+      "SHT35_humidity_accuracy_typical": [
+        {"min": null, "typ": 1.5, "max": null, "unit": "%", "condition": "SHT35 typical accuracy tolerance", "notes": "Published as ±1.5 %RH.", "evidence": {"page": 2, "section": "1 Sensor Performance - Humidity Sensor Specification", "confidence": "high", "method": "table"}}
+      ],
+      "SHT35_temperature_accuracy_typical": [
+        {"min": null, "typ": 0.1, "max": null, "unit": "°C", "condition": "SHT35, 20°C to 60°C", "notes": "Published as ±0.1°C.", "evidence": {"page": 2, "section": "1 Sensor Performance - Temperature Sensor Specification", "confidence": "high", "method": "table"}}
+      ]
+    },
+    "esd": {
+      "HBM": [
+        {"min": null, "typ": 4000, "max": null, "unit": "V", "condition": "Human body model", "notes": null, "evidence": {"page": 7, "section": "2.3 Absolute Minimum and Maximum Ratings", "confidence": "high", "method": "table"}}
+      ],
+      "CDM": [
+        {"min": null, "typ": 750, "max": null, "unit": "V", "condition": "Charge device model", "notes": null, "evidence": {"page": 7, "section": "2.3 Absolute Minimum and Maximum Ratings", "confidence": "high", "method": "table"}}
+      ]
+    },
+    "moisture_sensitivity": {
+      "msl": 1,
+      "peak_reflow_c": null,
+      "evidence": {"page": 16, "section": "5 Packaging", "confidence": "high", "method": "prose"}
+    },
+    "compliance": [
+      {"mark": "RoHS", "rating": null, "evidence": {"page": 19, "section": "7.1 Material Contents", "confidence": "high", "method": "prose"}},
+      {"mark": "WEEE", "rating": null, "evidence": {"page": 19, "section": "7.1 Material Contents", "confidence": "high", "method": "prose"}},
+      {"mark": "JEDEC JESD47", "rating": null, "evidence": {"page": 19, "section": "7 Quality", "confidence": "high", "method": "prose"}}
+    ],
+    "pinout": [],
+    "pin_relationships": [
+      {"type": "requires_pullup", "pins": ["1", "4"], "notes": "SDA and SCL are open-drain I/Os and require external pull-up resistors; 10 kΩ is given as an example.", "evidence": {"page": 8, "section": "3.2 Serial Clock and Serial Data (SCL, SDA)", "confidence": "high", "method": "prose"}}
+    ]
+  }
+}

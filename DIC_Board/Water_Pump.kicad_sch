@@ -702,6 +702,172 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -1108,7 +1274,7 @@
 		)
 		(uuid "179e522d-619b-59f5-af43-5c27230a7479")
 	)
-	(text "Pump has internal reverse-polarity diode TPS27S100A provides inductive turn-off clamp."
+	(text "Pump has internal reverse-polarity diode; D4 and TPS27S100A provide turn-off clamping."
 		(exclude_from_sim no)
 		(at 29.21 31.496 0)
 		(effects
@@ -1143,18 +1309,6 @@
 		(uuid "4dba7904-b392-442c-a04b-13f54da32838")
 	)
 	(junction
-		(at 160.02 114.3)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4fa38b0d-d961-4578-a033-fffaea59740f")
-	)
-	(junction
-		(at 109.22 81.28)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "54bab00e-bd93-44ef-b8f4-3571049768f9")
-	)
-	(junction
 		(at 127 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1185,6 +1339,18 @@
 		(uuid "9d426861-fecc-5c00-8fd4-dcdb081d8c18")
 	)
 	(junction
+		(at 175.26 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "adcbba3b-38a7-4c7d-9292-4e9f4c487cba")
+	)
+	(junction
+		(at 175.26 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b615f094-f6a7-49b5-bf0f-46fe8d9115a3")
+	)
+	(junction
 		(at 124.46 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1197,10 +1363,22 @@
 		(uuid "db1767e0-803f-4567-8b3a-212717005389")
 	)
 	(junction
+		(at 160.02 114.3)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea8a84a5-2830-4f65-931a-7cd5c8d2af8c")
+	)
+	(junction
 		(at 160.02 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef42b351-471e-4ba2-801d-6be27a876d5c")
+	)
+	(junction
+		(at 101.6 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f22a6d21-bcea-4283-9b1b-5f9fad145a38")
 	)
 	(no_connect
 		(at 124.46 83.82)
@@ -1290,7 +1468,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 114.3) (xy 115.57 114.3)
+			(xy 101.6 114.3) (xy 115.57 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1320,13 +1498,13 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 91.44) (xy 176.53 91.44)
+			(xy 101.6 81.28) (xy 124.46 81.28)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "421fc00c-7c78-4080-852c-42b647bd1a65")
+		(uuid "3d2ef456-d2b1-49dd-ae3d-03839cddbcbe")
 	)
 	(wire
 		(pts
@@ -1340,7 +1518,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 100.33) (xy 109.22 114.3)
+			(xy 101.6 100.33) (xy 101.6 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1370,7 +1548,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 114.3) (xy 170.18 114.3)
+			(xy 160.02 114.3) (xy 175.26 114.3)
 		)
 		(stroke
 			(width 0)
@@ -1380,13 +1558,33 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 91.44) (xy 170.18 114.3)
+			(xy 175.26 114.3) (xy 190.5 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "662587f9-e997-46df-b836-a3be874c3236")
+	)
+	(wire
+		(pts
+			(xy 190.5 91.44) (xy 190.5 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "67141255-3e6a-4c98-84f9-ef7c64ac85c3")
+	)
+	(wire
+		(pts
+			(xy 190.5 91.44) (xy 191.77 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c4a6669-2d91-4dce-926b-52cfa80e174b")
 	)
 	(wire
 		(pts
@@ -1440,6 +1638,26 @@
 	)
 	(wire
 		(pts
+			(xy 175.26 88.9) (xy 191.77 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8134c6d8-5f85-4671-874f-916a06f9cec5")
+	)
+	(wire
+		(pts
+			(xy 160.02 88.9) (xy 175.26 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83dc6d8e-45aa-48fb-aaf4-3e327bed0184")
+	)
+	(wire
+		(pts
 			(xy 160.02 93.98) (xy 160.02 97.79)
 		)
 		(stroke
@@ -1447,6 +1665,16 @@
 			(type default)
 		)
 		(uuid "85c429b1-4034-4044-8813-2bf7025c7eca")
+	)
+	(wire
+		(pts
+			(xy 175.26 105.41) (xy 175.26 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "896bb2ae-a0ba-4614-a68a-c6ff3e6bb0a9")
 	)
 	(wire
 		(pts
@@ -1460,7 +1688,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 81.28) (xy 96.52 81.28)
+			(xy 91.44 81.28) (xy 101.6 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1487,16 +1715,6 @@
 			(type default)
 		)
 		(uuid "970c8d9a-846c-4eb8-9fa2-0d33702fd114")
-	)
-	(wire
-		(pts
-			(xy 104.14 81.28) (xy 109.22 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9824f7a5-6a21-50b8-8ebd-9e2a7aa70b10")
 	)
 	(wire
 		(pts
@@ -1530,7 +1748,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 81.28) (xy 109.22 92.71)
+			(xy 101.6 81.28) (xy 101.6 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1580,16 +1798,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 81.28) (xy 124.46 81.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dfe92b9a-437f-49e4-8ab2-f55bf7a005fe")
-	)
-	(wire
-		(pts
 			(xy 134.62 104.14) (xy 134.62 114.3)
 		)
 		(stroke
@@ -1597,16 +1805,6 @@
 			(type default)
 		)
 		(uuid "e599b794-8331-442e-bfb6-0c3c460463ff")
-	)
-	(wire
-		(pts
-			(xy 160.02 88.9) (xy 176.53 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e951491a-7691-41cf-9eb3-2547634a3253")
 	)
 	(wire
 		(pts
@@ -1637,6 +1835,16 @@
 			(type default)
 		)
 		(uuid "fe64bcce-c028-4595-b352-63e9067424f2")
+	)
+	(wire
+		(pts
+			(xy 175.26 97.79) (xy 175.26 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff246962-9649-4b33-bad4-f34ef5e781a6")
 	)
 	(hierarchical_label "WATER_PUMP_EN"
 		(shape input)
@@ -2091,107 +2299,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 100.33 81.28 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "81fbeb75-fd18-5d7f-88f2-538d53ee8794")
-		(property "Reference" "R300"
-			(at 100.584 78.486 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "15k"
-			(at 100.33 84.328 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 100.33 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 100.33 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MCU input protection"
-			(at 100.33 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW040215K0FKED"
-			(at 100.33 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 100.33 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "84aed8f5-b9cd-52d9-91e2-7d4546ff1e02")
-		)
-		(pin "2"
-			(uuid "6b9a2b98-5793-57a6-818b-c7cac7282ddc")
-		)
-		(instances
-			(project "DIC_Board"
-				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/8810525e-14a4-4f99-ac27-94524d23e92b"
-					(reference "R300")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 144.78 119.38 0)
 		(unit 1)
@@ -2453,7 +2560,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 109.22 96.52 0)
+		(at 101.6 96.52 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2464,7 +2571,7 @@
 		(fields_autoplaced yes)
 		(uuid "bd323c23-d706-5be6-9837-b1e90403e9b1")
 		(property "Reference" "R301"
-			(at 105.41 95.25 0)
+			(at 97.79 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2474,7 +2581,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 105.41 97.79 0)
+			(at 97.79 97.79 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2484,7 +2591,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 109.22 96.52 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2495,7 +2602,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 96.52 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2506,7 +2613,7 @@
 			)
 		)
 		(property "Description" "Enable pull-down"
-			(at 109.22 96.52 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2517,7 +2624,7 @@
 			)
 		)
 		(property "MPN" "CRCW0402100KFKED"
-			(at 109.22 96.52 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2528,7 +2635,7 @@
 			)
 		)
 		(property "Manufacturer" "Vishay Dale"
-			(at 109.22 96.52 0)
+			(at 101.6 96.52 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2655,8 +2762,124 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 175.26 101.6 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f56c37df-622d-4751-b024-ebba132b13c7")
+		(property "Reference" "D4"
+			(at 177.8 100.0124 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STPS3L60U"
+			(at 177.8 102.5524 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps3l60.pdf"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "60 V, 3 A low-drop Schottky freewheel rectifier, SMB"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "STPS3L60U"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "STMicroelectronics"
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Comments" "Freewheel clamp sized above SBE 5P startup surge: pin 1 cathode to switched +12V output; pin 2 anode to GND."
+			(at 175.26 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5c48fbf-ce12-48a9-a98b-bd34cde9660e")
+		)
+		(pin "2"
+			(uuid "f9d3a64d-dfca-4654-9878-f19d8bacb508")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/8810525e-14a4-4f99-ac27-94524d23e92b"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 181.61 88.9 0)
+		(at 196.85 91.44 0)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2666,7 +2889,7 @@
 		(dnp no)
 		(uuid "f58dd159-8b0d-58ed-ba5a-b0c9dd64015e")
 		(property "Reference" "J30"
-			(at 181.356 84.836 0)
+			(at 196.596 95.504 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2676,7 +2899,7 @@
 			)
 		)
 		(property "Value" "0430450200"
-			(at 191.262 90.17 0)
+			(at 206.502 90.17 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2686,7 +2909,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal"
-			(at 181.61 88.9 0)
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2697,7 +2920,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/430/43045/430450200_sd.pdf"
-			(at 181.61 88.9 0)
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2708,7 +2931,7 @@
 			)
 		)
 		(property "Description" "Molex Micro-Fit 3.0 two-circuit right-angle through-hole header"
-			(at 181.61 88.9 0)
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2719,7 +2942,7 @@
 			)
 		)
 		(property "MPN" "0430450200"
-			(at 181.61 88.9 0)
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2730,7 +2953,7 @@
 			)
 		)
 		(property "Manufacturer" "Molex"
-			(at 181.61 88.9 0)
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2741,7 +2964,7 @@
 			)
 		)
 		(property "DigiKey" "WM1813-ND"
-			(at 181.61 88.9 0)
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2751,8 +2974,8 @@
 				)
 			)
 		)
-		(property "BOM Comments" "Pin 1 = switched +12 V; pin 2 = GND. Mating housing 0430250200 and female contacts required."
-			(at 181.61 88.9 0)
+		(property "BOM Comments" "Pin 1 = GND; pin 2 = switched +12 V. Mating housing 0430250200 and female contacts required."
+			(at 196.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

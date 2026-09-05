@@ -1,0 +1,78 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:46:39Z",
+  "execution": {
+    "completed_at": "2026-09-02T22:54:10Z",
+    "outcomes": [
+      {
+        "attempts": 2,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 2,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      },
+      {
+        "attempts": 2,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "crystal"
+      }
+    ],
+    "started_at": "2026-09-02T22:52:09Z"
+  },
+  "mpn": "ABS06-107-32.768KHZ-T",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\Abracon_clocking\\ABS06-107_datasheet.pdf",
+  "pdf_sha256": "sha256:1824459dd45c348d4a25a5d7afcd1d46af5b796df59ed038ce9f505ca7f48f22",
+  "plan_version": "1.0",
+  "scout_ref": "ABS06-107-32.768KHZ-T.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "ABS06-107-32.768KHZ-T.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        3
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "ABS06-107-32.768KHZ-T.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        3
+      ],
+      "prompt_template": "skills/datasheets/prompts/crystal.md",
+      "result_ref": "ABS06-107-32.768KHZ-T.crystal.result.json",
+      "schema": "skills/datasheets/schemas/crystal.schema.json",
+      "status": "complete",
+      "subagent_role": "crystal",
+      "task_id": "crystal",
+      "tier": "B"
+    }
+  ]
+}

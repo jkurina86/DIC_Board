@@ -1,0 +1,130 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:54:38Z",
+  "execution": {
+    "completed_at": "2026-09-02T23:00:20Z",
+    "outcomes": [
+      {
+        "attempts": 3,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 3,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      },
+      {
+        "attempts": 3,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "mcu"
+      }
+    ],
+    "started_at": "2026-09-02T22:58:03Z"
+  },
+  "mpn": "STM32L476ZGT6",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\STM32L476ZG_current\\STM32L476xx_datasheet.pdf",
+  "pdf_sha256": "sha256:a45a857e3aa75ac166dd532c76d76d5dd8377b9c5bf6f15c03c9cf85aeec0f65",
+  "plan_version": "1.0",
+  "scout_ref": "STM32L476ZGT6.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        110,
+        111,
+        112,
+        113,
+        114,
+        161,
+        234,
+        235,
+        258,
+        261
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "STM32L476ZGT6.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        61,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "STM32L476ZGT6.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        15,
+        16,
+        20,
+        40,
+        41,
+        42,
+        47,
+        48,
+        49,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        60,
+        61,
+        113,
+        161,
+        171,
+        234,
+        235,
+        258,
+        261
+      ],
+      "prompt_template": "skills/datasheets/prompts/mcu.md",
+      "result_ref": "STM32L476ZGT6.mcu.result.json",
+      "schema": "skills/datasheets/schemas/mcu.schema.json",
+      "status": "complete",
+      "subagent_role": "mcu",
+      "task_id": "mcu",
+      "tier": "B"
+    }
+  ]
+}

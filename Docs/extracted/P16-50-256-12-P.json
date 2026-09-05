@@ -1,0 +1,267 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 1,
+          "section": "P16 Specifications"
+        },
+        "mark": "IP-54",
+        "rating": null
+      }
+    ],
+    "description": "P16 actuator with 50 mm stroke, 256:1 gearing, 12 V rating, and potentiometer feedback",
+    "esd": null,
+    "family": "miniature linear actuator with potentiometer position feedback",
+    "moisture_sensitivity": null,
+    "package": {
+      "code": "P16 actuator with 5-pin 0.1-inch female socket harness",
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 2,
+        "section": "Ordering"
+      },
+      "pin_count": 5,
+      "pitch_mm": 2.54
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Low reference rail for the position-feedback potentiometer.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Option P - Potentiometer Position Feedback"
+        },
+        "is_5v_tolerant": null,
+        "name": "Feedback Potentiometer Negative Reference Rail",
+        "notes": "Apply any stable low reference here and a stable high reference to pin 5.",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "orange wire",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Position signal varying linearly between the two reference rails with actuator stroke.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Option P - Potentiometer Position Feedback"
+        },
+        "is_5v_tolerant": null,
+        "name": "Feedback Potentiometer Wiper",
+        "notes": null,
+        "numbers": [
+          "2"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "analog position feedback; purple wire",
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Motor terminal labeled V+ (12 V); applying voltage across pins 3 and 4 extends the actuator.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Option P - Potentiometer Position Feedback"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor V+",
+        "notes": "Reverse polarity to retract the actuator.",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "red wire",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Motor terminal labeled V- (Ground); applying voltage across pins 3 and 4 extends the actuator.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Option P - Potentiometer Position Feedback"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor V-",
+        "notes": "Reverse polarity to retract the actuator.",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "black wire",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "High reference rail for the position-feedback potentiometer.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Option P - Potentiometer Position Feedback"
+        },
+        "is_5v_tolerant": null,
+        "name": "Feedback Potentiometer Positive Reference Rail",
+        "notes": "Apply any stable high reference here and a stable low reference to pin 1.",
+        "numbers": [
+          "5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "yellow wire",
+        "type": "passive"
+      }
+    ],
+    "recommended_operating": {
+      "FEEDBACK_LINEARITY": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "P16 Specifications"
+          },
+          "max": 2,
+          "min": null,
+          "notes": "Published as less than 2.00%.",
+          "typ": null,
+          "unit": "%"
+        }
+      ],
+      "FEEDBACK_POTENTIOMETER": [
+        {
+          "condition": "50 mm stroke option",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "P16 Specifications"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Published tolerance is \u00b150%.",
+          "typ": 6000,
+          "unit": "\u03a9"
+        }
+      ],
+      "MAX_DUTY_CYCLE": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "P16 Specifications"
+          },
+          "max": 20,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "%"
+        }
+      ],
+      "STALL_CURRENT": [
+        {
+          "condition": "At 12 V",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "P16 Specifications"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Repeated stalling or stalling for more than a few seconds significantly shortens actuator life.",
+          "typ": 1,
+          "unit": "A"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Operating temperature",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "P16 Specifications"
+          },
+          "max": 50,
+          "min": -10,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "P16 input voltage; rated at 12 VDC",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "P16 Specifications"
+          },
+          "max": 15,
+          "min": 0,
+          "notes": null,
+          "typ": 12,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:56:27Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "P16-50-256-12-P.plan.json",
+    "quality_score": 60
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2016",
+    "datasheet_revision": "Rev B",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Actuonix_P16-50-256-12-P\\Actuonix_P16_datasheet.pdf",
+    "manufacturer": "Actuonix Motion Devices Inc.",
+    "mpn": "P16-50-256-12-P",
+    "page_count": 3,
+    "sha256": "sha256:070deb5f22cead2e67abec1e02b870234e9e321fdacc38d4debb51c247c1768d",
+    "source_url": null
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:47:33Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "32.768 kHz flexural-mode tuning-fork quartz crystal",
+    "description": "Ultra-low-power, low-ESR two-terminal real-time-clocking crystal",
+    "package": {
+      "code": "SMD-2012",
+      "pin_count": 2,
+      "pitch_mm": null,
+      "body_mm": {
+        "length": 2.0,
+        "width": 1.2,
+        "height": 0.6
+      },
+      "thermal_pad": false,
+      "evidence": {
+        "page": 3,
+        "section": "Outline Dimensions",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    "thermal": null,
+    "absolute_max": {},
+    "recommended_operating": {
+      "TA": [
+        {
+          "min": -40,
+          "typ": null,
+          "max": 85,
+          "unit": "\u00b0C",
+          "condition": "Operating temperature",
+          "notes": null,
+          "evidence": {
+            "page": 2,
+            "section": "Standard Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "DriveLevel": [
+        {
+          "min": null,
+          "typ": 1e-7,
+          "max": 5e-7,
+          "unit": "W",
+          "condition": "Crystal drive level",
+          "notes": "Reported as 0.1 uW typical and 0.5 uW maximum",
+          "evidence": {
+            "page": 2,
+            "section": "Standard Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [
+      {
+        "mark": "RoHS/RoHS II",
+        "rating": "Compliant",
+        "evidence": {
+          "page": 1,
+          "section": "Document header",
+          "confidence": "high",
+          "method": "prose"
+        }
+      }
+    ],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

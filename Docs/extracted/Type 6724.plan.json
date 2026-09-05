@@ -1,0 +1,65 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:54:20Z",
+  "execution": {
+    "completed_at": "2026-09-02T22:54:58Z",
+    "outcomes": [
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      }
+    ],
+    "started_at": "2026-09-02T22:54:58Z"
+  },
+  "mpn": "Type 6724",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Burkert_6724\\Burkert_Type_6724_datasheet.pdf",
+  "pdf_sha256": "sha256:2aba93c53cd4625151297e79695c2a04cb133319a9ef885741eec8f3566fcdd0",
+  "plan_version": "1.0",
+  "scout_ref": "Type 6724.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        3,
+        4,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15,
+        16
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "Type 6724.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        13
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "Type 6724.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

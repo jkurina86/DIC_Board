@@ -1,0 +1,91 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:47:33Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "Fundamental-mode automotive and industrial grade quartz crystal",
+    "description": "8.000 MHz two-terminal ceramic SMD crystal with V2R option set",
+    "package": {
+      "code": "SMD-3225",
+      "pin_count": 2,
+      "pitch_mm": null,
+      "body_mm": {
+        "length": 3.2,
+        "width": 2.5,
+        "height": 0.9
+      },
+      "thermal_pad": false,
+      "evidence": {
+        "page": 3,
+        "section": "Mechanical Dimensions",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    "thermal": null,
+    "absolute_max": {},
+    "recommended_operating": {
+      "TA": [
+        {
+          "min": -40,
+          "typ": null,
+          "max": 150,
+          "unit": "\u00b0C",
+          "condition": "Operating-temperature option V in exact order code; offered only with frequency-stability option R",
+          "notes": null,
+          "evidence": {
+            "page": 2,
+            "section": "Options and Part Identification",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "DriveLevel": [
+        {
+          "min": null,
+          "typ": 0.00001,
+          "max": 0.0002,
+          "unit": "W",
+          "condition": "Crystal drive level",
+          "notes": "Reported as 10 uW typical and 200 uW maximum",
+          "evidence": {
+            "page": 1,
+            "section": "Key Electrical Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [
+      {
+        "mark": "AEC-Q200",
+        "rating": "Qualified",
+        "evidence": {
+          "page": 1,
+          "section": "Features",
+          "confidence": "high",
+          "method": "prose"
+        }
+      },
+      {
+        "mark": "RoHS/RoHS II",
+        "rating": "Compliant with Pb-in-ceramic exemption 7c-I",
+        "evidence": {
+          "page": 1,
+          "section": "Document header",
+          "confidence": "high",
+          "method": "prose"
+        }
+      }
+    ],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

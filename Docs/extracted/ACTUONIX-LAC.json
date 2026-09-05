@@ -1,0 +1,697 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [],
+    "description": "Actuonix LAC controller supporting USB, RC servo, PWM, voltage, and current position commands",
+    "esd": null,
+    "family": "stand-alone closed-loop linear actuator control board",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "length": 50,
+        "width": 50
+      },
+      "code": "50 mm x 50 mm LAC board; 23 function-assigned contacts across X2-X6",
+      "evidence": {
+        "confidence": "medium",
+        "method": "derived",
+        "page": 1,
+        "section": "Specifications"
+      },
+      "pin_count": 23
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Negative potentiometer reference for L12-P/L16-P/P16-P/T16-P actuator.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Potentiometer Reference Negative",
+        "notes": null,
+        "numbers": [
+          "X2.1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "yellow wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Black actuator motor terminal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor Terminal",
+        "notes": null,
+        "numbers": [
+          "X2.2"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "black wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Red actuator motor terminal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor Terminal",
+        "notes": null,
+        "numbers": [
+          "X2.3"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "red wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Actuator potentiometer wiper input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Potentiometer Feedback (wiper)",
+        "notes": null,
+        "numbers": [
+          "X2.4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "analog position feedback; purple wire",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Positive potentiometer reference for L12-P/L16-P/P16-P/T16-P actuator.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X2"
+        },
+        "is_5v_tolerant": null,
+        "name": "Potentiometer Reference Positive",
+        "notes": null,
+        "numbers": [
+          "X2.5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "orange wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Radio-control receiver ground.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X3"
+        },
+        "is_5v_tolerant": null,
+        "name": "Ground",
+        "notes": null,
+        "numbers": [
+          "X3.1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "black wire",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Radio-control receiver power connection.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X3"
+        },
+        "is_5v_tolerant": null,
+        "name": "Power",
+        "notes": "Do not connect power to X6 and X3 at the same time.",
+        "numbers": [
+          "X3.2"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "red wire",
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Radio-control receiver control signal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X3"
+        },
+        "is_5v_tolerant": null,
+        "name": "Control",
+        "notes": null,
+        "numbers": [
+          "X3.3"
+        ],
+        "power_domain": null,
+        "recommended": [
+          {
+            "condition": "Positive 5 V pulse width; 1 ms full retract, 2 ms full extension",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 2,
+              "section": "RC Servo Interface Mode"
+            },
+            "max": 0.002,
+            "min": 0.001,
+            "notes": null,
+            "typ": null,
+            "unit": "s"
+          }
+        ],
+        "subtype": "RC servo; white wire",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Large-actuator positive potentiometer reference.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X4"
+        },
+        "is_5v_tolerant": null,
+        "name": "Potentiometer Reference Positive",
+        "notes": "X4.1 and X4.5 can be used as the 3.3 V reference pair for an external control potentiometer.",
+        "numbers": [
+          "X4.1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "white wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Large-actuator potentiometer wiper input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X4"
+        },
+        "is_5v_tolerant": null,
+        "name": "Potentiometer Feedback (wiper)",
+        "notes": null,
+        "numbers": [
+          "X4.2"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "analog position feedback; yellow wire",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Large-actuator red motor terminal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X4"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor Terminal",
+        "notes": "Swap X4.3 and X4.4 if the actuator moves to one end and stops.",
+        "numbers": [
+          "X4.3"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "red wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Large-actuator black motor terminal.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X4"
+        },
+        "is_5v_tolerant": null,
+        "name": "Motor Terminal",
+        "notes": "Swap X4.3 and X4.4 if the actuator moves to one end and stops.",
+        "numbers": [
+          "X4.4"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "black wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Large-actuator negative potentiometer reference.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X4"
+        },
+        "is_5v_tolerant": null,
+        "name": "Potentiometer Reference Negative",
+        "notes": "X4.1 and X4.5 can be used as the 3.3 V reference pair for an external control potentiometer.",
+        "numbers": [
+          "X4.5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "blue wire",
+        "type": "power_out"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "No connection.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X5"
+        },
+        "is_5v_tolerant": null,
+        "name": "N/C",
+        "notes": null,
+        "numbers": [
+          "X5.1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "USB Mini-B",
+        "type": "not_connected"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "USB data connection; polarity is not identified in this datasheet.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X5"
+        },
+        "is_5v_tolerant": null,
+        "name": "Data",
+        "notes": null,
+        "numbers": [
+          "X5.2"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "USB Mini-B",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "USB data connection; polarity is not identified in this datasheet.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X5"
+        },
+        "is_5v_tolerant": null,
+        "name": "Data",
+        "notes": null,
+        "numbers": [
+          "X5.3"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "USB Mini-B",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "No connection.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X5"
+        },
+        "is_5v_tolerant": null,
+        "name": "N/C",
+        "notes": null,
+        "numbers": [
+          "X5.4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "USB Mini-B",
+        "type": "not_connected"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "USB ground.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X5"
+        },
+        "is_5v_tolerant": null,
+        "name": "Ground",
+        "notes": null,
+        "numbers": [
+          "X5.5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "USB Mini-B",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Control-interface ground.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X6"
+        },
+        "is_5v_tolerant": null,
+        "name": "Ground",
+        "notes": "Connect the control-signal ground to LAC ground when an external potentiometer is not used.",
+        "numbers": [
+          "X6.1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "control interface",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "LAC power input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X6"
+        },
+        "is_5v_tolerant": null,
+        "name": "6-24 VDC Power",
+        "notes": "Supply voltage must match actuator rating; do not power X6 and X3 simultaneously.",
+        "numbers": [
+          "X6.2"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "control interface",
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Positive 5 V pulse-width position command.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X6"
+        },
+        "is_5v_tolerant": true,
+        "name": "RC / Hobby Servo Input Signal",
+        "notes": null,
+        "numbers": [
+          "X6.3"
+        ],
+        "power_domain": null,
+        "recommended": [
+          {
+            "condition": "1 ms full retract, 2 ms full extension",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 2,
+              "section": "RC Servo Interface Mode"
+            },
+            "max": 0.002,
+            "min": 0.001,
+            "notes": null,
+            "typ": null,
+            "unit": "s"
+          }
+        ],
+        "subtype": "RC servo",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "4-20 mA actuator-position setpoint input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X6"
+        },
+        "is_5v_tolerant": null,
+        "name": "Current Input Signal",
+        "notes": null,
+        "numbers": [
+          "X6.4"
+        ],
+        "power_domain": null,
+        "recommended": [
+          {
+            "condition": "Setpoint current must be held to reach and maintain position.",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 2,
+              "section": "4-20 mA Interface Mode"
+            },
+            "max": 0.02,
+            "min": 0.004,
+            "notes": null,
+            "typ": null,
+            "unit": "A"
+          }
+        ],
+        "subtype": "analog current",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "0-3.3 V setpoint input or 3.3 V, 1 kHz duty-cycle position command.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "External Connections Detail - X6"
+        },
+        "is_5v_tolerant": true,
+        "name": "Voltage Input Signal or 1 kHz PWM",
+        "notes": "Setpoint must be held to reach and maintain the desired position.",
+        "numbers": [
+          "X6.5"
+        ],
+        "power_domain": null,
+        "recommended": [
+          {
+            "condition": "Analog setpoint or PWM amplitude",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 2,
+              "section": "0-3.3 V Interface Mode / PWM Mode"
+            },
+            "max": 3.3,
+            "min": 0,
+            "notes": "The PWM input is explicitly 5 V tolerant, but its duty-cycle range differs at 5 V.",
+            "typ": null,
+            "unit": "V"
+          },
+          {
+            "condition": "PWM mode",
+            "evidence": {
+              "confidence": "high",
+              "method": "prose",
+              "page": 2,
+              "section": "PWM Mode"
+            },
+            "max": null,
+            "min": null,
+            "notes": null,
+            "typ": 1000,
+            "unit": "Hz"
+          }
+        ],
+        "subtype": "analog voltage or PWM",
+        "type": "input"
+      }
+    ],
+    "recommended_operating": {
+      "PEAK_CURRENT": [
+        {
+          "condition": "10% duty cycle",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 4,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "RH": [
+        {
+          "condition": "Operating environment",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 80,
+          "min": 10,
+          "notes": null,
+          "typ": null,
+          "unit": "%"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Operating environment",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 70,
+          "min": -10,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "Supply voltage must match the actuator's rated voltage.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications"
+          },
+          "max": 24,
+          "min": 6,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:56:27Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "ACTUONIX-LAC.plan.json",
+    "quality_score": 59
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2017",
+    "datasheet_revision": null,
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Actuonix_P16-50-256-12-P\\Actuonix_LAC_controller_datasheet.pdf",
+    "manufacturer": "Actuonix Motion Devices",
+    "mpn": "ACTUONIX-LAC",
+    "page_count": 2,
+    "sha256": "sha256:b9cfe5e6b962ef2e297b676137d5ee2994d9be79af521c4fcbfeb7caf8ecf775",
+    "source_url": null
+  }
+}

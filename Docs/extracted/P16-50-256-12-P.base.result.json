@@ -1,0 +1,139 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:01Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "miniature linear actuator with potentiometer position feedback",
+    "description": "P16 actuator with 50 mm stroke, 256:1 gearing, 12 V rating, and potentiometer feedback",
+    "package": {
+      "code": "P16 actuator with 5-pin 0.1-inch female socket harness",
+      "pin_count": 5,
+      "pitch_mm": 2.54,
+      "evidence": {
+        "page": 2,
+        "section": "Ordering",
+        "confidence": "high",
+        "method": "prose"
+      }
+    },
+    "thermal": null,
+    "absolute_max": {},
+    "recommended_operating": {
+      "VIN": [
+        {
+          "min": 0,
+          "typ": 12,
+          "max": 15,
+          "unit": "V",
+          "condition": "P16 input voltage; rated at 12 VDC",
+          "notes": null,
+          "evidence": {
+            "page": 1,
+            "section": "P16 Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "TA": [
+        {
+          "min": -10,
+          "typ": null,
+          "max": 50,
+          "unit": "°C",
+          "condition": "Operating temperature",
+          "notes": null,
+          "evidence": {
+            "page": 1,
+            "section": "P16 Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "STALL_CURRENT": [
+        {
+          "min": null,
+          "typ": 1,
+          "max": null,
+          "unit": "A",
+          "condition": "At 12 V",
+          "notes": "Repeated stalling or stalling for more than a few seconds significantly shortens actuator life.",
+          "evidence": {
+            "page": 1,
+            "section": "P16 Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "MAX_DUTY_CYCLE": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 20,
+          "unit": "%",
+          "condition": null,
+          "notes": null,
+          "evidence": {
+            "page": 1,
+            "section": "P16 Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "FEEDBACK_POTENTIOMETER": [
+        {
+          "min": null,
+          "typ": 6000,
+          "max": null,
+          "unit": "Ω",
+          "condition": "50 mm stroke option",
+          "notes": "Published tolerance is ±50%.",
+          "evidence": {
+            "page": 1,
+            "section": "P16 Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "FEEDBACK_LINEARITY": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 2,
+          "unit": "%",
+          "condition": null,
+          "notes": "Published as less than 2.00%.",
+          "evidence": {
+            "page": 1,
+            "section": "P16 Specifications",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [
+      {
+        "mark": "IP-54",
+        "rating": null,
+        "evidence": {
+          "page": 1,
+          "section": "P16 Specifications",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

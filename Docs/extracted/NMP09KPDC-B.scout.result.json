@@ -1,0 +1,29 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:08Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "NMP09KPDC-B",
+    "metadata": {
+      "manufacturer": "KNF",
+      "datasheet_revision": "KNF 05/2025",
+      "datasheet_date": "2025-05",
+      "page_count": 4,
+      "source_url": "https://www.knf.com",
+      "is_family_pdf": true,
+      "family_member_mpns": ["NMP09KPDC-S", "NMP09KPDC-M", "NMP09KPDC-L", "NMP09KPDC-B"]
+    },
+    "categories": [],
+    "extraction_pages": {
+      "base": [1, 3, 4],
+      "pinout": [3]
+    },
+    "quality_verdict": {
+      "verdict": "low_quality",
+      "reason": "Target is present and electrical ratings are extractable, but the family sheet provides no electrical connector or wire assignment for NMP09KPDC-B and no absolute-voltage, ESD, or thermal-rating section."
+    }
+  }
+}

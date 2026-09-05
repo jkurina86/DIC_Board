@@ -1,0 +1,172 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [],
+    "description": "Plastic-housed brushless DC submersible pump rated to 600 m",
+    "esd": null,
+    "family": "submersible centrifugal pump",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": null,
+      "code": "SBE 5P plastic pump assembly with 2-pin XSG or MCBH connector",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 2,
+        "section": "Mechanical and dimensional drawing"
+      },
+      "pin_count": 2,
+      "pitch_mm": null,
+      "thermal_pad": null
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground connection for the XSG-2BCL-HP-SS or wet-pluggable MCBH-2MP connector.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Mechanical drawing - connector pin signal table"
+        },
+        "is_5v_tolerant": null,
+        "name": "GROUND",
+        "notes": null,
+        "numbers": [
+          "1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "ground",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Positive power connection for the XSG-2BCL-HP-SS or wet-pluggable MCBH-2MP connector.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Mechanical drawing - connector pin signal table"
+        },
+        "is_5v_tolerant": null,
+        "name": "+POWER",
+        "notes": "A series diode is installed in the input power line to protect against accidental wire reversal.",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "DC supply",
+        "type": "power_in"
+      }
+    ],
+    "recommended_operating": {
+      "Current_limited_start_supply": [
+        {
+          "condition": "Motor reaches speed in approximately 0.30 s",
+          "evidence": {
+            "confidence": "medium",
+            "method": "prose",
+            "page": 1,
+            "section": "Operation"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Approximate.",
+          "typ": 0.2,
+          "unit": "A"
+        }
+      ],
+      "Turn_on_surge_current": [
+        {
+          "condition": "Unlimited supply current",
+          "evidence": {
+            "confidence": "medium",
+            "method": "prose",
+            "page": 1,
+            "section": "Operation"
+          },
+          "max": 1.8,
+          "min": null,
+          "notes": "Approximate; drops to steady state in approximately 0.25 s.",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "#3 winding, 2000 or 3000 RPM typical configurations",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 1,
+            "section": "Options"
+          },
+          "max": 18,
+          "min": 10,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "#3 winding, 4500 RPM",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Field Specifications - Performance"
+          },
+          "max": 18,
+          "min": 12,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        },
+        {
+          "condition": "#3 or #5 winding, 1300 or 2000 RPM low-voltage configuration",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Field Specifications - Performance"
+          },
+          "max": 16,
+          "min": 6,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T23:00:40Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": "openai-gpt-5.6-sol",
+    "plan_ref": "SBE 5P.plan.json",
+    "quality_score": 57
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2025-05",
+    "datasheet_revision": "SBE 5T & 5P.DS.53.May25",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Sea-Bird_SBE5P\\SBE5_datasheets\\SBE_5T___5PDS53May25.pdf",
+    "manufacturer": "Sea-Bird Scientific",
+    "mpn": "SBE 5P",
+    "page_count": 2,
+    "sha256": "sha256:6b4bdfc7d404565ac252699e2fb2425b6c52a5cbfce7a62802f95ca688d536c4",
+    "source_url": "https://seabird.com"
+  }
+}

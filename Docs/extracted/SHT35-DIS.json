@@ -1,0 +1,497 @@
+{
+  "base": {
+    "absolute_max": {
+      "VDD": [
+        {
+          "condition": "Stress rating",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "2.3 Absolute Minimum and Maximum Ratings"
+          },
+          "max": 6.0,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "input_current_any_pin": [
+        {
+          "condition": "Any pin",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "2.3 Absolute Minimum and Maximum Ratings"
+          },
+          "max": 0.1,
+          "min": -0.1,
+          "notes": "Published as \u00b1100 mA.",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "operating_temperature": [
+        {
+          "condition": "Stress rating",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "2.3 Absolute Minimum and Maximum Ratings"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "storage_temperature": [
+        {
+          "condition": "Storage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "2.3 Absolute Minimum and Maximum Ratings"
+          },
+          "max": 150,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 19,
+          "section": "7.1 Material Contents"
+        },
+        "mark": "RoHS",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 19,
+          "section": "7.1 Material Contents"
+        },
+        "mark": "WEEE",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 19,
+          "section": "7 Quality"
+        },
+        "mark": "JEDEC JESD47",
+        "rating": null
+      }
+    ],
+    "description": "SHT35 accuracy-class humidity and temperature sensor with I2C interface in an 8-pin open-cavity DFN package.",
+    "esd": {
+      "CDM": [
+        {
+          "condition": "Charge device model",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "2.3 Absolute Minimum and Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 750,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": "Human body model",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 7,
+            "section": "2.3 Absolute Minimum and Maximum Ratings"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 4000,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "digital humidity and temperature sensor",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 16,
+        "section": "5 Packaging"
+      },
+      "msl": 1,
+      "peak_reflow_c": null
+    },
+    "package": {
+      "body_mm": {
+        "height": 0.9,
+        "length": 2.5,
+        "width": 2.5
+      },
+      "code": "8-pin open-cavity DFN",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 17,
+        "section": "5.2 Package Outline"
+      },
+      "pin_count": 8,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 8,
+          "section": "3.2 Serial Clock and Serial Data (SCL, SDA)"
+        },
+        "notes": "SDA and SCL are open-drain I/Os and require external pull-up resistors; 10 k\u03a9 is given as an example.",
+        "pins": [
+          "1",
+          "4"
+        ],
+        "type": "requires_pullup"
+      }
+    ],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial data input/output.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "SDA",
+        "notes": "Requires an external pull-up resistor.",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "open_drain I2C data",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Address pin; connect to logic high or logic low.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "ADDR",
+        "notes": "Do not leave floating. Logic low selects 0x44; logic high selects 0x45.",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "I2C address select",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Indicates an alarm condition.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "ALERT",
+        "notes": "Must be left floating if unused.",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "alarm",
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial clock input/output.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "SCL",
+        "notes": "Requires an external pull-up resistor.",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "open_drain I2C clock",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Supply voltage input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDD",
+        "notes": "Decouple to VSS with 100 nF placed as close to the sensor as possible.",
+        "numbers": [
+          "5"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Active-low reset input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "nRESET",
+        "notes": "If unused, leave floating or connect to VDD through a resistor of at least 2 k\u03a9; an internal 50 k\u03a9 typical pull-up is documented.",
+        "numbers": [
+          "6"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "active_low reset",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "No electrical function.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "R",
+        "notes": "Connect to VSS.",
+        "numbers": [
+          "7"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": null,
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 8,
+          "section": "3 Pin Assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "VSS",
+        "notes": "The unnumbered center die pad is internally connected to VSS and is recommended to be soldered for mechanical reasons.",
+        "numbers": [
+          "8"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "ground",
+        "type": "passive"
+      }
+    ],
+    "recommended_operating": {
+      "SHT35_humidity_accuracy_typical": [
+        {
+          "condition": "SHT35 typical accuracy tolerance",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "1 Sensor Performance - Humidity Sensor Specification"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Published as \u00b11.5 %RH.",
+          "typ": 1.5,
+          "unit": "%"
+        }
+      ],
+      "SHT35_temperature_accuracy_typical": [
+        {
+          "condition": "SHT35, 20\u00b0C to 60\u00b0C",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "1 Sensor Performance - Temperature Sensor Specification"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Published as \u00b10.1\u00b0C.",
+          "typ": 0.1,
+          "unit": "\u00b0C"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Electrical specification range",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "2.1 Electrical Specifications"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "2.1 Electrical Specifications"
+          },
+          "max": 5.5,
+          "min": 2.15,
+          "notes": null,
+          "typ": 3.3,
+          "unit": "V"
+        }
+      ],
+      "normal_relative_humidity": [
+        {
+          "condition": "Recommended normal range for best sensor performance",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 6,
+            "section": "1.1 Recommended Operating Condition"
+          },
+          "max": 80,
+          "min": 20,
+          "notes": "Published as %RH.",
+          "typ": null,
+          "unit": "%"
+        }
+      ],
+      "normal_temperature": [
+        {
+          "condition": "Recommended normal range for best sensor performance",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 6,
+            "section": "1.1 Recommended Operating Condition"
+          },
+          "max": 60,
+          "min": 5,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "supply_current_measuring": [
+        {
+          "condition": "While measuring",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 6,
+            "section": "2.1 Electrical Specifications"
+          },
+          "max": 0.0015,
+          "min": null,
+          "notes": null,
+          "typ": 0.0006,
+          "unit": "A"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:51:15Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "SHT35-DIS.plan.json",
+    "quality_score": 61
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2022-12",
+    "datasheet_revision": "Version 7",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Sensors\\Sensirion_SHT35\\SHT3x_DIS_datasheet.pdf",
+    "manufacturer": "Sensirion AG",
+    "mpn": "SHT35-DIS",
+    "page_count": 22,
+    "sha256": "sha256:095b1853e7f4328f5897c9ca6c392a7dd8b0202eda66b0a2629f9cb840dd496d",
+    "source_url": "https://www.sensirion.com"
+  }
+}

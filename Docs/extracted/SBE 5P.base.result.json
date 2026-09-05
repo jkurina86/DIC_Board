@@ -1,0 +1,110 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:08Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "submersible centrifugal pump",
+    "description": "Plastic-housed brushless DC submersible pump rated to 600 m",
+    "package": {
+      "code": "SBE 5P plastic pump assembly with 2-pin XSG or MCBH connector",
+      "pin_count": 2,
+      "pitch_mm": null,
+      "body_mm": null,
+      "thermal_pad": null,
+      "evidence": {
+        "page": 2,
+        "section": "Mechanical and dimensional drawing",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    "thermal": null,
+    "absolute_max": {},
+    "recommended_operating": {
+      "VIN": [
+        {
+          "min": 10,
+          "typ": null,
+          "max": 18,
+          "unit": "V",
+          "condition": "#3 winding, 2000 or 3000 RPM typical configurations",
+          "notes": null,
+          "evidence": {
+            "page": 1,
+            "section": "Options",
+            "confidence": "high",
+            "method": "prose"
+          }
+        },
+        {
+          "min": 12,
+          "typ": null,
+          "max": 18,
+          "unit": "V",
+          "condition": "#3 winding, 4500 RPM",
+          "notes": null,
+          "evidence": {
+            "page": 2,
+            "section": "Field Specifications - Performance",
+            "confidence": "high",
+            "method": "table"
+          }
+        },
+        {
+          "min": 6,
+          "typ": null,
+          "max": 16,
+          "unit": "V",
+          "condition": "#3 or #5 winding, 1300 or 2000 RPM low-voltage configuration",
+          "notes": null,
+          "evidence": {
+            "page": 2,
+            "section": "Field Specifications - Performance",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "Turn_on_surge_current": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 1.8,
+          "unit": "A",
+          "condition": "Unlimited supply current",
+          "notes": "Approximate; drops to steady state in approximately 0.25 s.",
+          "evidence": {
+            "page": 1,
+            "section": "Operation",
+            "confidence": "medium",
+            "method": "prose"
+          }
+        }
+      ],
+      "Current_limited_start_supply": [
+        {
+          "min": null,
+          "typ": 0.2,
+          "max": null,
+          "unit": "A",
+          "condition": "Motor reaches speed in approximately 0.30 s",
+          "notes": "Approximate.",
+          "evidence": {
+            "page": 1,
+            "section": "Operation",
+            "confidence": "medium",
+            "method": "prose"
+          }
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

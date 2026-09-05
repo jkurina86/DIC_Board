@@ -1,0 +1,535 @@
+{
+  "base": {
+    "absolute_max": {
+      "IDD_ISS": [
+        {
+          "condition": "Supply current at VDD pin",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 0.05,
+          "min": -0.05,
+          "notes": "Reported as -50 mA to +50 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "II": [
+        {
+          "condition": "DC input current",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 0.01,
+          "min": -0.01,
+          "notes": "Reported as -10 mA to +10 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "IO": [
+        {
+          "condition": "DC output current",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 0.01,
+          "min": -0.01,
+          "notes": "Reported as -10 mA to +10 mA",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "PTOT": [
+        {
+          "condition": "Total power dissipation",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 0.3,
+          "min": null,
+          "notes": "Reported as 300 mW",
+          "typ": null,
+          "unit": "W"
+        }
+      ],
+      "TOPR": [
+        {
+          "condition": "Operating temperature range listed in absolute maximum ratings",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "TSTO": [
+        {
+          "condition": "Stored as bare product",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 125,
+          "min": -55,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD_max": [
+        {
+          "condition": "Supply voltage relative to GND",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": 6.0,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VI": [
+        {
+          "condition": "Input pin voltage relative to GND",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.3,
+          "notes": "Published upper limit is VDD + 0.3 V and is retained symbolically rather than resolved at an assumed VDD",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VO": [
+        {
+          "condition": "CLKOUT/INT output voltage relative to GND",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.5,
+          "notes": "Published upper limit is VDD + 0.5 V and is retained symbolically rather than resolved at an assumed VDD",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "RoHS/RoHS II",
+        "rating": "Compliant and 100% lead-free"
+      }
+    ],
+    "description": "RTC module with integrated 32.768 kHz tuning-fork crystal, DTCXO compensation, backup switchover, and SPI interface",
+    "esd": null,
+    "family": "Temperature-compensated real-time-clock module with SPI bus",
+    "moisture_sensitivity": {
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 1,
+        "section": "Document header"
+      },
+      "msl": 1,
+      "peak_reflow_c": 260
+    },
+    "package": {
+      "body_mm": {
+        "height": 0.9,
+        "length": 3.7,
+        "width": 2.5
+      },
+      "code": "SMD-10",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 7,
+        "section": "Outline Dimensions"
+      },
+      "pin_count": 10,
+      "pitch_mm": 0.8,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "CLKOUT enable/disable input; active high",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "CLKOE",
+        "notes": "Tie to GND when CLKOUT is not used",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "clock_output_enable",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Positive supply voltage",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDD",
+        "notes": "Positive or negative supply steps may affect oscillator performance; place a 10 nF decoupling capacitor close to the device",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "main_supply",
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Selectable CLKOUT or INT function",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "CLKOUT",
+        "notes": "CLKOUT is push-pull; alternate INT function is open-drain and requires a pull-up resistor",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "push_pull_or_open_drain_interrupt",
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial clock input",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "SCL",
+        "notes": "May float when CE is inactive",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "spi_clock",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial data output; push-pull and high-impedance when not driving",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "SDO",
+        "notes": "May be connected to SDI for a single-wire data line",
+        "numbers": [
+          "5"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "spi_data_output",
+        "type": "tri_state"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "VSS",
+        "notes": null,
+        "numbers": [
+          "6"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "ground",
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Active-low interrupt output",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "INT",
+        "notes": null,
+        "numbers": [
+          "7"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "open_drain_active_low",
+        "type": "open_collector"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Active-high chip-enable input",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "CE",
+        "notes": null,
+        "numbers": [
+          "8"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "chip_enable",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Backup supply voltage",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "VBACKUP",
+        "notes": "Tie to GND when the backup supply is not used; the datasheet does not provide a standalone numeric VBACKUP operating range",
+        "numbers": [
+          "9"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "backup_supply",
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial data input",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 7,
+          "section": "Pin Description"
+        },
+        "is_5v_tolerant": null,
+        "name": "SDI",
+        "notes": "May float when CE is inactive",
+        "numbers": [
+          "10"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "spi_data_input",
+        "type": "input"
+      }
+    ],
+    "recommended_operating": {
+      "IDD_active": [
+        {
+          "condition": "SCL=1 MHz, VDD=3.3 V, -40\u00b0C to +125\u00b0C, SPI active, CLKOUT disabled",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "Static Characteristics - Supply Current"
+          },
+          "max": 5.5e-05,
+          "min": null,
+          "notes": "Reported as 55 uA maximum",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "IDD_inactive": [
+        {
+          "condition": "VDD=3.3 V, -40\u00b0C to +85\u00b0C, SPI inactive, CLKOUT disabled, VBACK=0 V",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Static Characteristics - Supply Current"
+          },
+          "max": 2e-06,
+          "min": null,
+          "notes": "Reported as 0.8 uA typical and 2.0 uA maximum",
+          "typ": 8e-07,
+          "unit": "A"
+        },
+        {
+          "condition": "VDD=3.3 V, -40\u00b0C to +125\u00b0C, SPI inactive, CLKOUT disabled, VBACK=0 V",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Static Characteristics - Supply Current"
+          },
+          "max": 5.2e-06,
+          "min": null,
+          "notes": "Reported as 5.2 uA maximum",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "SCL_frequency": [
+        {
+          "condition": "VDD=3.3 V or 5.0 V",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 5,
+            "section": "SPI Interface Dynamic Characteristics"
+          },
+          "max": 1000000,
+          "min": null,
+          "notes": "Reported as 1.0 MHz maximum",
+          "typ": null,
+          "unit": "Hz"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Operating temperature range",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "Operating Temperature Range"
+          },
+          "max": 125,
+          "min": -40,
+          "notes": "The base order code does not select the D (-40 to +85 C) or H (-40 to +125 C) ordering suffix shown on page 6",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": "Time-keeping mode and reduced-speed interface operation",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Static Characteristics - Supplies"
+          },
+          "max": 5.5,
+          "min": 1.4,
+          "notes": "Static-characteristics table; the feature summary separately states clock operation down to 1.3 V",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:54:10Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "AB-RTCMC-32.768kHz-EOA9-S3.plan.json",
+    "quality_score": 55
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2018-11-28",
+    "datasheet_revision": "11.28.2018",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\Abracon_RTC\\AB-RTCMC-EOA9-S3_datasheet.pdf",
+    "manufacturer": "Abracon LLC",
+    "mpn": "AB-RTCMC-32.768kHz-EOA9-S3",
+    "page_count": 9,
+    "sha256": "sha256:2e172b72e586b868a672c4cdcb2c4e5fd13dd6b029c0fa8c30193663c15914dd",
+    "source_url": "https://abracon.com/realtimeclock/AB-RTCMC-32.768kHz-EOA9-S3.pdf"
+  }
+}

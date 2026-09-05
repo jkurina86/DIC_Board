@@ -1,0 +1,130 @@
+{
+  "task_id": "mcu",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:53:10Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "core_family": "cortex_m4f",
+    "core_speed_max": 120000000,
+    "flash_size": 1048576,
+    "ram_size": 655360,
+    "eeprom_size": 0,
+    "pin_count": 144,
+    "gpio_count": 115,
+    "nvic_priorities": 16,
+    "vdd_range": [
+      {
+        "min": 1.71,
+        "typ": null,
+        "max": 3.6,
+        "unit": "V",
+        "condition": "VDD standard operating voltage",
+        "notes": null,
+        "evidence": {
+          "page": 140,
+          "section": "6.3.1 General operating conditions, Table 21",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "vddio_range": [
+      {
+        "min": 1.08,
+        "typ": null,
+        "max": 3.6,
+        "unit": "V",
+        "condition": "VDDIO2 with at least one PG[15:2] I/O used",
+        "notes": null,
+        "evidence": {
+          "page": 140,
+          "section": "6.3.1 General operating conditions, Table 21",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "vdda_range": [
+      {
+        "min": 1.62,
+        "typ": null,
+        "max": 3.6,
+        "unit": "V",
+        "condition": "ADC or comparator used",
+        "notes": "Minimum depends on the enabled analog peripheral.",
+        "evidence": {
+          "page": 140,
+          "section": "6.3.1 General operating conditions, Table 21",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "peripheral_counts": {
+      "uart": 6,
+      "spi": 3,
+      "i2c": 4,
+      "can": 1,
+      "usb": 1,
+      "ethernet": 0,
+      "dac": 1,
+      "timer_general": 9,
+      "timer_advanced": 2
+    },
+    "adc": {
+      "bit_depth": 12,
+      "channel_count": 16,
+      "sample_rate_max_hz": 5000000
+    },
+    "dac": {
+      "bit_depth": 12,
+      "channel_count": 2,
+      "sample_rate_max_hz": null
+    },
+    "boot_pins": null,
+    "debug_interface": "swd_jtag",
+    "reset_pin": null,
+    "temperature_grades": [
+      "suffix 6: -40 to +85 °C ambient, +105 °C junction"
+    ],
+    "thermal_resistance": {
+      "rtheta_ja": [
+        {
+          "min": null,
+          "typ": 32,
+          "max": null,
+          "unit": "°C/W",
+          "condition": "LQFP144, 20 x 20 mm",
+          "notes": null,
+          "evidence": {
+            "page": 301,
+            "section": "7.7 Thermal characteristics, Table 136",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "rtheta_jc": null,
+      "rtheta_jl": null
+    },
+    "package": {
+      "code": "LQFP144",
+      "pin_count": 144,
+      "pitch_mm": 0.5,
+      "body_mm": {
+        "length": 20.0,
+        "width": 20.0,
+        "height": 1.4
+      },
+      "thermal_pad": false,
+      "evidence": {
+        "page": 289,
+        "section": "7.3 LQFP144 package information, Table 130",
+        "confidence": "high",
+        "method": "table"
+      }
+    }
+  }
+}

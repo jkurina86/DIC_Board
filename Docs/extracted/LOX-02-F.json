@@ -1,0 +1,273 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "RoHS",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "REACH",
+        "rating": null
+      }
+    ],
+    "description": "Factory-calibrated flow-through oxygen sensor with pressure and temperature outputs over 3.3 V TTL UART.",
+    "esd": null,
+    "family": "luminescence-based optical oxygen sensor",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": null,
+      "code": "Flow-through sensor module with four PCB pins",
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 2,
+        "section": "Electrical Interface"
+      },
+      "pin_count": 4,
+      "pitch_mm": 2.54,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Positive 5 V supply.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical Interface"
+        },
+        "is_5v_tolerant": null,
+        "name": "Vs (+5V)",
+        "notes": "Apply power to pins 1 and 2 before communicating on pins 3 and 4.",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": null,
+        "type": "power_in"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground return.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical Interface"
+        },
+        "is_5v_tolerant": null,
+        "name": "GND (0V)",
+        "notes": "Apply power to pins 1 and 2 before communicating on pins 3 and 4.",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "ground",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Sensor UART transmit output.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical Interface"
+        },
+        "is_5v_tolerant": true,
+        "name": "Sensor Transmit",
+        "notes": "The datasheet marks this 3.3 V UART pin as 5 V tolerant.",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "3.3 V TTL UART",
+        "type": "output"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Sensor UART receive input.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Electrical Interface"
+        },
+        "is_5v_tolerant": true,
+        "name": "Sensor Receive",
+        "notes": "The datasheet marks this 3.3 V UART pin as 5 V tolerant.",
+        "numbers": [
+          "4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "3.3 V TTL UART",
+        "type": "input"
+      }
+    ],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": "Operating",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications - Technical Specifications"
+          },
+          "max": 45,
+          "min": 0,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications - Technical Specifications"
+          },
+          "max": 5.5,
+          "min": 4.5,
+          "notes": "Published as supply voltage Vs.",
+          "typ": 5.0,
+          "unit": "V"
+        }
+      ],
+      "oxygen_measurement_range": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications - Output Values"
+          },
+          "max": 25,
+          "min": 0,
+          "notes": "Oxygen concentration range.",
+          "typ": null,
+          "unit": "%"
+        }
+      ],
+      "relative_humidity": [
+        {
+          "condition": "Non-condensing",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications - Technical Specifications"
+          },
+          "max": 99,
+          "min": 0,
+          "notes": "Published as %RH.",
+          "typ": null,
+          "unit": "%"
+        }
+      ],
+      "storage_temperature": [
+        {
+          "condition": "Storage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications - Technical Specifications"
+          },
+          "max": 60,
+          "min": -30,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "supply_current_peak": [
+        {
+          "condition": "Peak",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications - Technical Specifications"
+          },
+          "max": 0.02,
+          "min": null,
+          "notes": "Published as less than 20 mA peak.",
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "supply_current_streaming": [
+        {
+          "condition": "Streaming one sample per second",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Specifications - Technical Specifications"
+          },
+          "max": 0.0075,
+          "min": null,
+          "notes": "Published as less than 7.5 mA.",
+          "typ": null,
+          "unit": "A"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:51:15Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "LOX-02-F.plan.json",
+    "quality_score": 59
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": null,
+    "datasheet_revision": "SST-DS-0145 Rev5",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Sensors\\SST_LuminOx_LOX-O2-F\\LOX-02-F_current_datasheet_rev5.pdf",
+    "manufacturer": "SST Sensing Ltd",
+    "mpn": "LOX-02-F",
+    "page_count": 2,
+    "sha256": "sha256:b20ed4987a8a9b0fd742a7d72b0960f4e3f5dd4104b2a4f6b7772354dc1ef437",
+    "source_url": "https://www.sstsensing.com"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:47:44Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "EM064LXQADG13IS1T_PREFERRED",
+    "metadata": {
+      "manufacturer": "Everspin Technologies",
+      "datasheet_revision": "3.2",
+      "datasheet_date": "2024-05-10",
+      "page_count": 79,
+      "source_url": "https://download.mikroe.com/documents/datasheets/EM064LXQADG13IS1R_datasheet.pdf",
+      "is_family_pdf": true,
+      "family_member_mpns": [
+        "EM064LXQADG13IS1T",
+        "EM064LXQADG13IS2T"
+      ]
+    },
+    "categories": [],
+    "extraction_pages": {
+      "base": [1, 64, 67, 78],
+      "pinout": [9, 10]
+    },
+    "quality_verdict": {
+      "verdict": "extractable",
+      "reason": "The extraction ID denotes the preferred project choice; the exact underlying ordering code EM064LXQADG13IS1T is printed on page 78."
+    }
+  }
+}

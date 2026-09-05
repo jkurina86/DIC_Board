@@ -1,0 +1,50 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:47:33Z",
+  "model_tier": "A",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": [
+    {
+      "numbers": ["1"],
+      "name": "Crystal",
+      "type": "passive",
+      "subtype": "quartz_terminal",
+      "description": "Crystal terminal",
+      "power_domain": null,
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": null,
+      "evidence": {
+        "page": 3,
+        "section": "Mechanical Dimensions - Connection",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    {
+      "numbers": ["2"],
+      "name": "Crystal",
+      "type": "passive",
+      "subtype": "quartz_terminal",
+      "description": "Crystal terminal",
+      "power_domain": null,
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": null,
+      "evidence": {
+        "page": 3,
+        "section": "Mechanical Dimensions - Connection",
+        "confidence": "high",
+        "method": "table"
+      }
+    }
+  ]
+}

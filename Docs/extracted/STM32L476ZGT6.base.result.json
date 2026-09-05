@@ -1,0 +1,286 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:53:10Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "Arm Cortex-M4F microcontroller",
+    "description": "Ultra-low-power 32-bit MCU with FPU, 1 MB flash and 128 KB SRAM",
+    "package": {
+      "code": "LQFP144",
+      "pin_count": 144,
+      "pitch_mm": 0.5,
+      "body_mm": {
+        "length": 20.0,
+        "width": 20.0,
+        "height": 1.4
+      },
+      "thermal_pad": false,
+      "evidence": {
+        "page": 235,
+        "section": "7.2 LQFP144 package information (1A)",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    "thermal": {
+      "theta_ja": [
+        {
+          "min": null,
+          "typ": 32,
+          "max": null,
+          "unit": "°C/W",
+          "condition": "LQFP144, 20 x 20 mm",
+          "notes": null,
+          "evidence": {
+            "page": 258,
+            "section": "7.10 Thermal characteristics",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "absolute_max": {
+      "VIN_max": [
+        {
+          "min": -0.3,
+          "typ": null,
+          "max": 4.0,
+          "unit": "V",
+          "condition": "External main supply voltage including VDD, VDDA, VDDIO2, VDDUSB, VLCD, VBAT and VREF+ relative to VSS",
+          "notes": null,
+          "evidence": {
+            "page": 110,
+            "section": "6.2 Absolute maximum ratings, Table 20",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "TJ_max": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 150,
+          "unit": "°C",
+          "condition": null,
+          "notes": null,
+          "evidence": {
+            "page": 112,
+            "section": "6.2 Absolute maximum ratings, Table 22",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "TSTG": [
+        {
+          "min": -65,
+          "typ": null,
+          "max": 150,
+          "unit": "°C",
+          "condition": "Storage temperature range",
+          "notes": null,
+          "evidence": {
+            "page": 112,
+            "section": "6.2 Absolute maximum ratings, Table 22",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "IIO_pin": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 0.02,
+          "unit": "A",
+          "condition": "Maximum current sunk or sourced by any I/O and control pin",
+          "notes": null,
+          "evidence": {
+            "page": 111,
+            "section": "6.2 Absolute maximum ratings, Table 21",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "recommended_operating": {
+      "VIN": [
+        {
+          "min": 1.71,
+          "typ": null,
+          "max": 3.6,
+          "unit": "V",
+          "condition": "VDD standard operating voltage",
+          "notes": null,
+          "evidence": {
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "VDD": [
+        {
+          "min": 1.71,
+          "typ": null,
+          "max": 3.6,
+          "unit": "V",
+          "condition": "Standard operating voltage",
+          "notes": null,
+          "evidence": {
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "VDDA": [
+        {
+          "min": 1.62,
+          "typ": null,
+          "max": 3.6,
+          "unit": "V",
+          "condition": "ADC or comparator used",
+          "notes": "Minimum is 1.8 V when DAC or OPAMP is used and 2.4 V when VREFBUF is used.",
+          "evidence": {
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "VDDIO2": [
+        {
+          "min": 1.08,
+          "typ": null,
+          "max": 3.6,
+          "unit": "V",
+          "condition": "At least one PG[15:2] I/O used",
+          "notes": null,
+          "evidence": {
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "VDDUSB": [
+        {
+          "min": 3.0,
+          "typ": null,
+          "max": 3.6,
+          "unit": "V",
+          "condition": "USB used",
+          "notes": null,
+          "evidence": {
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "VBAT": [
+        {
+          "min": 1.55,
+          "typ": null,
+          "max": 3.6,
+          "unit": "V",
+          "condition": "Backup operating voltage",
+          "notes": null,
+          "evidence": {
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "TA": [
+        {
+          "min": -40,
+          "typ": null,
+          "max": 85,
+          "unit": "°C",
+          "condition": "Suffix 6 at maximum power dissipation",
+          "notes": "Low-power dissipation operation extends to 105 °C subject to TJ limits.",
+          "evidence": {
+            "page": 114,
+            "section": "6.3.1 General operating conditions, Table 23",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "esd": {
+      "HBM": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 2000,
+          "unit": "V",
+          "condition": "TA = 25 °C, ANSI/ESDA/JEDEC JS-001",
+          "notes": "Class 2; guaranteed by characterization.",
+          "evidence": {
+            "page": 161,
+            "section": "6.3.12 Electrical sensitivity characteristics, Table 67",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "CDM": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 250,
+          "unit": "V",
+          "condition": "TA = 25 °C, ANSI/ESD STM5.3.1",
+          "notes": "Class C3; guaranteed by characterization.",
+          "evidence": {
+            "page": 161,
+            "section": "6.3.12 Electrical sensitivity characteristics, Table 67",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "moisture_sensitivity": null,
+    "compliance": [
+      {
+        "mark": "ECOPACK2",
+        "rating": null,
+        "evidence": {
+          "page": 2,
+          "section": "Features",
+          "confidence": "high",
+          "method": "prose"
+        }
+      },
+      {
+        "mark": "JEDEC JESD47",
+        "rating": null,
+        "evidence": {
+          "page": 110,
+          "section": "6.2 Absolute maximum ratings",
+          "confidence": "high",
+          "method": "prose"
+        }
+      }
+    ],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

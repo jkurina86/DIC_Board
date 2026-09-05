@@ -1,0 +1,305 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Features"
+        },
+        "mark": "AEC-Q200",
+        "rating": "Qualified"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Document header"
+        },
+        "mark": "RoHS/RoHS II",
+        "rating": "Compliant with Pb-in-ceramic exemption 7c-I"
+      }
+    ],
+    "description": "8.000 MHz two-terminal ceramic SMD crystal with V2R option set",
+    "esd": null,
+    "family": "Fundamental-mode automotive and industrial grade quartz crystal",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 0.9,
+        "length": 3.2,
+        "width": 2.5
+      },
+      "code": "SMD-3225",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "Mechanical Dimensions"
+      },
+      "pin_count": 2,
+      "pitch_mm": null,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Crystal terminal",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 3,
+          "section": "Mechanical Dimensions - Connection"
+        },
+        "is_5v_tolerant": null,
+        "name": "Crystal",
+        "notes": null,
+        "numbers": [
+          "1"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "quartz_terminal",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Crystal terminal",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 3,
+          "section": "Mechanical Dimensions - Connection"
+        },
+        "is_5v_tolerant": null,
+        "name": "Crystal",
+        "notes": null,
+        "numbers": [
+          "2"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "quartz_terminal",
+        "type": "passive"
+      }
+    ],
+    "recommended_operating": {
+      "DriveLevel": [
+        {
+          "condition": "Crystal drive level",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Key Electrical Specifications"
+          },
+          "max": 0.0002,
+          "min": null,
+          "notes": "Reported as 10 uW typical and 200 uW maximum",
+          "typ": 1e-05,
+          "unit": "W"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Operating-temperature option V in exact order code; offered only with frequency-stability option R",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Options and Part Identification"
+          },
+          "max": 150,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [
+    "crystal"
+  ],
+  "crystal": {
+    "aging": [
+      {
+        "condition": "At 25\u00b0C +/-3\u00b0C, first year",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 1,
+          "section": "Key Electrical Specifications"
+        },
+        "max": 3,
+        "min": -3,
+        "notes": null,
+        "typ": null,
+        "unit": "ppm"
+      }
+    ],
+    "crystal_type": "at_cut",
+    "drive_level_max": [
+      {
+        "condition": "Drive level",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 1,
+          "section": "Key Electrical Specifications"
+        },
+        "max": 0.0002,
+        "min": null,
+        "notes": "Reported as 10 uW typical and 200 uW maximum; converted to W",
+        "typ": 1e-05,
+        "unit": "W"
+      }
+    ],
+    "esr_max": [
+      {
+        "condition": "8.000 to 9.799 MHz; standard ESR option",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 1,
+          "section": "Key Electrical Specifications"
+        },
+        "max": 500,
+        "min": null,
+        "notes": null,
+        "typ": null,
+        "unit": "\u03a9"
+      }
+    ],
+    "frequency": [
+      {
+        "condition": "Exact order-code frequency",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Options and Part Identification"
+        },
+        "max": null,
+        "min": null,
+        "notes": "Reported as 8.000 MHz; converted to Hz",
+        "typ": 8000000,
+        "unit": "Hz"
+      }
+    ],
+    "frequency_stability": [
+      {
+        "condition": "Over -40\u00b0C to +150\u00b0C, referenced to +25\u00b0C; exact order-code options V and R",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Options and Part Identification"
+        },
+        "max": 150,
+        "min": -150,
+        "notes": "Option R is +/-150 ppm and is required for temperature option V",
+        "typ": null,
+        "unit": "ppm"
+      }
+    ],
+    "frequency_tolerance": [
+      {
+        "condition": "At +25\u00b0C; exact order-code frequency-tolerance option 2",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Options and Part Identification"
+        },
+        "max": 15,
+        "min": -15,
+        "notes": "Option 2 is +/-15 ppm",
+        "typ": null,
+        "unit": "ppm"
+      }
+    ],
+    "load_capacitance": [
+      {
+        "condition": "Standard blank load-capacitance option in exact order code",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Options and Part Identification"
+        },
+        "max": null,
+        "min": null,
+        "notes": "Reported as 8 pF; converted to F",
+        "typ": 8e-12,
+        "unit": "F"
+      }
+    ],
+    "mode": "fundamental",
+    "motional_capacitance": null,
+    "motional_inductance": null,
+    "operating_temp_range": [
+      {
+        "condition": "Exact order-code operating-temperature option V",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Options and Part Identification"
+        },
+        "max": 150,
+        "min": -40,
+        "notes": "Availability is limited to selected frequencies and electrical options; option V is offered only with stability option R",
+        "typ": null,
+        "unit": "\u00b0C"
+      }
+    ],
+    "package": {
+      "body_mm": {
+        "height": 0.9,
+        "length": 3.2,
+        "width": 2.5
+      },
+      "code": "SMD-3225",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "Mechanical Dimensions"
+      }
+    }
+  },
+  "extraction": {
+    "extracted_at": "2026-09-02T22:54:10Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "ABM8AAIG-8.000MHz-V2R-T3.plan.json",
+    "quality_score": 79
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {
+      "crystal": "1.0"
+    }
+  },
+  "source": {
+    "datasheet_date": "2023-02-14",
+    "datasheet_revision": "02-14-23",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\Abracon_clocking\\ABM8AAIG_datasheet.pdf",
+    "manufacturer": "Abracon LLC",
+    "mpn": "ABM8AAIG-8.000MHz-V2R-T3",
+    "page_count": 5,
+    "sha256": "sha256:6afbcfc02ffafa5e01fec7b373945a1475ad0a7a0c215c2bb81ef3e8fe890122",
+    "source_url": "https://abracon.com/datasheets/ABM8AAIG.pdf"
+  }
+}

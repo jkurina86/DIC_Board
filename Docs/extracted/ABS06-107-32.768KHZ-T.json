@@ -1,0 +1,280 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 1,
+          "section": "Document header"
+        },
+        "mark": "RoHS/RoHS II",
+        "rating": "Compliant"
+      }
+    ],
+    "description": "Ultra-low-power, low-ESR two-terminal real-time-clocking crystal",
+    "esd": null,
+    "family": "32.768 kHz flexural-mode tuning-fork quartz crystal",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 0.6,
+        "length": 2.0,
+        "width": 1.2
+      },
+      "code": "SMD-2012",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "Outline Dimensions"
+      },
+      "pin_count": 2,
+      "pitch_mm": null,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "DriveLevel": [
+        {
+          "condition": "Crystal drive level",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Standard Specifications"
+          },
+          "max": 5e-07,
+          "min": null,
+          "notes": "Reported as 0.1 uW typical and 0.5 uW maximum",
+          "typ": 1e-07,
+          "unit": "W"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Operating temperature",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 2,
+            "section": "Standard Specifications"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [
+    "crystal"
+  ],
+  "crystal": {
+    "aging": [
+      {
+        "condition": "At 25\u00b0C +/-3\u00b0C, first year",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": 3,
+        "min": -3,
+        "notes": null,
+        "typ": null,
+        "unit": "ppm"
+      }
+    ],
+    "crystal_type": "at_cut",
+    "drive_level_max": [
+      {
+        "condition": "Drive level",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": 5e-07,
+        "min": null,
+        "notes": "Reported as 0.1 uW typical and 0.5 uW maximum; converted to W",
+        "typ": 1e-07,
+        "unit": "W"
+      }
+    ],
+    "esr_max": [
+      {
+        "condition": "Equivalent series resistance R1",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": 80000,
+        "min": null,
+        "notes": "Reported as less than 60 kOhm typical and 80 kOhm maximum; converted to Ohms",
+        "typ": 60000,
+        "unit": "\u03a9"
+      }
+    ],
+    "frequency": [
+      {
+        "condition": "Nominal frequency",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": null,
+        "min": null,
+        "notes": "Reported as 32.768 kHz; converted to Hz. Datasheet identifies the device as a flexural-mode tuning-fork crystal; v1.4 has no tuning-fork crystal_type enum.",
+        "typ": 32768,
+        "unit": "Hz"
+      }
+    ],
+    "frequency_stability": [
+      {
+        "condition": "Over -40\u00b0C to +85\u00b0C, relative to measured frequency at 25\u00b0C +/-3\u00b0C",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": 250,
+        "min": -250,
+        "notes": "Guaranteed envelope; datasheet also states less than +/-175 ppm typical",
+        "typ": null,
+        "unit": "ppm"
+      }
+    ],
+    "frequency_tolerance": [
+      {
+        "condition": "At +25\u00b0C, tested at 0.5 uW with 4.0 pF effective loop capacitance",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": 20,
+        "min": -20,
+        "notes": null,
+        "typ": null,
+        "unit": "ppm"
+      }
+    ],
+    "load_capacitance": [
+      {
+        "condition": "Specified load capacitance; oscillator effective loop capacitance must not exceed 4.50 pF",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": 4.1e-12,
+        "min": 3.9e-12,
+        "notes": "Reported as 3.90/4.00/4.10 pF; converted to F",
+        "typ": 4e-12,
+        "unit": "F"
+      }
+    ],
+    "mode": null,
+    "motional_capacitance": [
+      {
+        "condition": "SPICE model based on typical values at 25\u00b0C +/-3\u00b0C",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 3,
+          "section": "SPICE Model"
+        },
+        "max": null,
+        "min": null,
+        "notes": "C1 reported as 5.51 fF; converted to F",
+        "typ": 5.51e-15,
+        "unit": "F"
+      }
+    ],
+    "motional_inductance": [
+      {
+        "condition": "SPICE model based on typical values at 25\u00b0C +/-3\u00b0C",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 3,
+          "section": "SPICE Model"
+        },
+        "max": null,
+        "min": null,
+        "notes": "L1 reported as 4,625 H",
+        "typ": 4625,
+        "unit": "H"
+      }
+    ],
+    "operating_temp_range": [
+      {
+        "condition": "Operating temperature",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 2,
+          "section": "Standard Specifications"
+        },
+        "max": 85,
+        "min": -40,
+        "notes": null,
+        "typ": null,
+        "unit": "\u00b0C"
+      }
+    ],
+    "package": {
+      "body_mm": {
+        "height": 0.6,
+        "length": 2.0,
+        "width": 1.2
+      },
+      "code": "SMD-2012",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "Outline Dimensions"
+      }
+    }
+  },
+  "extraction": {
+    "extracted_at": "2026-09-02T22:54:10Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "ABS06-107-32.768KHZ-T.plan.json",
+    "quality_score": 64
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {
+      "crystal": "1.0"
+    }
+  },
+  "source": {
+    "datasheet_date": "2020-07-20",
+    "datasheet_revision": "07-20-20",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\Abracon_clocking\\ABS06-107_datasheet.pdf",
+    "manufacturer": "Abracon LLC",
+    "mpn": "ABS06-107-32.768KHZ-T",
+    "page_count": 4,
+    "sha256": "sha256:1824459dd45c348d4a25a5d7afcd1d46af5b796df59ed038ce9f505ca7f48f22",
+    "source_url": "https://abracon.com/Resonators/ABS06-107-32.768kHz-T.pdf"
+  }
+}

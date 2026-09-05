@@ -1,0 +1,47 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:45:28Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "bench reference pressure monitor",
+    "description": "Bench-reference RPM4 pressure calibration, testing, and measurement instrument; deployment inclusion is not established by this archive location.",
+    "package": {
+      "code": "Benchtop instrument",
+      "pin_count": null,
+      "pitch_mm": null,
+      "body_mm": {"length": 240, "width": 227, "height": 100},
+      "thermal_pad": false,
+      "evidence": {"page": 4, "section": "General specifications", "confidence": "high", "method": "table"}
+    },
+    "thermal": null,
+    "absolute_max": {},
+    "recommended_operating": {
+      "AC_input_voltage": [
+        {"min": 85, "typ": null, "max": 264, "unit": "V", "condition": "50/60 Hz AC input", "notes": "Published for RPM4 power requirements.", "evidence": {"page": 4, "section": "General specifications", "confidence": "high", "method": "table"}}
+      ],
+      "DC_input_voltage": [
+        {"min": null, "typ": 12, "max": null, "unit": "V", "condition": "DC power / battery pack option", "notes": "The brochure states 12 V dc @ 9 Ahr; it does not state a DC input range.", "evidence": {"page": 4, "section": "General specifications", "confidence": "high", "method": "table"}}
+      ],
+      "TA": [
+        {"min": 15, "typ": null, "max": 35, "unit": "°C", "condition": "Normal operating temperature range", "notes": null, "evidence": {"page": 4, "section": "General specifications", "confidence": "high", "method": "table"}}
+      ],
+      "warmup_time": [
+        {"min": null, "typ": 1800, "max": null, "unit": "s", "condition": "From cold power up", "notes": "30 minute temperature stabilization recommended.", "evidence": {"page": 4, "section": "Measured pressure (Q-RPT)", "confidence": "high", "method": "table"}}
+      ],
+      "predicted_one_year_stability": [
+        {"min": null, "typ": 0.005, "max": null, "unit": "%", "condition": "All ranges and classes; k=2; regular use of AutoZero assumed", "notes": "Published as ±0.005% of reading.", "evidence": {"page": 4, "section": "Measured pressure (Q-RPT)", "confidence": "high", "method": "table"}}
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [
+      {"mark": "ISO/IEC 17025", "rating": "Accredited calibration report included", "evidence": {"page": 4, "section": "General specifications", "confidence": "high", "method": "table"}},
+      {"mark": "MIL-T-28800D", "rating": "Vibration", "evidence": {"page": 4, "section": "General specifications", "confidence": "high", "method": "table"}}
+    ],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

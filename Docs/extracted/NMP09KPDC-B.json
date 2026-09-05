@@ -1,0 +1,100 @@
+{
+  "base": {
+    "absolute_max": {
+      "Imax": [
+        {
+          "condition": "NMP09KPDC-B, 6 V",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Electrical Data"
+          },
+          "max": 0.17,
+          "min": null,
+          "notes": "Published as Imax in the family electrical-data table.",
+          "typ": null,
+          "unit": "A"
+        }
+      ]
+    },
+    "compliance": [],
+    "description": "6 V brushless DC micro diaphragm gas pump",
+    "esd": null,
+    "family": "micro diaphragm gas pump",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": null,
+      "code": "NMP09KPDC-B pump assembly",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "NMP09KPDC-B Dimensions"
+      },
+      "pin_count": null,
+      "pitch_mm": null,
+      "thermal_pad": null
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": "Series models; extended temperature on request",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Performance Data"
+          },
+          "max": 40,
+          "min": 5,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "NMP09KPDC-B",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 1,
+            "section": "Electrical Data"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 6,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:54:58Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": "openai-gpt-5.6-sol",
+    "plan_ref": "NMP09KPDC-B.plan.json",
+    "quality_score": 39
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2025-05",
+    "datasheet_revision": "KNF 05/2025",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\KNF_NMP09KPDC-B\\KNF_NMP09_datasheet.pdf",
+    "manufacturer": "KNF",
+    "mpn": "NMP09KPDC-B",
+    "page_count": 4,
+    "sha256": "sha256:f9401d1e290d39726fba5eebf15e957f076f9ccdce76f95b92d5e6bb80226ba0",
+    "source_url": "https://www.knf.com"
+  }
+}

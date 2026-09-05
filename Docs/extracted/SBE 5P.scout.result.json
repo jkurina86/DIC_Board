@@ -1,0 +1,29 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:08Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "SBE 5P",
+    "metadata": {
+      "manufacturer": "Sea-Bird Scientific",
+      "datasheet_revision": "SBE 5T & 5P.DS.53.May25",
+      "datasheet_date": "2025-05",
+      "page_count": 2,
+      "source_url": "https://seabird.com",
+      "is_family_pdf": true,
+      "family_member_mpns": ["SBE 5T", "SBE 5P"]
+    },
+    "categories": [],
+    "extraction_pages": {
+      "base": [1, 2],
+      "pinout": [2]
+    },
+    "quality_verdict": {
+      "verdict": "low_quality",
+      "reason": "The family sheet documents SBE 5P operating ranges and a two-pin assignment, but specifications depend on winding and speed configuration and no absolute-voltage, temperature, ESD, or exact installed configuration is provided."
+    }
+  }
+}

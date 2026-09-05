@@ -1,0 +1,71 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:01Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "stand-alone closed-loop linear actuator control board",
+    "description": "Actuonix LAC controller supporting USB, RC servo, PWM, voltage, and current position commands",
+    "package": {
+      "code": "50 mm x 50 mm LAC board; 23 function-assigned contacts across X2-X6",
+      "pin_count": 23,
+      "body_mm": {"length": 50, "width": 50},
+      "evidence": {"page": 1, "section": "Specifications", "confidence": "medium", "method": "derived"}
+    },
+    "thermal": null,
+    "absolute_max": {},
+    "recommended_operating": {
+      "VIN": [
+        {
+          "min": 6,
+          "typ": null,
+          "max": 24,
+          "unit": "V",
+          "condition": "Supply voltage must match the actuator's rated voltage.",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "TA": [
+        {
+          "min": -10,
+          "typ": null,
+          "max": 70,
+          "unit": "°C",
+          "condition": "Operating environment",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "RH": [
+        {
+          "min": 10,
+          "typ": null,
+          "max": 80,
+          "unit": "%",
+          "condition": "Operating environment",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "PEAK_CURRENT": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 4,
+          "unit": "A",
+          "condition": "10% duty cycle",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

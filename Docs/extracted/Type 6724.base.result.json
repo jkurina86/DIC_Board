@@ -1,0 +1,208 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:08Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "media-separated 2/2-way or 3/2-way solenoid valve",
+    "description": "Type 6724 Whisper Valve with standard and impulse variants",
+    "package": {
+      "code": "Type 6724 valve assembly with 2-position electrical connection",
+      "pin_count": 2,
+      "pitch_mm": 2,
+      "body_mm": null,
+      "thermal_pad": null,
+      "evidence": {
+        "page": 3,
+        "section": "1.1 General data - Product connections",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    "thermal": null,
+    "absolute_max": {
+      "Body_temperature_max": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 110,
+          "unit": "°C",
+          "condition": "Continuous operation requires sufficient convection at the metal valve surface",
+          "notes": "The datasheet states that maximum body temperature must not be exceeded.",
+          "evidence": {
+            "page": 4,
+            "section": "Environment and installation, note 2",
+            "confidence": "high",
+            "method": "prose"
+          }
+        }
+      ]
+    },
+    "recommended_operating": {
+      "VIN": [
+        {
+          "min": 10.8,
+          "typ": 12,
+          "max": 12.6,
+          "unit": "V",
+          "condition": "Standard variant; -10%/+5% including residual ripple",
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "evidence": {
+            "page": 3,
+            "section": "1.1 General data - Electrical data",
+            "confidence": "high",
+            "method": "calculated"
+          }
+        },
+        {
+          "min": 21.6,
+          "typ": 24,
+          "max": 25.2,
+          "unit": "V",
+          "condition": "Standard variant; -10%/+5% including residual ripple",
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "evidence": {
+            "page": 3,
+            "section": "1.1 General data - Electrical data",
+            "confidence": "high",
+            "method": "calculated"
+          }
+        },
+        {
+          "min": 11.4,
+          "typ": 12,
+          "max": 12.6,
+          "unit": "V",
+          "condition": "Impulse variant; +/-5% including residual ripple",
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "evidence": {
+            "page": 3,
+            "section": "1.1 General data - Electrical data",
+            "confidence": "high",
+            "method": "calculated"
+          }
+        },
+        {
+          "min": 22.8,
+          "typ": 24,
+          "max": 25.2,
+          "unit": "V",
+          "condition": "Impulse variant; +/-5% including residual ripple",
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "evidence": {
+            "page": 3,
+            "section": "1.1 General data - Electrical data",
+            "confidence": "high",
+            "method": "calculated"
+          }
+        }
+      ],
+      "TA": [
+        {
+          "min": 15,
+          "typ": null,
+          "max": 50,
+          "unit": "°C",
+          "condition": "FFKM seal",
+          "notes": null,
+          "evidence": {
+            "page": 4,
+            "section": "Environment and installation",
+            "confidence": "high",
+            "method": "table"
+          }
+        },
+        {
+          "min": 0,
+          "typ": null,
+          "max": 50,
+          "unit": "°C",
+          "condition": "FKM or EPDM seal",
+          "notes": null,
+          "evidence": {
+            "page": 4,
+            "section": "Environment and installation",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "Nominal_power": [
+        {
+          "min": null,
+          "typ": 1.25,
+          "max": null,
+          "unit": "W",
+          "condition": "Standard variant continuously; impulse variant while switching",
+          "notes": "Impulse holding power is 0 W.",
+          "evidence": {
+            "page": 3,
+            "section": "1.1 General data - Electrical data",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "Impulse_pulse_length_min": [
+        {
+          "min": 0.5,
+          "typ": null,
+          "max": null,
+          "unit": "s",
+          "condition": "Impulse variant",
+          "notes": null,
+          "evidence": {
+            "page": 3,
+            "section": "1.1 General data - Electrical data",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "Duty_cycle": [
+        {
+          "min": null,
+          "typ": 100,
+          "max": null,
+          "unit": "%",
+          "condition": "Continuous operation",
+          "notes": null,
+          "evidence": {
+            "page": 3,
+            "section": "1.1 General data - Performance data",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [
+      {
+        "mark": "EU Directives",
+        "rating": "Variant-dependent conformity",
+        "evidence": {
+          "page": 6,
+          "section": "4.2 Conformity",
+          "confidence": "medium",
+          "method": "prose"
+        }
+      },
+      {
+        "mark": "FDA Code of Federal Regulations",
+        "rating": "Variable code PL03; EPDM seal on request",
+        "evidence": {
+          "page": 6,
+          "section": "4.4 Foods and beverages/Hygiene",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

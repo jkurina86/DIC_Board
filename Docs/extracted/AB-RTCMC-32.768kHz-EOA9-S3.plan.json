@@ -1,0 +1,62 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:46:40Z",
+  "execution": {
+    "completed_at": "2026-09-02T22:54:10Z",
+    "outcomes": [
+      {
+        "attempts": 2,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 2,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      }
+    ],
+    "started_at": "2026-09-02T22:52:09Z"
+  },
+  "mpn": "AB-RTCMC-32.768kHz-EOA9-S3",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\Abracon_RTC\\AB-RTCMC-EOA9-S3_datasheet.pdf",
+  "pdf_sha256": "sha256:2e172b72e586b868a672c4cdcb2c4e5fd13dd6b029c0fa8c30193663c15914dd",
+  "plan_version": "1.0",
+  "scout_ref": "AB-RTCMC-32.768kHz-EOA9-S3.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "AB-RTCMC-32.768kHz-EOA9-S3.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        7
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "AB-RTCMC-32.768kHz-EOA9-S3.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

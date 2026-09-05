@@ -1,0 +1,36 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:01Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "Ext-R-P16",
+    "metadata": {
+      "manufacturer": "Actuonix Motion Devices Inc.",
+      "datasheet_revision": "Revision C",
+      "datasheet_date": "April 2024",
+      "page_count": 2,
+      "source_url": null,
+      "is_family_pdf": true,
+      "family_member_mpns": [
+        "Ext-R-L8",
+        "Ext-R-P8",
+        "Ext-R-L12",
+        "Ext-R-L16",
+        "Ext-R-P16",
+        "Ext-R-T16"
+      ]
+    },
+    "categories": [],
+    "extraction_pages": {
+      "base": [1, 2],
+      "pinout": [2]
+    },
+    "quality_verdict": {
+      "verdict": "extractable",
+      "reason": "The printed Ext-R-MMM order-code scheme lists P16 as an actuator-family value, yielding the literal model Ext-R-P16."
+    }
+  }
+}

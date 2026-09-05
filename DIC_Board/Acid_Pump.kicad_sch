@@ -7,7 +7,7 @@
 	(title_block
 		(title "Acid Pump")
 		(comment 1 "STSPIN220 bipolar stepper driver; fixed 1/4 microstep")
-		(comment 2 "+2V8 motor supply; adjustable 0–0.94 A peak current limit")
+		(comment 2 "+2V8 motor supply; adjustable ~0.05-0.25 A peak current limit")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x04"
@@ -521,6 +521,219 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Potentiometer_Trim"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "RV"
+				(at -4.445 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R_Potentiometer_Trim"
+				(at -2.54 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Trim-potentiometer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Device" "R"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Type" "POT"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "resistor variable trimpot trimmer"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Potentiometer*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_0_1"
+				(rectangle
+					(start 1.016 2.54)
+					(end -1.016 -2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.524 0.762) (xy 1.524 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 0) (xy 1.524 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Potentiometer_Trim_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 1.27)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Driver_Motor:STSPIN220"
 			(pin_names
 				(offset 1.016)
@@ -931,6 +1144,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+2V8"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+2V8"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+2V8\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+2V8_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+2V8_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power global)
 			(pin_numbers
@@ -1208,7 +1560,7 @@
 		)
 		(uuid "88bfb6ed-1b9b-5165-ba5f-7cdcf9559ed9")
 	)
-	(text "Place C320/C321 and both sense resistors close to U32. EPAD requires solid GND and thermal vias."
+	(text "Tie RV1 wiper to its VREF-side terminal. Use >=0.25 W sense resistors; place them and C320/C321 close to U32."
 		(exclude_from_sim no)
 		(at 25.4 36.83 0)
 		(effects
@@ -1230,7 +1582,7 @@
 		)
 		(uuid "bbdfbace-b34b-55d1-a14d-6ed9a78dfecd")
 	)
-	(text "Current limit: 0.5 ohm sense, VREF adjustable 0–0.471 V I_PEAK approximately VREF/RSENSE = 0–0.94 A."
+	(text "Current limit: 2.00 ohm sense; RV1 adjusts ~0.06-0.24 A nominal. Set VREF=0.218 V (~4.0k trim) for I_PEAK~0.109 A."
 		(exclude_from_sim no)
 		(at 25.4 33.02 0)
 		(effects
@@ -1240,6 +1592,17 @@
 			(justify left bottom)
 		)
 		(uuid "c1bf66ab-623f-58bf-93be-0bbf8e2dc45a")
+	)
+	(text "Design basis: ~0.11 A provides margin over the Aquatech BD202411-T 0.1 A output. Validate the installed RP-TX winding and ramp STEP rate."
+		(exclude_from_sim no)
+		(at 25.4 40.64 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f73d6260-ef53-42fd-b1bc-9fc708ce8c5c")
 	)
 	(junction
 		(at 55.88 101.6)
@@ -1284,10 +1647,16 @@
 		(uuid "50a5a5e3-27ee-48f0-b7a3-e3319a41f8b3")
 	)
 	(junction
-		(at 87.63 129.54)
+		(at 99.06 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56592a3c-e0fa-4390-8619-a4fbe30950d1")
+	)
+	(junction
+		(at 99.06 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a314b69f-fc61-4a70-832a-facaed9e9f87")
 	)
 	(junction
 		(at 181.61 152.4)
@@ -1461,7 +1830,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 127) (xy 87.63 129.54)
+			(xy 87.63 119.38) (xy 99.06 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1531,7 +1900,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 129.54) (xy 129.54 129.54)
+			(xy 99.06 129.54) (xy 129.54 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1551,7 +1920,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 129.54) (xy 87.63 134.62)
+			(xy 99.06 129.54) (xy 99.06 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1611,7 +1980,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 135.89) (xy 55.88 101.6)
+			(xy 55.88 105.41) (xy 55.88 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1751,7 +2120,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 142.24) (xy 87.63 152.4)
+			(xy 99.06 142.24) (xy 99.06 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1831,7 +2200,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 143.51) (xy 55.88 152.4)
+			(xy 55.88 113.03) (xy 55.88 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2021,7 +2390,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 76.2) (xy 55.88 73.66)
+			(xy 55.88 91.44) (xy 55.88 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2191,7 +2560,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 83.82) (xy 55.88 101.6)
+			(xy 55.88 99.06) (xy 55.88 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2211,13 +2580,43 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 73.66) (xy 87.63 119.38)
+			(xy 87.63 73.66) (xy 87.63 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fcbf0093-f43a-45cf-83e1-696da2e7b130")
+	)
+	(wire
+		(pts
+			(xy 99.06 127) (xy 99.06 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f573cc9-7566-48c2-8293-a227463c465b")
+	)
+	(wire
+		(pts
+			(xy 102.87 123.19) (xy 102.87 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ec0e7cc-b95f-48f9-8d37-d9767f8c1d4c")
+	)
+	(wire
+		(pts
+			(xy 102.87 127) (xy 99.06 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a75c9f-fecf-4bdc-adc5-68e06fe848e9")
 	)
 	(wire
 		(pts
@@ -2228,29 +2627,6 @@
 			(type default)
 		)
 		(uuid "fe088605-df99-4853-bcd5-570807b4f866")
-	)
-	(global_label "+2V8"
-		(shape passive)
-		(at 162.56 58.42 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "67485f77-5e83-5bc0-8c10-a31cf37430ee")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 162.56 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 	)
 	(hierarchical_label "ACID_PUMP_RESET_N"
 		(shape input)
@@ -2298,7 +2674,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 55.88 139.7 0)
+		(at 55.88 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2308,7 +2684,7 @@
 		(dnp no)
 		(uuid "02653e85-bc82-57e3-9795-f120ffb0ff5b")
 		(property "Reference" "C322"
-			(at 52.07 139.7 90)
+			(at 52.07 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2318,7 +2694,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 59.69 139.7 90)
+			(at 59.69 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2328,7 +2704,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 55.88 139.7 0)
+			(at 55.88 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2339,7 +2715,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 139.7 0)
+			(at 55.88 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2350,7 +2726,7 @@
 			)
 		)
 		(property "Description" "EN/FAULT retry timing"
-			(at 55.88 139.7 0)
+			(at 55.88 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2680,6 +3056,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+2V8")
+		(at 162.56 58.42 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e72109e-02a5-4d8b-8191-4c010ece1834")
+		(property "Reference" "#PWR020"
+			(at 162.56 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+2V8"
+			(at 162.56 53.34 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+2V8\""
+			(at 162.56 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af0eda70-22d7-471c-9e46-8ee076ba1e1f")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/db16e425-44ca-40f9-b8f4-64b10021b74e"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 175.26 69.85 0)
 		(unit 1)
@@ -2857,7 +3311,7 @@
 				)
 			)
 		)
-		(property "Value" "0.5R 1W"
+		(property "Value" "2.00R 1%"
 			(at 185.42 129.54 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2889,7 +3343,7 @@
 				)
 			)
 		)
-		(property "Description" "Phase B current sense"
+		(property "Description" "Phase B current sense, 1% and >=0.25 W required"
 			(at 181.61 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -3173,7 +3627,7 @@
 				)
 			)
 		)
-		(property "Value" "0.5R 1W"
+		(property "Value" "2.00R 1%"
 			(at 196.85 111.76 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3205,7 +3659,7 @@
 				)
 			)
 		)
-		(property "Description" "Phase A current sense"
+		(property "Description" "Phase A current sense, 1% and >=0.25 W required"
 			(at 193.04 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -3391,7 +3845,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 138.43 0)
+		(at 99.06 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3401,7 +3855,7 @@
 		(dnp no)
 		(uuid "9a20985c-c8b9-4acc-9cd3-f4909dda38fc")
 		(property "Reference" "R329"
-			(at 83.82 138.43 90)
+			(at 95.25 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3410,8 +3864,8 @@
 				)
 			)
 		)
-		(property "Value" "1.87k"
-			(at 91.44 138.43 90)
+		(property "Value" "482R"
+			(at 102.87 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3421,7 +3875,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 87.63 138.43 0)
+			(at 99.06 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3432,7 +3886,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 138.43 0)
+			(at 99.06 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3442,8 +3896,8 @@
 				)
 			)
 		)
-		(property "Description" ""
-			(at 87.63 138.43 0)
+		(property "Description" "Bounded current-reference lower resistor, 0.1% required"
+			(at 99.06 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3626,7 +4080,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 123.19 0)
+		(at 87.63 115.57 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3636,7 +4090,7 @@
 		(dnp no)
 		(uuid "bd81477d-183b-5369-9fe7-28ca3cab8111")
 		(property "Reference" "R328"
-			(at 83.82 123.19 90)
+			(at 83.82 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3645,8 +4099,8 @@
 				)
 			)
 		)
-		(property "Value" "60k"
-			(at 91.44 123.19 90)
+		(property "Value" "2.87k"
+			(at 91.44 115.57 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3656,7 +4110,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 87.63 123.19 0)
+			(at 87.63 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3667,7 +4121,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 123.19 0)
+			(at 87.63 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3677,8 +4131,8 @@
 				)
 			)
 		)
-		(property "Description" "Current-reference range resistor"
-			(at 87.63 123.19 0)
+		(property "Description" "Bounded current-reference upper resistor, 0.1% required"
+			(at 87.63 115.57 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3705,7 +4159,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 55.88 80.01 0)
+		(at 55.88 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3715,7 +4169,7 @@
 		(dnp no)
 		(uuid "e4b3956f-6626-589c-98ea-b0ffc92ea42c")
 		(property "Reference" "R322"
-			(at 52.07 80.01 90)
+			(at 52.07 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3725,7 +4179,7 @@
 			)
 		)
 		(property "Value" "18k"
-			(at 59.69 80.01 90)
+			(at 59.69 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3735,7 +4189,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 55.88 80.01 0)
+			(at 55.88 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3746,7 +4200,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 80.01 0)
+			(at 55.88 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3757,7 +4211,7 @@
 			)
 		)
 		(property "Description" "EN/FAULT pull-up"
-			(at 55.88 80.01 0)
+			(at 55.88 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3777,6 +4231,143 @@
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/db16e425-44ca-40f9-b8f4-64b10021b74e"
 					(reference "R322")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Potentiometer_Trim")
+		(at 99.06 123.19 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c0fe784c-ac29-4e70-9918-4385a54d1072")
+		(property "Reference" "RV1"
+			(at 94.615 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k trim"
+			(at 96.52 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_3314J_Vertical"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/3314.pdf"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "10k current-limit trimmer; wiper tied to VREF-side terminal for fail-safe operation"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "R"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "POT"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "3314J-1-103E"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Bourns"
+			(at 99.06 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "86fc2788-08b0-4f0c-b3bf-9ab3f14d2730")
+		)
+		(pin "2"
+			(uuid "1b63aac1-35e6-4d25-a8bf-e75912fb94ea")
+		)
+		(pin "3"
+			(uuid "072323dd-f269-4822-9798-4b9191b14144")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/db16e425-44ca-40f9-b8f4-64b10021b74e"
+					(reference "RV1")
 					(unit 1)
 				)
 			)

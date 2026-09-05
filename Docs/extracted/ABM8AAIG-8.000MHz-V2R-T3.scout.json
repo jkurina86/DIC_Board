@@ -1,0 +1,26 @@
+{
+  "mpn": "ABM8AAIG-8.000MHz-V2R-T3",
+  "metadata": {
+    "manufacturer": "Abracon LLC",
+    "datasheet_revision": "02-14-23",
+    "datasheet_date": "2023-02-14",
+    "page_count": 5,
+    "source_url": "https://abracon.com/datasheets/ABM8AAIG.pdf",
+    "is_family_pdf": true,
+    "family_member_mpns": [
+      "ABM8AAIG-8.000MHz-V2R-T3"
+    ]
+  },
+  "categories": [
+    "crystal"
+  ],
+  "extraction_pages": {
+    "base": [1, 2, 3, 4],
+    "pinout": [3],
+    "crystal": [1, 2, 3]
+  },
+  "quality_verdict": {
+    "verdict": "extractable",
+    "reason": "Exact frequency and option suffixes resolve against the family ordering guide; electrical and mechanical tables are legible."
+  }
+}

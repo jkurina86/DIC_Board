@@ -1,0 +1,102 @@
+{
+  "mpn": "STM32L476ZGT6",
+  "metadata": {
+    "manufacturer": "STMicroelectronics",
+    "datasheet_revision": "DS10198 Rev 11",
+    "datasheet_date": "July 2024",
+    "page_count": 270,
+    "source_url": "https://www.st.com",
+    "is_family_pdf": true,
+    "family_member_mpns": [
+      "STM32L476RC",
+      "STM32L476VC",
+      "STM32L476JE",
+      "STM32L476ME",
+      "STM32L476QE",
+      "STM32L476RE",
+      "STM32L476VE",
+      "STM32L476ZE",
+      "STM32L476JG",
+      "STM32L476MG",
+      "STM32L476QG",
+      "STM32L476RG",
+      "STM32L476VG",
+      "STM32L476ZG",
+      "STM32L476ZGT6"
+    ]
+  },
+  "categories": [
+    "mcu"
+  ],
+  "extraction_pages": {
+    "base": [
+      1,
+      2,
+      110,
+      111,
+      112,
+      113,
+      114,
+      161,
+      234,
+      235,
+      258,
+      261
+    ],
+    "pinout": [
+      61,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87
+    ],
+    "mcu": [
+      1,
+      2,
+      15,
+      16,
+      20,
+      40,
+      41,
+      42,
+      47,
+      48,
+      49,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      60,
+      61,
+      113,
+      161,
+      171,
+      234,
+      235,
+      258,
+      261
+    ]
+  },
+  "quality_verdict": {
+    "verdict": "extractable",
+    "reason": null
+  }
+}

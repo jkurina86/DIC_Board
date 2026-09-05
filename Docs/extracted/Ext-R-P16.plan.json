@@ -1,0 +1,56 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:47:56Z",
+  "execution": {
+    "completed_at": "2026-09-02T22:56:27Z",
+    "outcomes": [
+      {
+        "attempts": 3,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 3,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      }
+    ],
+    "started_at": "2026-09-02T22:51:45Z"
+  },
+  "mpn": "Ext-R-P16",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Actuonix_P16-50-256-12-P\\Actuonix Ext -R Datasheet.pdf",
+  "pdf_sha256": "sha256:052213fde5b15dace8421f1d2265b13679b47a89b710d49c1411522e3d692676",
+  "plan_version": "1.0",
+  "scout_ref": "Ext-R-P16.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "Ext-R-P16.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        2
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "Ext-R-P16.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

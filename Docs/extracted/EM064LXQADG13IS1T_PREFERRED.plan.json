@@ -1,0 +1,59 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:48:27Z",
+  "execution": {
+    "completed_at": "2026-09-02T22:58:12Z",
+    "outcomes": [
+      {
+        "attempts": 3,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 3,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      }
+    ],
+    "started_at": "2026-09-02T22:49:55Z"
+  },
+  "mpn": "EM064LXQADG13IS1T_PREFERRED",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\Everspin_EM064LXO_preferred\\EMxxLX_datasheet_rev3_2.pdf",
+  "pdf_sha256": "sha256:3dd76a0554a7da65f2a39b581bb84ef64164f37aea9bd4d6caedb31eda5e6d85",
+  "plan_version": "1.0",
+  "scout_ref": "EM064LXQADG13IS1T_PREFERRED.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        64,
+        67,
+        78
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "EM064LXQADG13IS1T_PREFERRED.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        9,
+        10
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "EM064LXQADG13IS1T_PREFERRED.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

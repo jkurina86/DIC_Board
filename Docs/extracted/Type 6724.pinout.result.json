@@ -1,0 +1,50 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:08Z",
+  "model_tier": "A",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": [
+    {
+      "numbers": ["1"],
+      "name": "COIL_1",
+      "type": "passive",
+      "subtype": "polarity-reversing impulse coil terminal",
+      "description": "Electrical terminal 1 for impulse variants.",
+      "power_domain": "VIN",
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": "Impulse variants only. CF P: negative opens NC and positive closes NC. CF S: negative opens NC-to-COM and positive opens NO-to-COM. The standard-variant terminal polarity is not documented here.",
+      "evidence": {
+        "page": 13,
+        "section": "7.1 Electrical connection - Pin assignment",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    {
+      "numbers": ["2"],
+      "name": "COIL_2",
+      "type": "passive",
+      "subtype": "polarity-reversing impulse coil terminal",
+      "description": "Electrical terminal 2 for impulse variants.",
+      "power_domain": "VIN",
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": "Impulse variants only. CF P: positive opens NC and negative closes NC. CF S: positive opens NC-to-COM and negative opens NO-to-COM. The standard-variant terminal polarity is not documented here.",
+      "evidence": {
+        "page": 13,
+        "section": "7.1 Electrical connection - Pin assignment",
+        "confidence": "high",
+        "method": "table"
+      }
+    }
+  ]
+}

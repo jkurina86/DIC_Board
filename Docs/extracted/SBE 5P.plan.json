@@ -1,0 +1,56 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T23:00:26Z",
+  "execution": {
+    "completed_at": "2026-09-02T23:00:40Z",
+    "outcomes": [
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      }
+    ],
+    "started_at": "2026-09-02T23:00:40Z"
+  },
+  "mpn": "SBE 5P",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Sea-Bird_SBE5P\\SBE5_datasheets\\SBE_5T___5PDS53May25.pdf",
+  "pdf_sha256": "sha256:6b4bdfc7d404565ac252699e2fb2425b6c52a5cbfce7a62802f95ca688d536c4",
+  "plan_version": "1.0",
+  "scout_ref": "SBE 5P.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "SBE 5P.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        2
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "SBE 5P.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

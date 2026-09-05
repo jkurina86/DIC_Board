@@ -1,0 +1,29 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:01Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "ACTUONIX-LAC",
+    "metadata": {
+      "manufacturer": "Actuonix Motion Devices",
+      "datasheet_revision": null,
+      "datasheet_date": "2017",
+      "page_count": 2,
+      "source_url": null,
+      "is_family_pdf": false,
+      "family_member_mpns": []
+    },
+    "categories": [],
+    "extraction_pages": {
+      "base": [1, 2],
+      "pinout": [2]
+    },
+    "quality_verdict": {
+      "verdict": "extractable",
+      "reason": "The product is printed as LAC; ACTUONIX-LAC is the requested manufacturer-qualified cache ID."
+    }
+  }
+}

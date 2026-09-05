@@ -1,0 +1,429 @@
+{
+  "base": {
+    "absolute_max": {
+      "IIO_pin": [
+        {
+          "condition": "Maximum current sunk or sourced by any I/O and control pin",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 111,
+            "section": "6.2 Absolute maximum ratings, Table 21"
+          },
+          "max": 0.02,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "A"
+        }
+      ],
+      "TJ_max": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 112,
+            "section": "6.2 Absolute maximum ratings, Table 22"
+          },
+          "max": 150,
+          "min": null,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "TSTG": [
+        {
+          "condition": "Storage temperature range",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 112,
+            "section": "6.2 Absolute maximum ratings, Table 22"
+          },
+          "max": 150,
+          "min": -65,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN_max": [
+        {
+          "condition": "External main supply voltage including VDD, VDDA, VDDIO2, VDDUSB, VLCD, VBAT and VREF+ relative to VSS",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 110,
+            "section": "6.2 Absolute maximum ratings, Table 20"
+          },
+          "max": 4.0,
+          "min": -0.3,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 2,
+          "section": "Features"
+        },
+        "mark": "ECOPACK2",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 110,
+          "section": "6.2 Absolute maximum ratings"
+        },
+        "mark": "JEDEC JESD47",
+        "rating": null
+      }
+    ],
+    "description": "Ultra-low-power 32-bit MCU with FPU, 1 MB flash and 128 KB SRAM",
+    "esd": {
+      "CDM": [
+        {
+          "condition": "TA = 25 \u00b0C, ANSI/ESD STM5.3.1",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 161,
+            "section": "6.3.12 Electrical sensitivity characteristics, Table 67"
+          },
+          "max": 250,
+          "min": null,
+          "notes": "Class C3; guaranteed by characterization.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "HBM": [
+        {
+          "condition": "TA = 25 \u00b0C, ANSI/ESDA/JEDEC JS-001",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 161,
+            "section": "6.3.12 Electrical sensitivity characteristics, Table 67"
+          },
+          "max": 2000,
+          "min": null,
+          "notes": "Class 2; guaranteed by characterization.",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "Arm Cortex-M4F microcontroller",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 1.4,
+        "length": 20.0,
+        "width": 20.0
+      },
+      "code": "LQFP144",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 235,
+        "section": "7.2 LQFP144 package information (1A)"
+      },
+      "pin_count": 144,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": "Suffix 6 at maximum power dissipation",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 114,
+            "section": "6.3.1 General operating conditions, Table 23"
+          },
+          "max": 85,
+          "min": -40,
+          "notes": "Low-power dissipation operation extends to 105 \u00b0C subject to TJ limits.",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VBAT": [
+        {
+          "condition": "Backup operating voltage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23"
+          },
+          "max": 3.6,
+          "min": 1.55,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": "Standard operating voltage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDA": [
+        {
+          "condition": "ADC or comparator used",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23"
+          },
+          "max": 3.6,
+          "min": 1.62,
+          "notes": "Minimum is 1.8 V when DAC or OPAMP is used and 2.4 V when VREFBUF is used.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDIO2": [
+        {
+          "condition": "At least one PG[15:2] I/O used",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23"
+          },
+          "max": 3.6,
+          "min": 1.08,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VDDUSB": [
+        {
+          "condition": "USB used",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23"
+          },
+          "max": 3.6,
+          "min": 3.0,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "VDD standard operating voltage",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 113,
+            "section": "6.3.1 General operating conditions, Table 23"
+          },
+          "max": 3.6,
+          "min": 1.71,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": {
+      "theta_ja": [
+        {
+          "condition": "LQFP144, 20 x 20 mm",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 258,
+            "section": "7.10 Thermal characteristics"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 32,
+          "unit": "\u00b0C/W"
+        }
+      ]
+    }
+  },
+  "categories": [
+    "mcu"
+  ],
+  "extraction": {
+    "extracted_at": "2026-09-02T23:00:20Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "STM32L476ZGT6.plan.json",
+    "quality_score": 80
+  },
+  "mcu": {
+    "adc": {
+      "bit_depth": 12,
+      "channel_count": 24,
+      "sample_rate_max_hz": 5000000
+    },
+    "boot_pins": null,
+    "core_family": "cortex_m4f",
+    "core_speed_max": 80000000,
+    "dac": {
+      "bit_depth": 12,
+      "channel_count": 2,
+      "sample_rate_max_hz": null
+    },
+    "debug_interface": "swd_jtag",
+    "eeprom_size": 0,
+    "flash_size": 1048576,
+    "gpio_count": 114,
+    "nvic_priorities": 16,
+    "package": {
+      "body_mm": {
+        "height": 1.4,
+        "length": 20.0,
+        "width": 20.0
+      },
+      "code": "LQFP144",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 235,
+        "section": "7.2 LQFP144 package information (1A), Table 120"
+      },
+      "pin_count": 144,
+      "pitch_mm": 0.5,
+      "thermal_pad": false
+    },
+    "peripheral_counts": {
+      "can": 1,
+      "dac": 1,
+      "ethernet": 0,
+      "i2c": 3,
+      "spi": 3,
+      "timer_advanced": 2,
+      "timer_general": 9,
+      "uart": 6,
+      "usb": 1
+    },
+    "pin_count": 144,
+    "ram_size": 131072,
+    "reset_pin": null,
+    "temperature_grades": [
+      "suffix 6: -40 to +85 \u00b0C ambient, +105 \u00b0C junction"
+    ],
+    "thermal_resistance": {
+      "rtheta_ja": [
+        {
+          "condition": "LQFP144, 20 x 20 mm",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 258,
+            "section": "7.10 Thermal characteristics, Table 133"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 32,
+          "unit": "\u00b0C/W"
+        }
+      ],
+      "rtheta_jc": null,
+      "rtheta_jl": null
+    },
+    "vdd_range": [
+      {
+        "condition": "VDD standard operating voltage",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 113,
+          "section": "6.3.1 General operating conditions, Table 23"
+        },
+        "max": 3.6,
+        "min": 1.71,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      }
+    ],
+    "vdda_range": [
+      {
+        "condition": "ADC or comparator used",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 113,
+          "section": "6.3.1 General operating conditions, Table 23"
+        },
+        "max": 3.6,
+        "min": 1.62,
+        "notes": "Minimum depends on the enabled analog peripheral.",
+        "typ": null,
+        "unit": "V"
+      }
+    ],
+    "vddio_range": [
+      {
+        "condition": "VDDIO2 with at least one PG[15:2] I/O used",
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 113,
+          "section": "6.3.1 General operating conditions, Table 23"
+        },
+        "max": 3.6,
+        "min": 1.08,
+        "notes": null,
+        "typ": null,
+        "unit": "V"
+      }
+    ]
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {
+      "mcu": "1.0"
+    }
+  },
+  "source": {
+    "datasheet_date": "July 2024",
+    "datasheet_revision": "DS10198 Rev 11",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\STM32L476ZG_current\\STM32L476xx_datasheet.pdf",
+    "manufacturer": "STMicroelectronics",
+    "mpn": "STM32L476ZGT6",
+    "page_count": 270,
+    "sha256": "sha256:a45a857e3aa75ac166dd532c76d76d5dd8377b9c5bf6f15c03c9cf85aeec0f65",
+    "source_url": "https://www.st.com"
+  }
+}

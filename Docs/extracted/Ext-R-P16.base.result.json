@@ -1,0 +1,115 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:01Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "external RC linear actuator control board configured for P16 actuators",
+    "description": "Inline Ext-R controller with RC servo input, position feedback control, stall protection, and adjustable 0-1 A current limit",
+    "package": {
+      "code": "Ext-R-P16 inline board with X1, X2, and X3 connectors",
+      "pin_count": 12,
+      "body_mm": {"length": 36, "width": 15, "height": 6.7},
+      "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+    },
+    "thermal": null,
+    "absolute_max": {},
+    "recommended_operating": {
+      "VIN": [
+        {
+          "min": 6,
+          "typ": null,
+          "max": 12,
+          "unit": "V",
+          "condition": "Supply voltage must match the actuator's rated voltage.",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "TA": [
+        {
+          "min": -10,
+          "typ": null,
+          "max": 70,
+          "unit": "°C",
+          "condition": "Operating environment",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "RH": [
+        {
+          "min": 10,
+          "typ": null,
+          "max": 80,
+          "unit": "%",
+          "condition": "Operating environment",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "SUPPLY_CURRENT_MIN": [
+        {
+          "min": 1,
+          "typ": null,
+          "max": null,
+          "unit": "A",
+          "condition": "External supply rating",
+          "notes": "Datasheet states 1 A minimum.",
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "CURRENT_LIMIT": [
+        {
+          "min": 0,
+          "typ": null,
+          "max": 1,
+          "unit": "A",
+          "condition": "P1 adjustment; clockwise lowers, counter-clockwise raises",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Operation", "confidence": "high", "method": "prose"}
+        }
+      ],
+      "RC_PWM_HIGH_TIME": [
+        {
+          "min": 0.001,
+          "typ": null,
+          "max": 0.002,
+          "unit": "s",
+          "condition": "RC servo command; full retract to full extend",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "RC_PWM_FREQUENCY": [
+        {
+          "min": 50,
+          "typ": null,
+          "max": 300,
+          "unit": "Hz",
+          "condition": "RC servo input",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ],
+      "RC_PWM_AMPLITUDE": [
+        {
+          "min": null,
+          "typ": 5,
+          "max": null,
+          "unit": "V",
+          "condition": "RC servo input",
+          "notes": null,
+          "evidence": {"page": 1, "section": "Specifications", "confidence": "high", "method": "table"}
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

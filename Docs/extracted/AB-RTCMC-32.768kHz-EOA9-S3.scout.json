@@ -1,0 +1,23 @@
+{
+  "mpn": "AB-RTCMC-32.768kHz-EOA9-S3",
+  "metadata": {
+    "manufacturer": "Abracon LLC",
+    "datasheet_revision": "11.28.2018",
+    "datasheet_date": "2018-11-28",
+    "page_count": 9,
+    "source_url": "https://abracon.com/realtimeclock/AB-RTCMC-32.768kHz-EOA9-S3.pdf",
+    "is_family_pdf": true,
+    "family_member_mpns": [
+      "AB-RTCMC-32.768kHz-EOA9-S3"
+    ]
+  },
+  "categories": [],
+  "extraction_pages": {
+    "base": [1, 2, 3, 4, 5, 6, 7, 8],
+    "pinout": [7]
+  },
+  "quality_verdict": {
+    "verdict": "extractable",
+    "reason": "Electrical, timing, package, and pin tables are legible; v1.4 has no supported RTC category extension."
+  }
+}

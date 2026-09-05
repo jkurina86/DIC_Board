@@ -1,0 +1,293 @@
+{
+  "version": "1.0",
+  "last_updated": "2026-09-02T23:04:06Z",
+  "pdfs": {
+    "sha256:2e172b72e586b868a672c4cdcb2c4e5fd13dd6b029c0fa8c30193663c15914dd": {
+      "path": "Board/Abracon_RTC/AB-RTCMC-EOA9-S3_datasheet.pdf",
+      "mpns": [
+        "AB-RTCMC-32.768kHz-EOA9-S3"
+      ],
+      "source_url": "https://abracon.com/realtimeclock/AB-RTCMC-32.768kHz-EOA9-S3.pdf",
+      "is_family": true
+    },
+    "sha256:6afbcfc02ffafa5e01fec7b373945a1475ad0a7a0c215c2bb81ef3e8fe890122": {
+      "path": "Board/Abracon_clocking/ABM8AAIG_datasheet.pdf",
+      "mpns": [
+        "ABM8AAIG-8.000MHz-V2R-T3"
+      ],
+      "source_url": "https://abracon.com/datasheets/ABM8AAIG.pdf",
+      "is_family": true
+    },
+    "sha256:1824459dd45c348d4a25a5d7afcd1d46af5b796df59ed038ce9f505ca7f48f22": {
+      "path": "Board/Abracon_clocking/ABS06-107_datasheet.pdf",
+      "mpns": [
+        "ABS06-107-32.768KHZ-T"
+      ],
+      "source_url": "https://abracon.com/Resonators/ABS06-107-32.768kHz-T.pdf",
+      "is_family": false
+    },
+    "sha256:b9cfe5e6b962ef2e297b676137d5ee2994d9be79af521c4fcbfeb7caf8ecf775": {
+      "path": "Actuators/Actuonix_P16-50-256-12-P/Actuonix_LAC_controller_datasheet.pdf",
+      "mpns": [
+        "ACTUONIX-LAC"
+      ],
+      "source_url": null,
+      "is_family": false
+    },
+    "sha256:2aba93c53cd4625151297e79695c2a04cb133319a9ef885741eec8f3566fcdd0": {
+      "path": "Actuators/Burkert_6724/Burkert_Type_6724_datasheet.pdf",
+      "mpns": [
+        "Type 6724"
+      ],
+      "source_url": null,
+      "is_family": true
+    },
+    "sha256:3dd76a0554a7da65f2a39b581bb84ef64164f37aea9bd4d6caedb31eda5e6d85": {
+      "path": "Board/Everspin_EM064LXO_preferred/EMxxLX_datasheet_rev3_2.pdf",
+      "mpns": [
+        "EM064LXQADG13IS1T_PREFERRED"
+      ],
+      "source_url": "https://download.mikroe.com/documents/datasheets/EM064LXQADG13IS1R_datasheet.pdf",
+      "is_family": true
+    },
+    "sha256:052213fde5b15dace8421f1d2265b13679b47a89b710d49c1411522e3d692676": {
+      "path": "Actuators/Actuonix_P16-50-256-12-P/Actuonix Ext -R Datasheet.pdf",
+      "mpns": [
+        "Ext-R-P16"
+      ],
+      "source_url": null,
+      "is_family": true
+    },
+    "sha256:b20ed4987a8a9b0fd742a7d72b0960f4e3f5dd4104b2a4f6b7772354dc1ef437": {
+      "path": "Sensors/SST_LuminOx_LOX-O2-F/LOX-02-F_current_datasheet_rev5.pdf",
+      "mpns": [
+        "LOX-02-F"
+      ],
+      "source_url": "https://www.sstsensing.com",
+      "is_family": false
+    },
+    "sha256:f9401d1e290d39726fba5eebf15e957f076f9ccdce76f95b92d5e6bb80226ba0": {
+      "path": "Actuators/KNF_NMP09KPDC-B/KNF_NMP09_datasheet.pdf",
+      "mpns": [
+        "NMP09KPDC-B"
+      ],
+      "source_url": "https://www.knf.com",
+      "is_family": true
+    },
+    "sha256:070deb5f22cead2e67abec1e02b870234e9e321fdacc38d4debb51c247c1768d": {
+      "path": "Actuators/Actuonix_P16-50-256-12-P/Actuonix_P16_datasheet.pdf",
+      "mpns": [
+        "P16-50-256-12-P"
+      ],
+      "source_url": null,
+      "is_family": true
+    },
+    "sha256:9cc4d2014cb026805b7c515469b61fc6f146a23ea1405e934460d890fe42bad3": {
+      "path": "Sensors/Fluke_RPM4_bench_reference/RPM4_datasheet.pdf",
+      "mpns": [
+        "RPM4"
+      ],
+      "source_url": "http://www.flukecal.com",
+      "is_family": false
+    },
+    "sha256:6b4bdfc7d404565ac252699e2fb2425b6c52a5cbfce7a62802f95ca688d536c4": {
+      "path": "Actuators/Sea-Bird_SBE5P/SBE5_datasheets/SBE_5T___5PDS53May25.pdf",
+      "mpns": [
+        "SBE 5P"
+      ],
+      "source_url": "https://seabird.com",
+      "is_family": true
+    },
+    "sha256:095b1853e7f4328f5897c9ca6c392a7dd8b0202eda66b0a2629f9cb840dd496d": {
+      "path": "Sensors/Sensirion_SHT35/SHT3x_DIS_datasheet.pdf",
+      "mpns": [
+        "SHT35-DIS"
+      ],
+      "source_url": "https://www.sensirion.com",
+      "is_family": true
+    },
+    "sha256:a45a857e3aa75ac166dd532c76d76d5dd8377b9c5bf6f15c03c9cf85aeec0f65": {
+      "path": "Board/STM32L476ZG_current/STM32L476xx_datasheet.pdf",
+      "mpns": [
+        "STM32L476ZGT6"
+      ],
+      "source_url": "https://www.st.com",
+      "is_family": true
+    },
+    "sha256:049cc34598b1e11aa8183333f6f759cc66d0e8322fedb7135912557768b4c21e": {
+      "path": "Board/STM32L4R5ZG_candidate/STM32L4R5xx_datasheet.pdf",
+      "mpns": [
+        "STM32L4R5ZGT6"
+      ],
+      "source_url": "https://www.st.com",
+      "is_family": true
+    }
+  },
+  "extractions": {
+    "AB-RTCMC-32.768kHz-EOA9-S3": {
+      "file": "AB-RTCMC-32.768kHz-EOA9-S3.json",
+      "mpn": "AB-RTCMC-32.768kHz-EOA9-S3",
+      "category": null,
+      "source_pdf": "Board/Abracon_RTC/AB-RTCMC-EOA9-S3_datasheet.pdf",
+      "source_pdf_hash": "sha256:2e172b72e586b868a672c4cdcb2c4e5fd13dd6b029c0fa8c30193663c15914dd",
+      "extraction_date": "2026-09-02T22:54:10Z",
+      "extraction_score": 55,
+      "extraction_version": 1,
+      "pin_count": 10
+    },
+    "ABM8AAIG-8.000MHz-V2R-T3": {
+      "file": "ABM8AAIG-8.000MHz-V2R-T3.json",
+      "mpn": "ABM8AAIG-8.000MHz-V2R-T3",
+      "category": "crystal",
+      "source_pdf": "Board/Abracon_clocking/ABM8AAIG_datasheet.pdf",
+      "source_pdf_hash": "sha256:6afbcfc02ffafa5e01fec7b373945a1475ad0a7a0c215c2bb81ef3e8fe890122",
+      "extraction_date": "2026-09-02T22:54:10Z",
+      "extraction_score": 79,
+      "extraction_version": 1,
+      "pin_count": 2
+    },
+    "ABS06-107-32.768KHZ-T": {
+      "file": "ABS06-107-32.768KHZ-T.json",
+      "mpn": "ABS06-107-32.768KHZ-T",
+      "category": "crystal",
+      "source_pdf": "Board/Abracon_clocking/ABS06-107_datasheet.pdf",
+      "source_pdf_hash": "sha256:1824459dd45c348d4a25a5d7afcd1d46af5b796df59ed038ce9f505ca7f48f22",
+      "extraction_date": "2026-09-02T22:54:10Z",
+      "extraction_score": 64,
+      "extraction_version": 1,
+      "pin_count": 2
+    },
+    "ACTUONIX-LAC": {
+      "file": "ACTUONIX-LAC.json",
+      "mpn": "ACTUONIX-LAC",
+      "category": null,
+      "source_pdf": "Actuators/Actuonix_P16-50-256-12-P/Actuonix_LAC_controller_datasheet.pdf",
+      "source_pdf_hash": "sha256:b9cfe5e6b962ef2e297b676137d5ee2994d9be79af521c4fcbfeb7caf8ecf775",
+      "extraction_date": "2026-09-02T22:56:27Z",
+      "extraction_score": 59,
+      "extraction_version": 1,
+      "pin_count": 23
+    },
+    "BURKERT-6724": {
+      "file": "BURKERT-6724.json",
+      "mpn": "Type 6724",
+      "category": null,
+      "source_pdf": "Actuators/Burkert_6724/Burkert_Type_6724_datasheet.pdf",
+      "source_pdf_hash": "sha256:2aba93c53cd4625151297e79695c2a04cb133319a9ef885741eec8f3566fcdd0",
+      "extraction_date": "2026-09-02T22:54:58Z",
+      "extraction_score": 62,
+      "extraction_version": 1,
+      "pin_count": 2
+    },
+    "EM064LXQADG13IS1T_PREFERRED": {
+      "file": "EM064LXQADG13IS1T_PREFERRED.json",
+      "mpn": "EM064LXQADG13IS1T_PREFERRED",
+      "category": null,
+      "source_pdf": "Board/Everspin_EM064LXO_preferred/EMxxLX_datasheet_rev3_2.pdf",
+      "source_pdf_hash": "sha256:3dd76a0554a7da65f2a39b581bb84ef64164f37aea9bd4d6caedb31eda5e6d85",
+      "extraction_date": "2026-09-02T22:58:12Z",
+      "extraction_score": 62,
+      "extraction_version": 1,
+      "pin_count": 8
+    },
+    "Ext-R-P16": {
+      "file": "Ext-R-P16.json",
+      "mpn": "Ext-R-P16",
+      "category": null,
+      "source_pdf": "Actuators/Actuonix_P16-50-256-12-P/Actuonix Ext -R Datasheet.pdf",
+      "source_pdf_hash": "sha256:052213fde5b15dace8421f1d2265b13679b47a89b710d49c1411522e3d692676",
+      "extraction_date": "2026-09-02T22:56:27Z",
+      "extraction_score": 59,
+      "extraction_version": 1,
+      "pin_count": 12
+    },
+    "LOX-02-F": {
+      "file": "LOX-02-F.json",
+      "mpn": "LOX-02-F",
+      "category": null,
+      "source_pdf": "Sensors/SST_LuminOx_LOX-O2-F/LOX-02-F_current_datasheet_rev5.pdf",
+      "source_pdf_hash": "sha256:b20ed4987a8a9b0fd742a7d72b0960f4e3f5dd4104b2a4f6b7772354dc1ef437",
+      "extraction_date": "2026-09-02T22:51:15Z",
+      "extraction_score": 59,
+      "extraction_version": 1,
+      "pin_count": 4
+    },
+    "NMP09KPDC-B": {
+      "file": "NMP09KPDC-B.json",
+      "mpn": "NMP09KPDC-B",
+      "category": null,
+      "source_pdf": "Actuators/KNF_NMP09KPDC-B/KNF_NMP09_datasheet.pdf",
+      "source_pdf_hash": "sha256:f9401d1e290d39726fba5eebf15e957f076f9ccdce76f95b92d5e6bb80226ba0",
+      "extraction_date": "2026-09-02T22:54:58Z",
+      "extraction_score": 39,
+      "extraction_version": 1,
+      "pin_count": null
+    },
+    "P16-50-256-12-P": {
+      "file": "P16-50-256-12-P.json",
+      "mpn": "P16-50-256-12-P",
+      "category": null,
+      "source_pdf": "Actuators/Actuonix_P16-50-256-12-P/Actuonix_P16_datasheet.pdf",
+      "source_pdf_hash": "sha256:070deb5f22cead2e67abec1e02b870234e9e321fdacc38d4debb51c247c1768d",
+      "extraction_date": "2026-09-02T22:56:27Z",
+      "extraction_score": 60,
+      "extraction_version": 1,
+      "pin_count": 5
+    },
+    "RPM4": {
+      "file": "RPM4.json",
+      "mpn": "RPM4",
+      "category": null,
+      "source_pdf": "Sensors/Fluke_RPM4_bench_reference/RPM4_datasheet.pdf",
+      "source_pdf_hash": "sha256:9cc4d2014cb026805b7c515469b61fc6f146a23ea1405e934460d890fe42bad3",
+      "extraction_date": "2026-09-02T22:51:16Z",
+      "extraction_score": 36,
+      "extraction_version": 1,
+      "pin_count": null
+    },
+    "SBE-5P": {
+      "file": "SBE-5P.json",
+      "mpn": "SBE 5P",
+      "category": null,
+      "source_pdf": "Actuators/Sea-Bird_SBE5P/SBE5_datasheets/SBE_5T___5PDS53May25.pdf",
+      "source_pdf_hash": "sha256:6b4bdfc7d404565ac252699e2fb2425b6c52a5cbfce7a62802f95ca688d536c4",
+      "extraction_date": "2026-09-02T23:00:40Z",
+      "extraction_score": 57,
+      "extraction_version": 1,
+      "pin_count": 2
+    },
+    "SHT35-DIS": {
+      "file": "SHT35-DIS.json",
+      "mpn": "SHT35-DIS",
+      "category": null,
+      "source_pdf": "Sensors/Sensirion_SHT35/SHT3x_DIS_datasheet.pdf",
+      "source_pdf_hash": "sha256:095b1853e7f4328f5897c9ca6c392a7dd8b0202eda66b0a2629f9cb840dd496d",
+      "extraction_date": "2026-09-02T22:51:15Z",
+      "extraction_score": 61,
+      "extraction_version": 1,
+      "pin_count": 8
+    },
+    "STM32L476ZGT6": {
+      "file": "STM32L476ZGT6.json",
+      "mpn": "STM32L476ZGT6",
+      "category": "mcu",
+      "source_pdf": "Board/STM32L476ZG_current/STM32L476xx_datasheet.pdf",
+      "source_pdf_hash": "sha256:a45a857e3aa75ac166dd532c76d76d5dd8377b9c5bf6f15c03c9cf85aeec0f65",
+      "extraction_date": "2026-09-02T23:00:20Z",
+      "extraction_score": 80,
+      "extraction_version": 1,
+      "pin_count": 144
+    },
+    "STM32L4R5ZGT6": {
+      "file": "STM32L4R5ZGT6.json",
+      "mpn": "STM32L4R5ZGT6",
+      "category": "mcu",
+      "source_pdf": "Board/STM32L4R5ZG_candidate/STM32L4R5xx_datasheet.pdf",
+      "source_pdf_hash": "sha256:049cc34598b1e11aa8183333f6f759cc66d0e8322fedb7135912557768b4c21e",
+      "extraction_date": "2026-09-02T23:00:20Z",
+      "extraction_score": 80,
+      "extraction_version": 1,
+      "pin_count": 144
+    }
+  }
+}

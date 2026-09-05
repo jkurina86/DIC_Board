@@ -1,0 +1,18 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:45:28Z",
+  "model_tier": "A",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": [
+    {"numbers": ["1"], "name": "SDA", "type": "bidirectional", "subtype": "open_drain I2C data", "description": "Serial data input/output.", "power_domain": "VDD", "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "Requires an external pull-up resistor.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}},
+    {"numbers": ["2"], "name": "ADDR", "type": "input", "subtype": "I2C address select", "description": "Address pin; connect to logic high or logic low.", "power_domain": "VDD", "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "Do not leave floating. Logic low selects 0x44; logic high selects 0x45.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}},
+    {"numbers": ["3"], "name": "ALERT", "type": "output", "subtype": "alarm", "description": "Indicates an alarm condition.", "power_domain": "VDD", "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "Must be left floating if unused.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}},
+    {"numbers": ["4"], "name": "SCL", "type": "bidirectional", "subtype": "open_drain I2C clock", "description": "Serial clock input/output.", "power_domain": "VDD", "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "Requires an external pull-up resistor.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}},
+    {"numbers": ["5"], "name": "VDD", "type": "power_in", "subtype": null, "description": "Supply voltage input.", "power_domain": "VDD", "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "Decouple to VSS with 100 nF placed as close to the sensor as possible.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}},
+    {"numbers": ["6"], "name": "nRESET", "type": "input", "subtype": "active_low reset", "description": "Active-low reset input.", "power_domain": "VDD", "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "If unused, leave floating or connect to VDD through a resistor of at least 2 kΩ; an internal 50 kΩ typical pull-up is documented.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}},
+    {"numbers": ["7"], "name": "R", "type": "passive", "subtype": null, "description": "No electrical function.", "power_domain": null, "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "Connect to VSS.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}},
+    {"numbers": ["8"], "name": "VSS", "type": "passive", "subtype": "ground", "description": "Ground.", "power_domain": null, "alt_functions": [], "is_5v_tolerant": null, "absolute_max": null, "recommended": null, "drive_strength": null, "notes": "The unnumbered center die pad is internally connected to VSS and is recommended to be soldered for mechanical reasons.", "evidence": {"page": 8, "section": "3 Pin Assignment", "confidence": "high", "method": "table"}}
+  ]
+}

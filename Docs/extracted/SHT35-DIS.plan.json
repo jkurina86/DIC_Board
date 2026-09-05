@@ -1,0 +1,66 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:47:15Z",
+  "execution": {
+    "completed_at": "2026-09-02T22:51:16Z",
+    "outcomes": [
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      }
+    ],
+    "started_at": "2026-09-02T22:50:34Z"
+  },
+  "mpn": "SHT35-DIS",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Sensors\\Sensirion_SHT35\\SHT3x_DIS_datasheet.pdf",
+  "pdf_sha256": "sha256:095b1853e7f4328f5897c9ca6c392a7dd8b0202eda66b0a2629f9cb840dd496d",
+  "plan_version": "1.0",
+  "scout_ref": "SHT35-DIS.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2,
+        6,
+        7,
+        8,
+        9,
+        14,
+        16,
+        17,
+        19
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "SHT35-DIS.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        8,
+        9,
+        14
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "SHT35-DIS.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

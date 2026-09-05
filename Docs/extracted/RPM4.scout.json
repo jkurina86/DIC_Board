@@ -1,0 +1,29 @@
+{
+  "mpn": "RPM4",
+  "metadata": {
+    "manufacturer": "Fluke Calibration",
+    "datasheet_revision": "210026-en",
+    "datasheet_date": "2021-01",
+    "page_count": 4,
+    "source_url": "http://www.flukecal.com",
+    "is_family_pdf": false,
+    "family_member_mpns": [
+      "RPM4"
+    ]
+  },
+  "categories": [],
+  "extraction_pages": {
+    "base": [
+      1,
+      3,
+      4
+    ],
+    "pinout": [
+      4
+    ]
+  },
+  "quality_verdict": {
+    "verdict": "extractable",
+    "reason": "Bench-reference instrument brochure; electrical connector assignments are not documented."
+  }
+}

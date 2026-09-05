@@ -1,0 +1,83 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:08Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "micro diaphragm gas pump",
+    "description": "6 V brushless DC micro diaphragm gas pump",
+    "package": {
+      "code": "NMP09KPDC-B pump assembly",
+      "pin_count": null,
+      "pitch_mm": null,
+      "body_mm": null,
+      "thermal_pad": null,
+      "evidence": {
+        "page": 3,
+        "section": "NMP09KPDC-B Dimensions",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    "thermal": null,
+    "absolute_max": {
+      "Imax": [
+        {
+          "min": null,
+          "typ": null,
+          "max": 0.17,
+          "unit": "A",
+          "condition": "NMP09KPDC-B, 6 V",
+          "notes": "Published as Imax in the family electrical-data table.",
+          "evidence": {
+            "page": 1,
+            "section": "Electrical Data",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "recommended_operating": {
+      "VIN": [
+        {
+          "min": null,
+          "typ": 6,
+          "max": null,
+          "unit": "V",
+          "condition": "NMP09KPDC-B",
+          "notes": null,
+          "evidence": {
+            "page": 1,
+            "section": "Electrical Data",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "TA": [
+        {
+          "min": 5,
+          "typ": null,
+          "max": 40,
+          "unit": "°C",
+          "condition": "Series models; extended temperature on request",
+          "notes": null,
+          "evidence": {
+            "page": 1,
+            "section": "Performance Data",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "esd": null,
+    "moisture_sensitivity": null,
+    "compliance": [],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

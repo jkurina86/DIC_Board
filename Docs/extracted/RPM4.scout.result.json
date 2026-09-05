@@ -1,0 +1,37 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:45:28Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "RPM4",
+    "metadata": {
+      "manufacturer": "Fluke Calibration",
+      "datasheet_revision": "210026-en",
+      "datasheet_date": "2021-01",
+      "page_count": 4,
+      "source_url": "http://www.flukecal.com",
+      "is_family_pdf": false,
+      "family_member_mpns": [
+        "RPM4"
+      ]
+    },
+    "categories": [],
+    "extraction_pages": {
+      "base": [
+        1,
+        3,
+        4
+      ],
+      "pinout": [
+        4
+      ]
+    },
+    "quality_verdict": {
+      "verdict": "extractable",
+      "reason": "Bench-reference instrument brochure; electrical connector assignments are not documented."
+    }
+  }
+}

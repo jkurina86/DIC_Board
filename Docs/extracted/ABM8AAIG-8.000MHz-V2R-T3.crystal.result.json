@@ -1,0 +1,156 @@
+{
+  "task_id": "crystal",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:47:33Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "crystal_type": "at_cut",
+    "frequency": [
+      {
+        "min": null,
+        "typ": 8000000,
+        "max": null,
+        "unit": "Hz",
+        "condition": "Exact order-code frequency",
+        "notes": "Reported as 8.000 MHz; converted to Hz",
+        "evidence": {
+          "page": 2,
+          "section": "Options and Part Identification",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "frequency_tolerance": [
+      {
+        "min": -15,
+        "typ": null,
+        "max": 15,
+        "unit": "ppm",
+        "condition": "At +25\u00b0C; exact order-code frequency-tolerance option 2",
+        "notes": "Option 2 is +/-15 ppm",
+        "evidence": {
+          "page": 2,
+          "section": "Options and Part Identification",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "frequency_stability": [
+      {
+        "min": -150,
+        "typ": null,
+        "max": 150,
+        "unit": "ppm",
+        "condition": "Over -40\u00b0C to +150\u00b0C, referenced to +25\u00b0C; exact order-code options V and R",
+        "notes": "Option R is +/-150 ppm and is required for temperature option V",
+        "evidence": {
+          "page": 2,
+          "section": "Options and Part Identification",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "aging": [
+      {
+        "min": -3,
+        "typ": null,
+        "max": 3,
+        "unit": "ppm",
+        "condition": "At 25\u00b0C +/-3\u00b0C, first year",
+        "notes": null,
+        "evidence": {
+          "page": 1,
+          "section": "Key Electrical Specifications",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "load_capacitance": [
+      {
+        "min": null,
+        "typ": 8e-12,
+        "max": null,
+        "unit": "F",
+        "condition": "Standard blank load-capacitance option in exact order code",
+        "notes": "Reported as 8 pF; converted to F",
+        "evidence": {
+          "page": 2,
+          "section": "Options and Part Identification",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "motional_capacitance": null,
+    "motional_inductance": null,
+    "esr_max": [
+      {
+        "min": null,
+        "typ": null,
+        "max": 500,
+        "unit": "\u03a9",
+        "condition": "8.000 to 9.799 MHz; standard ESR option",
+        "notes": null,
+        "evidence": {
+          "page": 1,
+          "section": "Key Electrical Specifications",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "drive_level_max": [
+      {
+        "min": null,
+        "typ": 0.00001,
+        "max": 0.0002,
+        "unit": "W",
+        "condition": "Drive level",
+        "notes": "Reported as 10 uW typical and 200 uW maximum; converted to W",
+        "evidence": {
+          "page": 1,
+          "section": "Key Electrical Specifications",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "operating_temp_range": [
+      {
+        "min": -40,
+        "typ": null,
+        "max": 150,
+        "unit": "\u00b0C",
+        "condition": "Exact order-code operating-temperature option V",
+        "notes": "Availability is limited to selected frequencies and electrical options; option V is offered only with stability option R",
+        "evidence": {
+          "page": 2,
+          "section": "Options and Part Identification",
+          "confidence": "high",
+          "method": "table"
+        }
+      }
+    ],
+    "mode": "fundamental",
+    "package": {
+      "code": "SMD-3225",
+      "body_mm": {
+        "length": 3.2,
+        "width": 2.5,
+        "height": 0.9
+      },
+      "evidence": {
+        "page": 3,
+        "section": "Mechanical Dimensions",
+        "confidence": "high",
+        "method": "table"
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "task_id": "base",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:47:44Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "family": "64 Mb Quad-SPI industrial STT-MRAM persistent memory",
+    "description": "EM064LXQADG13IS1T 64 Mb Quad-SPI MRAM, 8-DFN, industrial temperature, tray, S1 revision; project-preferred variant.",
+    "package": {
+      "code": "8-DFN, 6 mm x 8 mm",
+      "pin_count": 8,
+      "thermal_pad": null,
+      "evidence": {
+        "page": 1,
+        "section": "Features",
+        "confidence": "high",
+        "method": "prose"
+      }
+    },
+    "thermal": null,
+    "absolute_max": {
+      "TSTG": [
+        {
+          "min": -65.0,
+          "typ": null,
+          "max": 150.0,
+          "unit": "\u00b0C",
+          "condition": null,
+          "notes": "Storage temperature.",
+          "evidence": {
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "VIO": [
+        {
+          "min": -0.6,
+          "typ": null,
+          "max": null,
+          "unit": "V",
+          "condition": "Referenced to VSS.",
+          "notes": "The published upper limit is symbolic: VDD + 0.6 V.",
+          "evidence": {
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "VDD": [
+        {
+          "min": -0.6,
+          "typ": null,
+          "max": 2.4,
+          "unit": "V",
+          "condition": "Referenced to VSS.",
+          "notes": "Supply-voltage absolute maximum.",
+          "evidence": {
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "recommended_operating": {
+      "VDD": [
+        {
+          "min": 1.65,
+          "typ": null,
+          "max": 2.0,
+          "unit": "V",
+          "condition": null,
+          "notes": "Supply voltage.",
+          "evidence": {
+            "page": 67,
+            "section": "22.3 Recommended Operating Conditions",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ],
+      "TA": [
+        {
+          "min": -40.0,
+          "typ": null,
+          "max": 85.0,
+          "unit": "\u00b0C",
+          "condition": "Industrial temperature range selected by ordering code EM064LXQADG13IS1T.",
+          "notes": null,
+          "evidence": {
+            "page": 67,
+            "section": "22.3 Recommended Operating Conditions",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "esd": {
+      "HBM": [
+        {
+          "min": -2000.0,
+          "typ": null,
+          "max": 2000.0,
+          "unit": "V",
+          "condition": "Human body model, JESD22-A114A.",
+          "notes": null,
+          "evidence": {
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings",
+            "confidence": "high",
+            "method": "table"
+          }
+        }
+      ]
+    },
+    "moisture_sensitivity": null,
+    "compliance": [
+      {
+        "mark": "RoHS",
+        "rating": null,
+        "evidence": {
+          "page": 67,
+          "section": "22.2 Absolute Maximum Ratings, Note 3",
+          "confidence": "high",
+          "method": "prose"
+        }
+      },
+      {
+        "mark": "JEDEC J-STD-020C",
+        "rating": null,
+        "evidence": {
+          "page": 67,
+          "section": "22.2 Absolute Maximum Ratings, Note 3",
+          "confidence": "high",
+          "method": "prose"
+        }
+      }
+    ],
+    "pinout": [],
+    "pin_relationships": []
+  }
+}

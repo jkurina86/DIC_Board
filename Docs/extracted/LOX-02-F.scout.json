@@ -1,0 +1,28 @@
+{
+  "mpn": "LOX-02-F",
+  "metadata": {
+    "manufacturer": "SST Sensing Ltd",
+    "datasheet_revision": "SST-DS-0145 Rev5",
+    "datasheet_date": null,
+    "page_count": 2,
+    "source_url": "https://www.sstsensing.com",
+    "is_family_pdf": false,
+    "family_member_mpns": [
+      "LOX-02-F"
+    ]
+  },
+  "categories": [],
+  "extraction_pages": {
+    "base": [
+      1,
+      2
+    ],
+    "pinout": [
+      2
+    ]
+  },
+  "quality_verdict": {
+    "verdict": "extractable",
+    "reason": null
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:01Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "P16-50-256-12-P",
+    "metadata": {
+      "manufacturer": "Actuonix Motion Devices Inc.",
+      "datasheet_revision": "Rev B",
+      "datasheet_date": "2016",
+      "page_count": 3,
+      "source_url": null,
+      "is_family_pdf": true,
+      "family_member_mpns": []
+    },
+    "categories": [],
+    "extraction_pages": {
+      "base": [1, 2, 3],
+      "pinout": [2, 3]
+    },
+    "quality_verdict": {
+      "verdict": "extractable",
+      "reason": "The exact configuration is resolved from the printed P16-SS-GG-VV-C model scheme and the listed 50 mm, 256:1, 12 V, and P options; the sheet does not print the assembled order code as one contiguous string."
+    }
+  }
+}

@@ -2216,16 +2216,6 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 52.07) (xy 120.65 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5981db99-864d-4c8d-a8b4-297d7848b7ea")
-	)
-	(wire
-		(pts
 			(xy 158.75 121.92) (xy 158.75 109.22)
 		)
 		(stroke
@@ -2346,7 +2336,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 52.07) (xy 107.95 52.07)
+			(xy 48.26 52.07) (xy 120.65 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3152,107 +3142,6 @@
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d/90896a52-6a15-4861-9fbc-84f5783b3f4c"
 					(reference "#PWR0113")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 111.76 52.07 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "5183ff26-9865-4e35-aceb-faa503d5d76d")
-		(property "Reference" "R306"
-			(at 112.014 49.276 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "15k"
-			(at 111.76 55.118 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 111.76 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "MCU input protection"
-			(at 111.76 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "MPN" "CRCW040215K0FKED"
-			(at 111.76 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Manufacturer" "Vishay Dale"
-			(at 111.76 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3a7a2ce7-e584-4dfe-aa5c-2a4d5d96a4d3")
-		)
-		(pin "2"
-			(uuid "5e5260f9-e221-492f-8115-7f8cfa88308d")
-		)
-		(instances
-			(project "DIC_Board"
-				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d/90896a52-6a15-4861-9fbc-84f5783b3f4c"
-					(reference "R306")
 					(unit 1)
 				)
 			)

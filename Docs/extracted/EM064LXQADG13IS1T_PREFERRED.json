@@ -1,0 +1,345 @@
+{
+  "base": {
+    "absolute_max": {
+      "TSTG": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings"
+          },
+          "max": 150.0,
+          "min": -65.0,
+          "notes": "Storage temperature.",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": "Referenced to VSS.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings"
+          },
+          "max": 2.4,
+          "min": -0.6,
+          "notes": "Supply-voltage absolute maximum.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "VIO": [
+        {
+          "condition": "Referenced to VSS.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings"
+          },
+          "max": null,
+          "min": -0.6,
+          "notes": "The published upper limit is symbolic: VDD + 0.6 V.",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 67,
+          "section": "22.2 Absolute Maximum Ratings, Note 3"
+        },
+        "mark": "RoHS",
+        "rating": null
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "prose",
+          "page": 67,
+          "section": "22.2 Absolute Maximum Ratings, Note 3"
+        },
+        "mark": "JEDEC J-STD-020C",
+        "rating": null
+      }
+    ],
+    "description": "EM064LXQADG13IS1T 64 Mb Quad-SPI MRAM, 8-DFN, industrial temperature, tray, S1 revision; project-preferred variant.",
+    "esd": {
+      "HBM": [
+        {
+          "condition": "Human body model, JESD22-A114A.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 67,
+            "section": "22.2 Absolute Maximum Ratings"
+          },
+          "max": 2000.0,
+          "min": -2000.0,
+          "notes": null,
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "family": "64 Mb Quad-SPI industrial STT-MRAM persistent memory",
+    "moisture_sensitivity": null,
+    "package": {
+      "code": "8-DFN, 6 mm x 8 mm",
+      "evidence": {
+        "confidence": "high",
+        "method": "prose",
+        "page": 1,
+        "section": "Features"
+      },
+      "pin_count": 8,
+      "thermal_pad": null
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Chip select; a high-to-low transition initiates a bus transaction and a low-to-high transition terminates it.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "CS#",
+        "notes": "During startup CS# should track VDD or VIH, whichever is lower, and remain high through tPU.",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "chip_select",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Data input/output used to transfer command, address, and data information.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "IO1",
+        "notes": null,
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "SPI data",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "IO2 data input/output; in single-SPI mode WP# locks the status register with its write-enable/disable bit.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "WP#/IO2",
+        "notes": "WP# has no internal pull-up and must not be left floating, even when neither function is used.",
+        "numbers": [
+          "3"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "SPI data / write protect",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Ground reference.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "VSS",
+        "notes": null,
+        "numbers": [
+          "4"
+        ],
+        "power_domain": null,
+        "recommended": null,
+        "subtype": "ground",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Data input/output used to transfer command, address, and data information.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "IO0",
+        "notes": null,
+        "numbers": [
+          "5"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "SPI data",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Serial clock for command, address, and data transfers; it need not be free-running.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "CK",
+        "notes": null,
+        "numbers": [
+          "6"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "clock",
+        "type": "input"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "IO3 in Quad-SPI mode; active-low hardware reset in single- or dual-SPI mode.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "IO3/RESET#",
+        "notes": "For single- and dual-SPI commands, drive IO3 high before CS# rises to avoid an unintended reset.",
+        "numbers": [
+          "7"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "SPI data / reset",
+        "type": "bidirectional"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Positive power supply.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 9,
+          "section": "2.4 Signal Pinout in DFN Package"
+        },
+        "is_5v_tolerant": null,
+        "name": "VDD",
+        "notes": null,
+        "numbers": [
+          "8"
+        ],
+        "power_domain": "VDD",
+        "recommended": null,
+        "subtype": "supply",
+        "type": "power_in"
+      }
+    ],
+    "recommended_operating": {
+      "TA": [
+        {
+          "condition": "Industrial temperature range selected by ordering code EM064LXQADG13IS1T.",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 67,
+            "section": "22.3 Recommended Operating Conditions"
+          },
+          "max": 85.0,
+          "min": -40.0,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VDD": [
+        {
+          "condition": null,
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 67,
+            "section": "22.3 Recommended Operating Conditions"
+          },
+          "max": 2.0,
+          "min": 1.65,
+          "notes": "Supply voltage.",
+          "typ": null,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:58:12Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "EM064LXQADG13IS1T_PREFERRED.plan.json",
+    "quality_score": 62
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2024-05-10",
+    "datasheet_revision": "3.2",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Board\\Everspin_EM064LXO_preferred\\EMxxLX_datasheet_rev3_2.pdf",
+    "manufacturer": "Everspin Technologies",
+    "mpn": "EM064LXQADG13IS1T_PREFERRED",
+    "page_count": 79,
+    "sha256": "sha256:3dd76a0554a7da65f2a39b581bb84ef64164f37aea9bd4d6caedb31eda5e6d85",
+    "source_url": "https://download.mikroe.com/documents/datasheets/EM064LXQADG13IS1R_datasheet.pdf"
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:45:28Z",
+  "model_tier": "A",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": [
+    {
+      "numbers": ["1"],
+      "name": "Vs (+5V)",
+      "type": "power_in",
+      "subtype": null,
+      "description": "Positive 5 V supply.",
+      "power_domain": "VIN",
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": "Apply power to pins 1 and 2 before communicating on pins 3 and 4.",
+      "evidence": {"page": 2, "section": "Electrical Interface", "confidence": "high", "method": "table"}
+    },
+    {
+      "numbers": ["2"],
+      "name": "GND (0V)",
+      "type": "passive",
+      "subtype": "ground",
+      "description": "Ground return.",
+      "power_domain": null,
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": "Apply power to pins 1 and 2 before communicating on pins 3 and 4.",
+      "evidence": {"page": 2, "section": "Electrical Interface", "confidence": "high", "method": "table"}
+    },
+    {
+      "numbers": ["3"],
+      "name": "Sensor Transmit",
+      "type": "output",
+      "subtype": "3.3 V TTL UART",
+      "description": "Sensor UART transmit output.",
+      "power_domain": null,
+      "alt_functions": [],
+      "is_5v_tolerant": true,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": "The datasheet marks this 3.3 V UART pin as 5 V tolerant.",
+      "evidence": {"page": 2, "section": "Electrical Interface", "confidence": "high", "method": "table"}
+    },
+    {
+      "numbers": ["4"],
+      "name": "Sensor Receive",
+      "type": "input",
+      "subtype": "3.3 V TTL UART",
+      "description": "Sensor UART receive input.",
+      "power_domain": null,
+      "alt_functions": [],
+      "is_5v_tolerant": true,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": "The datasheet marks this 3.3 V UART pin as 5 V tolerant.",
+      "evidence": {"page": 2, "section": "Electrical Interface", "confidence": "high", "method": "table"}
+    }
+  ]
+}

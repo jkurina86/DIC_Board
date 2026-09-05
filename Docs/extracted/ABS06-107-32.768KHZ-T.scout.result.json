@@ -1,0 +1,30 @@
+{
+  "task_id": "scout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:47:33Z",
+  "model_tier": "B",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": {
+    "mpn": "ABS06-107-32.768KHZ-T",
+    "metadata": {
+      "manufacturer": "Abracon LLC",
+      "datasheet_revision": "07-20-20",
+      "datasheet_date": "2020-07-20",
+      "page_count": 4,
+      "source_url": "https://abracon.com/Resonators/ABS06-107-32.768kHz-T.pdf",
+      "is_family_pdf": false,
+      "family_member_mpns": ["ABS06-107-32.768kHz-T"]
+    },
+    "categories": ["crystal"],
+    "extraction_pages": {
+      "base": [1, 2, 3],
+      "pinout": [3],
+      "crystal": [1, 2, 3]
+    },
+    "quality_verdict": {
+      "verdict": "extractable",
+      "reason": "Exact-part electrical table, equivalent circuit, and package drawing are legible; the v1.4 crystal_type enum lacks the stated tuning-fork type."
+    }
+  }
+}

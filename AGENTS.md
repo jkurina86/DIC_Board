@@ -33,5 +33,6 @@ python3 Docs/download_sources.py
 ## Verification
 
 - Use the matching `kicad-happy` skill for KiCad analysis, BOM/sourcing, datasheets, SPICE, EMC, and fabrication tasks instead of building ad hoc parsers or workflows.
+- Base all electrical design reviews on the resolved hierarchical netlist generated from `DIC_Board/DIC_Board.kicad_sch`. Do not infer electrical connectivity from schematic drawing geometry, wire coordinates, or visual proximity; use the schematic source only to cross-check and present connections reported by the netlist.
 - No CI, lint, test, task-runner, or KiCad CLI wrapper is committed. For schematic changes, run KiCad 10 ERC on `DIC_Board/DIC_Board.kicad_sch`; PCB DRC is not meaningful until the placeholder PCB is populated.
 - `/analysis/` and `/DIC_Board/analysis/` are ignored generated outputs. Regenerate them for the current sources rather than treating an existing report as authoritative.

@@ -1,0 +1,56 @@
+{
+  "cache_dir": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\extracted",
+  "created_at": "2026-09-02T22:47:15Z",
+  "execution": {
+    "completed_at": "2026-09-02T22:51:15Z",
+    "outcomes": [
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "base"
+      },
+      {
+        "attempts": 1,
+        "final_status": "complete",
+        "last_error": null,
+        "task_id": "pinout"
+      }
+    ],
+    "started_at": "2026-09-02T22:50:34Z"
+  },
+  "mpn": "LOX-02-F",
+  "pdf_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Sensors\\SST_LuminOx_LOX-O2-F\\LOX-02-F_current_datasheet_rev5.pdf",
+  "pdf_sha256": "sha256:b20ed4987a8a9b0fd742a7d72b0960f4e3f5dd4104b2a4f6b7772354dc1ef437",
+  "plan_version": "1.0",
+  "scout_ref": "LOX-02-F.scout.json",
+  "tasks": [
+    {
+      "depends_on": [],
+      "pages": [
+        1,
+        2
+      ],
+      "prompt_template": "skills/datasheets/prompts/base.md",
+      "result_ref": "LOX-02-F.base.result.json",
+      "schema": "skills/datasheets/schemas/base.schema.json",
+      "status": "complete",
+      "subagent_role": "base",
+      "task_id": "base",
+      "tier": "B"
+    },
+    {
+      "depends_on": [],
+      "pages": [
+        2
+      ],
+      "prompt_template": "skills/datasheets/prompts/pinout.md",
+      "result_ref": "LOX-02-F.pinout.result.json",
+      "schema": "skills/datasheets/schemas/pinout.schema.json",
+      "status": "complete",
+      "subagent_role": "pinout",
+      "task_id": "pinout",
+      "tier": "A"
+    }
+  ]
+}

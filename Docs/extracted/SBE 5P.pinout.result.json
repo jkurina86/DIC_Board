@@ -1,0 +1,50 @@
+{
+  "task_id": "pinout",
+  "schema_version": "1.0",
+  "status": "complete",
+  "extracted_at": "2026-09-02T22:46:08Z",
+  "model_tier": "A",
+  "model_id": "openai-gpt-5.6-sol",
+  "data": [
+    {
+      "numbers": ["1"],
+      "name": "GROUND",
+      "type": "passive",
+      "subtype": "ground",
+      "description": "Ground connection for the XSG-2BCL-HP-SS or wet-pluggable MCBH-2MP connector.",
+      "power_domain": null,
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": null,
+      "evidence": {
+        "page": 2,
+        "section": "Mechanical drawing - connector pin signal table",
+        "confidence": "high",
+        "method": "table"
+      }
+    },
+    {
+      "numbers": ["2"],
+      "name": "+POWER",
+      "type": "power_in",
+      "subtype": "DC supply",
+      "description": "Positive power connection for the XSG-2BCL-HP-SS or wet-pluggable MCBH-2MP connector.",
+      "power_domain": "VIN",
+      "alt_functions": [],
+      "is_5v_tolerant": null,
+      "absolute_max": null,
+      "recommended": null,
+      "drive_strength": null,
+      "notes": "A series diode is installed in the input power line to protect against accidental wire reversal.",
+      "evidence": {
+        "page": 2,
+        "section": "Mechanical drawing - connector pin signal table",
+        "confidence": "high",
+        "method": "table"
+      }
+    }
+  ]
+}

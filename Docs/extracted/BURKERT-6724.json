@@ -1,0 +1,270 @@
+{
+  "base": {
+    "absolute_max": {
+      "Body_temperature_max": [
+        {
+          "condition": "Continuous operation requires sufficient convection at the metal valve surface",
+          "evidence": {
+            "confidence": "high",
+            "method": "prose",
+            "page": 4,
+            "section": "Environment and installation, note 2"
+          },
+          "max": 110,
+          "min": null,
+          "notes": "The datasheet states that maximum body temperature must not be exceeded.",
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ]
+    },
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "medium",
+          "method": "prose",
+          "page": 6,
+          "section": "4.2 Conformity"
+        },
+        "mark": "EU Directives",
+        "rating": "Variant-dependent conformity"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 6,
+          "section": "4.4 Foods and beverages/Hygiene"
+        },
+        "mark": "FDA Code of Federal Regulations",
+        "rating": "Variable code PL03; EPDM seal on request"
+      }
+    ],
+    "description": "Type 6724 Whisper Valve with standard and impulse variants",
+    "esd": null,
+    "family": "media-separated 2/2-way or 3/2-way solenoid valve",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": null,
+      "code": "Type 6724 valve assembly with 2-position electrical connection",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 3,
+        "section": "1.1 General data - Product connections"
+      },
+      "pin_count": 2,
+      "pitch_mm": 2,
+      "thermal_pad": null
+    },
+    "pin_relationships": [],
+    "pinout": [
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Electrical terminal 1 for impulse variants.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 13,
+          "section": "7.1 Electrical connection - Pin assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "COIL_1",
+        "notes": "Impulse variants only. CF P: negative opens NC and positive closes NC. CF S: negative opens NC-to-COM and positive opens NO-to-COM. The standard-variant terminal polarity is not documented here.",
+        "numbers": [
+          "1"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "polarity-reversing impulse coil terminal",
+        "type": "passive"
+      },
+      {
+        "absolute_max": null,
+        "alt_functions": [],
+        "description": "Electrical terminal 2 for impulse variants.",
+        "drive_strength": null,
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 13,
+          "section": "7.1 Electrical connection - Pin assignment"
+        },
+        "is_5v_tolerant": null,
+        "name": "COIL_2",
+        "notes": "Impulse variants only. CF P: positive opens NC and negative closes NC. CF S: positive opens NC-to-COM and negative opens NO-to-COM. The standard-variant terminal polarity is not documented here.",
+        "numbers": [
+          "2"
+        ],
+        "power_domain": "VIN",
+        "recommended": null,
+        "subtype": "polarity-reversing impulse coil terminal",
+        "type": "passive"
+      }
+    ],
+    "recommended_operating": {
+      "Duty_cycle": [
+        {
+          "condition": "Continuous operation",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "1.1 General data - Performance data"
+          },
+          "max": null,
+          "min": null,
+          "notes": null,
+          "typ": 100,
+          "unit": "%"
+        }
+      ],
+      "Impulse_pulse_length_min": [
+        {
+          "condition": "Impulse variant",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "1.1 General data - Electrical data"
+          },
+          "max": null,
+          "min": 0.5,
+          "notes": null,
+          "typ": null,
+          "unit": "s"
+        }
+      ],
+      "Nominal_power": [
+        {
+          "condition": "Standard variant continuously; impulse variant while switching",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 3,
+            "section": "1.1 General data - Electrical data"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Impulse holding power is 0 W.",
+          "typ": 1.25,
+          "unit": "W"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "FFKM seal",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "Environment and installation"
+          },
+          "max": 50,
+          "min": 15,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        },
+        {
+          "condition": "FKM or EPDM seal",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "Environment and installation"
+          },
+          "max": 50,
+          "min": 0,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "VIN": [
+        {
+          "condition": "Standard variant; -10%/+5% including residual ripple",
+          "evidence": {
+            "confidence": "high",
+            "method": "calculated",
+            "page": 3,
+            "section": "1.1 General data - Electrical data"
+          },
+          "max": 12.6,
+          "min": 10.8,
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "typ": 12,
+          "unit": "V"
+        },
+        {
+          "condition": "Standard variant; -10%/+5% including residual ripple",
+          "evidence": {
+            "confidence": "high",
+            "method": "calculated",
+            "page": 3,
+            "section": "1.1 General data - Electrical data"
+          },
+          "max": 25.2,
+          "min": 21.6,
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "typ": 24,
+          "unit": "V"
+        },
+        {
+          "condition": "Impulse variant; +/-5% including residual ripple",
+          "evidence": {
+            "confidence": "high",
+            "method": "calculated",
+            "page": 3,
+            "section": "1.1 General data - Electrical data"
+          },
+          "max": 12.6,
+          "min": 11.4,
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "typ": 12,
+          "unit": "V"
+        },
+        {
+          "condition": "Impulse variant; +/-5% including residual ripple",
+          "evidence": {
+            "confidence": "high",
+            "method": "calculated",
+            "page": 3,
+            "section": "1.1 General data - Electrical data"
+          },
+          "max": 25.2,
+          "min": 22.8,
+          "notes": "Range calculated from the published nominal voltage and tolerance.",
+          "typ": 24,
+          "unit": "V"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:54:58Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": "openai-gpt-5.6-sol",
+    "plan_ref": "Type 6724.plan.json",
+    "quality_score": 62
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2025-12-12",
+    "datasheet_revision": "DTS 1000262565 EN",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Actuators\\Burkert_6724\\Burkert_Type_6724_datasheet.pdf",
+    "manufacturer": "Christian Burkert GmbH & Co. KG",
+    "mpn": "Type 6724",
+    "page_count": 17,
+    "sha256": "sha256:2aba93c53cd4625151297e79695c2a04cb133319a9ef885741eec8f3566fcdd0",
+    "source_url": null
+  }
+}

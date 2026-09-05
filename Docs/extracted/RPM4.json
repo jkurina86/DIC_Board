@@ -1,0 +1,156 @@
+{
+  "base": {
+    "absolute_max": {},
+    "compliance": [
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "General specifications"
+        },
+        "mark": "ISO/IEC 17025",
+        "rating": "Accredited calibration report included"
+      },
+      {
+        "evidence": {
+          "confidence": "high",
+          "method": "table",
+          "page": 4,
+          "section": "General specifications"
+        },
+        "mark": "MIL-T-28800D",
+        "rating": "Vibration"
+      }
+    ],
+    "description": "Bench-reference RPM4 pressure calibration, testing, and measurement instrument; deployment inclusion is not established by this archive location.",
+    "esd": null,
+    "family": "bench reference pressure monitor",
+    "moisture_sensitivity": null,
+    "package": {
+      "body_mm": {
+        "height": 100,
+        "length": 240,
+        "width": 227
+      },
+      "code": "Benchtop instrument",
+      "evidence": {
+        "confidence": "high",
+        "method": "table",
+        "page": 4,
+        "section": "General specifications"
+      },
+      "pin_count": null,
+      "pitch_mm": null,
+      "thermal_pad": false
+    },
+    "pin_relationships": [],
+    "pinout": [],
+    "recommended_operating": {
+      "AC_input_voltage": [
+        {
+          "condition": "50/60 Hz AC input",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "General specifications"
+          },
+          "max": 264,
+          "min": 85,
+          "notes": "Published for RPM4 power requirements.",
+          "typ": null,
+          "unit": "V"
+        }
+      ],
+      "DC_input_voltage": [
+        {
+          "condition": "DC power / battery pack option",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "General specifications"
+          },
+          "max": null,
+          "min": null,
+          "notes": "The brochure states 12 V dc @ 9 Ahr; it does not state a DC input range.",
+          "typ": 12,
+          "unit": "V"
+        }
+      ],
+      "TA": [
+        {
+          "condition": "Normal operating temperature range",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "General specifications"
+          },
+          "max": 35,
+          "min": 15,
+          "notes": null,
+          "typ": null,
+          "unit": "\u00b0C"
+        }
+      ],
+      "predicted_one_year_stability": [
+        {
+          "condition": "All ranges and classes; k=2; regular use of AutoZero assumed",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "Measured pressure (Q-RPT)"
+          },
+          "max": null,
+          "min": null,
+          "notes": "Published as \u00b10.005% of reading.",
+          "typ": 0.005,
+          "unit": "%"
+        }
+      ],
+      "warmup_time": [
+        {
+          "condition": "From cold power up",
+          "evidence": {
+            "confidence": "high",
+            "method": "table",
+            "page": 4,
+            "section": "Measured pressure (Q-RPT)"
+          },
+          "max": null,
+          "min": null,
+          "notes": "30 minute temperature stabilization recommended.",
+          "typ": 1800,
+          "unit": "s"
+        }
+      ]
+    },
+    "thermal": null
+  },
+  "categories": [],
+  "extraction": {
+    "extracted_at": "2026-09-02T22:51:16Z",
+    "extractor_schema_version": "1.0",
+    "extractor_scout": null,
+    "plan_ref": "RPM4.plan.json",
+    "quality_score": 36
+  },
+  "schema_version": {
+    "base": "1.0",
+    "categories": {}
+  },
+  "source": {
+    "datasheet_date": "2021-01",
+    "datasheet_revision": "210026-en",
+    "family_ref": null,
+    "local_path": "C:\\Users\\kurina\\Projects\\DIC_Board\\Docs\\Sensors\\Fluke_RPM4_bench_reference\\RPM4_datasheet.pdf",
+    "manufacturer": "Fluke Calibration",
+    "mpn": "RPM4",
+    "page_count": 4,
+    "sha256": "sha256:9cc4d2014cb026805b7c515469b61fc6f146a23ea1405e934460d890fe42bad3",
+    "source_url": "http://www.flukecal.com"
+  }
+}
