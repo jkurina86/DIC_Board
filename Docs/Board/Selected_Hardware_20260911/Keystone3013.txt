@@ -1,0 +1,911 @@
+THRU-HOLE (THM) & SURFACE MOUNT (SMT) COIN CELL HOLDERS
+20mm COIN CELL HOLDERS
+4
+MATERIAL:
+Contacts: .015 (.38) Spring Steel
+Base: High Temperature, Nylon 46, UL Rated 94V-0
+D MIN.
+.093
+[2.36]
+MIN.
+.703
+[17.6]
+MAX.
+Pad Layout
+NEG
+D
+D
+H
+.896
+[22.8]
+.703
+[17.9]
+.931
+[23.65]
+.437
+[11.1]
+.125
+[3.2]
+Tape & Reel Spec’s: 44mm wide; 24mm pitch; 13 inch reel (500 pieces
+per reel)
+.102 [2.6] MIN.
+.433 [11.0] X .276 [7.0]
+OPTIONAL ADHESIVE
+ZONE
+1.154 [29.3]
+.142
+[3.6]
+Pad Layout
+MATERIAL:
+Contacts: .006 (.15) Phosphor Bronze,
+Gold Plate (Flash)
+Base: Glass Filled LCP, UL Rated 94V-0
+.200 [5.1]
+1.339 [34.0]
+.939 [23.9]
+.093 [2.4] DIA.
+BATTERY RELEASE
+(2) PLS
+L
+.532
+[13.5]
+H
+MATERIAL: Contacts: .010 (.25) Phosphor Bronze Insulator: High Temperature, Nylon 46, UL Rated 94V-0
+• Ideal for 6 volt or 3 volt applications
+• Two coin cell batteries can be installed in series
+• Plastic insulator prevents shorting of battery, within
+the holder, when installed improperly
+• Low profile
+• Battery release ports for easy battery replacement
+• Refer to pages 6 & 7 for a complete offering of
+coin cell retainers
+.200 [5.1]
+SQ. MIN.
+1.339 [34.0] MIN.
+NEG. CONTACT (PAD)
+.156 [3.96] SQ. MIN.
+Pad Layout
+Tin-Nickel Plate
+Gold Plate (Flash)
+CAT. NO. ON TAPE CAT. NO. ON TAPE
+D
+H
+BATTERY
+BULK
+& REEL
+BULK
+& REEL
+PAD SIZE
+HIEGHT
+CELLS
+REFERENCE
+1061
+1061TR
+1081
+1081TR
+.156 (4.0)
+(1) Cell (any 20mm)
+CR2012, CL2016,
+1063
+1063TR
+1093
+1093TR
+.278 (7.1)
+.290 (7.4)
+(2) 2012, (2) 2016
+BR2020, DL2032
+1062
+1062TR
+1082
+1082TR
+.156 (4.0)
+(2) 2020, (2) 2025, (2) 2032
+CR2032
+1064
+1064TR
+1094
+1094TR
+.278 (7.1)
+.391 (9.9)
+(3) 2012, (3) 2016
+Tape & Reel Spec’s: 44mm wide; 32mm pitch; 13 inch reel (200 pieces per reel)
+• Polarity clearly marked (+)
+• Compatible with vacuum and mechanical pick &
+place assembly systems
+• Low profile for high density packaging
+• Rugged construction, light weight
+• SMT solder tail with “Flow-Hole” design for increased
+joint strength
+• Viewable solder tails assures reliable joint inspection
+• Safe for all soldering & reflow operations
+DESIGN ADVANTAGES…
+• Reliable spring tension assures low contact
+resistance
+• Retains battery securely to withstand shock
+and vibration
+• All conductive polystyrene carrier tape meets
+ANSI/EIA - 481 standard
+• Base material UL Rated 94V-0. Impervious
+to most industrial solvents
+• Operating temperature range:
+-60°F to +293°F (-50°C to +145°C)
+IDEALLY SUITED FOR…
+• Computer memory, power transfer and
+back-up systems
+• Video and telecommunications power back-up
+• Microprocessors and Microcomputer memory
+hold (desktop and laptop applications)
+• Industrial and commercial security and
+alarm systems
+• Communications power sources
+• PC/104 applications
+• Polarized Holder
+• Low Profile for high density packaged
+PCB’s
+INSULATED RETAINERS
+CAT. NO.
+ON TAPE
+BULK
+& REEL
+BATTERY REFERENCE
+1060
+1060TR
+CR2025, DL2032
+CAT.
+NO.
+BATTERY REFERENCE
+1059
+CR2025, DL2032
+MATERIAL:
+Contacts: .006 (.15)
+Phosphor Bronze,Tin Plate
+Base: Glass Filled LCP,
+UL Rated 94V-0
+.100
+[2.5]
+1.060 [26.9]
+.038
+[0.97]
+Mounting Detail
+.130 [3.3]
+1.060 [26.9]
+.630
+[16.0]
+1.118 [28.4]
+.866 [22.0]
+.217 [3.5]
+Mounting Detail
+.073 [1.85]
+DIA. (2) PLS
+.939
+[23.9]
+NEG. CONTACT (PAD) *
+.156 [3.96] SQ. MIN.
+BATTERY RELEASE
+(2) PLS.
+.940 [23.9]
+1.004 [25.5]
+H
+L
+.110 [2.8]
+.535 [13.6]
+Tin-Nickel Plate
+Matte Tin Plate
+BATTERY REFERENCE
+Tin-Nickel Plate
+CAT. NO. CAT. NO. ON TAPE CAT. NO. CAT. NO. ON TAPE
+6 VOLT
+3 VOLT
+CAT. NO. CAT. NO.
+LOOSE*
+BULK
+& REEL LOOSE*
+BULK
+& REEL
+L
+H
+(2) CELLS
+(1) CELL
+L
+H
+LOOSE*
+BULK
+3020-2
+3020
+3020TR 3070-2
+3070
+3070TR .890 (22.6) .156 (4.0)
+2012, 2016
+2020, 2025
+.890 (22.6) .156 (4.0)
+3021-2
+3021
+3022-2
+3022
+3022TR 3072-2
+3072
+3072TR .877 (22.3) .240 (6.1)
+2020, 2025
+2032
+.877 (22.3) .240 (6.1)
+3023-2
+3023
+3024-2
+3024
+3024TR 3074-2
+3074
+3074TR .877 (22.3) .295 (7.5)
+2032
+Not Applicable .877 (22.3) .295 (7.5)
+3025-2
+3025
+Surface Mount
+Thru Hole Mount
+Tape & Reel Spec’s: 56mm wide; 28mm pitch; 13 inch reel: 3020TR, 3070TR 400 pieces per reel; 3022TR, 3072TR 250 pieces per reel; 3024TR, 3074TR 250 pieces per reel
+* Supplied Unassembled
+• Compatible with vacuum
+and mechanical pick &
+place assembly systems
+• Low height
+• Vertical entry
+1.256 [31.9]
+.142 [3.6]
+.866 [22.0]
+1.118 [28.4]
+.630
+[16.0]
+.217 [3.5]
+AVAILABLE ON TAPE AND REEL
+AVAILABLE ON TAPE AND REEL
+AVAILABLE ON TAPE AND REEL
+Surface Mount
+Thru Hole Mount
+Surface Mount
+Thru Hole Mount
+20mm CELLS
+2025 / 2032 CELL
+20mm CELLS
+Tel (718) 956-8900 • Fax (718) 956-9040
+(800) 221-5510 • kec@keyelco.com
+www.keyelco.com
+31-07 20th Road – Astoria, NY 11105-2017
+RoHS COMPLIANT ~ ISO 9001 CERTIFIED
+®
+
+Tel (718) 956-8900 • Fax (718) 956-9040
+(800) 221-5510 • kec@keyelco.com
+www.keyelco.com
+31-07 20th Road – Astoria, NY 11105-2017
+RoHS COMPLIANT ~ ISO 9001 CERTIFIED
+®
+12mm to 24mm COIN CELL RETAINERS
+7
+THRU HOLE (THM) & SURFACE MOUNT (SMT) COIN CELL RETAINERS
+Battery retainers are suited for high density PCB packaging. Engineered with reliable spring tension,
+these contacts assure low resistance while firmly securing the battery within the retainer.
+• Compatible with all wave and reflow operations
+• Solder tails located outside of retainer body which facilitates visual inspection of the solder joints
+• Flow-hole solder tail designed for increased joint strength
+• Compatible with most vacuum and mechanical pick & place assembly systems
+• Matte Tin Plate for lower soldering temperatures ideal where other temperature sensitive components
+are being used
+• Tin-Nickel plated retainers are ideal for lead free, high temperature soldering applications
+• All conductive polystyrene carrier tape meets ANSI/EIA-481 standards
+Mounting Detail
+F MIN.
+NEG. CONTACT (PAD)
+.156 [3.96] SQ. MIN.
+W MIN.
+G MIN.
+AVAILABLE ON TAPE AND REEL
+NEGATIVE BATTERY CONTACTS*
+L
+DIA.
+.062 [1.54]
+.016 [.41]
+.030 [.76] DIA.
+.105 [2.7]
+.360 [9.1]
+.031 [.78] DIA
+(3) PLS
+.112 [2.8]
+.625 [15.9]
+.127 [3.2]
+.062
+[1.57]
+MIN. SQR.
+L MIN.
+Pad Layout
+.112 [2.7]
+.625 [15.9]
+Pad Layout
+DWG. 1 MATERIAL: .008 (.20) Brass
+DWG. 2 MATERIAL: .010 (.25) Brass
+SURFACE MOUNT (SMT)
+THRU HOLE MOUNT (THM)
+B
+POLARITY
+MARKING
+W
+E
+H
+L
+A
+.062 [1.6]
+Mounting Detail
+.073 [1.85]
+DIA. (2) PLS
+A
+NEG. CONTACT (PAD) *
+.156 [3.96] SQ. MIN.
+MATERIAL:
+.008 (.20) Phosphor
+Bronze,Tin-Nickel Plate
+.308 [7.8]
+.373 [9.5]
+.128 [3.3]
+.062 [1.57]
+.212 [5.4]
+.250 [6.4] DIA.
+.079
+ [2.01]
+Mounting Detail
+CAT. NO. 2990
+.300 [7.6]
+.073 [1.9] DIA.
+(2) PLS
+• Snap-In
+• Assures proper
+contact
+SURFACE MOUNT (SMT)
+THRU HOLE MOUNT (THM)
+CAT. NO. ON TAPE CAT. NO. ON TAPE
+BULK
+& REEL
+BULK
+& REEL DWG.
+L
+DIA.
+TAPE & REEL SPECS
+2991
+2991TR
+2981
+2981TR
+1
+.368 (9.4)
+.250 (6.4)
+16mm wide, 8mm pitch, 1500/7 reel
+2992
+2992TR
+2982
+2982TR
+1
+.289 (7.4)
+.186 (4.7)
+16mm wide, 12mm pitch, 1000/7 reel
+2993
+2993TR
+2983
+2982TR
+2
+.625 (15.9)
+—
+24mm wide, 16mm pitch, 1000/13 reel
+*Note: Cannot be used with Ultra Low Profile Retainers: Cat. No. 3028, 3029, 3032, 3033, 3038 & 3042
+CAT. NO.
+CELL
+BULK
+A
+B
+E
+H
+L
+W
+DIA.
+BATTERY REFERENCE
+3001
+.520 (13.2)
+.265 (6.7)
+.210 (5.3)
+.118 (3.0) .475 (12.1)
+.585 (14.9) 12mm
+BR1216, CR1216, BR1220, CL1220, CR1220, BR1225
+3013
+.664 (16.9)
+.344 (8.7)
+.265 (6.7) .156 (4.0) .594 (15.1)
+.723 (18.4) 16mm
+BR1616, CR1612, CR1616, CR1620, CR1632
+3029
+.831 (21.1)
+.298 (7.6)
+.176 (4.5) .067 (1.7) .618 (15.7)
+.890 (22.6) 20mm
+BR2012, CR2012, DL2012
+3027
+.831 (21.1)
+.416 (10.6)
+.194 (4.9) .085 (2.2) .782 (19.9)
+.890 (22.6) 20mm
+BR2016, CR2016, DL2016
+3003
+.831 (21.1)
+.416 (10.6)
+.265 (6.7) .156 (4.0) .782 (19.9)
+.890 (22.6) 20mm
+BR2016, DL2020, CR2320, CR2025, CR2032
+3005
+.939 (23.9)
+.475 (12.1) .265 (6.7) .156 (4.0) .832 (21.1) 1.004 (25.5) 23mm
+BR2320, CL2330, CR2320, BR2325, CR2325, DL2325
+3011
+.939 (23.9)
+.475 (12.1) .351 (8.9) .240 (6.1) .819 (20.8) 1.004 (25.5) 23mm
+CR2354, DL2354
+3033
+1.000 (25.4)
+.313 (8.0)
+.176 (4.5) .067 (1.7) .681 (17.3) 1.055 (26.8) 24mm
+BR2412, CR2412
+3007
+1.000 (25.4) .506 (12.9) .265 (6.7) .156 (4.0) .918 (23.3) 1.055 (26.8) 24mm
+CR2430, DL2430
+3009
+1.000 (25.4) .506 (12.9) .350 (8.9) .230 (5.8) .890 (22.5) 1.059 (26.9) 24mm
+CR2450, DL2450
+3039
+1.000 (25.4) .506 (12.9) .450 (11.4) .336 (8.5) .890 (22.5) 1.059 (26.9) 24mm
+CR2477, DL2477
+REFER TO THRU HOLE MOUNT (THM) DRAWING
+MATERIAL: .010 (.25) Phosphor Bronze
+TIN-NICKEL PLATE
+MATTE TIN PLATE
+Insulated retainers available for
+6 volt applicatins.See page 4.
+TIN-NICKEL PLATE
+• Assures proper
+contact
+• Assures proper
+contact
+Thru Hole Mount
+AVAILABLE ON TAPE AND REEL
+FLOW HOLE/SLOT
+POLARITY
+MARKING
+L
+A
+F
+B
+H
+W
+SPRING CONTACT
+COMPACT
+TIN-NICKEL PLATE
+MATTE TIN PLATE
+REFER TO SURFACE MOUNT (SMT) DRAWING
+CAT. NO. ON TAPE CAT. NO. ON TAPE
+CELL
+BATTERY
+BULK
+& REEL
+BULK
+& REEL
+A
+B
+F
+G
+H
+L
+W
+DIA.
+REFERENCE
+TAPE & REEL SPEC’S
+3000
+3000TR
+3080
+3080TR
+.520 (13.2) .265 (6.7)
+.125 (3.2) .125 (3.2) .125 (3.2)
+.475 (12.1)
+.745 (18.9) 12mm CR1216, BR1220, CL1225
+32mm wide; 16mm pitch; 1000/reel
+3012
+3012TR
+3092
+3092TR
+.664 (16.9) .344 (8.7)
+.125 (3.2) .125 (3.2)
+.156 (4.0)
+.594 (15.1)
+.914 (23.2) 16mm
+BR1612, CR1616, CR1620, 44mm wide; 24mm pitch; 600/reel
+DL1632
+3028
+3028TR
+3038
+3038TR
+.831 (21.1) .298 (7.6)
+.200 (5.1) .050 (1.3) .067 (1.7)
+.618 (15.7)
+.911 (23.1) 20mm BR2012, CR2012, DL2012 44mm wide; 24mm pitch; 1000/reel
+3026
+3026TR
+3078
+3078TR
+.831 (21.1) .416 (10.6)
+.200 (5.1) .200 (5.1) .085 (2.2)
+.782 (19.9) 1.210 (30.7) 20mm BR2016, CR2016, DL2016
+44mm wide; 24mm pitch; 1000/reel
+3034
+3034TR
+3044
+3044TR
+.835 (21.2) .291 (7.4)
+.200 (5.1) .050 (1.3)
+.160 (4.1)
+.635 (16.1) 0.915 (23.1) 20mm DL2020, CR2025, CR2032 44mm wide; 24mm pitch; 1000/reel
+3002
+3002TR
+3082
+3082TR
+.831 (21.1) .416 (10.6)
+.200 (5.1) .200 (5.1)
+.156 (4.0)
+.782 (19.9) 1.210 (30.7) 20mm DL2020, CR2025, CR2032 44mm wide; 24mm pitch; 500/reel
+3004
+3004TR
+3084
+3084TR
+.939 (23.9) .475 (12.1) .200 (5.1) .200 (5.1)
+.156 (4.0)
+.832 (21.1) 1.339 (34.0) 23mm BR2320, CL2325, CR2330, 56mm wide; 32mm pitch; 400/reel
+DL2335
+3010
+3010TR
+3090
+3090TR
+.939 (23.9) .475 (12.1) .200 (5.1) .200 (5.1) .240 (6.1)
+.819 (20.8) 1.339 (34.0) 23mm CR2354, DL2354
+56mm wide; 32mm pitch; 200/reel
+3032
+3032TR
+3042
+3042TR 1.000 (25.4) .313 (8.0)
+.200 (5.1) .050 (1.3) .067 (1.7)
+.681 (17.3) 1.080 (27.4)
+24mm BR2412, CR2412
+44mm wide, 24mm pitch, 1000/reel
+3006
+3006TR
+3086
+3086TR 1.000 (25.4) .506 (12.9) .200 (5.1) .200 (5.1)
+.156 (4.0)
+.918 (23.3) 1.400 (35.6) 24mm CR2430, DL2430
+56mm wide; 32mm pitch; 400/reel
+3008
+3008TR
+3088
+3088TR 1.000 (25.4) .506 (12.9) .200 (5.1) .200 (5.1) .230 (5.8)
+.890 (22.6) 1.400 (35.6) 24mm CR2450, DL2450
+56mm wide; 32mm pitch; 200/reel
+
+.249
+[6.3]
+.125 [3.2]
+.052 [1.3] DIA.
+.526 [13.4]
+.346 [8.8]
+STAMP (+)
+AS SHOWN
+.225 [5.7]
+4mm to 12mm BUTTON CELL RETAINERS
+6
+THRU HOLE (THM) & SURFACE MOUNT (SMT) BUTTON CELL RETAINERS
+MATERIAL: .006 (.15) Phosphor Bronze,
+Gold Plate (Flash)
+MATERIAL: .010 (.25) Phosphor Bronze
+.062
+[1.6]
+DIA.
+.116 [3.0]
+.138 [3.5]
+.634 [16.1]
+.418 [10.6]
+.339
+[8.6]
+STAMP (+)
+AS SHOWN
+.235
+[6.0]
+.520 [13.2]
+.265
+[6.7]
+.323
+[8.2]
+.475
+[12.1]
+.062
+[1.6]
+.585 [14.9]
+STAMP (+)
+AS SHOWN
+.062
+[1.6]
+.116 [3.0]
+.180 [4.6]
+.339
+[8.6]
+.195
+[5.0]
+.482
+[12.2]
+.418 [10.6]
+STAMP (+)
+AS SHOWN
+• Available in Thru Hole Mount (THM) or Surface Mount
+(SMT) configurations
+• SMT solder tail with “flow-hole” design for increased joint strength
+STAMP (+)
+AS SHOWN
+.315 [8.0]
+.125 [3.2]
+.158 [4.0]
+.315
+[8.0]
+.215
+[5.5]
+.062 [1.6]
+.380
+[9.7]
+.336
+[8.5]
+.300 [7.6]
+.030 [0.8]
+.346 [8.8]
+.225 [5.7]
+.038
+[1.0]
+.249 [6.3]
+.125 [3.2]
+STAMP (+)
+AS SHOWN
+R.032
+[R0.8]
+.120 [3.0]
+.315 [8.0]
+.315 [8.0]
+.060 [1.5]
+.421 [10.7]
+STAMP (+)
+AS SHOWN
+.157 [4.0]
+.100 [2.5]
+.065 [1.7]
+.202 [5.1]
+.315
+[8.0]
+STAMP (+)
+AS SHOWN
+.202 [5.1]
+.137
+[3.5]
+.030
+[0.8]
+.116 [3.0]
+.065 [1.7]
+.157 [4.0]
+.196
+[5.0]
+.038
+[1.0]
+STAMP (+)
+AS SHOWN
+CAT. NO. ON TAPE
+BATTERY
+BULK
+& REEL REFERENCE
+2994
+2994TR
+ML414
+CAT.
+BATTERY
+NO.
+REFERENCE
+2995
+ML414
+CAT. NO. ON TAPE
+BULK
+& REEL
+FINISH
+BATTERY REFERENCE
+2998
+2998TR Tin-Nickel
+3098
+3098TR Matte Tin MC621, V364, SC621, DR13H, V13AT
+Tape & Reel Spec’s: 16mm wide; 8mm pitch; 13 inch reel (1500 pieces per reel)
+Tape & Reel Spec’s: 24mm wide; 12mm pitch; 13 inch reel (1000 pieces per reel)
+MATERIAL: .010 (.25)
+Phosphor Bronze,Tin-Nickel Plate
+MATERIAL: .010 (.25)
+Phosphor Bronze,Tin-Nickel Plate
+CAT.
+BATTERY
+NO.
+REFERENCE
+2999
+MC621, V364, SC621
+CAT.
+BATTERY
+NO.
+REFERENCE
+2989
+Size 13, DA13, AZ13E
+MATERIAL: .006 (.15) Phosphor Bronze,
+Tin-Nickel Plate
+CAT. NO. ON TAPE
+BATTERY
+BULK
+& REEL
+FINISH
+REFERENCE
+3030
+3030TR Tin-Nickel
+3050
+3050TR Matte Tin
+CR927, CR1025
+Tape & Reel Spec’s: 24mm wide; 12mm pitch; 13 inch reel (1500 pieces per reel)
+MATERIAL: .010 (.25) Phosphor Bronze,
+Gold Plate (Flash)
+CAT. NO. ON TAPE
+BATTERY
+BULK
+& REEL
+REFERENCE
+2988
+2988TR Size 13, DA13, AZ13E
+Tape & Reel Spec’s: 24mm wide; 12mm pitch; 13 inch reel (1000 pieces per reel)
+MATERIAL: .006 (.15)
+Phosphor Bronze,Tin-Nickel Plate
+CAT.
+BATTERY
+NO.
+REFERENCE
+3031
+CR927, CR1025
+MATERIAL: .010 (.25) Phosphor Bronze,Tin-Nickel Plate
+CAT.
+NO.
+BATTERY REFERENCE
+2997
+SR44, LR44, 357, MS76, PX76A, G-13, 303, V313
+MATERIAL: .010 (.25) Phosphor Bronze
+CAT. NO. ON TAPE
+BATTERY
+BULK
+& REEL
+FINISH
+REFERENCE
+2996
+2996TR Tin-Nickel SR44, LR44, 357, MS76,
+3096
+3096TR Matte Tin PX76A, G-13, 303, V313
+Tape & Reel Spec’s: 32mm wide; 16mm pitch; 13 inch reel (600 pieces per reel)
+Economical and reliable SMT and THM coin cell retainers specifically designed for miniature electronic applications with limited board space.
+.052
+[1.3]
+DIA.
+.125 [3.2]
+.235
+[6.0]
+.700 [17.8]
+.520 [13.2]
+.475
+[12.1]
+.265
+[6.7]
+STAMP (+)
+AS SHOWN
+NEG. CONTACT (PAD)
+.060 [1.5] SQR. MIN
+.196
+[5.0]
+.047
+[1.2]
+DIA.
+Mounting Detail
+NEG. CONTACT (PAD)
+.060 [1.5] SQR. MIN
+.100 [2.5]
+.060
+[1.5]
+.315 [8.0]
+Mounting Detail
+.073
+[1.9]
+DIA.
+NEG. CONTACT (PAD)
+.156 [4.0] SQR. MIN.
+.315
+[8.0]
+Mounting Detail
+.200
+[5.1]
+.070
+[1.8]
+.440 [11.2]
+NEG. CONTACT (PAD)
+.156 [4.0] SQR. MIN.
+Mounting Detail
+.047 [1.2]
+DIA.
+.336 [5.53]
+NEG. CONTACT (PAD)
+.125 [3.17] SQ. MIN.
+Mounting Detail
+NEG. CONTACT (PAD)
+.156 [4.0] SQR. MIN.
+.138
+[3.5]
+.634 [16.1]
+.114 [2.9]
+Mounting Detail
+NEG. CONTACT (PAD)
+.156 [4.0] SQR. MIN.
+.073 [1.85]
+DIA.
+.418
+[10.60]
+Mounting Detail
+.072
+[1.8]
+DIA.
+NEG. CONTACT (PAD)
+.156 [4.0] SQR. MIN.
+.520
+[13.2]
+Mounting Detail
+NEG. CONTACT (PAD)
+.156 [4.0] SQR. MIN.
+.125 [3.2]SQR.
+.700 [17.8]
+Mounting Detail
+• THM legs maintain relative position during and after soldering
+• Ideally suited for High Density packaging
+• Reliable spring tension assures low contact resistance
+• Retains battery securely to withstand shock and vibration
+• Solder tail located outside of retainer body which facilitates
+visual inspection of the solder joints
+Surface Mount
+Thru Hole Mount
+Thru Hole Mount
+Thru Hole Mount
+Thru Hole Mount
+Thru Hole Mount
+Surface Mount
+Surface Mount
+Surface Mount
+Surface Mount
+AVAILABLE ON TAPE AND REEL
+AVAILABLE ON TAPE AND REEL
+AVAILABLE ON TAPE AND REEL
+AVAILABLE ON TAPE AND REEL
+AVAILABLE ON TAPE AND REEL
+NEG. CONTACT (PAD)
+.125 [3.2] SQR. MIN.
+.125 [3.2]
+.080 [2.0]
+.526 [13.4]
+Mounting Detail
+4.8mm
+6.8mm
+7.9mm
+11.6mm
+9 - 10mm
+MATERIAL: .006 (.15)
+Phosphor Bronze,Tin-Nickel Plate
+Tel (718) 956-8900 • Fax (718) 956-9040
+(800) 221-5510 • kec@keyelco.com
+www.keyelco.com
+31-07 20th Road – Astoria, NY 11105-2017
+RoHS COMPLIANT ~ ISO 9001 CERTIFIED
+®

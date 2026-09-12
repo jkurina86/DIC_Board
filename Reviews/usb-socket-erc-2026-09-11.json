@@ -1,0 +1,198 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-09-11T15:04:25",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning"
+    ],
+    "kicad_version": "10.0.4",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee",
+            "violations": []
+        },
+        {
+            "path": "/STM32 MCU/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/ef2b3969-ba29-4866-a95a-5e275b2bf226",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol U2 Pin 9 [VBACKUP, Power input, Line]",
+                            "pos": {
+                                "x": 0.6477,
+                                "y": 2.0701
+                            },
+                            "uuid": "45eb90cb-8f1e-47e1-820d-882f348dc99a"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                },
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol J2 Pin 1 [VTref, Power input, Line]",
+                            "pos": {
+                                "x": 1.5494,
+                                "y": 1.1303
+                            },
+                            "uuid": "c4cadb73-9a09-4813-b92b-fc920eec46c0"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20",
+            "violations": []
+        },
+        {
+            "path": "/Power/3V3/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/2161909f-1018-4cef-9d4b-129c48d3907b",
+            "violations": []
+        },
+        {
+            "path": "/Power/6V6/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/2205258c-ee4f-4cb6-91e6-2b34d15a3e61",
+            "violations": []
+        },
+        {
+            "path": "/Power/2V8/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/96bce7ce-4347-4977-a5db-c3e69279f723",
+            "violations": []
+        },
+        {
+            "path": "/Power/5V/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/ffae8f3f-d403-4e51-b505-2432024a2a27",
+            "violations": []
+        },
+        {
+            "path": "/Power/12V/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/798b703e-0267-4100-ae8b-602a191eef64",
+            "violations": [
+                {
+                    "description": "Input Power pin not driven by any Output Power pins",
+                    "items": [
+                        {
+                            "description": "Symbol #PWR0103 Pin 1 [Power input, Line]",
+                            "pos": {
+                                "x": 2.7813,
+                                "y": 1.1176
+                            },
+                            "uuid": "092a3805-f516-4918-a69f-78de12346355"
+                        }
+                    ],
+                    "severity": "error",
+                    "type": "power_pin_not_driven"
+                }
+            ]
+        },
+        {
+            "path": "/Sensors/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d",
+            "violations": []
+        },
+        {
+            "path": "/Sensors/Licor/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d/90896a52-6a15-4861-9fbc-84f5783b3f4c",
+            "violations": []
+        },
+        {
+            "path": "/Sensors/RH Sensor/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d/a18bb969-316f-4822-a8ba-f772f1045bbc",
+            "violations": []
+        },
+        {
+            "path": "/Sensors/O2 Sensor/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d/e424d377-f4a1-4385-9082-f887d8dd24b1",
+            "violations": []
+        },
+        {
+            "path": "/Sensors/ADMONT K96/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/15388a04-aea8-414b-8903-58a719a8054d/f4c35e7d-59ac-4bb5-a4f9-d6a34bb3efe0",
+            "violations": []
+        },
+        {
+            "path": "/Pump Control/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a",
+            "violations": []
+        },
+        {
+            "path": "/Pump Control/Water Pump/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/8810525e-14a4-4f99-ac27-94524d23e92b",
+            "violations": []
+        },
+        {
+            "path": "/Pump Control/Acid Pump/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/db16e425-44ca-40f9-b8f4-64b10021b74e",
+            "violations": []
+        },
+        {
+            "path": "/Pump Control/Air Pump/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/c8a1a135-8c9f-467f-bb2b-f71123dfca54",
+            "violations": []
+        },
+        {
+            "path": "/Valve Control/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/4eaefdb2-a0a4-4c79-8702-5dad81347158",
+            "violations": []
+        },
+        {
+            "path": "/Valve Control/Valve Control Bank 1/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/4eaefdb2-a0a4-4c79-8702-5dad81347158/bb96aef0-a293-4f2f-afab-58a941f960d6",
+            "violations": []
+        },
+        {
+            "path": "/Valve Control/Valve Control Bank 2/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/4eaefdb2-a0a4-4c79-8702-5dad81347158/a60ab3bd-76d7-4549-93c3-469c7eb3b757",
+            "violations": []
+        },
+        {
+            "path": "/Valve Control/Valve Control Bank 3/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/4eaefdb2-a0a4-4c79-8702-5dad81347158/c8a80f6b-6991-4994-9972-cf9280af84d9",
+            "violations": []
+        },
+        {
+            "path": "/Actuators/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/26910e19-2db1-434f-ad74-0de34241d1a4",
+            "violations": []
+        },
+        {
+            "path": "/Comms/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/973d4d17-d26b-4c44-9698-9d58019fed5c",
+            "violations": []
+        },
+        {
+            "path": "/Comms/Aux/",
+            "uuid_path": "/bb0ef0df-c181-443a-843c-695cd2e0efee/973d4d17-d26b-4c44-9698-9d58019fed5c/a0b2f409-4b3d-4b66-8f84-eca7c3fb4767",
+            "violations": []
+        }
+    ],
+    "source": "DIC_Board.kicad_sch"
+}

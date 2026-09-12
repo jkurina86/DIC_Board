@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "authoritative_netlist": "loads-after.net.xml",
+  "checks": [
+    "U20/U21/U22 all pin nets unchanged",
+    "U40 all pin nets unchanged",
+    "U34 complete TQFN remap preserves signal functions; EP17 ground",
+    "Q1 pins1\u20138 unchanged; absent9/10 expected SO8",
+    "R323.1 ground",
+    "DRV8823 49 unique numbered pads; leads0.30x1.55; EP3.70x3.65"
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "U39_exact_TQFN_pinmap": {
+    "1": "Net-(U39-C1-)",
+    "2": "Net-(U39-C2+)",
+    "3": "Net-(U39-C2-)",
+    "4": "Net-(U39-V-)",
+    "5": "Net-(J11-Pin_3)",
+    "6": "/Comms/COMM_RX",
+    "7": "unconnected-(U39-~{INVALID}-Pad7)",
+    "8": "/Comms/COMM_TX",
+    "9": "/Comms/COMM_EN",
+    "10": "Net-(J11-Pin_2)",
+    "11": "GND",
+    "12": "+3V3",
+    "13": "/Comms/COMM_EN",
+    "14": "unconnected-(U39-READY-Pad14)",
+    "15": "Net-(U39-V+)",
+    "16": "Net-(U39-C1+)",
+    "17": "GND"
+  },
+  "unchanged_pinmaps": [
+    "U1",
+    "U2",
+    "U3",
+    "J1",
+    "J2",
+    "P1",
+    "D1",
+    "D2",
+    "Y1",
+    "Y2"
+  ],
+  "new_component_nets": "C43 VREF+/GND; R348 COMM_EN/GND; R349 RTC_CE/GND; R350 RTC_CLKOE/GND",
+  "clock_math": {
+    "HSE": 8000000,
+    "main_PLL_VCO": 64000000.0,
+    "SYSCLK_HCLK_APB_Hz": 16000000.0,
+    "PLLSAI1_VCO": 96000000.0,
+    "USB_SDMMC_Hz": 48000000.0,
+    "SPI1_Hz_at_prescaler128": 125000.0
+  },
+  "limitations": [
+    "CubeMX GUI reload/generation was not performed; validation checks explicit installed-database keys and mathematical clock values.",
+    "Software USB attach/detach based on PE0 still requires the future generated firmware application.",
+    "LSE parasitic/load/gain and PCB implementation require measured qualification."
+  ]
+}

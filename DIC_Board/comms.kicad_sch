@@ -221,6 +221,526 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "DIC_Board:MAX3226EETE_ReviewFixed"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -13.97 26.67 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MAX3226EETE"
+				(at 12.7 26.67 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_DFN_QFN:TQFN-16-1EP_5x5mm_P0.8mm_EP3.1x3.1mm"
+				(at 0 -33.02 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX3224E-MAX3245E.pdf"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Single RS232 driver/receiver, 3.0V to 5V supply, 250kb/s, AutoShutdown Plus, SSOP-16 package"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "rs232 uart transceiver"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TQFN*5x5mm*P0.8mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MAX3226EETE_ReviewFixed_0_0"
+				(text "LOGIC"
+					(at -11.43 -22.86 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(text "RS232"
+					(at 11.43 -22.86 0)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(symbol "MAX3226EETE_ReviewFixed_0_1"
+				(rectangle
+					(start -15.24 -25.4)
+					(end 15.24 25.4)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -0.635) (xy -3.81 -4.445) (xy 0 -2.54) (xy -3.81 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.81 -2.54) (xy -8.255 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -12.7) (xy -8.255 -12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center -2.54 -12.7)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0.635 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 6.35 -2.54)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -10.795) (xy 1.905 -14.605) (xy -1.905 -12.7) (xy 1.905 -10.795)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 -12.7) (xy 6.35 -12.7)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MAX3226EETE_ReviewFixed_1_1"
+				(pin passive line
+					(at -20.32 15.24 0)
+					(length 5.08)
+					(name "C1-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 22.86 180)
+					(length 5.08)
+					(name "C2+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 15.24 180)
+					(length 5.08)
+					(name "C2-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 20.32 2.54 180)
+					(length 5.08)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 20.32 -12.7 180)
+					(length 5.08)
+					(name "R1IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at -20.32 -12.7 0)
+					(length 5.08)
+					(name "R1OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -20.32 180)
+					(length 5.08)
+					(name "~{INVALID}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -2.54 0)
+					(length 5.08)
+					(name "T1IN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -17.78 0)
+					(length 5.08)
+					(name "FORCEON"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -2.54 180)
+					(length 5.08)
+					(name "T1OUT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -30.48 90)
+					(length 5.08)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 30.48 270)
+					(length 5.08)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -20.32 -20.32 0)
+					(length 5.08)
+					(name "~{FORCEOFF}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 20.32 -17.78 180)
+					(length 5.08)
+					(name "READY"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_out line
+					(at 20.32 10.16 180)
+					(length 5.08)
+					(name "V+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -20.32 22.86 0)
+					(length 5.08)
+					(name "C1+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -30.48 90)
+					(length 5.08)
+					(hide yes)
+					(name "EP"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C"
 			(pin_numbers
 				(hide yes)
@@ -376,17 +896,20 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Interface_UART:MAX3226"
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 1.016)
+				(offset 0)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U"
-				(at -13.97 26.67 0)
+			(property "Reference" "R"
+				(at 2.032 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -395,8 +918,8 @@
 					)
 				)
 			)
-			(property "Value" "MAX3226"
-				(at 12.7 26.67 0)
+			(property "Value" "R"
+				(at 0 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -405,19 +928,8 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:SSOP-16_5.3x6.2mm_P0.65mm"
-				(at 0 -33.02 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX3224-MAX3245.pdf"
-				(at 0 2.54 0)
+			(property "Footprint" ""
+				(at -1.778 0 90)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -427,7 +939,7 @@
 					)
 				)
 			)
-			(property "Description" "Single RS232 driver/receiver, 3.0V to 5V supply, 250kb/s, AutoShutdown Plus, SSOP-16 package"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -438,7 +950,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "rs232 uart transceiver"
+			(property "Description" "Resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -449,7 +961,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "SSOP*5.3x6.2mm*P0.65mm*"
+			(property "ki_keywords" "R res resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -460,122 +972,21 @@
 					)
 				)
 			)
-			(symbol "MAX3226_0_0"
-				(text "LOGIC"
-					(at -11.43 -22.86 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "RS232"
-					(at 11.43 -22.86 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
 					)
 				)
 			)
-			(symbol "MAX3226_0_1"
+			(symbol "R_0_1"
 				(rectangle
-					(start -15.24 -25.4)
-					(end 15.24 25.4)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -0.635) (xy -3.81 -4.445) (xy 0 -2.54) (xy -3.81 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -2.54) (xy -8.255 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.175 -12.7) (xy -8.255 -12.7)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.54 -12.7)
-					(radius 0.635)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0.635 -2.54)
-					(radius 0.635)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 6.35 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -10.795) (xy 1.905 -14.605) (xy -1.905 -12.7) (xy 1.905 -10.795)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 -12.7) (xy 6.35 -12.7)
-					)
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -585,11 +996,11 @@
 					)
 				)
 			)
-			(symbol "MAX3226_1_1"
-				(pin output line
-					(at 20.32 -17.78 180)
-					(length 5.08)
-					(name "READY"
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -605,9 +1016,9 @@
 					)
 				)
 				(pin passive line
-					(at -20.32 22.86 0)
-					(length 5.08)
-					(name "C1+"
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -615,258 +1026,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 20.32 10.16 180)
-					(length 5.08)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -20.32 15.24 0)
-					(length 5.08)
-					(name "C1-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 22.86 180)
-					(length 5.08)
-					(name "C2+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 15.24 180)
-					(length 5.08)
-					(name "C2-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_out line
-					(at 20.32 2.54 180)
-					(length 5.08)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 20.32 -12.7 180)
-					(length 5.08)
-					(name "R1IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at -20.32 -12.7 0)
-					(length 5.08)
-					(name "R1OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 20.32 -20.32 180)
-					(length 5.08)
-					(name "~{INVALID}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 -2.54 0)
-					(length 5.08)
-					(name "T1IN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 -17.78 0)
-					(length 5.08)
-					(name "FORCEON"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 20.32 -2.54 180)
-					(length 5.08)
-					(name "T1OUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 -30.48 90)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 30.48 270)
-					(length 5.08)
-					(name "VCC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -20.32 -20.32 0)
-					(length 5.08)
-					(name "~{FORCEOFF}"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1132,6 +1291,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "R348 holds COMM_EN low during reset.\nU39 is the EETE TQFN pinout; exposed pad17 is grounded."
+		(exclude_from_sim no)
+		(at 45 183 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left top)
+		)
+		(uuid "33a21f54-acc2-48b4-b5aa-e03226d451aa")
+	)
 	(junction
 		(at 135.89 154.94)
 		(diameter 0)
@@ -1145,18 +1315,6 @@
 		(uuid "2f9380be-286f-4e51-a157-1537e8117205")
 	)
 	(junction
-		(at 161.29 154.94)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "315b7a5c-7dcb-4908-ba6a-8ef3b8e12f77")
-	)
-	(junction
-		(at 86.36 123.19)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6050b00c-8c31-46ee-b952-4efb98d9bda5")
-	)
-	(junction
 		(at 83.82 139.7)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1167,6 +1325,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d66b66bd-241a-4440-860e-f14382210480")
+	)
+	(junction
+		(at 161.29 154.94)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "df264401-4c13-4120-b2f3-99b4d98542bd")
 	)
 	(junction
 		(at 106.68 87.63)
@@ -1183,7 +1347,7 @@
 		(uuid "2ff6a6f3-c196-4e81-8b3a-5b6a3d012581")
 	)
 	(no_connect
-		(at 190.5 128.27)
+		(at 209.55 128.27)
 		(uuid "cc2a2ef2-56ec-4133-a79b-9a2fb8119446")
 	)
 	(wire
@@ -1248,7 +1412,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 125.73) (xy 190.5 125.73)
+			(xy 182.88 125.73) (xy 209.55 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1338,7 +1502,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 123.19) (xy 127 123.19)
+			(xy 209.55 123.19) (xy 127 123.19)
 		)
 		(stroke
 			(width 0)
@@ -1448,7 +1612,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 120.65) (xy 163.83 154.94)
+			(xy 172.72 120.65) (xy 172.72 154.94)
 		)
 		(stroke
 			(width 0)
@@ -1468,7 +1632,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 154.94) (xy 161.29 154.94)
+			(xy 172.72 154.94) (xy 161.29 154.94)
 		)
 		(stroke
 			(width 0)
@@ -1488,7 +1652,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 133.35) (xy 165.1 125.73)
+			(xy 182.88 133.35) (xy 182.88 125.73)
 		)
 		(stroke
 			(width 0)
@@ -1498,7 +1662,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 120.65) (xy 163.83 120.65)
+			(xy 209.55 120.65) (xy 172.72 120.65)
 		)
 		(stroke
 			(width 0)
@@ -1515,16 +1679,6 @@
 			(type default)
 		)
 		(uuid "d181b1af-66ee-4d62-8ff5-b80f5917e0ca")
-	)
-	(wire
-		(pts
-			(xy 86.36 123.19) (xy 87.63 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "db5c5ffd-d0d5-4f42-b46c-dabc3da88e1c")
 	)
 	(wire
 		(pts
@@ -1558,13 +1712,23 @@
 	)
 	(wire
 		(pts
-			(xy 127 133.35) (xy 165.1 133.35)
+			(xy 127 133.35) (xy 182.88 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "ffce9b08-d0d0-45a5-a6e9-1bb0b4564c4a")
+	)
+	(label "COMM_EN"
+		(at 60.96 160.02 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9633a984-fe00-4f07-943a-8ab13bcd5031")
 	)
 	(hierarchical_label "COMM_TX"
 		(shape input)
@@ -1734,7 +1898,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Interface_UART:MAX3226")
+		(lib_id "DIC_Board:MAX3226EETE_ReviewFixed")
 		(at 106.68 120.65 0)
 		(unit 1)
 		(body_style 1)
@@ -1754,7 +1918,7 @@
 				)
 			)
 		)
-		(property "Value" "MAX3226EETE"
+		(property "Value" "MAX3226EETE+"
 			(at 106.68 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1775,7 +1939,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://datasheets.maximintegrated.com/en/ds/MAX3224-MAX3245.pdf"
+		(property "Datasheet" "https://www.analog.com/media/en/technical-documentation/data-sheets/MAX3224E-MAX3245E.pdf"
 			(at 106.68 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -1797,7 +1961,7 @@
 				)
 			)
 		)
-		(property "MPN" "MAX3226EETE"
+		(property "MPN" "MAX3226EETE+"
 			(at 106.68 120.65 0)
 			(hide yes)
 			(show_name no)
@@ -1819,53 +1983,56 @@
 				)
 			)
 		)
-		(pin "1"
+		(pin "14"
 			(uuid "ce90e7b2-9c3c-409c-85fb-a19a78b2745c")
 		)
-		(pin "2"
+		(pin "16"
 			(uuid "142ba278-26e1-4e71-a638-bc6c35f8f45b")
 		)
-		(pin "3"
+		(pin "15"
 			(uuid "d417dc05-bd77-4ce6-a08e-ab8b5061ffec")
 		)
-		(pin "4"
+		(pin "1"
 			(uuid "9a95d634-aee1-4ff8-9e3d-c06367269753")
 		)
-		(pin "5"
+		(pin "2"
 			(uuid "21651c8c-216b-4c72-8d95-d5e451ce7187")
 		)
-		(pin "6"
+		(pin "3"
 			(uuid "8ac0d3cf-2ba9-43aa-a10e-b94cf8316cab")
 		)
-		(pin "7"
+		(pin "4"
 			(uuid "313d8ab9-3f1b-43ef-9b5a-3e82d04e978c")
 		)
-		(pin "8"
+		(pin "5"
 			(uuid "d2f669f3-328f-4f6b-b2ce-44601c9fbc60")
 		)
-		(pin "9"
+		(pin "6"
 			(uuid "3b82833c-cb96-45d9-a7bd-6b5b0573b71b")
 		)
-		(pin "10"
+		(pin "7"
 			(uuid "534740ac-591a-408d-850b-af0a1f49151a")
 		)
-		(pin "11"
+		(pin "8"
 			(uuid "1c7ad1f7-dc11-4e0a-8ca9-41a12d83e352")
 		)
-		(pin "12"
+		(pin "9"
 			(uuid "62824df2-dbb8-4830-97d5-097ff961ea34")
 		)
-		(pin "13"
+		(pin "10"
 			(uuid "3c668297-b228-47af-aebb-3f3b781a4d4b")
 		)
-		(pin "14"
+		(pin "11"
 			(uuid "dc084769-9021-40f8-a2b7-7d23290283e7")
 		)
-		(pin "15"
+		(pin "12"
 			(uuid "9acbf356-1174-4e81-b630-da2efb5f2fc5")
 		)
-		(pin "16"
+		(pin "13"
 			(uuid "c38df1c5-5f34-48db-9024-42207d17121d")
+		)
+		(pin "17"
+			(uuid "99de1692-ea36-4f9f-828f-dbf54b0f21e0")
 		)
 		(instances
 			(project "DIC_Board"
@@ -1972,6 +2139,143 @@
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/973d4d17-d26b-4c44-9698-9d58019fed5c"
 					(reference "C334")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 60.96 163.83 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "62f9b8a0-6278-4737-8dd5-8b37f2a7b256")
+		(property "Reference" "R348"
+			(at 63.5 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 63.5 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 59.182 163.83 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "COMM_EN hardware reset-state pull-down"
+			(at 60.96 163.83 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW0603100KFKEA"
+			(at -85.09 -10.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at -85.09 -10.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at -85.09 -10.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at -85.09 -10.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at -85.09 -10.16 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "61dcce71-4858-41c7-8411-3e9b4624ef66")
+		)
+		(pin "1"
+			(uuid "63167724-5686-47c4-bb92-1b21e0254d56")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/973d4d17-d26b-4c44-9698-9d58019fed5c"
+					(reference "R348")
 					(unit 1)
 				)
 			)
@@ -2158,7 +2462,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 195.58 123.19 0)
+		(at 214.63 123.19 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2169,7 +2473,7 @@
 		(fields_autoplaced yes)
 		(uuid "94bbc8fd-102a-45c0-8918-6661f8d87668")
 		(property "Reference" "J11"
-			(at 198.12 123.1899 0)
+			(at 217.17 123.1899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2180,7 +2484,7 @@
 			)
 		)
 		(property "Value" "Conn_01x04"
-			(at 198.12 125.7299 0)
+			(at 217.17 125.7299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2190,8 +2494,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 195.58 123.19 0)
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal"
+			(at 214.63 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2202,7 +2506,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 195.58 123.19 0)
+			(at 214.63 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2213,7 +2517,40 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 195.58 123.19 0)
+			(at 214.63 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0430450400"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.molex.com/en-us/products/part-detail/430450400"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2418,6 +2755,84 @@
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/973d4d17-d26b-4c44-9698-9d58019fed5c"
 					(reference "#PWR0154")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 60.96 167.64 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb7c52ea-6483-464e-88b7-45e654d80428")
+		(property "Reference" "#PWR9000"
+			(at 60.96 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 60.96 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 60.96 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 60.96 167.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38dad052-8d3d-43b5-a148-e2a173879952")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/973d4d17-d26b-4c44-9698-9d58019fed5c"
+					(reference "#PWR9000")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,220 @@
+(footprint "SW_ESwitch_TL6330AF200Q"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "E-Switch P006330 rev D; physical 1/2 internally common map to pad1; physical 3/4 internally common map to pad2. Recommended lands 0.9x1.0, outer spans5.0x2.6mm.")
+	(property "Reference" "REF**"
+		(at 0 -4 0)
+		(layer "F.SilkS")
+		(uuid "04fba34a-1901-4a83-9abd-84d797cec658")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Value" "SW_ESwitch_TL6330AF200Q"
+		(at 0 4 0)
+		(layer "F.Fab")
+		(uuid "6953bb68-5b21-4ac1-8ba5-9af18516dd70")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8cec9278-5574-4d27-96fc-a88400e6e0d1")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f8e08bcf-9dbc-4f58-89e9-f066f1c8925c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -1.5 -1.55)
+		(end 1.5 -1.55)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "20cb38e9-be57-4085-9106-7714f46f5ce1")
+	)
+	(fp_line
+		(start -1.5 1.55)
+		(end 1.5 1.55)
+		(stroke
+			(width 0.12)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "b1094505-4518-4d1d-b9d0-7018c0987cd4")
+	)
+	(fp_line
+		(start -2.75 -1.65)
+		(end 2.75 -1.65)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "bcd44c08-621d-4fd5-8d60-161ceb48f759")
+	)
+	(fp_line
+		(start -2.75 1.65)
+		(end -2.75 -1.65)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "c5e9e710-8549-4b7e-be2a-2e5d5a67d369")
+	)
+	(fp_line
+		(start 2.75 -1.65)
+		(end 2.75 1.65)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "20e4625c-f246-4229-826c-f78d3ad54fd5")
+	)
+	(fp_line
+		(start 2.75 1.65)
+		(end -2.75 1.65)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "7b81eec4-7c44-4a4f-9b67-2202b7632013")
+	)
+	(fp_line
+		(start -2.3 -1.4)
+		(end 2.3 -1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "0148d608-ad0d-43ed-be63-360a326a3305")
+	)
+	(fp_line
+		(start -2.3 1.4)
+		(end -2.3 -1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "04b0efc4-9929-4500-b6bf-daa97e68a637")
+	)
+	(fp_line
+		(start -1.1 -0.9)
+		(end 1.1 -0.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "2426fa08-75a8-4c78-8740-5264f3339c16")
+	)
+	(fp_line
+		(start -1.1 0.9)
+		(end -1.1 -0.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "4bcb372c-d4df-41c2-aae5-80bfa58942b1")
+	)
+	(fp_line
+		(start 1.1 -0.9)
+		(end 1.1 0.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "b7738911-6d78-4eb5-89a8-6a4582ad4963")
+	)
+	(fp_line
+		(start 1.1 0.9)
+		(end -1.1 0.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "4326c163-03fe-454d-a1a4-e4b1379ae795")
+	)
+	(fp_line
+		(start 2.3 -1.4)
+		(end 2.3 1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "55f51037-7d91-4493-9cc0-26d00f846bf6")
+	)
+	(fp_line
+		(start 2.3 1.4)
+		(end -2.3 1.4)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "197422cc-712d-4f77-bb68-3b2bd527994e")
+	)
+	(pad "1" smd rect
+		(at -2.049999 0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "4aab548e-1597-424c-81f0-4b0ba28cdf6d")
+	)
+	(pad "1" smd rect
+		(at 2.049999 0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "08cbe3cf-9931-4002-82e2-9b6619d9d79e")
+	)
+	(pad "2" smd rect
+		(at -2.049999 -0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "60a0dfa3-849a-4fbc-8049-dd61ac7129c5")
+	)
+	(pad "2" smd rect
+		(at 2.049999 -0.8)
+		(size 0.9 1)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(thermal_bridge_angle 45)
+		(uuid "3ed5b2c0-73d4-43b0-a53e-f03de3745b66")
+	)
+	(embedded_fonts no)
+)

@@ -92,3 +92,7 @@ The complete hardware/firmware/power/bring-up plan is:
 `~/Documents/Obsidian/Career/Work/DIC/New Board Design.md`
 
 That document cites these archive directories inline at the point where each device is specified and identifies unresolved documentation as release-gate work.
+
+## User-confirmed design boundaries — 2026-09-11
+
+The user confirmed the current6.6V supply for the installed KNF pump, nominal12V supply for LI-830 and valves, existing K96 interface, and existing actuator/controller interface. Keep these choices; the requests for those design decisions are closed. This acceptance does not supply missing manufacturer documents or establish bench-test results. Separate overload limits, acid winding data, valve maximum pulse limits and runtime/physical qualification remain open. See [the decision record](../Reviews/design-decisions-2026-09-11.md).

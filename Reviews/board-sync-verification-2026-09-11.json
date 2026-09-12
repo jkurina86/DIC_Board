@@ -1,0 +1,36 @@
+{
+  "footprints": 285,
+  "schematic_components": 290,
+  "nets": 343,
+  "pads_verified": 1422,
+  "pending": [
+    {
+      "reference": "BT1",
+      "reason": "footprint not selected"
+    },
+    {
+      "reference": "J2",
+      "reason": "footprint not selected"
+    },
+    {
+      "reference": "JP1",
+      "reason": "footprint not selected"
+    },
+    {
+      "reference": "P1",
+      "reason": "footprint not selected"
+    },
+    {
+      "reference": "SW1",
+      "reason": "footprint not selected"
+    }
+  ],
+  "tracks_and_vias": 0,
+  "zones": 0,
+  "board_drawings_and_outline": 0,
+  "placement": "Temporary import grid only; no layout",
+  "schematic_links_verified": true,
+  "mpns_verified": true,
+  "all_pad_nets_verified": true,
+  "board_sha256": "62044892c07847b3a58421770873dfc9d88bb02f421b65af94d0caa3f38df857"
+}

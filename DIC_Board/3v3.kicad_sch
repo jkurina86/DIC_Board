@@ -134,7 +134,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "U11"
+			(property "Reference" "U"
 				(at 0 16.51 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -612,6 +612,183 @@
 				)
 			)
 			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:C_Polarized"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized"
+				(at 0.635 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_0_1"
+				(rectangle
+					(start -2.286 0.508)
+					(end 2.286 1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 2.286) (xy -0.762 2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 2.794) (xy -1.27 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 2.286 -0.508)
+					(end -2.286 -1.016)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+			)
+			(symbol "C_Polarized_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 2.794)
@@ -1185,12 +1362,22 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "REGULATED +3V3 / 3 A"
+	(text "Output bulk"
 		(exclude_from_sim no)
-		(at 114.554 69.342 0)
+		(at 215.138 113.792 0)
 		(effects
 			(font
-				(size 1.5 1.5)
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0d77490b-02cb-48a6-a318-7863cc1e918e")
+	)
+	(text "REGULATED +3V3 / 3 A"
+		(exclude_from_sim no)
+		(at 86.36 38.608 0)
+		(effects
+			(font
+				(size 5.08 5.08)
 				(bold yes)
 			)
 			(justify left bottom)
@@ -1240,16 +1427,22 @@
 		(uuid "3c9c4c90-27f2-4600-9a65-0d36a7a91ada")
 	)
 	(junction
+		(at 208.28 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3d711a4a-ae7a-4366-8f06-d4922fad8e53")
+	)
+	(junction
 		(at 114.3 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "42f10600-5911-4bc9-808f-3469320e9e89")
 	)
 	(junction
-		(at 205.74 93.98)
+		(at 193.04 119.38)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "650a7613-e132-4091-ac63-c4d62dcafcea")
+		(uuid "589a7224-cb4a-41ce-a50d-1e7c33320584")
 	)
 	(junction
 		(at 143.51 93.98)
@@ -1286,6 +1479,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87e105a4-a3c6-4efa-b87a-61b16f75a28c")
+	)
+	(junction
+		(at 224.79 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93ec5ffd-32ab-4e30-bbc4-f4d58d3d3573")
 	)
 	(junction
 		(at 170.18 93.98)
@@ -1473,7 +1672,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 93.98) (xy 205.74 93.98)
+			(xy 193.04 93.98) (xy 208.28 93.98)
 		)
 		(stroke
 			(width 0)
@@ -1513,13 +1712,23 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 93.98) (xy 205.74 97.79)
+			(xy 224.79 93.98) (xy 224.79 97.79)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "45ffb3e3-7b28-4f05-866c-0dc7ed748653")
+	)
+	(wire
+		(pts
+			(xy 208.28 93.98) (xy 208.28 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "468035f2-9a11-469f-93ea-a39b01ed7f5e")
 	)
 	(wire
 		(pts
@@ -1593,6 +1802,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 110.49) (xy 208.28 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "73e530d5-6783-45b2-8156-9027e292869f")
+	)
+	(wire
+		(pts
 			(xy 96.52 119.38) (xy 105.41 119.38)
 		)
 		(stroke
@@ -1643,6 +1862,16 @@
 	)
 	(wire
 		(pts
+			(xy 208.28 93.98) (xy 224.79 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e33c624-01c0-4151-bfd1-e2224574b8d4")
+	)
+	(wire
+		(pts
 			(xy 149.86 106.68) (xy 156.21 106.68)
 		)
 		(stroke
@@ -1670,6 +1899,16 @@
 			(type default)
 		)
 		(uuid "97c80070-bd14-4e03-8ff9-525ff35fe541")
+	)
+	(wire
+		(pts
+			(xy 208.28 119.38) (xy 193.04 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d98e4c3-4eb4-48e6-a05a-a32dd6c3017e")
 	)
 	(wire
 		(pts
@@ -2177,17 +2416,17 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 205.74 97.79 180)
+		(at 224.79 97.79 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "370e6ba8-c192-4e90-a52b-c75ad8413982")
 		(property "Reference" "TP23"
-			(at 205.74 103.632 0)
+			(at 224.79 103.632 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2197,7 +2436,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 205.74 106.68 0)
+			(at 224.79 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2207,7 +2446,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm"
-			(at 205.74 97.79 0)
+			(at 224.79 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2218,7 +2457,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 97.79 0)
+			(at 224.79 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2229,7 +2468,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 97.79 0)
+			(at 224.79 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2323,6 +2562,172 @@
 			(project "DIC_Board"
 				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/2161909f-1018-4cef-9d4b-129c48d3907b"
 					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized")
+		(at 208.28 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ef64014-c00b-4416-bc66-6d4a04e65361")
+		(property "Reference" "C901"
+			(at 214.63 104.775 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "180uF 16V"
+			(at 214.63 108.585 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.9"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://industrial.panasonic.com/cdbs/www-data/pdf/AAB8000/AAB8000COL87.pdf"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 208.28 106.68 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "16SVPF180M"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Panasonic"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "16V"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "ESR Max" "22mOhm at 100kHz"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Ripple Current" "3.3A rms at 100kHz,105C"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://na.industrial.panasonic.com/products/capacitors/polymer-capacitors/lineup/os-con-aluminum-polymer/series/91057/model/91080"
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design Basis" "TPSM53603 low-ESR polymer output bulk; retains existing MLCC; nominal total 274uF below 1000uF maximum."
+			(at 208.28 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "baf5f559-9478-434b-882a-139e69d6fd16")
+		)
+		(pin "2"
+			(uuid "34746fa1-4793-4eaf-a69c-3402abfd94f1")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/b7e0d3a1-6a4d-4d5e-9f2b-31c8a7d64e20/2161909f-1018-4cef-9d4b-129c48d3907b"
+					(reference "C901")
 					(unit 1)
 				)
 			)
@@ -2470,7 +2875,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 205.74 93.98 0)
+		(at 224.79 93.98 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2480,7 +2885,7 @@
 		(dnp no)
 		(uuid "c9fdc094-b458-4bcb-9621-8d40b1a4980b")
 		(property "Reference" "#PWR0106"
-			(at 208.28 91.44 0)
+			(at 227.33 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2491,7 +2896,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 205.74 89.662 0)
+			(at 224.79 89.662 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2501,7 +2906,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 93.98 0)
+			(at 224.79 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2512,7 +2917,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 93.98 0)
+			(at 224.79 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2523,7 +2928,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 205.74 93.98 0)
+			(at 224.79 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2881,7 +3286,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 88.5952 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -2905,6 +3310,72 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 87.63 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1H104K080AA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2962,7 +3433,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 194.0052 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -2986,6 +3457,72 @@
 		)
 		(property "Description" "Unpolarized capacitor"
 			(at 193.04 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1H104K080AA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H104K080AA"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

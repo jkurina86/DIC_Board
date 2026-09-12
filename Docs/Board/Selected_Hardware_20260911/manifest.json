@@ -1,0 +1,49 @@
+[
+  {
+    "file": "TL6330AF200Q.pdf",
+    "source_url": "https://configured-product-images.s3.amazonaws.com/2D/specs/TL6330AF200Q.pdf",
+    "retrieved": "2026-09-11",
+    "sha256": "36c640176c1da9ffed702758dc0a6dd889d21e952bae9a922b3686f5814c4ea6",
+    "method": "digikey skill fetch_datasheet_digikey.py direct manufacturer download",
+    "verified": "original PDF drawing visually inspected; order codes checked"
+  },
+  {
+    "file": "Keystone3013.pdf",
+    "source_url": "https://beta.keyelco.com/userAssets/file/M60p4-6-7.pdf",
+    "retrieved": "2026-09-11",
+    "sha256": "361dade16ebea00c94d8c49c3f019a21625ae85596a00adbcd4a4bf1abe42ee7",
+    "method": "digikey skill fetch_datasheet_digikey.py direct manufacturer download",
+    "verified": "original PDF drawing visually inspected; order codes checked"
+  },
+  {
+    "file": "61201021621.pdf",
+    "source_url": "https://www.we-online.com/components/products/datasheet/61201021621.pdf",
+    "retrieved": "2026-09-11",
+    "sha256": "dbaa4765e57457ac68cc667d33da6128b63651ee25a5938b713a91b21c58a929",
+    "method": "digikey skill fetch_datasheet_digikey.py direct manufacturer download",
+    "verified": "original PDF drawing visually inspected; order codes checked"
+  },
+  {
+    "file": "61300311121.pdf",
+    "source_url": "https://www.we-online.com/components/products/datasheet/61300311121.pdf",
+    "retrieved": "2026-09-11",
+    "sha256": "d8a8e70731d06c6a1b0685f3c24e2fc7b481dbbe1d25ffa9edfe14b89fb5eb8e",
+    "method": "digikey skill fetch_datasheet_digikey.py direct manufacturer download",
+    "verified": "original PDF drawing visually inspected; order codes checked"
+  },
+  {
+    "file": "61300511121.pdf",
+    "source_url": "https://www.we-online.com/components/products/datasheet/61300511121.pdf",
+    "retrieved": "2026-09-11",
+    "sha256": "b91171c2b94275ccb3824762a4b77dcd0cd9031e8a818e869a6c9f18c053ad8b",
+    "method": "digikey skill fetch_datasheet_digikey.py direct manufacturer download",
+    "verified": "original PDF drawing visually inspected; order codes checked"
+  },
+  {
+    "file": "USB4105.pdf",
+    "source_url": "https://gct.co/files/drawings/usb4105.pdf",
+    "retrieved": "2026-09-11",
+    "sha256": "fb331fbabee8392ed2937ed757c1610cb0f174b84625147c0b580a18eea8c0e5",
+    "verification": "GCT USB4105 drawing and pinout checked against current KiCad symbol, footprint, and resolved netlist"
+  }
+]

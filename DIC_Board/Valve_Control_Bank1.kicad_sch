@@ -36,7 +36,7 @@
 					)
 				)
 			)
-			(property "Footprint" "DIC_Board:HTSSOP48"
+			(property "Footprint" "DIC_Board:DRV8823_DCA48_ReviewFixed"
 				(at 5.08 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1461,8 +1461,12 @@
 		)
 		(symbol "power:+12V"
 			(power global)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1523,7 +1527,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "global power battery"
+			(property "ki_keywords" "global power"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1576,8 +1580,7 @@
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
-					(hide yes)
-					(name "+12V"
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1928,7 +1931,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 66.675) (xy 133.35 67.31)
+			(xy 133.35 66.04) (xy 133.35 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1958,7 +1961,7 @@
 	)
 	(wire
 		(pts
-			(xy 122.555 57.785) (xy 127 57.785)
+			(xy 121.92 58.42) (xy 127 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2378,7 +2381,7 @@
 	)
 	(wire
 		(pts
-			(xy 122.555 66.04) (xy 122.555 57.785)
+			(xy 121.92 66.04) (xy 121.92 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2428,7 +2431,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 66.675) (xy 133.35 66.675)
+			(xy 129.54 66.04) (xy 133.35 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2438,7 +2441,7 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 71.12) (xy 129.54 66.675)
+			(xy 129.54 71.12) (xy 129.54 66.04)
 		)
 		(stroke
 			(width 0)
@@ -2448,7 +2451,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 57.785) (xy 127 59.69)
+			(xy 127 58.42) (xy 127 59.69)
 		)
 		(stroke
 			(width 0)
@@ -2698,7 +2701,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 66.04) (xy 122.555 66.04)
+			(xy 119.38 66.04) (xy 121.92 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3132,6 +3135,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "10d2f907-cfeb-4a99-a9f7-efdf9192125d")
 		)
@@ -3215,6 +3229,17 @@
 		)
 		(property "MPN" "C0603X104K5RAC7867"
 			(at 133.35 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "KEMET"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3380,7 +3405,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CRCW04023R30FKEDHP"
 			(at 128.27 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -3391,8 +3416,41 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay Dale"
+		(property "Manufacturer" "Vishay"
 			(at 128.27 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.2W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3448,7 +3506,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DIC_Board:HTSSOP48"
+		(property "Footprint" "DIC_Board:DRV8823_DCA48_ReviewFixed"
 			(at 90.17 69.85 0)
 			(hide yes)
 			(show_name no)
@@ -3483,6 +3541,17 @@
 		)
 		(property "MPN" "DRV8823QDCARQ1"
 			(at 85.09 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3725,6 +3794,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a97639ae-c228-42ff-809b-ab388aeb248e")
 		)
@@ -3804,7 +3884,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CRCW04023R30FKEDHP"
 			(at 128.27 146.05 0)
 			(hide yes)
 			(show_name no)
@@ -3815,8 +3895,41 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay Dale"
+		(property "Manufacturer" "Vishay"
 			(at 128.27 146.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.2W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3918,6 +4031,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "KEMET"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "890a65d3-8f5d-45e0-b0d7-bea4cd37f3cd")
 		)
@@ -3997,7 +4121,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CRCW04023R30FKEDHP"
 			(at 128.27 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4008,8 +4132,41 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay Dale"
+		(property "Manufacturer" "Vishay"
 			(at 128.27 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.2W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4111,6 +4268,17 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Nichicon"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f1108706-2102-4c8c-a077-5a85eb199d5c")
 		)
@@ -4190,7 +4358,7 @@
 				)
 			)
 		)
-		(property "MPN" ""
+		(property "MPN" "CRCW04023R30FKEDHP"
 			(at 128.27 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4201,8 +4369,41 @@
 				)
 			)
 		)
-		(property "Manufacturer" "Vishay Dale"
+		(property "Manufacturer" "Vishay"
 			(at 128.27 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.2W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20043/crcwhpe3.pdf"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

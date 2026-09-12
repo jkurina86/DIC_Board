@@ -166,6 +166,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "DIC_Board:+6V6"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "+6V6"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+6V6\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "+6V6_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+6V6_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "DIC_Board:TPS27S100A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1006,145 +1145,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+6V6"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+6V6"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+6V6\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+6V6_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+6V6_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -1292,6 +1292,12 @@
 		(uuid "1e6a4a29-e74c-4256-8475-56da9a031a32")
 	)
 	(junction
+		(at 177.8 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2637219c-48ec-4cf8-968f-d4d05e81cd19")
+	)
+	(junction
 		(at 167.64 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1320,12 +1326,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6258ae58-b797-4ce7-8e03-acbb3b808549")
-	)
-	(junction
-		(at 177.8 91.44)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "656187f5-c193-4a12-a0b1-4b9f7fa4789f")
 	)
 	(junction
 		(at 152.4 121.92)
@@ -1379,7 +1379,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 91.44) (xy 191.77 91.44)
+			(xy 177.8 91.44) (xy 194.31 91.44)
 		)
 		(stroke
 			(width 0)
@@ -1399,7 +1399,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 121.92) (xy 191.77 121.92)
+			(xy 177.8 121.92) (xy 194.31 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1499,7 +1499,7 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 93.98) (xy 191.77 121.92)
+			(xy 194.31 93.98) (xy 194.31 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2303,7 +2303,7 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+6V6")
+		(lib_id "DIC_Board:+6V6")
 		(at 129.54 60.96 0)
 		(unit 1)
 		(body_style 1)
@@ -2381,7 +2381,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 196.85 93.98 0)
+		(at 199.39 93.98 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -2392,7 +2392,7 @@
 		(dnp no)
 		(uuid "72e0ce11-bcdb-48ff-a9d7-1db03d1dbc13")
 		(property "Reference" "J33"
-			(at 196.596 98.044 0)
+			(at 199.136 98.044 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2402,7 +2402,7 @@
 			)
 		)
 		(property "Value" "0430450200"
-			(at 206.502 92.71 0)
+			(at 209.042 92.71 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2412,7 +2412,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0200_2x01_P3.00mm_Horizontal"
-			(at 196.85 93.98 0)
+			(at 199.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2423,7 +2423,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.molex.com/content/dam/molex/molex-dot-com/products/automated/en-us/salesdrawingpdf/430/43045/430450200_sd.pdf"
-			(at 196.85 93.98 0)
+			(at 199.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2434,7 +2434,7 @@
 			)
 		)
 		(property "Description" "Molex Micro-Fit 3.0 two-circuit right-angle through-hole header"
-			(at 196.85 93.98 0)
+			(at 199.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2445,7 +2445,7 @@
 			)
 		)
 		(property "MPN" "0430450200"
-			(at 196.85 93.98 0)
+			(at 199.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2456,7 +2456,7 @@
 			)
 		)
 		(property "Manufacturer" "Molex"
-			(at 196.85 93.98 0)
+			(at 199.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2467,7 +2467,7 @@
 			)
 		)
 		(property "DigiKey" "WM1813-ND"
-			(at 196.85 93.98 0)
+			(at 199.39 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2478,7 +2478,18 @@
 			)
 		)
 		(property "BOM Comments" "Pin 1 = GND / pump black lead; pin 2 = switched +6V6 / pump red lead. Mating housing 0430250200 and female contacts required."
-			(at 196.85 93.98 0)
+			(at 199.39 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design Confirmation" "2026-09-11: User confirmed the existing 6.6V supply is acceptable for the installed KNF pump. Retain 6.6V. This statement does not specify pump overload/startup limits."
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

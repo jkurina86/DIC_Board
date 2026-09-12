@@ -1538,7 +1538,7 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Firmware must pull STEP low and DIR high while releasing RESET afterwards they are normal controls."
+	(text "RESET defaults HIGH via 20k pull-up (Adafruit reference). Drive RESET low to select mode; set STEP low and DIR high, then release RESET and hold straps for at least100us."
 		(exclude_from_sim no)
 		(at 25.4 29.21 0)
 		(effects
@@ -1605,22 +1605,10 @@
 		(uuid "f73d6260-ef53-42fd-b1bc-9fc708ce8c5c")
 	)
 	(junction
-		(at 55.88 101.6)
+		(at 105.41 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "1f69ef8d-908b-4c0d-9a06-a5c983017d16")
-	)
-	(junction
-		(at 66.04 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "25a83a19-ac12-46b8-9b75-35628920aedd")
-	)
-	(junction
-		(at 87.63 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "2c59b933-e3bb-482a-9cce-9b10fa98024e")
+		(uuid "0468c53f-cf35-43c3-b96b-b1b3ff7e3fa0")
 	)
 	(junction
 		(at 193.04 152.4)
@@ -1635,6 +1623,12 @@
 		(uuid "46a0f49c-fff4-4661-857a-ad70cc1707b0")
 	)
 	(junction
+		(at 90.17 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "48f93670-08ea-4448-ac86-db6e0eb074eb")
+	)
+	(junction
 		(at 66.04 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1645,18 +1639,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "50a5a5e3-27ee-48f0-b7a3-e3319a41f8b3")
-	)
-	(junction
-		(at 99.06 129.54)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "56592a3c-e0fa-4390-8619-a4fbe30950d1")
-	)
-	(junction
-		(at 99.06 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a314b69f-fc61-4a70-832a-facaed9e9f87")
 	)
 	(junction
 		(at 181.61 152.4)
@@ -1683,10 +1665,22 @@
 		(uuid "6fa10995-c64e-462c-88c2-246f87602b38")
 	)
 	(junction
-		(at 66.04 73.66)
+		(at 48.26 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "93a56f82-2bc7-46f7-b9a9-2a9a44e27788")
+		(uuid "7280506e-c13f-4fe0-be7f-71c5db0f79a8")
+	)
+	(junction
+		(at 77.47 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8f4098c3-f169-44aa-bebf-0e6ef6db9a7d")
+	)
+	(junction
+		(at 90.17 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "92f0fc4b-0fc3-422d-9724-cf9a1b2866a1")
 	)
 	(junction
 		(at 162.56 152.4)
@@ -1695,22 +1689,16 @@
 		(uuid "9426fda0-8577-4e8e-80e4-c063b9fa2f62")
 	)
 	(junction
+		(at 90.17 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9f0fdafb-917b-405d-8b92-ec121cdb3f6b")
+	)
+	(junction
 		(at 162.56 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ae1cfa21-99d6-4a11-ae86-8c7299e1d7ac")
-	)
-	(junction
-		(at 87.63 152.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c3f4e880-da5c-4112-a21b-2cf8a694f93f")
-	)
-	(junction
-		(at 99.06 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c5c1274c-bb20-442e-a93f-f1dd771a746a")
 	)
 	(junction
 		(at 162.56 119.38)
@@ -1725,28 +1713,34 @@
 		(uuid "cda368bb-fee3-49ab-ab0d-d4b22cf65387")
 	)
 	(junction
-		(at 77.47 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d56946a3-597c-4aa2-a985-81bca9fdbc63")
-	)
-	(junction
 		(at 105.41 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d5811de8-779b-46d8-9e4e-0e7dbf82380b")
 	)
 	(junction
-		(at 99.06 86.36)
+		(at 66.04 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d7f8e7c2-d6a4-469a-ae7d-9d3d82dc04ea")
+		(uuid "d70ccbdd-a3e9-4bd3-b94b-fafe3f27dff3")
 	)
 	(junction
 		(at 118.11 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e4c8bbd0-db64-4dc9-8d99-45fc6d91c4e6")
+	)
+	(junction
+		(at 90.17 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fd691361-b015-403c-8c20-62b363caeae0")
+	)
+	(junction
+		(at 66.04 152.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ffc47ed0-5c73-44e1-8a7c-3a109b94aeda")
 	)
 	(wire
 		(pts
@@ -1757,16 +1751,6 @@
 			(type default)
 		)
 		(uuid "05750c38-e04d-4acd-8454-1e8dd8a695ce")
-	)
-	(wire
-		(pts
-			(xy 66.04 83.82) (xy 66.04 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "060eced3-c8c8-4bfe-88e9-346829d6ce85")
 	)
 	(wire
 		(pts
@@ -1790,23 +1774,13 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 86.36) (xy 149.86 86.36)
+			(xy 90.17 127) (xy 90.17 129.54)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "131eb536-a009-439c-bbd8-eb02d8bbc378")
-	)
-	(wire
-		(pts
-			(xy 66.04 134.62) (xy 66.04 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13ea3d79-5f1f-49b1-a06d-6f8c53951e49")
+		(uuid "0f573cc9-7566-48c2-8293-a227463c465b")
 	)
 	(wire
 		(pts
@@ -1830,16 +1804,6 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 119.38) (xy 99.06 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16352a71-1e6b-41ec-abe3-bbb1bcd3b827")
-	)
-	(wire
-		(pts
 			(xy 181.61 125.73) (xy 181.61 104.14)
 		)
 		(stroke
@@ -1847,6 +1811,26 @@
 			(type default)
 		)
 		(uuid "1a3f29e3-2d07-4750-a176-3df1cca3452e")
+	)
+	(wire
+		(pts
+			(xy 90.17 113.03) (xy 90.17 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1db45e54-f225-448f-83b7-75be66548eda")
+	)
+	(wire
+		(pts
+			(xy 66.04 113.03) (xy 66.04 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ec6f78f-82bd-4bbe-9068-04d58f29da10")
 	)
 	(wire
 		(pts
@@ -1900,16 +1884,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 129.54) (xy 129.54 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e186c37-aa36-4cfc-bc45-b2840095363c")
-	)
-	(wire
-		(pts
 			(xy 198.12 101.6) (xy 198.12 93.98)
 		)
 		(stroke
@@ -1920,7 +1894,37 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 129.54) (xy 99.06 134.62)
+			(xy 66.04 73.66) (xy 66.04 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3b842f38-3f5e-4eb3-a5f3-ddff8eb7a1b0")
+	)
+	(wire
+		(pts
+			(xy 105.41 86.36) (xy 149.86 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eac6dd8-e8c8-4f1c-a14b-860648eef27b")
+	)
+	(wire
+		(pts
+			(xy 66.04 128.27) (xy 66.04 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f43971c-f6f6-481d-b218-d642f4b198d5")
+	)
+	(wire
+		(pts
+			(xy 90.17 129.54) (xy 90.17 134.62)
 		)
 		(stroke
 			(width 0)
@@ -1960,7 +1964,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 101.6) (xy 55.88 101.6)
+			(xy 39.37 101.6) (xy 48.26 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1970,23 +1974,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 101.6) (xy 149.86 101.6)
+			(xy 93.98 121.92) (xy 93.98 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4d33130e-e7ce-4a2f-ad7c-f051e797557b")
-	)
-	(wire
-		(pts
-			(xy 55.88 105.41) (xy 55.88 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f05158c-0942-49a5-b584-bc4f807a569e")
+		(uuid "4ec0e7cc-b95f-48f9-8d37-d9767f8c1d4c")
 	)
 	(wire
 		(pts
@@ -2000,13 +1994,23 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 152.4) (xy 118.11 152.4)
+			(xy 48.26 101.6) (xy 149.86 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "55452e94-4be6-4b32-87a9-077aff048530")
+		(uuid "4f848814-9cdb-4b60-ad49-a788234fc44c")
+	)
+	(wire
+		(pts
+			(xy 90.17 129.54) (xy 129.54 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bdfdea2-a2da-4450-ad44-5311cc49c841")
 	)
 	(wire
 		(pts
@@ -2030,16 +2034,6 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 73.66) (xy 105.41 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ee07c70-4cc2-4be9-b4a7-610ae861ded2")
-	)
-	(wire
-		(pts
 			(xy 181.61 152.4) (xy 193.04 152.4)
 		)
 		(stroke
@@ -2047,6 +2041,16 @@
 			(type default)
 		)
 		(uuid "5f650d00-ef7c-4552-86d2-ac79b889052a")
+	)
+	(wire
+		(pts
+			(xy 90.17 152.4) (xy 118.11 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "625a3b80-96cb-410e-8ec1-ada0ab793b71")
 	)
 	(wire
 		(pts
@@ -2067,16 +2071,6 @@
 			(type default)
 		)
 		(uuid "636773b2-76d4-4a6f-959d-4d712dd4c2c4")
-	)
-	(wire
-		(pts
-			(xy 66.04 73.66) (xy 66.04 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64380a81-e1ec-42c1-9c52-7f0d68534d73")
 	)
 	(wire
 		(pts
@@ -2110,7 +2104,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 115.57) (xy 66.04 115.57)
+			(xy 38.1 115.57) (xy 66.04 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2120,7 +2114,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 142.24) (xy 99.06 152.4)
+			(xy 90.17 142.24) (xy 90.17 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2130,7 +2124,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 152.4) (xy 66.04 152.4)
+			(xy 48.26 152.4) (xy 66.04 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2147,6 +2141,16 @@
 			(type default)
 		)
 		(uuid "7845fd59-0642-47a6-b7b4-f0a8e68d3939")
+	)
+	(wire
+		(pts
+			(xy 48.26 101.6) (xy 48.26 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd136d0-5beb-41a5-a9b7-b8a758075066")
 	)
 	(wire
 		(pts
@@ -2170,6 +2174,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 125.73) (xy 90.17 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c37533d-1f47-4009-9407-1f799ce92591")
+	)
+	(wire
+		(pts
 			(xy 148.59 132.08) (xy 148.59 152.4)
 		)
 		(stroke
@@ -2190,7 +2204,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 83.82) (xy 99.06 86.36)
+			(xy 105.41 83.82) (xy 105.41 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2200,23 +2214,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 113.03) (xy 55.88 152.4)
+			(xy 48.26 113.03) (xy 48.26 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "937c7eb4-1b54-48b6-93e2-db3fcf1c19f6")
-	)
-	(wire
-		(pts
-			(xy 87.63 73.66) (xy 99.06 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9414b7ec-e5a5-423d-8e45-03469d061d1e")
 	)
 	(wire
 		(pts
@@ -2290,13 +2294,33 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 152.4) (xy 87.63 152.4)
+			(xy 77.47 152.4) (xy 90.17 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a0271669-5624-4492-a24d-c5271cb56de0")
+	)
+	(wire
+		(pts
+			(xy 48.26 99.06) (xy 48.26 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a062e1ac-eb8c-43b8-9957-0e2debff1427")
+	)
+	(wire
+		(pts
+			(xy 93.98 127) (xy 90.17 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5a75c9f-fecf-4bdc-adc5-68e06fe848e9")
 	)
 	(wire
 		(pts
@@ -2310,7 +2334,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 115.57) (xy 66.04 127)
+			(xy 66.04 115.57) (xy 66.04 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2327,6 +2351,16 @@
 			(type default)
 		)
 		(uuid "b9a5d74c-2507-4315-a5cf-ec9ad145016c")
+	)
+	(wire
+		(pts
+			(xy 66.04 115.57) (xy 127 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb65421d-92e6-4429-87ed-621c827889e6")
 	)
 	(wire
 		(pts
@@ -2350,7 +2384,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 73.66) (xy 66.04 73.66)
+			(xy 90.17 73.66) (xy 105.41 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7286e26-b196-45c7-a99c-b359b37825e5")
+	)
+	(wire
+		(pts
+			(xy 48.26 73.66) (xy 66.04 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2360,17 +2404,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 115.57) (xy 127 115.57)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9355c8f-9b33-4f48-bb60-fb65488e8d39")
-	)
-	(wire
-		(pts
-			(xy 99.06 73.66) (xy 99.06 76.2)
+			(xy 105.41 73.66) (xy 105.41 76.2)
 		)
 		(stroke
 			(width 0)
@@ -2380,17 +2414,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 73.66) (xy 87.63 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf9c946c-5c97-4d25-8140-1b119396b3fb")
-	)
-	(wire
-		(pts
-			(xy 55.88 91.44) (xy 55.88 73.66)
+			(xy 48.26 91.44) (xy 48.26 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2440,7 +2464,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 88.9) (xy 77.47 88.9)
+			(xy 39.37 88.9) (xy 77.47 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2490,6 +2514,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 73.66) (xy 90.17 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5a9f9cc-f0be-4b3f-8bba-28c0298ef6cc")
+	)
+	(wire
+		(pts
 			(xy 137.16 111.76) (xy 137.16 119.38)
 		)
 		(stroke
@@ -2500,7 +2534,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 86.36) (xy 99.06 86.36)
+			(xy 39.37 86.36) (xy 105.41 86.36)
 		)
 		(stroke
 			(width 0)
@@ -2560,16 +2594,6 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 99.06) (xy 55.88 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc2096d5-42ef-43cf-8736-aae00d6a9b0b")
-	)
-	(wire
-		(pts
 			(xy 165.1 119.38) (xy 162.56 119.38)
 		)
 		(stroke
@@ -2580,43 +2604,13 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 73.66) (xy 87.63 111.76)
+			(xy 90.17 73.66) (xy 90.17 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "fcbf0093-f43a-45cf-83e1-696da2e7b130")
-	)
-	(wire
-		(pts
-			(xy 99.06 127) (xy 99.06 129.54)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f573cc9-7566-48c2-8293-a227463c465b")
-	)
-	(wire
-		(pts
-			(xy 102.87 123.19) (xy 102.87 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ec0e7cc-b95f-48f9-8d37-d9767f8c1d4c")
-	)
-	(wire
-		(pts
-			(xy 102.87 127) (xy 99.06 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a5a75c9f-fecf-4bdc-adc5-68e06fe848e9")
 	)
 	(wire
 		(pts
@@ -2630,7 +2624,7 @@
 	)
 	(hierarchical_label "ACID_PUMP_RESET_N"
 		(shape input)
-		(at 48.26 115.57 180)
+		(at 38.1 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2641,7 +2635,7 @@
 	)
 	(hierarchical_label "ACID_PUMP_EN_FAULT_N"
 		(shape bidirectional)
-		(at 49.53 101.6 180)
+		(at 39.37 101.6 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2652,7 +2646,7 @@
 	)
 	(hierarchical_label "ACID_PUMP_STEP"
 		(shape input)
-		(at 49.53 88.9 180)
+		(at 39.37 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2663,7 +2657,7 @@
 	)
 	(hierarchical_label "ACID_PUMP_DIR"
 		(shape input)
-		(at 49.53 86.36 180)
+		(at 39.37 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2674,7 +2668,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 55.88 109.22 0)
+		(at 48.26 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2684,7 +2678,7 @@
 		(dnp no)
 		(uuid "02653e85-bc82-57e3-9795-f120ffb0ff5b")
 		(property "Reference" "C322"
-			(at 52.07 109.22 90)
+			(at 44.45 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2694,7 +2688,7 @@
 			)
 		)
 		(property "Value" "10nF"
-			(at 59.69 109.22 90)
+			(at 52.07 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2704,7 +2698,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 55.88 109.22 0)
+			(at 48.26 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2715,7 +2709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 55.88 109.22 0)
+			(at 48.26 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2726,7 +2720,73 @@
 			)
 		)
 		(property "Description" "EN/FAULT retry timing"
-			(at 55.88 109.22 0)
+			(at 48.26 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1608X7R1H103K080AA"
+			(at -7.62 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at -7.62 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at -7.62 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at -7.62 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at -7.62 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H103K080AA"
+			(at -7.62 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2753,7 +2813,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 66.04 80.01 0)
+		(at 66.04 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2763,7 +2823,7 @@
 		(dnp no)
 		(uuid "032f1c0f-873c-57be-9f86-1e53d117cc3a")
 		(property "Reference" "R323"
-			(at 62.23 80.01 90)
+			(at 62.23 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2772,8 +2832,8 @@
 				)
 			)
 		)
-		(property "Value" "18k"
-			(at 69.85 80.01 90)
+		(property "Value" "20k"
+			(at 69.85 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2783,7 +2843,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 66.04 80.01 0)
+			(at 66.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2794,7 +2854,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 80.01 0)
+			(at 66.04 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2804,8 +2864,63 @@
 				)
 			)
 		)
-		(property "Description" "STBY/RESET pull-up"
-			(at 66.04 80.01 0)
+		(property "Description" "20k STBY/RESET pull-up to +3V3, matching Adafruit STSPIN220 R2; defaults out of reset"
+			(at 66.04 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW060320K0FKEA"
+			(at 0 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at 0 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 0 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2978,7 +3093,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 99.06 80.01 0)
+		(at 48.26 95.25 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2986,9 +3101,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "23f944bc-0cf8-597c-8724-baf933cd7908")
-		(property "Reference" "R324"
-			(at 95.25 80.01 90)
+		(uuid "1c3e92e9-4705-410f-9418-5499a1cfaaca")
+		(property "Reference" "R322"
+			(at 44.45 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2998,7 +3113,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 102.87 80.01 90)
+			(at 52.07 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3008,7 +3123,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 99.06 80.01 0)
+			(at 48.26 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3019,7 +3134,141 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 80.01 0)
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "20k STBY/RESET pull-up to +3V3, matching Adafruit STSPIN220 R2; defaults out of reset"
+			(at 48.26 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW060320K0FKEA"
+			(at -17.78 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at -17.78 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at -17.78 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at -17.78 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at -17.78 15.24 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "85d32459-16bb-45e5-96d0-c895d8419b58")
+		)
+		(pin "2"
+			(uuid "2d7ce55f-a12b-423c-8810-76ebde8f56a6")
+		)
+		(instances
+			(project "DIC_Board"
+				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/db16e425-44ca-40f9-b8f4-64b10021b74e"
+					(reference "R322")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 105.41 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "23f944bc-0cf8-597c-8724-baf933cd7908")
+		(property "Reference" "R324"
+			(at 101.6 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "20k"
+			(at 109.22 80.01 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 105.41 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 105.41 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3030,7 +3279,62 @@
 			)
 		)
 		(property "Description" "DIR latch-default pull-up"
-			(at 99.06 80.01 0)
+			(at 105.41 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW060320K0FKEA"
+			(at 6.35 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 6.35 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 6.35 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at 6.35 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 6.35 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3197,6 +3501,72 @@
 				)
 			)
 		)
+		(property "MPN" "C1608X5R1C225K080AB"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "16V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X5R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X5R1C225K080AB"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "60d9a027-bdf5-5b7e-ac9c-3d5dabcaac09")
 		)
@@ -3354,6 +3724,61 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW12062R00FKEA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.25W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dd2250ff-eccc-53a0-b1e7-dbe3f3d7e457")
 		)
@@ -3424,6 +3849,61 @@
 		)
 		(property "Description" "TOFF setting resistor"
 			(at 148.59 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "CRCW060347K0FKEA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3512,6 +3992,72 @@
 				)
 			)
 		)
+		(property "MPN" "C1608X7R1H223K080AA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "10%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608X7R1H223K080AA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "01208ba0-76f5-54d2-abce-ce567dcbeb5f")
 		)
@@ -3582,6 +4128,72 @@
 		)
 		(property "Description" "STSPIN220 local bulk supply capacitor"
 			(at 190.5 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "GRM32ER71E226ME15L"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Murata"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "25V"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "X7R"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "20%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.murata.com/en-us/products/productdetail.aspx?partno=GRM32ER71E226ME15%23"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3670,6 +4282,61 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW12062R00FKEA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.25W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "69f34e59-c243-51e8-8414-c2b22e1c28b0")
 		)
@@ -3687,7 +4354,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 66.04 130.81 0)
+		(at 66.04 124.46 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3697,7 +4364,7 @@
 		(dnp no)
 		(uuid "8d730a37-e061-5f90-a267-9bb9ef7d3888")
 		(property "Reference" "C323"
-			(at 62.23 130.81 90)
+			(at 62.23 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3707,7 +4374,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 69.85 130.81 90)
+			(at 69.85 124.46 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3717,7 +4384,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 66.04 130.81 0)
+			(at 66.04 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3728,7 +4395,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 66.04 130.81 0)
+			(at 66.04 124.46 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3738,8 +4405,74 @@
 				)
 			)
 		)
-		(property "Description" "STBY/RESET delay"
-			(at 66.04 130.81 0)
+		(property "Description" "1nF STBY/RESET capacitor directly to GND, matching Adafruit STSPIN220 CSTBY"
+			(at 66.04 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "C1608C0G1H102J080AA"
+			(at 0 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "TDK"
+			(at 0 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Voltage Rating" "50V"
+			(at 0 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Dielectric" "C0G"
+			(at 0 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "5%"
+			(at 0 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://product.tdk.com/en/search/capacitor/ceramic/mlcc/info?part_no=C1608C0G1H102J080AA"
+			(at 0 -6.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3828,6 +4561,61 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW06031K00FKEA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "07b6e3ac-5c11-5936-953f-42973f81e30f")
 		)
@@ -3845,7 +4633,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 99.06 138.43 0)
+		(at 90.17 138.43 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3855,7 +4643,7 @@
 		(dnp no)
 		(uuid "9a20985c-c8b9-4acc-9cd3-f4909dda38fc")
 		(property "Reference" "R329"
-			(at 95.25 138.43 90)
+			(at 86.36 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3864,8 +4652,8 @@
 				)
 			)
 		)
-		(property "Value" "482R"
-			(at 102.87 138.43 90)
+		(property "Value" "487R"
+			(at 93.98 138.43 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3875,7 +4663,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 99.06 138.43 0)
+			(at 90.17 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3886,7 +4674,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 138.43 0)
+			(at 90.17 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3897,7 +4685,73 @@
 			)
 		)
 		(property "Description" "Bounded current-reference lower resistor, 0.1% required"
-			(at 99.06 138.43 0)
+			(at 90.17 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TNPW0603487RBEEA"
+			(at -8.89 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at -8.89 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "0.1%"
+			(at -8.89 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at -8.89 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TCR" "25ppm/K"
+			(at -8.89 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+			(at -8.89 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4063,6 +4917,61 @@
 				)
 			)
 		)
+		(property "MPN" "CRCW060320K0FKEA"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "1%"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/20035/dcrcwe3.pdf"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5fec5b5c-61f1-5a10-bc1d-eee2c1d4ed9b")
 		)
@@ -4080,7 +4989,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 87.63 115.57 0)
+		(at 90.17 109.22 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4090,7 +4999,7 @@
 		(dnp no)
 		(uuid "bd81477d-183b-5369-9fe7-28ca3cab8111")
 		(property "Reference" "R328"
-			(at 83.82 115.57 90)
+			(at 86.36 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4100,7 +5009,7 @@
 			)
 		)
 		(property "Value" "2.87k"
-			(at 91.44 115.57 90)
+			(at 93.98 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4110,7 +5019,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 87.63 115.57 0)
+			(at 90.17 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4121,7 +5030,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 115.57 0)
+			(at 90.17 109.22 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4132,7 +5041,73 @@
 			)
 		)
 		(property "Description" "Bounded current-reference upper resistor, 0.1% required"
-			(at 87.63 115.57 0)
+			(at 90.17 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "TNPW06032K87BEEA"
+			(at 2.54 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 2.54 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Tolerance" "0.1%"
+			(at 2.54 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Power Rating" "0.125W"
+			(at 2.54 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.vishay.com/docs/28758/tnpw_e3.pdf"
+			(at 2.54 -6.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "TCR" "25ppm/K"
+			(at 2.54 -6.35 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4158,87 +5133,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 55.88 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "e4b3956f-6626-589c-98ea-b0ffc92ea42c")
-		(property "Reference" "R322"
-			(at 52.07 95.25 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "18k"
-			(at 59.69 95.25 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 55.88 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "EN/FAULT pull-up"
-			(at 55.88 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "97a9cbee-ac44-55d4-87cc-69cd66c6147f")
-		)
-		(pin "2"
-			(uuid "3852e2c2-3e41-5b70-a995-c2adcd0c4206")
-		)
-		(instances
-			(project "DIC_Board"
-				(path "/bb0ef0df-c181-443a-843c-695cd2e0efee/c0c341f0-cc08-4486-9fa7-67c0e9d2ea1a/db16e425-44ca-40f9-b8f4-64b10021b74e"
-					(reference "R322")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer_Trim")
-		(at 99.06 123.19 0)
+		(at 90.17 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4248,7 +5144,7 @@
 		(dnp no)
 		(uuid "c0fe784c-ac29-4e70-9918-4385a54d1072")
 		(property "Reference" "RV1"
-			(at 94.615 123.19 90)
+			(at 85.725 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4258,7 +5154,7 @@
 			)
 		)
 		(property "Value" "10k trim"
-			(at 96.52 123.19 90)
+			(at 87.63 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4268,7 +5164,7 @@
 			)
 		)
 		(property "Footprint" "Potentiometer_SMD:Potentiometer_Bourns_3314J_Vertical"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4279,7 +5175,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.bourns.com/docs/product-datasheets/3314.pdf"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4290,7 +5186,7 @@
 			)
 		)
 		(property "Description" "10k current-limit trimmer; wiper tied to VREF-side terminal for fail-safe operation"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4301,7 +5197,7 @@
 			)
 		)
 		(property "Sim.Device" "R"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4312,7 +5208,7 @@
 			)
 		)
 		(property "Sim.Type" "POT"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4323,7 +5219,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=r0 2=wiper 3=r1"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4334,7 +5230,7 @@
 			)
 		)
 		(property "MPN" "3314J-1-103E"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4345,7 +5241,7 @@
 			)
 		)
 		(property "Manufacturer" "Bourns"
-			(at 99.06 123.19 0)
+			(at 90.17 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4407,7 +5303,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0400_2x02_P3.00mm_Horizontal"
 			(at 247.65 88.9 0)
 			(hide yes)
 			(show_name no)
@@ -4431,6 +5327,39 @@
 		)
 		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 247.65 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "0430450400"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "BOM Source" "https://www.molex.com/en-us/products/part-detail/430450400"
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)

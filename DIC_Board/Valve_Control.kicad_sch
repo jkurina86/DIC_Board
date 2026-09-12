@@ -1954,6 +1954,17 @@
 				)
 			)
 		)
+		(property "Design Confirmation" "2026-09-11: User accepted the existing nominal 12V supply for the valves. Exact pulse/current and firmware qualification are separate."
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "7"
 			(uuid "9960e65d-f447-4cf9-bbf8-4626df0ecfbb")
 		)
@@ -2088,6 +2099,17 @@
 		)
 		(property "DigiKey" "WM1818-ND"
 			(at 251.46 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Design Confirmation" "2026-09-11: User accepted the existing nominal 12V supply for the valves. Exact pulse/current and firmware qualification are separate."
+			(at 0 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
