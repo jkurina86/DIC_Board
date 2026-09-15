@@ -421,7 +421,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm_ThermalVias"
+			(property "Footprint" "DIC_Board:TPS27S100_Thermal_Drill0p3"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2559,7 +2559,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm_ThermalVias"
+		(property "Footprint" "DIC_Board:TPS27S100_Thermal_Drill0p3"
 			(at 92.71 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -3237,7 +3237,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:Texas_HTSSOP-14-1EP_4.4x5mm_P0.65mm_EP3.4x5mm_Mask3.155x3.255mm_ThermalVias"
+		(property "Footprint" "DIC_Board:TPS27S100_Thermal_Drill0p3"
 			(at 92.71 148.59 0)
 			(hide yes)
 			(show_name no)

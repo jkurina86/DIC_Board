@@ -1,0 +1,6 @@
+(version 1)
+
+# Provisional conventional four-layer process; see PCB_SETUP.md.
+# Revisit only after choosing a fabrication process that supports HDI.
+(rule "Conventional through vias only"
+  (constraint disallow micro_via blind_via buried_via))

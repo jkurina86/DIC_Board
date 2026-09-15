@@ -154,7 +154,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_DFN_QFN:Texas_B3QFN-14-1EP_5x5.5mm_P0.65mm_ThermalVia"
+			(property "Footprint" "DIC_Board:TPSM53603_Thermal_Drill0p3"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2445,7 +2445,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_Plated_Hole_D2.0mm"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
 			(at 224.79 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -2764,7 +2764,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_DFN_QFN:Texas_B3QFN-14-1EP_5x5.5mm_P0.65mm_ThermalVia"
+		(property "Footprint" "DIC_Board:TPSM53603_Thermal_Drill0p3"
 			(at 128.27 101.6 0)
 			(hide yes)
 			(show_name no)
