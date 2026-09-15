@@ -5,7 +5,8 @@
 - Open `DIC_Board/DIC_Board.kicad_pro` with KiCad 10.0. The schematics and PCB use KiCad 10 formats; older KiCad releases may not read them safely.
 - `DIC_Board/DIC_Board.kicad_sch` is the hierarchy root. Run ERC or schematic analysis from this file, not from an individual leaf sheet.
 - The root fans out to `mcu.kicad_sch`, `Power.kicad_sch`, `Sensors.kicad_sch`, `Pump_Control.kicad_sch`, `Valve_Control.kicad_sch`, and `actuators.kicad_sch`; the power, sensor, pump, and valve sheets contain further subsheets. Most cross-sheet connectivity uses global labels rather than root-sheet pins.
-- `DIC_Board/DIC_Board.kicad_pcb` is currently a two-line empty placeholder: it has no outline, footprints, nets, or routing. Do not claim PCB, DRC, layout, or fabrication readiness from it.
+- `DIC_Board/DIC_Board.kicad_pcb` has a preliminary 254 × 50.8 mm placement with 296 footprints, four grounded 2.5 mm corner mounting holes, and no routed tracks or vias. The four-layer order is Signal/Power, GND, +3V3, Signal/Power; the two plane outlines are unfilled. See `Reviews/preliminary-layout-2026-09-15.md` for constraints and remaining footprint DRC issues. Do not claim routing or fabrication readiness.
+- TP20–TP26 use 1 mm copper test pads, not plated test-point holes. Keep these footprint assignments synchronized between schematic and PCB.
 - Project-local libraries are wired through `sym-lib-table` and `fp-lib-table`: `DIC_Board.kicad_sym`, `LCSC.kicad_sym`, and `DIC_Board.pretty/`. Keep the tables in sync if a library is moved or renamed.
 - BOM data is stored on schematic symbols (`MPN`, `Manufacturer`, and distributor properties such as `DigiKey` or `Mouser`); there is no standalone source BOM. Preserve these fields when replacing parts.
 - `DIC_Board/DIC_Board-STM32 MCU.pdf` and `DIC_Board/DIC_Board.bak` predate the current schematic. Treat them as historical exports, not design sources.
@@ -34,5 +35,5 @@ python3 Docs/download_sources.py
 
 - Use the matching `kicad-happy` skill for KiCad analysis, BOM/sourcing, datasheets, SPICE, EMC, and fabrication tasks instead of building ad hoc parsers or workflows.
 - Base all electrical design reviews on the resolved hierarchical netlist generated from `DIC_Board/DIC_Board.kicad_sch`. Do not infer electrical connectivity from schematic drawing geometry, wire coordinates, or visual proximity; use the schematic source only to cross-check and present connections reported by the netlist.
-- No CI, lint, test, task-runner, or KiCad CLI wrapper is committed. For schematic changes, run KiCad 10 ERC on `DIC_Board/DIC_Board.kicad_sch`; PCB DRC is not meaningful until the placeholder PCB is populated.
+- No CI, lint, test, task-runner, or KiCad CLI wrapper is committed. For schematic changes, run KiCad 10 ERC on `DIC_Board/DIC_Board.kicad_sch`. Run PCB DRC with schematic parity for placement changes; expect unconnected items until routing is requested. Preserve the custom rules in `DIC_Board/DIC_Board.kicad_dru`.
 - `/analysis/` and `/DIC_Board/analysis/` are ignored generated outputs. Regenerate them for the current sources rather than treating an existing report as authoritative.
