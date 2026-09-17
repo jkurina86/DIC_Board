@@ -4214,7 +4214,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.33mF"
+		(property "Value" "100uF"
 			(at 148.59 81.3689 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4225,7 +4225,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D8.0mm_P3.50mm"
 			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4236,7 +4236,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.nichicon.com/getmedia/5ee6e3a3-2d90-4858-bed0-89ef58a93bc3/e-uhe.pdf"
 			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4247,7 +4247,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "100uF 50V 20%; 8x11.5mm radial, 3.5mm pitch; coordinated with TPS552892 startup budget"
 			(at 146.05 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4257,7 +4257,7 @@
 				)
 			)
 		)
-		(property "MPN" "URZ1H331MHD1TO"
+		(property "MPN" "UHE1H101MPD"
 			(at 146.05 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -4269,6 +4269,28 @@
 			)
 		)
 		(property "Manufacturer" "Nichicon"
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Mouser" ""
+			(at 0 0 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "DigiKey" ""
 			(at 0 0 0)
 			(hide yes)
 			(show_name no)

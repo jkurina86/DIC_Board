@@ -13,4 +13,11 @@
 
 # This preliminary stack assumes mechanically drilled through vias.
 (rule "Through vias only"
-  (constraint disallow micro_via blind_buried_via))
+  (constraint disallow micro_via blind_via buried_via))
+
+# TI RYQ0021A recommended land pattern has 0.1772 mm minimum corner-pad
+# clearance. Permit 0.15 mm only between pads within U10; external copper
+# retains the normal net-class clearance. TI SLVSH28A land pattern 4226658/A.
+(rule "TPS552892 internal pad clearance"
+  (condition "A.Type == 'Pad' && B.Type == 'Pad' && A.memberOfFootprint('U10') && B.memberOfFootprint('U10')")
+  (constraint clearance (min 0.15mm)))

@@ -1,5 +1,7 @@
 # Preliminary PCB placement — 2026-09-15
 
+**Historical arrangement:** see the [2026-09-16 placement revision](preliminary-layout-2026-09-16.md) for the current central power section, far-right MCU, and relocated SD-card notch.
+
 ## Delivered
 
 - 254 × 50.8 mm (10 × 2 inch) overall outline, centered on the landscape A4 sheet (297 × 210 mm). Its top-left corner is at KiCad coordinate (21.5, 79.6) mm, with its bounding-box center at (148.5, 105) mm. The grid and auxiliary origins are at the board's top-left corner. Centering translated all board items together and preserved their relative placement.
